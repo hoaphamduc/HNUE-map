@@ -5,10 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HNUE map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/png" href="Logo Đại học Sư phạm Hà Nội - HNUE.png">
 </head>
 <body>
+    <!-- <div class="sidebar">
+        <div class="logo-content">
+            <btn id="btn"></btn>
+            <img src="source-img/hnue.jpg" class="logo">
+        </div>
+        <div class="mot_duong_ke"></div>
+        <ul class="nav_list" >
+            <li id="toggleLiA2" class="selected">
+                <div id="toggleDivA2" style="cursor: pointer;">
+                  <div class="highlight"></div>
+                  <img src="source-img/building-regular.svg" class="icon">
+                  <span class="links_name">A2</span>
+                </div>
+            </li>
+        </ul>
+    </div> -->
     <div id="map"></div>
+    <div id="infoDivA2">
+        <button class="direct-btn" onclick="openGoogleMaps()"></button>
+        <button class="close"></button>
+        <button class="info" onclick="redirectToAnotherPage()"></button>
+        <h5>NHÀ HIỆU BỘ - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI</h5>
+        <span>
+            Diện tích: 1 tỉ mét vuông <br>
+            Số tầng: 1 tỉ
+        </span>
+    </div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
