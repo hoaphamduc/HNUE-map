@@ -1,5 +1,5 @@
 var mymap = L.map('map', {
-  zoomControl: false  // Tắt thanh zoom mặc định
+  zoomControl: false 
 }).setView([21.037138, 105.783182], 13);
 
 var maxBounds = L.latLngBounds(
@@ -20,7 +20,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 mymap.fitBounds(maxBounds);
 
 var zoomControl = L.control.zoom({
-  position: 'bottomright'  // Đặt ở góc dưới bên phải
+  position: 'bottomright' 
 });
 
 zoomControl.addTo(mymap);
@@ -57,9 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-
-
 // Lấy tọa độ khi click
 mymap.on('click', function (e) {
   var lat = e.latlng.lat;
@@ -67,56 +64,88 @@ mymap.on('click', function (e) {
   console.log('Latitude: ' + lat + ', Longitude: ' + lng);
 });
 
-// Tạo một đa giác (ví dụ là hình vuông) để đại diện cho vùng rộng
-var polygon = L.polygon([
+// Info nhà hiệu bộ
+
+var nhahieubo = L.polygon([
   [21.03759826731647, 105.78301370143892],
   [21.037574928011193, 105.7836266547129],
   [21.037454950931714, 105.7836159176814],
   [21.03747994616458, 105.78301464391645]
 ], {
-  opacity: 0,        // Độ trong suốt của đường viền
-  fillOpacity: 0     // Độ trong suốt của màu tô
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+var infoDivNhaHieuBo = document.getElementById('infoDivNhaHieuBo');
+
+nhahieubo.on('click', function () {
+  document.getElementById('infoDivNhaHieuBo').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivNhaHieuBo');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivNhaHieuBo = document.getElementById('infoDivNhaHieuBo');
+    infoDivNhaHieuBo.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhahieubo.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivNhaHieuBo').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForNhaHieuBo() {
+  var latitude = 21.037439688219646; 
+  var longitude = 105.78331516196478; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà A2
+
+var nhaA2 = L.polygon([
+  [21.03953178666788, 105.78532099596487],
+  [21.03952178090288, 105.785911193595],
+  [21.03937669723494, 105.78590582816199],
+  [21.03940171167052, 105.78532099596487]
+], {
+  opacity: 0,        
+  fillOpacity: 0     
 }).addTo(mymap);
 
 var infoDivA2 = document.getElementById('infoDivA2');
 
-// Gắn sự kiện click cho đa giác
-polygon.on('click', function () {
-  // Hiển thị khối div khi đa giác được click
+nhaA2.on('click', function () {
   document.getElementById('infoDivA2').style.display = 'block';
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.querySelector('.close');
+  var closeButton = document.getElementById('closeinfoDivA2');
 
-  // Gắn sự kiện click cho nút đóng
   closeButton.addEventListener('click', function () {
-    // Ẩn khối div khi click nút đóng
+    var infoDivA2 = document.getElementById('infoDivA2');
     infoDivA2.style.display = 'none';
   });
 });
 
+
 mymap.on('click', function (e) {
-  // Kiểm tra xem sự kiện click có xảy ra bên ngoài đa giác hay không
-  if (!polygon.getBounds().contains(e.latlng)) {
-    // Ẩn khối div khi click bên ngoài đa giác
+  if (!nhaA2.getBounds().contains(e.latlng)) {
     document.getElementById('infoDivA2').style.display = 'none';
   }
 });
 
-function openGoogleMaps() {
-  // Replace "latitude" and "longitude" with your desired coordinates
-  var latitude = 21.037439688219646; // Example latitude
-  var longitude = 105.78331516196478; // Example longitude
+function openGoogleMapsForA2() {
+  var latitude = 21.03945579822238; 
+  var longitude = 105.7852989435196; 
 
-  // Create the Google Maps URL with the coordinates
   var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
 
-  // Open a new tab or window with the Google Maps URL
   window.open(googleMapsUrl, '_blank');
-}
-
-function redirectToAnotherPage() {
-  var targetUrl = 'https://hnue.edu.vn/';
-  window.open(targetUrl, '_blank');
 }

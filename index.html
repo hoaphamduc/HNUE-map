@@ -27,14 +27,23 @@
         </ul>
     </div> -->
     <div id="map"></div>
-    <div id="infoDivA2">
-        <button class="direct-btn" onclick="openGoogleMaps()"></button>
-        <button class="close"></button>
-        <button class="info" onclick="redirectToAnotherPage()"></button>
+    <div class="infoDiv" id="infoDivNhaHieuBo">
+        <button class="direct-btn" onclick="openGoogleMapsForNhaHieuBo()"></button>
+        <button class="close" id="closeinfoDivNhaHieuBo"></button>
         <h5>NHÀ HIỆU BỘ - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI</h5>
         <span>
             Diện tích: 1 tỉ mét vuông <br>
             Số tầng: 1 tỉ
+        </span>
+    </div>
+
+    <div class="infoDiv" id="infoDivA2">
+        <button class="direct-btn" onclick="openGoogleMapsForA2()"></button>
+        <button class="close" id="closeinfoDivA2"></button>
+        <h5>GIẢNG ĐƯỜNG, PTN KHOA: HÓA, SINH, SƯ PHẠM KỸ THUẬT - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI</h5>
+        <span>
+            Diện tích: 2 tỉ mét vuông <br>
+            Số tầng: 2 tỉ
         </span>
     </div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
