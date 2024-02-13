@@ -582,8 +582,8 @@ var nhaD124 = L.polygon([
   [21.03781690489631, 105.78380878676901]
 
 ], {
-  // opacity: 0,        
-  // fillOpacity: 0     
+  opacity: 0,        
+  fillOpacity: 0     
 }).addTo(mymap);
 
 
@@ -612,6 +612,143 @@ mymap.on('click', function (e) {
 function openGoogleMapsForD124() {
   var latitude = 21.038050484637264; 
   var longitude = 105.78376597386799; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà D3
+var nhaD3 = L.polygon([
+  [21.038295046216756, 105.78381429460755],
+  [21.038290047197886, 105.78391078856843],
+  [21.038285110748518, 105.78437679850833],
+  [21.038155073624633, 105.78437798876216],
+  [21.038165071671305, 105.78423303883669],
+  [21.038175069717287, 105.78423303883669],
+  [21.038175069717287, 105.78417398516333],
+  [21.038185067762594, 105.7841793536791],
+  [21.038175069717287, 105.78391629640696],
+  [21.038185067762594, 105.78381429460755]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivD3 = document.getElementById('infoDivD3');
+
+nhaD3.on('click', function () {
+  document.getElementById('infoDivD3').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivD3');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivD3 = document.getElementById('infoDivD3');
+    infoDivD3.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaD3.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivD3').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForD3() {
+  var latitude = 21.03818907480665; 
+  var longitude = 105.78376471996307; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+// Info nhà H8
+var nhaH8 = L.polygon([
+  [21.038012666439183, 105.78536948678588],
+  [21.03800766741081, 105.7856540181211],
+  [21.037784626104546, 105.78564312189428],
+  [21.03778770999693, 105.78536948678588]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivH8 = document.getElementById('infoDivH8');
+
+nhaH8.on('click', function () {
+  document.getElementById('infoDivH8').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivH8');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivH8 = document.getElementById('infoDivH8');
+    infoDivH8.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaH8.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivH8').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForH8() {
+  var latitude = 21.03818907480665; 
+  var longitude = 105.78376471996307; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà M1, M2, M3, M4
+var nhaM = L.polygon([
+  [21.03759326046332, 105.78455328941347],
+  [21.037583246756526, 105.78514873981476],
+  [21.03698242311643, 105.78513264656068],
+  [21.036987429990113, 105.78451573848726]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivM1234 = document.getElementById('infoDivM1234');
+
+nhaM.on('click', function () {
+  document.getElementById('infoDivM1234').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivM1234');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivM1234 = document.getElementById('infoDivM1234');
+    infoDivM1234.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaM.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivM1234').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForM1234() {
+  var latitude = 21.03725780091894; 
+  var longitude = 105.78450500965118; 
 
   var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
 
