@@ -754,3 +754,915 @@ function openGoogleMapsForM1234() {
 
   window.open(googleMapsUrl, '_blank');
 }
+
+// Info nhà N
+var nhaN = L.polygon([
+  [21.036959747642673, 105.78532818736727],
+  [21.036939751386907, 105.78591872410065],
+  [21.036684798890498, 105.78590798706915],
+  [21.036699796108245, 105.78531745033577]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivN = document.getElementById('infoDivN');
+
+nhaN.on('click', function () {
+  document.getElementById('infoDivN').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivN');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivN = document.getElementById('infoDivN');
+    infoDivN.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaN.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivN').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForN() {
+  var latitude = 21.0367247914678; 
+  var longitude = 105.78547313729273; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà K1
+var nhaK1 = L.polygon([
+  [21.038970904199036, 105.78275163171931],
+  [21.03896090620645, 105.7832079555588],
+  [21.038730952192136, 105.7832079555588],
+  [21.038735951196223, 105.78274626320356]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivK1 = document.getElementById('infoDivK1');
+
+nhaK1.on('click', function () {
+  document.getElementById('infoDivK1').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivK1');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivK1 = document.getElementById('infoDivK1');
+    infoDivK1.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaK1.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivK1').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForK1() {
+  var latitude = 21.038680962142024; 
+  var longitude = 105.78296637234962; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà K2
+var nhaK2 = L.polygon([
+  [21.03920627080365, 105.78298233037869],
+  [21.03920627080365, 105.78311654327264],
+  [21.039076297053274, 105.78311654327264],
+  [21.039076297053274, 105.78297696186294]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivK2 = document.getElementById('infoDivK2');
+
+nhaK2.on('click', function () {
+  document.getElementById('infoDivK2').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivK2');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivK2 = document.getElementById('infoDivK2');
+    infoDivK2.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaK2.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivK2').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForK2() {
+  var latitude = 21.039126286970678; 
+  var longitude = 105.7832668617139; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà K3
+var nhaK3 = L.polygon([
+  [21.03921637813095, 105.7828590061322],
+  [21.03921637813095, 105.7829663764474],
+  [21.039081405397056, 105.7829663764474],
+  [21.039076406404547, 105.78285363761643]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivK3 = document.getElementById('infoDivK3');
+
+nhaK3.on('click', function () {
+  document.getElementById('infoDivK3').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivK3');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivK3 = document.getElementById('infoDivK3');
+    infoDivK3.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaK3.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivK3').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForK3() {
+  var latitude = 21.039095308860723; 
+  var longitude = 105.78294396400453; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà KT
+var nhaKT = L.polygon([
+  [21.03882616756567, 105.78490922595851],
+  [21.03882616756567, 105.78507028143126],
+  [21.038976137519423, 105.78508101846278],
+  [21.03903112646463, 105.78512933510463],
+  [21.039026127470454, 105.78517765174642],
+  [21.03853622522696, 105.78517228323066],
+  [21.038551222258317, 105.784898488927]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivKT = document.getElementById('infoDivKT');
+
+nhaKT.on('click', function () {
+  document.getElementById('infoDivKT').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivKT');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivKT = document.getElementById('infoDivKT');
+    infoDivKT.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaKT.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivKT').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForKT() {
+  var latitude = 21.038531226216158; 
+  var longitude = 105.78513470362036; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà T1
+var nhaT1 = L.polygon([
+  [21.03854766825242, 105.78489309992261],
+  [21.038842609569365, 105.7849038369541],
+  [21.038852607569876, 105.78435087983101],
+  [21.03856266528263, 105.78435087983101]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivT1 = document.getElementById('infoDivT1');
+
+nhaT1.on('click', function () {
+  document.getElementById('infoDivT1').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivT1');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivT1 = document.getElementById('infoDivT1');
+    infoDivT1.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaT1.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivT1').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForT1() {
+  var latitude = 21.038542669242013; 
+  var longitude = 105.78458709452437; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà T2
+var nhaT2 = L.polygon([
+  [21.038685719012175, 105.78428661335559],
+  [21.038685719012175, 105.78433492999744],
+  [21.03856074381754, 105.78433492999744],
+  [21.03856074381754, 105.78428661335559]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivT2 = document.getElementById('infoDivT2');
+
+nhaT2.on('click', function () {
+  document.getElementById('infoDivT2').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivT2');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivT2 = document.getElementById('infoDivT2');
+    infoDivT2.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaT2.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivT2').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForT2() {
+  var latitude = 21.038542669242013; 
+  var longitude = 105.78458709452437; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà V
+var nhaV = L.polygon([
+  [21.037875565454517, 105.78494146163943],
+  [21.03786556738842, 105.7851132541437],
+  [21.03836047085427, 105.7851239911752],
+  [21.038365469870772, 105.78495756718672]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivV = document.getElementById('infoDivV');
+
+nhaV.on('click', function () {
+  document.getElementById('infoDivV').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivV');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivV = document.getElementById('infoDivV');
+    infoDivV.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaV.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivV').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForV() {
+  var latitude = 21.03811551883931; 
+  var longitude = 105.78491461906061; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà CDTY
+var CDTY = L.polygon([
+  [21.038566726992354, 105.78332577606446],
+  [21.038571726001937, 105.78327745942265],
+  [21.040486334340915, 105.78335261864326],
+  [21.040486334340915, 105.78339019825357]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivCDTY = document.getElementById('infoDivCDTY');
+
+CDTY.on('click', function () {
+  document.getElementById('infoDivCDTY').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivCDTY');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivCDTY = document.getElementById('infoDivCDTY');
+    infoDivCDTY.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!CDTY.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivCDTY').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForCDTY() {
+  var latitude = 21.038914821717466; 
+  var longitude = 105.78331432193048; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà TV
+var nhaTV = L.polygon([
+  [21.040442476383372, 105.78339543973972],
+  [21.04042747954243, 105.78395913389436],
+  [21.039997569459935, 105.78394302834707],
+  [21.040022564266124, 105.78337933419246]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivTV = document.getElementById('infoDivTV');
+
+nhaTV.on('click', function () {
+  document.getElementById('infoDivTV').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivTV');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivTV = document.getElementById('infoDivTV');
+    infoDivTV.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaTV.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivTV').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForTV() {
+  var latitude = 21.04001756530523; 
+  var longitude = 105.7836799710749; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info Sân đa năng
+var SDN = L.polygon([
+  [21.03982676891435, 105.78397544432805],
+  [21.0398117720114, 105.78425460714747],
+  [21.04039165115876, 105.78427608121049],
+  [21.040401649055283, 105.78399154987528]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivSDN = document.getElementById('infoDivSDN');
+
+SDN.on('click', function () {
+  document.getElementById('infoDivSDN').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivSDN');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivSDN = document.getElementById('infoDivSDN');
+    infoDivSDN.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!SDN.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivSDN').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForSDN() {
+  var latitude = 21.04025667948982; 
+  var longitude = 105.78429755527353; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info Chùa thánh chúa
+var CTC = L.polygon([
+  [21.03998565790031, 105.7834008082555],
+  [21.039980658938184, 105.78395913389436],
+  [21.039825691028437, 105.78395376537856],
+  [21.03980569515738, 105.78425440226103],
+  [21.03926080663769, 105.78423292819804],
+  [21.03926080663769, 105.78429198187133],
+  [21.03901585610325, 105.78439935218654],
+  [21.038580942937376, 105.78421682265075],
+  [21.038595939964228, 105.78336322864517],
+  [21.038885882186708, 105.78337396567672]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivCTC = document.getElementById('infoDivCTC');
+
+CTC.on('click', function () {
+  document.getElementById('infoDivCTC').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivCTC');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivCTC = document.getElementById('infoDivCTC');
+    infoDivCTC.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!CTC.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivCTC').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForCTC() {
+  var latitude = 21.038781898211674; 
+  var longitude = 105.78383495574235; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info sân vận động
+var SVD = L.polygon([
+  [21.040396673539313, 105.78428116288529],
+  [21.040371678795882, 105.78505959767023],
+  [21.040206713384016, 105.78522065314296],
+  [21.03903195441039, 105.78518307353264],
+  [21.03903195441039, 105.78512938837508],
+  [21.038981964461318, 105.78508107173325],
+  [21.03885199051521, 105.78507570321749],
+  [21.038866987514783, 105.78439927023193],
+  [21.039016957427442, 105.78441537577923],
+  [21.03928190390412, 105.78429726843252],
+  [21.039276904918353, 105.78423821475921]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivSVD = document.getElementById('infoDivSVD');
+
+SVD.on('click', function () {
+  document.getElementById('infoDivSVD').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivSVD');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivSVD = document.getElementById('infoDivSVD');
+    infoDivSVD.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!SVD.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivSVD').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForSVD() {
+  var latitude = 21.040301318576297; 
+  var longitude = 105.78517080395068; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A5
+var ktxA5 = L.polygon([
+  [21.040732625900958, 105.78536059925048],
+  [21.040722628026646, 105.78595113598392],
+  [21.040537667230666, 105.78595113598392],
+  [21.040552664060527, 105.78536059925048]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA5 = document.getElementById('infoDivA5');
+
+ktxA5.on('click', function () {
+  document.getElementById('infoDivA5').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA5');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA5 = document.getElementById('infoDivA5');
+    infoDivA5.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA5.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA5').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA5() {
+  var latitude = 21.040557663003472; 
+  var longitude = 105.78565049910145; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A6
+var ktxA6 = L.polygon([
+  [21.041092603604415, 105.78537107812514],
+  [21.041077606828928, 105.78596161485854],
+  [21.040887647542064, 105.78595624634278],
+  [21.040902644336683, 105.78537107812514]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA6 = document.getElementById('infoDivA6');
+
+ktxA6.on('click', function () {
+  document.getElementById('infoDivA6').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA6');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA6 = document.getElementById('infoDivA6');
+    infoDivA6.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA6.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA6').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA6() {
+  var latitude = 21.040977854797603; 
+  var longitude = 105.7853525876999; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A8
+var ktxA8 = L.polygon([
+  [21.040557780164406, 105.78465685654514],
+  [21.040552781221475, 105.78494138788031],
+  [21.040597771701936, 105.78494675639605],
+  [21.040587773818554, 105.78522591921552],
+  [21.040497792837993, 105.78522055069972],
+  [21.040497792837993, 105.78494138788031],
+  [21.04045280232734, 105.78493601936457],
+  [21.04046280021978, 105.78465685654514]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA8 = document.getElementById('infoDivA8');
+
+ktxA8.on('click', function () {
+  document.getElementById('infoDivA8').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA8');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA8 = document.getElementById('infoDivA8');
+    infoDivA8.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA8.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA8').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA8() {
+  var latitude = 21.04047779705717; 
+  var longitude = 105.78523665624702; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A9
+var ktxA9 = L.polygon([
+  [21.040727072402746, 105.78407773296844],
+  [21.040717074528043, 105.78436763281937],
+  [21.04076706389482, 105.78436226430361],
+  [21.0407570660228, 105.78464679563882],
+  [21.040662086205256, 105.78464679563882],
+  [21.040667085144523, 105.78436763281937],
+  [21.040617095744224, 105.78436226430361],
+  [21.040632092566067, 105.78407773296844]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA9 = document.getElementById('infoDivA9');
+
+ktxA9.on('click', function () {
+  document.getElementById('infoDivA9').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA9');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA9 = document.getElementById('infoDivA9');
+    infoDivA9.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA9.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA9').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA9() {
+  var latitude = 21.040737070276787; 
+  var longitude = 105.78423878844119; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A10
+var ktxA10 = L.polygon([
+  [21.040592811813966, 105.78406086524367],
+  [21.040582813930254, 105.78443129283099],
+  [21.040562818160833, 105.78443129283099],
+  [21.04055282027511, 105.78451718908315],
+  [21.040512828725547, 105.78452255759889],
+  [21.040507829781077, 105.7846245593983],
+  [21.04046283927343, 105.7846245593983],
+  [21.0404828350563, 105.7840554967279]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA10 = document.getElementById('infoDivA10');
+
+ktxA10.on('click', function () {
+  document.getElementById('infoDivA10').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA10');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA10 = document.getElementById('infoDivA10');
+    infoDivA10.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA10.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA10').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA10() {
+  var latitude = 21.04046323762088; 
+  var longitude = 105.78426431564917; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A11
+var ktxA11 = L.polygon([
+  [21.0409879776261, 105.7847157831889],
+  [21.0409879776261, 105.78497347194528],
+  [21.041007973338445, 105.78497347194528],
+  [21.041002974410617, 105.78525800328049],
+  [21.040917992611742, 105.78525800328049],
+  [21.040912993680898, 105.78510768483923],
+  [21.04087300222801, 105.78510231632349],
+  [21.040883000092244, 105.7847157831889]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA11 = document.getElementById('infoDivA11');
+
+ktxA11.on('click', function () {
+  document.getElementById('infoDivA11').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA11');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA11 = document.getElementById('infoDivA11');
+    infoDivA11.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA11.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA11').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA11() {
+  var latitude = 21.040843008631303; 
+  var longitude = 105.7848553645986; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A12
+var ktxA12 = L.polygon([
+  [21.040832604607232, 105.78408263844086],
+  [21.040812608871363, 105.784657069627],
+  [21.041002568253912, 105.784657069627],
+  [21.041022563964287, 105.78409337547241]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA12 = document.getElementById('infoDivA12');
+
+ktxA12.on('click', function () {
+  document.getElementById('infoDivA12').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA12');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA12 = document.getElementById('infoDivA12');
+    infoDivA12.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA12.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA12').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA12() {
+  var latitude = 21.04080760993697; 
+  var longitude = 105.78427053649243; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
