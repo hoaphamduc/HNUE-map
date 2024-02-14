@@ -1666,3 +1666,4 @@ function openGoogleMapsForA12() {
 
   window.open(googleMapsUrl, '_blank');
 }
+

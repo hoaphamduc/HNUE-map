@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HNUE map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/png" href="Logo Đại học Sư phạm Hà Nội - HNUE.png">
 </head>
@@ -28,22 +27,31 @@
     </div> -->
     <div id="map"></div>
     <div class="infoDiv" id="infoDivNhaHieuBo">
-        <button class="direct-btn" onclick="openGoogleMapsForNhaHieuBo()"></button>
-        <button class="close" id="closeinfoDivNhaHieuBo"></button>
-        <h5>NHÀ HIỆU BỘ - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI</h5>
-        <span>
-            Diện tích: 1 tỉ mét vuông <br>
-            Số tầng: 1 tỉ
-        </span>
+        <div class="toolbar">
+            <button class="direct-btn" onclick="openGoogleMapsForNhaHieuBo()"></button>
+            <button class="close" id="closeinfoDivNhaHieuBo"></button>
+        </div>
+        <div class="content">
+            <div class="building-name">NHÀ HIỆU BỘ - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI</div>
+            <div class="building-info">
+                Diện tích: 1 tỉ mét vuông <br>
+                Số tầng: 1 tỉ
+            </div>
+        </div>
     </div>
 
     <div class="infoDiv" id="infoDivA2">
-        <button class="direct-btn" onclick="openGoogleMapsForA2()"></button>
-        <button class="close" id="closeinfoDivA2"></button>
-        <h5>A2 - GIẢNG ĐƯỜNG, PTN KHOA: HÓA, SINH, SƯ PHẠM KỸ THUẬT - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI</h5>
-        <span>
-            Diện tích: 2 tỉ mét vuông <br>
-            Số tầng: 2 tỉ
+        <div class="toolbar">
+            <button class="direct-btn" onclick="openGoogleMapsForA2()"></button>
+            <button class="close" id="closeinfoDivA2"></button>
+        </div>
+        <div class="content">
+            <div class="building-name">A2 - GIẢNG ĐƯỜNG, PTN KHOA: HÓA, SINH, SƯ PHẠM KỸ THUẬT - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI</div>
+            <div class="building-info">
+                Diện tích: 2 tỉ mét vuông <br>
+                Số tầng: 2 tỉ
+            </div>
+        </div>
         </span>
     </div>
 

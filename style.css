@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 *{
   font-family: 'Roboto';
 }
@@ -8,162 +10,34 @@
     cursor: pointer;
 }
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 240px;
-  background: #ffffff;
-  transition: ease-in-out 1s;
-  z-index: 9999;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.sidebar .logo_content {
-  position: absolute;
-  width: 240px;
-  height: 50px;
-  top: 0;
-  left: 0;
-  z-index: 4;
-  border-bottom: 2px solid #000;
-}
-
-
-.sidebar.thut {
-  width: 50px;
-}
-
-.sidebar.thut .logo {
-  display: none;
-}
-
-.sidebar .logo{
-  position: absolute;
-  width: 90px;
-  height: 32px;
-  left: 75px;
-  top: 9px;
-}
-
-.sidebar .nav_list {
-  position: absolute;
-  width: 240px;
-  height: calc(100% - 50px);
-  top: 50px;
-  left: 0;
-  padding-left: 0;
-}
-
-.sidebar #btn{
-  position: absolute;
-  color: #fff;
-  left: 13px;
-  top: 13px;
-  height: 24px;
-  width: 24px;
-  text-align: center;
-  background-image: url(source-img/menu.svg);
-}
-
-
-.sidebar ul li{
-  position: relative;
-  height: 50px;
-  width: 100%;
-  list-style: none;
-}
-
-.sidebar ul li div{
-  color: #000000;
-  display: flex;
-  text-decoration: none;
-  border-radius: 12px; 
-  position: relative;
-}
-
-.sidebar ul li div div{
-  background-color: #fdfdfd;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 4px;
-  height: 50px;
-}
-
-.selected {
-  color: #2185D0;
-  background: #fff;
-}
-
-.sidebar ul li div .selected div{
-  background-color: #2185D0;
-}
-
-.sidebar ul li div div.active {
-  background-color: #2185D0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 4px;
-  height: 50px;
-}
-
-.sidebar ul li div span.active{
-  color: #2185D0;
-}
-
-.sidebar ul li div:hover{
-  color: #2185D0;
-  background: #fff;
-  filter: invert(54%) sepia(42%) saturate(2841%) hue-rotate(195deg) brightness(90%) contrast(88%);
-}
-
-.sidebar ul li div img{
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 13px;
-  left: 16px;
-}
-
-.sidebar ul li div span{
-  position: absolute;
-  height: 19px;
-  top: 15px;
-  left: 50px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.sidebar .mot_duong_ke {
-  height: 0.5px;
-  width: 100%;
-  position: absolute;
-  background-color: #F3F4F6;
-  top: 49.75px;
-  left: 0;
-  z-index: 100000;
-}
-
 .infoDiv {
   position: absolute;
-  width: 60%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
+  max-width: 600px;
+  max-height: 500px;
   z-index: 1000; 
   display: none;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
   background-color: white;
   top: 50%;
   left: 50%;
+  overflow: auto;
   transform: translate(-50%, -50%);
 }
 
-.close {
+.infoDiv .toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.infoDiv .toolbar .close {
+  position: fixed;
   background: url(source-img/close.svg);
   background-size: contain;  
   background-repeat: no-repeat;
@@ -172,24 +46,40 @@
   border: none;
   background-color: #fff;
   cursor: pointer;
-  position: absolute;
   top: 5px;
   right: 5px;
 }
 
-.direct-btn {
+.infoDiv .toolbar .direct-btn {
   background: url(source-img/direct.svg);
   background-size: contain;  
   background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border: none;
   background-color: #fff;
   cursor: pointer;
   position: absolute;
-  top: 5px;
-  left: 10px;
+  top: 10px;
+  left: 15px;
 }
+
+.infoDiv .content {
+  margin-top: 40px;
+}
+
+.infoDiv .building-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.infoDiv .building-info {
+  font-size: 13px;
+  word-wrap: break-word; 
+  margin-top: 10px;
+  color: #707070;
+}
+
 
 .info {
   background: url(source-img/info-solid.svg);
