@@ -1667,3 +1667,25 @@ function openGoogleMapsForA12() {
   window.open(googleMapsUrl, '_blank');
 }
 
+let currentLanguage = 'vi';
+
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'vi' ? 'en' : 'vi';
+    updateContentLanguage();
+}
+
+var btn = document.getElementById('btn')
+
+function changeToVi() {
+    btn.style.left = '0px'
+    document.querySelector('.contentVN').style.display = 'block';
+    document.querySelector('.contentEnglish').style.display = 'none';
+}
+
+function changeToEn() {
+  btn.style.left = '30px'
+  document.querySelector('.contentVN').style.display = 'none';
+  document.querySelector('.contentEnglish').style.display = 'block';
+}
+
+

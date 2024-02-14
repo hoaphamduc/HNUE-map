@@ -4,10 +4,62 @@
   font-family: 'Roboto';
 }
 
-#map {
-    height: 100vh;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding: 0;
+}
+
+.main-content #map {
+    height: 100%;
     position: relative;
     cursor: pointer;
+    z-index: 1;
+}
+
+.main-content .button-box {
+  z-index: 2;
+  width: 60px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #000;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.main-content .button-box .toggle-btn {
+  height: 100%;
+  width: 46%;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+}
+
+#btn {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  background: #00cbfd;
+  border-radius: 8px;
+  transition: .7s;
+}
+
+.contentEnglish {
+  display: none;
 }
 
 .infoDiv {
