@@ -1688,3 +1688,27 @@ languageToggle.addEventListener('change', function() {
   }
 });
 
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
+// Menu burger
+// Lấy đối tượng burger và menu bằng ID
+const burger = document.getElementById('menu-btn__burger');
+const menu = document.getElementById('menu');
+
+// Thêm sự kiện "click" cho burger
+burger.addEventListener('click', function() {
+  // Toggle giá trị của thuộc tính display
+  menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+});
+
+

@@ -21,7 +21,6 @@ body, html {
 .main-content #map {
     height: 100%;
     position: relative;
-    cursor: pointer;
     z-index: 1;
 }
 
@@ -34,7 +33,7 @@ body, html {
   border-radius: 8px;
   background: #fff;
   border: 1px solid #000;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
 }
 
 .main-content .button-box .toggle-btn {
@@ -79,6 +78,7 @@ body, html {
   left: 50%;
   overflow: auto;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
 }
 
 .infoDiv .toolbar {
@@ -219,3 +219,84 @@ input:checked + label img.vi {
 input:checked + label img.en {
   fill:#fff;
 }
+
+/* burger icon menu */
+
+.main-content .menu-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px; 
+  height: 36px; 
+  cursor: pointer;
+  background: #173885;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  top: 5px;
+  left: 10px;
+  z-index: 2;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+}
+
+.menu-btn__burger {
+  width: 18px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 18px; 
+  height: 3px; 
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform:  translateY(-8px)
+              translateX(-9px); 
+}
+
+.menu-btn__burger::after {
+  transform:  translateY(8px)              
+              translateX(-9px); 
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-32.5px); 
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(17px, -17px); 
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(17px, 17px); 
+}
+
+.main-content .menu {
+  display: none; 
+  width: 200px; 
+  height: 300px; 
+  position: absolute; 
+  background-color: #fff;
+  top: 50px; 
+  left: 10px; 
+  z-index: 5;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+}
+
