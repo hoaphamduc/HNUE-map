@@ -4,33 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HNUE map</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/png" href="Logo Đại học Sư phạm Hà Nội - HNUE.png">
 </head>
 <body>
-    <!-- <div class="sidebar">
-        <div class="logo-content">
-            <btn id="btn"></btn>
-            <img src="source-img/hnue.jpg" class="logo">
-        </div>
-        <div class="mot_duong_ke"></div>
-        <ul class="nav_list" >
-            <li id="toggleLiA2" class="selected">
-                <div id="toggleDivA2" style="cursor: pointer;">
-                  <div class="highlight"></div>
-                  <img src="source-img/building-regular.svg" class="icon">
-                  <span class="links_name">A2</span>
-                </div>
-            </li>
-        </ul>
-    </div> -->
     <div class="main-content">
         <div id="map"></div>
-        <div class="button-box">
-            <div id="btn"></div>
-            <button type="button" class="toggle-btn" onclick="changeToVi()">vi</button>
-            <button type="button" class="toggle-btn" onclick="changeToEn()">en</button>
+        <div class="language-toggle-box">
+            <input type="checkbox" id="language-toggle"/>
+            <label for="language-toggle">
+                <img class="vi" src="source-img/Vi.png">
+                <img class="en" src="source-img/En.png">
+            </label>
         </div>
         <div class="infoDiv" id="infoDivNhaHieuBo">
             <div class="toolbar">

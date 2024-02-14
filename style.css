@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://unpkg.com/leaflet/dist/leaflet.css");
 
 *{
   font-family: 'Roboto';
@@ -148,3 +149,73 @@ body, html {
   left: 40px;
 }
 
+label {
+  width:40px;
+  height:20px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 20px;
+  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+
+.main-content .language-toggle-box {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  z-index: 2;
+}
+
+label:after {
+  content: "";
+  width:18px;
+  height: 18px;
+  position: absolute;
+  top:1px;
+  left:1px;
+  background: linear-gradient(180deg,#ffcc89,#d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + label:after {
+  left:39px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg,#777,#807878);
+}
+label, label:after {
+  transition: 0.4s
+}
+
+label:active:after{ 
+  width: 26px; 
+}
+
+label img {
+  position: absolute;
+  width: 12px;
+  top:4px;
+  z-index: 100;
+}
+label img.vi {
+  left:4px;
+  fill:#fff;
+  transition: 0.3s;
+}
+label img.en {
+  left:24px;
+  fill:#7e7e7e;
+  transition: 0.3s;
+}
+input:checked + label img.vi {
+  fill:#7e7e7e;
+}
+input:checked + label img.en {
+  fill:#fff;
+}

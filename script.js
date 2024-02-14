@@ -1674,18 +1674,17 @@ function toggleLanguage() {
     updateContentLanguage();
 }
 
-var btn = document.getElementById('btn')
+const languageToggle = document.getElementById('language-toggle');
+const contentVN = document.querySelector('.contentVN');
+const contentEnglish = document.querySelector('.contentEnglish');
 
-function changeToVi() {
-    btn.style.left = '0px'
-    document.querySelector('.contentVN').style.display = 'block';
-    document.querySelector('.contentEnglish').style.display = 'none';
-}
-
-function changeToEn() {
-  btn.style.left = '30px'
-  document.querySelector('.contentVN').style.display = 'none';
-  document.querySelector('.contentEnglish').style.display = 'block';
-}
-
+languageToggle.addEventListener('change', function() {
+  if (this.checked) {
+    contentVN.style.display = 'none';
+    contentEnglish.style.display = 'block';
+  } else {
+    contentVN.style.display = 'block';
+    contentEnglish.style.display = 'none';
+  }
+});
 
