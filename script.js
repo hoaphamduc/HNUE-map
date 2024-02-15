@@ -1741,13 +1741,15 @@ burger.addEventListener('click', function() {
 
 function toggleSupportDiv() {
   var supportDiv = document.getElementById("support-div");
+  var computedStyle = window.getComputedStyle(supportDiv);
 
-  if (supportDiv.style.display === "none") {
-      supportDiv.style.display = "block";
+  if (computedStyle.display === "none") {
+    supportDiv.style.display = "block";
   } else {
-      supportDiv.style.display = "none";
+    supportDiv.style.display = "none";
   }
 }
+
 
 function hideSupportDiv() {
   var supportDiv = document.getElementById("support-div");
@@ -1756,13 +1758,15 @@ function hideSupportDiv() {
 
 function toggleDonateDiv() {
   var donateDiv = document.getElementById("donate-div");
+  var computedStyle = window.getComputedStyle(donateDiv);
 
-  if (donateDiv.style.display === "none") {
+  if (computedStyle.display === "none") {
     donateDiv.style.display = "block";
   } else {
     donateDiv.style.display = "none";
   }
 }
+
 
 function hideDonateDiv() {
   var donateDiv = document.getElementById("donate-div");
