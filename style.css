@@ -81,6 +81,14 @@ body, html {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
 }
 
+.img-demo {
+  width: 80%; 
+  margin-top: 20px; 
+  margin-left: 10%; 
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+
 #support-div {
   position: absolute;
   width: 100%;
@@ -211,7 +219,7 @@ label {
 .main-content .language-toggle-box {
   position: absolute;
   top: -18px;
-  right: 20px;
+  right: 10px;
   z-index: 2;
 }
 

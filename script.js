@@ -1,3 +1,30 @@
+// // Chặn việc mở DevTools bằng phím tắt
+// window.addEventListener('keydown', function (event) {
+//   if (event.keyCode == 123) { // 123 là mã phím tắt cho DevTools trên nhiều trình duyệt
+//     event.preventDefault();
+//   }
+// });
+// // Chặn việc mở DevTools bằng phím tắt và tổ hợp phím
+// window.addEventListener('keydown', function (event) {
+//   // Kiểm tra xem người dùng có nhấn tổ hợp phím tắt DevTools không
+//   if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || // Ctrl+Shift+I
+//       (event.ctrlKey && event.shiftKey && event.keyCode == 74) || // Ctrl+Shift+J
+//       (event.ctrlKey && event.keyCode == 85) || // Ctrl+U
+//       (event.ctrlKey && event.shiftKey && event.keyCode == 67) || // Ctrl+Shift+C
+//       (event.ctrlKey && event.keyCode == 83)) { // Ctrl+S
+//     event.preventDefault();
+//   }
+// });
+
+
+// // Chặn việc mở DevTools bằng chuột phải
+// window.addEventListener('contextmenu', function (event) {
+//   event.preventDefault();
+//   console.log('DevTools đã bị chặn.');
+// });
+
+
+
 var mymap = L.map('map', {
   zoomControl: false 
 }).setView([21.037138, 105.783182], 13);
@@ -25,42 +52,37 @@ var zoomControl = L.control.zoom({
 
 zoomControl.addTo(mymap);
 
-// // Chặn việc mở DevTools bằng phím tắt
-// window.addEventListener('keydown', function (event) {
-//   if (event.keyCode == 123) { // 123 là mã phím tắt cho DevTools trên nhiều trình duyệt
-//     event.preventDefault();
-//   }
-// });
-// // Chặn việc mở DevTools bằng phím tắt và tổ hợp phím
-// window.addEventListener('keydown', function (event) {
-//   // Kiểm tra xem người dùng có nhấn tổ hợp phím tắt DevTools không
-//   if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || // Ctrl+Shift+I
-//       (event.ctrlKey && event.shiftKey && event.keyCode == 74) || // Ctrl+Shift+J
-//       (event.ctrlKey && event.keyCode == 85) || // Ctrl+U
-//       (event.ctrlKey && event.shiftKey && event.keyCode == 67) || // Ctrl+Shift+C
-//       (event.ctrlKey && event.keyCode == 83)) { // Ctrl+S
-//     event.preventDefault();
-//   }
-// });
 
-
-// // Chặn việc mở DevTools bằng chuột phải
-// window.addEventListener('contextmenu', function (event) {
-//   event.preventDefault();
-//   console.log('DevTools đã bị chặn.');
-// });
 
 
 if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function (position) {
+  var marker;
+
+  // Hàm để cập nhật vị trí trên bản đồ
+  function updateMap(position) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
-    L.marker([lat, lon]).addTo(mymap)
-      .bindPopup('Your Location').openPopup();
-  }, function (error) {
-    console.log('Error getting geolocation:', error.message);
-  });
-  } else {
+
+    // Kiểm tra xem marker đã được tạo hay chưa
+    if (marker) {
+      marker.setLatLng([lat, lon]).update();
+    } else {
+      marker = L.marker([lat, lon]).addTo(mymap).openPopup();
+    }
+
+  }
+
+  // Sử dụng hàm watchPosition để liên tục theo dõi vị trí
+  var watchId = navigator.geolocation.watchPosition(
+    function (position) {
+      updateMap(position);
+    },
+    function (error) {
+      console.log('Error getting geolocation:', error.message);
+    }
+  );
+
+} else {
   console.log('Geolocation is not supported by this browser.');
 }
 
