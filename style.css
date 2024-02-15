@@ -380,7 +380,7 @@ input:checked + label img.en {
   height: 60px;
   background-color: #fff;
   border-radius: 0;
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
   margin: 0;
   padding: 0;
@@ -425,7 +425,7 @@ input:checked + label img.en {
 }
 
 .main-content .menu #menu-content #support-us span {
-  font-size: 25px;
+  font-size: 20px;
   pointer-events: none;
 }
 
@@ -449,7 +449,7 @@ input:checked + label img.en {
 }
 
 .main-content .menu #menu-content #donate-us span {
-  font-size: 25px;
+  font-size: 20px;
   pointer-events: none;
 }
 
