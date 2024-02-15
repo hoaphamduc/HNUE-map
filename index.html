@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HNUE map</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/png" href="Logo Đại học Sư phạm Hà Nội - HNUE.png">
 </head>
@@ -21,8 +23,68 @@
             <div class="menu-btn__burger"></div>
         </button>
         <div class="menu" id="menu">
-            Meoboefnenfoefnoef
+            <img src="source-img/hnue.jpg" id="hnue-img">
+            <img src="source-img/logo-fit.png" id="fit-logo">
+            <div id="menu-content">
+                <div class="dropdown">
+                    <button type="button" class="custom-dropdown-toggle" id="introduce" data-bs-toggle="dropdown">
+                        <!-- <img src="source-img/icon-info.svg" id="introduce-icon"> -->
+                        <span class="contentVN">Giới thiệu</span>
+                        <span class="contentEnglish">Introduce</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li ><a class="dropdown-item contentVN" href="#">Giới thiệu về Trường Đại học Sư phạm Hà Nội</a></li>
+                        <li><a class="dropdown-item contentEnglish" href="#">Introducing Hanoi University of Education</a></li>
+                        <li><a class="dropdown-item contentVN" href="#">Giới thiệu về sản phẩm của chúng tôi - HNUE map</a></li>
+                        <li><a class="dropdown-item contentEnglish" href="#">Introducing our product - HNUE map</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="custom-dropdown-toggle" id="introduce" data-bs-toggle="dropdown">
+                        <span class="contentVN">Các trang thông tin</span>
+                        <span class="contentEnglish">Information pages</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li ><a class="dropdown-item contentVN" href="https://hnue.edu.vn/">Trang chủ</a></li>
+                        <li><a class="dropdown-item contentEnglish" href="https://hnue.edu.vn/">Home page</a></li>
+                        <li><a class="dropdown-item contentVN" href="https://tuyensinh.hnue.edu.vn/">Trang tuyển sinh</a></li>
+                        <li><a class="dropdown-item contentEnglish" href="https://tuyensinh.hnue.edu.vn/">Admissions page</a></li>
+                        <li ><a class="dropdown-item contentVN" href="https://tinchi.hnue.edu.vn/">Cổng đăng kí học phần</a></li>
+                        <li><a class="dropdown-item contentEnglish" href="https://tinchi.hnue.edu.vn/">Course registration portal</a></li>
+                        <li ><a class="dropdown-item contentVN" href="https://dtdh.hnue.edu.vn/">Cổng thông tin đào tạo</a></li>
+                        <li><a class="dropdown-item contentEnglish" href="https://dtdh.hnue.edu.vn/">University training information portal</a></li>
+                    </ul>
+                </div>
+                <div id="support-us">
+                    <button id="support" onclick="toggleSupportDiv()">
+                        <span class="menu-text contentVN">Góp ý với chúng tôi</span>
+                        <span class="menu-text contentEnglish">Give us your feedback</span>
+                    </button>
+                </div>
+                <div id="donate-us">
+                    <button id="donate" onclick="toggleDonateDiv()">
+                        <span class="menu-text contentVN">Ủng hộ chúng tôi</span>
+                        <span class="menu-text contentEnglish">Donate us</span>
+                    </button>
+                </div>
+            </div>
         </div>
+
+        <div id="support-div">
+            <button class="close-div" onclick="hideSupportDiv()"></button>
+            <span class="big-text contentVN">Góp ý với chúng tôi thông qua</span>
+            <span class="big-text contentEnglish">Give us your feedback via</span>
+            <div id="email-to-us">
+                <button id="send-mail" onclick="composeEmail()"></button>
+                <span id="my-mail">Email: hoaphamduc2399@gmail.com</span>
+            </div>
+        </div>
+
+        <div id="donate-div">
+            <button class="close-div" onclick="hideDonateDiv()"></button>
+            <img src="source-img/donate.png" style="width: 250px;">
+        </div>
+
         <div class="infoDiv" id="infoDivNhaHieuBo">
             <div class="toolbar">
                 <button class="direct-btn" onclick="openGoogleMapsForNhaHieuBo()"></button>

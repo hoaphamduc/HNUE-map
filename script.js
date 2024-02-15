@@ -25,6 +25,31 @@ var zoomControl = L.control.zoom({
 
 zoomControl.addTo(mymap);
 
+// // Chặn việc mở DevTools bằng phím tắt
+// window.addEventListener('keydown', function (event) {
+//   if (event.keyCode == 123) { // 123 là mã phím tắt cho DevTools trên nhiều trình duyệt
+//     event.preventDefault();
+//   }
+// });
+// // Chặn việc mở DevTools bằng phím tắt và tổ hợp phím
+// window.addEventListener('keydown', function (event) {
+//   // Kiểm tra xem người dùng có nhấn tổ hợp phím tắt DevTools không
+//   if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || // Ctrl+Shift+I
+//       (event.ctrlKey && event.shiftKey && event.keyCode == 74) || // Ctrl+Shift+J
+//       (event.ctrlKey && event.keyCode == 85) || // Ctrl+U
+//       (event.ctrlKey && event.shiftKey && event.keyCode == 67) || // Ctrl+Shift+C
+//       (event.ctrlKey && event.keyCode == 83)) { // Ctrl+S
+//     event.preventDefault();
+//   }
+// });
+
+
+// // Chặn việc mở DevTools bằng chuột phải
+// window.addEventListener('contextmenu', function (event) {
+//   event.preventDefault();
+//   console.log('DevTools đã bị chặn.');
+// });
+
 
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(function (position) {
@@ -1675,18 +1700,21 @@ function toggleLanguage() {
 }
 
 const languageToggle = document.getElementById('language-toggle');
-const contentVN = document.querySelector('.contentVN');
-const contentEnglish = document.querySelector('.contentEnglish');
+const contentVN = document.querySelectorAll('.contentVN');
+const contentEnglish = document.querySelectorAll('.contentEnglish');
 
 languageToggle.addEventListener('change', function() {
-  if (this.checked) {
-    contentVN.style.display = 'none';
-    contentEnglish.style.display = 'block';
-  } else {
-    contentVN.style.display = 'block';
-    contentEnglish.style.display = 'none';
-  }
+  const isChecked = this.checked;
+
+  contentVN.forEach(item => {
+    item.style.display = isChecked ? 'none' : 'block';
+  });
+
+  contentEnglish.forEach(item => {
+    item.style.display = isChecked ? 'block' : 'none';
+  });
 });
+
 
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
@@ -1710,5 +1738,48 @@ burger.addEventListener('click', function() {
   // Toggle giá trị của thuộc tính display
   menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
 });
+
+function toggleSupportDiv() {
+  var supportDiv = document.getElementById("support-div");
+
+  if (supportDiv.style.display === "none") {
+      supportDiv.style.display = "block";
+  } else {
+      supportDiv.style.display = "none";
+  }
+}
+
+function hideSupportDiv() {
+  var supportDiv = document.getElementById("support-div");
+  supportDiv.style.display = "none";
+}
+
+function toggleDonateDiv() {
+  var donateDiv = document.getElementById("donate-div");
+
+  if (donateDiv.style.display === "none") {
+    donateDiv.style.display = "block";
+  } else {
+    donateDiv.style.display = "none";
+  }
+}
+
+function hideDonateDiv() {
+  var donateDiv = document.getElementById("donate-div");
+  donateDiv.style.display = "none";
+}
+
+
+function composeEmail() {
+  var emailAddress = "hoaphamduc2399@gmail.com";
+  var subject = "Hỗ trợ về HNUE map"; 
+  var body = ""; 
+
+  var mailtoLink = "mailto:" + encodeURIComponent(emailAddress) +
+                   "?subject=" + encodeURIComponent(subject) +
+                   "&body=" + encodeURIComponent(body);
+
+  window.location.href = mailtoLink;
+}
 
 
