@@ -108,24 +108,6 @@ if (navigator.permissions) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Get the necessary elements
-  const sidebar = document.querySelector('.sidebar');
-  const btn = document.getElementById('btn');
-  const homeContent = document.querySelector('.home_content');
-
-  // Add click event listener to the button
-  btn.addEventListener('click', function () {
-      // Toggle the 'thut' class on the sidebar
-      sidebar.classList.toggle('thut');
-
-      // Toggle the width and left position of homeContent
-      homeContent.classList.toggle('thut');
-
-      // You may want to add more styling adjustments or animations as needed
-  });
-});
-
 // Lấy tọa độ khi click
 mymap.on('click', function (e) {
   var lat = e.latlng.lat;
@@ -1775,6 +1757,54 @@ function openGoogleMapsForA12() {
 
   window.open(googleMapsUrl, '_blank');
 }
+
+// Info Hội trường 11.10
+var HT1110 = L.polygon([
+  [21.03849865754228, 105.78446209430695],
+  [21.03848863338883, 105.78488588333131],
+  [21.037796965172358, 105.78486979007722],
+  [21.03777691677036, 105.78515946865082],
+  [21.037631565775207, 105.78515946865082],
+  [21.03763657788085, 105.78443527221681]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDiv1110 = document.getElementById('infoDiv1110');
+
+HT1110.on('click', function () {
+  document.getElementById('infoDiv1110').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDiv1110');
+
+  closeButton.addEventListener('click', function () {
+    var infoDiv1110 = document.getElementById('infoDiv1110');
+    infoDiv1110.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!HT1110.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDiv1110').style.display = 'none';
+  }
+});
+
+function openGoogleMapsFor1110() {
+  var latitude = 21.03786212246022; 
+  var longitude = 105.78466057777405; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// --------------------------------------------------------------------------------------- //
 
 let currentLanguage = 'vi';
 

@@ -22,6 +22,7 @@ body, html {
     height: 100%;
     position: relative;
     z-index: 1;
+    cursor: pointer;
 }
 
 .main-content .button-box {
@@ -190,7 +191,33 @@ body, html {
   cursor: pointer;
   position: absolute;
   top: 10px;
-  left: 15px;
+  left: 95px;
+}
+
+.infoDiv .toolbar .tim-duong {
+  font-size: 15px; 
+  color: #000; 
+  font-weight: bold;
+  left: 15px; 
+  position: absolute; 
+  top: 16px;
+}
+
+.infoDiv .toolbar .dong-gop {
+  font-size: 15px; 
+  color: #000; 
+  font-weight: bold;
+  left: 155px; 
+  position: absolute; 
+  top: 16px;
+}
+
+.infoDiv .toolbar .send-feedback {
+  height: 35px; 
+  position: absolute; 
+  top: 10px; 
+  left: 230px;
+  cursor: pointer;
 }
 
 .infoDiv .content {
