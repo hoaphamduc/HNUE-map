@@ -143,9 +143,11 @@ function toggleImageBorderAndMusic() {
   if (musicImage.src.endsWith("muted.png")) {
     musicImage.src = "source-img/music.png";
     playBackgroundMusic();
+    musicImage.classList.add("scale-animation");
   } else {
     musicImage.src = "source-img/muted.png";
     pauseBackgroundMusic();
+    musicImage.classList.remove("scale-animation");
   }
 
   // Kiểm tra border và thay đổi nó
@@ -159,7 +161,7 @@ function toggleImageBorderAndMusic() {
 function playBackgroundMusic() {
   backgroundMusic.play();
   isMusicPlaying = true;
-  backgroundMusic.volume = 0.1;
+  backgroundMusic.volume = 1;
 }
 
 function pauseBackgroundMusic() {
@@ -681,19 +683,12 @@ function openGoogleMapsForC3() {
 // Info nhà D1, D2, D4
 
 var nhaD124 = L.polygon([
-  [21.03816183790122, 105.78381415528476],
-  [21.03815183985435, 105.78391078856843],
-  [21.03793188265335, 105.78390005153692],
-  [21.03792688362228, 105.78416310880908],
-  [21.03815183985435, 105.78417384584058],
-  [21.03815183985435, 105.78422216248238],
-  [21.038141841806812, 105.78422216248238],
-  [21.03813684278278, 105.78426511060844],
-  [21.037916885559632, 105.7842597420927],
-  [21.037881892335104, 105.78421679396665],
-  [21.037876893302357, 105.78437248092365],
-  [21.037801907791014, 105.78437248092365],
-  [21.03781690489631, 105.78380878676901]
+  [21.038152456191458, 105.78381836414339],
+  [21.03814243201535, 105.78417778015138],
+  [21.038127395749942, 105.78426361083986],
+  [21.038122383661133, 105.78437626361848],
+  [21.037786573326926, 105.78437089920045],
+  [21.037806621726332, 105.78380763530731]
 
 ], {
   opacity: 0,        
@@ -724,8 +719,8 @@ mymap.on('click', function (e) {
 });
 
 function openGoogleMapsForD124() {
-  var latitude = 21.038050484637264; 
-  var longitude = 105.78376597386799; 
+  var latitude = 21.03804219021729; 
+  var longitude = 105.78404903411867; 
 
   var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
 

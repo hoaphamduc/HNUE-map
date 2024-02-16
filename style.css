@@ -58,6 +58,25 @@ body, html {
   transition: .7s;
 }
 
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+  }
+}
+
+/* Áp dụng keyframes vào thẻ img khi có class "scale-animation" */
+#music.scale-animation {
+  animation: scaleAnimation 0.5s infinite; /* Lặp vô hạn sau mỗi 0.5s */
+}
 
 .contentEnglish {
   display: none;
