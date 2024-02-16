@@ -55,36 +55,58 @@ zoomControl.addTo(mymap);
 
 
 
-if (navigator.geolocation) {
-  var marker;
+if (navigator.permissions) {
+  navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
+    if (result.state === 'granted') {
+      // Đã có quyền truy cập vị trí, thực hiện các hành động cần thiết ở đây
 
-  // Hàm để cập nhật vị trí trên bản đồ
-  function updateMap(position) {
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
+      var marker;
 
-    // Kiểm tra xem marker đã được tạo hay chưa
-    if (marker) {
-      marker.setLatLng([lat, lon]).update();
-    } else {
-      marker = L.marker([lat, lon]).addTo(mymap).openPopup();
+      // Hàm để cập nhật vị trí trên bản đồ
+      function updateMap(position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+
+        // Kiểm tra xem marker đã được tạo hay chưa
+        if (marker) {
+          marker.setLatLng([lat, lon]).update();
+        } else {
+          marker = L.marker([lat, lon]).addTo(mymap).openPopup();
+        }
+      }
+
+      // Sử dụng hàm watchPosition để liên tục theo dõi vị trí
+      var watchId = navigator.geolocation.watchPosition(
+        function (position) {
+          updateMap(position);
+        },
+        function (error) {
+          console.log('Error getting geolocation:', error.message);
+        }
+      );
+
+    } else if (result.state === 'prompt') {
+      // Chưa có quyền truy cập vị trí, hiển thị cửa sổ yêu cầu quyền
+      navigator.geolocation.getCurrentPosition(
+        function (position) {
+          // Lưu trạng thái đã được cấp quyền
+          navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
+            if (result.state === 'granted') {
+              // Thực hiện các hành động cần thiết khi đã được cấp quyền
+              updateMap(position);
+            }
+          });
+        },
+        function (error) {
+          console.log('Error getting geolocation:', error.message);
+        }
+      );
     }
-
-  }
-
-  // Sử dụng hàm watchPosition để liên tục theo dõi vị trí
-  var watchId = navigator.geolocation.watchPosition(
-    function (position) {
-      updateMap(position);
-    },
-    function (error) {
-      console.log('Error getting geolocation:', error.message);
-    }
-  );
-
+  });
 } else {
   console.log('Geolocation is not supported by this browser.');
 }
+
 
 document.addEventListener('DOMContentLoaded', function () {
   // Get the necessary elements
