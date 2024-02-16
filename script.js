@@ -133,6 +133,51 @@ mymap.on('click', function (e) {
   console.log('Latitude: ' + lat + ', Longitude: ' + lng);
 });
 
+var isMusicPlaying = false;
+var backgroundMusic = document.getElementById("backgroundMusic");
+
+function toggleImageBorderAndMusic() {
+  var musicImage = document.getElementById("music");
+
+  // Kiểm tra src của hình ảnh và thay đổi nó
+  if (musicImage.src.endsWith("muted.png")) {
+    musicImage.src = "source-img/music.png";
+    playBackgroundMusic();
+  } else {
+    musicImage.src = "source-img/muted.png";
+    pauseBackgroundMusic();
+  }
+
+  // Kiểm tra border và thay đổi nó
+  if (musicImage.style.border === "3px solid red") {
+    musicImage.style.border = "3px solid #000";
+  } else {
+    musicImage.style.border = "3px solid red";
+  }
+}
+
+function playBackgroundMusic() {
+  backgroundMusic.play();
+  isMusicPlaying = true;
+  backgroundMusic.volume = 0.1;
+}
+
+function pauseBackgroundMusic() {
+  backgroundMusic.pause();
+  isMusicPlaying = false;
+}
+
+// Bắt sự kiện nhấn phím #music lần đầu tiên
+document.getElementById("music").addEventListener("click", function() {
+  if (!isMusicPlaying) {
+    pauseBackgroundMusic();
+  } else {
+    playBackgroundMusic();
+  }
+});
+
+
+
 // Info nhà hiệu bộ
 
 var nhahieubo = L.polygon([
