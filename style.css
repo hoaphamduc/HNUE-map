@@ -265,8 +265,8 @@ label {
 
 .main-content .language-toggle-box {
   position: absolute;
-  top: -17px;
-  right: 80px;
+  top: -18px;
+  right: 10px;
   z-index: 2;
 }
 
