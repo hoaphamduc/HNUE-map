@@ -87,8 +87,8 @@ body, html {
   position: absolute;
   width: 80%;
   height: 80%;
-  max-width: 600px;
-  max-height: 400px;
+  max-width: 1000px;
+  max-height: 600px;
   z-index: 1000; 
   display: none;
   padding: 15px;
@@ -191,7 +191,7 @@ body, html {
   cursor: pointer;
   position: absolute;
   top: 10px;
-  left: 95px;
+  left: 115px;
 }
 
 .infoDiv .toolbar .tim-duong {
@@ -207,7 +207,7 @@ body, html {
   font-size: 15px; 
   color: #000; 
   font-weight: bold;
-  left: 155px; 
+  left: 40%; 
   position: absolute; 
   top: 16px;
 }
@@ -216,7 +216,7 @@ body, html {
   height: 35px; 
   position: absolute; 
   top: 10px; 
-  left: 230px;
+  left: calc(40% + 100px);
   cursor: pointer;
 }
 
@@ -546,7 +546,7 @@ input:checked + label img.en {
   bottom: 5px;
 }
 
-@media (max-width: 425px){
+@media (max-width: 500px){
   .infoDiv {
     height: 60%;
     width: 96%;
