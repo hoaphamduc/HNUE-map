@@ -86,9 +86,9 @@ body, html {
 .infoDiv {
   position: absolute;
   width: 80%;
-  height: 60%;
+  height: 80%;
   max-width: 600px;
-  max-height: 500px;
+  max-height: 400px;
   z-index: 1000; 
   display: none;
   padding: 15px;
@@ -544,4 +544,28 @@ input:checked + label img.en {
   font-size: 20px;
   left: 55px;
   bottom: 5px;
+}
+
+@media (max-width: 425px){
+  .infoDiv {
+    height: 60%;
+    width: 96%;
+  }
+  .infoDiv .toolbar {
+    height: 100px;
+  }
+  .infoDiv .content {
+    margin-top: 90px;
+  }
+  .infoDiv .toolbar .dong-gop {
+    left: 15px;
+    top: 66px;
+  }
+  .infoDiv .toolbar .direct-btn {
+    left: 120px;
+  }
+  .infoDiv .toolbar .send-feedback {
+    top: 60px;
+    left: 120px;
+  }
 }
