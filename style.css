@@ -86,7 +86,7 @@ body, html {
 .infoDiv {
   position: absolute;
   width: 80%;
-  height: 80%;
+  height: 60%;
   max-width: 600px;
   max-height: 500px;
   z-index: 1000; 
