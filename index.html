@@ -16,7 +16,8 @@
 <body>
     <div class="main-content">
         <div id="map"></div>
-
+        
+        <!-- Menu -->
         <button class="menu-btn" id="menu-btn__burger">
             <div class="menu-btn__burger"></div>
         </button>
@@ -73,6 +74,7 @@
             </div>
         </div>
 
+        <!-- Hộp thông báo -->
         <div id="support-div">
             <button class="close-div" onclick="hideSupportDiv()"></button>
             <span class="big-text contentVN">Góp ý với chúng tôi thông qua</span>
@@ -88,6 +90,7 @@
             <img src="source-img/donate.png" style="width: 250px;">
         </div>
 
+        <!-- Button đổi ngôn ngữ -->
         <div class="language-toggle-box">
             <input type="checkbox" id="language-toggle"/>
             <label for="language-toggle">
@@ -96,6 +99,7 @@
             </label>
         </div>
 
+        <!-- Nhạc nền -->
         <img id="music" src="source-img/muted.png" onclick="toggleImageBorderAndMusic()" style="position: absolute; cursor: pointer; top: 60px; right: 10px; width: 54px; height: 54px; z-index: 10000; border-radius: 50%; border: 3px solid red;">
         <audio id="backgroundMusic" loop>
             <source src="sound/ciu.mp3" type="audio/mp3">
@@ -1317,7 +1321,29 @@
 
 
     </div>
-
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCRD_Jsz7rBhGf2B-oZ4wniLAp8QrglFTQ",
+          authDomain: "hnue-map-42e10.firebaseapp.com",
+          projectId: "hnue-map-42e10",
+          storageBucket: "hnue-map-42e10.appspot.com",
+          messagingSenderId: "18471638048",
+          appId: "1:18471638048:web:8f538cd825d504c5e49845",
+          measurementId: "G-Q43VE2X9Z1"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
