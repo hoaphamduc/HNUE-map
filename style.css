@@ -546,7 +546,7 @@ input:checked + label img.en {
   bottom: 5px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 650px){
   .infoDiv {
     height: 60%;
     width: 96%;

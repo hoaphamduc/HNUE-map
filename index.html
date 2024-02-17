@@ -14,20 +14,6 @@
 
         <div id="map"></div>
 
-        <div class="language-toggle-box">
-            <input type="checkbox" id="language-toggle"/>
-            <label for="language-toggle">
-                <img class="vi" src="source-img/Vi.png">
-                <img class="en" src="source-img/En.png">
-            </label>
-        </div>
-
-        <img id="music" src="source-img/muted.png" onclick="toggleImageBorderAndMusic()" style="position: absolute; cursor: pointer; top: 60px; right: 10px; width: 54px; height: 54px; z-index: 10000; border-radius: 50%; border: 3px solid red;">
-        <audio id="backgroundMusic" loop>
-            <source src="sound/ciu.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-
         <button class="menu-btn" id="menu-btn__burger">
             <div class="menu-btn__burger"></div>
         </button>
@@ -98,6 +84,20 @@
             <button class="close-div" onclick="hideDonateDiv()"></button>
             <img src="source-img/donate.png" style="width: 250px;">
         </div>
+
+        <div class="language-toggle-box">
+            <input type="checkbox" id="language-toggle"/>
+            <label for="language-toggle">
+                <img class="vi" src="source-img/Vi.png">
+                <img class="en" src="source-img/En.png">
+            </label>
+        </div>
+
+        <img id="music" src="source-img/muted.png" onclick="toggleImageBorderAndMusic()" style="position: absolute; cursor: pointer; top: 60px; right: 10px; width: 54px; height: 54px; z-index: 10000; border-radius: 50%; border: 3px solid red;">
+        <audio id="backgroundMusic" loop>
+            <source src="sound/ciu.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
 
 
         <!-- Main content -->
