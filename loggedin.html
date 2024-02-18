@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css"/>
+    <script src="update.js"  defer type="module"></script>
     <link rel="icon" type="image/png" href="Logo Đại học Sư phạm Hà Nội - HNUE.png">
 </head>
 
@@ -24,10 +25,12 @@
             <div class="menu-btn__burger"></div>
         </button>
 
-        <div id="google-login-btn">
-            <span class="contentVN login-text">Đăng nhập với</span>
-            <span class="contentEnglish login-text">&nbsp;&emsp;Login with</span>
-            <img src="source-img/google.svg">
+        <div id="google-login-div">
+            <span id="userName" style="font-size: 14px; text-align: center; font-weight: bold; width: 100px; height: 20px; overflow: hidden; position: absolute; top: 5px; left: 5px;"></span>
+            <p id="userEmail" style="display: none;"></p>
+            <img id="userProfilePicture" alt="Profile Picture">
+            <button class="contentVN" id="logout-btn">Đăng xuất</button>
+            <button class="contentEnglish" id="logout-btn-1">&nbsp;&nbsp;Logout</button>
         </div>
 
         <div class="menu" id="menu">

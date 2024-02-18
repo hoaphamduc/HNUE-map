@@ -1,1 +1,1931 @@
-var _0x1c06b0=_0x48be;(function(_0x59857f,_0x2a803a){var _0x4a7a43=_0x48be,_0x27e57b=_0x59857f();while(!![]){try{var _0x56ea1f=-parseInt(_0x4a7a43(0x178))/0x1+parseInt(_0x4a7a43(0x15e))/0x2*(parseInt(_0x4a7a43(0x148))/0x3)+-parseInt(_0x4a7a43(0x190))/0x4+parseInt(_0x4a7a43(0x177))/0x5*(-parseInt(_0x4a7a43(0x13c))/0x6)+-parseInt(_0x4a7a43(0x1ae))/0x7*(parseInt(_0x4a7a43(0x197))/0x8)+parseInt(_0x4a7a43(0x138))/0x9*(-parseInt(_0x4a7a43(0x174))/0xa)+parseInt(_0x4a7a43(0x1a7))/0xb*(parseInt(_0x4a7a43(0x161))/0xc);if(_0x56ea1f===_0x2a803a)break;else _0x27e57b['push'](_0x27e57b['shift']());}catch(_0x4eef23){_0x27e57b['push'](_0x27e57b['shift']());}}}(_0x4c9f,0xeb8f9));var mymap=L[_0x1c06b0(0x154)](_0x1c06b0(0x154),{'zoomControl':![]})[_0x1c06b0(0x1a1)]([21.037138,105.783182],0xd),maxBounds=L[_0x1c06b0(0x1b1)](L[_0x1c06b0(0x140)](21.036,105.780455),L[_0x1c06b0(0x140)](21.042185,105.786226));mymap[_0x1c06b0(0x129)](maxBounds),mymap['on'](_0x1c06b0(0x173),function(){var _0x5d77c7=_0x1c06b0;mymap[_0x5d77c7(0x19a)](maxBounds,{'animate':![]});}),L['tileLayer'](_0x1c06b0(0x186),{'attribution':'©\x20OpenStreetMap\x20contributors'})[_0x1c06b0(0x1ad)](mymap),mymap[_0x1c06b0(0x1a8)](maxBounds);var zoomControl=L[_0x1c06b0(0x1ac)][_0x1c06b0(0x184)]({'position':_0x1c06b0(0x195)});zoomControl[_0x1c06b0(0x1ad)](mymap);navigator[_0x1c06b0(0x13a)]?navigator[_0x1c06b0(0x13a)][_0x1c06b0(0x12f)]({'name':'geolocation'})[_0x1c06b0(0x191)](function(_0x402a4f){var _0x599d59=_0x1c06b0;if(_0x402a4f[_0x599d59(0x1c2)]===_0x599d59(0x143)){var _0x45264a;function _0xa998a2(_0x155e72){var _0x50d2a8=_0x599d59,_0x3f4c1f=_0x155e72[_0x50d2a8(0x139)][_0x50d2a8(0x1c5)],_0x5bdf2f=_0x155e72[_0x50d2a8(0x139)][_0x50d2a8(0x12d)];_0x45264a?_0x45264a[_0x50d2a8(0x1b2)]([_0x3f4c1f,_0x5bdf2f])[_0x50d2a8(0x1af)]():_0x45264a=L[_0x50d2a8(0x1bc)]([_0x3f4c1f,_0x5bdf2f])[_0x50d2a8(0x1ad)](mymap)['openPopup']();}var _0x40a950=navigator[_0x599d59(0x165)]['watchPosition'](function(_0xc67b03){_0xa998a2(_0xc67b03);},function(_0x49dd38){var _0x3890f0=_0x599d59;console[_0x3890f0(0x144)]('Error\x20getting\x20geolocation:',_0x49dd38['message']);});}else _0x402a4f[_0x599d59(0x1c2)]===_0x599d59(0x19c)&&navigator[_0x599d59(0x165)][_0x599d59(0x1ba)](function(_0xb0eed9){var _0x2f7d39=_0x599d59;navigator[_0x2f7d39(0x13a)][_0x2f7d39(0x12f)]({'name':_0x2f7d39(0x165)})[_0x2f7d39(0x191)](function(_0x55a050){var _0x164908=_0x2f7d39;_0x55a050[_0x164908(0x1c2)]==='granted'&&updateMap(_0xb0eed9);});},function(_0x75c506){var _0xaa7b64=_0x599d59;console[_0xaa7b64(0x144)](_0xaa7b64(0x151),_0x75c506['message']);});}):console['log'](_0x1c06b0(0x1b5));mymap['on'](_0x1c06b0(0x146),function(_0x1c2d04){var _0xf59209=_0x1c06b0,_0x4d0cd2=_0x1c2d04['latlng'][_0xf59209(0x17a)],_0x2f9d3f=_0x1c2d04[_0xf59209(0x145)][_0xf59209(0x1c8)];console[_0xf59209(0x144)]('Latitude:\x20'+_0x4d0cd2+_0xf59209(0x19f)+_0x2f9d3f);});var isMusicPlaying=![],backgroundMusic=document[_0x1c06b0(0x170)](_0x1c06b0(0x1b6));function toggleImageBorderAndMusic(){var _0x599177=_0x1c06b0,_0x5c5e00=document['getElementById'](_0x599177(0x1b0));_0x5c5e00[_0x599177(0x14c)]['endsWith']('muted.png')?(_0x5c5e00['src']=_0x599177(0x158),playBackgroundMusic(),_0x5c5e00[_0x599177(0x1b9)][_0x599177(0x13e)]('scale-animation')):(_0x5c5e00['src']=_0x599177(0x152),pauseBackgroundMusic(),_0x5c5e00[_0x599177(0x1b9)][_0x599177(0x17e)](_0x599177(0x128))),_0x5c5e00['style'][_0x599177(0x1be)]===_0x599177(0x18c)?_0x5c5e00['style'][_0x599177(0x1be)]='3px\x20solid\x20#000':_0x5c5e00[_0x599177(0x18e)][_0x599177(0x1be)]=_0x599177(0x18c);}function playBackgroundMusic(){var _0x35b0fd=_0x1c06b0;backgroundMusic[_0x35b0fd(0x17d)](),isMusicPlaying=!![],backgroundMusic[_0x35b0fd(0x1c6)]=0x1;}function pauseBackgroundMusic(){var _0x24181b=_0x1c06b0;backgroundMusic[_0x24181b(0x14f)](),isMusicPlaying=![];}document[_0x1c06b0(0x170)](_0x1c06b0(0x1b0))[_0x1c06b0(0x159)](_0x1c06b0(0x146),function(){!isMusicPlaying?pauseBackgroundMusic():playBackgroundMusic();});var nhahieubo=L[_0x1c06b0(0x188)]([[21.037616240499375,105.78370034694673],[21.037365634976485,105.7836949825287],[21.037390695547757,105.7829922437668],[21.037616240499375,105.78300297260286]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivNhaHieuBo=document['getElementById'](_0x1c06b0(0x135));nhahieubo['on']('click',function(){var _0x252404=_0x1c06b0;document[_0x252404(0x170)](_0x252404(0x135))[_0x252404(0x18e)][_0x252404(0x16d)]=_0x252404(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x418b7c=_0x1c06b0,_0x16a156=document[_0x418b7c(0x170)](_0x418b7c(0x14a));_0x16a156[_0x418b7c(0x159)]('click',function(){var _0x57043b=_0x418b7c,_0x4bf976=document[_0x57043b(0x170)](_0x57043b(0x135));_0x4bf976[_0x57043b(0x18e)][_0x57043b(0x16d)]=_0x57043b(0x19d);});}),mymap['on']('click',function(_0x4b0c27){var _0x4c057d=_0x1c06b0;!nhahieubo[_0x4c057d(0x180)]()['contains'](_0x4b0c27[_0x4c057d(0x145)])&&(document[_0x4c057d(0x170)](_0x4c057d(0x135))[_0x4c057d(0x18e)][_0x4c057d(0x16d)]=_0x4c057d(0x19d));});function openGoogleMapsForNhaHieuBo(){var _0x937549=_0x1c06b0,_0x161f85=21.037439688219646,_0x4f1641=105.78331516196478,_0x43437b=_0x937549(0x15c)+_0x161f85+','+_0x4f1641+'/';window[_0x937549(0x15f)](_0x43437b,_0x937549(0x16a));}var nhaA2=L['polygon']([[21.03953178666788,105.78532099596487],[21.03952178090288,105.785911193595],[21.03937669723494,105.78590582816199],[21.03940171167052,105.78532099596487]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivA2=document[_0x1c06b0(0x170)](_0x1c06b0(0x17f));nhaA2['on'](_0x1c06b0(0x146),function(){var _0x1950f4=_0x1c06b0;document[_0x1950f4(0x170)](_0x1950f4(0x17f))[_0x1950f4(0x18e)][_0x1950f4(0x16d)]=_0x1950f4(0x155);}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x145f54=_0x1c06b0,_0x3f27b4=document[_0x145f54(0x170)](_0x145f54(0x19b));_0x3f27b4[_0x145f54(0x159)](_0x145f54(0x146),function(){var _0x15184d=_0x145f54,_0x264b75=document[_0x15184d(0x170)](_0x15184d(0x17f));_0x264b75['style'][_0x15184d(0x16d)]=_0x15184d(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x17a6b4){var _0x1fb907=_0x1c06b0;!nhaA2['getBounds']()[_0x1fb907(0x15d)](_0x17a6b4[_0x1fb907(0x145)])&&(document[_0x1fb907(0x170)](_0x1fb907(0x17f))[_0x1fb907(0x18e)][_0x1fb907(0x16d)]=_0x1fb907(0x19d));});function openGoogleMapsForA2(){var _0x1ef804=_0x1c06b0,_0x31ab04=21.03945579822238,_0x2abdaf=105.7852989435196,_0x3f37dc=_0x1ef804(0x15c)+_0x31ab04+','+_0x2abdaf+'/';window[_0x1ef804(0x15f)](_0x3f37dc,_0x1ef804(0x16a));}var nhaA3=L[_0x1c06b0(0x188)]([[21.039881925527332,105.78533724552454],[21.039871919785867,105.78592207772165],[21.039731839334685,105.78591671228867],[21.039751850835778,105.78532651465854]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDivA3=document[_0x1c06b0(0x170)](_0x1c06b0(0x18d));nhaA3['on'](_0x1c06b0(0x146),function(){var _0x58ab89=_0x1c06b0;document['getElementById']('infoDivA3')[_0x58ab89(0x18e)][_0x58ab89(0x16d)]='block';}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x2cb9d0=_0x1c06b0,_0x29e708=document['getElementById'](_0x2cb9d0(0x14e));_0x29e708[_0x2cb9d0(0x159)](_0x2cb9d0(0x146),function(){var _0x44f8c6=_0x2cb9d0,_0x4e312b=document['getElementById'](_0x44f8c6(0x18d));_0x4e312b[_0x44f8c6(0x18e)][_0x44f8c6(0x16d)]=_0x44f8c6(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x136df1){var _0x34cc89=_0x1c06b0;!nhaA3['getBounds']()[_0x34cc89(0x15d)](_0x136df1[_0x34cc89(0x145)])&&(document[_0x34cc89(0x170)](_0x34cc89(0x18d))[_0x34cc89(0x18e)][_0x34cc89(0x16d)]=_0x34cc89(0x19d));});function openGoogleMapsForA3(){var _0x1fa03d=_0x1c06b0,_0x3add95=21.039801266375314,_0x5485a7=105.78532040119173,_0x1cc2a4=_0x1fa03d(0x15c)+_0x3add95+','+_0x5485a7+'/';window['open'](_0x1cc2a4,_0x1fa03d(0x16a));}var VTN=L[_0x1c06b0(0x188)]([[21.04015218965353,105.78533737645584],[21.040142183930207,105.78585245802392],[21.03988703775853,105.78583636172495],[21.039907049238757,105.78534810732182]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDivVTN=document[_0x1c06b0(0x170)](_0x1c06b0(0x162));VTN['on'](_0x1c06b0(0x146),function(){var _0x50c9cd=_0x1c06b0;document[_0x50c9cd(0x170)](_0x50c9cd(0x162))[_0x50c9cd(0x18e)][_0x50c9cd(0x16d)]=_0x50c9cd(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x46e0df=_0x1c06b0,_0x4e9f3d=document[_0x46e0df(0x170)](_0x46e0df(0x189));_0x4e9f3d['addEventListener'](_0x46e0df(0x146),function(){var _0xa2f6d=_0x46e0df,_0x9f19bd=document['getElementById'](_0xa2f6d(0x162));_0x9f19bd['style']['display']=_0xa2f6d(0x19d);});}),mymap['on']('click',function(_0x39115b){var _0x1eca6d=_0x1c06b0;!VTN['getBounds']()[_0x1eca6d(0x15d)](_0x39115b[_0x1eca6d(0x145)])&&(document[_0x1eca6d(0x170)](_0x1eca6d(0x162))[_0x1eca6d(0x18e)]['display']=_0x1eca6d(0x19d));});function openGoogleMapsForA3(){var _0x30c0f9=_0x1c06b0,_0x3d5a8b=21.040027118063747,_0x136e0c=105.78531054929083,_0xfec6ec=_0x30c0f9(0x15c)+_0x3d5a8b+','+_0x136e0c+'/';window[_0x30c0f9(0x15f)](_0xfec6ec,_0x30c0f9(0x16a));}var nhaA4=L[_0x1c06b0(0x188)]([[21.04020715081659,105.78534260283777],[21.040202147956858,105.78593816590086],[21.040332222255206,105.78593816590086],[21.040347230820792,105.78534796827078]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDivA4=document[_0x1c06b0(0x170)](_0x1c06b0(0x16e));nhaA4['on'](_0x1c06b0(0x146),function(){var _0x184544=_0x1c06b0;document[_0x184544(0x170)](_0x184544(0x16e))[_0x184544(0x18e)][_0x184544(0x16d)]=_0x184544(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x594ec4=_0x1c06b0,_0x360176=document[_0x594ec4(0x170)](_0x594ec4(0x168));_0x360176['addEventListener'](_0x594ec4(0x146),function(){var _0x32fed7=_0x594ec4,_0x130aa5=document[_0x32fed7(0x170)]('infoDivA4');_0x130aa5['style'][_0x32fed7(0x16d)]='none';});}),mymap['on'](_0x1c06b0(0x146),function(_0x54a973){var _0x1eab28=_0x1c06b0;!nhaA4[_0x1eab28(0x180)]()['contains'](_0x54a973[_0x1eab28(0x145)])&&(document[_0x1eab28(0x170)](_0x1eab28(0x16e))[_0x1eab28(0x18e)]['display']=_0x1eab28(0x19d));});function openGoogleMapsForA4(){var _0x1d5392=_0x1c06b0,_0x255f2a=21.040267185120243,_0x532b9d=105.78533187197176,_0x537095=_0x1d5392(0x15c)+_0x255f2a+','+_0x532b9d+'/';window[_0x1d5392(0x15f)](_0x537095,_0x1d5392(0x16a));}var nhaB1=L[_0x1c06b0(0x188)]([[21.03748926090835,105.78267064866736],[21.03748425795734,105.7829067277194],[21.037214098353235,105.7828959968534],[21.03723411019256,105.78265991780138]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivB1=document[_0x1c06b0(0x170)]('infoDivB1');nhaB1['on'](_0x1c06b0(0x146),function(){var _0x5737c2=_0x1c06b0;document[_0x5737c2(0x170)](_0x5737c2(0x17b))[_0x5737c2(0x18e)][_0x5737c2(0x16d)]='block';}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x1c7d2d=_0x1c06b0,_0x5a31ca=document['getElementById'](_0x1c7d2d(0x15b));_0x5a31ca[_0x1c7d2d(0x159)](_0x1c7d2d(0x146),function(){var _0x23371d=_0x1c7d2d,_0x33a137=document[_0x23371d(0x170)]('infoDivB1');_0x33a137[_0x23371d(0x18e)][_0x23371d(0x16d)]=_0x23371d(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x5589c8){var _0x314a43=_0x1c06b0;!nhaB1['getBounds']()[_0x314a43(0x15d)](_0x5589c8[_0x314a43(0x145)])&&(document[_0x314a43(0x170)](_0x314a43(0x17b))[_0x314a43(0x18e)]['display']=_0x314a43(0x19d));});function openGoogleMapsForB1(){var _0x1a49d7=_0x1c06b0,_0x3f29ce=21.03732416343628,_0x46f92c=105.78294965118342,_0x23c9c6=_0x1a49d7(0x15c)+_0x3f29ce+','+_0x46f92c+'/';window['open'](_0x23c9c6,'_blank');}var nhaB2=L[_0x1c06b0(0x188)]([[21.03762480129206,105.78222647207474],[21.037614771965373,105.78280090063745],[21.037494419992427,105.78279016365494],[21.037494419992427,105.78247879116304],[21.037233657050844,105.7824734226718],[21.037218613021057,105.78288679649728],[21.037098260728058,105.78288679649728],[21.03711330477001,105.78241436926815],[21.037218613021057,105.78241436926815],[21.037238671727103,105.78233921039079],[21.037499434659907,105.78233921039079],[21.03750444932722,105.78222110358348],[21.03762480129206,105.78222647207474]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivB2=document[_0x1c06b0(0x170)](_0x1c06b0(0x192));nhaB2['on'](_0x1c06b0(0x146),function(){var _0x260274=_0x1c06b0;document['getElementById'](_0x260274(0x192))['style']['display']=_0x260274(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x565ae2=_0x1c06b0,_0x4f1692=document[_0x565ae2(0x170)](_0x565ae2(0x15a));_0x4f1692[_0x565ae2(0x159)](_0x565ae2(0x146),function(){var _0x13fefd=_0x565ae2,_0x301229=document[_0x13fefd(0x170)](_0x13fefd(0x192));_0x301229[_0x13fefd(0x18e)][_0x13fefd(0x16d)]='none';});}),mymap['on'](_0x1c06b0(0x146),function(_0x38d806){var _0x16a1f3=_0x1c06b0;!nhaB2['getBounds']()['contains'](_0x38d806[_0x16a1f3(0x145)])&&(document[_0x16a1f3(0x170)]('infoDivB2')[_0x16a1f3(0x18e)][_0x16a1f3(0x16d)]=_0x16a1f3(0x19d));});function openGoogleMapsForB2(){var _0x5966e7=_0x1c06b0,_0x2187ca=21.037230376421423,_0x417e90=105.78290690593676,_0x50982c='https://www.google.com/maps/dir//'+_0x2187ca+','+_0x417e90+'/';window[_0x5966e7(0x15f)](_0x50982c,_0x5966e7(0x16a));}var nhaC1=L[_0x1c06b0(0x188)]([[21.03718441633168,105.78378189501747],[21.03718441633168,105.78401810971081],[21.037199413499152,105.78402884674239],[21.037199413499152,105.78405032080538],[21.03717941727555,105.78406105783692],[21.037174418219212,105.78425969291995],[21.03708443517676,105.78425969291995],[21.037089434236098,105.78377115798597]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivC1=document[_0x1c06b0(0x170)](_0x1c06b0(0x185));nhaC1['on'](_0x1c06b0(0x146),function(){var _0x418390=_0x1c06b0;document[_0x418390(0x170)](_0x418390(0x185))['style']['display']=_0x418390(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0xa3f459=_0x1c06b0,_0x35f713=document[_0xa3f459(0x170)]('closeinfoDivC1');_0x35f713['addEventListener'](_0xa3f459(0x146),function(){var _0xc73029=_0xa3f459,_0x32ac11=document['getElementById']('infoDivC1');_0x32ac11[_0xc73029(0x18e)][_0xc73029(0x16d)]=_0xc73029(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x4d6488){var _0x2ea129=_0x1c06b0;!nhaC1[_0x2ea129(0x180)]()['contains'](_0x4d6488[_0x2ea129(0x145)])&&(document[_0x2ea129(0x170)](_0x2ea129(0x185))[_0x2ea129(0x18e)][_0x2ea129(0x16d)]='none');});function openGoogleMapsForC1(){var _0x505163=_0x1c06b0,_0x3f65e6=21.037137948558595,_0xa5c654=105.78374855294989,_0x10624d=_0x505163(0x15c)+_0x3f65e6+','+_0xa5c654+'/';window[_0x505163(0x15f)](_0x10624d,_0x505163(0x16a));}var nhaC2=L[_0x1c06b0(0x188)]([[21.037189368522238,105.78418464024028],[21.037184369466246,105.78428664203969],[21.037404327770986,105.78428664203969],[21.037409326819585,105.78423832539787],[21.037439321107698,105.78423295688214],[21.037444320155153,105.78419000875603]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivC2=document[_0x1c06b0(0x170)](_0x1c06b0(0x12e));nhaC2['on'](_0x1c06b0(0x146),function(){var _0x26de1f=_0x1c06b0;document[_0x26de1f(0x170)](_0x26de1f(0x12e))[_0x26de1f(0x18e)][_0x26de1f(0x16d)]=_0x26de1f(0x155);}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x2df598=_0x1c06b0,_0x126dc1=document[_0x2df598(0x170)](_0x2df598(0x169));_0x126dc1[_0x2df598(0x159)](_0x2df598(0x146),function(){var _0x3a8b29=_0x2df598,_0x37537f=document['getElementById'](_0x3a8b29(0x12e));_0x37537f[_0x3a8b29(0x18e)][_0x3a8b29(0x16d)]='none';});}),mymap['on']('click',function(_0xa1e120){var _0x3288b5=_0x1c06b0;!nhaC2[_0x3288b5(0x180)]()['contains'](_0xa1e120[_0x3288b5(0x145)])&&(document[_0x3288b5(0x170)](_0x3288b5(0x12e))[_0x3288b5(0x18e)][_0x3288b5(0x16d)]=_0x3288b5(0x19d));});function openGoogleMapsForC2(){var _0x11c9ed=_0x1c06b0,_0x2db505=21.037137948558595,_0x50fb5c=105.78374855294989,_0x18b35b='https://www.google.com/maps/dir//'+_0x2db505+','+_0x50fb5c+'/';window[_0x11c9ed(0x15f)](_0x18b35b,_0x11c9ed(0x16a));}var nhaC3=L[_0x1c06b0(0x188)]([[21.037564789328982,105.78386784863781],[21.037554791242044,105.78444227982395],[21.037449811288603,105.7844369113082],[21.03746480842933,105.78386784863781]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivC3=document[_0x1c06b0(0x170)](_0x1c06b0(0x1c3));nhaC3['on']('click',function(){var _0x5699ca=_0x1c06b0;document[_0x5699ca(0x170)]('infoDivC3')[_0x5699ca(0x18e)]['display']='block';}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x3baf7e=_0x1c06b0,_0x1b7ff7=document[_0x3baf7e(0x170)](_0x3baf7e(0x141));_0x1b7ff7['addEventListener'](_0x3baf7e(0x146),function(){var _0x16ebbe=_0x3baf7e,_0x2ba9e5=document[_0x16ebbe(0x170)](_0x16ebbe(0x1c3));_0x2ba9e5[_0x16ebbe(0x18e)][_0x16ebbe(0x16d)]=_0x16ebbe(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x202a06){var _0x4b5a29=_0x1c06b0;!nhaC3[_0x4b5a29(0x180)]()[_0x4b5a29(0x15d)](_0x202a06[_0x4b5a29(0x145)])&&(document[_0x4b5a29(0x170)](_0x4b5a29(0x1c3))['style'][_0x4b5a29(0x16d)]=_0x4b5a29(0x19d));});function openGoogleMapsForC3(){var _0x199a9f=_0x1c06b0,_0x1d8d11=21.037494326242005,_0x10a96a=105.78374421706172,_0x83e847=_0x199a9f(0x15c)+_0x1d8d11+','+_0x10a96a+'/';window[_0x199a9f(0x15f)](_0x83e847,'_blank');}var nhaC4=L[_0x1c06b0(0x188)]([[21.03745498998619,105.78376600255208],[21.037449990939116,105.78395390060363],[21.03719503931591,105.7839431635721],[21.03719503931591,105.78388947841455],[21.037230032701817,105.78388947841455],[21.037240030810533,105.78374989700484]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivC4=document['getElementById'](_0x1c06b0(0x1c0));nhaC4['on'](_0x1c06b0(0x146),function(){var _0x40d63e=_0x1c06b0;document[_0x40d63e(0x170)](_0x40d63e(0x1c0))[_0x40d63e(0x18e)][_0x40d63e(0x16d)]='block';}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0xad60c1=_0x1c06b0,_0x22be9d=document[_0xad60c1(0x170)](_0xad60c1(0x19e));_0x22be9d[_0xad60c1(0x159)]('click',function(){var _0x44958a=_0xad60c1,_0x1bdb82=document['getElementById'](_0x44958a(0x1c0));_0x1bdb82[_0x44958a(0x18e)][_0x44958a(0x16d)]='none';});}),mymap['on'](_0x1c06b0(0x146),function(_0x7f3681){var _0x4454c6=_0x1c06b0;!nhaC4[_0x4454c6(0x180)]()[_0x4454c6(0x15d)](_0x7f3681[_0x4454c6(0x145)])&&(document[_0x4454c6(0x170)](_0x4454c6(0x1c0))[_0x4454c6(0x18e)][_0x4454c6(0x16d)]=_0x4454c6(0x19d));});function openGoogleMapsForC3(){var _0x559b6e=_0x1c06b0,_0x1c273b=21.037494326242005,_0x43f33d=105.78374421706172,_0x1785cf=_0x559b6e(0x15c)+_0x1c273b+','+_0x43f33d+'/';window[_0x559b6e(0x15f)](_0x1785cf,_0x559b6e(0x16a));}var nhaD124=L['polygon']([[21.038152456191458,105.78381836414339],[21.03814243201535,105.78417778015138],[21.038127395749942,105.78426361083986],[21.038122383661133,105.78437626361848],[21.037786573326926,105.78437089920045],[21.037806621726332,105.78380763530731]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDivD124=document[_0x1c06b0(0x170)](_0x1c06b0(0x1a9));nhaD124['on'](_0x1c06b0(0x146),function(){var _0x5646fe=_0x1c06b0;document['getElementById'](_0x5646fe(0x1a9))[_0x5646fe(0x18e)][_0x5646fe(0x16d)]=_0x5646fe(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x372f51=_0x1c06b0,_0x423189=document[_0x372f51(0x170)](_0x372f51(0x1a6));_0x423189[_0x372f51(0x159)]('click',function(){var _0x29b7e6=_0x372f51,_0x10dcba=document[_0x29b7e6(0x170)]('infoDivD124');_0x10dcba[_0x29b7e6(0x18e)][_0x29b7e6(0x16d)]=_0x29b7e6(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x388ead){var _0x160c98=_0x1c06b0;!nhaD124[_0x160c98(0x180)]()[_0x160c98(0x15d)](_0x388ead[_0x160c98(0x145)])&&(document[_0x160c98(0x170)]('infoDivD124')[_0x160c98(0x18e)][_0x160c98(0x16d)]='none');});function openGoogleMapsForD124(){var _0x1c1715=_0x1c06b0,_0x4a1291=21.03804219021729,_0x471df5=105.78404903411867,_0xd0672c=_0x1c1715(0x15c)+_0x4a1291+','+_0x471df5+'/';window[_0x1c1715(0x15f)](_0xd0672c,_0x1c1715(0x16a));}var nhaD3=L[_0x1c06b0(0x188)]([[21.038295046216756,105.78381429460755],[21.038290047197886,105.78391078856843],[21.038285110748518,105.78437679850833],[21.038155073624633,105.78437798876216],[21.038165071671305,105.78423303883669],[21.038175069717287,105.78423303883669],[21.038175069717287,105.78417398516333],[21.038185067762594,105.7841793536791],[21.038175069717287,105.78391629640696],[21.038185067762594,105.78381429460755]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivD3=document[_0x1c06b0(0x170)]('infoDivD3');nhaD3['on'](_0x1c06b0(0x146),function(){var _0x2b3a8f=_0x1c06b0;document[_0x2b3a8f(0x170)](_0x2b3a8f(0x12a))['style'][_0x2b3a8f(0x16d)]=_0x2b3a8f(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x5d9ab1=_0x1c06b0,_0x33e293=document[_0x5d9ab1(0x170)](_0x5d9ab1(0x131));_0x33e293[_0x5d9ab1(0x159)](_0x5d9ab1(0x146),function(){var _0x592a99=_0x5d9ab1,_0x3ec89c=document[_0x592a99(0x170)](_0x592a99(0x12a));_0x3ec89c[_0x592a99(0x18e)][_0x592a99(0x16d)]=_0x592a99(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x43104e){var _0x46d68f=_0x1c06b0;!nhaD3[_0x46d68f(0x180)]()[_0x46d68f(0x15d)](_0x43104e['latlng'])&&(document[_0x46d68f(0x170)](_0x46d68f(0x12a))[_0x46d68f(0x18e)][_0x46d68f(0x16d)]='none');});function openGoogleMapsForD3(){var _0x25f44e=_0x1c06b0,_0x162378=21.03818907480665,_0x351ab6=105.78376471996307,_0x332fb5=_0x25f44e(0x15c)+_0x162378+','+_0x351ab6+'/';window['open'](_0x332fb5,_0x25f44e(0x16a));}var nhaH8=L[_0x1c06b0(0x188)]([[21.038012666439183,105.78536948678588],[21.03800766741081,105.7856540181211],[21.037784626104546,105.78564312189428],[21.03778770999693,105.78536948678588]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivH8=document[_0x1c06b0(0x170)](_0x1c06b0(0x199));nhaH8['on']('click',function(){var _0x420b04=_0x1c06b0;document[_0x420b04(0x170)]('infoDivH8')[_0x420b04(0x18e)][_0x420b04(0x16d)]=_0x420b04(0x155);}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x3d79d3=_0x1c06b0,_0xb00ca5=document[_0x3d79d3(0x170)]('closeinfoDivH8');_0xb00ca5[_0x3d79d3(0x159)]('click',function(){var _0x42240d=_0x3d79d3,_0x5d379e=document[_0x42240d(0x170)](_0x42240d(0x199));_0x5d379e[_0x42240d(0x18e)][_0x42240d(0x16d)]=_0x42240d(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x402499){var _0x4f4066=_0x1c06b0;!nhaH8[_0x4f4066(0x180)]()[_0x4f4066(0x15d)](_0x402499['latlng'])&&(document[_0x4f4066(0x170)](_0x4f4066(0x199))[_0x4f4066(0x18e)][_0x4f4066(0x16d)]=_0x4f4066(0x19d));});function openGoogleMapsForH8(){var _0x172659=_0x1c06b0,_0x3653e3=21.03818907480665,_0x312913=105.78376471996307,_0x338dac=_0x172659(0x15c)+_0x3653e3+','+_0x312913+'/';window[_0x172659(0x15f)](_0x338dac,_0x172659(0x16a));}var nhaM=L['polygon']([[21.03759326046332,105.78455328941347],[21.037583246756526,105.78514873981476],[21.03698242311643,105.78513264656068],[21.036987429990113,105.78451573848726]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDivM1234=document[_0x1c06b0(0x170)](_0x1c06b0(0x198));nhaM['on'](_0x1c06b0(0x146),function(){var _0x4274d6=_0x1c06b0;document[_0x4274d6(0x170)](_0x4274d6(0x198))[_0x4274d6(0x18e)][_0x4274d6(0x16d)]=_0x4274d6(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x3ad7dd=_0x1c06b0,_0x26675b=document[_0x3ad7dd(0x170)](_0x3ad7dd(0x156));_0x26675b[_0x3ad7dd(0x159)](_0x3ad7dd(0x146),function(){var _0x464e31=_0x3ad7dd,_0x9e8844=document[_0x464e31(0x170)](_0x464e31(0x198));_0x9e8844[_0x464e31(0x18e)][_0x464e31(0x16d)]='none';});}),mymap['on'](_0x1c06b0(0x146),function(_0x324b87){var _0x1c0fc2=_0x1c06b0;!nhaM[_0x1c0fc2(0x180)]()[_0x1c0fc2(0x15d)](_0x324b87[_0x1c0fc2(0x145)])&&(document['getElementById']('infoDivM1234')['style'][_0x1c0fc2(0x16d)]='none');});function openGoogleMapsForM1234(){var _0x31d5b1=_0x1c06b0,_0x2adb1f=21.03725780091894,_0x59a0b2=105.78450500965118,_0x5a2ee4=_0x31d5b1(0x15c)+_0x2adb1f+','+_0x59a0b2+'/';window[_0x31d5b1(0x15f)](_0x5a2ee4,_0x31d5b1(0x16a));}var nhaN=L[_0x1c06b0(0x188)]([[21.036959747642673,105.78532818736727],[21.036939751386907,105.78591872410065],[21.036684798890498,105.78590798706915],[21.036699796108245,105.78531745033577]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivN=document[_0x1c06b0(0x170)](_0x1c06b0(0x12b));nhaN['on'](_0x1c06b0(0x146),function(){var _0x215c47=_0x1c06b0;document[_0x215c47(0x170)](_0x215c47(0x12b))['style'][_0x215c47(0x16d)]=_0x215c47(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x40650c=_0x1c06b0,_0x18d8bc=document[_0x40650c(0x170)](_0x40650c(0x182));_0x18d8bc[_0x40650c(0x159)](_0x40650c(0x146),function(){var _0x5b9642=_0x40650c,_0x530fb3=document['getElementById']('infoDivN');_0x530fb3[_0x5b9642(0x18e)][_0x5b9642(0x16d)]='none';});}),mymap['on']('click',function(_0x5889c9){var _0x684e97=_0x1c06b0;!nhaN[_0x684e97(0x180)]()[_0x684e97(0x15d)](_0x5889c9[_0x684e97(0x145)])&&(document[_0x684e97(0x170)](_0x684e97(0x12b))[_0x684e97(0x18e)]['display']=_0x684e97(0x19d));});function openGoogleMapsForN(){var _0x5e4449=_0x1c06b0,_0x55008b=21.0367247914678,_0x2d00c8=105.78547313729273,_0x1f0efb=_0x5e4449(0x15c)+_0x55008b+','+_0x2d00c8+'/';window[_0x5e4449(0x15f)](_0x1f0efb,_0x5e4449(0x16a));}var nhaK1=L[_0x1c06b0(0x188)]([[21.038970904199036,105.78275163171931],[21.03896090620645,105.7832079555588],[21.038730952192136,105.7832079555588],[21.038735951196223,105.78274626320356]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDivK1=document[_0x1c06b0(0x170)](_0x1c06b0(0x172));nhaK1['on'](_0x1c06b0(0x146),function(){var _0x241429=_0x1c06b0;document[_0x241429(0x170)](_0x241429(0x172))[_0x241429(0x18e)]['display']=_0x241429(0x155);}),document[_0x1c06b0(0x159)]('DOMContentLoaded',function(){var _0x5eb4a6=_0x1c06b0,_0x2e21ff=document[_0x5eb4a6(0x170)](_0x5eb4a6(0x167));_0x2e21ff[_0x5eb4a6(0x159)](_0x5eb4a6(0x146),function(){var _0x14a368=_0x5eb4a6,_0x756cb1=document[_0x14a368(0x170)](_0x14a368(0x172));_0x756cb1[_0x14a368(0x18e)][_0x14a368(0x16d)]=_0x14a368(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x2e75ee){var _0x12fddf=_0x1c06b0;!nhaK1[_0x12fddf(0x180)]()[_0x12fddf(0x15d)](_0x2e75ee[_0x12fddf(0x145)])&&(document[_0x12fddf(0x170)](_0x12fddf(0x172))[_0x12fddf(0x18e)][_0x12fddf(0x16d)]=_0x12fddf(0x19d));});function openGoogleMapsForK1(){var _0x3774c1=_0x1c06b0,_0x1254a1=21.038680962142024,_0x44fd66=105.78296637234962,_0xd98448=_0x3774c1(0x15c)+_0x1254a1+','+_0x44fd66+'/';window['open'](_0xd98448,'_blank');}var nhaK2=L['polygon']([[21.03920627080365,105.78298233037869],[21.03920627080365,105.78311654327264],[21.039076297053274,105.78311654327264],[21.039076297053274,105.78297696186294]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivK2=document[_0x1c06b0(0x170)](_0x1c06b0(0x160));nhaK2['on']('click',function(){var _0x515e78=_0x1c06b0;document[_0x515e78(0x170)](_0x515e78(0x160))['style'][_0x515e78(0x16d)]=_0x515e78(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0xf64350=_0x1c06b0,_0x1124ca=document['getElementById'](_0xf64350(0x1bd));_0x1124ca['addEventListener']('click',function(){var _0x544359=_0xf64350,_0x3e1587=document[_0x544359(0x170)](_0x544359(0x160));_0x3e1587[_0x544359(0x18e)][_0x544359(0x16d)]=_0x544359(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x551459){var _0x5d7138=_0x1c06b0;!nhaK2[_0x5d7138(0x180)]()['contains'](_0x551459[_0x5d7138(0x145)])&&(document['getElementById'](_0x5d7138(0x160))[_0x5d7138(0x18e)][_0x5d7138(0x16d)]='none');});function openGoogleMapsForK2(){var _0x30d242=_0x1c06b0,_0x21f318=21.039126286970678,_0x21c48c=105.7832668617139,_0x544889=_0x30d242(0x15c)+_0x21f318+','+_0x21c48c+'/';window['open'](_0x544889,'_blank');}var nhaK3=L[_0x1c06b0(0x188)]([[21.03921637813095,105.7828590061322],[21.03921637813095,105.7829663764474],[21.039081405397056,105.7829663764474],[21.039076406404547,105.78285363761643]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDivK3=document[_0x1c06b0(0x170)](_0x1c06b0(0x166));nhaK3['on'](_0x1c06b0(0x146),function(){var _0x10ded8=_0x1c06b0;document[_0x10ded8(0x170)](_0x10ded8(0x166))[_0x10ded8(0x18e)][_0x10ded8(0x16d)]=_0x10ded8(0x155);}),document['addEventListener']('DOMContentLoaded',function(){var _0x3488e8=_0x1c06b0,_0x26c918=document['getElementById']('closeinfoDivK3');_0x26c918[_0x3488e8(0x159)](_0x3488e8(0x146),function(){var _0x2c4c2c=_0x3488e8,_0x36cbaa=document['getElementById'](_0x2c4c2c(0x166));_0x36cbaa[_0x2c4c2c(0x18e)]['display']=_0x2c4c2c(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x9e4488){var _0x22aba1=_0x1c06b0;!nhaK3[_0x22aba1(0x180)]()['contains'](_0x9e4488[_0x22aba1(0x145)])&&(document[_0x22aba1(0x170)]('infoDivK3')['style']['display']=_0x22aba1(0x19d));});function openGoogleMapsForK3(){var _0x54b83d=_0x1c06b0,_0x498181=21.039095308860723,_0xf17f63=105.78294396400453,_0x1b7b09=_0x54b83d(0x15c)+_0x498181+','+_0xf17f63+'/';window[_0x54b83d(0x15f)](_0x1b7b09,'_blank');}var nhaKT=L[_0x1c06b0(0x188)]([[21.03882616756567,105.78490922595851],[21.03882616756567,105.78507028143126],[21.038976137519423,105.78508101846278],[21.03903112646463,105.78512933510463],[21.039026127470454,105.78517765174642],[21.03853622522696,105.78517228323066],[21.038551222258317,105.784898488927]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivKT=document['getElementById'](_0x1c06b0(0x1b7));nhaKT['on'](_0x1c06b0(0x146),function(){var _0x486411=_0x1c06b0;document[_0x486411(0x170)]('infoDivKT')[_0x486411(0x18e)][_0x486411(0x16d)]=_0x486411(0x155);}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x36fbd7=_0x1c06b0,_0x5c5484=document[_0x36fbd7(0x170)]('closeinfoDivKT');_0x5c5484[_0x36fbd7(0x159)](_0x36fbd7(0x146),function(){var _0x1e7872=_0x36fbd7,_0xb2a785=document['getElementById']('infoDivKT');_0xb2a785[_0x1e7872(0x18e)][_0x1e7872(0x16d)]=_0x1e7872(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x39c88f){var _0xf83f6a=_0x1c06b0;!nhaKT[_0xf83f6a(0x180)]()['contains'](_0x39c88f['latlng'])&&(document['getElementById'](_0xf83f6a(0x1b7))['style']['display']='none');});function openGoogleMapsForKT(){var _0x3f9bd1=_0x1c06b0,_0x2387ce=21.038531226216158,_0x1f1460=105.78513470362036,_0x2a552e=_0x3f9bd1(0x15c)+_0x2387ce+','+_0x1f1460+'/';window[_0x3f9bd1(0x15f)](_0x2a552e,'_blank');}var nhaT1=L[_0x1c06b0(0x188)]([[21.03854766825242,105.78489309992261],[21.038842609569365,105.7849038369541],[21.038852607569876,105.78435087983101],[21.03856266528263,105.78435087983101]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivT1=document['getElementById'](_0x1c06b0(0x14d));nhaT1['on']('click',function(){var _0x3c3616=_0x1c06b0;document[_0x3c3616(0x170)](_0x3c3616(0x14d))['style'][_0x3c3616(0x16d)]=_0x3c3616(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x18ba5f=_0x1c06b0,_0x166ec1=document['getElementById']('closeinfoDivT1');_0x166ec1[_0x18ba5f(0x159)](_0x18ba5f(0x146),function(){var _0x580889=_0x18ba5f,_0x2a5735=document[_0x580889(0x170)](_0x580889(0x14d));_0x2a5735[_0x580889(0x18e)][_0x580889(0x16d)]=_0x580889(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x3dd7d5){var _0x4563bf=_0x1c06b0;!nhaT1['getBounds']()[_0x4563bf(0x15d)](_0x3dd7d5[_0x4563bf(0x145)])&&(document['getElementById'](_0x4563bf(0x14d))[_0x4563bf(0x18e)][_0x4563bf(0x16d)]=_0x4563bf(0x19d));});function openGoogleMapsForT1(){var _0x367e0a=_0x1c06b0,_0x2cecf9=21.038542669242013,_0x2a2ada=105.78458709452437,_0x47d457=_0x367e0a(0x15c)+_0x2cecf9+','+_0x2a2ada+'/';window[_0x367e0a(0x15f)](_0x47d457,'_blank');}var nhaT2=L['polygon']([[21.038685719012175,105.78428661335559],[21.038685719012175,105.78433492999744],[21.03856074381754,105.78433492999744],[21.03856074381754,105.78428661335559]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDivT2=document['getElementById'](_0x1c06b0(0x130));nhaT2['on']('click',function(){var _0x41cc12=_0x1c06b0;document[_0x41cc12(0x170)](_0x41cc12(0x130))[_0x41cc12(0x18e)][_0x41cc12(0x16d)]=_0x41cc12(0x155);}),document[_0x1c06b0(0x159)]('DOMContentLoaded',function(){var _0x4f2fd3=_0x1c06b0,_0x3e9f8f=document[_0x4f2fd3(0x170)](_0x4f2fd3(0x1bf));_0x3e9f8f[_0x4f2fd3(0x159)](_0x4f2fd3(0x146),function(){var _0x46fee7=_0x4f2fd3,_0x259a94=document[_0x46fee7(0x170)](_0x46fee7(0x130));_0x259a94[_0x46fee7(0x18e)][_0x46fee7(0x16d)]=_0x46fee7(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x9cba56){var _0x13fa9e=_0x1c06b0;!nhaT2[_0x13fa9e(0x180)]()['contains'](_0x9cba56[_0x13fa9e(0x145)])&&(document['getElementById']('infoDivT2')['style'][_0x13fa9e(0x16d)]=_0x13fa9e(0x19d));});function openGoogleMapsForT2(){var _0x9744aa=_0x1c06b0,_0x472cb9=21.038542669242013,_0x4d9384=105.78458709452437,_0x1e392a=_0x9744aa(0x15c)+_0x472cb9+','+_0x4d9384+'/';window[_0x9744aa(0x15f)](_0x1e392a,_0x9744aa(0x16a));}var nhaV=L[_0x1c06b0(0x188)]([[21.037875565454517,105.78494146163943],[21.03786556738842,105.7851132541437],[21.03836047085427,105.7851239911752],[21.038365469870772,105.78495756718672]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivV=document['getElementById'](_0x1c06b0(0x1b4));nhaV['on'](_0x1c06b0(0x146),function(){var _0x5e2c2d=_0x1c06b0;document['getElementById']('infoDivV')['style'][_0x5e2c2d(0x16d)]=_0x5e2c2d(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x1e582a=_0x1c06b0,_0x5eaf76=document['getElementById'](_0x1e582a(0x171));_0x5eaf76[_0x1e582a(0x159)](_0x1e582a(0x146),function(){var _0x2b09ae=_0x1e582a,_0x28c7f0=document['getElementById'](_0x2b09ae(0x1b4));_0x28c7f0['style']['display']=_0x2b09ae(0x19d);});}),mymap['on']('click',function(_0x3c1c7a){var _0x4822df=_0x1c06b0;!nhaV[_0x4822df(0x180)]()['contains'](_0x3c1c7a['latlng'])&&(document[_0x4822df(0x170)](_0x4822df(0x1b4))[_0x4822df(0x18e)][_0x4822df(0x16d)]='none');});function openGoogleMapsForV(){var _0x48b369=_0x1c06b0,_0x548052=21.03811551883931,_0x24414c=105.78491461906061,_0x5d0406=_0x48b369(0x15c)+_0x548052+','+_0x24414c+'/';window[_0x48b369(0x15f)](_0x5d0406,_0x48b369(0x16a));}var CDTY=L[_0x1c06b0(0x188)]([[21.038566726992354,105.78332577606446],[21.038571726001937,105.78327745942265],[21.040486334340915,105.78335261864326],[21.040486334340915,105.78339019825357]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivCDTY=document['getElementById'](_0x1c06b0(0x13d));CDTY['on'](_0x1c06b0(0x146),function(){var _0xa6ae0d=_0x1c06b0;document[_0xa6ae0d(0x170)]('infoDivCDTY')['style'][_0xa6ae0d(0x16d)]=_0xa6ae0d(0x155);}),document[_0x1c06b0(0x159)]('DOMContentLoaded',function(){var _0x3344bd=_0x1c06b0,_0x4e34c9=document[_0x3344bd(0x170)](_0x3344bd(0x187));_0x4e34c9[_0x3344bd(0x159)](_0x3344bd(0x146),function(){var _0x206210=_0x3344bd,_0x179330=document[_0x206210(0x170)]('infoDivCDTY');_0x179330[_0x206210(0x18e)][_0x206210(0x16d)]=_0x206210(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x4a0e75){var _0x42da51=_0x1c06b0;!CDTY[_0x42da51(0x180)]()[_0x42da51(0x15d)](_0x4a0e75[_0x42da51(0x145)])&&(document['getElementById'](_0x42da51(0x13d))[_0x42da51(0x18e)][_0x42da51(0x16d)]='none');});function openGoogleMapsForCDTY(){var _0x4f7e47=_0x1c06b0,_0x45f8fc=21.038914821717466,_0x428b1d=105.78331432193048,_0x2146e1='https://www.google.com/maps/dir//'+_0x45f8fc+','+_0x428b1d+'/';window['open'](_0x2146e1,_0x4f7e47(0x16a));}var nhaTV=L['polygon']([[21.040442476383372,105.78339543973972],[21.04042747954243,105.78395913389436],[21.039997569459935,105.78394302834707],[21.040022564266124,105.78337933419246]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDivTV=document[_0x1c06b0(0x170)](_0x1c06b0(0x12c));nhaTV['on']('click',function(){var _0x17bdc4=_0x1c06b0;document[_0x17bdc4(0x170)](_0x17bdc4(0x12c))['style'][_0x17bdc4(0x16d)]=_0x17bdc4(0x155);}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x2bf66c=_0x1c06b0,_0x551276=document[_0x2bf66c(0x170)](_0x2bf66c(0x13b));_0x551276['addEventListener'](_0x2bf66c(0x146),function(){var _0x54eef4=_0x2bf66c,_0x179ef6=document[_0x54eef4(0x170)](_0x54eef4(0x12c));_0x179ef6[_0x54eef4(0x18e)][_0x54eef4(0x16d)]='none';});}),mymap['on']('click',function(_0x37ee5c){var _0x43d2ff=_0x1c06b0;!nhaTV[_0x43d2ff(0x180)]()[_0x43d2ff(0x15d)](_0x37ee5c[_0x43d2ff(0x145)])&&(document[_0x43d2ff(0x170)](_0x43d2ff(0x12c))[_0x43d2ff(0x18e)][_0x43d2ff(0x16d)]='none');});function openGoogleMapsForTV(){var _0x1cf066=_0x1c06b0,_0x2d6cfe=21.04001756530523,_0x5cf5e5=105.7836799710749,_0x4a3c29=_0x1cf066(0x15c)+_0x2d6cfe+','+_0x5cf5e5+'/';window[_0x1cf066(0x15f)](_0x4a3c29,_0x1cf066(0x16a));}var SDN=L[_0x1c06b0(0x188)]([[21.03982676891435,105.78397544432805],[21.0398117720114,105.78425460714747],[21.04039165115876,105.78427608121049],[21.040401649055283,105.78399154987528]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivSDN=document[_0x1c06b0(0x170)]('infoDivSDN');SDN['on'](_0x1c06b0(0x146),function(){var _0x1f73d6=_0x1c06b0;document[_0x1f73d6(0x170)](_0x1f73d6(0x1aa))[_0x1f73d6(0x18e)][_0x1f73d6(0x16d)]='block';}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x5ea8c2=_0x1c06b0,_0xe04f91=document[_0x5ea8c2(0x170)](_0x5ea8c2(0x1bb));_0xe04f91[_0x5ea8c2(0x159)]('click',function(){var _0x78a37a=_0x5ea8c2,_0x261a2e=document[_0x78a37a(0x170)](_0x78a37a(0x1aa));_0x261a2e[_0x78a37a(0x18e)][_0x78a37a(0x16d)]=_0x78a37a(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x109e40){var _0x3859b9=_0x1c06b0;!SDN[_0x3859b9(0x180)]()[_0x3859b9(0x15d)](_0x109e40['latlng'])&&(document[_0x3859b9(0x170)]('infoDivSDN')[_0x3859b9(0x18e)][_0x3859b9(0x16d)]=_0x3859b9(0x19d));});function openGoogleMapsForSDN(){var _0xf2c926=_0x1c06b0,_0x2ff4fe=21.04025667948982,_0x14c727=105.78429755527353,_0x104ac='https://www.google.com/maps/dir//'+_0x2ff4fe+','+_0x14c727+'/';window[_0xf2c926(0x15f)](_0x104ac,'_blank');}var CTC=L['polygon']([[21.03998565790031,105.7834008082555],[21.039980658938184,105.78395913389436],[21.039825691028437,105.78395376537856],[21.03980569515738,105.78425440226103],[21.03926080663769,105.78423292819804],[21.03926080663769,105.78429198187133],[21.03901585610325,105.78439935218654],[21.038580942937376,105.78421682265075],[21.038595939964228,105.78336322864517],[21.038885882186708,105.78337396567672]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDivCTC=document[_0x1c06b0(0x170)]('infoDivCTC');CTC['on'](_0x1c06b0(0x146),function(){var _0x5ff2bc=_0x1c06b0;document[_0x5ff2bc(0x170)](_0x5ff2bc(0x1a0))['style'][_0x5ff2bc(0x16d)]=_0x5ff2bc(0x155);}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x36e815=_0x1c06b0,_0x11da87=document['getElementById'](_0x36e815(0x13f));_0x11da87[_0x36e815(0x159)](_0x36e815(0x146),function(){var _0x1c730b=_0x36e815,_0x3be40f=document[_0x1c730b(0x170)](_0x1c730b(0x1a0));_0x3be40f[_0x1c730b(0x18e)]['display']=_0x1c730b(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x472ab5){var _0x4bfbc2=_0x1c06b0;!CTC[_0x4bfbc2(0x180)]()['contains'](_0x472ab5[_0x4bfbc2(0x145)])&&(document['getElementById'](_0x4bfbc2(0x1a0))[_0x4bfbc2(0x18e)][_0x4bfbc2(0x16d)]='none');});function openGoogleMapsForCTC(){var _0x324bfb=_0x1c06b0,_0x521614=21.038781898211674,_0x45ace8=105.78383495574235,_0x248c2b='https://www.google.com/maps/dir//'+_0x521614+','+_0x45ace8+'/';window[_0x324bfb(0x15f)](_0x248c2b,_0x324bfb(0x16a));}var SVD=L['polygon']([[21.040396673539313,105.78428116288529],[21.040371678795882,105.78505959767023],[21.040206713384016,105.78522065314296],[21.03903195441039,105.78518307353264],[21.03903195441039,105.78512938837508],[21.038981964461318,105.78508107173325],[21.03885199051521,105.78507570321749],[21.038866987514783,105.78439927023193],[21.039016957427442,105.78441537577923],[21.03928190390412,105.78429726843252],[21.039276904918353,105.78423821475921]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivSVD=document[_0x1c06b0(0x170)]('infoDivSVD');SVD['on'](_0x1c06b0(0x146),function(){var _0x408371=_0x1c06b0;document['getElementById'](_0x408371(0x1a2))[_0x408371(0x18e)][_0x408371(0x16d)]=_0x408371(0x155);}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x1486b8=_0x1c06b0,_0x53be3c=document[_0x1486b8(0x170)](_0x1486b8(0x14b));_0x53be3c['addEventListener']('click',function(){var _0x40a431=_0x1486b8,_0x4ed21c=document['getElementById'](_0x40a431(0x1a2));_0x4ed21c[_0x40a431(0x18e)][_0x40a431(0x16d)]=_0x40a431(0x19d);});}),mymap['on']('click',function(_0x10f970){var _0x2117bf=_0x1c06b0;!SVD[_0x2117bf(0x180)]()[_0x2117bf(0x15d)](_0x10f970['latlng'])&&(document['getElementById'](_0x2117bf(0x1a2))['style']['display']=_0x2117bf(0x19d));});function openGoogleMapsForSVD(){var _0x483611=_0x1c06b0,_0x3f3e68=21.040301318576297,_0x30c168=105.78517080395068,_0x14b1e4=_0x483611(0x15c)+_0x3f3e68+','+_0x30c168+'/';window[_0x483611(0x15f)](_0x14b1e4,_0x483611(0x16a));}var ktxA5=L[_0x1c06b0(0x188)]([[21.040732625900958,105.78536059925048],[21.040722628026646,105.78595113598392],[21.040537667230666,105.78595113598392],[21.040552664060527,105.78536059925048]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivA5=document[_0x1c06b0(0x170)](_0x1c06b0(0x150));ktxA5['on'](_0x1c06b0(0x146),function(){var _0x57e44c=_0x1c06b0;document[_0x57e44c(0x170)](_0x57e44c(0x150))[_0x57e44c(0x18e)]['display']=_0x57e44c(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x3fd1e2=_0x1c06b0,_0x43064c=document[_0x3fd1e2(0x170)](_0x3fd1e2(0x142));_0x43064c['addEventListener'](_0x3fd1e2(0x146),function(){var _0x1c414a=_0x3fd1e2,_0x2d2ad0=document[_0x1c414a(0x170)](_0x1c414a(0x150));_0x2d2ad0[_0x1c414a(0x18e)][_0x1c414a(0x16d)]=_0x1c414a(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x1fa43d){var _0x1b8a20=_0x1c06b0;!ktxA5['getBounds']()[_0x1b8a20(0x15d)](_0x1fa43d[_0x1b8a20(0x145)])&&(document[_0x1b8a20(0x170)](_0x1b8a20(0x150))['style'][_0x1b8a20(0x16d)]=_0x1b8a20(0x19d));});function openGoogleMapsForA5(){var _0xf4e725=_0x1c06b0,_0x46f1f5=21.040557663003472,_0x4eec58=105.78565049910145,_0x1363a0=_0xf4e725(0x15c)+_0x46f1f5+','+_0x4eec58+'/';window[_0xf4e725(0x15f)](_0x1363a0,_0xf4e725(0x16a));}var ktxA6=L[_0x1c06b0(0x188)]([[21.041092603604415,105.78537107812514],[21.041077606828928,105.78596161485854],[21.040887647542064,105.78595624634278],[21.040902644336683,105.78537107812514]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivA6=document[_0x1c06b0(0x170)](_0x1c06b0(0x16c));ktxA6['on'](_0x1c06b0(0x146),function(){var _0x1ba9d8=_0x1c06b0;document['getElementById'](_0x1ba9d8(0x16c))[_0x1ba9d8(0x18e)][_0x1ba9d8(0x16d)]=_0x1ba9d8(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x4b66db=_0x1c06b0,_0x24a70d=document[_0x4b66db(0x170)](_0x4b66db(0x18a));_0x24a70d[_0x4b66db(0x159)](_0x4b66db(0x146),function(){var _0x19ad33=_0x4b66db,_0x26e110=document[_0x19ad33(0x170)](_0x19ad33(0x16c));_0x26e110['style']['display']=_0x19ad33(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x53e36e){var _0x16ff1e=_0x1c06b0;!ktxA6[_0x16ff1e(0x180)]()[_0x16ff1e(0x15d)](_0x53e36e[_0x16ff1e(0x145)])&&(document[_0x16ff1e(0x170)]('infoDivA6')['style'][_0x16ff1e(0x16d)]=_0x16ff1e(0x19d));});function openGoogleMapsForA6(){var _0x5dc932=_0x1c06b0,_0x279c91=21.040977854797603,_0x446bd9=105.7853525876999,_0xb6a3df=_0x5dc932(0x15c)+_0x279c91+','+_0x446bd9+'/';window['open'](_0xb6a3df,_0x5dc932(0x16a));}var ktxA8=L[_0x1c06b0(0x188)]([[21.040557780164406,105.78465685654514],[21.040552781221475,105.78494138788031],[21.040597771701936,105.78494675639605],[21.040587773818554,105.78522591921552],[21.040497792837993,105.78522055069972],[21.040497792837993,105.78494138788031],[21.04045280232734,105.78493601936457],[21.04046280021978,105.78465685654514]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivA8=document[_0x1c06b0(0x170)](_0x1c06b0(0x18b));ktxA8['on']('click',function(){var _0x130672=_0x1c06b0;document[_0x130672(0x170)](_0x130672(0x18b))[_0x130672(0x18e)][_0x130672(0x16d)]='block';}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x16e112=_0x1c06b0,_0xfe474b=document[_0x16e112(0x170)](_0x16e112(0x181));_0xfe474b['addEventListener']('click',function(){var _0x3f4f3f=_0x16e112,_0x3c1dce=document[_0x3f4f3f(0x170)](_0x3f4f3f(0x18b));_0x3c1dce[_0x3f4f3f(0x18e)][_0x3f4f3f(0x16d)]='none';});}),mymap['on'](_0x1c06b0(0x146),function(_0x4c8d62){var _0x2279fe=_0x1c06b0;!ktxA8[_0x2279fe(0x180)]()[_0x2279fe(0x15d)](_0x4c8d62['latlng'])&&(document[_0x2279fe(0x170)]('infoDivA8')[_0x2279fe(0x18e)][_0x2279fe(0x16d)]='none');});function openGoogleMapsForA8(){var _0x5723ab=_0x1c06b0,_0x3e2b7c=21.04047779705717,_0x26f660=105.78523665624702,_0x2e6d3c=_0x5723ab(0x15c)+_0x3e2b7c+','+_0x26f660+'/';window[_0x5723ab(0x15f)](_0x2e6d3c,_0x5723ab(0x16a));}function _0x48be(_0x54b115,_0x18f833){var _0x4c9f5c=_0x4c9f();return _0x48be=function(_0x48be0e,_0x3d6a27){_0x48be0e=_0x48be0e-0x128;var _0x1dd2d=_0x4c9f5c[_0x48be0e];return _0x1dd2d;},_0x48be(_0x54b115,_0x18f833);}var ktxA9=L[_0x1c06b0(0x188)]([[21.040727072402746,105.78407773296844],[21.040717074528043,105.78436763281937],[21.04076706389482,105.78436226430361],[21.0407570660228,105.78464679563882],[21.040662086205256,105.78464679563882],[21.040667085144523,105.78436763281937],[21.040617095744224,105.78436226430361],[21.040632092566067,105.78407773296844]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivA9=document[_0x1c06b0(0x170)](_0x1c06b0(0x147));ktxA9['on'](_0x1c06b0(0x146),function(){var _0x4cb301=_0x1c06b0;document[_0x4cb301(0x170)](_0x4cb301(0x147))[_0x4cb301(0x18e)][_0x4cb301(0x16d)]=_0x4cb301(0x155);}),document[_0x1c06b0(0x159)]('DOMContentLoaded',function(){var _0x59d844=_0x1c06b0,_0x444680=document[_0x59d844(0x170)](_0x59d844(0x1a3));_0x444680[_0x59d844(0x159)](_0x59d844(0x146),function(){var _0x565f5c=_0x59d844,_0x485a4c=document[_0x565f5c(0x170)](_0x565f5c(0x147));_0x485a4c['style'][_0x565f5c(0x16d)]='none';});}),mymap['on'](_0x1c06b0(0x146),function(_0x3e0624){var _0x31c840=_0x1c06b0;!ktxA9[_0x31c840(0x180)]()[_0x31c840(0x15d)](_0x3e0624[_0x31c840(0x145)])&&(document[_0x31c840(0x170)](_0x31c840(0x147))[_0x31c840(0x18e)]['display']=_0x31c840(0x19d));});function openGoogleMapsForA9(){var _0x4b7c6b=_0x1c06b0,_0x286303=21.040737070276787,_0x28ce5e=105.78423878844119,_0x7f16ae=_0x4b7c6b(0x15c)+_0x286303+','+_0x28ce5e+'/';window['open'](_0x7f16ae,_0x4b7c6b(0x16a));}var ktxA10=L[_0x1c06b0(0x188)]([[21.040592811813966,105.78406086524367],[21.040582813930254,105.78443129283099],[21.040562818160833,105.78443129283099],[21.04055282027511,105.78451718908315],[21.040512828725547,105.78452255759889],[21.040507829781077,105.7846245593983],[21.04046283927343,105.7846245593983],[21.0404828350563,105.7840554967279]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivA10=document['getElementById']('infoDivA10');ktxA10['on'](_0x1c06b0(0x146),function(){var _0x37a195=_0x1c06b0;document[_0x37a195(0x170)](_0x37a195(0x183))[_0x37a195(0x18e)][_0x37a195(0x16d)]=_0x37a195(0x155);}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x312300=_0x1c06b0,_0x2f4130=document['getElementById'](_0x312300(0x179));_0x2f4130[_0x312300(0x159)](_0x312300(0x146),function(){var _0x132faf=_0x312300,_0x34e477=document[_0x132faf(0x170)](_0x132faf(0x183));_0x34e477[_0x132faf(0x18e)][_0x132faf(0x16d)]='none';});}),mymap['on'](_0x1c06b0(0x146),function(_0x2ea356){var _0x1819fb=_0x1c06b0;!ktxA10[_0x1819fb(0x180)]()[_0x1819fb(0x15d)](_0x2ea356[_0x1819fb(0x145)])&&(document[_0x1819fb(0x170)](_0x1819fb(0x183))[_0x1819fb(0x18e)][_0x1819fb(0x16d)]=_0x1819fb(0x19d));});function openGoogleMapsForA10(){var _0x11bc4d=_0x1c06b0,_0x9ccee7=21.04046323762088,_0xf03aa0=105.78426431564917,_0x2b5bb0=_0x11bc4d(0x15c)+_0x9ccee7+','+_0xf03aa0+'/';window[_0x11bc4d(0x15f)](_0x2b5bb0,_0x11bc4d(0x16a));}var ktxA11=L['polygon']([[21.0409879776261,105.7847157831889],[21.0409879776261,105.78497347194528],[21.041007973338445,105.78497347194528],[21.041002974410617,105.78525800328049],[21.040917992611742,105.78525800328049],[21.040912993680898,105.78510768483923],[21.04087300222801,105.78510231632349],[21.040883000092244,105.7847157831889]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivA11=document[_0x1c06b0(0x170)](_0x1c06b0(0x157));ktxA11['on'](_0x1c06b0(0x146),function(){var _0x14eab9=_0x1c06b0;document[_0x14eab9(0x170)](_0x14eab9(0x157))[_0x14eab9(0x18e)][_0x14eab9(0x16d)]=_0x14eab9(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x4d7f4d=_0x1c06b0,_0x177e75=document[_0x4d7f4d(0x170)](_0x4d7f4d(0x18f));_0x177e75[_0x4d7f4d(0x159)]('click',function(){var _0x3b4771=_0x4d7f4d,_0x4f4471=document[_0x3b4771(0x170)]('infoDivA11');_0x4f4471[_0x3b4771(0x18e)]['display']=_0x3b4771(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x516815){var _0x51039c=_0x1c06b0;!ktxA11[_0x51039c(0x180)]()[_0x51039c(0x15d)](_0x516815[_0x51039c(0x145)])&&(document[_0x51039c(0x170)](_0x51039c(0x157))[_0x51039c(0x18e)][_0x51039c(0x16d)]=_0x51039c(0x19d));});function openGoogleMapsForA11(){var _0x126ede=_0x1c06b0,_0x32a065=21.040843008631303,_0x5a006b=105.7848553645986,_0x2bd08c=_0x126ede(0x15c)+_0x32a065+','+_0x5a006b+'/';window[_0x126ede(0x15f)](_0x2bd08c,_0x126ede(0x16a));}var ktxA12=L[_0x1c06b0(0x188)]([[21.040832604607232,105.78408263844086],[21.040812608871363,105.784657069627],[21.041002568253912,105.784657069627],[21.041022563964287,105.78409337547241]],{'opacity':0x0,'fillOpacity':0x0})[_0x1c06b0(0x1ad)](mymap),infoDivA12=document[_0x1c06b0(0x170)](_0x1c06b0(0x132));ktxA12['on'](_0x1c06b0(0x146),function(){var _0x13c3a0=_0x1c06b0;document['getElementById'](_0x13c3a0(0x132))[_0x13c3a0(0x18e)][_0x13c3a0(0x16d)]=_0x13c3a0(0x155);}),document[_0x1c06b0(0x159)](_0x1c06b0(0x1c4),function(){var _0x1ecc95=_0x1c06b0,_0x12bc35=document['getElementById'](_0x1ecc95(0x1c1));_0x12bc35[_0x1ecc95(0x159)](_0x1ecc95(0x146),function(){var _0x1ee269=_0x1ecc95,_0x495106=document['getElementById'](_0x1ee269(0x132));_0x495106[_0x1ee269(0x18e)]['display']=_0x1ee269(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x1e5a3a){var _0x27237d=_0x1c06b0;!ktxA12[_0x27237d(0x180)]()['contains'](_0x1e5a3a[_0x27237d(0x145)])&&(document[_0x27237d(0x170)](_0x27237d(0x132))[_0x27237d(0x18e)][_0x27237d(0x16d)]=_0x27237d(0x19d));});function openGoogleMapsForA12(){var _0xb59d4f=_0x1c06b0,_0x360fda=21.04080760993697,_0x5c320c=105.78427053649243,_0x5c9acf=_0xb59d4f(0x15c)+_0x360fda+','+_0x5c320c+'/';window[_0xb59d4f(0x15f)](_0x5c9acf,_0xb59d4f(0x16a));}var HT1110=L[_0x1c06b0(0x188)]([[21.03849865754228,105.78446209430695],[21.03848863338883,105.78488588333131],[21.037796965172358,105.78486979007722],[21.03777691677036,105.78515946865082],[21.037631565775207,105.78515946865082],[21.03763657788085,105.78443527221681]],{'opacity':0x0,'fillOpacity':0x0})['addTo'](mymap),infoDiv1110=document[_0x1c06b0(0x170)](_0x1c06b0(0x196));function _0x4c9f(){var _0x28ab4f=['closeinfoDivT2','infoDivC4','closeinfoDivA12','state','infoDivC3','DOMContentLoaded','latitude','volume','donate-div','lng','.contentVN','scale-animation','setMaxBounds','infoDivD3','infoDivN','infoDivTV','longitude','infoDivC2','query','infoDivT2','closeinfoDivD3','infoDivA12','ogImage','change','infoDivNhaHieuBo','getComputedStyle','support-div','27PdVqpr','coords','permissions','closeinfoDivTV','162XaMvEm','infoDivCDTY','add','closeinfoDivCTC','latLng','closeinfoDivC3','closeinfoDivA5','granted','log','latlng','click','infoDivA9','120EiXGXI','.menu-btn','closeinfoDivNhaHieuBo','closeinfoDivSVD','src','infoDivT1','closeinfoDivA3','pause','infoDivA5','Error\x20getting\x20geolocation:','source-img/muted.png','content','map','block','closeinfoDivM1234','infoDivA11','source-img/music.png','addEventListener','closeinfoDivB2','closeinfoDivB1','https://www.google.com/maps/dir//','contains','1864iAllof','open','infoDivK2','240Jdnrjn','infoDivVTN','.contentEnglish','language-toggle','geolocation','infoDivK3','closeinfoDivK1','closeinfoDivA4','closeinfoDivC2','_blank','checked','infoDivA6','display','infoDivA4','hnue-img','getElementById','closeinfoDivV','infoDivK1','drag','1446590XgRkhX','location','&body=','333665MkPxDJ','1080873sLovRy','closeinfoDivA10','lat','infoDivB1','href','play','remove','infoDivA2','getBounds','closeinfoDivA8','closeinfoDivN','infoDivA10','zoom','infoDivC1','https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png','closeinfoDivCDTY','polygon','closeinfoDivVTN','closeinfoDivA6','infoDivA8','3px\x20solid\x20red','infoDivA3','style','closeinfoDivA11','7701484DaVeBc','then','infoDivB2','closeinfoDiv1110','Hỗ\x20trợ\x20về\x20HNUE\x20map','bottomright','infoDiv1110','8wKmSIK','infoDivM1234','infoDivH8','panInsideBounds','closeinfoDivA2','prompt','none','closeinfoDivC4',',\x20Longitude:\x20','infoDivCTC','setView','infoDivSVD','closeinfoDivA9','menu','mailto:','closeinfoDivD124','4427940XpyxzN','fitBounds','infoDivD124','infoDivSDN','forEach','control','addTo','13168477SlJqfS','update','music','latLngBounds','setLatLng','querySelector','infoDivV','Geolocation\x20is\x20not\x20supported\x20by\x20this\x20browser.','backgroundMusic','infoDivKT','querySelectorAll','classList','getCurrentPosition','closeinfoDivSDN','marker','closeinfoDivK2','border'];_0x4c9f=function(){return _0x28ab4f;};return _0x4c9f();}HT1110['on'](_0x1c06b0(0x146),function(){var _0x5d5219=_0x1c06b0;document[_0x5d5219(0x170)](_0x5d5219(0x196))[_0x5d5219(0x18e)][_0x5d5219(0x16d)]='block';}),document['addEventListener'](_0x1c06b0(0x1c4),function(){var _0x50918f=_0x1c06b0,_0xd13092=document[_0x50918f(0x170)](_0x50918f(0x193));_0xd13092[_0x50918f(0x159)](_0x50918f(0x146),function(){var _0x201557=_0x50918f,_0x58fa4a=document['getElementById']('infoDiv1110');_0x58fa4a[_0x201557(0x18e)][_0x201557(0x16d)]=_0x201557(0x19d);});}),mymap['on'](_0x1c06b0(0x146),function(_0x1fd932){var _0x460302=_0x1c06b0;!HT1110[_0x460302(0x180)]()[_0x460302(0x15d)](_0x1fd932[_0x460302(0x145)])&&(document[_0x460302(0x170)]('infoDiv1110')['style'][_0x460302(0x16d)]=_0x460302(0x19d));});function openGoogleMapsFor1110(){var _0xe4ea03=_0x1c06b0,_0x46de6c=21.03786212246022,_0x58227c=105.78466057777405,_0x20be78=_0xe4ea03(0x15c)+_0x46de6c+','+_0x58227c+'/';window[_0xe4ea03(0x15f)](_0x20be78,_0xe4ea03(0x16a));}let currentLanguage='vi';function toggleLanguage(){currentLanguage=currentLanguage==='vi'?'en':'vi',updateContentLanguage();}const languageToggle=document['getElementById'](_0x1c06b0(0x164)),contentVN=document[_0x1c06b0(0x1b8)](_0x1c06b0(0x1c9)),contentEnglish=document[_0x1c06b0(0x1b8)](_0x1c06b0(0x163));languageToggle['addEventListener'](_0x1c06b0(0x134),function(){var _0x4e8f9d=_0x1c06b0;const _0x50574b=this[_0x4e8f9d(0x16b)];contentVN[_0x4e8f9d(0x1ab)](_0x46c314=>{var _0x2fa727=_0x4e8f9d;_0x46c314[_0x2fa727(0x18e)][_0x2fa727(0x16d)]=_0x50574b?_0x2fa727(0x19d):'block';}),contentEnglish[_0x4e8f9d(0x1ab)](_0x7640ae=>{var _0x26e1a3=_0x4e8f9d;_0x7640ae[_0x26e1a3(0x18e)][_0x26e1a3(0x16d)]=_0x50574b?_0x26e1a3(0x155):_0x26e1a3(0x19d);});});const menuBtn=document[_0x1c06b0(0x1b3)](_0x1c06b0(0x149));let menuOpen=![];menuBtn[_0x1c06b0(0x159)](_0x1c06b0(0x146),()=>{var _0x539d07=_0x1c06b0;!menuOpen?(menuBtn[_0x539d07(0x1b9)][_0x539d07(0x13e)](_0x539d07(0x15f)),menuOpen=!![]):(menuBtn[_0x539d07(0x1b9)][_0x539d07(0x17e)]('open'),menuOpen=![]);});const burger=document[_0x1c06b0(0x170)]('menu-btn__burger'),menu=document[_0x1c06b0(0x170)](_0x1c06b0(0x1a4));burger['addEventListener'](_0x1c06b0(0x146),function(){var _0x483788=_0x1c06b0;menu[_0x483788(0x18e)][_0x483788(0x16d)]=menu[_0x483788(0x18e)][_0x483788(0x16d)]===_0x483788(0x19d)||menu[_0x483788(0x18e)][_0x483788(0x16d)]===''?_0x483788(0x155):_0x483788(0x19d);});function toggleSupportDiv(){var _0x218c11=_0x1c06b0,_0x31b5a2=document['getElementById'](_0x218c11(0x137)),_0x4c3128=window[_0x218c11(0x136)](_0x31b5a2);_0x4c3128[_0x218c11(0x16d)]===_0x218c11(0x19d)?_0x31b5a2[_0x218c11(0x18e)][_0x218c11(0x16d)]='block':_0x31b5a2[_0x218c11(0x18e)][_0x218c11(0x16d)]=_0x218c11(0x19d);}function hideSupportDiv(){var _0x2d7a7a=_0x1c06b0,_0x108049=document[_0x2d7a7a(0x170)](_0x2d7a7a(0x137));_0x108049[_0x2d7a7a(0x18e)][_0x2d7a7a(0x16d)]='none';}function toggleDonateDiv(){var _0x1aed67=_0x1c06b0,_0x36e054=document[_0x1aed67(0x170)](_0x1aed67(0x1c7)),_0x48af9b=window[_0x1aed67(0x136)](_0x36e054);_0x48af9b['display']===_0x1aed67(0x19d)?_0x36e054[_0x1aed67(0x18e)][_0x1aed67(0x16d)]='block':_0x36e054[_0x1aed67(0x18e)]['display']=_0x1aed67(0x19d);}function hideDonateDiv(){var _0x1ff50e=_0x1c06b0,_0x1b6592=document['getElementById'](_0x1ff50e(0x1c7));_0x1b6592[_0x1ff50e(0x18e)][_0x1ff50e(0x16d)]='none';}function composeEmail(){var _0x534e93=_0x1c06b0,_0xce4796='hoaphamduc2399@gmail.com',_0x120a2c=_0x534e93(0x194),_0x38deb5='',_0x3d86a2=_0x534e93(0x1a5)+encodeURIComponent(_0xce4796)+'?subject='+encodeURIComponent(_0x120a2c)+_0x534e93(0x176)+encodeURIComponent(_0x38deb5);window[_0x534e93(0x175)][_0x534e93(0x17c)]=_0x3d86a2;}var imageElement=document[_0x1c06b0(0x170)](_0x1c06b0(0x16f)),imageUrl=imageElement[_0x1c06b0(0x14c)],ogImageElement=document[_0x1c06b0(0x170)](_0x1c06b0(0x133));ogImageElement[_0x1c06b0(0x153)]=imageUrl;
+// // Chặn việc mở DevTools bằng phím tắt
+// window.addEventListener('keydown', function (event) {
+//   if (event.keyCode == 123) { // 123 là mã phím tắt cho DevTools trên nhiều trình duyệt
+//     event.preventDefault();
+//   }
+// });
+// // Chặn việc mở DevTools bằng phím tắt và tổ hợp phím
+// window.addEventListener('keydown', function (event) {
+//   // Kiểm tra xem người dùng có nhấn tổ hợp phím tắt DevTools không
+//   if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || // Ctrl+Shift+I
+//       (event.ctrlKey && event.shiftKey && event.keyCode == 74) || // Ctrl+Shift+J
+//       (event.ctrlKey && event.keyCode == 85) || // Ctrl+U
+//       (event.ctrlKey && event.shiftKey && event.keyCode == 67) || // Ctrl+Shift+C
+//       (event.ctrlKey && event.keyCode == 83)) { // Ctrl+S
+//     event.preventDefault();
+//   }
+// });
+
+
+// // Chặn việc mở DevTools bằng chuột phải
+// window.addEventListener('contextmenu', function (event) {
+//   event.preventDefault();
+//   console.log('DevTools đã bị chặn.');
+// });
+
+
+
+var mymap = L.map('map', {
+  zoomControl: false 
+}).setView([21.037138, 105.783182], 13);
+
+var maxBounds = L.latLngBounds(
+  L.latLng(21.036000, 105.780455),   // Tọa độ góc trái dưới của giới hạn
+  L.latLng(21.042185, 105.786226)    // Tọa độ góc phải trên của giới hạn
+);
+
+mymap.setMaxBounds(maxBounds);
+mymap.on('drag', function() {
+  mymap.panInsideBounds(maxBounds, { animate: false });
+});
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+            }).addTo(mymap);
+
+// Fit bounds to the maximum bounds
+mymap.fitBounds(maxBounds);
+
+var zoomControl = L.control.zoom({
+  position: 'bottomright' 
+});
+
+zoomControl.addTo(mymap);
+
+
+
+
+if (navigator.permissions) {
+  navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
+    if (result.state === 'granted') {
+      // Đã có quyền truy cập vị trí, thực hiện các hành động cần thiết ở đây
+
+      var marker;
+
+      // Hàm để cập nhật vị trí trên bản đồ
+      function updateMap(position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+
+        // Kiểm tra xem marker đã được tạo hay chưa
+        if (marker) {
+          marker.setLatLng([lat, lon]).update();
+        } else {
+          marker = L.marker([lat, lon]).addTo(mymap).openPopup();
+        }
+      }
+
+      // Sử dụng hàm watchPosition để liên tục theo dõi vị trí
+      var watchId = navigator.geolocation.watchPosition(
+        function (position) {
+          updateMap(position);
+        },
+        function (error) {
+          console.log('Error getting geolocation:', error.message);
+        }
+      );
+
+    } else if (result.state === 'prompt') {
+      // Chưa có quyền truy cập vị trí, hiển thị cửa sổ yêu cầu quyền
+      navigator.geolocation.getCurrentPosition(
+        function (position) {
+          // Lưu trạng thái đã được cấp quyền
+          navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
+            if (result.state === 'granted') {
+              // Thực hiện các hành động cần thiết khi đã được cấp quyền
+              updateMap(position);
+            }
+          });
+        },
+        function (error) {
+          console.log('Error getting geolocation:', error.message);
+        }
+      );
+    }
+  });
+} else {
+  console.log('Geolocation is not supported by this browser.');
+}
+
+
+// Lấy tọa độ khi click
+mymap.on('click', function (e) {
+  var lat = e.latlng.lat;
+  var lng = e.latlng.lng;
+  console.log('Latitude: ' + lat + ', Longitude: ' + lng);
+});
+
+var isMusicPlaying = false;
+var backgroundMusic = document.getElementById("backgroundMusic");
+
+function toggleImageBorderAndMusic() {
+  var musicImage = document.getElementById("music");
+
+  // Kiểm tra src của hình ảnh và thay đổi nó
+  if (musicImage.src.endsWith("muted.png")) {
+    musicImage.src = "source-img/music.png";
+    playBackgroundMusic();
+    musicImage.classList.add("scale-animation");
+  } else {
+    musicImage.src = "source-img/muted.png";
+    pauseBackgroundMusic();
+    musicImage.classList.remove("scale-animation");
+  }
+
+  // Kiểm tra border và thay đổi nó
+  if (musicImage.style.border === "3px solid red") {
+    musicImage.style.border = "3px solid #000";
+  } else {
+    musicImage.style.border = "3px solid red";
+  }
+}
+
+function playBackgroundMusic() {
+  backgroundMusic.play();
+  isMusicPlaying = true;
+  backgroundMusic.volume = 1;
+}
+
+function pauseBackgroundMusic() {
+  backgroundMusic.pause();
+  isMusicPlaying = false;
+}
+
+// Bắt sự kiện nhấn phím #music lần đầu tiên
+document.getElementById("music").addEventListener("click", function() {
+  if (!isMusicPlaying) {
+    pauseBackgroundMusic();
+  } else {
+    playBackgroundMusic();
+  }
+});
+
+
+
+// Info nhà hiệu bộ
+
+var nhahieubo = L.polygon([
+  [21.037616240499375, 105.78370034694673],
+  [21.037365634976485, 105.7836949825287],
+  [21.037390695547757, 105.7829922437668],
+  [21.037616240499375, 105.78300297260286]
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+var infoDivNhaHieuBo = document.getElementById('infoDivNhaHieuBo');
+
+nhahieubo.on('click', function () {
+  document.getElementById('infoDivNhaHieuBo').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivNhaHieuBo');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivNhaHieuBo = document.getElementById('infoDivNhaHieuBo');
+    infoDivNhaHieuBo.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhahieubo.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivNhaHieuBo').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForNhaHieuBo() {
+  var latitude = 21.037439688219646; 
+  var longitude = 105.78331516196478; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà A2
+
+var nhaA2 = L.polygon([
+  [21.03953178666788, 105.78532099596487],
+  [21.03952178090288, 105.785911193595],
+  [21.03937669723494, 105.78590582816199],
+  [21.03940171167052, 105.78532099596487]
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+var infoDivA2 = document.getElementById('infoDivA2');
+
+nhaA2.on('click', function () {
+  document.getElementById('infoDivA2').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA2');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA2 = document.getElementById('infoDivA2');
+    infoDivA2.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaA2.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA2').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA2() {
+  var latitude = 21.03945579822238; 
+  var longitude = 105.7852989435196; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà A3
+
+var nhaA3 = L.polygon([
+  [21.039881925527332, 105.78533724552454],
+  [21.039871919785867, 105.78592207772165],
+  [21.039731839334685, 105.78591671228867],
+  [21.039751850835778, 105.78532651465854]
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+var infoDivA3 = document.getElementById('infoDivA3');
+
+nhaA3.on('click', function () {
+  document.getElementById('infoDivA3').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA3');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA3 = document.getElementById('infoDivA3');
+    infoDivA3.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaA3.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA3').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA3() {
+  var latitude = 21.039801266375314; 
+  var longitude = 105.78532040119173; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info vườn thực nghiệm
+
+var VTN = L.polygon([
+  [21.04015218965353, 105.78533737645584],
+  [21.040142183930207, 105.78585245802392],
+  [21.03988703775853, 105.78583636172495],
+  [21.039907049238757, 105.78534810732182]
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+var infoDivVTN = document.getElementById('infoDivVTN');
+
+VTN.on('click', function () {
+  document.getElementById('infoDivVTN').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivVTN');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivVTN = document.getElementById('infoDivVTN');
+    infoDivVTN.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!VTN.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivVTN').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA3() {
+  var latitude = 21.040027118063747; 
+  var longitude = 105.78531054929083; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà A4
+
+var nhaA4 = L.polygon([
+  [21.04020715081659, 105.78534260283777],
+  [21.040202147956858, 105.78593816590086],
+  [21.040332222255206, 105.78593816590086],
+  [21.040347230820792, 105.78534796827078]
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+var infoDivA4 = document.getElementById('infoDivA4');
+
+nhaA4.on('click', function () {
+  document.getElementById('infoDivA4').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA4');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA4 = document.getElementById('infoDivA4');
+    infoDivA4.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaA4.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA4').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA4() {
+  var latitude = 21.040267185120243; 
+  var longitude = 105.78533187197176; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà B1
+
+var nhaB1 = L.polygon([
+  [21.03748926090835, 105.78267064866736],
+  [21.03748425795734, 105.7829067277194],
+  [21.037214098353235, 105.7828959968534],
+  [21.03723411019256, 105.78265991780138]
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+var infoDivB1 = document.getElementById('infoDivB1');
+
+nhaB1.on('click', function () {
+  document.getElementById('infoDivB1').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivB1');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivB1 = document.getElementById('infoDivB1');
+    infoDivB1.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaB1.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivB1').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForB1() {
+  var latitude = 21.03732416343628; 
+  var longitude = 105.78294965118342; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà B2
+
+var nhaB2 = L.polygon([
+  [21.03762480129206, 105.78222647207474],
+  [21.037614771965373, 105.78280090063745],
+  [21.037494419992427, 105.78279016365494],
+  [21.037494419992427, 105.78247879116304],
+  [21.037233657050844, 105.7824734226718],
+  [21.037218613021057, 105.78288679649728],
+  [21.037098260728058, 105.78288679649728],
+  [21.03711330477001, 105.78241436926815],
+  [21.037218613021057, 105.78241436926815],
+  [21.037238671727103, 105.78233921039079],
+  [21.037499434659907, 105.78233921039079],
+  [21.03750444932722, 105.78222110358348],
+  [21.03762480129206, 105.78222647207474]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivB2 = document.getElementById('infoDivB2');
+
+nhaB2.on('click', function () {
+  document.getElementById('infoDivB2').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivB2');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivB2 = document.getElementById('infoDivB2');
+    infoDivB2.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaB2.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivB2').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForB2() {
+  var latitude = 21.037230376421423; 
+  var longitude = 105.78290690593676; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà C1
+
+var nhaC1 = L.polygon([
+  [21.03718441633168, 105.78378189501747],
+  [21.03718441633168, 105.78401810971081],
+  [21.037199413499152, 105.78402884674239],
+  [21.037199413499152, 105.78405032080538],
+  [21.03717941727555, 105.78406105783692],
+  [21.037174418219212, 105.78425969291995],
+  [21.03708443517676, 105.78425969291995],
+  [21.037089434236098, 105.78377115798597]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivC1 = document.getElementById('infoDivC1');
+
+nhaC1.on('click', function () {
+  document.getElementById('infoDivC1').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivC1');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivC1 = document.getElementById('infoDivC1');
+    infoDivC1.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaC1.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivC1').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForC1() {
+  var latitude = 21.037137948558595; 
+  var longitude = 105.78374855294989; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà C2
+
+var nhaC2 = L.polygon([
+  [21.037189368522238, 105.78418464024028],
+  [21.037184369466246, 105.78428664203969],
+  [21.037404327770986, 105.78428664203969],
+  [21.037409326819585, 105.78423832539787],
+  [21.037439321107698, 105.78423295688214],
+  [21.037444320155153, 105.78419000875603]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivC2 = document.getElementById('infoDivC2');
+
+nhaC2.on('click', function () {
+  document.getElementById('infoDivC2').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivC2');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivC2 = document.getElementById('infoDivC2');
+    infoDivC2.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaC2.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivC2').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForC2() {
+  var latitude = 21.037137948558595; 
+  var longitude = 105.78374855294989; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà C3
+
+var nhaC3 = L.polygon([
+  [21.037564789328982, 105.78386784863781],
+  [21.037554791242044, 105.78444227982395],
+  [21.037449811288603, 105.7844369113082],
+  [21.03746480842933, 105.78386784863781]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivC3 = document.getElementById('infoDivC3');
+
+nhaC3.on('click', function () {
+  document.getElementById('infoDivC3').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivC3');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivC3 = document.getElementById('infoDivC3');
+    infoDivC3.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaC3.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivC3').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForC3() {
+  var latitude = 21.037494326242005; 
+  var longitude = 105.78374421706172; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà C4
+
+var nhaC4 = L.polygon([
+  [21.03745498998619, 105.78376600255208],
+  [21.037449990939116, 105.78395390060363],
+  [21.03719503931591, 105.7839431635721],
+  [21.03719503931591, 105.78388947841455],
+  [21.037230032701817, 105.78388947841455],
+  [21.037240030810533, 105.78374989700484]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivC4 = document.getElementById('infoDivC4');
+
+nhaC4.on('click', function () {
+  document.getElementById('infoDivC4').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivC4');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivC4 = document.getElementById('infoDivC4');
+    infoDivC4.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaC4.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivC4').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForC3() {
+  var latitude = 21.037494326242005; 
+  var longitude = 105.78374421706172; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà D1, D2, D4
+
+var nhaD124 = L.polygon([
+  [21.038152456191458, 105.78381836414339],
+  [21.03814243201535, 105.78417778015138],
+  [21.038127395749942, 105.78426361083986],
+  [21.038122383661133, 105.78437626361848],
+  [21.037786573326926, 105.78437089920045],
+  [21.037806621726332, 105.78380763530731]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivD124 = document.getElementById('infoDivD124');
+
+nhaD124.on('click', function () {
+  document.getElementById('infoDivD124').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivD124');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivD124 = document.getElementById('infoDivD124');
+    infoDivD124.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaD124.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivD124').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForD124() {
+  var latitude = 21.03804219021729; 
+  var longitude = 105.78404903411867; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà D3
+var nhaD3 = L.polygon([
+  [21.038295046216756, 105.78381429460755],
+  [21.038290047197886, 105.78391078856843],
+  [21.038285110748518, 105.78437679850833],
+  [21.038155073624633, 105.78437798876216],
+  [21.038165071671305, 105.78423303883669],
+  [21.038175069717287, 105.78423303883669],
+  [21.038175069717287, 105.78417398516333],
+  [21.038185067762594, 105.7841793536791],
+  [21.038175069717287, 105.78391629640696],
+  [21.038185067762594, 105.78381429460755]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivD3 = document.getElementById('infoDivD3');
+
+nhaD3.on('click', function () {
+  document.getElementById('infoDivD3').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivD3');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivD3 = document.getElementById('infoDivD3');
+    infoDivD3.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaD3.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivD3').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForD3() {
+  var latitude = 21.03818907480665; 
+  var longitude = 105.78376471996307; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+// Info nhà H8
+var nhaH8 = L.polygon([
+  [21.038012666439183, 105.78536948678588],
+  [21.03800766741081, 105.7856540181211],
+  [21.037784626104546, 105.78564312189428],
+  [21.03778770999693, 105.78536948678588]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivH8 = document.getElementById('infoDivH8');
+
+nhaH8.on('click', function () {
+  document.getElementById('infoDivH8').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivH8');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivH8 = document.getElementById('infoDivH8');
+    infoDivH8.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaH8.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivH8').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForH8() {
+  var latitude = 21.03818907480665; 
+  var longitude = 105.78376471996307; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà M1, M2, M3, M4
+var nhaM = L.polygon([
+  [21.03759326046332, 105.78455328941347],
+  [21.037583246756526, 105.78514873981476],
+  [21.03698242311643, 105.78513264656068],
+  [21.036987429990113, 105.78451573848726]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivM1234 = document.getElementById('infoDivM1234');
+
+nhaM.on('click', function () {
+  document.getElementById('infoDivM1234').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivM1234');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivM1234 = document.getElementById('infoDivM1234');
+    infoDivM1234.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaM.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivM1234').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForM1234() {
+  var latitude = 21.03725780091894; 
+  var longitude = 105.78450500965118; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà N
+var nhaN = L.polygon([
+  [21.036959747642673, 105.78532818736727],
+  [21.036939751386907, 105.78591872410065],
+  [21.036684798890498, 105.78590798706915],
+  [21.036699796108245, 105.78531745033577]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivN = document.getElementById('infoDivN');
+
+nhaN.on('click', function () {
+  document.getElementById('infoDivN').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivN');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivN = document.getElementById('infoDivN');
+    infoDivN.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaN.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivN').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForN() {
+  var latitude = 21.0367247914678; 
+  var longitude = 105.78547313729273; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà K1
+var nhaK1 = L.polygon([
+  [21.038970904199036, 105.78275163171931],
+  [21.03896090620645, 105.7832079555588],
+  [21.038730952192136, 105.7832079555588],
+  [21.038735951196223, 105.78274626320356]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivK1 = document.getElementById('infoDivK1');
+
+nhaK1.on('click', function () {
+  document.getElementById('infoDivK1').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivK1');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivK1 = document.getElementById('infoDivK1');
+    infoDivK1.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaK1.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivK1').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForK1() {
+  var latitude = 21.038680962142024; 
+  var longitude = 105.78296637234962; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà K2
+var nhaK2 = L.polygon([
+  [21.03920627080365, 105.78298233037869],
+  [21.03920627080365, 105.78311654327264],
+  [21.039076297053274, 105.78311654327264],
+  [21.039076297053274, 105.78297696186294]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivK2 = document.getElementById('infoDivK2');
+
+nhaK2.on('click', function () {
+  document.getElementById('infoDivK2').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivK2');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivK2 = document.getElementById('infoDivK2');
+    infoDivK2.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaK2.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivK2').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForK2() {
+  var latitude = 21.039126286970678; 
+  var longitude = 105.7832668617139; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà K3
+var nhaK3 = L.polygon([
+  [21.03921637813095, 105.7828590061322],
+  [21.03921637813095, 105.7829663764474],
+  [21.039081405397056, 105.7829663764474],
+  [21.039076406404547, 105.78285363761643]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivK3 = document.getElementById('infoDivK3');
+
+nhaK3.on('click', function () {
+  document.getElementById('infoDivK3').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivK3');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivK3 = document.getElementById('infoDivK3');
+    infoDivK3.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaK3.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivK3').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForK3() {
+  var latitude = 21.039095308860723; 
+  var longitude = 105.78294396400453; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà KT
+var nhaKT = L.polygon([
+  [21.03882616756567, 105.78490922595851],
+  [21.03882616756567, 105.78507028143126],
+  [21.038976137519423, 105.78508101846278],
+  [21.03903112646463, 105.78512933510463],
+  [21.039026127470454, 105.78517765174642],
+  [21.03853622522696, 105.78517228323066],
+  [21.038551222258317, 105.784898488927]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivKT = document.getElementById('infoDivKT');
+
+nhaKT.on('click', function () {
+  document.getElementById('infoDivKT').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivKT');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivKT = document.getElementById('infoDivKT');
+    infoDivKT.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaKT.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivKT').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForKT() {
+  var latitude = 21.038531226216158; 
+  var longitude = 105.78513470362036; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà T1
+var nhaT1 = L.polygon([
+  [21.03854766825242, 105.78489309992261],
+  [21.038842609569365, 105.7849038369541],
+  [21.038852607569876, 105.78435087983101],
+  [21.03856266528263, 105.78435087983101]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivT1 = document.getElementById('infoDivT1');
+
+nhaT1.on('click', function () {
+  document.getElementById('infoDivT1').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivT1');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivT1 = document.getElementById('infoDivT1');
+    infoDivT1.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaT1.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivT1').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForT1() {
+  var latitude = 21.038542669242013; 
+  var longitude = 105.78458709452437; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà T2
+var nhaT2 = L.polygon([
+  [21.038685719012175, 105.78428661335559],
+  [21.038685719012175, 105.78433492999744],
+  [21.03856074381754, 105.78433492999744],
+  [21.03856074381754, 105.78428661335559]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivT2 = document.getElementById('infoDivT2');
+
+nhaT2.on('click', function () {
+  document.getElementById('infoDivT2').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivT2');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivT2 = document.getElementById('infoDivT2');
+    infoDivT2.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaT2.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivT2').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForT2() {
+  var latitude = 21.038542669242013; 
+  var longitude = 105.78458709452437; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà V
+var nhaV = L.polygon([
+  [21.037875565454517, 105.78494146163943],
+  [21.03786556738842, 105.7851132541437],
+  [21.03836047085427, 105.7851239911752],
+  [21.038365469870772, 105.78495756718672]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivV = document.getElementById('infoDivV');
+
+nhaV.on('click', function () {
+  document.getElementById('infoDivV').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivV');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivV = document.getElementById('infoDivV');
+    infoDivV.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaV.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivV').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForV() {
+  var latitude = 21.03811551883931; 
+  var longitude = 105.78491461906061; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà CDTY
+var CDTY = L.polygon([
+  [21.038566726992354, 105.78332577606446],
+  [21.038571726001937, 105.78327745942265],
+  [21.040486334340915, 105.78335261864326],
+  [21.040486334340915, 105.78339019825357]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivCDTY = document.getElementById('infoDivCDTY');
+
+CDTY.on('click', function () {
+  document.getElementById('infoDivCDTY').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivCDTY');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivCDTY = document.getElementById('infoDivCDTY');
+    infoDivCDTY.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!CDTY.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivCDTY').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForCDTY() {
+  var latitude = 21.038914821717466; 
+  var longitude = 105.78331432193048; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info nhà TV
+var nhaTV = L.polygon([
+  [21.040442476383372, 105.78339543973972],
+  [21.04042747954243, 105.78395913389436],
+  [21.039997569459935, 105.78394302834707],
+  [21.040022564266124, 105.78337933419246]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivTV = document.getElementById('infoDivTV');
+
+nhaTV.on('click', function () {
+  document.getElementById('infoDivTV').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivTV');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivTV = document.getElementById('infoDivTV');
+    infoDivTV.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!nhaTV.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivTV').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForTV() {
+  var latitude = 21.04001756530523; 
+  var longitude = 105.7836799710749; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info Sân đa năng
+var SDN = L.polygon([
+  [21.03982676891435, 105.78397544432805],
+  [21.0398117720114, 105.78425460714747],
+  [21.04039165115876, 105.78427608121049],
+  [21.040401649055283, 105.78399154987528]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivSDN = document.getElementById('infoDivSDN');
+
+SDN.on('click', function () {
+  document.getElementById('infoDivSDN').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivSDN');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivSDN = document.getElementById('infoDivSDN');
+    infoDivSDN.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!SDN.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivSDN').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForSDN() {
+  var latitude = 21.04025667948982; 
+  var longitude = 105.78429755527353; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info Chùa thánh chúa
+var CTC = L.polygon([
+  [21.03998565790031, 105.7834008082555],
+  [21.039980658938184, 105.78395913389436],
+  [21.039825691028437, 105.78395376537856],
+  [21.03980569515738, 105.78425440226103],
+  [21.03926080663769, 105.78423292819804],
+  [21.03926080663769, 105.78429198187133],
+  [21.03901585610325, 105.78439935218654],
+  [21.038580942937376, 105.78421682265075],
+  [21.038595939964228, 105.78336322864517],
+  [21.038885882186708, 105.78337396567672]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivCTC = document.getElementById('infoDivCTC');
+
+CTC.on('click', function () {
+  document.getElementById('infoDivCTC').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivCTC');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivCTC = document.getElementById('infoDivCTC');
+    infoDivCTC.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!CTC.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivCTC').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForCTC() {
+  var latitude = 21.038781898211674; 
+  var longitude = 105.78383495574235; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info sân vận động
+var SVD = L.polygon([
+  [21.040396673539313, 105.78428116288529],
+  [21.040371678795882, 105.78505959767023],
+  [21.040206713384016, 105.78522065314296],
+  [21.03903195441039, 105.78518307353264],
+  [21.03903195441039, 105.78512938837508],
+  [21.038981964461318, 105.78508107173325],
+  [21.03885199051521, 105.78507570321749],
+  [21.038866987514783, 105.78439927023193],
+  [21.039016957427442, 105.78441537577923],
+  [21.03928190390412, 105.78429726843252],
+  [21.039276904918353, 105.78423821475921]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivSVD = document.getElementById('infoDivSVD');
+
+SVD.on('click', function () {
+  document.getElementById('infoDivSVD').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivSVD');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivSVD = document.getElementById('infoDivSVD');
+    infoDivSVD.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!SVD.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivSVD').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForSVD() {
+  var latitude = 21.040301318576297; 
+  var longitude = 105.78517080395068; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A5
+var ktxA5 = L.polygon([
+  [21.040732625900958, 105.78536059925048],
+  [21.040722628026646, 105.78595113598392],
+  [21.040537667230666, 105.78595113598392],
+  [21.040552664060527, 105.78536059925048]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA5 = document.getElementById('infoDivA5');
+
+ktxA5.on('click', function () {
+  document.getElementById('infoDivA5').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA5');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA5 = document.getElementById('infoDivA5');
+    infoDivA5.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA5.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA5').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA5() {
+  var latitude = 21.040557663003472; 
+  var longitude = 105.78565049910145; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A6
+var ktxA6 = L.polygon([
+  [21.041092603604415, 105.78537107812514],
+  [21.041077606828928, 105.78596161485854],
+  [21.040887647542064, 105.78595624634278],
+  [21.040902644336683, 105.78537107812514]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA6 = document.getElementById('infoDivA6');
+
+ktxA6.on('click', function () {
+  document.getElementById('infoDivA6').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA6');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA6 = document.getElementById('infoDivA6');
+    infoDivA6.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA6.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA6').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA6() {
+  var latitude = 21.040977854797603; 
+  var longitude = 105.7853525876999; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A8
+var ktxA8 = L.polygon([
+  [21.040557780164406, 105.78465685654514],
+  [21.040552781221475, 105.78494138788031],
+  [21.040597771701936, 105.78494675639605],
+  [21.040587773818554, 105.78522591921552],
+  [21.040497792837993, 105.78522055069972],
+  [21.040497792837993, 105.78494138788031],
+  [21.04045280232734, 105.78493601936457],
+  [21.04046280021978, 105.78465685654514]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA8 = document.getElementById('infoDivA8');
+
+ktxA8.on('click', function () {
+  document.getElementById('infoDivA8').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA8');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA8 = document.getElementById('infoDivA8');
+    infoDivA8.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA8.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA8').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA8() {
+  var latitude = 21.04047779705717; 
+  var longitude = 105.78523665624702; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A9
+var ktxA9 = L.polygon([
+  [21.040727072402746, 105.78407773296844],
+  [21.040717074528043, 105.78436763281937],
+  [21.04076706389482, 105.78436226430361],
+  [21.0407570660228, 105.78464679563882],
+  [21.040662086205256, 105.78464679563882],
+  [21.040667085144523, 105.78436763281937],
+  [21.040617095744224, 105.78436226430361],
+  [21.040632092566067, 105.78407773296844]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA9 = document.getElementById('infoDivA9');
+
+ktxA9.on('click', function () {
+  document.getElementById('infoDivA9').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA9');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA9 = document.getElementById('infoDivA9');
+    infoDivA9.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA9.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA9').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA9() {
+  var latitude = 21.040737070276787; 
+  var longitude = 105.78423878844119; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A10
+var ktxA10 = L.polygon([
+  [21.040592811813966, 105.78406086524367],
+  [21.040582813930254, 105.78443129283099],
+  [21.040562818160833, 105.78443129283099],
+  [21.04055282027511, 105.78451718908315],
+  [21.040512828725547, 105.78452255759889],
+  [21.040507829781077, 105.7846245593983],
+  [21.04046283927343, 105.7846245593983],
+  [21.0404828350563, 105.7840554967279]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA10 = document.getElementById('infoDivA10');
+
+ktxA10.on('click', function () {
+  document.getElementById('infoDivA10').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA10');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA10 = document.getElementById('infoDivA10');
+    infoDivA10.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA10.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA10').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA10() {
+  var latitude = 21.04046323762088; 
+  var longitude = 105.78426431564917; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A11
+var ktxA11 = L.polygon([
+  [21.0409879776261, 105.7847157831889],
+  [21.0409879776261, 105.78497347194528],
+  [21.041007973338445, 105.78497347194528],
+  [21.041002974410617, 105.78525800328049],
+  [21.040917992611742, 105.78525800328049],
+  [21.040912993680898, 105.78510768483923],
+  [21.04087300222801, 105.78510231632349],
+  [21.040883000092244, 105.7847157831889]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA11 = document.getElementById('infoDivA11');
+
+ktxA11.on('click', function () {
+  document.getElementById('infoDivA11').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA11');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA11 = document.getElementById('infoDivA11');
+    infoDivA11.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA11.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA11').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA11() {
+  var latitude = 21.040843008631303; 
+  var longitude = 105.7848553645986; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info kí túc xá A12
+var ktxA12 = L.polygon([
+  [21.040832604607232, 105.78408263844086],
+  [21.040812608871363, 105.784657069627],
+  [21.041002568253912, 105.784657069627],
+  [21.041022563964287, 105.78409337547241]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDivA12 = document.getElementById('infoDivA12');
+
+ktxA12.on('click', function () {
+  document.getElementById('infoDivA12').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDivA12');
+
+  closeButton.addEventListener('click', function () {
+    var infoDivA12 = document.getElementById('infoDivA12');
+    infoDivA12.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!ktxA12.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDivA12').style.display = 'none';
+  }
+});
+
+function openGoogleMapsForA12() {
+  var latitude = 21.04080760993697; 
+  var longitude = 105.78427053649243; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Info Hội trường 11.10
+var HT1110 = L.polygon([
+  [21.03849865754228, 105.78446209430695],
+  [21.03848863338883, 105.78488588333131],
+  [21.037796965172358, 105.78486979007722],
+  [21.03777691677036, 105.78515946865082],
+  [21.037631565775207, 105.78515946865082],
+  [21.03763657788085, 105.78443527221681]
+
+], {
+  opacity: 0,        
+  fillOpacity: 0     
+}).addTo(mymap);
+
+
+var infoDiv1110 = document.getElementById('infoDiv1110');
+
+HT1110.on('click', function () {
+  document.getElementById('infoDiv1110').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var closeButton = document.getElementById('closeinfoDiv1110');
+
+  closeButton.addEventListener('click', function () {
+    var infoDiv1110 = document.getElementById('infoDiv1110');
+    infoDiv1110.style.display = 'none';
+  });
+});
+
+
+mymap.on('click', function (e) {
+  if (!HT1110.getBounds().contains(e.latlng)) {
+    document.getElementById('infoDiv1110').style.display = 'none';
+  }
+});
+
+function openGoogleMapsFor1110() {
+  var latitude = 21.03786212246022; 
+  var longitude = 105.78466057777405; 
+
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+  window.open(googleMapsUrl, '_blank');
+}
+
+// --------------------------------------------------------------------------------------- //
+
+let currentLanguage = 'vi';
+
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'vi' ? 'en' : 'vi';
+    updateContentLanguage();
+}
+
+const languageToggle = document.getElementById('language-toggle');
+const contentVN = document.querySelectorAll('.contentVN');
+const contentEnglish = document.querySelectorAll('.contentEnglish');
+
+languageToggle.addEventListener('change', function() {
+  const isChecked = this.checked;
+
+  contentVN.forEach(item => {
+    item.style.display = isChecked ? 'none' : 'block';
+  });
+
+  contentEnglish.forEach(item => {
+    item.style.display = isChecked ? 'block' : 'none';
+  });
+});
+
+
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
+
+// Menu burger
+// Lấy đối tượng burger và menu bằng ID
+const burger = document.getElementById('menu-btn__burger');
+const menu = document.getElementById('menu');
+
+// Thêm sự kiện "click" cho burger
+burger.addEventListener('click', function() {
+  // Toggle giá trị của thuộc tính display
+  menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+});
+
+function toggleSupportDiv() {
+  var supportDiv = document.getElementById("support-div");
+  var computedStyle = window.getComputedStyle(supportDiv);
+
+  if (computedStyle.display === "none") {
+    supportDiv.style.display = "block";
+  } else {
+    supportDiv.style.display = "none";
+  }
+}
+
+function hideSupportDiv() {
+  var supportDiv = document.getElementById("support-div");
+  supportDiv.style.display = "none";
+}
+
+function toggleSocialNetworkDiv() {
+  var socialDiv = document.getElementById("social-network-div");
+  var computedStyle = window.getComputedStyle(socialDiv);
+
+  if (computedStyle.display === "none") {
+    socialDiv.style.display = "block";
+  } else {
+    socialDiv.style.display = "none";
+  }
+}
+
+function hideSocialNetworkDiv() {
+  var socialDiv = document.getElementById("social-network-div");
+  socialDiv.style.display = "none";
+}
+
+
+
+
+function toggleDonateDiv() {
+  var donateDiv = document.getElementById("donate-div");
+  var computedStyle = window.getComputedStyle(donateDiv);
+
+  if (computedStyle.display === "none") {
+    donateDiv.style.display = "block";
+  } else {
+    donateDiv.style.display = "none";
+  }
+}
+
+
+function hideDonateDiv() {
+  var donateDiv = document.getElementById("donate-div");
+  donateDiv.style.display = "none";
+}
+
+
+function composeEmail() {
+  var emailAddress = "hoaphamduc2399@gmail.com";
+  var subject = "Hỗ trợ về HNUE map"; 
+  var body = ""; 
+
+  var mailtoLink = "mailto:" + encodeURIComponent(emailAddress) +
+                   "?subject=" + encodeURIComponent(subject) +
+                   "&body=" + encodeURIComponent(body);
+
+  window.location.href = mailtoLink;
+}
+
+// Lấy thẻ hình ảnh bằng cách sử dụng ID
+var imageElement = document.getElementById("hnue-img");
+
+// Lấy URL của hình ảnh
+var imageUrl = imageElement.src;
+
+// Đặt giá trị cho thuộc tính content của thẻ og:image
+var ogImageElement = document.getElementById("ogImage");
+ogImageElement.content = imageUrl;
+
+
