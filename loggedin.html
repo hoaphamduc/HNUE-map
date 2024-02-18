@@ -26,7 +26,7 @@
         </button>
 
         <div id="google-login-div">
-            <span id="userName" style="font-size: 14px; text-align: center; font-weight: bold; width: 100px; height: 20px; overflow: hidden; position: absolute; top: 5px; left: 5px;"></span>
+            <span id="userName"></span>
             <p id="userEmail" style="display: none;"></p>
             <img id="userProfilePicture" alt="Profile Picture">
             <button class="contentVN" id="logout-btn">Đăng xuất</button>
@@ -96,7 +96,16 @@
         <!-- Mạng xã hội -->
 
         <div id="social-network-div">
-            <button class="close-div" onclick="hideSocialNetworkDiv()"></button>
+            <button class="close-div" onclick="hideSocialNetworkDiv()" style="background-color: #f0f2f5;"></button>
+            <div id="post-div">
+                <img id="userProfilePicture1" alt="Profile Picture">
+                <div class="contentVN post-btn">
+                    <span>Chia sẻ gì đó với mọi người</span>
+                </div>
+                <div class="contentEnglish post-btn">
+                    <span>Share something with everyone</span>
+                </div>
+            </div>
         </div>
 
         <!-- Hộp thông báo -->

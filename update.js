@@ -26,6 +26,7 @@ function updateUserProfile(user) {
     document.getElementById("userName").textContent = userName;
     document.getElementById("userEmail").textContent = userEmail;
     document.getElementById("userProfilePicture").src = userProfilePicture;
+    document.getElementById("userProfilePicture1").src = userProfilePicture;
   }
 
 // Observer for authentication state changes
@@ -55,6 +56,7 @@ function logout() {
     document.getElementById("userName").textContent = "";
     document.getElementById("userEmail").textContent = "";
     document.getElementById("userProfilePicture").src = "";
+    document.getElementById("userProfilePicture1").src = "";
   }
 
   document.getElementById("logout-btn").addEventListener("click", logout);
