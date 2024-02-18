@@ -272,6 +272,8 @@ body, html {
   width: 150px; 
   height: 54px; 
   border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
 }
 
 #google-login-btn img, #google-login-div img {
