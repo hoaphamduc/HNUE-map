@@ -99,12 +99,28 @@
             <button class="close-div" onclick="hideSocialNetworkDiv()" style="background-color: #f0f2f5;"></button>
             <div id="post-div">
                 <img id="userProfilePicture1" alt="Profile Picture">
-                <div class="contentVN post-btn">
+                <div class="contentVN post-btn" onclick="openEnterPostDiv()">
                     <span>Chia sẻ gì đó với mọi người</span>
                 </div>
-                <div class="contentEnglish post-btn">
+                <div class="contentEnglish post-btn" onclick="openEnterPostDiv()">
                     <span>Share something with everyone</span>
                 </div>
+            </div>
+            <div id="enter-post">
+                <center><span class="contentVN creat-post-span">Tạo bài viết</span></center>
+                <center><span class="contentEnglish creat-post-span">Create post</span></center>
+                <button class="close-div" onclick="hideEnterPostDiv()"></button>
+                <div style="height: 1px; width: 100%; background-color: #e5e5e5; position: relative; top: 18px"></div>
+                <img id="userProfilePicture2" alt="Profile Picture">
+                <span id="userName2"></span>
+                <textarea class="contentVN" id="status" placeholder="Chia sẻ với mọi người gì đó đi nào"></textarea>
+                <textarea class="contentEnglish" id="status" placeholder="Chia sẻ với mọi người gì đó đi nào"></textarea>
+                <div id="add-photo" onclick="uploadImage()">
+                    <input type="file" id="imageInput" onchange="setBackgroundImage()">
+                </div>
+                
+                <button class="contentVN post-status">Đăng</button>
+                <button class="contentEnglish post-status">Post</button>
             </div>
         </div>
 

@@ -24,9 +24,11 @@ function updateUserProfile(user) {
     const userProfilePicture = user.photoURL;
 
     document.getElementById("userName").textContent = userName;
+    document.getElementById("userName2").textContent = userName;
     document.getElementById("userEmail").textContent = userEmail;
     document.getElementById("userProfilePicture").src = userProfilePicture;
     document.getElementById("userProfilePicture1").src = userProfilePicture;
+    document.getElementById("userProfilePicture2").src = userProfilePicture;
   }
 
 // Observer for authentication state changes
@@ -54,9 +56,11 @@ function logout() {
   // Function to clear user profile information
   function clearUserProfile() {
     document.getElementById("userName").textContent = "";
+    document.getElementById("userName2").textContent = "";
     document.getElementById("userEmail").textContent = "";
     document.getElementById("userProfilePicture").src = "";
     document.getElementById("userProfilePicture1").src = "";
+    document.getElementById("userProfilePicture2").src = "";
   }
 
   document.getElementById("logout-btn").addEventListener("click", logout);

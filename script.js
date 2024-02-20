@@ -1885,7 +1885,15 @@ function hideSocialNetworkDiv() {
   socialDiv.style.display = "none";
 }
 
+function hideEnterPostDiv() {
+  var enterPost = document.getElementById("enter-post");
+  enterPost.style.display = "none";
+}
 
+function openEnterPostDiv() {
+  var enterPost = document.getElementById("enter-post");
+  enterPost.style.display = "block";
+}
 
 
 function toggleDonateDiv() {
@@ -1928,4 +1936,25 @@ var imageUrl = imageElement.src;
 var ogImageElement = document.getElementById("ogImage");
 ogImageElement.content = imageUrl;
 
+function uploadImage() {
+  document.getElementById('imageInput').click();
+}
+
+function setBackgroundImage() {
+  // Lấy đối tượng input chứa file
+  var input = document.getElementById('imageInput');
+
+  // Kiểm tra xem có file được chọn hay không
+  if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      // Đọc nội dung của file và thiết lập nó làm background-image cho div
+      reader.onload = function (e) {
+          document.getElementById('add-photo').style.backgroundImage = 'url(' + e.target.result + ')';
+      };
+
+      // Đọc file ảnh dưới dạng URL Data
+      reader.readAsDataURL(input.files[0]);
+  }
+}
 

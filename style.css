@@ -309,6 +309,16 @@ body, html {
   left: 10px;
 }
 
+#userProfilePicture2 {
+  width: 40px; 
+  border: none; 
+  border-radius: 50%; 
+  height: 40px; 
+  position: absolute; 
+  top: 56px; 
+  left: 10px;
+}
+
 .post-btn {
   height: 30px; 
   left: 50px; 
@@ -325,16 +335,32 @@ body, html {
   overflow: hidden;
 }
 
+.post-btn:hover {
+  background-color: #e4e6e9;
+}
+
 .post-btn span {
   position: absolute; 
   left: 10px; 
   top: 5px
 }
 
+.darken {
+  filter: brightness(0.9);
+}
+
+.creat-post-span {
+  font-size: 20px; 
+  position: relative; 
+  top: 10px; 
+  font-weight: bold;
+  cursor: default;
+}
+
 #post-div {
   width: 60%; 
   border-radius: 15px; 
-  height: 50px; 
+  height: 52px; 
   background-color: #fff; 
   border: 1px solid #e4e6e9; 
   position: absolute; 
@@ -355,6 +381,58 @@ body, html {
   left: 5px;
 }
 
+#userName2 {
+  font-size: 15px; 
+  text-align: center; 
+  font-weight: bold; 
+  height: 20px; 
+  overflow: hidden; 
+  position: absolute; 
+  cursor: default; 
+  top: 65px; 
+  left: 60px;
+}
+
+#add-photo {
+  background-image: url(source-img/add-a-photo.svg); 
+  width: 100px; 
+  height: 100px; 
+  position: absolute; 
+  left: 10px; 
+  bottom: 50px; 
+  cursor: pointer;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  border: 1px solid #DEDEDF;
+}
+
+
+#status {
+  background-color: #fff; 
+  width: calc(100% - 20px); 
+  font-size: 17px; 
+  height: 134px; 
+  position: absolute; 
+  top: 105px; 
+  left: 10px;
+  overflow: auto;
+  border: none;
+}
+
+.post-status {
+  position: absolute;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 30px;
+  background-color: #2185D0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  bottom: 10px;
+}
+
 #logout-btn, #logout-btn-1 {
   border: none;
   position: absolute;
@@ -366,6 +444,17 @@ body, html {
   color: #DC3545;
 }
 
+#enter-post {
+  width: 60%; 
+  display: none; 
+  border-radius: 15px; 
+  height: 400px; 
+  background-color: #fff; 
+  border: 1px solid #e4e6e9; 
+  position: absolute; 
+  left: 20%; 
+  top: 5px;
+}
 
 .info {
   background: url(source-img/info-solid.svg);
@@ -704,12 +793,12 @@ input:checked + label img.en {
     left: 120px;
   }
   #post-div {
+    width: 90%;  
+    left: 5%; 
+    top: 30px;
+  }
+  #enter-post {
     width: 90%; 
-    border-radius: 15px; 
-    height: 50px; 
-    background-color: #fff; 
-    border: 1px solid #e4e6e9; 
-    position: absolute; 
     left: 5%; 
     top: 30px;
   }
