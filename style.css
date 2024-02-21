@@ -394,7 +394,7 @@ body, html {
 }
 
 #add-photo {
-  background-image: url(source-img/add-a-photo.svg); 
+  background-image: url(source-img/add-a-photo.png); 
   width: 100px; 
   height: 100px; 
   position: absolute; 
@@ -408,8 +408,14 @@ body, html {
   border: 1px solid #DEDEDF;
 }
 
+#add-address-img {
+  height: 22px; 
+  position: absolute; 
+  right: 5px; 
+  bottom: 2.5px;
+}
 
-#status {
+.status {
   background-color: #fff; 
   width: calc(100% - 20px); 
   font-size: 17px; 
@@ -417,6 +423,7 @@ body, html {
   position: absolute; 
   top: 105px; 
   left: 10px;
+  padding: 5px;
   overflow: auto;
   border: none;
 }
@@ -471,7 +478,7 @@ body, html {
   left: 40px;
 }
 
-label {
+.language-toggle-box label {
   width: 80px;
   height: 40px;
   position: relative;
@@ -489,7 +496,7 @@ label {
   z-index: 2;
 }
 
-label:after {
+.language-toggle-box label:after {
   content: "";
   width: 36px;
   height: 36px;
@@ -500,45 +507,83 @@ label:after {
   border-radius: 180px;
   box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
 }
-input {
+#imageInput {
   width: 0;
   height: 0;
   visibility: hidden;
 }
 
-input:checked + label:after {
+#add-location {
+  background-color: #fff; 
+  width: calc(100% - 130px); 
+  position: absolute; 
+  height: 50px; 
+  bottom: 50px; 
+  right: 10px;
+}
+
+#add-address {
+  background-color: #fff; 
+  width: calc(100% - 130px); 
+  position: absolute; 
+  height: 50px; 
+  bottom: 105px; 
+  right: 10px;
+}
+
+#text-location-vn, #text-location-eng {
+  height: 25px; 
+  font-size: 13px; 
+  width: calc(100% - 30px); 
+  left: 0; 
+  bottom: 0; 
+  cursor: default;
+  border: 1.5px solid #dededf;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+#add-location-button {
+  width: 25px; 
+  position: absolute; 
+  right: 0; 
+  bottom: 1px;
+  cursor: pointer;
+}
+
+.language-toggle-box input:checked + label:after {
   left:78px;
   transform: translateX(-100%);
   background: linear-gradient(180deg,#777,#807878);
 }
-label, label:after {
+.language-toggle-box label, .language-toggle-box label:after {
   transition: 0.4s
 }
 
-label:active:after{ 
+.language-toggle-box label:active:after{ 
   width: 52px; 
 }
 
-label img {
+.language-toggle-box label img {
   position: absolute;
   width: 24px;
   top:8px;
   z-index: 100;
 }
-label img.vi {
+.language-toggle-box label img.vi {
   left:8px;
   fill:#fff;
   transition: 0.3s;
 }
-label img.en {
+.language-toggle-box label img.en {
   left:48px;
   fill:#7e7e7e;
   transition: 0.3s;
 }
-input:checked + label img.vi {
+.language-toggle-box input:checked + label img.vi {
   fill:#7e7e7e;
 }
-input:checked + label img.en {
+.language-toggle-box input:checked + label img.en {
   fill:#fff;
 }
 

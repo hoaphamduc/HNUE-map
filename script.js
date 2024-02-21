@@ -653,7 +653,7 @@ mymap.on('click', function (e) {
   }
 });
 
-function openGoogleMapsForC3() {
+function openGoogleMapsForC4() {
   var latitude = 21.037494326242005; 
   var longitude = 105.78374421706172; 
 
@@ -1941,20 +1941,78 @@ function uploadImage() {
 }
 
 function setBackgroundImage() {
-  // Lấy đối tượng input chứa file
   var input = document.getElementById('imageInput');
 
-  // Kiểm tra xem có file được chọn hay không
   if (input.files && input.files[0]) {
+      var file = input.files[0];
+
+      // Kiểm tra kích thước tệp tin (25MB = 25 * 1024 * 1024 bytes)
+      if (file.size > 25 * 1024 * 1024) {
+          alert("File quá lớn. Vui lòng chọn một tệp tin dưới 25MB.");
+          return;
+      }
+
+      // Kiểm tra loại MIME của tệp tin chỉ cho phép ảnh
+      if (!isValidImageFileType(file.type)) {
+          alert("Bạn chỉ được phép chọn ảnh.");
+          return;
+      }
+
       var reader = new FileReader();
 
-      // Đọc nội dung của file và thiết lập nó làm background-image cho div
       reader.onload = function (e) {
           document.getElementById('add-photo').style.backgroundImage = 'url(' + e.target.result + ')';
       };
 
-      // Đọc file ảnh dưới dạng URL Data
-      reader.readAsDataURL(input.files[0]);
+      reader.readAsDataURL(file);
   }
 }
+
+// Hàm kiểm tra loại MIME của tệp tin chỉ cho phép ảnh
+function isValidImageFileType(fileType) {
+  // Các loại MIME của ảnh
+  var allowedImageTypes = ['image/jpeg', 'image/png', 'image/gif'];
+
+  return allowedImageTypes.includes(fileType);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Lấy đối tượng img và input
+  var locationImage = document.querySelector("#add-location-button");
+
+  // Thêm sự kiện click vào hình ảnh
+  locationImage.addEventListener("click", getLocationAndFillInput);
+});
+
+function getLocationAndFillInput() {
+  // Kiểm tra xem trình duyệt hỗ trợ Geolocation hay không
+  if ("geolocation" in navigator) {
+      // Sử dụng Geolocation API để lấy toạ độ
+      navigator.geolocation.getCurrentPosition(
+          function (position) {
+              // Lấy toạ độ latitude và longitude
+              var latitude = position.coords.latitude;
+              var longitude = position.coords.longitude;
+
+              // Điền toạ độ vào input
+              fillInputWithCoordinates(latitude, longitude);
+          },
+          function (error) {
+              // Xử lý lỗi nếu có
+              console.error("Không thể lấy toạ độ:", error.message);
+          }
+      );
+  } else {
+      // Trình duyệt không hỗ trợ Geolocation
+      alert("Trình duyệt không hỗ trợ Geolocation.");
+  }
+}
+
+function fillInputWithCoordinates(latitude, longitude) {
+  // Điền toạ độ vào input
+  var coordinatesText = "Latitude: " + latitude + ", Longitude: " + longitude;
+  document.querySelector("#text-location-vn").value = coordinatesText;
+  document.querySelector("#text-location-eng").value = coordinatesText;
+}
+
 

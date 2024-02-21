@@ -113,14 +113,33 @@
                 <div style="height: 1px; width: 100%; background-color: #e5e5e5; position: relative; top: 18px"></div>
                 <img id="userProfilePicture2" alt="Profile Picture">
                 <span id="userName2"></span>
-                <textarea class="contentVN" id="status" placeholder="Chia sẻ với mọi người gì đó đi nào"></textarea>
-                <textarea class="contentEnglish" id="status" placeholder="Chia sẻ với mọi người gì đó đi nào"></textarea>
+                <textarea class="contentVN status" id="statusVN" placeholder="Chia sẻ với mọi người gì đó đi nào"></textarea>
+                <textarea class="contentEnglish status" id="statusEng" placeholder="Share something to everyone"></textarea>
                 <div id="add-photo" onclick="uploadImage()">
                     <input type="file" id="imageInput" onchange="setBackgroundImage()">
                 </div>
-                
-                <button class="contentVN post-status">Đăng</button>
-                <button class="contentEnglish post-status">Post</button>
+                <div id="add-location">
+                    <label for="text-location" style="font-size: 13px;">
+                        <span class="contentVN">Thêm toạ độ hiện tại:</span>
+                        <span class="contentEnglish">Add current coordinates:</span>
+                    </label><br>
+                    <input type="text" name="text-location" id="text-location-vn" class="contentVN" readonly placeholder="Nhấn nút để thêm tọa độ" >
+                    <input type="text" name="text-location" id="text-location-eng" class="contentEnglish" readonly placeholder="Press the button to add coordinates">
+                    <img src="source-img/location.png" id="add-location-button">
+                </div>
+                <div id="add-address">
+                    <label for="text-location" style="font-size: 13px;">
+                        <span class="contentVN">Thêm địa chỉ:</span>
+                        <span class="contentEnglish">Add address:</span>
+                    </label><br>
+                    <input type="text" name="text-location" id="text-location-vn" class="contentVN" placeholder="Nhập địa chỉ" >
+                    <input type="text" name="text-location" id="text-location-eng" class="contentEnglish" readonly placeholder="Enter address">
+                    <img src="source-img/building-regular.svg" id="add-address-img">
+                </div>
+                <button class="post-status" id="post-status">
+                    <span class="contentVN">Đăng</span>
+                    <span class="contentEnglish">Post</span>
+                </button>
             </div>
         </div>
 

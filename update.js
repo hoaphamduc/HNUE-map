@@ -53,16 +53,16 @@ function logout() {
       });
   }
 
-  // Function to clear user profile information
-  function clearUserProfile() {
-    document.getElementById("userName").textContent = "";
-    document.getElementById("userName2").textContent = "";
-    document.getElementById("userEmail").textContent = "";
-    document.getElementById("userProfilePicture").src = "";
-    document.getElementById("userProfilePicture1").src = "";
-    document.getElementById("userProfilePicture2").src = "";
-  }
+// Function to clear user profile information
+function clearUserProfile() {
+  document.getElementById("userName").textContent = "";
+  document.getElementById("userName2").textContent = "";
+  document.getElementById("userEmail").textContent = "";
+  document.getElementById("userProfilePicture").src = "";
+  document.getElementById("userProfilePicture1").src = "";
+  document.getElementById("userProfilePicture2").src = "";
+}
 
-  document.getElementById("logout-btn").addEventListener("click", logout);
-  document.getElementById("logout-btn-1").addEventListener("click", logout);
+document.getElementById("logout-btn").addEventListener("click", logout);
+document.getElementById("logout-btn-1").addEventListener("click", logout);
 
