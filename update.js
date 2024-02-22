@@ -1,6 +1,9 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getAuth, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getDatabase, ref, onValue, set, push } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js';
+
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyCRD_Jsz7rBhGf2B-oZ4wniLAp8QrglFTQ",
@@ -66,3 +69,31 @@ function clearUserProfile() {
 document.getElementById("logout-btn").addEventListener("click", logout);
 document.getElementById("logout-btn-1").addEventListener("click", logout);
 
+document.getElementById('post-status').addEventListener('click', function() {
+  var statusVN = document.getElementById('statusVN').value;
+  var statusEng = document.getElementById('statusEng').value;
+  var user = auth.currentUser;
+  var uid = user.uid;
+
+  console.log("uid: ", uid); 
+  
+  const statusRef = ref(getDatabase(app), 'statuses');
+  const newStatusRef = push(statusRef);
+
+  console.log("newStatusRef.key: ", newStatusRef.key);
+
+  // Get current date and time
+  const currentDate = new Date();
+  const timestamp = currentDate.getTime();
+
+  // Use set method on the new child reference
+  set(newStatusRef, {
+    uid: uid,
+    statusVN: statusVN,
+    statusEng: statusEng,
+    timestamp: timestamp
+  });
+
+  document.getElementById('statusVN').value = '';
+  document.getElementById('statusEng').value = '';
+});
