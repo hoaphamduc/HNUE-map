@@ -531,7 +531,7 @@ body, html {
   right: 10px;
 }
 
-#text-location-vn, #text-location-eng {
+#text-location-vn, #text-location-eng, #text-address-vn, #text-address-eng {
   height: 25px; 
   font-size: 13px; 
   width: calc(100% - 30px); 
@@ -586,6 +586,8 @@ body, html {
 .language-toggle-box input:checked + label img.en {
   fill:#fff;
 }
+
+
 
 /* burger icon menu */
 

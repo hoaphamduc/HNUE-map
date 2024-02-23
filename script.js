@@ -1993,7 +1993,6 @@ function getLocationAndFillInput() {
               // Lấy toạ độ latitude và longitude
               var latitude = position.coords.latitude;
               var longitude = position.coords.longitude;
-
               // Điền toạ độ vào input
               fillInputWithCoordinates(latitude, longitude);
           },
