@@ -847,4 +847,52 @@ body, html {
     left: 5%; 
     top: 30px;
   }
+
+  #search-bar {
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000000;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+  .search-bar_icon{
+    margin-left: 5px;
+    margin-right: auto;
+    justify-content: center; 
+    display: flex;
+    align-items: center; 
+    width: 40px;
+    height: 40px;
+  }
+
+  .search-bar_icon-image{
+    width: 50%;
+    height: 50%;
+  }
+
+  .search-bar_user-icon{
+    margin-left: auto;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background: #4975bd;
+  }
+  .search-bar_input {
+    flex: 1; 
+    text-align: left;   
+    border: none;
+    outline: none;
+  }
+  .search-bar_input::placeholder {
+    text-align: left; 
+}
 }
