@@ -115,8 +115,8 @@
                 <div style="height: 1px; width: 100%; background-color: #e5e5e5; position: relative; top: 18px"></div>
                 <img id="userProfilePicture2" alt="Profile Picture">
                 <span id="userName2"></span>
-                <textarea class="contentVN status" id="statusVN" placeholder="Chia sẻ với mọi người gì đó đi nào"></textarea>
-                <textarea class="contentEnglish status" id="statusEng" placeholder="Share something to everyone"></textarea>
+                <textarea class="contentVN status" id="statusVN" placeholder="Chia sẻ với mọi người gì đó đi nào" oninput="checkTextArea(this)"></textarea>
+                <textarea class="contentEnglish status" id="statusEng" placeholder="Share something to everyone" oninput="checkTextArea(this)"></textarea>
                 <div id="add-photo" onclick="uploadImage()">
                     <input type="file" id="imageInput" onchange="setBackgroundImage()">
                 </div>
@@ -138,11 +138,47 @@
                     <input type="text" name="text-location" id="text-address-eng" class="contentEnglish" placeholder="Enter address">
                     <img src="source-img/building-regular.svg" id="add-address-img">
                 </div>
-                <button class="post-status" id="post-status">
+                <button class="post-status" id="post-status" disabled onclick="postStatus()">
                     <span class="contentVN">Đăng</span>
                     <span class="contentEnglish">Post</span>
                 </button>
             </div>
+            <div class="show-post" style="margin-top: 50px;">
+                <img class="post-userProfilePicture" src="source-img/A9.jpg" alt="Profile Picture">
+                <span class="post-username">Mèo béo</span>
+                <span class="post-time">22:22 2/24/2024</span>
+                <span class="post-text-status">Đây là nội dung của status</span>
+                <span class="contentVN post-address">Địa chỉ: </span>
+                <span class="contentEnglish post-address">Address: </span>
+                <div class="post-image">
+                    <img style="border-radius: 10px;" src="source-img/1110.jpg">
+                </div>
+                <div class="number-like">
+                    <img class="liked-img" src="source-img/heart-solid.svg">
+                    <span id="number-like">222</span>
+                </div>
+                <div class="number-comment">
+                    <span id="number-comment">222</span>
+                    <img class="commented-img" src="source-img/cloud.png">
+                </div>
+                <div id="line"></div>
+                <div class="like-post">
+                    <img src="source-img/heart-regular.svg" class="action-img">
+                    <span class="contentVN action-text">Thích</span>
+                    <span class="contentEnglish action-text">Like</span>
+                </div>
+                <div class="comment-post">
+                    <img src="source-img/cloud.png" class="action-img">
+                    <span class="contentVN action-text">Bình luận</span>
+                    <span class="contentEnglish action-text">Comment</span>
+                </div>
+                <div class="direct-post">
+                    <img src="source-img/direct.svg" class="action-img">
+                    <span class="contentVN action-text">Chỉ đường</span>
+                    <span class="contentEnglish action-text">Direct</span>
+                </div>
+            </div>
+
         </div>
 
         <!-- Hộp thông báo -->

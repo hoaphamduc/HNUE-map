@@ -25,6 +25,7 @@ function updateUserProfile(user) {
   document.getElementById("userProfilePicture").src = userProfilePicture;
   document.getElementById("userProfilePicture1").src = userProfilePicture;
   document.getElementById("userProfilePicture2").src = userProfilePicture;
+
 }
 
 // Observer for authentication state changes
@@ -58,6 +59,8 @@ function clearUserProfile() {
   document.getElementById("userProfilePicture1").src = "";
   document.getElementById("userProfilePicture2").src = "";
 }
+
+
 
 document.getElementById("logout-btn").addEventListener("click", logout);
 document.getElementById("logout-btn-1").addEventListener("click", logout);
@@ -215,3 +218,30 @@ async function getDatabaseData(path) {
 async function setDatabaseData(path, data) {
   await set(ref(getDatabase(app), path), data);
 }
+
+function checkTextArea(textarea) {
+  var statusVN = document.getElementById('statusVN').value;
+  var statusEng = document.getElementById('statusEng').value;
+  var postButton = document.getElementById('post-status');
+
+  // Enable the button if either textarea has at least 1 character
+  if (statusVN.length > 0 || statusEng.length > 0) {
+      postButton.disabled = false;
+  } else {
+      postButton.disabled = true;
+  }
+}
+
+function postStatus() {
+  // Add your post status logic here
+  console.log('Posting status...');
+}
+
+// Add event listeners to continuously monitor changes in the textareas
+document.getElementById('statusVN').addEventListener('input', function() {
+  checkTextArea(this);
+});
+
+document.getElementById('statusEng').addEventListener('input', function() {
+  checkTextArea(this);
+});
