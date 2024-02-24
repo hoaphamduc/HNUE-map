@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getAuth, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-import { getDatabase, ref, onValue, set, push } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js';
+import { get, ref, set, push, getDatabase } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js';
 import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js';
 
 const firebaseConfig = {
@@ -76,6 +76,14 @@ document.getElementById('post-status').addEventListener('click', async function(
     const user = auth.currentUser;
     const uid = user.uid;
 
+    // Check if the user can post (last post timestamp is more than a day ago)
+    const canPost = await canUserPost(uid);
+
+    if (!canPost) {
+      alert('Bạn chỉ có thể đăng bài 1 lần mỗi 24h. \nYou can only post once every 24 hours.');
+      return;
+    }
+
     // Create a new status reference
     const statusRef = ref(getDatabase(app), 'statuses');
     const newStatusRef = push(statusRef);
@@ -86,7 +94,10 @@ document.getElementById('post-status').addEventListener('click', async function(
     // Collect status content
     const statusVN = document.getElementById('statusVN').value;
     const statusEng = document.getElementById('statusEng').value;
-    status = isDisplayedBlock(document.getElementById('statusVN')) ? statusVN : statusEng;
+    status = statusVN;
+    if (isDisplayedBlock(document.getElementById('statusEng'))) {
+      status = statusEng;
+    }
 
     // Collect address and location (optional)
     const addressVN = document.getElementById('text-address-vn').value;
@@ -94,22 +105,15 @@ document.getElementById('post-status').addEventListener('click', async function(
     const locationVN = document.getElementById('text-location-vn').value;
     const locationEng = document.getElementById('text-location-eng').value;
 
-    if (isDisplayedBlock(document.getElementById('text-address-vn'))) {
-      address = addressVN;
-    } else {
+    address = addressVN;
+
+    if (isDisplayedBlock(document.getElementById('text-address-eng'))) {
       address = addressEng;
     }
-    console.log('addvn', addressVN);
-    console.log('adden', addressEng);
 
-    console.log('add', address);
-
-    if (isDisplayedBlock(document.getElementById('text-location-vn'))) {
-      location = locationVN;
-    } else {
-      location = locationEng;
-    }
-    
+    location = locationEng;
+    location = locationVN;
+  
     // Handle image upload (if any)
     const imageInput = document.getElementById('imageInput');
     if (imageInput.files.length > 0) {
@@ -147,8 +151,18 @@ document.getElementById('post-status').addEventListener('click', async function(
       await set(newStatusRef, dataToSave);
 
       // Display success message if status is updated successfully
-      alert('Status posted successfully!');
+      alert('Bạn đã đăng bài thành công! \nStatus posted successfully!');
+      document.getElementById('statusVN').value = '';
+      document.getElementById('statusEng').value = '';
+      document.getElementById('text-location-vn').value = '';
+      document.getElementById('text-location-eng').value = '';
+      document.getElementById('text-address-vn').value = '';
+      document.getElementById('text-address-eng').value = '';
+      resetImageInput();
+      var enterPost = document.getElementById("enter-post");
+      enterPost.style.display = "none";
     }
+    await updateLastPostTimestamp(uid);
   } catch (error) {
     // Handle errors
     console.error('Error saving status:', error);
@@ -156,8 +170,56 @@ document.getElementById('post-status').addEventListener('click', async function(
   }
 });
 
+function resetImageInput() {
+  document.getElementById('add-photo').style.backgroundImage = 'url(source-img/add-a-photo.png)';
+  document.getElementById('imageInput').value = '';
+}
     
 // Function to check if an element is displayed as block
 function isDisplayedBlock(element) {
   return element.style.display === 'block';
+}
+
+async function canUserPost(uid) {
+  try {
+    // Retrieve the last post timestamp from the user's data
+    const lastPostSnapshot = await getDatabaseData(`/users/${uid}/lastPostTimestamp`);
+    const lastPostTimestamp = lastPostSnapshot.val();
+
+    if (!lastPostTimestamp) {
+      // If no previous timestamp, the user can post
+      return true;
+    }
+
+    // Check if the last post was more than a day ago
+    const oneDayInMilliseconds = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+    const currentTime = new Date().getTime();
+
+    return currentTime - lastPostTimestamp > oneDayInMilliseconds;
+
+  } catch (error) {
+    console.error('Error checking if user can post:', error);
+    return false;
+  }
+}
+
+async function updateLastPostTimestamp(uid) {
+  try {
+    // Update the last post timestamp for the user
+    const timestamp = new Date().getTime();
+    await setDatabaseData(`/users/${uid}/lastPostTimestamp`, timestamp);
+
+  } catch (error) {
+    console.error('Error updating last post timestamp:', error);
+  }
+}
+
+// Helper functions for interacting with Firebase Realtime Database
+async function getDatabaseData(path) {
+  const snapshot = await get(ref(getDatabase(app), path));
+  return snapshot;
+}
+
+async function setDatabaseData(path, data) {
+  await set(ref(getDatabase(app), path), data);
 }
