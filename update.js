@@ -245,3 +245,76 @@ document.getElementById('statusVN').addEventListener('input', function() {
 document.getElementById('statusEng').addEventListener('input', function() {
   checkTextArea(this);
 });
+
+
+
+
+// Function to load posts from Firebase and display in show-post div
+async function loadPosts() {
+  try {
+      const statusRef = ref(getDatabase(app), 'statuses');
+      const snapshot = await get(statusRef);
+
+      console.log('Firebase Data:', snapshot.val()); // Log Firebase data
+
+      if (snapshot.exists()) {
+          const posts = Object.values(snapshot.val());
+
+          // Assuming you have a container to display posts
+          const postsContainer = document.getElementById('posts-container');
+
+          // Clear existing content in the container
+          postsContainer.innerHTML = '';
+
+          // Iterate through posts and create HTML elements
+          posts.forEach(post => {
+              const postDiv = document.createElement('div');
+              postDiv.classList.add('show-post');
+
+              // Populate HTML elements with post data
+              postDiv.innerHTML = `
+                  <img class="post-userProfilePicture" src="source-img/A9.jpg" alt="Profile Picture">
+                  <span class="post-username">${post.uid}</span>
+                  <span class="post-time">${new Date(post.timestamp).toLocaleString()}</span>
+                  <span class="post-text-status">${post.status}</span>
+                  <span class="contentVN post-address">Địa chỉ: ${post.address}</span>
+                  <span class="contentEnglish post-address">Address: ${post.address}</span>
+                  <div class="post-image">
+                      <img style="border-radius: 10px;" src="${post.imageURL}">
+                  </div>
+                  <div class="number-like">
+                      <img class="liked-img" src="source-img/heart-solid.svg">
+                      <span id="number-like"></span>
+                  </div>
+                  <div class="number-comment">
+                      <span id="number-comment"></span>
+                      <img class="commented-img" src="source-img/cloud.png">
+                  </div>
+                  <div id="line"></div>
+                  <div class="like-post">
+                      <img src="source-img/heart-regular.svg" class="action-img">
+                      <span class="contentVN action-text">Thích</span>
+                      <span class="contentEnglish action-text">Like</span>
+                  </div>
+                  <div class="comment-post">
+                      <img src="source-img/cloud.png" class="action-img">
+                      <span class="contentVN action-text">Bình luận</span>
+                      <span class="contentEnglish action-text">Comment</span>
+                  </div>
+                  <div class="direct-post">
+                      <img src="source-img/direct.svg" class="action-img">
+                      <span class="contentVN action-text">Chỉ đường</span>
+                      <span class="contentEnglish action-text">Direct</span>
+                  </div>
+              `;
+
+              postsContainer.appendChild(postDiv);
+          });
+      }
+  } catch (error) {
+      console.error('Error loading posts:', error);
+  }
+}
+
+// Call the function when the page loads or when needed
+// loadPosts();

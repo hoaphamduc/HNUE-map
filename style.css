@@ -549,6 +549,16 @@ body, html {
   margin-top: 10px;
 }
 
+#posts-container {
+  width: 100%; 
+  border-radius: 15px; 
+  height: 9999px; 
+  background-color: transparent; 
+  position: relative; 
+  left: 0; 
+  margin-top: 50px;
+}
+
 .show-post #line {
   width: calc(100% - 20px);
   left: 10px;
