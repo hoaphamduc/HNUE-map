@@ -2023,9 +2023,9 @@ var lifePosition;
 var firstPosition;
 var movingToolBar = false;
 var positionToolBar = 0;
-var defaultPositionToolBar = 0;
-var limitTop = 100;
-var limitBottom = 0;
+var defaultPositionToolBar = 215;
+var limitTop = 220;
+var limitBottom = 10;
 
 // setup
 moveToolBarY(defaultPositionToolBar);
