@@ -170,7 +170,7 @@ document.getElementById('post-status').addEventListener('click', async function(
   } catch (error) {
       // Handle errors
       console.error('Error saving status:', error);
-      alert('An error occurred while saving your status. Please try again later.');
+      alert('Đã có lỗi khi đăng bài.');
   }
 });
 
@@ -309,8 +309,8 @@ async function loadPosts() {
       // Sắp xếp bài đăng theo timestamp (mới nhất trước)
       posts.sort((a, b) => b.timestamp - a.timestamp);
 
-      // Lấy 5 bài đăng mới nhất
-      const latestPosts = posts.slice(0, 5);
+      // Lấy 20 bài đăng mới nhất
+      const latestPosts = posts.slice(0, 20);
 
       // Lấy container để hiển thị bài đăng
       const postsContainer = document.getElementById('posts-container');
@@ -318,7 +318,7 @@ async function loadPosts() {
       // Xóa nội dung hiện có trong container
       postsContainer.innerHTML = '';
 
-      // Duyệt qua 5 bài đăng mới nhất và tạo các phần tử HTML
+      // Duyệt qua 20 bài đăng mới nhất và tạo các phần tử HTML
       for (const post of latestPosts) {
         // Tạo div cho mỗi bài đăng
         const postDiv = document.createElement('div');
@@ -333,8 +333,8 @@ async function loadPosts() {
           <span class="post-username">${post.username}</span>
           <span class="post-time">${new Date(post.timestamp).toLocaleString()}</span>
           <span class="post-text-status">${post.status}</span>
-          <span class="contentVN post-address">${post.address}</span>
-          <span class="contentEnglish post-address">${post.address}</span>
+          <span class="contentVN post-address">${post.address !== undefined ? post.address : 'Người dùng không chia sẻ địa chỉ'}</span>
+          <span class="contentEnglish post-address">${post.address !== undefined ? post.address : 'The user did not shared the address'}</span>
           <div class="post-image">
             <img style="border-radius: 10px;" src="${post.imageURL}">
           </div>
@@ -347,12 +347,12 @@ async function loadPosts() {
             <img class="commented-img" src="source-img/cloud.png">
           </div>
           <div id="line"></div>
-          <div class="like-post">
+          <div class="like-post" onclick="underDevelopment()">
             <img src="source-img/heart-regular.svg" class="action-img">
             <span class="contentVN action-text">Thích</span>
             <span class="contentEnglish action-text">Like</span>
           </div>
-          <div class="comment-post">
+          <div class="comment-post" onclick="underDevelopment()">
             <img src="source-img/cloud.png" class="action-img">
             <span class="contentVN action-text">Bình luận</span>
             <span class="contentEnglish action-text">Comment</span>

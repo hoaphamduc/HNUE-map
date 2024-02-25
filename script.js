@@ -2014,11 +2014,15 @@ function fillInputWithCoordinates(latitude, longitude) {
   document.querySelector("#text-location-eng").value = coordinatesText;
 }
 
+function underDevelopment() {
+  alert("Tính năng này đang được phát triển!");
+}
+
 function redirectToGoogleMap(latitude, longitude) {
   // Kiểm tra tọa độ
   if (latitude === 0 && longitude === 0) {
     // Hiện cảnh báo người dùng chưa chia sẻ vị trí
-    alert('Người dùng chưa chia sẻ vị trí! \nUser has not shared location!');
+    alert('Người dùng chưa chia sẻ vị trí!');
     return; 
   }
 

@@ -381,7 +381,7 @@ body, html {
   border: 1px solid #e4e6e9; 
   position: absolute; 
   left: 20%; 
-  top: 5px;
+  top: 20px;
 }
 
 #userName {
@@ -427,6 +427,7 @@ body, html {
   position: absolute;
   left: 60px;
   top: 30px;
+  cursor: default;
 }
 
 .show-post .post-text-status {
@@ -440,6 +441,7 @@ body, html {
   right: 10px;
   font-size: 13px;
   word-wrap: break-word;
+  cursor: default;
 }
 
 .show-post .post-image {
@@ -642,6 +644,7 @@ body, html {
   background-color: #fff;
   width: calc(100% - 20px);
   overflow: hidden;
+  cursor: default;
 }
 
 .number-like {
@@ -1045,6 +1048,12 @@ body, html {
   bottom: 5px;
 }
 
+@media (min-width : 650px){
+  #tool-bar, #search-bar {
+    display: none;
+  }
+}
+
 @media (max-width: 650px){
   .infoDiv {
     height: 60%;
@@ -1132,6 +1141,7 @@ body, html {
     text-align: left; 
   }
 
+  
   /* Tool bar */
   #tool-bar {
     overflow-y: auto;
