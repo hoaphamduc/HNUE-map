@@ -552,7 +552,7 @@ body, html {
 #posts-container {
   width: 100%; 
   border-radius: 15px; 
-  height: 9999px; 
+  height: auto; 
   background-color: transparent; 
   position: relative; 
   left: 0; 

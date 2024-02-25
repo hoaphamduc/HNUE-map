@@ -67,103 +67,113 @@ document.getElementById("logout-btn-1").addEventListener("click", logout);
 
 document.getElementById('post-status').addEventListener('click', async function() {
   try {
-    // Get current user
-    const user = auth.currentUser;
-    const uid = user.uid;
+      // Get current user
+      const user = auth.currentUser;
+      const uid = user.uid;
 
-    // Check if the user can post (last post timestamp is more than a day ago)
-    const canPost = await canUserPost(uid);
+      // Fetch user data
+      const userRef = ref(getDatabase(app), `users/${uid}`);
+      const userSnapshot = await get(userRef);
+      const userData = userSnapshot.exists() ? userSnapshot.val() : {};
 
-    if (!canPost) {
-      alert('Bạn chỉ có thể đăng bài 1 lần mỗi 24h. \nYou can only post once every 24 hours.');
-      return;
-    }
+      // Check if the user can post (last post timestamp is more than a day ago)
+      const canPost = await canUserPost(uid);
 
-    // Create a new status reference
-    const statusRef = ref(getDatabase(app), 'statuses');
-    const newStatusRef = push(statusRef);
+      if (!canPost) {
+          alert('Bạn chỉ có thể đăng bài 1 lần mỗi 24h.');
+          return;
+      }
 
-    // Initialize variables to save
-    let status, address, location, imageURL;
+      // Create a new status reference
+      const statusRef = ref(getDatabase(app), 'statuses');
+      const newStatusRef = push(statusRef);
 
-    // Collect status content
-    const statusVN = document.getElementById('statusVN').value;
-    const statusEng = document.getElementById('statusEng').value;
-    status = statusVN;
-    if (isDisplayedBlock(document.getElementById('statusEng'))) {
-      status = statusEng;
-    }
+      // Initialize variables to save
+      let status, address, location, imageURL;
 
-    // Collect address and location (optional)
-    const addressVN = document.getElementById('text-address-vn').value;
-    const addressEng = document.getElementById('text-address-eng').value;
-    const locationVN = document.getElementById('text-location-vn').value;
-    const locationEng = document.getElementById('text-location-eng').value;
+      // Collect status content
+      const statusVN = document.getElementById('statusVN').value;
+      const statusEng = document.getElementById('statusEng').value;
+      status = statusVN;
+      if (isDisplayedBlock(document.getElementById('statusEng'))) {
+          status = statusEng;
+      }
 
-    address = addressVN;
+      // Collect address and location (optional)
+      const addressVN = document.getElementById('text-address-vn').value;
+      const addressEng = document.getElementById('text-address-eng').value;
+      const locationVN = document.getElementById('text-location-vn').value;
+      const locationEng = document.getElementById('text-location-eng').value;
 
-    if (isDisplayedBlock(document.getElementById('text-address-eng'))) {
-      address = addressEng;
-    }
+      address = addressVN;
 
-    location = locationEng;
-    location = locationVN;
-  
-    // Handle image upload (if any)
-    const imageInput = document.getElementById('imageInput');
-    if (imageInput.files.length > 0) {
-      const imageFile = imageInput.files[0];
+      if (isDisplayedBlock(document.getElementById('text-address-eng'))) {
+          address = addressEng;
+      }
 
-      // Create a unique timestamp for the image file name
+      location = locationEng;
+      location = locationVN;
+
+      // Handle image upload (if any)
+      const imageInput = document.getElementById('imageInput');
+      if (imageInput.files.length > 0) {
+          const imageFile = imageInput.files[0];
+
+          // Create a unique timestamp for the image file name
+          const timestamp = new Date().getTime();
+
+          // Create a unique path for the image
+          const imagePath = `images/${newStatusRef.key}/${timestamp}_${imageFile.name}`;
+
+          // Create storage reference with the new path
+          const storageReference = storageRef(storage, imagePath);
+
+          // Upload the file to storage
+          const uploadTask = uploadBytes(storageReference, imageFile);
+
+          // Get the download URL directly from the storage reference
+          imageURL = await uploadTask.then(() => getDownloadURL(storageReference));
+      }
+
+      // Save status data to the database
       const timestamp = new Date().getTime();
+      const dataToSave = {
+          uid,
+          postId: newStatusRef.key, // Include post ID
+          timestamp,
+          username: user.displayName || '', // Include username
+          avatarURL: user.photoURL || '', // Include avatarURL
+      };
 
-      // Create a unique path for the image
-      const imagePath = `images/${newStatusRef.key}/${timestamp}_${imageFile.name}`;
+      if (status) dataToSave.status = status;
+      if (address) dataToSave.address = address;
+      if (location) dataToSave.location = location;
+      if (imageURL) dataToSave.imageURL = imageURL;
 
-      // Create storage reference with the new path
-      const storageReference = storageRef(storage, imagePath);
+      if (Object.keys(dataToSave).length > 2) { // At least uid and timestamp are required
+          await set(newStatusRef, dataToSave);
 
-      // Upload the file to storage
-      const uploadTask = uploadBytes(storageReference, imageFile);
-
-      // Get the download URL directly from the storage reference
-      imageURL = await uploadTask.then(() => getDownloadURL(storageReference));
-    }
-    
-    // Save status data to the database
-    const timestamp = new Date().getTime();
-    const dataToSave = {
-      uid,
-      timestamp,
-    };
-
-    if (status) dataToSave.status = status;
-    if (address) dataToSave.address = address;
-    if (location) dataToSave.location = location;
-    if (imageURL) dataToSave.imageURL = imageURL;
-
-    if (Object.keys(dataToSave).length > 2) { // At least uid and timestamp are required
-      await set(newStatusRef, dataToSave);
-
-      // Display success message if status is updated successfully
-      alert('Bạn đã đăng bài thành công! \nStatus posted successfully!');
-      document.getElementById('statusVN').value = '';
-      document.getElementById('statusEng').value = '';
-      document.getElementById('text-location-vn').value = '';
-      document.getElementById('text-location-eng').value = '';
-      document.getElementById('text-address-vn').value = '';
-      document.getElementById('text-address-eng').value = '';
-      resetImageInput();
-      var enterPost = document.getElementById("enter-post");
-      enterPost.style.display = "none";
-    }
-    await updateLastPostTimestamp(uid);
+          // Display success message if status is updated successfully
+          alert('Bạn đã đăng bài thành công!');
+          loadPosts();
+          document.getElementById('statusVN').value = '';
+          document.getElementById('statusEng').value = '';
+          document.getElementById('text-location-vn').value = '';
+          document.getElementById('text-location-eng').value = '';
+          document.getElementById('text-address-vn').value = '';
+          document.getElementById('text-address-eng').value = '';
+          resetImageInput();
+          var enterPost = document.getElementById("enter-post");
+          enterPost.style.display = "none";
+      }
+      await updateLastPostTimestamp(uid);
   } catch (error) {
-    // Handle errors
-    console.error('Error saving status:', error);
-    alert('An error occurred while saving your status. Please try again later.');
+      // Handle errors
+      console.error('Error saving status:', error);
+      alert('An error occurred while saving your status. Please try again later.');
   }
 });
+
 
 function resetImageInput() {
   document.getElementById('add-photo').style.backgroundImage = 'url(source-img/add-a-photo.png)';
@@ -249,72 +259,131 @@ document.getElementById('statusEng').addEventListener('input', function() {
 
 
 
-// Function to load posts from Firebase and display in show-post div
-async function loadPosts() {
-  try {
-      const statusRef = ref(getDatabase(app), 'statuses');
-      const snapshot = await get(statusRef);
 
-      console.log('Firebase Data:', snapshot.val()); // Log Firebase data
-
-      if (snapshot.exists()) {
-          const posts = Object.values(snapshot.val());
-
-          // Assuming you have a container to display posts
-          const postsContainer = document.getElementById('posts-container');
-
-          // Clear existing content in the container
-          postsContainer.innerHTML = '';
-
-          // Iterate through posts and create HTML elements
-          posts.forEach(post => {
-              const postDiv = document.createElement('div');
-              postDiv.classList.add('show-post');
-
-              // Populate HTML elements with post data
-              postDiv.innerHTML = `
-                  <img class="post-userProfilePicture" src="source-img/A9.jpg" alt="Profile Picture">
-                  <span class="post-username">${post.uid}</span>
-                  <span class="post-time">${new Date(post.timestamp).toLocaleString()}</span>
-                  <span class="post-text-status">${post.status}</span>
-                  <span class="contentVN post-address">Địa chỉ: ${post.address}</span>
-                  <span class="contentEnglish post-address">Address: ${post.address}</span>
-                  <div class="post-image">
-                      <img style="border-radius: 10px;" src="${post.imageURL}">
-                  </div>
-                  <div class="number-like">
-                      <img class="liked-img" src="source-img/heart-solid.svg">
-                      <span id="number-like"></span>
-                  </div>
-                  <div class="number-comment">
-                      <span id="number-comment"></span>
-                      <img class="commented-img" src="source-img/cloud.png">
-                  </div>
-                  <div id="line"></div>
-                  <div class="like-post">
-                      <img src="source-img/heart-regular.svg" class="action-img">
-                      <span class="contentVN action-text">Thích</span>
-                      <span class="contentEnglish action-text">Like</span>
-                  </div>
-                  <div class="comment-post">
-                      <img src="source-img/cloud.png" class="action-img">
-                      <span class="contentVN action-text">Bình luận</span>
-                      <span class="contentEnglish action-text">Comment</span>
-                  </div>
-                  <div class="direct-post">
-                      <img src="source-img/direct.svg" class="action-img">
-                      <span class="contentVN action-text">Chỉ đường</span>
-                      <span class="contentEnglish action-text">Direct</span>
-                  </div>
-              `;
-
-              postsContainer.appendChild(postDiv);
-          });
-      }
-  } catch (error) {
-      console.error('Error loading posts:', error);
+function extractCoordinates(location) {
+  // Kiểm tra location có xác định và là chuỗi hay không
+  if (location && typeof location === 'string') {
+    // Sử dụng regular expression để trích xuất tọa độ
+    const matches = location.match(/Latitude:\s*(-?\d+\.\d+),\s*Longitude:\s*(-?\d+\.\d+)/);
+    
+    // Kiểm tra kết quả match và length
+    if (matches && matches.length === 3) {
+      // Trích xuất tọa độ và chuyển thành số thực
+      const latitude = parseFloat(matches[1]);
+      const longitude = parseFloat(matches[2]);
+      
+      // Trả về object chứa tọa độ
+      return { latitude, longitude };
+    } else {
+      // Ghi log lỗi nếu format không chính xác
+      console.error('Invalid location format:', location);
+      // Trả về object với giá trị mặc định (ví dụ: 0)
+      return { latitude: 0, longitude: 0 };
+    }
+  } else {
+    // Ghi log lỗi nếu location không xác định hoặc không phải chuỗi
+    console.error('Location is undefined or not a string:', location);
+    // Trả về object với giá trị mặc định (ví dụ: 0)
+    return { latitude: 0, longitude: 0 };
   }
 }
 
+
+
+async function loadPosts() {
+  try {
+    // Tham chiếu đến nhánh "statuses" trong Firebase
+    const statusRef = ref(getDatabase(app), 'statuses');
+
+    // Lấy dữ liệu từ nhánh "statuses"
+    const snapshot = await get(statusRef);
+
+    // In dữ liệu Firebase ra console để kiểm tra
+    console.log('Firebase Data:', snapshot.val());
+
+    // Kiểm tra xem dữ liệu có tồn tại hay không
+    if (snapshot.exists()) {
+      // Chuyển đổi dữ liệu snapshot thành mảng
+      const posts = Object.values(snapshot.val());
+
+      // Sắp xếp bài đăng theo timestamp (mới nhất trước)
+      posts.sort((a, b) => b.timestamp - a.timestamp);
+
+      // Lấy 5 bài đăng mới nhất
+      const latestPosts = posts.slice(0, 5);
+
+      // Lấy container để hiển thị bài đăng
+      const postsContainer = document.getElementById('posts-container');
+
+      // Xóa nội dung hiện có trong container
+      postsContainer.innerHTML = '';
+
+      // Duyệt qua 5 bài đăng mới nhất và tạo các phần tử HTML
+      for (const post of latestPosts) {
+        // Tạo div cho mỗi bài đăng
+        const postDiv = document.createElement('div');
+        postDiv.classList.add('show-post');
+
+        // Lấy tọa độ từ thuộc tính "location"
+        const coordinates = extractCoordinates(post.location);
+
+        // Điền dữ liệu bài đăng vào các phần tử HTML
+        postDiv.innerHTML = `
+          <img class="post-userProfilePicture" src="${post.avatarURL}" alt="Profile Picture">
+          <span class="post-username">${post.username}</span>
+          <span class="post-time">${new Date(post.timestamp).toLocaleString()}</span>
+          <span class="post-text-status">${post.status}</span>
+          <span class="contentVN post-address">${post.address}</span>
+          <span class="contentEnglish post-address">${post.address}</span>
+          <div class="post-image">
+            <img style="border-radius: 10px;" src="${post.imageURL}">
+          </div>
+          <div class="number-like">
+            <img class="liked-img" src="source-img/heart-solid.svg">
+            <span id="number-like">0</span>
+          </div>
+          <div class="number-comment">
+            <span id="number-comment">0</span>
+            <img class="commented-img" src="source-img/cloud.png">
+          </div>
+          <div id="line"></div>
+          <div class="like-post">
+            <img src="source-img/heart-regular.svg" class="action-img">
+            <span class="contentVN action-text">Thích</span>
+            <span class="contentEnglish action-text">Like</span>
+          </div>
+          <div class="comment-post">
+            <img src="source-img/cloud.png" class="action-img">
+            <span class="contentVN action-text">Bình luận</span>
+            <span class="contentEnglish action-text">Comment</span>
+          </div>
+          <div class="direct-post" onclick="redirectToGoogleMap(${coordinates.latitude}, ${coordinates.longitude})">
+            <img src="source-img/direct.svg" class="action-img">
+            <span class="contentVN action-text">Chỉ đường</span>
+            <span class="contentEnglish action-text">Direct</span>
+          </div>
+        `;
+
+        // Thêm div bài đăng vào container
+        postsContainer.appendChild(postDiv);
+      }
+    }
+  } catch (error) {
+    console.error('Error loading posts:', error);
+  }
+}
+
+// Call the function when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  loadPosts(true);
+});
+
+// Event listener for "Show more" button
+document.getElementById('show-more').addEventListener('click', () => {
+  loadPosts(false);
+});
+
 // Call the function when the page loads or when needed
-// loadPosts();
+loadPosts();
+
+

@@ -35,15 +35,3 @@ googleLogin.addEventListener("click", function(){
         const errorMessage = error.message;
     });
 })
-
-// function updateUserProfile(user) {
-//     const userName = user.displayName;
-//     const userEmail = user.email;
-//     const userProfilePicture = user.photoURL;
-
-//     document.getElementById("userName").textContent = userName;
-//     document.getElementById("userEmail").textContent = userEmail;
-//     document.getElementById("userProfilePicture").src = userProfilePicture;
-// }
-
-// updateUserProfile()
