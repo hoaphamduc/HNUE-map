@@ -1082,4 +1082,338 @@ body, html {
     left: 1%;
     top: 30px;
   }
+
+  #search-bar {
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 10px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000000;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+  .search-bar_icon{
+    margin-left: 5px;
+    margin-right: auto;
+    justify-content: center; 
+    display: flex;
+    align-items: center; 
+    width: 40px;
+    height: 40px;
+  }
+
+  .search-bar_icon-image{
+    width: 50%;
+    height: 50%;
+  }
+
+  .search-bar_user-icon{
+    margin-left: auto;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #D9D9D9;
+  }
+  .search-bar_input {
+    flex: 1; 
+    text-align: left;   
+    border: none;
+    outline: none;
+  }
+  .search-bar_input::placeholder {
+    text-align: left; 
+  }
+
+  /* Tool bar */
+  #tool-bar {
+    overflow-y: auto;
+    position: fixed;
+    width: 100%;
+    height: 400px;
+    bottom: 10px;
+    z-index: 100;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(100);
+  }
+  .tool-bar_header1{
+    width: 30px;
+    height: 4px;
+    background: #DADCE0;
+    position: relative;
+    border-radius: 2px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .tool-bar_header2
+  {
+    width: 100%;
+    height: 150px;
+    top: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+  }
+   .tool-bar_header2_title{
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+  }
+  .tool-bar_header2_choose{
+    display: block;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    display: flex; 
+  }
+  
+  .tool-bar_header2_choose_child
+  {
+    width: 130px;
+    height: 110px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .tool-bar_header2_choose_child_content
+  {
+    width: 60px;
+    height: 60px;
+    background: #1A73E8;
+    position: relative;
+    border-radius: 30px;
+    
+  }
+  .tool-bar_header2_choose_child_content_logo
+  {
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tool-bar_header2_choose_child_content_logo_item{
+    
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    position: relative;
+    left: 4px;
+    top: 7px;
+  }
+
+  .tool-bar_header2_choose_child_content_text
+  {
+    width: 100px;
+    height: 50px;
+    top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #81858A;
+  }
+  .tool-bar_line1{
+    height: 2px;
+    width: 80%;
+    background: #E0E2E6;
+    border-radius: 2px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 170px;
+  }
+
+  
+  .tool-bar_header3
+  {
+    width: 100%;
+    height: 150px;
+    top: 270px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+  }
+   .tool-bar_header3_title{
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+  }
+  .tool-bar_header3_choose{
+    display: block;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    display: flex; 
+  }
+  
+  .tool-bar_header3_choose_child
+  {
+    width: 130px;
+    height: 110px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .tool-bar_header3_choose_child_content
+  {
+    width: 60px;
+    height: 60px;
+    background: #666666;
+    position: relative;
+    border-radius: 30px;
+    
+  }
+  .tool-bar_header3_choose_child_content_logo
+  {
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  .tool-bar_header3_choose_child_content_logo_content
+  {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 8px;
+    top: 8px;
+  }
+
+  .tool-bar_header3_choose_child_content_text
+  {
+    width: 100px;
+    height: 50px;
+    top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #81858A;
+  }
+  .tool-bar_line2{
+    width: 100%;
+    height: 5px;
+    background: #D9D9D9;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 330px;
+    margin: 0px;
+  }
+  .tool-bar_select-language{
+    top: 340px;
+    position: relative;
+    width: 150px;
+    height: 25px;
+    display: flex;
+    margin-left: 15px;
+  }
+  .tool-bar_select-language_icon
+  {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .65;
+    padding: 12px 4px 12px 24px;
+    background-position: 4px center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(//maps.gstatic.com/mapfiles/maps_lite/images/1x/translate_1x.svg);
+  }
+  .tool-bar_select-language_drop-down
+  {
+    width: 100px;
+    height: 25px;
+    border-color: white;
+  }
+  .tool-ba_contribute{
+    width: 120px;
+    height: 25px;
+    top: 315px;
+    margin-left: auto;
+    display: flex;
+    position: relative;
+  }
+  .tool-ba_contribute_icon{
+    width: 25px;
+    height: 25px;
+    opacity: .65;
+    padding: 12px 4px 12px 24px;
+    background-position: 4px center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(//maps.gstatic.com/mapfiles/maps_lite/images/1x/feedback_1x.svg);
+  }
+  .tool-ba_contribute_text-content{
+    margin-left: 5px;
+  }
+
+  
+
+.tool-bar button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.tool-bar button:hover {
+  background-color: #ddd;
+}
+
+.tool-bar button.active {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Cho phép di chuyển thanh công cụ */
+.tool-bar.draggable {
+  cursor: move;
+}
+
+.tool-bar.draggable:active {
+  opacity: 0.5;
+}
+  
+
+  /* Hind orther resposive */
+  #menu-btn__burger{
+    display: none;
+  }
+
+  .language-toggle-box{
+    display: none;
+  }
+  #google-login-btn{
+    display: none;
+  }
+  #music{
+    display: none;
+  }
 }
