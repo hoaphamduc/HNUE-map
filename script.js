@@ -1915,7 +1915,10 @@ var imageUrl = imageElement.src;
 
 // Đặt giá trị cho thuộc tính content của thẻ og:image
 var ogImageElement = document.getElementById("ogImage");
+var ogImage2Element = document.getElementById("ogImage2");
+
 ogImageElement.content = imageUrl;
+ogImage2Element.content = imageUrl;
 
 function uploadImage() {
   document.getElementById('imageInput').click();
