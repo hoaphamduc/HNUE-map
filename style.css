@@ -132,9 +132,9 @@ body, html {
 #social-network-div {
   position: absolute;
   width: 100%;
-  height: 80%;
-  max-width: 800px;
-  max-height: 600px;
+  height: 100%;
+  max-width: 1000px;
+  max-height: 800px;
   z-index: 100000; 
   display: none;
   padding: 15px;
@@ -381,7 +381,7 @@ body, html {
   border: 1px solid #e4e6e9; 
   position: absolute; 
   left: 20%; 
-  top: 20px;
+  top: 10px;
 }
 
 #userName {
@@ -1092,7 +1092,7 @@ body, html {
     top: 30px;
   }
 
-  #search-bar {
+  /* #search-bar {
     position: absolute;
     display: flex;
     width: 90%;
@@ -1143,7 +1143,7 @@ body, html {
 
   
   /* Tool bar */
-  #tool-bar {
+  /* #tool-bar {
     overflow-y: auto;
     position: fixed;
     width: 100%;
@@ -1400,20 +1400,20 @@ body, html {
 .tool-bar button.active {
   background-color: #000;
   color: #fff;
-}
+} */
 
 /* Cho phép di chuyển thanh công cụ */
-.tool-bar.draggable {
+/* .tool-bar.draggable {
   cursor: move;
 }
 
 .tool-bar.draggable:active {
   opacity: 0.5;
 }
-  
+   */
 
   /* Hind orther resposive */
-  #menu-btn__burger{
+  /* #menu-btn__burger{
     display: none;
   }
 
@@ -1425,5 +1425,5 @@ body, html {
   }
   #music{
     display: none;
-  }
+  }  */
 }

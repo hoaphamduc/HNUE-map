@@ -1806,28 +1806,9 @@ function openGoogleMapsFor1110() {
 
 // --------------------------------------------------------------------------------------- //
 
-let currentLanguage = 'vi';
 
-function toggleLanguage() {
-    currentLanguage = currentLanguage === 'vi' ? 'en' : 'vi';
-    updateContentLanguage();
-}
 
-const languageToggle = document.getElementById('language-toggle');
-const contentVN = document.querySelectorAll('.contentVN');
-const contentEnglish = document.querySelectorAll('.contentEnglish');
 
-languageToggle.addEventListener('change', function() {
-  const isChecked = this.checked;
-
-  contentVN.forEach(item => {
-    item.style.display = isChecked ? 'none' : 'block';
-  });
-
-  contentEnglish.forEach(item => {
-    item.style.display = isChecked ? 'block' : 'none';
-  });
-});
 
 
 const menuBtn = document.querySelector('.menu-btn');
@@ -2087,3 +2068,18 @@ function handleStart(event) {
 }
   
 
+const languageToggle = document.getElementById('language-toggle');
+const contentVN = document.querySelectorAll('.contentVN');
+const contentEnglish = document.querySelectorAll('.contentEnglish');
+
+languageToggle.addEventListener('change', function() {
+  const isChecked = this.checked;
+
+  contentVN.forEach(item => {
+    item.style.display = isChecked ? 'none' : 'block';
+  });
+
+  contentEnglish.forEach(item => {
+    item.style.display = isChecked ? 'block' : 'none';
+  });
+});

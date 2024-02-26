@@ -9,8 +9,10 @@
     <meta property="og:image" content="" id="ogImage"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/205daebc46.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css"/>
+    <script src="update.js"  defer type="module"></script>
+
+
     <link rel="icon" type="image/png" href="Logo Đại học Sư phạm Hà Nội - HNUE.png">
 </head>
 
@@ -19,113 +21,18 @@
         <div id="map"></div>
 
 
-        <!-- New UI -->
-        <div id="search-bar">
-            <span class="search-bar_icon">
-                <img  class="search-bar_icon-image" src="source-img/search-icon.png">
-            </span>
-            <input class ="search-bar_input" type="search" placeholder="Tìm kiếm ở đây">
-            <span class="search-bar_user-icon"></span>
-        </div>
-
-        <div id="tool-bar">
-            <div class="tool-bar_header1"></div>
-            <div class="tool-bar_header2">
-                <div class="tool-bar_header2_title">
-                    Nổi bật</div>
-                <div class="tool-bar_header2_choose">
-                    <span class="tool-bar_header2_choose_child">
-                        <div class="tool-bar_header2_choose_child_content">
-                            <div class="tool-bar_header2_choose_child_content_logo">
-                                <div class="tool-bar_header2_choose_child_content_logo_item" style="left: 2px; top: 6px;">
-                                    <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
-                                </div>
-                            </div>
-                            <div class="tool-bar_header2_choose_child_content_text" >Địa điểm yêu thích</div>
-                        </div>
-                    </span>
-                    <span class="tool-bar_header2_choose_child">
-                        <div class="tool-bar_header2_choose_child_content">
-                            <div class="tool-bar_header2_choose_child_content_logo">
-                                <div class="tool-bar_header2_choose_child_content_logo_item" style="left: 0px; top: 6px;">
-                                    <i class="fa-solid fa-school fa-2xl" style="color: #ffffff;"></i>
-                                </div>
-                            </div>
-                            <div class="tool-bar_header2_choose_child_content_text" >Phòng học</div>
-                        </div>
-                    </span>
-                    <span class="tool-bar_header2_choose_child">
-                        <div class="tool-bar_header2_choose_child_content"><div class="tool-bar_header2_choose_child_content_logo">
-                            <div class="tool-bar_header2_choose_child_content_logo_item">
-                                <i class="fa-solid fa-earth-asia fa-2xl" style="color: #ffffff;"></i>
-                            </div>
-                        </div>
-                        <div class="tool-bar_header2_choose_child_content_text" >Khám phá</div>
-                        </div>
-                    </span>
-                </div>
-            </div>
-            <div class="tool-bar_line1"></div>
-            <div class="tool-bar_header3">
-                <div class="tool-bar_header3_title">
-                    Các địa điểm quanh đây</div>
-                <div class="tool-bar_header3_choose">
-                    <span class="tool-bar_header3_choose_child">
-                        <div class="tool-bar_header3_choose_child_content">
-                            <div class="tool-bar_header3_choose_child_content_logo">
-                                <div class="tool-bar_header3_choose_child_content_logo_content" style="left: 6px;">
-                                    <i class="fa-solid fa-utensils fa-2xl" style="color: #ffffff;"></i>
-                                </div>
-                            </div>
-                            <div class="tool-bar_header3_choose_child_content_text" >Quán ăn</div>
-                        </div>
-                    </span>
-                    <span class="tool-bar_header3_choose_child">
-                        <div class="tool-bar_header3_choose_child_content">
-                            <div class="tool-bar_header3_choose_child_content_logo">
-                                <div class="tool-bar_header3_choose_child_content_logo_content">
-                                    <i class="fa-solid fa-wallet fa-xl" style="color: #ffffff;"></i>
-                                </div>
-                            </div>
-                            <div class="tool-bar_header3_choose_child_content_text" >ATM</div>
-                        </div>
-                    </span>
-                    <span class="tool-bar_header3_choose_child">
-                        <div class="tool-bar_header3_choose_child_content">
-                            <div class="tool-bar_header3_choose_child_content_logo">
-                                <div class="tool-bar_header3_choose_child_content_logo_content" style="left: 6px;">
-                                    <i class="fa-solid fa-square-parking fa-2xl" style="color: #ffffff;"></i>
-                                </div>
-                            </div>
-                            <div class="tool-bar_header3_choose_child_content_text" >Bãi đỗ xe</div>
-                        </div>
-                    </span>
-                </div>
-            </div>
-            <div class="tool-bar_line2"></div>
-            <div class="tool-bar_select-language">
-                <div class="tool-bar_select-language_icon"></div>
-                <select class = "tool-bar_select-language_drop-down">
-                    <option value="Tiếng Việt">Tiếng Việt</option>
-                    <option value="English">English</option>
-                </select>
-            </div>
-            <div class="tool-ba_contribute">
-                <div class="tool-ba_contribute_icon"></div>
-                <div class="tool-ba_contribute_text-content"><p><i>Đóng góp</i></p></div>
-            </div>
-        </div>
-
         
         <!-- Menu -->
         <button class="menu-btn" id="menu-btn__burger">
             <div class="menu-btn__burger"></div>
         </button>
 
-        <div id="google-login-btn">
-            <span class="contentVN login-text">Đăng nhập với</span>
-            <span class="contentEnglish login-text">&nbsp;&emsp;Login with</span>
-            <img src="source-img/google.svg">
+        <div id="google-login-div">
+            <span id="userName"></span>
+            <p id="userEmail" style="display: none;"></p>
+            <img id="userProfilePicture" alt="Profile Picture">
+            <button class="contentVN" id="logout-btn">Đăng xuất</button>
+            <button class="contentEnglish" id="logout-btn-1">&nbsp;&nbsp;Logout</button>
         </div>
 
         <div class="menu" id="menu">
@@ -169,8 +76,8 @@
                 </div>
                 <div id="social-network">
                     <button id="support" onclick="toggleSocialNetworkDiv()">
-                        <span class="menu-text contentVN">Chia sẻ địa điểm ưa thích</span>
-                        <span class="menu-text contentEnglish">Share favorite places</span>
+                        <span class="menu-text contentVN">Mạng xã hội HNUE</span>
+                        <span class="menu-text contentEnglish">HNUE social network</span>
                     </button>
                 </div>
                 <div id="support-us">
@@ -191,10 +98,58 @@
         <!-- Mạng xã hội -->
 
         <div id="social-network-div">
-            <button class="close-div" onclick="hideSocialNetworkDiv()"></button>
-            <div style="width: 60%; background-color: black; position: absolute; left: 20%; top: 5px;">
+            <button class="close-div" onclick="hideSocialNetworkDiv()" style="background-color: #f0f2f5;"></button>
+            <div id="post-div">
+                <img id="userProfilePicture1" alt="Profile Picture">
+                <div class="contentVN post-btn" onclick="openEnterPostDiv()">
+                    <span>Chia sẻ gì đó với mọi người</span>
+                </div>
+                <div class="contentEnglish post-btn" onclick="openEnterPostDiv()">
+                    <span>Share something with everyone</span>
+                </div>
             </div>
+            <div id="enter-post">
+                <center><span class="contentVN creat-post-span">Tạo bài viết</span></center>
+                <center><span class="contentEnglish creat-post-span">Create post</span></center>
+                <button class="close-div" onclick="hideEnterPostDiv()"></button>
+                <div style="height: 1px; width: 100%; background-color: #e5e5e5; position: relative; top: 18px"></div>
+                <img id="userProfilePicture2" alt="Profile Picture">
+                <span id="userName2"></span>
+                <textarea class="contentVN status" id="statusVN" placeholder="Chia sẻ với mọi người gì đó đi nào" oninput="checkTextArea(this)"></textarea>
+                <textarea class="contentEnglish status" id="statusEng" placeholder="Share something to everyone" oninput="checkTextArea(this)"></textarea>
+                <div id="add-photo" onclick="uploadImage()">
+                    <input type="file" id="imageInput" onchange="setBackgroundImage()">
+                </div>
+                <div id="add-location">
+                    <label for="text-location" style="font-size: 13px;">
+                        <span class="contentVN">Thêm toạ độ hiện tại:</span>
+                        <span class="contentEnglish">Add current coordinates:</span>
+                    </label><br>
+                    <input type="text" name="text-location" id="text-location-vn" class="contentVN" readonly placeholder="Nhấn nút để thêm tọa độ" >
+                    <input type="text" name="text-location" id="text-location-eng" class="contentEnglish" readonly placeholder="Press the button to add coordinates">
+                    <img src="source-img/location.png" id="add-location-button">
+                </div>
+                <div id="add-address">
+                    <label for="text-location" style="font-size: 13px;">
+                        <span class="contentVN">Thêm địa chỉ:</span>
+                        <span class="contentEnglish">Add address:</span>
+                    </label><br>
+                    <input type="text" name="text-location" id="text-address-vn" class="contentVN" placeholder="Nhập địa chỉ" >
+                    <input type="text" name="text-location" id="text-address-eng" class="contentEnglish" placeholder="Enter address">
+                    <img src="source-img/building-regular.svg" id="add-address-img">
+                </div>
+                <button class="post-status" id="post-status" disabled onclick="postStatus()">
+                    <span class="contentVN">Đăng</span>
+                    <span class="contentEnglish">Post</span>
+                </button>
+            </div>
+            <!-- <button id="show-more">Show more 5 posts</button> -->
+
+            <div id="posts-container" onclick="loadPosts()">
+            </div>
+
         </div>
+
 
         <!-- Hộp thông báo -->
         <div id="support-div">
@@ -1443,7 +1398,6 @@
 
 
     </div>
-    <script src="auth.js" defer type="module"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>

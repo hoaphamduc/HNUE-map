@@ -34,7 +34,7 @@ onAuthStateChanged(auth, (user) => {
     updateUserProfile(user);
   } else {
     clearUserProfile();
-    window.location.href = "/index.html";
+    window.location.href = "../login.html";
   }
 });
 
@@ -114,7 +114,7 @@ document.getElementById('post-status').addEventListener('click', async function(
       location = locationEng;
       location = locationVN;
 
-      // Handle image upload (if any)
+      // Check if image is selected
       const imageInput = document.getElementById('imageInput');
       if (imageInput.files.length > 0) {
           const imageFile = imageInput.files[0];
@@ -133,6 +133,10 @@ document.getElementById('post-status').addEventListener('click', async function(
 
           // Get the download URL directly from the storage reference
           imageURL = await uploadTask.then(() => getDownloadURL(storageReference));
+      } else {
+          // Handle the case when no image is selected
+          alert('Vui lòng chọn một ảnh để đăng bài.');
+          return; // Stop execution if no image is selected
       }
 
       // Save status data to the database
@@ -150,29 +154,28 @@ document.getElementById('post-status').addEventListener('click', async function(
       if (location) dataToSave.location = location;
       if (imageURL) dataToSave.imageURL = imageURL;
 
-      if (Object.keys(dataToSave).length > 2) { // At least uid and timestamp are required
-          await set(newStatusRef, dataToSave);
+      await set(newStatusRef, dataToSave);
 
-          // Display success message if status is updated successfully
-          alert('Bạn đã đăng bài thành công!');
-          loadPosts();
-          document.getElementById('statusVN').value = '';
-          document.getElementById('statusEng').value = '';
-          document.getElementById('text-location-vn').value = '';
-          document.getElementById('text-location-eng').value = '';
-          document.getElementById('text-address-vn').value = '';
-          document.getElementById('text-address-eng').value = '';
-          resetImageInput();
-          var enterPost = document.getElementById("enter-post");
-          enterPost.style.display = "none";
-      }
+      // Display success message if status is updated successfully
+      alert('Bạn đã đăng bài thành công!');
+      loadPosts();
+      document.getElementById('statusVN').value = '';
+      document.getElementById('statusEng').value = '';
+      document.getElementById('text-location-vn').value = '';
+      document.getElementById('text-location-eng').value = '';
+      document.getElementById('text-address-vn').value = '';
+      document.getElementById('text-address-eng').value = '';
+      resetImageInput();
+      var enterPost = document.getElementById("enter-post");
+      enterPost.style.display = "none";
+
       await updateLastPostTimestamp(uid);
   } catch (error) {
-      // Handle errors
       console.error('Error saving status:', error);
       alert('Đã có lỗi khi đăng bài.');
   }
 });
+
 
 
 function resetImageInput() {
@@ -333,8 +336,8 @@ async function loadPosts() {
           <span class="post-username">${post.username}</span>
           <span class="post-time">${new Date(post.timestamp).toLocaleString()}</span>
           <span class="post-text-status">${post.status}</span>
-          <span class="contentVN post-address">${post.address !== undefined ? post.address : 'Người dùng không chia sẻ địa chỉ'}</span>
-          <span class="contentEnglish post-address">${post.address !== undefined ? post.address : 'The user did not shared the address'}</span>
+          <span class="contentVN post-address">Địa chỉ: ${post.address !== undefined ? post.address : 'Người dùng không chia sẻ địa chỉ'}</span>
+          <span class="contentEnglish post-address">Address: ${post.address !== undefined ? post.address : 'The user did not shared the address'}</span>
           <div class="post-image">
             <img style="border-radius: 10px;" src="${post.imageURL}">
           </div>
