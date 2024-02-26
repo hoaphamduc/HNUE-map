@@ -901,7 +901,7 @@ body, html {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
 }
 
-.main-content .menu #hnue-img {
+.main-content .menu #hnue-img, .main-content .menu #hnue-img-2 {
   height: 54px; 
   border-radius: 5px; 
   position: absolute; 

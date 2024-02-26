@@ -1,27 +1,27 @@
-// // Chặn việc mở DevTools bằng phím tắt
-// window.addEventListener('keydown', function (event) {
-//   if (event.keyCode == 123) { // 123 là mã phím tắt cho DevTools trên nhiều trình duyệt
-//     event.preventDefault();
-//   }
-// });
-// // Chặn việc mở DevTools bằng phím tắt và tổ hợp phím
-// window.addEventListener('keydown', function (event) {
-//   // Kiểm tra xem người dùng có nhấn tổ hợp phím tắt DevTools không
-//   if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || // Ctrl+Shift+I
-//       (event.ctrlKey && event.shiftKey && event.keyCode == 74) || // Ctrl+Shift+J
-//       (event.ctrlKey && event.keyCode == 85) || // Ctrl+U
-//       (event.ctrlKey && event.shiftKey && event.keyCode == 67) || // Ctrl+Shift+C
-//       (event.ctrlKey && event.keyCode == 83)) { // Ctrl+S
-//     event.preventDefault();
-//   }
-// });
+// Chặn việc mở DevTools bằng phím tắt
+window.addEventListener('keydown', function (event) {
+  if (event.keyCode == 123) { // 123 là mã phím tắt cho DevTools trên nhiều trình duyệt
+    event.preventDefault();
+  }
+});
+// Chặn việc mở DevTools bằng phím tắt và tổ hợp phím
+window.addEventListener('keydown', function (event) {
+  // Kiểm tra xem người dùng có nhấn tổ hợp phím tắt DevTools không
+  if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || // Ctrl+Shift+I
+      (event.ctrlKey && event.shiftKey && event.keyCode == 74) || // Ctrl+Shift+J
+      (event.ctrlKey && event.keyCode == 85) || // Ctrl+U
+      (event.ctrlKey && event.shiftKey && event.keyCode == 67) || // Ctrl+Shift+C
+      (event.ctrlKey && event.keyCode == 83)) { // Ctrl+S
+    event.preventDefault();
+  }
+});
 
 
-// // Chặn việc mở DevTools bằng chuột phải
-// window.addEventListener('contextmenu', function (event) {
-//   event.preventDefault();
-//   console.log('DevTools đã bị chặn.');
-// });
+// Chặn việc mở DevTools bằng chuột phải
+window.addEventListener('contextmenu', function (event) { 
+  event.preventDefault();
+  console.log('DevTools đã bị chặn.');
+});
 
 
 
@@ -1909,16 +1909,19 @@ function composeEmail() {
 
 // Lấy thẻ hình ảnh bằng cách sử dụng ID
 var imageElement = document.getElementById("hnue-img");
+var image2Element = document.getElementById("hnue-img-2");
+
 
 // Lấy URL của hình ảnh
 var imageUrl = imageElement.src;
+var imageUrl2 = image2Element.src;
 
 // Đặt giá trị cho thuộc tính content của thẻ og:image
 var ogImageElement = document.getElementById("ogImage");
 var ogImage2Element = document.getElementById("ogImage2");
 
 ogImageElement.content = imageUrl;
-ogImage2Element.content = imageUrl;
+ogImage2Element.content = imageUrl2;
 
 function uploadImage() {
   document.getElementById('imageInput').click();
