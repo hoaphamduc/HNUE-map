@@ -176,7 +176,7 @@ body, html {
   left: calc((100% - 270px)/2);
   border-radius: 15px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
-  top: 100px;
+  bottom: 100px;
 }
 
 .infoDiv .toolbar {
@@ -794,13 +794,50 @@ body, html {
   cursor: default;
 }
 
-@media (min-width : 650px){
-  #tool-bar, #search-bar {
+
+
+@media (min-width : 768px){
+  #tool-bar {
     display: none;
+  }
+  #search-bar {
+    position: absolute;
+    display: flex;
+    width: 30%;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 10px;
+    top: 5px;
+    left: 5px;
+    z-index: 100;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+  .search-bar_icon-image {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    cursor: default;
+  }
+  .search-bar_input {
+    position: absolute;
+    left: 45px;
+    width: calc(100% - 55px);
+    border-radius: 5px;
+    height: 29px;
+    top: 8px;
+    border: 1px solid #DEDEDF;
+    padding-left: 10px;
   }
 }
 
-@media (max-width: 650px){
+@media (max-width: 768px){
+  .image-qr {
+    bottom: 10px;
+  }
   .infoDiv {
     height: 60%;
     width: 96%;

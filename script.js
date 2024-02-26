@@ -488,5 +488,4 @@ function handleStart(event) {
     if(yOffset <= limitBottom || yOffset >= limitTop) return;
     toolBar.style.transform = 'translateY(' + yOffset + 'px)';
 }
-  
 
