@@ -142,27 +142,46 @@ mymap.on('click', function (e) {
 
 var isMusicPlaying = false;
 var backgroundMusic = document.getElementById("backgroundMusic");
+var intervalId;
 
 function toggleImageBorderAndMusic() {
   var musicImage = document.getElementById("music");
-
-  // Kiểm tra src của hình ảnh và thay đổi nó
   if (musicImage.src.endsWith("muted.png")) {
     musicImage.src = "source-img/music.png";
     playBackgroundMusic();
     musicImage.classList.add("scale-animation");
+    isMusicPlaying = true;
+    intervalId = setInterval(changeBorderColor, 500);
   } else {
     musicImage.src = "source-img/muted.png";
     pauseBackgroundMusic();
     musicImage.classList.remove("scale-animation");
+    isMusicPlaying = false;
+    clearInterval(intervalId);
+    musicImage.style.border = "3px solid red";
   }
+}
 
-  // Kiểm tra border và thay đổi nó
-  // if (musicImage.style.border === "3px solid red") {
-  //   musicImage.style.border = "3px solid #000";
-  // } else {
-  //   musicImage.style.border = "3px solid red";
-  // }
+function changeBorderColor() {
+  var musicImage = document.getElementById("music");
+  musicImage.style.border = "3px solid " + generateRandomColor();
+}
+
+function generateRandomColor() {
+  // Tạo giá trị ngẫu nhiên cho từng thành phần màu
+  var red = Math.floor(Math.random() * 256);
+  var green = Math.floor(Math.random() * 256);
+  var blue = Math.floor(Math.random() * 256);
+
+  // Chuyển đổi thành phần màu thành chuỗi hex và đảm bảo đủ 2 ký tự
+  var redHex = red.toString(16).padStart(2, '0');
+  var greenHex = green.toString(16).padStart(2, '0');
+  var blueHex = blue.toString(16).padStart(2, '0');
+
+  // Ghép các thành phần màu thành mã màu hex hoàn chỉnh
+  var hexColor = '#' + redHex + greenHex + blueHex;
+
+  return hexColor;
 }
 
 function playBackgroundMusic() {
@@ -185,28 +204,6 @@ document.getElementById("music").addEventListener("click", function() {
   }
 });
 
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-  }
-});
-
-// Menu burger
-// Lấy đối tượng burger và menu bằng ID
-const burger = document.getElementById('menu-btn__burger');
-const menu = document.getElementById('menu');
-
-// Thêm sự kiện "click" cho burger
-burger.addEventListener('click', function() {
-  // Toggle giá trị của thuộc tính display
-  menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
-});
 
 function toggleSupportDiv() {
   var supportDiv = document.getElementById("support-div");
@@ -233,6 +230,54 @@ function toggleSocialNetworkDiv() {
   } else {
     socialDiv.style.display = "none";
   }
+}
+
+function toggleHNUEIntroductionDiv() {
+  var HNUEIntrductionDiv = document.getElementById("HNUE-introduction");
+  var computedStyle = window.getComputedStyle(HNUEIntrductionDiv);
+
+  if (computedStyle.display === "none") {
+    HNUEIntrductionDiv.style.display = "block";
+  } else {
+    HNUEIntrductionDiv.style.display = "none";
+  }
+}
+
+function toggleProductIntroductionDiv() {
+  var ProductIntrductionDiv = document.getElementById("product-introduction");
+  var computedStyle = window.getComputedStyle(ProductIntrductionDiv);
+
+  if (computedStyle.display === "none") {
+    ProductIntrductionDiv.style.display = "block";
+  } else {
+    ProductIntrductionDiv.style.display = "none";
+  }
+}
+
+function toggleInfomationPagesDiv() {
+  var InfomationPagesDiv = document.getElementById("infomation-pages");
+  var computedStyle = window.getComputedStyle(InfomationPagesDiv);
+
+  if (computedStyle.display === "none") {
+    InfomationPagesDiv.style.display = "block";
+  } else {
+    InfomationPagesDiv.style.display = "none";
+  }
+}
+
+function hideInfomationPagesDiv() {
+  var InfomationPagesDiv = document.getElementById("infomation-pages");
+  InfomationPagesDiv.style.display = "none";
+}
+
+function hideProductIntroductionDiv() {
+  var ProductIntrductionDiv = document.getElementById("product-introduction");
+  ProductIntrductionDiv.style.display = "none";
+}
+
+function hideHNUEIntroductionDiv() {
+  var HNUEIntrductionDiv = document.getElementById("HNUE-introduction");
+  HNUEIntrductionDiv.style.display = "none";
 }
 
 function hideSocialNetworkDiv() {

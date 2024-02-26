@@ -154,7 +154,7 @@ document.getElementById('post-status').addEventListener('click', async function(
       if (imageURL) dataToSave.imageURL = imageURL;
 
       await set(newStatusRef, dataToSave);
-
+      
       // Display success message if status is updated successfully
       alert('Bạn đã đăng bài thành công!');
       loadPosts();
@@ -245,7 +245,6 @@ function checkTextArea(textarea) {
 }
 
 function postStatus() {
-  // Add your post status logic here
   console.log('Posting status...');
 }
 

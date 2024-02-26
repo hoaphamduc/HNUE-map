@@ -63,20 +63,6 @@ body, html {
   transition: .7s;
 }
 
-@keyframes scaleAnimation {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
-  }
-  50% {
-    transform: scale(1.2);
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
-  }
-}
 
 
 
@@ -114,9 +100,7 @@ body, html {
 #support-div {
   position: absolute;
   width: 100%;
-  height: 80%;
-  max-width: 800px;
-  max-height: 600px;
+  height: 100%;
   z-index: 100000; 
   display: none;
   padding: 15px;
@@ -134,8 +118,6 @@ body, html {
   position: absolute;
   width: 100%;
   height: 100%;
-  max-width: 1000px;
-  max-height: 800px;
   z-index: 100000; 
   display: none;
   padding: 15px;
@@ -151,11 +133,30 @@ body, html {
   overflow-y: scroll;
 }
 
+#HNUE-introduction, #product-introduction, #infomation-pages {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100000; 
+  display: none;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f0f2f5;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  overflow: auto;
+}
+
 #social-network-div::-webkit-scrollbar {
   display: none;
 }
 
 #donate-div {
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 100000; 
   display: none;
@@ -163,11 +164,19 @@ body, html {
   border-radius: 8px;
   border: 1px solid #ccc;
   background-color: white;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   overflow: auto;
-  transform: translate(-50%, -50%);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+}
+
+.image-qr {
+  width: 270px; 
+  position: absolute; 
+  left: calc((100% - 270px)/2);
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  top: 100px;
 }
 
 .infoDiv .toolbar {
@@ -253,6 +262,8 @@ body, html {
 .infoDiv .building-name {
   font-size: 15px;
   font-weight: bold;
+  text-align: center;
+  cursor: default;
 }
 
 .infoDiv .building-info {
@@ -260,6 +271,7 @@ body, html {
   word-wrap: break-word; 
   margin-top: 10px;
   color: #707070;
+  cursor: default;
 }
 
 .login-text {
@@ -746,206 +758,10 @@ body, html {
   cursor: pointer;
 }
 
-
-
-
-/* burger icon menu */
-
-.main-content .menu-btn {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 54px; 
-  height: 54px; 
-  cursor: pointer;
-  background: #173885;
-  transition: all 0.5s ease-in-out;
-  border: 3px solid #fff;
-  border-radius: 20px;
-  top: 5px;
-  left: 10px;
-  z-index: 10000;
-  cursor: pointer;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
-}
-
-.menu-btn__burger {
-  width: 27px;
-  height: 4.5px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
-}
-
-.menu-btn__burger::before,
-.menu-btn__burger::after {
-  content: '';
-  position: absolute;
-  width: 27px; 
-  height: 4.5px; 
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
-}
-
-.menu-btn__burger::before {
-  transform:  translateY(-8px)
-              translateX(-13px); 
-}
-
-.menu-btn__burger::after {
-  transform:  translateY(8px)              
-              translateX(-13px); 
-}
-
-/* ANIMATION */
-.menu-btn.open .menu-btn__burger {
-  transform: translateX(-37px); 
-  background: transparent;
-  box-shadow: none;
-}
-
-.menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg) translate(17px, -17px); 
-}
-
-.menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg) translate(17px, 17px); 
-}
-
-.main-content .menu {
-  display: none; 
-  width: 69%;
-  max-width: 300px;
-  height: 300px;
-  position: absolute; 
-  background-color: #fff;
-  top: 3px; 
-  left: 8px; 
-  z-index: 9999;
-  border-radius: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
-}
-
-.main-content .menu #hnue-img, .main-content .menu #hnue-img-2 {
-  height: 54px; 
-  border-radius: 5px; 
-  position: absolute; 
-  top: 3px; left: 50%; 
-  transform: translateX(-50%);
-  border: 0.5px solid #000;
-}
-
-.main-content .menu #fit-logo {
-  height: 54px; 
-  border-radius: 5px; 
-  position: absolute; 
-  top: 3px; 
-  right: 5px;
-}
-
-.main-content .menu #menu-content {
-  width: 100%; 
-  height: calc(100% - 60px); 
-  position: absolute; 
-  top: 60px; 
-  background-color: #fff;
-  border-radius: 0 0 20px 20px;
-}
-
-.main-content .menu #menu-content #introduce {
-  width: 100%;
-  height: 60px;
-  background-color: #fff;
-  border-radius: 0;
-  font-size: 20px;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-.main-content .menu #menu-content #introduce img {
-  position: absolute; 
-  height: 40px; 
-  left: 15px; 
-  top: 8px
-}
-
-.main-content .menu #menu-content #introduce:hover {
-  color: #2185D0;
-}
-
-
-.main-content .menu #menu-content .dropdown ul li a:hover{
-  color: #fff;
-  background-color: #2185D0;
-}
-
-.dropdown-menu .dropdown-item {
-  white-space: normal;
-}
-
-.main-content .menu #menu-content .dropdown .dropdown-menu {
-  width: 100%;
-}
-
-.main-content .menu #menu-content #support-us {
-  width: 100%;
-  height: 60px;
-}
-
-.main-content .menu #menu-content #social-network {
-  width: 100%;
-  height: 60px;
-}
-
-.main-content .menu #menu-content #support-us button, .main-content .menu #menu-content #social-network button {
-  width: 100%;
-  height: 100%;
-  border: none;
-  background-color: #fff;
-}
-
-.main-content .menu #menu-content #support-us span,.main-content .menu #menu-content #social-network span {
-  font-size: 20px;
-  pointer-events: none;
-}
-
-.main-content .menu #menu-content #support-us button:hover, .main-content .menu #menu-content #social-network button:hover {
-  color: #2185D0;
-}
-
-.main-content .menu #menu-content #donate-us {
-  width: 100%;
-  height: 60px;
-  border-radius: 0 0 20px 20px;
-}
-
-.main-content .menu #menu-content #donate-us button {
-  width: 100%;
-  height: 100%;
-  border: none;
-  background-color: #fff;
-  border-radius: 0 0 20px 20px;
-
-}
-
-.main-content .menu #menu-content #donate-us span {
-  font-size: 20px;
-  pointer-events: none;
-}
-
-.main-content .menu #menu-content #donate-us button:hover {
-  color: #2185D0;
-}
-
 .big-text {
   font-size: 30px;
   font-weight: bold;
+  cursor: default;
 }
 
 #email-to-us {
@@ -975,6 +791,7 @@ body, html {
   font-size: 20px;
   left: 55px;
   bottom: 5px;
+  cursor: default;
 }
 
 @media (min-width : 650px){

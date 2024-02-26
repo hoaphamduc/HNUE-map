@@ -23,8 +23,8 @@
             <img src="source-img/logo-fit.png" id="fit-logo">
         </div>
         <ul class="nav_list" id="nav_list">
-            <li class="selected">
-                <a href="#">
+            <li>
+                <a onclick="toggleHNUEIntroductionDiv()">
                     <div class="highlight"></div>
                     <img src="source-img/school.png" class="icon">
                     <span class="links_name contentVN">Giới thiệu về HNUE</span>
@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a onclick="toggleProductIntroductionDiv()">
                     <div class="highlight"></div>
                     <img src="source-img/map-solid.svg" class="icon">
                     <span class="links_name contentVN">Giới thiệu về sản phẩm này</span>
@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li>
-                <a href="thong-ke.html">
+                <a onclick="toggleInfomationPagesDiv()">
                     <div class="highlight"></div>
                     <img src="source-img/browser.png" class="icon">
                     <span class="links_name contentVN">Các trang thông tin</span>
@@ -198,73 +198,121 @@
             </div>
         </div>
 
+        <!-- Giới thiệu về HNUE -->
+        <div id="HNUE-introduction">
+            <button class="close-div" onclick="hideHNUEIntroductionDiv()" style="background-color: #f0f2f5;"></button>
+            <span class="contentVN" style="font-size: 14px;">
+                <center><span style="font-size: 25px;"><b>Giới thiệu về Trường Đại học Sư phạm Hà Nội</b></span></center><br>
+                <center><span style="font-size: 15px; color: #707070;">“Làm thế nào để nhà trường này chẳng những là trường sư phạm mà là trường mô phạm của cả nước” - Chủ tịch Hồ Chí Minh</span><br></center>
+                &emsp;Trường Đại học Sư phạm Hà Nội là trường đại học trọng điểm quốc gia và khu vực, đào tạo các chuyên gia xuất sắc có đóng góp đặc biệt quan trọng cho hệ thống giáo dục và xã hội. Trường Đại học Sư phạm Hà Nội là một trung tâm đào tạo đại học, sau đại học, nghiên cứu và ứng dụng khoa học giáo dục và đa ngành chất lượng cao, là một trong các trường đại học trọng điểm trong hệ thống giáo dục đại học Việt Nam.<br>
+                &emsp;Trường Đại học Sư phạm Hà Nội (ĐHSPHN) chính thức được thành lập ngày 11/10/1951 theo Nghị định của Bộ Quốc gia Giáo dục. Song quá trình hình thành và phát triển của Nhà trường lại được bắt đầu từ một sự kiện quan trọng, đó là ngày 10 tháng 10 năm 1945, tức là chỉ hơn một tháng sau khi đọc bản “Tuyên ngôn độc lập” khai sinh ra nước Việt Nam Dân chủ Cộng hòa, Chủ tịch Hồ Chí Minh đã ký Sắc lệnh thành lập Ban Đại học Văn khoa tại Hà Nội, trong đó nhiệm vụ đầu tiên là đào tạo giáo viên Văn khoa Trung học. Một năm sau đó, ngày 8 tháng 10 năm 1946, Chủ tịch Chính phủ Việt Nam Dân chủ Cộng hòa ra Sắc lệnh số 194/SL thành lập ngành học Sư phạm, đào tạo giáo viên cho các bậc học cơ bản, trung học phổ thông, trung học chuyên khoa, thực nghiệm và chuyên nghiệp trong toàn quốc.<br>
+                &emsp;Trong lịch sử phát triển, qua nhiều lần đổi tên từ Trường Sư phạm Cao cấp, Trường ĐHSP Hà Nội 1, Trường ĐHSP-ĐHQG Hà Nội đến Trường Đại học Sư phạm Hà Nội, Nhà trường vẫn luôn giữ vững vị trí là trường ĐHSP đầu ngành, trọng điểm, là cái nôi của ngành sư phạm cả nước. Trường ĐHSP Hà Nội đã đào tạo hàng chục vạn giáo viên các cấp, các chuyên gia giáo dục, trong đó có những người sau này trở thành nhà hoạt động chính trị có uy tín, nhà khoa học, nhà văn, nhà thơ nổi tiếng, góp phần làm rạng danh nền học vấn nước nhà. Đó là các giáo sư Đặng Thai Mai, Đào Duy Anh, Trần Đức Thảo, Trần Văn Giàu, Cao Xuân Huy, Phạm Huy Thông, Lê Văn Thiêm, Nguyễn Lương Ngọc, Nguyễn Văn Hiệu, Nguyễn Lân hay nhà văn Nguyễn Khoa Điềm, nhà thơ Phạm Tiến Duật … tất cả đã cống hiến và trưởng thành từ mái trường này. Nhiều giảng viên của Trường là những chuyên gia đầu ngành có uy tín không chỉ trong nước, mà cả trong khu vực và trên thế giới. Đến nay, trường đã có 70 giảng viên được phong học hàm Giáo sư, hơn 350 Phó Giáo sư, 33 Nhà giáo Nhân dân và 118 Nhà giáo Ưu tú.<br>
+                &emsp;Không chỉ trong đào tạo và nghiên cứu khoa học, sự cống hiến của Nhà trường còn thể hiện trong những năm tháng đấu tranh quật cường của đất nước. Trong kháng chiến Chống Mỹ cứu nước, ĐHSPHN là một trong những cái nôi của “Phong trào Ba sẵn sàng”; là nơi hàng nghìn sinh viên và cán bộ ưu tú đã "xếp bút nghiên lên đường ra trận”, hàng trăm giáo viên và sinh viên đã “vượt Trường Sơn” vào miền Nam xây dựng nền giáo dục cách mạng ở vùng giải phóng.<br>
+                &emsp;Hiện nay, trường Đại học Sư phạm Hà Nội có 23 khoa và 1 bộ môn trực thuộc: <br>
+                1. Khoa Toán - Tin<br>
+                2. Khoa Công nghệ Thông tin<br>
+                3. Khoa Vật lí<br>
+                4. Khoa Hóa học<br>
+                5. Khoa Sinh học<br>
+                6. Khoa Ngữ văn<br>
+                7. Khoa Tiếng Anh<br>
+                8. Khoa Lịch sử<br>
+                9. Khoa Địa lý<br>
+                10. Khoa Triết học<br>
+                11. Khoa Tiếng Pháp<br>
+                12. Khoa Lý luận Chính trị - Giáo dục Công dân<br>
+                13. Khoa Giáo dục Tiểu học<br>
+                14. Khoa Sư phạm kỹ thuật<br>
+                15. Khoa Tâm lý Giáo dục<br>
+                16. Khoa Giáo dục Đặc biệt<br>
+                17. Khoa Giáo dục Thể chất<br>
+                18. Khoa Giáo dục Quốc phòng<br>
+                19. Khoa Giáo dục Mầm non<br>
+                20. Khoa Việt Nam học<br>
+                21. Khoa Quản lý Giáo dục<br>
+                22. Khoa Nghệ thuật<br>
+                23. Khoa Công tác Xã hội<br>
+                24. Khoa Tiếng Trung Quốc<br>
+                &emsp;Trường Đại học Sư phạm Hà Nội là một trường đại học có chất lượng đào tạo cao, được đánh giá là một trong những trường đại học tốt nhất Việt Nam. Trường có đội ngũ giảng viên giàu kinh nghiệm và tâm huyết, cơ sở vật chất hiện đại, môi trường học tập năng động và sáng tạo.<br>
+                &emsp;Trường Đại học Sư phạm Hà Nội là nơi đào tạo ra nhiều thế hệ giáo viên, cán bộ quản lý giáo dục, nhà khoa học, nhà giáo dục xuất sắc cho đất nước. Nhiều cựu sinh viên của trường đã và đang giữ các chức vụ quan trọng trong Đảng, Nhà nước, các cơ quan ban ngành và các tổ chức xã hội.
+            </span>
+            <span class="contentEnglish" style="font-size: 14px;">
+                <center><span style="font-size: 25px;"><b>Introduction to Hanoi University of Pedagogy</b></span></center><br>
+                <center><span style="font-size: 15px; color: #707070;">"How to make this institution not only a pedagogical school but also a national educational center" - President Ho Chi Minh</span><br></center>
+                &emsp;Hanoi University of Pedagogy is a national and regional key university, providing excellent experts who make significant contributions to the education and society. It serves as a high-quality university center for undergraduate and postgraduate education, research, and application of education and multidisciplinary sciences, being one of the key universities in the Vietnamese higher education system.<br>
+                &emsp;Hanoi University of Pedagogy (HUP) was officially established on October 11, 1951, according to the Decree of the Ministry of National Education. However, the history of the institution began with a significant event on October 10, 1945, just over a month after the declaration of independence, when President Ho Chi Minh signed the decree to establish the Faculty of Literature in Hanoi. The primary task was to train teachers for high school literature. A year later, on October 8, 1946, the President of the Democratic Republic of Vietnam issued Decree No. 194/SL, establishing the Pedagogy Department, which aimed to train teachers for basic, high school, specialized high school, experimental, and professional education nationwide.<br>
+                &emsp;Throughout its development, with several name changes from Advanced Pedagogy School, Hanoi Pedagogical University 1, Hanoi Pedagogical University - Vietnam National University, to Hanoi University of Pedagogy, the institution has maintained its position as a leading and key pedagogical university, a cradle of national pedagogy. Hanoi Pedagogical University has trained tens of thousands of teachers, education experts, including those who later became reputable political activists, scientists, writers, and famous poets, contributing to the country's intellectual reputation. Notable figures include Professors Dang Thai Mai, Dao Duy Anh, Tran Duc Thao, Tran Van Giau, Cao Xuan Huy, Pham Huy Thong, Le Van Thiem, Nguyen Luong Ngoc, Nguyen Van Hieu, Nguyen Lan, as well as writer Nguyen Khoa Diem and poet Pham Tien Duat.<br>
+                &emsp;Many lecturers at the university are leading experts with prestige not only nationally but also in the region and the world. To date, the university has 70 professors, over 350 Associate Professors, 33 People's Teachers, and 118 Excellent Teachers.<br>
+                &emsp;Beyond education and scientific research, the university's dedication is evident in the years of the nation's resilient struggle. During the Resistance War against the United States to save the country, HUP was one of the birthplaces of the "Three Readiness Movement," where thousands of students and outstanding cadres "picked up their pens and went to battle," and hundreds of teachers and students "crossed the Truong Son range" to the South to build revolutionary education in liberated areas.<br>
+                &emsp;Currently, Hanoi University of Pedagogy has 23 faculties and 1 affiliated department:<br>
+                1. Faculty of Mathematics - Informatics<br>
+                2. Faculty of Information Technology<br>
+                3. Faculty of Physics<br>
+                4. Faculty of Chemistry<br>
+                5. Faculty of Biology<br>
+                6. Faculty of Literature<br>
+                7. Faculty of English<br>
+                8. Faculty of History<br>
+                9. Faculty of Geography<br>
+                10. Faculty of Philosophy<br>
+                11. Faculty of French<br>
+                12. Faculty of Political Theory - Citizenship Education<br>
+                13. Faculty of Primary Education<br>
+                14. Faculty of Technical Pedagogy<br>
+                15. Faculty of Educational Psychology<br>
+                16. Faculty of Special Education<br>
+                17. Faculty of Physical Education<br>
+                18. Faculty of National Defense Education<br>
+                19. Faculty of Preschool Education<br>
+                20. Faculty of Vietnamese Studies<br>
+                21. Faculty of Education Management<br>
+                22. Faculty of Arts<br>
+                23. Faculty of Social Work<br>
+                24. Department of Chinese<br>
+                &emsp;Hanoi University of Pedagogy is a high-quality university, considered one of the best universities in Vietnam. It has an experienced and dedicated faculty, modern facilities, and a dynamic and creative learning environment.<br>
+                &emsp;Hanoi University of Pedagogy is where generations of teachers, educational administrators, scientists, and outstanding educators for the country are trained. Many alumni hold important positions in the Party, State, government agencies, and social organizations.
+            </span>
+            <img class="img-demo" src="source-img/hnue.jpg">
+        </div>
+
+        <!-- Giới thiệu về sản phẩm HNUE-map -->
+
+        <div id="product-introduction">
+            <button class="close-div" onclick="hideProductIntroductionDiv()" style="background-color: #f0f2f5;"></button>
+            <span class="contentVN">
+                <center><span style="font-size: 25px; font-weight: bold;">Giới thiệu về sản phẩm HNUE map của chúng tôi</span></center>
+            </span>
+            <span class="contentEnglish">
+                <center><span style="font-size: 25px; font-weight: bold;">Introducing our HNUE map product</span></center>
+            </span>
+        </div>
+
+        <!-- Các trang thông tin -->
+
+        <div id="infomation-pages">
+            <button class="close-div" onclick="hideInfomationPagesDiv()" style="background-color: #f0f2f5;"></button>
+            <span class="contentVN">
+                <center><span style="font-size: 25px; font-weight: bold;">Các trang thông tin</span></center><br>
+                <b>Trang chủ của trường: </b><a href="https://hnue.edu.vn/">https://hnue.edu.vn/</a><br>
+                <b>Trang tuyển sinh của trường: </b><a href="https://tuyensinh.hnue.edu.vn/">https://tuyensinh.hnue.edu.vn/</a><br>
+                <b>Hệ thống quản lí học tập trực tuyến: </b><a href="https://cst.hnue.edu.vn/">https://cst.hnue.edu.vn/</a><br>
+                <b>Cổng đăng kí học phần: </b><a href="https://tinchi.hnue.edu.vn/">https://tinchi.hnue.edu.vn/</a><br>
+                <b>Cổng thông tin đào tạo: </b><a href="https://dtdh.hnue.edu.vn/">https://dtdh.hnue.edu.vn/</a><br>
+                <b>Cổng thông tin ký túc xá: </b><a href="https://kytucxa.hnue.edu.vn/">https://kytucxa.hnue.edu.vn/</a><br>
+                <b>Trang tính mà chúng mình làm có tích hợp sẵn các hàm tính GPA để các bạn tiện tính toán điểm số của mình: </b><a href="https://docs.google.com/spreadsheets/d/13olr6xym17E5r1ZoP0Nvg7iaJiUnVZvnY-wRAKffkko/edit?usp=sharing">Google trang tính</a><br>
+            </span>
+            <span class="contentEnglish">
+                <center><span style="font-size: 25px; font-weight: bold;">Information Pages</span></center><br>
+                <b>School Homepage: </b><a href="https://hnue.edu.vn/">https://hnue.edu.vn/</a><br>
+                <b>School Admissions Page: </b><a href="https://tuyensinh.hnue.edu.vn/">https://tuyensinh.hnue.edu.vn/</a><br>
+                <b>Online Learning Management System: </b><a href="https://cst.hnue.edu.vn/">https://cst.hnue.edu.vn/</a><br>
+                <b>Course Registration Portal: </b><a href="https://tinchi.hnue.edu.vn/">https://tinchi.hnue.edu.vn/</a><br>
+                <b>Training Information Portal: </b><a href="https://dtdh.hnue.edu.vn/">https://dtdh.hnue.edu.vn/</a><br>
+                <b>Dormitory Information Portal: </b><a href="https://kytucxa.hnue.edu.vn/">https://kytucxa.hnue.edu.vn/</a><br>
+                <b>Our collaborative spreadsheet includes built-in GPA calculation functions for your convenience: </b><a href="https://docs.google.com/spreadsheets/d/13olr6xym17E5r1ZoP0Nvg7iaJiUnVZvnY-wRAKffkko/edit?usp=sharing">Googlesheets</a><br>
+              </span>
+        </div>
         
-        <!-- Menu -->
-        <!-- <button class="menu-btn" id="menu-btn__burger">
-            <div class="menu-btn__burger"></div>
-        </button> -->
-
-        
-
-        <!-- <div class="menu" id="menu">
-            <img src="source-img/hnue.jpg" id="hnue-img">
-            <img src="source-img/logo-fit.png" id="fit-logo">
-            <div id="menu-content">
-                <div class="dropdown">
-                    <button type="button" class="custom-dropdown-toggle" id="introduce" data-bs-toggle="dropdown">
-                        <span class="contentVN">Giới thiệu</span>
-                        <span class="contentEnglish">Introduce</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li ><a class="dropdown-item contentVN" href="#">Giới thiệu về Trường Đại học Sư phạm Hà Nội</a></li>
-                        <li><a class="dropdown-item contentEnglish" href="#">Introducing Hanoi University of Education</a></li>
-                        <li><a class="dropdown-item contentVN" href="#">Giới thiệu về sản phẩm của chúng tôi - HNUE map</a></li>
-                        <li><a class="dropdown-item contentEnglish" href="#">Introducing our product - HNUE map</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <button type="button" class="custom-dropdown-toggle" id="introduce" data-bs-toggle="dropdown">
-                        <span class="contentVN">Các trang thông tin</span>
-                        <span class="contentEnglish">Information pages</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li ><a class="dropdown-item contentVN" href="https://hnue.edu.vn/">Trang chủ</a></li>
-                        <li><a class="dropdown-item contentEnglish" href="https://hnue.edu.vn/">Home page</a></li>
-                        <li><a class="dropdown-item contentVN" href="https://tuyensinh.hnue.edu.vn/">Trang tuyển sinh</a></li>
-                        <li><a class="dropdown-item contentEnglish" href="https://tuyensinh.hnue.edu.vn/">Admissions page</a></li>
-                        <li><a class="dropdown-item contentVN" href="https://cst.hnue.edu.vn/">Hệ thống quản lí học tập trực tuyến</a></li>
-                        <li><a class="dropdown-item contentEnglish" href="https://cst.hnue.edu.vn/">Online learning management system</a></li>
-                        <li ><a class="dropdown-item contentVN" href="https://tinchi.hnue.edu.vn/">Cổng đăng kí học phần</a></li>
-                        <li><a class="dropdown-item contentEnglish" href="https://tinchi.hnue.edu.vn/">Course registration portal</a></li>
-                        <li ><a class="dropdown-item contentVN" href="https://dtdh.hnue.edu.vn/">Cổng thông tin đào tạo</a></li>
-                        <li><a class="dropdown-item contentEnglish" href="https://dtdh.hnue.edu.vn/">University training information portal</a></li>
-                        <li ><a class="dropdown-item contentVN" href="https://kytucxa.hnue.edu.vn/">Cổng thông tin ký túc xá</a></li>
-                        <li><a class="dropdown-item contentEnglish" href="https://kytucxa.hnue.edu.vn/">Dormitory information portal</a></li>
-                        <li ><a class="dropdown-item contentVN" href="https://docs.google.com/spreadsheets/d/13olr6xym17E5r1ZoP0Nvg7iaJiUnVZvnY-wRAKffkko/edit?usp=sharing">Trang tính có tích hợp sẵn hàm tính GPA</a></li>
-                        <li><a class="dropdown-item contentEnglish" href="https://docs.google.com/spreadsheets/d/13olr6xym17E5r1ZoP0Nvg7iaJiUnVZvnY-wRAKffkko/edit?usp=sharing">The Googlesheet has a built-in GPA calculation function</a></li>
-                    </ul>
-                </div>
-                <div id="social-network">
-                    <button id="support" onclick="toggleSocialNetworkDiv()">
-                        <span class="menu-text contentVN">Mạng xã hội HNUE</span>
-                        <span class="menu-text contentEnglish">HNUE social network</span>
-                    </button>
-                </div>
-                <div id="support-us">
-                    <button id="support" onclick="toggleSupportDiv()">
-                        <span class="menu-text contentVN">Góp ý với chúng tôi</span>
-                        <span class="menu-text contentEnglish">Give us your feedback</span>
-                    </button>
-                </div>
-                <div id="donate-us">
-                    <button id="donate" onclick="toggleDonateDiv()">
-                        <span class="menu-text contentVN">Ủng hộ chúng tôi</span>
-                        <span class="menu-text contentEnglish">Donate us</span>
-                    </button>
-                </div>
-            </div>
-        </div> -->
-
         <!-- Mạng xã hội -->
 
         <div id="social-network-div">
@@ -276,8 +324,8 @@
         <!-- Hộp thông báo -->
         <div id="support-div">
             <button class="close-div" onclick="hideSupportDiv()"></button>
-            <span class="big-text contentVN">Góp ý với chúng tôi thông qua</span>
-            <span class="big-text contentEnglish">Give us your feedback via</span>
+            <center><span class="big-text contentVN">Góp ý với chúng tôi thông qua</span></center>
+            <center><span class="big-text contentEnglish">Give us your feedback via</span></center>
             <div id="email-to-us">
                 <button id="send-mail" onclick="composeEmail()"></button>
                 <span id="my-mail">Email: hoaphamduc2399@gmail.com</span>
@@ -285,8 +333,10 @@
         </div>
 
         <div id="donate-div">
+            <center><span class="contentVN" style="font-size: 25px; font-weight: bold;">Ủng hộ chúng tôi để có kinh phí duy trì sản phẩm nhé!</span></center>
+            <center><span class="contentEnglish" style="font-size: 25px; font-weight: bold;">Please support us to have funds to maintain this product!</span></center>
             <button class="close-div" onclick="hideDonateDiv()"></button>
-            <img src="source-img/donate.png" style="width: 250px;">
+            <img class="image-qr" src="source-img/donate.png">
         </div>
 
 
