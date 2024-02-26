@@ -23,7 +23,21 @@ window.addEventListener('contextmenu', function (event) {
   console.log('DevTools đã bị chặn.');
 });
 
+const languageToggle = document.getElementById('language-toggle');
+const contentVN = document.querySelectorAll('.contentVN');
+const contentEnglish = document.querySelectorAll('.contentEnglish');
 
+languageToggle.addEventListener('change', function() {
+  const isChecked = this.checked;
+
+  contentVN.forEach(item => {
+    item.style.display = isChecked ? 'none' : 'block';
+  });
+
+  contentEnglish.forEach(item => {
+    item.style.display = isChecked ? 'block' : 'none';
+  });
+});
 
 var mymap = L.map('map', {
   zoomControl: false 
@@ -1963,13 +1977,13 @@ function isValidImageFileType(fileType) {
   return allowedImageTypes.includes(fileType);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Lấy đối tượng img và input
-  var locationImage = document.querySelector("#add-location-button");
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Lấy đối tượng img và input
+//   var locationImage = document.querySelector("#add-location-button");
 
-  // Thêm sự kiện click vào hình ảnh
-  locationImage.addEventListener("click", getLocationAndFillInput);
-});
+//   // Thêm sự kiện click vào hình ảnh
+//   locationImage.addEventListener("click", getLocationAndFillInput);
+// });
 
 function getLocationAndFillInput() {
   // Kiểm tra xem trình duyệt hỗ trợ Geolocation hay không
@@ -2074,18 +2088,3 @@ function handleStart(event) {
 }
   
 
-const languageToggle = document.getElementById('language-toggle');
-const contentVN = document.querySelectorAll('.contentVN');
-const contentEnglish = document.querySelectorAll('.contentEnglish');
-
-languageToggle.addEventListener('change', function() {
-  const isChecked = this.checked;
-
-  contentVN.forEach(item => {
-    item.style.display = isChecked ? 'none' : 'block';
-  });
-
-  contentEnglish.forEach(item => {
-    item.style.display = isChecked ? 'block' : 'none';
-  });
-});
