@@ -63,7 +63,6 @@ function clearUserProfile() {
 
 
 document.getElementById("logout-btn").addEventListener("click", logout);
-document.getElementById("logout-btn-1").addEventListener("click", logout);
 
 document.getElementById('post-status').addEventListener('click', async function() {
   try {
