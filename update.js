@@ -353,7 +353,7 @@ async function loadPosts() {
             <span class="contentEnglish action-text">Like</span>
           </div>
 
-          <div class="comment-post" data-postid='${post.postId}' onclick="openCommentAction('${encodeURIComponent(postId)}')">
+          <div class="comment-post" data='${post.postId}' onclick="openCommentAction('${encodeURIComponent(postId)}')">
             <img src="source-img/cloud.png" class="action-img">
             <span class="contentVN action-text">Bình luận</span>
             <span class="contentEnglish action-text">Comment</span>
@@ -383,8 +383,8 @@ async function loadPosts() {
           box.addEventListener('click', addComment);
         });
         const boxes2 = Array.from(postsContainer.getElementsByClassName('comment-post'));
-        boxes2.forEach(box2 => {
-          box2.addEventListener('click', getCommentsForPost);
+        boxes2.forEach(box => {
+          box.addEventListener('click', getCommentsForPost);
         });
       }
     }
@@ -445,7 +445,7 @@ function saveCommentToDatabase(postId, commentData) {
 
 
 function getCommentsForPost(e) {
-  var postId = e.target.getAttribute('data-postid');
+  var postId = e.target.getAttribute('data');
   console.log(postId);
   const commentsRef = ref(firebase, `comments/${postId}`);
   const commentContainer = document.getElementById('comment-container-' + postId);
@@ -454,7 +454,7 @@ function getCommentsForPost(e) {
   if (!commentContainer) {
     console.error("container not found");
     return;
-  }
+}
 
   // Lắng nghe sự thay đổi trong dữ liệu bình luận
   onValue(commentsRef, (snapshot) => {
@@ -481,13 +481,14 @@ function getCommentsForPost(e) {
 
 // Hàm tạo element HTML cho mỗi bình luận
 function createCommentElement(comment) {
+  const avatarUrl = comment.avatarURL || 'Logo Đại học Sư phạm Hà Nội - HNUE.png'
   const commentElement = document.createElement('div');
   commentElement.classList.add('comment');
 
   // Thêm ảnh đại diện
   const commentAvt = document.createElement('img');
   commentAvt.classList.add('comment-avt');
-  commentAvt.src = comment.avatarUrl;
+  commentAvt.src = avatarUrl;
   commentElement.appendChild(avatarURL);
 
   // Thêm tên người dùng

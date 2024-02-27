@@ -24,9 +24,6 @@
 // });
 
 
-
-
-
 function openCommentAction(postId) {
 
   // Check if the comment-action div already exists
@@ -102,23 +99,58 @@ languageToggle.addEventListener('change', function() {
   });
 });
 
+
+
 var mymap = L.map('map', {
-  zoomControl: false 
-}).setView([21.037138, 105.783182], 13);
+    zoomControl: false
+  }).fitWorld().setView([21.037138, 105.783182], 15);
+
+    const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(mymap);
+
+    function onLocationFound(e) {
+        const radius = e.accuracy / 2;
+
+        const locationMarker = L.marker(e.latlng).addTo(mymap)
+            .bindPopup('You are within ${radius} meters from this point').openPopup();
+
+        const locationCircle = L.circle(e.latlng, radius).addTo(mymap);
+    }
+
+    function onLocationError(e) {
+        alert(e.message);
+    }
+
+    mymap.on('locationfound', onLocationFound);
+    mymap.on('locationerror', onLocationError);
+
+    mymap.locate({setView: true, maxZoom: 16});
+
+
+
+// var mymap = L.map('map', {
+//   zoomControl: false
+// }).fitWorld().setView([21.037138, 105.783182], 15);
+
+// mymap.setMinZoom(17);
+// mymap.setMaxZoom(19);
 
 var maxBounds = L.latLngBounds(
   L.latLng(21.036000, 105.780455),   // Tọa độ góc trái dưới của giới hạn
   L.latLng(21.042185, 105.786226)    // Tọa độ góc phải trên của giới hạn
 );
 
-mymap.setMaxBounds(maxBounds);
-mymap.on('drag', function() {
-  mymap.panInsideBounds(maxBounds, { animate: false });
-});
+// mymap.setMaxBounds(maxBounds);
+// mymap.on('drag', function() {
+//   mymap.panInsideBounds(maxBounds, { animate: false });
+// });
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-            }).addTo(mymap);
+
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//             attribution: '© OpenStreetMap contributors'
+//             }).addTo(mymap);
 
 // Fit bounds to the maximum bounds
 mymap.fitBounds(maxBounds);
@@ -382,19 +414,19 @@ var imageElement = document.getElementById("hnue-img");
 var image2Element = document.getElementById("hnue-img-2");
 
 // Lấy URL của hình ảnh
-if(imageElement != null)
-  var imageUrl = imageElement.src;
+// if(imageElement != null)
+//   var imageUrl = imageElement.src;
 
-var imageUrl2 = image2Element.src;
+// var imageUrl2 = image2Element.src;
 
 // Đặt giá trị cho thuộc tính content của thẻ og:image
 var ogImageElement = document.getElementById("ogImage");
 var ogImage2Element = document.getElementById("ogImage2");
 
-ogImageElement.content = imageUrl;
+// ogImageElement.content = imageUrl;
 
-if(imageUrl2 != null && ogImage2Element != null)
-  ogImage2Element.content = imageUrl2;
+// if(imageUrl2 != null && ogImage2Element != null)
+//   ogImage2Element.content = imageUrl2;
 
 function uploadImage() {
   document.getElementById('imageInput').click();
@@ -505,45 +537,45 @@ var limitTop = 220;
 var limitBottom = 10;
 
 // setup
-moveToolBarY(defaultPositionToolBar);
+// moveToolBarY(defaultPositionToolBar);
 
-toolBar.addEventListener('touchstart', handleStart);
-document.addEventListener('touchmove', handleMove);
-toolBar.addEventListener('touchend', handleEnd);
-console.log("Hello world");
+// toolBar.addEventListener('touchstart', handleStart);
+// document.addEventListener('touchmove', handleMove);
+// toolBar.addEventListener('touchend', handleEnd);
+// console.log("Hello world");
 
-function handleStart(event) {
+// function handleStart(event) {
 
-    var mouseX, mouseY;
-    mouseX = event.touches[0].clientX; 
-    mouseY = event.touches[0].clientY; 
-    firstPosition = event.touches[0].clientY;
-    movingToolBar = true;
-  }
+//     var mouseX, mouseY;
+//     mouseX = event.touches[0].clientX; 
+//     mouseY = event.touches[0].clientY; 
+//     firstPosition = event.touches[0].clientY;
+//     movingToolBar = true;
+//   }
   
-  function handleEnd(event){
-    movingToolBar = false;
+//   function handleEnd(event){
+//     movingToolBar = false;
 
-    // save position tool bar
-    positionToolBar = positionToolBar - (firstPosition - lifePosition);
+//     // save position tool bar
+//     positionToolBar = positionToolBar - (firstPosition - lifePosition);
 
-    if(positionToolBar > limitTop)
-      positionToolBar = limitTop;
-    else if(positionToolBar < limitBottom)
-      positionToolBar = limitBottom;
+//     if(positionToolBar > limitTop)
+//       positionToolBar = limitTop;
+//     else if(positionToolBar < limitBottom)
+//       positionToolBar = limitBottom;
 
-  }
+//   }
   
-  function handleMove(event) {
-    lifePosition = event.clientY || event.touches[0].clientY;
-    if(movingToolBar)
-    {
-      moveToolBarY(positionToolBar -( firstPosition - lifePosition));
-    }
-  }
+//   function handleMove(event) {
+//     lifePosition = event.clientY || event.touches[0].clientY;
+//     if(movingToolBar)
+//     {
+//       moveToolBarY(positionToolBar -( firstPosition - lifePosition));
+//     }
+//   }
   
-  function moveToolBarY(yOffset) {
-    if(yOffset <= limitBottom || yOffset >= limitTop) return;
-    toolBar.style.transform = 'translateY(' + yOffset + 'px)';
-}
+//   function moveToolBarY(yOffset) {
+//     if(yOffset <= limitBottom || yOffset >= limitTop) return;
+//     toolBar.style.transform = 'translateY(' + yOffset + 'px)';
+// }
 
