@@ -110,26 +110,6 @@ var mymap = L.map('map', {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(mymap);
 
-    function onLocationFound(e) {
-        const radius = e.accuracy / 2;
-
-        const locationMarker = L.marker(e.latlng).addTo(mymap)
-            .bindPopup('You are within ${radius} meters from this point').openPopup();
-
-        const locationCircle = L.circle(e.latlng, radius).addTo(mymap);
-    }
-
-    function onLocationError(e) {
-        alert(e.message);
-    }
-
-    mymap.on('locationfound', onLocationFound);
-    mymap.on('locationerror', onLocationError);
-
-    mymap.locate({setView: true, maxZoom: 16});
-
-
-
 // var mymap = L.map('map', {
 //   zoomControl: false
 // }).fitWorld().setView([21.037138, 105.783182], 15);
@@ -142,10 +122,10 @@ var maxBounds = L.latLngBounds(
   L.latLng(21.042185, 105.786226)    // Tọa độ góc phải trên của giới hạn
 );
 
-// mymap.setMaxBounds(maxBounds);
-// mymap.on('drag', function() {
-//   mymap.panInsideBounds(maxBounds, { animate: false });
-// });
+mymap.setMaxBounds(maxBounds);
+mymap.on('drag', function() {
+  mymap.panInsideBounds(maxBounds, { animate: false });
+});
 
 
 // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -158,10 +138,7 @@ mymap.fitBounds(maxBounds);
 var zoomControl = L.control.zoom({
   position: 'bottomright' 
 });
-
 zoomControl.addTo(mymap);
-
-
 
 
 if (navigator.permissions) {
