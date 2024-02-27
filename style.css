@@ -963,6 +963,14 @@ body, html {
     top: 30px;
   }
 
+  .sidebar
+  {
+    display: none;
+  }
+  .main-content{
+    left: 0px;
+  }
+
    #search-bar {
     position: absolute;
     display: flex;
@@ -1301,4 +1309,5 @@ body, html {
   #music{
     display: none;
   } 
+
 }

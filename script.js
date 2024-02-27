@@ -382,7 +382,9 @@ var imageElement = document.getElementById("hnue-img");
 var image2Element = document.getElementById("hnue-img-2");
 
 // Lấy URL của hình ảnh
-var imageUrl = imageElement.src;
+if(imageElement != null)
+  var imageUrl = imageElement.src;
+
 var imageUrl2 = image2Element.src;
 
 // Đặt giá trị cho thuộc tính content của thẻ og:image
@@ -390,7 +392,9 @@ var ogImageElement = document.getElementById("ogImage");
 var ogImage2Element = document.getElementById("ogImage2");
 
 ogImageElement.content = imageUrl;
-ogImage2Element.content = imageUrl2;
+
+if(imageUrl2 != null && ogImage2Element != null)
+  ogImage2Element.content = imageUrl2;
 
 function uploadImage() {
   document.getElementById('imageInput').click();
@@ -506,6 +510,7 @@ moveToolBarY(defaultPositionToolBar);
 toolBar.addEventListener('touchstart', handleStart);
 document.addEventListener('touchmove', handleMove);
 toolBar.addEventListener('touchend', handleEnd);
+console.log("Hello world");
 
 function handleStart(event) {
 
