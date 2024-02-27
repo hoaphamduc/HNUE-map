@@ -506,6 +506,7 @@ var limitBottom = 10;
 
 // setup
 moveToolBarY(defaultPositionToolBar);
+positionToolBar = defaultPositionToolBar;
 
 toolBar.addEventListener('touchstart', handleStart);
 document.addEventListener('touchmove', handleMove);
