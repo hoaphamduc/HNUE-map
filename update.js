@@ -353,7 +353,7 @@ async function loadPosts() {
             <span class="contentEnglish action-text">Like</span>
           </div>
 
-          <div class="comment-post" data-postid="${post.postId}" onclick="openCommentAction('${encodeURIComponent(postId)}')">
+          <div class="comment-post" data-postid='${post.postId}' onclick="openCommentAction('${encodeURIComponent(postId)}')">
             <img src="source-img/cloud.png" class="action-img">
             <span class="contentVN action-text">Bình luận</span>
             <span class="contentEnglish action-text">Comment</span>
@@ -383,8 +383,8 @@ async function loadPosts() {
           box.addEventListener('click', addComment);
         });
         const boxes2 = Array.from(postsContainer.getElementsByClassName('comment-post'));
-        boxes2.forEach(box => {
-          box.addEventListener('click', getCommentsForPost);
+        boxes2.forEach(box2 => {
+          box2.addEventListener('click', getCommentsForPost);
         });
       }
     }
@@ -397,8 +397,9 @@ document.addEventListener('DOMContentLoaded', () => {
   loadPosts(true);
 });
 
+
 function addComment(e) {
-  var postId = e.target.getAttribute('data-postid');
+  var postId = e.target.getAttribute('data');
   // Get the input element based on the postId
   const inputElement = document.getElementById(`comment-input-${postId}`);
   const user = auth.currentUser; 
@@ -444,7 +445,7 @@ function saveCommentToDatabase(postId, commentData) {
 
 
 function getCommentsForPost(e) {
-  var postId = e.target.getAttribute('data');
+  var postId = e.target.getAttribute('data-postid');
   console.log(postId);
   const commentsRef = ref(firebase, `comments/${postId}`);
   const commentContainer = document.getElementById('comment-container-' + postId);
