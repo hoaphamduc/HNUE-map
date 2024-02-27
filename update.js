@@ -19,7 +19,6 @@ function updateUserProfile(user) {
   const userName = user.displayName;
   const userEmail = user.email;
   const userProfilePicture = user.photoURL;
-
   document.getElementById("userName").textContent = userName;
   document.getElementById("userName2").textContent = userName;
   document.getElementById("userEmail").textContent = userEmail;
@@ -28,9 +27,6 @@ function updateUserProfile(user) {
   document.getElementById("userProfilePicture2").src = userProfilePicture;
 
 }
-
-
-
 
 // Observer for authentication state changes
 onAuthStateChanged(auth, (user) => {
@@ -255,10 +251,6 @@ document.getElementById('statusEng').addEventListener('input', function() {
   checkTextArea(this);
 });
 
-
-
-
-
 function extractCoordinates(location) {
   // Kiểm tra location có xác định và là chuỗi hay không
   if (location && typeof location === 'string') {
@@ -283,9 +275,6 @@ function extractCoordinates(location) {
     return { latitude: 0, longitude: 0 };
   }
 }
-
-
-
 
 async function loadPosts() {
   try {
@@ -314,14 +303,15 @@ async function loadPosts() {
 
       // Duyệt qua 20 bài đăng mới nhất và tạo các phần tử HTML
       for (const post of latestPosts) {
+        const postId = post.postId;
+
         // Tạo div cho mỗi bài đăng
         const postDiv = document.createElement('div');
         postDiv.classList.add('show-post');
+        updateCommentCount(postId);
 
         // Lấy tọa độ từ thuộc tính "location"
         const coordinates = extractCoordinates(post.location);
-        
-        const postId = post.postId;
 
         // Điền dữ liệu bài đăng vào các phần tử HTML
         postDiv.innerHTML = `
@@ -341,7 +331,7 @@ async function loadPosts() {
           </div>
 
           <div class="number-comment">
-            <span id="number-comment">0</span>
+            <span class="numberComment" id="number-comment-${post.postId}">0</span>
             <img class="commented-img" src="source-img/cloud.png">
           </div>
 
@@ -353,7 +343,7 @@ async function loadPosts() {
             <span class="contentEnglish action-text">Like</span>
           </div>
 
-          <div class="comment-post" data='${post.postId}' onclick="openCommentAction('${encodeURIComponent(postId)}')">
+          <div class="comment-post" onclick="openCommentAction('${encodeURIComponent(postId)}')" data-postid='${post.postId}'>
             <img src="source-img/cloud.png" class="action-img">
             <span class="contentVN action-text">Bình luận</span>
             <span class="contentEnglish action-text">Comment</span>
@@ -376,16 +366,20 @@ async function loadPosts() {
             <button class="comment-button addComment" data='${post.postId}'"></button>
           </div>
         `;
+        const commentBox = postDiv.querySelector('.comment-post');
 
+        // Bind the click event directly to the specific comment box
+        commentBox.addEventListener('click', () => getCommentsForPost(postId));
         postsContainer.appendChild(postDiv);
         const boxes = Array.from(postsContainer.getElementsByClassName('addComment'));
         boxes.forEach(box => {
           box.addEventListener('click', addComment);
         });
-        const boxes2 = Array.from(postsContainer.getElementsByClassName('comment-post'));
-        boxes2.forEach(box => {
-          box.addEventListener('click', getCommentsForPost);
-        });
+        // const boxes2 = Array.from(document.getElementsByClassName('comment-post'));
+        // boxes2.forEach(box => {
+        //   const postId = box.getAttribute('data-postid');
+        //   box.addEventListener('click', () => getCommentsForPost(postId));
+        // });
       }
     }
   } catch (error) {
@@ -397,6 +391,17 @@ document.addEventListener('DOMContentLoaded', () => {
   loadPosts(true);
 });
 
+function updateCommentCount(postId) {
+  const commentsRef = ref(firebase, `comments/${postId}`);
+
+  onValue(commentsRef, (snapshot) => {
+    const commentCount = snapshot.exists() ? Object.keys(snapshot.val()).length : 0;
+    const commentCountSpan = document.getElementById('number-comment-'+ postId);
+    if (commentCountSpan) {
+      commentCountSpan.textContent = commentCount.toString();
+    }
+  });
+}
 
 function addComment(e) {
   var postId = e.target.getAttribute('data');
@@ -444,17 +449,16 @@ function saveCommentToDatabase(postId, commentData) {
 }
 
 
-function getCommentsForPost(e) {
-  var postId = e.target.getAttribute('data');
-  console.log(postId);
+function getCommentsForPost(postId) {
+  console.log('getCommentsForPost called for postId:', postId);
+
   const commentsRef = ref(firebase, `comments/${postId}`);
   const commentContainer = document.getElementById('comment-container-' + postId);
-  console.log('commentContainer:', commentContainer);
 
   if (!commentContainer) {
-    console.error("container not found");
+    console.error("Container not found");
     return;
-}
+  }
 
   // Lắng nghe sự thay đổi trong dữ liệu bình luận
   onValue(commentsRef, (snapshot) => {
@@ -462,6 +466,8 @@ function getCommentsForPost(e) {
 
     // Hiển thị bình luận
     commentContainer.innerHTML = '';
+    // Gọi hàm để đếm số lượng bình luận và cập nhật vào span
+    updateCommentCount(postId);
 
     if (!commentsData) {
       console.error("No comments found for postId:", postId);
@@ -479,9 +485,9 @@ function getCommentsForPost(e) {
 }
 
 
-// Hàm tạo element HTML cho mỗi bình luận
 function createCommentElement(comment) {
-  const avatarUrl = comment.avatarURL || 'Logo Đại học Sư phạm Hà Nội - HNUE.png'
+  const avatarUrl = comment.avatarURL || 'Logo Đại học Sư phạm Hà Nội - HNUE.png';
+
   const commentElement = document.createElement('div');
   commentElement.classList.add('comment');
 
@@ -489,7 +495,7 @@ function createCommentElement(comment) {
   const commentAvt = document.createElement('img');
   commentAvt.classList.add('comment-avt');
   commentAvt.src = avatarUrl;
-  commentElement.appendChild(avatarURL);
+  commentElement.appendChild(commentAvt);
 
   // Thêm tên người dùng
   const commentUsername = document.createElement('span');
@@ -506,11 +512,12 @@ function createCommentElement(comment) {
   // Thêm nội dung bình luận
   const commentText = document.createElement('span');
   commentText.classList.add('comment-text');
-  commentText.textContent = comment.content;
-  commentElement.appendChild(text);
+  commentText.textContent = comment.text; 
+  commentElement.appendChild(commentText);
 
   return commentElement;
 }
+
 
 // Hàm định dạng thời gian
 function formatTime(timestamp) {

@@ -23,15 +23,58 @@
 //   console.log('DevTools đã bị chặn.');
 // });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const sidebar = document.querySelector('.sidebar');
-  const btn = document.getElementById('menu-btn');
-  const homeContent = document.querySelector('.main_content');
+function openCommentAction(postId) {
 
-  btn.addEventListener('click', function () {
-      sidebar.classList.toggle('show');
-      homeContent.classList.toggle('show');
-  });
+  // Check if the comment-action div already exists
+  const existingCommentAction = document.getElementById(`comment-action-${postId}`);
+
+  if (!existingCommentAction) {
+    // Create a new comment-action div
+    const commentActionDiv = document.createElement('div');
+    commentActionDiv.classList.add('comment-action');
+    commentActionDiv.id = `comment-action-${postId}`;
+    commentActionDiv.style.display = 'none';
+    console.log(commentActionDiv.id);
+
+    // Set the content of the comment-action div
+    commentActionDiv.innerHTML = `
+      <center><span class="creat-post-span">Bình luận</span></center>
+      <button class="close-div" onclick="hideCommentAction(${postId})"></button>
+      <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; top: 50px;"></div>
+      <div class="comment-container" id="comment-container-${postId}"></div>
+      <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; bottom: 50px;"></div>
+      <input type="text" placeholder="Add a comment..." class="comment-input" id="comment-input-${postId}">
+      <button class="comment-button" onclick="addComment('${postId}')"></button>
+    `;
+    
+    // Append the comment-action div to the document body or another container element
+    document.body.appendChild(commentActionDiv);
+  }
+
+  // Toggle the display of the comment-action div
+  const commentActionDiv = document.getElementById(`comment-action-${postId}`);
+  commentActionDiv.style.display = commentActionDiv.style.display === 'none' ? 'block' : 'none';
+}
+
+function hideCommentAction(postId) {
+  // Get the comment-action div based on the containerId
+  const commentActionDiv = document.getElementById(`comment-action-${postId}`);
+
+  // Check if the comment-action div exists before attempting to hide it
+  if (commentActionDiv) {
+    commentActionDiv.style.display = 'none';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const sidebar = document.querySelector('.sidebar');
+    const btn = document.getElementById('menu-btn');
+    const homeContent = document.querySelector('.main_content');
+  
+    btn.addEventListener('click', function () {
+        sidebar.classList.toggle('show');
+        homeContent.classList.toggle('show');
+    });
 });
 
 const languageToggle = document.getElementById('language-toggle');
@@ -60,13 +103,13 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 }).addTo(mymap);
 
 var maxBounds = L.latLngBounds(
-  L.latLng(21.036000, 105.780455),   // Tọa độ góc trái dưới của giới hạn
-  L.latLng(21.042185, 105.786226)    // Tọa độ góc phải trên của giới hạn
-);
-
+    L.latLng(21.036000, 105.780455),   // Tọa độ góc trái dưới của giới hạn
+    L.latLng(21.042185, 105.786226)    // Tọa độ góc phải trên của giới hạn
+  );
+  
 mymap.setMaxBounds(maxBounds);
 mymap.on('drag', function() {
-  mymap.panInsideBounds(maxBounds, { animate: false });
+    mymap.panInsideBounds(maxBounds, { animate: false });
 });
 
 // Fit bounds to the maximum bounds
@@ -77,64 +120,63 @@ var zoomControl = L.control.zoom({
 });
 zoomControl.addTo(mymap);
 
-
 if (navigator.permissions) {
-  navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
-    if (result.state === 'granted') {
-      // Đã có quyền truy cập vị trí, thực hiện các hành động cần thiết ở đây
-
-      var marker;
-
-      // Hàm để cập nhật vị trí trên bản đồ
-      function updateMap(position) {
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
-
-        // Kiểm tra xem marker đã được tạo hay chưa
-        if (marker) {
-          marker.setLatLng([lat, lon]).update();
-        } else {
-          marker = L.marker([lat, lon]).addTo(mymap).openPopup();
+    navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
+      if (result.state === 'granted') {
+        // Đã có quyền truy cập vị trí, thực hiện các hành động cần thiết ở đây
+  
+        var marker;
+  
+        // Hàm để cập nhật vị trí trên bản đồ
+        function updateMap(position) {
+          var lat = position.coords.latitude;
+          var lon = position.coords.longitude;
+  
+          // Kiểm tra xem marker đã được tạo hay chưa
+          if (marker) {
+            marker.setLatLng([lat, lon]).update();
+          } else {
+            marker = L.marker([lat, lon]).addTo(mymap).openPopup();
+          }
         }
+  
+        // Sử dụng hàm watchPosition để liên tục theo dõi vị trí
+        var watchId = navigator.geolocation.watchPosition(
+          function (position) {
+            updateMap(position);
+          },
+          function (error) {
+            console.log('Error getting geolocation:', error.message);
+          }
+        );
+  
+      } else if (result.state === 'prompt') {
+        // Chưa có quyền truy cập vị trí, hiển thị cửa sổ yêu cầu quyền
+        navigator.geolocation.getCurrentPosition(
+          function (position) {
+            // Lưu trạng thái đã được cấp quyền
+            navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
+              if (result.state === 'granted') {
+                // Thực hiện các hành động cần thiết khi đã được cấp quyền
+                updateMap(position);
+              }
+            });
+          },
+          function (error) {
+            console.log('Error getting geolocation:', error.message);
+          }
+        );
       }
-
-      // Sử dụng hàm watchPosition để liên tục theo dõi vị trí
-      var watchId = navigator.geolocation.watchPosition(
-        function (position) {
-          updateMap(position);
-        },
-        function (error) {
-          console.log('Error getting geolocation:', error.message);
-        }
-      );
-
-    } else if (result.state === 'prompt') {
-      // Chưa có quyền truy cập vị trí, hiển thị cửa sổ yêu cầu quyền
-      navigator.geolocation.getCurrentPosition(
-        function (position) {
-          // Lưu trạng thái đã được cấp quyền
-          navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
-            if (result.state === 'granted') {
-              // Thực hiện các hành động cần thiết khi đã được cấp quyền
-              updateMap(position);
-            }
-          });
-        },
-        function (error) {
-          console.log('Error getting geolocation:', error.message);
-        }
-      );
-    }
-  });
-} else {
-  console.log('Geolocation is not supported by this browser.');
+    });
+  } else {
+    console.log('Geolocation is not supported by this browser.');
 }
 
 // Lấy tọa độ khi click
 mymap.on('click', function (e) {
-  var lat = e.latlng.lat;
-  var lng = e.latlng.lng;
-  console.log('Latitude: ' + lat + ', Longitude: ' + lng);
+    var lat = e.latlng.lat;
+    var lng = e.latlng.lng;
+    console.log('Latitude: ' + lat + ', Longitude: ' + lng);
 });
 
 var isMusicPlaying = false;
@@ -322,86 +364,91 @@ function composeEmail() {
   window.location.href = mailtoLink;
 }
 
-// Lấy thẻ hình ảnh bằng cách sử dụng ID
-var imageElement = document.getElementById("hnue-img");
-var image2Element = document.getElementById("hnue-img-2");
+function uploadImage() {
+    document.getElementById('imageInput').click();
+}
 
-// Lấy URL của hình ảnh
-// if(imageElement != null)
-//   var imageUrl = imageElement.src;
-
-// var imageUrl2 = image2Element.src;
-
-// Đặt giá trị cho thuộc tính content của thẻ og:image
-var ogImageElement = document.getElementById("ogImage");
-var ogImage2Element = document.getElementById("ogImage2");
-
-// ogImageElement.content = imageUrl;
-
-// if(imageUrl2 != null && ogImage2Element != null)
-//   ogImage2Element.content = imageUrl2;
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Lấy đối tượng img và input
-//   var locationImage = document.querySelector("#add-location-button");
-
-//   // Thêm sự kiện click vào hình ảnh
-//   locationImage.addEventListener("click", getLocationAndFillInput);
-// });
-
-
-// behavior toolbar
-var toolBar = document.getElementById('tool-bar');
-
-var lifePosition;
-var firstPosition;
-var movingToolBar = false;
-var positionToolBar = 0;
-var defaultPositionToolBar = 215;
-var limitTop = 220;
-var limitBottom = 10;
-
-// setup
-// moveToolBarY(defaultPositionToolBar);
-
-// toolBar.addEventListener('touchstart', handleStart);
-// document.addEventListener('touchmove', handleMove);
-// toolBar.addEventListener('touchend', handleEnd);
-// console.log("Hello world");
-
-// function handleStart(event) {
-
-//     var mouseX, mouseY;
-//     mouseX = event.touches[0].clientX; 
-//     mouseY = event.touches[0].clientY; 
-//     firstPosition = event.touches[0].clientY;
-//     movingToolBar = true;
-//   }
+function setBackgroundImage() {
+    var input = document.getElementById('imageInput');
   
-//   function handleEnd(event){
-//     movingToolBar = false;
-
-//     // save position tool bar
-//     positionToolBar = positionToolBar - (firstPosition - lifePosition);
-
-//     if(positionToolBar > limitTop)
-//       positionToolBar = limitTop;
-//     else if(positionToolBar < limitBottom)
-//       positionToolBar = limitBottom;
-
-//   }
+    if (input.files && input.files[0]) {
+        var file = input.files[0];
   
-//   function handleMove(event) {
-//     lifePosition = event.clientY || event.touches[0].clientY;
-//     if(movingToolBar)
-//     {
-//       moveToolBarY(positionToolBar -( firstPosition - lifePosition));
-//     }
-//   }
+        // Kiểm tra kích thước tệp tin (25MB = 25 * 1024 * 1024 bytes)
+        if (file.size > 25 * 1024 * 1024) {
+            alert("File quá lớn. Vui lòng chọn một tệp tin dưới 25MB.");
+            return;
+        }
   
-//   function moveToolBarY(yOffset) {
-//     if(yOffset <= limitBottom || yOffset >= limitTop) return;
-//     toolBar.style.transform = 'translateY(' + yOffset + 'px)';
-// }
+        // Kiểm tra loại MIME của tệp tin chỉ cho phép ảnh
+        if (!isValidImageFileType(file.type)) {
+            alert("Bạn chỉ được phép chọn ảnh.");
+            return;
+        }
+  
+        var reader = new FileReader();
+  
+        reader.onload = function (e) {
+            document.getElementById('add-photo').style.backgroundImage = 'url(' + e.target.result + ')';
+        };
+  
+        reader.readAsDataURL(file);
+    }
+}
+  
+// Hàm kiểm tra loại MIME của tệp tin chỉ cho phép ảnh
+function isValidImageFileType(fileType) {
+    // Các loại MIME của ảnh
+    var allowedImageTypes = ['image/jpeg', 'image/png', 'image/gif'];
+    return allowedImageTypes.includes(fileType);
+}
 
+function getLocationAndFillInput() {
+    // Kiểm tra xem trình duyệt hỗ trợ Geolocation hay không
+    if ("geolocation" in navigator) {
+        // Sử dụng Geolocation API để lấy toạ độ
+        navigator.geolocation.getCurrentPosition(
+            function (position) {
+                // Lấy toạ độ latitude và longitude
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                // Điền toạ độ vào input
+                fillInputWithCoordinates(latitude, longitude);
+            },
+            function (error) {
+                // Xử lý lỗi nếu có
+                console.error("Không thể lấy toạ độ:", error.message);
+            }
+        );
+    } else {
+        // Trình duyệt không hỗ trợ Geolocation
+        alert("Trình duyệt không hỗ trợ Geolocation.");
+    }
+}
+  
+function fillInputWithCoordinates(latitude, longitude) {
+    // Điền toạ độ vào input
+    var coordinatesText = "Latitude: " + latitude + ", Longitude: " + longitude;
+    document.querySelector("#text-location-vn").value = coordinatesText;
+    document.querySelector("#text-location-eng").value = coordinatesText;
+}
+  
+function underDevelopment() {
+    alert("Tính năng này đang được phát triển!");
+}
+  
+function redirectToGoogleMap(latitude, longitude) {
+    // Kiểm tra tọa độ
+    if (latitude === 0 && longitude === 0) {
+        // Hiện cảnh báo người dùng chưa chia sẻ vị trí
+        alert('Người dùng chưa chia sẻ vị trí!');
+        return; 
+    }
+
+    // Tạo URL Google Map với tọa độ
+    const googleMapURL = `https://www.google.com/maps?q=${latitude},${longitude}`;
+
+    // Mở Google Map với URL được tạo
+    window.location.href = googleMapURL;
+}
+  
