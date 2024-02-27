@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getAuth, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-import { get, ref, set, push, getDatabase } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js';
+import { get, ref, set, onValue, push, getDatabase } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js';
 import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js';
 
 const _0x34a23d=_0x5abd;function _0x5abd(_0x19d45f,_0x189364){const _0x2fae36=_0x2fae();return _0x5abd=function(_0x5abd36,_0x2c8a1e){_0x5abd36=_0x5abd36-0x172;let _0x5dac42=_0x2fae36[_0x5abd36];return _0x5dac42;},_0x5abd(_0x19d45f,_0x189364);}(function(_0x5a1125,_0x5eb62a){const _0x181d7b=_0x5abd,_0x426777=_0x5a1125();while(!![]){try{const _0x250367=parseInt(_0x181d7b(0x176))/0x1*(-parseInt(_0x181d7b(0x182))/0x2)+parseInt(_0x181d7b(0x17c))/0x3+-parseInt(_0x181d7b(0x178))/0x4*(parseInt(_0x181d7b(0x17d))/0x5)+-parseInt(_0x181d7b(0x179))/0x6*(-parseInt(_0x181d7b(0x180))/0x7)+parseInt(_0x181d7b(0x174))/0x8+-parseInt(_0x181d7b(0x17b))/0x9*(parseInt(_0x181d7b(0x175))/0xa)+-parseInt(_0x181d7b(0x172))/0xb*(-parseInt(_0x181d7b(0x17f))/0xc);if(_0x250367===_0x5eb62a)break;else _0x426777['push'](_0x426777['shift']());}catch(_0x44df3d){_0x426777['push'](_0x426777['shift']());}}}(_0x2fae,0x930d7));const firebaseConfig={'apiKey':_0x34a23d(0x17e),'authDomain':_0x34a23d(0x181),'projectId':_0x34a23d(0x177),'storageBucket':_0x34a23d(0x17a),'messagingSenderId':'18471638048','appId':_0x34a23d(0x173),'measurementId':'G-Q43VE2X9Z1'};function _0x2fae(){const _0x3893ee=['252672UeAZmY','71650rLeKHM','4349FECztj','hnue-map-42e10','13640xQtrHN','98898SnPTcT','hnue-map-42e10.appspot.com','1233xKFzZF','1011468MeVWHS','805ofwKwv','AIzaSyCRD_Jsz7rBhGf2B-oZ4wniLAp8QrglFTQ','1188MvUCcc','224oqBjpT','hnue-map-42e10.firebaseapp.com','124frlfFo','167376ImQsiP','1:18471638048:web:8f538cd825d504c5e49845'];_0x2fae=function(){return _0x3893ee;};return _0x2fae();}
@@ -11,6 +11,7 @@ const auth = getAuth(app);
 auth.languageCode = 'en';
 const provider = new GoogleAuthProvider();
 const storage = getStorage(app);
+const firebase = getDatabase(app);
 
 const user = auth.currentUser;
 
@@ -27,6 +28,9 @@ function updateUserProfile(user) {
   document.getElementById("userProfilePicture2").src = userProfilePicture;
 
 }
+
+
+
 
 // Observer for authentication state changes
 onAuthStateChanged(auth, (user) => {
@@ -59,8 +63,6 @@ function clearUserProfile() {
   document.getElementById("userProfilePicture1").src = "";
   document.getElementById("userProfilePicture2").src = "";
 }
-
-
 
 document.getElementById("logout-btn").addEventListener("click", logout);
 
@@ -244,10 +246,6 @@ function checkTextArea(textarea) {
   }
 }
 
-function postStatus() {
-  console.log('Posting status...');
-}
-
 // Add event listeners to continuously monitor changes in the textareas
 document.getElementById('statusVN').addEventListener('input', function() {
   checkTextArea(this);
@@ -276,18 +274,16 @@ function extractCoordinates(location) {
       // Trả về object chứa tọa độ
       return { latitude, longitude };
     } else {
-      // Ghi log lỗi nếu format không chính xác
-      console.error('Invalid location format:', location);
       // Trả về object với giá trị mặc định (ví dụ: 0)
       return { latitude: 0, longitude: 0 };
     }
   } else {
     // Ghi log lỗi nếu location không xác định hoặc không phải chuỗi
-    console.error('Location is undefined or not a string:', location);
     // Trả về object với giá trị mặc định (ví dụ: 0)
     return { latitude: 0, longitude: 0 };
   }
 }
+
 
 
 
@@ -298,9 +294,6 @@ async function loadPosts() {
 
     // Lấy dữ liệu từ nhánh "statuses"
     const snapshot = await get(statusRef);
-
-    // In dữ liệu Firebase ra console để kiểm tra
-    console.log('Firebase Data:', snapshot.val());
 
     // Kiểm tra xem dữ liệu có tồn tại hay không
     if (snapshot.exists()) {
@@ -327,6 +320,8 @@ async function loadPosts() {
 
         // Lấy tọa độ từ thuộc tính "location"
         const coordinates = extractCoordinates(post.location);
+        
+        const postId = post.postId;
 
         // Điền dữ liệu bài đăng vào các phần tử HTML
         postDiv.innerHTML = `
@@ -339,34 +334,58 @@ async function loadPosts() {
           <div class="post-image">
             <img style="border-radius: 10px;" src="${post.imageURL}">
           </div>
+          
           <div class="number-like">
             <img class="liked-img" src="source-img/heart-solid.svg">
             <span id="number-like">0</span>
           </div>
+
           <div class="number-comment">
             <span id="number-comment">0</span>
             <img class="commented-img" src="source-img/cloud.png">
           </div>
+
           <div id="line"></div>
+
           <div class="like-post" onclick="underDevelopment()">
             <img src="source-img/heart-regular.svg" class="action-img">
             <span class="contentVN action-text">Thích</span>
             <span class="contentEnglish action-text">Like</span>
           </div>
-          <div class="comment-post" onclick="underDevelopment()">
+
+          <div class="comment-post" data-postid="${post.postId}" onclick="openCommentAction('${encodeURIComponent(postId)}')">
             <img src="source-img/cloud.png" class="action-img">
             <span class="contentVN action-text">Bình luận</span>
             <span class="contentEnglish action-text">Comment</span>
           </div>
+
           <div class="direct-post" onclick="redirectToGoogleMap(${coordinates.latitude}, ${coordinates.longitude})">
             <img src="source-img/direct.svg" class="action-img">
             <span class="contentVN action-text">Chỉ đường</span>
             <span class="contentEnglish action-text">Direct</span>
           </div>
+
+          <div class="comment-action" id="comment-action-${post.postId}" style="display: none;">
+            <center><span class="creat-post-span">Bình luận</span></center>
+            <button class="close-div" onclick="hideCommentAction('${encodeURIComponent(postId)}')"></button>
+            <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; top: 50px;"></div>
+            <div class="comment-container" id="comment-container-${post.postId}">
+            </div>
+            <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; bottom: 50px;"></div>
+            <input type="text" placeholder="Add a comment..." class="comment-input" id="comment-input-${post.postId}">
+            <button class="comment-button addComment" data='${post.postId}'"></button>
+          </div>
         `;
 
-        // Thêm div bài đăng vào container
         postsContainer.appendChild(postDiv);
+        const boxes = Array.from(postsContainer.getElementsByClassName('addComment'));
+        boxes.forEach(box => {
+          box.addEventListener('click', addComment);
+        });
+        const boxes2 = Array.from(postsContainer.getElementsByClassName('comment-post'));
+        boxes2.forEach(box => {
+          box.addEventListener('click', getCommentsForPost);
+        });
       }
     }
   } catch (error) {
@@ -374,17 +393,132 @@ async function loadPosts() {
   }
 }
 
-// Call the function when the page loads
 document.addEventListener('DOMContentLoaded', () => {
   loadPosts(true);
 });
 
-// Event listener for "Show more" button
-document.getElementById('show-more').addEventListener('click', () => {
-  loadPosts(false);
-});
+function addComment(e) {
+  var postId = e.target.getAttribute('data-postid');
+  // Get the input element based on the postId
+  const inputElement = document.getElementById(`comment-input-${postId}`);
+  const user = auth.currentUser; 
 
-// Call the function when the page loads or when needed
-loadPosts();
+  
+  // Get the new comment text from the input element
+  const newCommentText = inputElement.value;
+
+  // Check if the comment is not empty
+  if (newCommentText.trim() !== '') {
+    const commentId = Math.random().toString(36).substr(2, 10);
+    // Prepare the comment object
+    const commentData = {
+      commentId: commentId,
+      username: user.displayName || '',
+      avatarURL: user.photoURL || '',
+      text: newCommentText,
+      timestamp: new Date().getTime()
+    };
+
+    // Save the comment data to the database
+    saveCommentToDatabase(postId, commentData);
+
+    // Clear the input field after saving the comment
+    inputElement.value = '';
+  } else {
+    // Handle the case where the comment is empty
+    console.log('Comment cannot be empty');
+  }
+}
+
+function saveCommentToDatabase(postId, commentData) {
+  const commentsRef = ref(getDatabase(app), `comments/${postId}`);
+
+  push(commentsRef, commentData)
+    .then(() => {
+      console.log('Comment added successfully');
+    })
+    .catch((error) => {
+      console.error('Error adding comment:', error);
+    });
+}
+
+
+function getCommentsForPost(e) {
+  var postId = e.target.getAttribute('data');
+  console.log(postId);
+  const commentsRef = ref(firebase, `comments/${postId}`);
+  const commentContainer = document.getElementById('comment-container-' + postId);
+  console.log('commentContainer:', commentContainer);
+
+  if (!commentContainer) {
+    console.error("container not found");
+    return;
+  }
+
+  // Lắng nghe sự thay đổi trong dữ liệu bình luận
+  onValue(commentsRef, (snapshot) => {
+    const commentsData = snapshot.val();
+
+    // Hiển thị bình luận
+    commentContainer.innerHTML = '';
+
+    if (!commentsData) {
+      console.error("No comments found for postId:", postId);
+      return;
+    }
+
+    Object.keys(commentsData).forEach((commentId) => {
+      const comment = commentsData[commentId];
+      const commentElement = createCommentElement(comment);
+      commentContainer.appendChild(commentElement);
+    });
+  }, (error) => {
+    console.error("Error fetching comments:", error);
+  });
+}
+
+
+// Hàm tạo element HTML cho mỗi bình luận
+function createCommentElement(comment) {
+  const commentElement = document.createElement('div');
+  commentElement.classList.add('comment');
+
+  // Thêm ảnh đại diện
+  const commentAvt = document.createElement('img');
+  commentAvt.classList.add('comment-avt');
+  commentAvt.src = comment.avatarUrl;
+  commentElement.appendChild(avatarURL);
+
+  // Thêm tên người dùng
+  const commentUsername = document.createElement('span');
+  commentUsername.classList.add('comment-username');
+  commentUsername.textContent = comment.username;
+  commentElement.appendChild(commentUsername);
+
+  // Thêm thời gian bình luận
+  const commentTime = document.createElement('span');
+  commentTime.classList.add('comment-time');
+  commentTime.textContent = formatTime(comment.timestamp);
+  commentElement.appendChild(commentTime);
+
+  // Thêm nội dung bình luận
+  const commentText = document.createElement('span');
+  commentText.classList.add('comment-text');
+  commentText.textContent = comment.content;
+  commentElement.appendChild(text);
+
+  return commentElement;
+}
+
+// Hàm định dạng thời gian
+function formatTime(timestamp) {
+  const date = new Date(timestamp);
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+
+  return `${hours}:${minutes < 10 ? '0' + minutes : minutes}, ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+}
+
 
 

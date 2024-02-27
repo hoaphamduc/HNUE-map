@@ -35,3 +35,4 @@ googleLogin.addEventListener("click", function(){
         const errorMessage = error.message;
     });
 })
+

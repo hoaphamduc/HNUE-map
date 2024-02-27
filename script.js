@@ -23,6 +23,58 @@
 //   console.log('DevTools đã bị chặn.');
 // });
 
+
+
+
+
+function openCommentAction(postId) {
+
+  // Check if the comment-action div already exists
+  const existingCommentAction = document.getElementById(`comment-action-${postId}`);
+  
+
+  if (!existingCommentAction) {
+    // Create a new comment-action div
+    const commentActionDiv = document.createElement('div');
+    commentActionDiv.classList.add('comment-action');
+    commentActionDiv.id = `comment-action-${postId}`;
+    commentActionDiv.style.display = 'none';
+    console.log(commentActionDiv.id);
+
+    // Set the content of the comment-action div
+    commentActionDiv.innerHTML = `
+      <center><span class="creat-post-span">Bình luận</span></center>
+      <button class="close-div" onclick="hideCommentAction(${postId})"></button>
+      <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; top: 50px;"></div>
+      <div class="comment-container" id="comment-container-${postId}"></div>
+      <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; bottom: 50px;"></div>
+      <input type="text" placeholder="Add a comment..." class="comment-input" id="comment-input-${postId}">
+      <button class="comment-button" onclick="addComment('${postId}')"></button>
+    `;
+
+    // Append the comment-action div to the document body or another container element
+    document.body.appendChild(commentActionDiv);
+  }
+
+  // Toggle the display of the comment-action div
+  const commentActionDiv = document.getElementById(`comment-action-${postId}`);
+  commentActionDiv.style.display = commentActionDiv.style.display === 'none' ? 'block' : 'none';
+}
+
+function hideCommentAction(postId) {
+  // Get the comment-action div based on the containerId
+  const commentActionDiv = document.getElementById(`comment-action-${postId}`);
+
+  // Check if the comment-action div exists before attempting to hide it
+  if (commentActionDiv) {
+    commentActionDiv.style.display = 'none';
+  }
+}
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const sidebar = document.querySelector('.sidebar');
   const btn = document.getElementById('menu-btn');
@@ -215,6 +267,7 @@ function toggleSupportDiv() {
     supportDiv.style.display = "none";
   }
 }
+
 
 function hideSupportDiv() {
   var supportDiv = document.getElementById("support-div");
