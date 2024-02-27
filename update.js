@@ -518,7 +518,7 @@ function formatTime(timestamp) {
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
 
-  return `${hours}:${minutes < 10 ? '0' + minutes : minutes}, ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+  return `${hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}, ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 }
 
 
