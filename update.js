@@ -322,7 +322,7 @@ async function loadPosts() {
           <span class="contentVN post-address">Địa chỉ: ${post.address !== undefined ? post.address : 'Người dùng không chia sẻ địa chỉ'}</span>
           <span class="contentEnglish post-address">Address: ${post.address !== undefined ? post.address : 'The user did not shared the address'}</span>
           <div class="post-image">
-            <img style="border-radius: 10px;" src="${post.imageURL}">
+            <img class="imageOfPost" src="${post.imageURL}" onclick="openFullscreen(this)">
           </div>
           
           <div class="number-like">
@@ -528,6 +528,4 @@ function formatTime(timestamp) {
 
   return `${hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}, ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 }
-
-
 

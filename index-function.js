@@ -452,3 +452,59 @@ function redirectToGoogleMap(latitude, longitude) {
     window.location.href = googleMapURL;
 }
   
+function openFullscreen(element) {
+  if (element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if (element.mozRequestFullScreen) { /* Firefox */
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    element.webkitRequestFullscreen();
+  } else if (element.msRequestFullscreen) { /* IE/Edge */
+    element.msRequestFullscreen();
+  }
+
+  // Thêm sự kiện để theo dõi thay đổi fullscreen
+  document.addEventListener("fullscreenchange", exitFullscreenHandler);
+  document.addEventListener("webkitfullscreenchange", exitFullscreenHandler);
+  document.addEventListener("mozfullscreenchange", exitFullscreenHandler);
+  document.addEventListener("MSFullscreenChange", exitFullscreenHandler);
+
+  // Thêm sự kiện click để thoát fullscreen khi bấm vào bất kỳ nơi nào
+  document.addEventListener("click", exitFullscreenOnClickHandler);
+}
+
+// Hàm để thoát fullscreen khi sự kiện xảy ra
+function exitFullscreenHandler() {
+  const fullscreenElement =
+    document.fullscreenElement ||
+    document.webkitFullscreenElement ||
+    document.mozFullScreenElement ||
+    document.msFullscreenElement;
+
+  if (!fullscreenElement) {
+    exitFullscreen();
+  }
+}
+
+// Hàm để thoát fullscreen khi click bất kỳ nơi nào
+function exitFullscreenOnClickHandler() {
+  exitFullscreen();
+}
+
+// Hàm để thoát fullscreen
+function exitFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
+
+// Gọi hàm thoát fullscreen khi cần
+function closeFullscreen() {
+  exitFullscreen();
+}

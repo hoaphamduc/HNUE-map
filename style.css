@@ -854,6 +854,11 @@ body, html {
   background-color: #fff;
 }
 
+.imageOfPost {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .comment {
   width: 100%;
   height: 100px;
