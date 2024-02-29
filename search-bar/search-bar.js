@@ -41,7 +41,7 @@ if(window.maxWidth <= this.maxWidth)
         openLocationOnMap(3);
     });
 }
-else{
+{
     searchInput.addEventListener('click', onClickSearchBar);
     searchAction.addEventListener('click', function(event){
         if(!onShowPopupSearch) return;
@@ -67,6 +67,7 @@ else{
 // define function
 function onClickSearchBar()
 {
+    console.log('click');
     if(this.onShowPopupSearch) return;
     
     changeStatusSearch(true);

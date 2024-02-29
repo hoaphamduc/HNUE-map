@@ -896,6 +896,22 @@ body, html {
   cursor: default;
 }
 
+#search-bar_animation{
+  position: absolute;
+  display: flex;
+  width: 90%;
+  height: 45px;
+  border-radius: 10px;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+  align-items: center;
+  transition: width 0.2s ease, height 0.3s ease, top 0.3s ease, box-shadow 0.2s ease, border-radius 0.3 ease;
+}
+
+
 @media (min-width : 768px){
   #tool-bar {
     display: none;
