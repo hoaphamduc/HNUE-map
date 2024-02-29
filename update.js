@@ -73,6 +73,8 @@ document.getElementById('post-status').addEventListener('click', async function(
       const userSnapshot = await get(userRef);
       const userData = userSnapshot.exists() ? userSnapshot.val() : {};
 
+      
+
       // Check if the user can post (last post timestamp is more than a day ago)
       const canPost = await canUserPost(uid);
 
@@ -106,6 +108,18 @@ document.getElementById('post-status').addEventListener('click', async function(
 
       if (isDisplayedBlock(document.getElementById('text-address-eng'))) {
           address = addressEng;
+      }
+
+      // Check for inappropriate words in the status
+      const inappropriateWords = ['địt', 'lồn', 'mẹ mày', 'vãi', 'vcl', 'đm', 'đmm' , 
+                                  'dm', 'duma', 'Đuma', 'dmm', 'lon', 'dit', 'me may', 
+                                  'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'tình dục', 
+                                  'xuất tinh', 'đụ', 'chơi gái', 'choi gai', 'bulon', 
+                                  'cac', 'cặc', 'tao', 'mày', 'nwngs', 'loz', 'buoi',
+                                  'fuck', 'bitch', 'như l', 'lz']; 
+      if (containsInappropriateWords(status, inappropriateWords)) {
+          alert('Nội dung chứa từ không phù hợp. Vui lòng kiểm tra lại từ ngữ của bạn.');
+          return;
       }
 
       location = locationEng;
@@ -173,7 +187,16 @@ document.getElementById('post-status').addEventListener('click', async function(
   }
 });
 
-
+// Function to check if a string contains inappropriate words
+function containsInappropriateWords(text, inappropriateWords) {
+  const lowercasedText = text.toLowerCase();
+  for (const word of inappropriateWords) {
+      if (lowercasedText.includes(word.toLowerCase())) {
+          return true;
+      }
+  }
+  return false;
+}
 
 function resetImageInput() {
   document.getElementById('add-photo').style.backgroundImage = 'url(source-img/add-a-photo.png)';
