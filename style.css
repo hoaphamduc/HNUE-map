@@ -1171,7 +1171,7 @@ body, html {
     height: 45px;
     background: #ffffff;
     border-radius: 10px;
-    top: 60px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -1186,7 +1186,7 @@ body, html {
     from {
       width: 90%;
       height: 45px;
-      top: 60px;
+      top: 30px;
       border-radius: 10px;
       background: white;
     }
@@ -1214,7 +1214,7 @@ body, html {
     to {
       width: 90%;
       height: 45px;
-      top: 60px;
+      top: 30px;
       border-radius: 10px;
       background: white;
     }
@@ -1227,7 +1227,7 @@ body, html {
     height: 45px;
     background: #ffffff;
     border-radius: 10px;
-    top: 60px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100000000;
@@ -1305,7 +1305,7 @@ body, html {
     display: none;
     left: 50%;
     transform: translate(-50%, 0%);
-    top: 75px;
+    top: 55px;
     z-index: 10;
     border-radius: 0px 0px 10px 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -1390,7 +1390,7 @@ body, html {
     from {
     }
     to {
-      transform: translateY(386.231px);
+      transform: translateY(389px);
     }
   }
   
@@ -1404,10 +1404,10 @@ body, html {
   
   @keyframes transitionYUp {
     from {
-      transform: translateY(386.231px);
+      transform: translateY(389px);
     }
     to {
-      transform : translateY(217.363px);
+      transform : translateY(389px);
     }
   }
 

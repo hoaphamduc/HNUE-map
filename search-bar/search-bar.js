@@ -14,28 +14,54 @@ var iconClose = document.getElementById('search-bar_icon-close');
 var onShowPopupSearch = false;
 var jsonSearchData;
 var allResult;
+var maxWidth = 768;
 
 
 // Add event
-searchInput.addEventListener('touchstart', onClickSearchBar);
 searchInput.addEventListener('input', onSearch)
-searchAction.addEventListener('touchstart', function(event){
-    if(!onShowPopupSearch) return;
+if(window.maxWidth <= this.maxWidth)
+{
+    searchInput.addEventListener('touchstart', onClickSearchBar);
+    searchAction.addEventListener('touchstart', function(event){
+        if(!onShowPopupSearch) return;
 
-    changeStatusSearch(false);
-});
-listResult0.addEventListener('touchstart', function(event){
-    openLocationOnMap(0);
-});
-listResult1.addEventListener('touchstart', function(event){
-    openLocationOnMap(1);
-});
-listResult2.addEventListener('touchstart', function(event){
-    openLocationOnMap(2);
-});
-listResult3.addEventListener('touchstart', function(event){
-    openLocationOnMap(3);
-});
+        changeStatusSearch(false);
+    });
+
+    listResult0.addEventListener('touchstart', function(event){
+        openLocationOnMap(0);
+    });
+    listResult1.addEventListener('touchstart', function(event){
+        openLocationOnMap(1);
+    });
+    listResult2.addEventListener('touchstart', function(event){
+        openLocationOnMap(2);
+    });
+    listResult3.addEventListener('touchstart', function(event){
+        openLocationOnMap(3);
+    });
+}
+else{
+    searchInput.addEventListener('click', onClickSearchBar);
+    searchAction.addEventListener('click', function(event){
+        if(!onShowPopupSearch) return;
+
+        changeStatusSearch(false);
+    });
+
+    listResult0.addEventListener('click', function(event){
+        openLocationOnMap(0);
+    });
+    listResult1.addEventListener('click', function(event){
+        openLocationOnMap(1);
+    });
+    listResult2.addEventListener('click', function(event){
+        openLocationOnMap(2);
+    });
+    listResult3.addEventListener('click', function(event){
+        openLocationOnMap(3);
+    });
+}
 
 
 // define function
@@ -63,9 +89,6 @@ function activateAnimation() {
 
     const body = document.body;
     const html = document.documentElement;
-
-    body.addEventListener('touchmove', preventScroll, { passive: false });
-    html.addEventListener('touchmove', preventScroll, { passive: false });
 }
   
 function deactivateAnimation() {
@@ -77,8 +100,8 @@ function deactivateAnimation() {
     toolBar.classList.remove("active");
     toolBar.classList.add("inactive");
     setTimeout(function() {
-        positionToolBar = 217.363;
-        toolBar.style.transform = 'translateY(' + 217.363 + 'px)';
+        positionToolBar = 389;
+        toolBar.style.transform = 'translateY(' + 389 + 'px)';
         toolBar.classList.remove("inactive");
       }, 300);
 
@@ -88,11 +111,6 @@ function deactivateAnimation() {
 
     listResult.style.display = 'none';
 
-    const body = document.body;
-    const html = document.documentElement;
-
-    body.addEventListener('touchmove', preventScroll, { passive: true });
-    html.addEventListener('touchmove', preventScroll, { passive: true });
 }
 
 async function loadJsonFile(pathFile) {
@@ -202,5 +220,16 @@ function preventScroll(event) {
     event.preventDefault();
 }
 
+function checkTurnOffScrool() {
+    if(window.innerWidth > 768) return;
+        
+    const body = document.body;
+    const html = document.documentElement;
+    body.addEventListener('touchmove', preventScroll, { passive: false });
+    html.addEventListener('touchmove', preventScroll, { passive: false }); 
+}
+
+
 // call function
 loadData();
+checkTurnOffScrool();

@@ -358,17 +358,18 @@ var lifePosition;
 var firstPosition;
 var movingToolBar = false;
 var positionToolBar = 0;
-var defaultPositionToolBar = 215;
-var limitTop = 220;
+var defaultPositionToolBar = 389;
+var limitTop = 390;
 var limitBottom = 10;
 
 // setup
-moveToolBarY(defaultPositionToolBar);
-positionToolBar = defaultPositionToolBar;
 
 toolBar.addEventListener('touchstart', handleStart);
 document.addEventListener('touchmove', handleMove);
 toolBar.addEventListener('touchend', handleEnd);
+
+moveToolBarY(defaultPositionToolBar);
+positionToolBar = defaultPositionToolBar;
 
 function handleStart(event) {
 
