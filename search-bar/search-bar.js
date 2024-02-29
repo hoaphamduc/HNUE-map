@@ -87,9 +87,6 @@ function activateAnimation() {
     searchBar.classList.add("active");
 
     listResult.style.display = 'flex';
-
-    const body = document.body;
-    const html = document.documentElement;
 }
   
 function deactivateAnimation() {
@@ -138,9 +135,10 @@ function searchWithKey(rawKey) {
     });
 
     var key = stringToSlug(rawKey);
+    console.log(key == "di");
     allResult = [];
     for (let index = 0; index < keysArray.length; index++) {
-        if(rawKey != "" && keysArray[index].includes(rawKey))
+        if(rawKey != "" && keysArray[index].includes(key))
         allResult.push(keysArray[index]);
     }
 
@@ -185,7 +183,13 @@ function openLocationOnMap(index)
     console.log(indexKey)
     switch (indexKey) {
         case 0:
-            document.getElementById('infoDivC1').style.display = 'block';
+            // document.getElementById('infoDivC1').style.display = 'block';
+            mymap.flyTo([jsonSearchData[index].location[0], jsonSearchData[index].location[1]], 19, {
+                duration: 1.5, 
+                animate: true,
+                easeLinearity: 0.5
+            });
+            console.log(jsonSearchData[index].location);    
             break;
             
         case 1:

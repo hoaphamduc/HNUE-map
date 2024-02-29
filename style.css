@@ -912,7 +912,7 @@ body, html {
 }
 
 
-@media (min-width : 768px){
+@media (min-width : 769px){
   #tool-bar {
     display: none;
   }
@@ -987,7 +987,7 @@ body, html {
     top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 100000000;
+    z-index: 10000;
     cursor: pointer;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;

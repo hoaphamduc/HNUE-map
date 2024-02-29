@@ -115,12 +115,19 @@ document.getElementById('post-status').addEventListener('click', async function(
                                   'dm', 'duma', 'Đuma', 'dmm', 'lon', 'dit', 'me may', 
                                   'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'tình dục', 
                                   'xuất tinh', 'đụ', 'chơi gái', 'choi gai', 'bulon', 
-                                  'cac', 'cặc', 'tao', 'mày', 'nwngs', 'loz', 'buoi',
-                                  'fuck', 'bitch', 'như l', 'lz']; 
-      if (containsInappropriateWords(status, inappropriateWords)) {
-          alert('Nội dung chứa từ không phù hợp. Vui lòng kiểm tra lại từ ngữ của bạn.');
-          return;
-      }
+                                  'cac', 'cặc', 'nwngs', 'loz', 'buoi',
+                                  'fuck', 'bitch', 'như l', 'lz', "đụ", "địt", "lồn", "cặc", "buồi", "đĩ", "địt mẹ", "địt con mẹ", "địt mẹ mày", "đụ má", "đụ má mày", "đụ con mẹ mày", "lỗ l", "cặc bò", "lồn buồi", "lồn cặc", "buồi lồn", "buồi địt", "buồi má", "đĩ mẹ", "đĩ con", "đĩ mẹ mày", "đĩ con mẹ mày", "đĩ mẹ má", "đĩ con mẹ má", "địt mẹ má", "địt con mẹ má", "đụ mẹ má", "đụ con mẹ má", "địt má", "địt con", "địt mẹ con", "địt má con", "địt mẹ má con", "đụ má con", "đụ mẹ con", "đụ má mày", "địt mày", "địt con mày", "địt mẹ mày", "địt mẹ mày", "đụ mẹ mày", "đụ mày", "đụ con mày", "lỗ l", "đụ má", "đụ má mày", "đụ con mẹ mày", "lỗ l", "cặc bò", "lồn buồi", "lồn cặc", "buồi lồn", "buồi địt", "buồi má", "đĩ mẹ", "đĩ con", "đĩ mẹ mày", "đĩ con mẹ mày", "đĩ mẹ má", "đĩ con mẹ má", "địt mẹ má", "địt con mẹ má", "đụ mẹ má", "đụ con mẹ má", "địt má", "địt con", "địt mẹ con", "địt má con", "địt mẹ má con", "đụ má con", "đụ mẹ con", "đụ má mày", "địt mày", "địt con mày", "địt mẹ mày", "địt mẹ mày", "đụ mẹ mày", "đụ mày", "đụ con mày", "đụ má", "đụ má mày", "đụ con mẹ mày", "lỗ l", "cặc bò", "lồn buồi", "lồn cặc", "buồi lồn", "buồi địt", "buồi má", "đĩ mẹ", "đĩ con", "đĩ mẹ mày", "đĩ con mẹ mày", "đĩ mẹ má", "đĩ con mẹ má", "địt mẹ má", "địt con mẹ má", "đụ mẹ má", "đụ con mẹ má", "địt má", "địt con", "địt mẹ con", "địt má con", "địt mẹ má con", "đụ má con", "đụ mẹ con", "đụ má mày", "địt mày", "địt con mày", "địt mẹ mày", "địt mẹ mày", "đụ mẹ mày", "đụ mày", "đụ con mày", "lỗ l", "đụ má", "đụ má mày", "đụ con mẹ mày", "lỗ l", "cặc bò", "lồn buồi", "lồn cặc", "buồi lồn", "buồi địt", "buồi má", "đĩ mẹ", "đĩ con", "đĩ mẹ mày", "đĩ con mẹ mày", "đĩ mẹ má", "đĩ con mẹ má", "địt mẹ má", "địt con mẹ má", "đụ mẹ má", "đụ con mẹ má", "địt má", "địt con", "địt mẹ con", "địt má con", "địt mẹ má con", "đụ má con", "đụ mẹ con", "đụ má mày", "địt mày", "địt con mày", "địt mẹ mày", "địt mẹ mày", "đụ mẹ mày", "đụ mày", "đụ con mày", "lỗ l",
+                                  "fuck", "shit", "asshole", "bitch", "motherfucker", "cunt", "dick", "cock", "pussy", "bastard",
+                                  "ass", "wanker", "twat", "bollocks", "crap", "damn", "hell", "arsehole", "bloody", "bugger", 
+                                  "arse", "bellend", "prick", "shithead", "slut", "wank", "whore", "sod off", "screw you", 
+                                  "son of a bitch", "douchebag", "crap", "goddamn", "asswipe", "dipshit", "jackass", "piss off", 
+                                  "bastard", "piss", "suck", "motherfucking", "bollox", "tosser", "fanny", "knobhead", "motherfucker",
+                                  "motherfucking", "motherfuck", "motherfuckers", "motherfucked", "motherfucker's", "motherfuckings" ];
+
+      // if (containsInappropriateWords(status, inappropriateWords)) {
+      //     alert('Nội dung chứa từ ngữ không phù hợp. Vui lòng kiểm tra lại!');
+      //     return;
+      // }
 
       location = locationEng;
       location = locationVN;
@@ -189,9 +196,10 @@ document.getElementById('post-status').addEventListener('click', async function(
 
 // Function to check if a string contains inappropriate words
 function containsInappropriateWords(text, inappropriateWords) {
-  const lowercasedText = text.toLowerCase();
+  const lowercasedText = text.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
   for (const word of inappropriateWords) {
-      if (lowercasedText.includes(word.toLowerCase())) {
+    var newWord = word.toLowerCase();
+      if (lowercasedText.includes(newWord)) {
           return true;
       }
   }
