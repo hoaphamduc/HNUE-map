@@ -1,0 +1,18 @@
+[
+    {
+      "key": "khoa toan",
+      "title": "Khoa Toán",
+      "description": "Thuộc nhà C"
+    },
+    {
+      "key": "khoa dia",
+      "title": "Khoa Địa",
+      "description": "Thuộc nhà V"
+    },
+    {
+      "key": "khoa van",
+      "title": "Khoa Văn",
+      "description": "Thuộc nhà B"
+    }
+  ]
+  

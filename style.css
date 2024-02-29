@@ -981,6 +981,62 @@ body, html {
   }
   .main-content{
     left: 0px;
+    width: 100%;
+  }
+  #search-bar_animation{
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 10px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+    align-items: center;
+    transition: width 0.2s ease, height 0.3s ease, top 0.3s ease, box-shadow 0.2s ease, border-radius 0.3 ease;
+  }
+  #search-bar_animation.active{
+    animation: scaleUp 0.3s forwards;
+  }
+  @keyframes scaleUp {
+    from {
+      width: 90%;
+      height: 45px;
+      top: 60px;
+      border-radius: 10px;
+      background: white;
+    }
+    to {
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      border-radius: 0px;
+      background: #F1F2F4;
+    }
+  }
+  
+  #search-bar_animation.inactive {
+    animation: scaleDown 0.3s forwards;
+  }
+  
+  @keyframes scaleDown {
+    from {
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      border-radius: 0px;
+      background: #F1F2F4;
+    }
+    to {
+      width: 90%;
+      height: 45px;
+      top: 60px;
+      border-radius: 10px;
+      background: white;
+    }
   }
 
    #search-bar {
@@ -997,6 +1053,33 @@ body, html {
     cursor: pointer;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    transition: box-shadow 0.2s ease;
+  }
+
+  
+  @keyframes transitionSearchBarOn {
+    from {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;  
+    }
+    to {box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+  }
+  
+  #search-bar.active{
+    animation: transitionSearchBarOn 0.3s forwards;
+  }
+
+  #search-bar.inactive {
+    animation: transitionSearchBarOff 0.3s forwards;
+    
+  }
+  
+  @keyframes transitionSearchBarOff {
+    from {box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    to {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    }
   }
 
   .main-content {
@@ -1031,11 +1114,83 @@ body, html {
     text-align: left;   
     border: none;
     outline: none;
+    margin-right: 5px;
   }
   .search-bar_input::placeholder {
     text-align: left; 
   }
 
+  #list-result{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    background: #ffffff;
+    display: none;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 75px;
+    z-index: 10;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  #list-result ul{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+  }
+  
+  #list-result li{
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+  }
+
+  .list-result_border-top{
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    background: #666666;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .list-result_name{
+    width: 80%;
+    height: 50px;
+    margin-left: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .list-result_icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .list-result_icon i{
+    transform: translateY(50%);
+  }
+  .list-result_name_key{
+    width: 100%;
+    height: 20px;    
+    font-size: 14px;
+    padding-top: 3px;
+  }
+  .list-result_name_description{
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+  }
   
   /* Tool bar */
   #tool-bar {
@@ -1051,7 +1206,34 @@ body, html {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transform: translateY(100);
+    transition: width 0.2s ease, height 0.3s ease, top 0.3s ease, box-shadow 0.2s ease;
   }
+
+  @keyframes transitionYDown {
+    from {
+    }
+    to {
+      transform: translateY(386.231px);
+    }
+  }
+  
+  #tool-bar.active{
+    animation: transitionYDown 0.2s forwards;
+  }
+
+  #tool-bar.inactive {
+    animation: transitionYUp 0.2s forwards; 
+  }
+  
+  @keyframes transitionYUp {
+    from {
+      transform: translateY(386.231px);
+    }
+    to {
+      transform : translateY(217.363px);
+    }
+  }
+
   .tool-bar_header1{
     width: 30px;
     height: 4px;

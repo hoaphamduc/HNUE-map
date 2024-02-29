@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   btn.addEventListener('click', function () {
       sidebar.classList.toggle('show');
       homeContent.classList.toggle('show');
-  });
+});
 });
 
 const languageToggle = document.getElementById('language-toggle');
@@ -363,45 +363,45 @@ var limitTop = 220;
 var limitBottom = 10;
 
 // setup
-// moveToolBarY(defaultPositionToolBar);
+moveToolBarY(defaultPositionToolBar);
+positionToolBar = defaultPositionToolBar;
 
-// toolBar.addEventListener('touchstart', handleStart);
-// document.addEventListener('touchmove', handleMove);
-// toolBar.addEventListener('touchend', handleEnd);
-// console.log("Hello world");
+toolBar.addEventListener('touchstart', handleStart);
+document.addEventListener('touchmove', handleMove);
+toolBar.addEventListener('touchend', handleEnd);
 
-// function handleStart(event) {
+function handleStart(event) {
 
-//     var mouseX, mouseY;
-//     mouseX = event.touches[0].clientX; 
-//     mouseY = event.touches[0].clientY; 
-//     firstPosition = event.touches[0].clientY;
-//     movingToolBar = true;
-//   }
+    var mouseX, mouseY;
+    mouseX = event.touches[0].clientX; 
+    mouseY = event.touches[0].clientY; 
+    firstPosition = event.touches[0].clientY;
+    movingToolBar = true;
+  }
   
-//   function handleEnd(event){
-//     movingToolBar = false;
+  function handleEnd(event){
+    movingToolBar = false;
 
-//     // save position tool bar
-//     positionToolBar = positionToolBar - (firstPosition - lifePosition);
+    // save position tool bar
+    positionToolBar = positionToolBar - (firstPosition - lifePosition);
 
-//     if(positionToolBar > limitTop)
-//       positionToolBar = limitTop;
-//     else if(positionToolBar < limitBottom)
-//       positionToolBar = limitBottom;
+    if(positionToolBar > limitTop)
+      positionToolBar = limitTop;
+    else if(positionToolBar < limitBottom)
+      positionToolBar = limitBottom;
 
-//   }
+  }
   
-//   function handleMove(event) {
-//     lifePosition = event.clientY || event.touches[0].clientY;
-//     if(movingToolBar)
-//     {
-//       moveToolBarY(positionToolBar -( firstPosition - lifePosition));
-//     }
-//   }
+  function handleMove(event) {
+    lifePosition = event.clientY || event.touches[0].clientY;
+    if(movingToolBar)
+    {
+      moveToolBarY(positionToolBar -( firstPosition - lifePosition));
+    }
+  }
   
-//   function moveToolBarY(yOffset) {
-//     if(yOffset <= limitBottom || yOffset >= limitTop) return;
-//     toolBar.style.transform = 'translateY(' + yOffset + 'px)';
-// }
+  function moveToolBarY(yOffset) {
+    if(yOffset <= limitBottom || yOffset >= limitTop) return;
+    toolBar.style.transform = 'translateY(' + yOffset + 'px)';
+}
 
