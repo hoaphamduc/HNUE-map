@@ -1,15 +1,18 @@
 [
     {
       "key": "khoa toan",
-      "description": "This is the description for value1."
+      "title": "Khoa Toán",
+      "description": "Thuộc nhà C"
     },
     {
       "key": "khoa dia",
-      "description": "This is the description for value2."
+      "title": "Khoa Địa",
+      "description": "Thuộc nhà V"
     },
     {
-      "key": "khoa ngoai ngu",
-      "description": "This is the description for value3."
+      "key": "khoa van",
+      "title": "Khoa Văn",
+      "description": "Thuộc nhà B"
     }
   ]
   

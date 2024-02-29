@@ -103,13 +103,50 @@
 
         <!-- New UI -->
         <div id="search-bar">
-            <span class="search-bar_icon">
-                <img  class="search-bar_icon-image" src="source-img/search-icon.png">
+            <span id="search-bar_action" class="search-bar_icon">
+                <img id="search-bar_icon-search" class="search-bar_icon-image" src="source-img/search-icon.png">
+                <img id="search-bar_icon-close" class="search-bar_icon-image" src="source-img/close-icon.png" style="display: none;">
             </span>
             <input class ="search-bar_input" type="search" placeholder="Tìm kiếm ở đây">
             <span class="search-bar_user-icon"></span>
         </div>
         <div id="search-bar_animation"></div>
+        <div id="list-result">
+            <ul>
+                <li id="list-result_li0" style="display: none;">
+                    <hr class="list-result_border-top">
+                    <div class="list-result_icon"><i class="fa-solid fa-location-dot fa-lg" style="color: #707070;"></i></div>
+                    <div class="list-result_name">
+                        <div id="list-result_name_key0" class="list-result_name_key"> Khoa Toán </div>
+                        <div id="list-result_name_description0" class="list-result_name_description"> Nhà C </div>
+                    </div>
+                </li>
+                <li id="list-result_li1" style="display: none;">
+                    <hr class="list-result_border-top">
+                    <div class="list-result_icon"><i class="fa-solid fa-location-dot fa-lg" style="color: #707070;"></i></div>
+                    <div class="list-result_name">
+                        <div id="list-result_name_key1"  class="list-result_name_key"> Khoa Toán </div>
+                        <div id="list-result_name_description1"  class="list-result_name_description"> Nhà C </div>
+                    </div>
+                </li>
+                <li  id="list-result_li2" style="display: none;">
+                    <hr class="list-result_border-top">
+                    <div class="list-result_icon"><i class="fa-solid fa-location-dot fa-lg" style="color: #707070;"></i></div>
+                    <div class="list-result_name">
+                        <div id="list-result_name_key2"  class="list-result_name_key"> Khoa Toán </div>
+                        <div id="list-result_name_description2"  class="list-result_name_description"> Nhà C </div>
+                    </div>
+                </li>
+                <li  id="list-result_li3" style="display: none;">
+                    <hr class="list-result_border-top">
+                    <div class="list-result_icon"><i class="fa-solid fa-location-dot fa-lg" style="color: #707070;"></i></div>
+                    <div class="list-result_name">
+                        <div id="list-result_name_key3"  class="list-result_name_key"> Khoa Toán </div>
+                        <div id="list-result_name_description3"  class="list-result_name_description"> Nhà C </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
         <div id="tool-bar">
             <div class="tool-bar_header1"></div>
