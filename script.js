@@ -172,6 +172,20 @@ setTimeout(function () {
   welcomeText.style.display = 'none';
 }, 7000); 
 
+var directionBoard = document.getElementById('direction-board');
+var directionArrow = document.getElementById('directionArrow');
+
+function toggleHide() {
+  directionBoard.classList.toggle('hide');
+  
+  if (directionBoard.classList.contains('hide')) {
+    directionArrow.src = 'source-img/Icon ionic-md-arrow-dropdown.svg';
+  } else {
+    directionArrow.src = 'source-img/close-direction-board.svg';
+  }
+}
+
+
 
 var isMusicPlaying = false;
 var backgroundMusic = document.getElementById("backgroundMusic");

@@ -26,7 +26,6 @@ body, html {
     height: 100%;
     position: relative;
     z-index: 1;
-    cursor: pointer;
 }
 
 .main-content .button-box {
@@ -61,6 +60,75 @@ body, html {
   background: #00cbfd;
   border-radius: 8px;
   transition: .7s;
+}
+
+#direction-board {
+  position: absolute; 
+  z-index: 10000;
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  top: 8px;
+  right: 10px;
+  border-radius: 15px;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #81858A;
+  overflow: hidden;
+}
+
+.hide {
+  height: 45px !important;
+}
+
+.direction-text {
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 6px;
+  color: #fff;
+}
+
+#blue-div {
+  position: absolute; 
+  height: 45px; 
+  background-color: #003588; 
+  top: 0; 
+  width: 100%;
+}
+
+#direction-content {
+  background-color: #fff;
+  width: 100%;
+  height: calc(100% - 45px);
+  position: absolute;
+  top: 45px;
+}
+
+.redtext {
+  color: #E50019;
+  font-weight: 600;
+  margin-left: 15px;
+  cursor: default;
+}
+
+#admin-area, #lecture-hall-area {
+  font-size: 14px;
+}
+
+#admin-area li, #lecture-hall-area li {
+  cursor: pointer;
+}
+
+#directionArrow {
+  position: absolute; 
+  height: 10px; 
+  right: 10px; 
+  top: 16px;
+  cursor: pointer;
 }
 
 #welcome-text {
@@ -101,7 +169,7 @@ body, html {
   height: 80%;
   max-width: 1000px;
   max-height: 600px;
-  z-index: 1000; 
+  z-index: 10001; 
   display: none;
   padding: 15px;
   border-radius: 8px;
@@ -265,6 +333,7 @@ body, html {
   left: 15px; 
   position: absolute; 
   top: 16px;
+  cursor: default;
 }
 
 .infoDiv .toolbar .dong-gop {
@@ -274,6 +343,7 @@ body, html {
   left: 40%; 
   position: absolute; 
   top: 16px;
+  cursor: default;
 }
 
 .infoDiv .toolbar .send-feedback {
