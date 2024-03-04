@@ -63,7 +63,32 @@ body, html {
   transition: .7s;
 }
 
+#welcome-text {
+  position: absolute;
+  bottom: -20px;
+  width: 90%;
+  font-size: 40px;
+  z-index: 10000;
+  font-weight: 900;
+  left: 50%;
+  background-color: #fff;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  text-align: center;
+  cursor: default;
+  animation: zoomAnimation 0.7s infinite alternate;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+}
 
+@keyframes zoomAnimation {
+  0% {
+      transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(1.1);
+  }
+}
 
 
 .contentEnglish {
@@ -176,7 +201,11 @@ body, html {
   left: calc((100% - 270px)/2);
   border-radius: 15px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
-  bottom: 100px;
+  top: 100px;
+}
+
+#qr-pdung {
+  top: 470px;
 }
 
 .infoDiv .toolbar {
@@ -896,7 +925,7 @@ body, html {
   cursor: default;
 }
 
-#search-bar_animation{
+/* #search-bar_animation{
   position: absolute;
   display: flex;
   width: 90%;
@@ -909,10 +938,16 @@ body, html {
   cursor: pointer;
   align-items: center;
   transition: width 0.2s ease, height 0.3s ease, top 0.3s ease, box-shadow 0.2s ease, border-radius 0.3 ease;
-}
+} */
+
 
 
 @media (min-width : 769px){
+
+  #welcome-text {
+    width: auto;
+  }
+
   #tool-bar {
     display: none;
   }
@@ -988,7 +1023,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10000;
-    cursor: pointer;
+    cursor: default;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     transition: box-shadow 0.2s ease;
@@ -1043,6 +1078,7 @@ body, html {
     height: 25px;
     border-radius: 50%;
     background: transparent;
+    cursor: default;
   }
   .search-bar_input {
     flex: 1; 
@@ -1130,9 +1166,10 @@ body, html {
   
 }
 
-@media (max-width: 768px){
-  .image-qr {
+@media (max-width: 769px){
+  #welcome-text {
     bottom: 10px;
+    font-size: 25px;
   }
   .infoDiv {
     height: 60%;
@@ -1246,8 +1283,8 @@ body, html {
     top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 100000000;
-    cursor: pointer;
+    z-index: 10000;
+    cursor: default;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     transition: box-shadow 0.2s ease;
