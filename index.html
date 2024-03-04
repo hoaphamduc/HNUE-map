@@ -103,6 +103,141 @@
     </div>
     <div class="main-content">
         <div id="map"></div>
+
+        <!-- New UI -->
+        <div id="search-bar">
+            <span id="search-bar_action" class="search-bar_icon">
+                <img id="search-bar_icon-search" class="search-bar_icon-image" src="source-img/search-icon.png">
+                <img id="search-bar_icon-close" class="search-bar_icon-image" src="source-img/close-icon.png" style="display: none;">
+            </span>
+            <input class ="search-bar_input" type="search" placeholder="Tìm kiếm ở đây">
+            <img id="user-avt" src="Logo Đại học Sư phạm Hà Nội - HNUE.png" class="search-bar_user-icon">
+        </div>
+        <div id="search-bar_animation"></div>
+        <div id="list-result">
+            <ul>
+                <li id="list-result_li0" style="display: none;">
+                    <div style="position: absolute; top: -10px; width: 100%; height: 20px; background: white;"></div>
+                    <div class="list-result_icon"><i class="fa-solid fa-location-dot fa-lg" style="color: #707070;"></i></div>
+                    <div class="list-result_name">
+                        <div id="list-result_name_key0" class="list-result_name_key"> Khoa Toán </div>
+                        <div id="list-result_name_description0" class="list-result_name_description"> Nhà C </div>
+                    </div>
+                </li>
+                <li id="list-result_li1" style="display: none;">
+                    <hr class="list-result_border-top">
+                    <div class="list-result_icon"><i class="fa-solid fa-location-dot fa-lg" style="color: #707070;"></i></div>
+                    <div class="list-result_name">
+                        <div id="list-result_name_key1"  class="list-result_name_key"> Khoa Toán </div>
+                        <div id="list-result_name_description1"  class="list-result_name_description"> Nhà C </div>
+                    </div>
+                </li>
+                <li  id="list-result_li2" style="display: none;">
+                    <hr class="list-result_border-top">
+                    <div class="list-result_icon"><i class="fa-solid fa-location-dot fa-lg" style="color: #707070;"></i></div>
+                    <div class="list-result_name">
+                        <div id="list-result_name_key2"  class="list-result_name_key"> Khoa Toán </div>
+                        <div id="list-result_name_description2"  class="list-result_name_description"> Nhà C </div>
+                    </div>
+                </li>
+                <li  id="list-result_li3" style="display: none;">
+                    <hr class="list-result_border-top">
+                    <div class="list-result_icon"><i class="fa-solid fa-location-dot fa-lg" style="color: #707070;"></i></div>
+                    <div class="list-result_name">
+                        <div id="list-result_name_key3"  class="list-result_name_key"> Khoa Toán </div>
+                        <div id="list-result_name_description3"  class="list-result_name_description"> Nhà C </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="tool-bar">
+            <div class="tool-bar_header1"></div>
+            <div class="tool-bar_header2">
+                <div class="tool-bar_header2_title">
+                    Nổi bật</div>
+                <div class="tool-bar_header2_choose">
+                    <span class="tool-bar_header2_choose_child">
+                        <div class="tool-bar_header2_choose_child_content">
+                            <div class="tool-bar_header2_choose_child_content_logo">
+                                <div class="tool-bar_header2_choose_child_content_logo_item" style="left: 2px; top: 6px;">
+                                    <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="tool-bar_header2_choose_child_content_text" >Địa điểm yêu thích</div>
+                        </div>
+                    </span>
+                    <span class="tool-bar_header2_choose_child">
+                        <div class="tool-bar_header2_choose_child_content">
+                            <div class="tool-bar_header2_choose_child_content_logo">
+                                <div class="tool-bar_header2_choose_child_content_logo_item" style="left: 0px; top: 6px;">
+                                    <i class="fa-solid fa-school fa-2xl" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="tool-bar_header2_choose_child_content_text" >Phòng học</div>
+                        </div>
+                    </span>
+                    <span class="tool-bar_header2_choose_child">
+                        <div class="tool-bar_header2_choose_child_content"><div class="tool-bar_header2_choose_child_content_logo">
+                            <div class="tool-bar_header2_choose_child_content_logo_item">
+                                <i class="fa-solid fa-earth-asia fa-2xl" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div class="tool-bar_header2_choose_child_content_text" >Khám phá</div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="tool-bar_line1"></div>
+            <div class="tool-bar_header3">
+                <div class="tool-bar_header3_title">
+                    Các địa điểm quanh đây</div>
+                <div class="tool-bar_header3_choose">
+                    <span class="tool-bar_header3_choose_child">
+                        <div class="tool-bar_header3_choose_child_content">
+                            <div class="tool-bar_header3_choose_child_content_logo">
+                                <div class="tool-bar_header3_choose_child_content_logo_content" style="left: 6px;">
+                                    <i class="fa-solid fa-utensils fa-2xl" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="tool-bar_header3_choose_child_content_text" >Quán ăn</div>
+                        </div>
+                    </span>
+                    <span class="tool-bar_header3_choose_child">
+                        <div class="tool-bar_header3_choose_child_content">
+                            <div class="tool-bar_header3_choose_child_content_logo">
+                                <div class="tool-bar_header3_choose_child_content_logo_content">
+                                    <i class="fa-solid fa-wallet fa-xl" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="tool-bar_header3_choose_child_content_text" >ATM</div>
+                        </div>
+                    </span>
+                    <span class="tool-bar_header3_choose_child">
+                        <div class="tool-bar_header3_choose_child_content">
+                            <div class="tool-bar_header3_choose_child_content_logo">
+                                <div class="tool-bar_header3_choose_child_content_logo_content" style="left: 6px;">
+                                    <i class="fa-solid fa-square-parking fa-2xl" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="tool-bar_header3_choose_child_content_text" >Bãi đỗ xe</div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="tool-bar_line2"></div>
+            <div class="tool-bar_select-language">
+                <div class="tool-bar_select-language_icon"></div>
+                <select class = "tool-bar_select-language_drop-down">
+                    <option value="Tiếng Việt">Tiếng Việt</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+            <div class="tool-ba_contribute">
+                <div class="tool-ba_contribute_icon"></div>
+                <div class="tool-ba_contribute_text-content"><p><i>Đóng góp</i></p></div>
+            </div>
+        </div>
         
         <!-- Giới thiệu về HNUE -->
         <div id="HNUE-introduction">
@@ -297,10 +432,68 @@
 
         <!-- Main content -->
 
-        <span id="welcome-text">
+        <div id="direction-board">
+            <div id="blue-div">
+                <span class="contentVN direction-text" onclick="toggleHide()">Bảng chỉ dẫn</span>
+                <span class="contentEnglish direction-text" onclick="toggleHide()">Direction board</span>
+                <img id="directionArrow" src="source-img/close-direction-board.svg" onclick="toggleHide()">
+            </div>
+            <div id="direction-content">
+                <span class="contentVN redtext">KHU HÀNH CHÍNH</span>
+                <span class="contentEnglish redtext">ADMINISTRATIVE AREA</span>
+                <ul id="admin-area">
+                    <li onclick="toggleInfoDivNhaHieuBo()">
+                        <span class="contentVN">Nhà hiệu bộ</span>
+                        <span class="contentEnglish">Headmaster's Office</span>
+                    </li>
+                    <li onclick="toggleInfoDivTV()">
+                        <span class="contentVN">Trung tâm thông tin thư viện</span>
+                        <span class="contentEnglish">Library Information Center</span>
+                    </li>
+                    <li onclick="toggleInfoDiv1110()">
+                        <span class="contentVN">Hội trường 11.10</span>
+                        <span class="contentEnglish">Auditorium 11.10</span>
+                    </li>
+                </ul>
+                <span class="contentVN redtext">KHU GIẢNG ĐƯỜNG</span>
+                <span class="contentEnglish redtext">LECTURE HALL AREA</span>
+                <ul id="lecture-hall-area">
+                    <li onclick="toggleInfoDivA2()">
+                        <span class="contentVN">A2 - Giảng đường, phòng thí nghiệm khoa Hoá, Sinh, Sư phạm Kỹ Thuật</span>
+                        <span class="contentEnglish">A2 - Lecture Hall, Chemistry and Biology Laboratories, Technical Education Faculty</span>
+                    </li>
+                    <li onclick="toggleInfoDivA3()">
+                        <span class="contentVN">A3 - Khoa Sinh Học, phòng thí nghiệm khoa Hoá</span>
+                        <span class="contentEnglish">A3 - Department of Biology, Chemistry Laboratories</span>
+                    </li>
+                    <li onclick="toggleInfoDivA4()">
+                        <span class="contentVN">A4 - Khoa Giáo Dục Chính Trị, khoa Hoá</span>
+                        <span class="contentEnglish">A4 - Department of Political Education, Department of Chemistry</span>
+                    </li>
+                    <li onclick="toggleInfoDivB1()">
+                        <span class="contentVN">B1 - Hội trường</span>
+                        <span class="contentEnglish">B1 - Auditorium</span>
+                    </li>
+                    <li onclick="toggleInfoDivB2()">
+                        <span class="contentVN">B2 - Khoa Ngữ Văn, khoa Lịch Sử</span>
+                        <span class="contentEnglish">B2 - Faculty of Literature, Faculty of History</span>
+                    </li>
+                    <li onclick="toggleInfoDivC1()">
+                        <span class="contentVN">C1 - Khoa Toán</span>
+                        <span class="contentEnglish">C1 - Faculty of Mathematics</span>
+                    </li>
+                    <li onclick="toggleInfoDivC2()">
+                        <span class="contentVN">C2 - Khoa Công Nghệ Thông Tin</span>
+                        <span class="contentEnglish">C2 - Faculty of Information Technology</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <span id="welcome-text">
             <span class="contentVN">Chạm vào các toà nhà để tương tác</span>
             <span class="contentEnglish">Tap on buildings to interact</span>
-        </span>
+        </span> -->
 
         <div class="infoDiv" id="infoDivNhaHieuBo">
             <div class="toolbar">

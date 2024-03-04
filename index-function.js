@@ -207,12 +207,12 @@ var HNUE = L.polygon([
   fillOpacity: 0.1
 }).addTo(mymap);
 
-var welcomeText = document.getElementById('welcome-text');
+// var welcomeText = document.getElementById('welcome-text');
 
-setTimeout(function () {
-  mymap.removeLayer(HNUE);
-  welcomeText.style.display = 'none';
-}, 7000); 
+// setTimeout(function () {
+//   mymap.removeLayer(HNUE);
+//   welcomeText.style.display = 'none';
+// }, 7000); 
 
 var directionBoard = document.getElementById('direction-board');
 var directionArrow = document.getElementById('directionArrow');
