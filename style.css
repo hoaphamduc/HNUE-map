@@ -106,6 +106,7 @@ body, html {
   height: calc(100% - 45px);
   position: absolute;
   top: 45px;
+  overflow: auto;
 }
 
 .redtext {
@@ -115,12 +116,16 @@ body, html {
   cursor: default;
 }
 
-#admin-area, #lecture-hall-area {
+#admin-area, #lecture-hall-area, #domestic-area, #other-areas {
   font-size: 14px;
 }
 
-#admin-area li, #lecture-hall-area li {
+#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li {
   cursor: pointer;
+}
+
+#admin-area li:hover, #lecture-hall-area li:hover, #domestic-area li:hover, #other-areas li:hover {
+  color: #2185D0;
 }
 
 #directionArrow {
@@ -1803,5 +1808,9 @@ body, html {
   #music{
     display: none;
   } 
+
+  #direction-board {
+    display: none;
+  }
 
 }

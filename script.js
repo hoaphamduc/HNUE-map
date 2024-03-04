@@ -60,8 +60,8 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 }).addTo(mymap);
 
 var maxBounds = L.latLngBounds(
-  L.latLng(21.036000, 105.780455),   // Tọa độ góc trái dưới của giới hạn
-  L.latLng(21.042185, 105.786226)    // Tọa độ góc phải trên của giới hạn
+  L.latLng(21.035640574904598, 105.77883481979372),   // Tọa độ góc trái dưới của giới hạn
+  L.latLng(21.042449828927474, 105.78776121139526)    // Tọa độ góc phải trên của giới hạn
 );
 
 mymap.setMaxBounds(maxBounds);
@@ -170,7 +170,7 @@ var welcomeText = document.getElementById('welcome-text');
 setTimeout(function () {
   mymap.removeLayer(HNUE);
   welcomeText.style.display = 'none';
-}, 7000); 
+}, 5000); 
 
 var directionBoard = document.getElementById('direction-board');
 var directionArrow = document.getElementById('directionArrow');
