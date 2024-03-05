@@ -1,10 +1,10 @@
 // Info nhà hiệu bộ
 
 var nhahieubo = L.polygon([
-  [21.037616240499375, 105.78370034694673],
-  [21.037365634976485, 105.7836949825287],
-  [21.037390695547757, 105.7829922437668],
-  [21.037616240499375, 105.78300297260286]
+  [21.03762108716946, 105.78371055569922],
+  [21.03736593667034, 105.78370519338678],
+  [21.03738844996725, 105.78298128120896],
+  [21.037643600427817, 105.78298664352141]
 ], {
   opacity: 0,        
   fillOpacity: 0     
@@ -50,11 +50,23 @@ function toggleInfoDivNhaHieuBo() {
       infoDiv.style.display = 'block';
     }, 2000);
   }
+  nhahieubo.setStyle({
+    opacity: 0.8,
+    fillOpacity: 0.2
+  });
+
+  setTimeout(function () {
+    nhahieubo.setStyle({
+      opacity: 0,
+      fillOpacity: 0
+    });
+  }, 2000);
+  
   mymap.flyTo([21.037439688219646, 105.78331516196478], 19, {
     duration: 1.5, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
 }
 
 // Info nhà A2
