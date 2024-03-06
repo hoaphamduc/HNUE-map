@@ -112,7 +112,7 @@ body, html {
   width: 100%;
   height: calc(100% - 45px);
   position: absolute;
-  top: 45px;
+  top: 85px;
   overflow: auto;
 }
 
@@ -125,6 +125,7 @@ body, html {
 
 #admin-area, #lecture-hall-area, #domestic-area, #other-areas {
   font-size: 14px;
+  list-style: none;
 }
 
 #admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li {
@@ -1008,6 +1009,58 @@ body, html {
   cursor: default;
 }
 
+#search-input-container {
+ width: 100%; 
+ height: 40px;
+ position: absolute;
+ top: 45px;
+}
+
+.search-input {
+  width: 90%; 
+  position: absolute; 
+  left: 5%; 
+  height: 26px; 
+  top: 7px; 
+  border-radius: 5px; 
+  border: 1px solid #DEDEDF; 
+  padding-left: 25px; 
+  font-size: 14px;
+  z-index: 1;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.search-input:hover {
+  border: 1px solid #2185D0; 
+}
+
+.search-input:focus {
+  border-color: #2185D0;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+#search-input-img {
+  width: 16px; 
+  height: 16px; 
+  position: absolute; 
+  top: 12px; 
+  left: 20px; 
+  z-index: 2;
+  cursor: default;
+}
+
+#clear-input {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+
 /* #search-bar_animation{
   position: absolute;
   display: flex;
@@ -1037,7 +1090,7 @@ body, html {
     display: none;
   }
 
-  #search-bar_animation{
+  /* #search-bar_animation{
     position: absolute;
     width: 100%;
     max-width: 410px;
@@ -1255,7 +1308,10 @@ body, html {
     height: 20px;
     font-size: 12px;
   }
-  
+   */
+   #search-bar {
+    display: none;
+  }
 }
 
 
@@ -1269,7 +1325,7 @@ body, html {
     display: none;
   }
 
-  #search-bar_animation{
+  /* #search-bar_animation{
     position: absolute;
     width: 100%;
     max-width: 610px;
@@ -1490,7 +1546,10 @@ body, html {
     height: 20px;
     font-size: 12px;
   }
-  
+   */
+  #search-bar {
+    display: none;
+  }
 }
 
 @media (max-width: 769px){

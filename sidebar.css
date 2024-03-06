@@ -210,14 +210,21 @@
 
 .sidebar #google-login-div #logout-btn {
     background-color: #fff;
-    left: 55px;
+    left: 50px;
     font-size: 13px;
     border: none;
     position: absolute;
-    font-weight: bold;
+    font-weight: 600;
     color: #DC3545;
     bottom: 5px;
-    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.sidebar #google-login-div #logout-btn:hover {
+    color: #fff;
+    background-color: #DC3545;
 }
 
 .sidebar #google-login-btn .login-text {

@@ -552,7 +552,63 @@ function exitFullscreen() {
   }
 }
 
-// Gọi hàm thoát fullscreen khi cần
 function closeFullscreen() {
   exitFullscreen();
+}
+
+// Hàm chuyển đổi tiếng Việt có dấu thành tiếng Việt không dấu
+function removeVietnameseSigns(str) {
+  str = str.toLowerCase();
+  // Chuyển đổi các ký tự có dấu thành không dấu
+  str = str.replace(/[áàảãạăắằẳẵặâấầẩẫậ]/g, 'a');
+  str = str.replace(/[éèẻẽẹêếềểễệ]/g, 'e');
+  str = str.replace(/[íìỉĩị]/g, 'i');
+  str = str.replace(/[óòỏõọôốồổỗộơớờởỡợ]/g, 'o');
+  str = str.replace(/[úùủũụưứừửữự]/g, 'u');
+  str = str.replace(/[ýỳỷỹỵ]/g, 'y');
+  // Loại bỏ các ký tự khác
+  str = str.replace(/[^a-z0-9\s]/g, '');
+  return str;
+}
+
+function filterItems() {
+  // Lấy giá trị từ ô tìm kiếm và chuyển đổi thành tiếng Việt không dấu
+  var searchText = removeVietnameseSigns(document.getElementById("search-input-1").value.toLowerCase() + document.getElementById("search-input-2").value.toLowerCase());
+  console.log(searchText);
+  // Lặp qua các phần tử li và ẩn/hiển thị phù hợp
+  var listItems = document.querySelectorAll("#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li");
+  listItems.forEach(function (item) {
+    var textContent = removeVietnameseSigns(item.textContent.toLowerCase().trim());
+    if (textContent.indexOf(searchText) !== -1) {
+          item.style.display = "block";
+      } else {
+          item.style.display = "none";
+      }
+  });
+  checkInput();
+}
+
+// Hàm kiểm tra khi input có chữ và hiển thị nút clear-input
+function checkInput() {
+  var searchInput1 = document.getElementById("search-input-1");
+  var searchInput2 = document.getElementById("search-input-2");
+  var clearInput = document.getElementById("clear-input");
+
+  if (searchInput1.value.trim() !== "" || searchInput2.value.trim() !== "") {
+      clearInput.style.display = "block";
+  } else {
+      clearInput.style.display = "none";
+  }
+}
+
+// Hàm xoá sạch nội dung input khi bấm vào nút clear-input
+function clearInput() {
+  var searchInput1 = document.getElementById("search-input-1");
+  var searchInput2 = document.getElementById("search-input-2");
+  var clearInput = document.getElementById("clear-input");
+
+  searchInput1.value = "";
+  searchInput2.value = "";
+  clearInput.style.display = "none";
+  filterItems();
 }

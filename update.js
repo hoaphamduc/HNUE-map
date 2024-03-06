@@ -124,10 +124,10 @@ document.getElementById('post-status').addEventListener('click', async function(
                                   "bastard", "piss", "suck", "motherfucking", "bollox", "tosser", "fanny", "knobhead", "motherfucker",
                                   "motherfucking", "motherfuck", "motherfuckers", "motherfucked", "motherfucker's", "motherfuckings" ];
 
-      // if (containsInappropriateWords(status, inappropriateWords)) {
-      //     alert('Nội dung chứa từ ngữ không phù hợp. Vui lòng kiểm tra lại!');
-      //     return;
-      // }
+      if (containsInappropriateWords(status, inappropriateWords)) {
+          alert('Nội dung chứa từ ngữ không phù hợp. Vui lòng kiểm tra lại!');
+          return;
+      }
 
       location = locationEng;
       location = locationVN;
