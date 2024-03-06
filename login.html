@@ -388,13 +388,13 @@
                 <span class="contentEnglish direction-text">Direction board</span>
                 <img id="directionArrow" src="source-img/close-direction-board.svg">
             </div>
+            <div id="search-input-container">
+                <img id="search-input-img" src="source-img/search-icon.png">
+                <input class="search-input contentVN" id="search-input-1" type="text" placeholder="Bạn đang tìm kiếm điều gì?" oninput="filterItems()">
+                <input class="search-input contentEnglish" id="search-input-2" type="text" placeholder="What are you searching for?" oninput="filterItems()">
+                <img id="clear-input" src="source-img/close.svg" onclick="clearInput()">
+            </div>
             <div id="direction-content">
-                <div id="search-input-container">
-                    <img id="search-input-img" src="source-img/search-icon.png">
-                    <input class="search-input contentVN" id="search-input-1" type="text" placeholder="Bạn đang tìm kiếm điều gì?" oninput="filterItems()">
-                    <input class="search-input contentEnglish" id="search-input-2" type="text" placeholder="What are you searching for?" oninput="filterItems()">
-                    <img id="clear-input" src="source-img/close.svg" onclick="clearInput()">
-                </div>
                 <span class="contentVN redtext">KHU HÀNH CHÍNH</span>
                 <span class="contentEnglish redtext">ADMINISTRATIVE REGION</span>
                 <ul id="admin-area">
