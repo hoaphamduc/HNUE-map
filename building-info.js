@@ -1,10 +1,14 @@
 // Info nhà hiệu bộ
 
 var nhahieubo = L.polygon([
-  [21.03762108716946, 105.78371055569922],
-  [21.03736593667034, 105.78370519338678],
-  [21.03738844996725, 105.78298128120896],
-  [21.037643600427817, 105.78298664352141]
+  [21.037571428706993, 105.78304857015611],
+  [21.03755387737855, 105.7836386561394],
+  [21.037423496016842, 105.78363597393037],
+  [21.037428510686713, 105.78342944383624],
+  [21.03738839332303, 105.78342944383624],
+  [21.037393407994085, 105.78323364257812],
+  [21.037436032691193, 105.78323096036914],
+  [21.037441047360645, 105.78304320573808]
 ], {
   opacity: 0,        
   fillOpacity: 0     
@@ -48,7 +52,7 @@ function toggleInfoDivNhaHieuBo() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhahieubo.setStyle({
     opacity: 0.8,
@@ -60,13 +64,14 @@ function toggleInfoDivNhaHieuBo() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   
   mymap.flyTo([21.037439688219646, 105.78331516196478], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
   });
+  toggleHide();
 }
 
 // Info nhà A2
@@ -127,7 +132,7 @@ function toggleInfoDivA2() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaA2.setStyle({
     opacity: 0.8,
@@ -139,12 +144,13 @@ function toggleInfoDivA2() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.03945579822238, 105.7852989435196], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà A3
@@ -205,7 +211,7 @@ function toggleInfoDivA3() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaA3.setStyle({
     opacity: 0.8,
@@ -217,12 +223,13 @@ function toggleInfoDivA3() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.039801266375314, 105.78532040119173], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info vườn thực nghiệm
@@ -275,7 +282,7 @@ function toggleInfoDivVTN() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   VTN.setStyle({
     opacity: 0.8,
@@ -287,12 +294,13 @@ function toggleInfoDivVTN() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.039801266375314, 105.78532040119173], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 
@@ -354,7 +362,7 @@ function toggleInfoDivA4() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaA4.setStyle({
     opacity: 0.8,
@@ -366,12 +374,13 @@ function toggleInfoDivA4() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.040267185120243, 105.78533187197176], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà B1
@@ -426,7 +435,7 @@ function toggleInfoDivB1() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaB1.setStyle({
     opacity: 0.8,
@@ -438,12 +447,13 @@ function toggleInfoDivB1() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.03732416343628, 105.78294965118342], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà B2
@@ -515,7 +525,7 @@ function toggleInfoDivB2() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaB2.setStyle({
     opacity: 0.8,
@@ -527,12 +537,13 @@ function toggleInfoDivB2() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.03735793817546, 105.7824343442917], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà C1
@@ -592,7 +603,7 @@ function toggleInfoDivC1() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaC1.setStyle({
     opacity: 0.8,
@@ -604,12 +615,13 @@ function toggleInfoDivC1() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.037137948558595, 105.78374855294989], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà C2
@@ -666,7 +678,7 @@ function toggleInfoDivC2() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaC2.setStyle({
     opacity: 0.8,
@@ -678,12 +690,13 @@ function toggleInfoDivC2() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.037137948558595, 105.78374855294989], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà C3
@@ -743,7 +756,7 @@ function toggleInfoDivC3() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaC3.setStyle({
     opacity: 0.8,
@@ -755,12 +768,13 @@ function toggleInfoDivC3() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.037494326242005, 105.78374421706172], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 
@@ -820,7 +834,7 @@ function toggleInfoDivC4() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaC4.setStyle({
     opacity: 0.8,
@@ -832,12 +846,13 @@ function toggleInfoDivC4() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.037494326242005, 105.78374421706172], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà D1, D2, D4
@@ -898,7 +913,7 @@ function toggleInfoDivD124() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaD124.setStyle({
     opacity: 0.8,
@@ -910,12 +925,13 @@ function toggleInfoDivD124() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.03804219021729, 105.78404903411867], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà D3
@@ -977,7 +993,7 @@ function toggleInfoDivD3() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaD3.setStyle({
     opacity: 0.8,
@@ -989,12 +1005,13 @@ function toggleInfoDivD3() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.03818907480665, 105.78376471996307], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà H8
@@ -1048,7 +1065,7 @@ function toggleInfoDivH8() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaH8.setStyle({
     opacity: 0.8,
@@ -1060,12 +1077,13 @@ function toggleInfoDivH8() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.037883657667848, 105.78534990549089], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà M1, M2, M3, M4
@@ -1128,7 +1146,7 @@ function toggleInfoDivM1234() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaM.setStyle({
     opacity: 0.8,
@@ -1140,12 +1158,13 @@ function toggleInfoDivM1234() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.03725780091894, 105.78450500965118], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà N
@@ -1201,7 +1220,7 @@ function toggleInfoDivN() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaN.setStyle({
     opacity: 0.8,
@@ -1213,12 +1232,13 @@ function toggleInfoDivN() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.0367247914678, 105.78547313729273], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 
@@ -1281,7 +1301,7 @@ function toggleInfoDivK1() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaK1.setStyle({
     opacity: 0.8,
@@ -1293,12 +1313,13 @@ function toggleInfoDivK1() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.038680962142024, 105.78296637234962], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà K2
@@ -1352,7 +1373,7 @@ function toggleInfoDivK2() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaK2.setStyle({
     opacity: 0.8,
@@ -1364,12 +1385,13 @@ function toggleInfoDivK2() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.039126286970678, 105.7832668617139], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà K3
@@ -1425,7 +1447,7 @@ function toggleInfoDivK3() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaK3.setStyle({
     opacity: 0.8,
@@ -1437,12 +1459,13 @@ function toggleInfoDivK3() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.039095308860723, 105.78294396400453], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà KT
@@ -1499,7 +1522,7 @@ function toggleInfoDivKT() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaKT.setStyle({
     opacity: 0.8,
@@ -1511,12 +1534,13 @@ function toggleInfoDivKT() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.038531226216158, 105.78513470362036], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 
@@ -1571,7 +1595,7 @@ function toggleInfoDivT1() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaT1.setStyle({
     opacity: 0.8,
@@ -1583,12 +1607,13 @@ function toggleInfoDivT1() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.038542669242013, 105.78458709452437], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà T2
@@ -1642,7 +1667,7 @@ function toggleInfoDivT2() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaT2.setStyle({
     opacity: 0.8,
@@ -1654,12 +1679,13 @@ function toggleInfoDivT2() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.038542669242013, 105.78458709452437], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà V
@@ -1717,7 +1743,7 @@ function toggleInfoDivV() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaV.setStyle({
     opacity: 0.8,
@@ -1729,12 +1755,13 @@ function toggleInfoDivV() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.03811551883931, 105.78491461906061], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà CDTY
@@ -1788,7 +1815,7 @@ function toggleInfoDivCDTY() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   CDTY.setStyle({
     opacity: 0.8,
@@ -1800,12 +1827,13 @@ function toggleInfoDivCDTY() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.038914821717466, 105.78331432193048], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info nhà TV
@@ -1859,7 +1887,7 @@ function toggleInfoDivTV() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   nhaTV.setStyle({
     opacity: 0.8,
@@ -1871,12 +1899,13 @@ function toggleInfoDivTV() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.04001756530523, 105.7836799710749], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info Sân đa năng
@@ -1930,7 +1959,7 @@ function toggleInfoDivSDN() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   SDN.setStyle({
     opacity: 0.8,
@@ -1942,12 +1971,13 @@ function toggleInfoDivSDN() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.04025667948982, 105.78429755527353], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info Chùa thánh chúa
@@ -2008,7 +2038,7 @@ function toggleInfoDivCTC() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
   CTC.setStyle({
     opacity: 0.8,
@@ -2020,12 +2050,13 @@ function toggleInfoDivCTC() {
       opacity: 0,
       fillOpacity: 0
     });
-  }, 2000);
+  }, 3000);
   mymap.flyTo([21.039117839471388, 105.78391492366792], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info sân vận động
@@ -2079,12 +2110,49 @@ function openGoogleMapsForSVD() {
   window.open(googleMapsUrl, '_blank');
 }
 
+function toggleInfoDivSVD() {
+  var infoDiv = document.getElementById('infoDivSVD');
+  if (infoDiv.style.display === 'block') {
+    infoDiv.style.display = 'none';
+  } else {
+    setTimeout(function() {
+      infoDiv.style.display = 'block';
+    }, 3000);
+  }
+  SVD.setStyle({
+    opacity: 0.8,
+    fillOpacity: 0.2
+  });
+
+  setTimeout(function () {
+    SVD.setStyle({
+      opacity: 0,
+      fillOpacity: 0
+    });
+  }, 3000);
+  mymap.flyTo([21.040301318576297, 105.78517080395068], 19, {
+    duration: 2, 
+    animate: true,
+    easeLinearity: 0.5
+  });
+  toggleHide();
+}
+
+
 // Info kí túc xá A5
 var ktxA5 = L.polygon([
-  [21.040732625900958, 105.78536059925048],
-  [21.040722628026646, 105.78595113598392],
-  [21.040537667230666, 105.78595113598392],
-  [21.040552664060527, 105.78536059925048]
+  [21.040547104689804, 105.78535637607521],
+  [21.040717201438433, 105.78536173838764],
+  [21.04071219859566, 105.78561912938419],
+  [21.04072720712347, 105.78561912938419],
+  [21.04072720712347, 105.78569420175819],
+  [21.040709697174197, 105.78569420175819],
+  [21.040702192909603, 105.78595159275474],
+  [21.040532096143824, 105.78594623044232],
+  [21.04053459756825, 105.78585775228727],
+  [21.04057211892973, 105.78585507113105],
+  [21.040582124624514, 105.78544217307407],
+  [21.040547104689804, 105.78544217307407]
 
 ], {
   opacity: 0,        
@@ -2130,21 +2198,41 @@ function toggleInfoDivA5() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
+  ktxA5.setStyle({
+    opacity: 0.8,
+    fillOpacity: 0.2
+  });
+
+  setTimeout(function () {
+    ktxA5.setStyle({
+      opacity: 0,
+      fillOpacity: 0
+    });
+  }, 3000);
   mymap.flyTo([21.040557663003472, 105.78565049910145], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info kí túc xá A6
 var ktxA6 = L.polygon([
-  [21.041092603604415, 105.78537107812514],
-  [21.041077606828928, 105.78596161485854],
-  [21.040887647542064, 105.78595624634278],
-  [21.040902644336683, 105.78537107812514]
+  [21.0409026560483, 105.7853661970565],
+  [21.04107025097548, 105.78537156355203],
+  [21.041065248144562, 105.78563183858496],
+  [21.041080256636818, 105.7856345218327],
+  [21.04107775522155, 105.78570428627451],
+  [21.041065248144562, 105.78570696952227],
+  [21.04105774389787, 105.78596187805967],
+  [21.040885146119635, 105.78595651156418],
+  [21.040887647538145, 105.78587333088358],
+  [21.04092516881067, 105.78587333088358],
+  [21.040935174481742, 105.7854574274804],
+  [21.0409026560483, 105.78545474423265]
 
 ], {
   opacity: 0,        
@@ -2190,25 +2278,41 @@ function toggleInfoDivA6() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
+  ktxA6.setStyle({
+    opacity: 0.8,
+    fillOpacity: 0.2
+  });
+
+  setTimeout(function () {
+    ktxA6.setStyle({
+      opacity: 0,
+      fillOpacity: 0
+    });
+  }, 3000);
   mymap.flyTo([21.040977854797603, 105.7853525876999], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info kí túc xá A8
 var ktxA8 = L.polygon([
-  [21.040557780164406, 105.78465685654514],
-  [21.040552781221475, 105.78494138788031],
-  [21.040597771701936, 105.78494675639605],
-  [21.040587773818554, 105.78522591921552],
-  [21.040497792837993, 105.78522055069972],
-  [21.040497792837993, 105.78494138788031],
-  [21.04045280232734, 105.78493601936457],
-  [21.04046280021978, 105.78465685654514]
+  [21.0404577934922, 105.78465580959691],
+  [21.040552847638555, 105.78465849284467],
+  [21.040545343366063, 105.78494291710746],
+  [21.04059787326567, 105.78494291710746],
+  [21.040590368995417, 105.78522734137023],
+  [21.040535337668796, 105.78522734137023],
+  [21.040532254318343, 105.78525871038438],
+  [21.040495107879135, 105.78525557336546],
+  [21.040497816298068, 105.78522734137023],
+  [21.04048781059761, 105.78522734137023],
+  [21.040497816298068, 105.78494291710746],
+  [21.040452790640725, 105.78494291710746]
 
 ], {
   opacity: 0,        
@@ -2254,25 +2358,37 @@ function toggleInfoDivA8() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
+  ktxA8.setStyle({
+    opacity: 0.8,
+    fillOpacity: 0.2
+  });
+
+  setTimeout(function () {
+    ktxA8.setStyle({
+      opacity: 0,
+      fillOpacity: 0
+    });
+  }, 3000);
   mymap.flyTo([21.04047779705717, 105.78523665624702], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info kí túc xá A9
 var ktxA9 = L.polygon([
-  [21.040727072402746, 105.78407773296844],
-  [21.040717074528043, 105.78436763281937],
-  [21.04076706389482, 105.78436226430361],
-  [21.0407570660228, 105.78464679563882],
-  [21.040662086205256, 105.78464679563882],
-  [21.040667085144523, 105.78436763281937],
-  [21.040617095744224, 105.78436226430361],
-  [21.040632092566067, 105.78407773296844]
+  [21.040626917877212, 105.78407585620882],
+  [21.04072219452683, 105.78407853841783],
+  [21.04071467268828, 105.78436553478242],
+  [21.0407648182714, 105.78436553478242],
+  [21.040757296435018, 105.784647166729],
+  [21.04065951252738, 105.78464448451997],
+  [21.04066703436871, 105.78436285257341],
+  [21.040616888752655, 105.78436285257341]
 
 ], {
   opacity: 0,        
@@ -2318,25 +2434,37 @@ function toggleInfoDivA9() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
+  ktxA9.setStyle({
+    opacity: 0.8,
+    fillOpacity: 0.2
+  });
+
+  setTimeout(function () {
+    ktxA9.setStyle({
+      opacity: 0,
+      fillOpacity: 0
+    });
+  }, 3000);
   mymap.flyTo([21.040737070276787, 105.78423878844119], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info kí túc xá A10: căng tin
 var ktxA10 = L.polygon([
-  [21.040592811813966, 105.78406086524367],
-  [21.040582813930254, 105.78443129283099],
-  [21.040562818160833, 105.78443129283099],
-  [21.04055282027511, 105.78451718908315],
-  [21.040512828725547, 105.78452255759889],
-  [21.040507829781077, 105.7846245593983],
-  [21.04046283927343, 105.7846245593983],
-  [21.0404828350563, 105.7840554967279]
+  [21.040477687714638, 105.78407049179079],
+  [21.040588008150717, 105.78407585620882],
+  [21.040577979023553, 105.7844486832619],
+  [21.04055541348494, 105.7844486832619],
+  [21.040552906202656, 105.78453719615938],
+  [21.040507775114392, 105.78453719615938],
+  [21.040505267831318, 105.78462839126587],
+  [21.040457629444763, 105.78462839126587]
 
 ], {
   opacity: 0,        
@@ -2382,25 +2510,39 @@ function toggleInfoDivA10() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
+  ktxA10.setStyle({
+    opacity: 0.8,
+    fillOpacity: 0.2
+  });
+
+  setTimeout(function () {
+    ktxA10.setStyle({
+      opacity: 0,
+      fillOpacity: 0
+    });
+  }, 3000);
   mymap.flyTo([21.04046323762088, 105.78426431564917], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info kí túc xá A11
 var ktxA11 = L.polygon([
-  [21.0409879776261, 105.7847157831889],
-  [21.0409879776261, 105.78497347194528],
-  [21.041007973338445, 105.78497347194528],
-  [21.041002974410617, 105.78525800328049],
-  [21.040917992611742, 105.78525800328049],
-  [21.040912993680898, 105.78510768483923],
-  [21.04087300222801, 105.78510231632349],
-  [21.040883000092244, 105.7847157831889]
+  [21.040983482497634, 105.78471958637239],
+  [21.040978467947454, 105.78497171401978],
+  [21.0410035406967, 105.78497171401978],
+  [21.04099852614719, 105.78525602817537],
+  [21.040910771503356, 105.78525602817537],
+  [21.040910771503356, 105.78510314226152],
+  [21.040868147800566, 105.78510314226152],
+  [21.040873162354472, 105.78496098518373],
+  [21.040880684185016, 105.78496098518373],
+  [21.04088569873849, 105.78471422195436]
 
 ], {
   opacity: 0,        
@@ -2446,21 +2588,35 @@ function toggleInfoDivA11() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
+  ktxA11.setStyle({
+    opacity: 0.8,
+    fillOpacity: 0.2
+  });
+
+  setTimeout(function () {
+    ktxA11.setStyle({
+      opacity: 0,
+      fillOpacity: 0
+    });
+  }, 3000);
   mymap.flyTo([21.040843008631303, 105.7848553645986], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // Info kí túc xá A12
 var ktxA12 = L.polygon([
-  [21.040832604607232, 105.78408263844086],
-  [21.040812608871363, 105.784657069627],
-  [21.041002568253912, 105.784657069627],
-  [21.041022563964287, 105.78409337547241]
+  [21.040824907029684, 105.78412413597108],
+  [21.04080986336258, 105.78465521335603],
+  [21.041005430916247, 105.78466057777405],
+  [21.041020474563595, 105.78408658504488],
+  [21.040890096236176, 105.78408390283586],
+  [21.040890096236176, 105.78412681818011]
 
 ], {
   opacity: 0,        
@@ -2506,24 +2662,34 @@ function toggleInfoDivA12() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
+  ktxA12.setStyle({
+    opacity: 0.8,
+    fillOpacity: 0.2
+  });
+
+  setTimeout(function () {
+    ktxA12.setStyle({
+      opacity: 0,
+      fillOpacity: 0
+    });
+  }, 3000);
   mymap.flyTo([21.04080760993697, 105.78427053649243], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 
 // Info Hội trường 11.10
 var HT1110 = L.polygon([
-  [21.03849865754228, 105.78446209430695],
-  [21.03848863338883, 105.78488588333131],
-  [21.037796965172358, 105.78486979007722],
-  [21.03777691677036, 105.78515946865082],
-  [21.037631565775207, 105.78515946865082],
-  [21.03763657788085, 105.78443527221681]
+  [21.03842398570617, 105.78449696302415],
+  [21.0384139564333, 105.7848456501961],
+  [21.037887418658645, 105.784829556942],
+  [21.037897447966973, 105.78447818756105]
 
 ], {
   opacity: 0,        
@@ -2569,13 +2735,25 @@ function toggleInfoDiv1110() {
   } else {
     setTimeout(function() {
       infoDiv.style.display = 'block';
-    }, 2000);
+    }, 3000);
   }
+  HT1110.setStyle({
+    opacity: 0.8,
+    fillOpacity: 0.2
+  });
+
+  setTimeout(function () {
+    HT1110.setStyle({
+      opacity: 0,
+      fillOpacity: 0
+    });
+  }, 3000);
   mymap.flyTo([21.03786212246022, 105.78466057777405], 19, {
-    duration: 1.5, 
+    duration: 2, 
     animate: true,
     easeLinearity: 0.5
-});
+  });
+  toggleHide();
 }
 
 // --------------------------------------------------------------------------------------- //
