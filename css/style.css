@@ -300,7 +300,7 @@ body, html {
 
 .infoDiv .toolbar .close {
   position: fixed;
-  background: url(source-img/close.svg);
+  background: url(../source-img/close.svg);
   background-size: contain;  
   background-repeat: no-repeat;
   width: 15px;
@@ -314,7 +314,7 @@ body, html {
 
 .close-div {
   position: absolute;
-  background: url(source-img/close.svg);
+  background: url(../source-img/close.svg);
   background-size: contain;  
   background-repeat: no-repeat;
   width: 15px;
@@ -327,7 +327,7 @@ body, html {
 }
 
 .infoDiv .toolbar .direct-btn {
-  background: url(source-img/direct.svg);
+  background: url(../source-img/direct.svg);
   background-size: contain;  
   background-repeat: no-repeat;
   width: 35px;
@@ -597,7 +597,7 @@ body, html {
 }
 
 #add-photo {
-  background-image: url(source-img/add-a-photo.png); 
+  background-image: url(../source-img/add-a-photo.png); 
   width: 100px; 
   height: 100px; 
   position: absolute; 
@@ -829,7 +829,7 @@ body, html {
 }
 
 .info {
-  background: url(source-img/info-solid.svg);
+  background: url(../source-img/info-solid.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 20px;
@@ -903,7 +903,7 @@ body, html {
 
 #email-to-us #send-mail {
   position: absolute;
-  background: url(source-img/envelope-regular.svg);
+  background: url(../source-img/envelope-regular.svg);
   background-size: contain;  
   background-repeat: no-repeat;
   width: 30px;
@@ -954,7 +954,7 @@ body, html {
   bottom: 7px;
   border: none;
   background-color: transparent;
-  background-image: url(source-img/paper-plane.svg);
+  background-image: url(../source-img/paper-plane.svg);
 }
 
 .comment-container {

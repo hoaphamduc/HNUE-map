@@ -1,7 +1,3 @@
-Open source project for HNUE students.
-Made by meobeo from K70 FIT
-If you have any ideas or want to implement them, you can contact me at email: hoaphamduc2399@gmail.com
-
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&###BBBBBBBBBBBBBBBB###&&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&##BBBBGGGGGGBBBBBBBBBBBBGGGGGGBBBB##&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@&##BBGGGGBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBGGGGBB##&@@@@@@@@@@@@@@@@@@@@@@@@@@
