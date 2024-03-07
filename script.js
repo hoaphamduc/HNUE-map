@@ -60,8 +60,8 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 }).addTo(mymap);
 
 var maxBounds = L.latLngBounds(
-  L.latLng(21.035640574904598, 105.77883481979372),   // Tọa độ góc trái dưới của giới hạn
-  L.latLng(21.042449828927474, 105.78776121139526)    // Tọa độ góc phải trên của giới hạn
+  L.latLng(21.027863833645036, 105.7683849334717),   // Tọa độ góc trái dưới của giới hạn
+  L.latLng(21.04615122410683, 105.79756736755371)    // Tọa độ góc phải trên của giới hạn
 );
 
 mymap.setMaxBounds(maxBounds);
@@ -476,7 +476,7 @@ function filterItems() {
   var searchText = removeVietnameseSigns(document.getElementById("search-input-1").value.toLowerCase() + document.getElementById("search-input-2").value.toLowerCase());
   console.log(searchText);
   // Lặp qua các phần tử li và ẩn/hiển thị phù hợp
-  var listItems = document.querySelectorAll("#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li");
+  var listItems = document.querySelectorAll("#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li");
   listItems.forEach(function (item) {
     var textContent = removeVietnameseSigns(item.textContent.toLowerCase().trim());
     if (textContent.indexOf(searchText) !== -1) {

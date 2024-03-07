@@ -2130,7 +2130,7 @@ function toggleInfoDivSVD() {
       fillOpacity: 0
     });
   }, 3000);
-  mymap.flyTo([21.040301318576297, 105.78517080395068], 19, {
+  mymap.flyTo([21.03965606971299, 105.78473031520845], 19, {
     duration: 2, 
     animate: true,
     easeLinearity: 0.5

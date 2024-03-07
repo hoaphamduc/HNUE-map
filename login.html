@@ -82,7 +82,7 @@
                 </div>
 
                 <!-- Nhạc nền -->
-                <img id="music" src="source-img/muted.png" onclick="toggleImageBorderAndMusic()">
+                <img id="music" src="source-img/muted.png" onclick="toggleImageBorderAndMusic()" draggable="false">
                 <audio id="backgroundMusic" loop>
                     <source src="sound/ciu.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
@@ -562,6 +562,33 @@
                         <span class="contentEnglish">Stadium</span>
                     </li>
                 </ul>
+                <span class="contentVN redtext">CÁC KHU VỰC DỊCH VỤ</span>
+                <span class="contentEnglish redtext">SERVICE AREAS</span>
+                <ul id="shopping-area">
+                    <!-- WinMart -->
+                    <li onclick="toggleInfoDivWM27165()">
+                        <span class="contentVN">Siêu thị WinMart+ số 27 ngõ 165 đường Xuân Thuỷ, phường Dịch Vọng Hậu</span>
+                        <span class="contentEnglish">WinMart+ supermarket number 27, lane 165, Xuan Thuy street, Dich Vong Hau ward</span>
+                    </li>
+                    <li onclick="toggleInfoDivWM77TQV()">
+                        <span class="contentVN">Siêu thị WinMart+ số 77 đường Trần Quốc Vượng, phường Dịch Vọng Hậu</span>
+                        <span class="contentEnglish">WinMart+ Supermarket No. 77 Tran Quoc Vuong Street, Dich Vong Hau Ward</span>
+                    </li>
+                    <!-- Circle K -->
+                    <li onclick="toggleInfoDivCK177XT()">
+                        <span class="contentVN">Circle K số 177 đường Xuân Thuỷ, phường Dịch Vọng Hậu</span>
+                        <span class="contentEnglish">Circle K No. 177 Xuan Thuy Street, Dich Vong Hau Ward</span>
+                    </li>
+                    <!-- Trạm Xăng -->
+                    <li onclick="toggleInfoDivXD171XT()">
+                        <span class="contentVN">Cửa hàng Xăng dầu Petrolimex Số 60. Địa chỉ số 171 đường Xuân Thuỷ, phường Dịch Vọng Hậu</span>
+                        <span class="contentEnglish">Petrolimex Petroleum Store No. 60. Address No. 171 Xuan Thuy Street, Dich Vong Hau Ward</span>
+                    </li>
+                    <li onclick="toggleInfoDivXD107PVT()">
+                        <span class="contentVN">Trạm Xăng Dầu Quân Đội BQP. Địa chỉ số 107 đường Phan Văn Trường, phường Dịch Vọng Hậu</span>
+                        <span class="contentEnglish">Military Gas Station of the Ministry of National Defense. Address: 107 Phan Van Truong Street, Dich Vong Hau Ward</span>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -569,6 +596,8 @@
             <span class="contentVN">Phóng to và chạm vào các toà nhà để tương tác</span>
             <span class="contentEnglish">Zoom in and tap on buildings to interact</span>
         </span>
+
+        <!-- Info các toà trong trường -->
 
         <div class="infoDiv" id="infoDivNhaHieuBo">
             <div class="toolbar">
@@ -1781,12 +1810,237 @@
             <img class="img-demo" src="source-img/1110.jpg">            
         </div>
 
+        <!-- Các siêu thị  -->
+
+        <div class="infoDiv" id="infoDivWM27165">
+            <div class="toolbar">
+                <button class="direct-btn" onclick="openGoogleMapsForWM27165()"></button>
+                <button class="close" id="closeinfoDivWM27165"></button>
+                <span class="tim-duong contentVN">Chỉ đường: </span>
+                <span class="tim-duong contentEnglish">Direct: </span>
+                <span class="dong-gop contentVN">Đóng góp: </span>
+                <span class="dong-gop contentEnglish">Contribute: </span>
+                <img class="send-feedback" src="source-img/gop-y.png" onclick="composeEmail()">
+            </div>
+            <div class="content contentVN">
+                <div class="building-name">WinMart+ số 27 ngõ 165 đường Xuân Thuỷ, phường Dịch Vọng Hậu, quận Cầu Giấy, Hà Nội</div>
+                <div class="building-info">
+                    WinMart (tên cũ là Vinmart) là hệ thống siêu thị thuộc tập đoàn Vingroup, Việt Nam. 
+                    Hệ thống này khai trương ngày 20 tháng 11 năm 2014. Theo thống kê của Vietnam Report, tính đến tháng 11/2017, 
+                    VinMart và chuỗi cửa hàng con VinMart+ nằm top 2 nhà bán lẻ được người tiêu dùng quan tâm nhất và top 4 trên bảng xếp hạng 10 nhà bán lẻ uy tín năm 2017.
+                    <br>
+                    Tháng 5 năm 2019, VinMart có khoảng 111 siêu thị và khoảng hơn 1.800 cửa hàng VinMart+ trên gần 50 tỉnh thành với tổng diện tích mặt bằng kinh doanh hơn 300.000 m², 
+                    số lượng nhân viên khoảng hơn 11.000 người. Đến tháng 8 năm 2019, con số VM và VM+ đã lên đến con số 2.200.
+                    <br>
+                    Các sản phẩm của VinMart bao gồm <b>thực phẩm tươi sống, thực phẩm sơ chế, quần áo, mỹ phẩm, đồ gia dụng, văn phòng phẩm, đồ chơi, v.v</b>.
+                    <br>
+                    Tháng 10/2018, VinGroup mua lại chuỗi 23 siêu thị Fivimart, một thương hiệu đã có hơn 10 năm hoạt động trên thị trường, và sáp nhập vào VinMart. 
+                    Sau khi hợp nhất, số lượng siêu thị của Vin là khoảng hơn 100, cùng với hơn 1.400 cửa hàng tiện lợi VinMart+.
+                    <br>
+                    Với cơ cấu tổ chức của VinMart được chia thành các tuyến chức năng, mỗi tuyến là một bộ phận hay đơn vị đảm nhận thực hiện một số chức năng, 
+                    nhiệm vụ nào đó của tổ chức. Giám đốc là người có trách nhiệm cao nhất, ban hành các chiến lược và dự án xuống cho các bộ phận. 
+                    Các bộ phận nhận công việc từ giám đốc sau đó thực hiện sao cho thực hiện tốt nhất và đem lại lợi ích cao nhất cho công ty. 
+                    Cơ cấu tổ chức của VinMart có ưu điểm là thúc đẩy chuyên môn hoá kỹ năng, tạo điều kiện cho mỗi cá nhân phát huy tối đa năng lực của mình. 
+                    Nhưng bên cạnh đó cơ cấu tổ chức này còn có những nhược điểm, chỉ có những nhà quản trị cao nhất mới có trách nhiệm về lợi nhuận, 
+                    còn những nhà quản trị thấp hơn chỉ có trách nhiệm với bộ phận mà mình quản lý.
+                    <br>
+                    Ngày 15 tháng 1 năm 2022, VinMart và VinMart+ chính thức đổi tên thành WinMart và WinMart+.
+                </div>
+            </div>
+            <div class="content contentEnglish">
+                <div class="building-name">WinMart+ No. 27 Lane 165 Xuan Thuy Street, Dich Vong Hau Ward, Cau Giay District, Hanoi</div>
+                <div class="building-info">
+                    WinMart (formerly known as Vinmart) is a supermarket chain under the Vingroup conglomerate in Vietnam.
+                    The system was inaugurated on November 20, 2014. According to Vietnam Report statistics until November 2017,
+                    VinMart and its subsidiary chain VinMart+ ranked 2nd in the most consumer-focused retail houses and 4th among the top 10 reputable retail houses in 2017.
+                    <br>
+                    In May 2019, VinMart had approximately 111 supermarkets and over 1,800 VinMart+ stores in nearly 50 provinces and cities,
+                    with a total business area of over 300,000 m² and a staff of over 11,000 people. By August 2019, the numbers had increased to 2,200.
+                    <br>
+                    VinMart's products include <b>fresh food, processed food, clothing, cosmetics, household items, office supplies, toys, etc.</b>.
+                    <br>
+                    In October 2018, VinGroup acquired the chain of 23 Fivimart supermarkets, a brand that had been operating for over 10 years,
+                    and merged it into VinMart. After the merger, Vin's total number of supermarkets reached over 100, along with more than 1,400 VinMart+ convenience stores.
+                    <br>
+                    VinMart's organizational structure is divided into functional lines, with each line being a department or unit responsible for specific functions or tasks.
+                    The director is the highest responsible person, issuing strategies and projects to the departments. Departments then carry out their tasks to achieve the best results and bring the highest benefits to the company.
+                    VinMart's organizational structure has the advantage of promoting the specialization of skills, providing conditions for each individual to maximize their potential.
+                    However, it also has disadvantages, as only top-level managers are responsible for profit, while lower-level managers are only responsible for their managed department.
+                    <br>
+                    On January 15, 2022, VinMart and VinMart+ officially changed their names to WinMart and WinMart+.
+                </div>
+            </div>
+            <img class="img-demo" src="source-img/wm27165.jpg">            
+        </div>
+
+        <div class="infoDiv" id="infoDivWM77TQV">
+            <div class="toolbar">
+                <button class="direct-btn" onclick="openGoogleMapsForWM77TQV()"></button>
+                <button class="close" id="closeinfoDivWM77TQV"></button>
+                <span class="tim-duong contentVN">Chỉ đường: </span>
+                <span class="tim-duong contentEnglish">Direct: </span>
+                <span class="dong-gop contentVN">Đóng góp: </span>
+                <span class="dong-gop contentEnglish">Contribute: </span>
+                <img class="send-feedback" src="source-img/gop-y.png" onclick="composeEmail()">
+            </div>
+            <div class="content contentVN">
+                <div class="building-name">WinMart+ số 77 đường Trần Quốc Vượng, phường Dịch Vọng Hậu, quận Cầu Giấy, Hà Nội</div>
+                <div class="building-info">
+                    WinMart (tên cũ là Vinmart) là hệ thống siêu thị thuộc tập đoàn Vingroup, Việt Nam. 
+                    Hệ thống này khai trương ngày 20 tháng 11 năm 2014. Theo thống kê của Vietnam Report, tính đến tháng 11/2017, 
+                    VinMart và chuỗi cửa hàng con VinMart+ nằm top 2 nhà bán lẻ được người tiêu dùng quan tâm nhất và top 4 trên bảng xếp hạng 10 nhà bán lẻ uy tín năm 2017.
+                    <br>
+                    Tháng 5 năm 2019, VinMart có khoảng 111 siêu thị và khoảng hơn 1.800 cửa hàng VinMart+ trên gần 50 tỉnh thành với tổng diện tích mặt bằng kinh doanh hơn 300.000 m², 
+                    số lượng nhân viên khoảng hơn 11.000 người. Đến tháng 8 năm 2019, con số VM và VM+ đã lên đến con số 2.200.
+                    <br>
+                    Các sản phẩm của VinMart bao gồm <b>thực phẩm tươi sống, thực phẩm sơ chế, quần áo, mỹ phẩm, đồ gia dụng, văn phòng phẩm, đồ chơi, v.v</b>.
+                    <br>
+                    Tháng 10/2018, VinGroup mua lại chuỗi 23 siêu thị Fivimart, một thương hiệu đã có hơn 10 năm hoạt động trên thị trường, và sáp nhập vào VinMart. 
+                    Sau khi hợp nhất, số lượng siêu thị của Vin là khoảng hơn 100, cùng với hơn 1.400 cửa hàng tiện lợi VinMart+.
+                    <br>
+                    Với cơ cấu tổ chức của VinMart được chia thành các tuyến chức năng, mỗi tuyến là một bộ phận hay đơn vị đảm nhận thực hiện một số chức năng, 
+                    nhiệm vụ nào đó của tổ chức. Giám đốc là người có trách nhiệm cao nhất, ban hành các chiến lược và dự án xuống cho các bộ phận. 
+                    Các bộ phận nhận công việc từ giám đốc sau đó thực hiện sao cho thực hiện tốt nhất và đem lại lợi ích cao nhất cho công ty. 
+                    Cơ cấu tổ chức của VinMart có ưu điểm là thúc đẩy chuyên môn hoá kỹ năng, tạo điều kiện cho mỗi cá nhân phát huy tối đa năng lực của mình. 
+                    Nhưng bên cạnh đó cơ cấu tổ chức này còn có những nhược điểm, chỉ có những nhà quản trị cao nhất mới có trách nhiệm về lợi nhuận, 
+                    còn những nhà quản trị thấp hơn chỉ có trách nhiệm với bộ phận mà mình quản lý.
+                    <br>
+                    Ngày 15 tháng 1 năm 2022, VinMart và VinMart+ chính thức đổi tên thành WinMart và WinMart+.
+                </div>
+            </div>
+            <div class="content contentEnglish">
+                <div class="building-name">WinMart+ No. 77 Tran Quoc Vuong Street, Dich Vong Hau Ward, Cau Giay District, Hanoi</div>
+                <div class="building-info">
+                    WinMart (formerly known as Vinmart) is a supermarket chain under the Vingroup conglomerate in Vietnam.
+                    The system was inaugurated on November 20, 2014. According to Vietnam Report statistics until November 2017,
+                    VinMart and its subsidiary chain VinMart+ ranked 2nd in the most consumer-focused retail houses and 4th among the top 10 reputable retail houses in 2017.
+                    <br>
+                    In May 2019, VinMart had approximately 111 supermarkets and over 1,800 VinMart+ stores in nearly 50 provinces and cities,
+                    with a total business area of over 300,000 m² and a staff of over 11,000 people. By August 2019, the numbers had increased to 2,200.
+                    <br>
+                    VinMart's products include <b>fresh food, processed food, clothing, cosmetics, household items, office supplies, toys, etc.</b>.
+                    <br>
+                    In October 2018, VinGroup acquired the chain of 23 Fivimart supermarkets, a brand that had been operating for over 10 years,
+                    and merged it into VinMart. After the merger, Vin's total number of supermarkets reached over 100, along with more than 1,400 VinMart+ convenience stores.
+                    <br>
+                    VinMart's organizational structure is divided into functional lines, with each line being a department or unit responsible for specific functions or tasks.
+                    The director is the highest responsible person, issuing strategies and projects to the departments. Departments then carry out their tasks to achieve the best results and bring the highest benefits to the company.
+                    VinMart's organizational structure has the advantage of promoting the specialization of skills, providing conditions for each individual to maximize their potential.
+                    However, it also has disadvantages, as only top-level managers are responsible for profit, while lower-level managers are only responsible for their managed department.
+                    <br>
+                    On January 15, 2022, VinMart and VinMart+ officially changed their names to WinMart and WinMart+.
+                </div>
+            </div>
+            <img class="img-demo" src="source-img/wm27165.jpg">            
+        </div>
+
+        <div class="infoDiv" id="infoDivCK177XT">
+            <div class="toolbar">
+                <button class="direct-btn" onclick="openGoogleMapsForCK177XT()"></button>
+                <button class="close" id="closeinfoDivCK177XT"></button>
+                <span class="tim-duong contentVN">Chỉ đường: </span>
+                <span class="tim-duong contentEnglish">Direct: </span>
+                <span class="dong-gop contentVN">Đóng góp: </span>
+                <span class="dong-gop contentEnglish">Contribute: </span>
+                <img class="send-feedback" src="source-img/gop-y.png" onclick="composeEmail()">
+            </div>
+            <div class="content contentVN">
+                <div class="building-name">Circle K số 177 đường Xuân Thuỷ, phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội</div>
+                <div class="building-info">
+                <b>Tại Việt Nam</b>, chúng tôi chú trọng vào việc phát triển nhanh chóng trong lĩnh vực kinh doanh chuỗi cửa hàng tiện lợi theo giấy phép nhượng quyền thương hiệu của Circle K Mỹ.
+                <br>
+                <b>Circle K</b> tự hào giới thiệu rằng chúng tôi là chuỗi cửa hàng tiện lợi quốc tế đầu tiên tại Việt Nam, 
+                và cửa hàng đầu tiên được khai trương vào 20 tháng 12 năm 2008. 
+                Chúng tôi đã tổ chức Lễ Kỷ Niệm 10 năm hoạt động của Circle K tại Việt Nam trong năm 2018.
+                <br>
+                <b>Circle K</b> Việt Nam hiện đã có hơn 400 cửa hàng tại các thành phố lớn như Hà Nội, Hạ Long, Hồ Chí Minh, Vũng Tàu, Cần Thơ, Bình Dương, 
+                Hải Phòng, Long Xuyên, Biên Hòa và sẽ còn tiếp tục phát triển để đáp ứng nhu cầu của khách hàng ở khắp mọi nơi.
+                <br>
+                <b>Cam Kết Dịch Vụ</b> của chúng tôi đối với khách hàng được gói gọn trong 4 chữ F (4Fs) (Tươi, Thân Thiện, Nhanh, và Đầy Đủ).
+                <br>
+                <b>Tầm Nhìn</b> của chúng tôi là mong muốn trở thành chuỗi cửa hàng tiện lợi được ưa chuộng nhất tại Việt Nam.
+                <br>
+                <b>Sứ Mệnh</b> của chúng tôi là mang đến một không gian mua sắm thú vị, thân thiện và đáng tin cậy cho khách hàng với những mặt hàng, dịch vụ, 
+                món ăn phong phú, đa dạng được phục vụ nhanh chóng và niềm nở.
+                </div>
+            </div>
+            <div class="content contentEnglish">
+                <div class="building-name">Circle K No. 177 Xuan Thuy Street, Dich Vong Hau Ward, Cau Giay, Hanoi</div>
+                <div class="building-info">
+                    <b>In Vietnam</b>, we focus on rapid development in the convenience store business under the brand licensing agreement of Circle K USA.
+                    <br>
+                    <b>Circle K</b> proudly introduces itself as the first international convenience store chain in Vietnam, with the first store opening on December 20, 2008.
+                    We celebrated the 10th anniversary of Circle K's operations in Vietnam in 2018.
+                    <br>
+                    <b>Circle K</b> Vietnam currently operates over 400 stores in major cities such as Hanoi, Ha Long, Ho Chi Minh City, Vung Tau, Can Tho, Binh Duong,
+                    Hai Phong, Long Xuyen, Bien Hoa, and continues to expand to meet customer needs everywhere.
+                    <br>
+                    Our <b>Service Commitment</b> to customers is encapsulated in the 4Fs (Fresh, Friendly, Fast, and Full).
+                    <br>
+                    Our <b>Vision</b> is to become the most preferred convenience store chain in Vietnam.
+                    <br>
+                    Our <b>Mission</b> is to provide an enjoyable, friendly, and reliable shopping space for customers with a variety of products, services,
+                    and a quick and cheerful service for diverse and abundant choices.
+                </div>
+            </div>
+            <img class="img-demo" src="source-img/CK177XT.jpg">            
+        </div>
+
+        <div class="infoDiv" id="infoDivXD171XT">
+            <div class="toolbar">
+                <button class="direct-btn" onclick="openGoogleMapsForXD171XT()"></button>
+                <button class="close" id="closeinfoDivXD171XT"></button>
+                <span class="tim-duong contentVN">Chỉ đường: </span>
+                <span class="tim-duong contentEnglish">Direct: </span>
+                <span class="dong-gop contentVN">Đóng góp: </span>
+                <span class="dong-gop contentEnglish">Contribute: </span>
+                <img class="send-feedback" src="source-img/gop-y.png" onclick="composeEmail()">
+            </div>
+            <div class="content contentVN">
+                <div class="building-name">Cửa hàng Xăng dầu Petrolimex Số 60. Địa chỉ số 171 đường Xuân Thuỷ, phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội</div>
+                <div class="building-info">
+                Chưa có thông tin.
+                </div>
+            </div>
+            <div class="content contentEnglish">
+                <div class="building-name">Petrolimex Petroleum Store No. 60. Address No. 171 Xuan Thuy Street, Dich Vong Hau Ward, Cau Giay, Hanoi</div>
+                <div class="building-info">
+                    No information.
+                </div>
+            </div>
+            <img class="img-demo" src="source-img/XD171XT.jpg">            
+        </div>
+
+        <div class="infoDiv" id="infoDivXD107PVT">
+            <div class="toolbar">
+                <button class="direct-btn" onclick="openGoogleMapsForXD107PVT()"></button>
+                <button class="close" id="closeinfoDivXD107PVT"></button>
+                <span class="tim-duong contentVN">Chỉ đường: </span>
+                <span class="tim-duong contentEnglish">Direct: </span>
+                <span class="dong-gop contentVN">Đóng góp: </span>
+                <span class="dong-gop contentEnglish">Contribute: </span>
+                <img class="send-feedback" src="source-img/gop-y.png" onclick="composeEmail()">
+            </div>
+            <div class="content contentVN">
+                <div class="building-name">Trạm Xăng Dầu Quân Đội BQP. Địa chỉ số 107 đường Phan Văn Trường, phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội</div>
+                <div class="building-info">
+                Chưa có thông tin.
+                </div>
+            </div>
+            <div class="content contentEnglish">
+                <div class="building-name">Military Gas Station of the Ministry of National Defense. Address: 107 Phan Van Truong Street, Dich Vong Hau Ward, Cau Giay, Hanoi</div>
+                <div class="building-info">
+                    No information.
+                </div>
+            </div>
+        </div>
 
     </div>
     <script src="auth.js" defer type="module"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
     <script src="building-info.js"></script>
+    <script src="js/service-info.js"
     <script src="search-bar/search-bar.js"></script>
 </body>
 </html>

@@ -110,7 +110,7 @@ body, html {
 #direction-content {
   background-color: #fff;
   width: 100%;
-  height: calc(100% - 45px);
+  height: calc(100% - 85px);
   position: absolute;
   top: 85px;
   overflow: auto;
@@ -123,17 +123,17 @@ body, html {
   cursor: default;
 }
 
-#admin-area, #lecture-hall-area, #domestic-area, #other-areas {
+#admin-area, #lecture-hall-area, #domestic-area, #other-areas, #shopping-area {
   font-size: 14px;
   list-style: none;
 }
 
-#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li {
+#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li {
   cursor: pointer;
   margin-bottom: 3px;
 }
 
-#admin-area li:hover, #lecture-hall-area li:hover, #domestic-area li:hover, #other-areas li:hover {
+#admin-area li:hover, #lecture-hall-area li:hover, #domestic-area li:hover, #other-areas li:hover, #shopping-area li:hover {
   color: #2185D0;
 }
 
@@ -1024,7 +1024,7 @@ body, html {
   top: 7px; 
   border-radius: 5px; 
   border: 1px solid #DEDEDF; 
-  padding-left: 25px; 
+  padding-left: 30px; 
   font-size: 14px;
   z-index: 1;
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
@@ -1045,7 +1045,7 @@ body, html {
   height: 16px; 
   position: absolute; 
   top: 12px; 
-  left: 20px; 
+  left: 23px; 
   z-index: 2;
   cursor: default;
 }

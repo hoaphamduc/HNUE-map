@@ -576,7 +576,7 @@ function filterItems() {
   var searchText = removeVietnameseSigns(document.getElementById("search-input-1").value.toLowerCase() + document.getElementById("search-input-2").value.toLowerCase());
   console.log(searchText);
   // Lặp qua các phần tử li và ẩn/hiển thị phù hợp
-  var listItems = document.querySelectorAll("#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li");
+  var listItems = document.querySelectorAll("#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li");
   listItems.forEach(function (item) {
     var textContent = removeVietnameseSigns(item.textContent.toLowerCase().trim());
     if (textContent.indexOf(searchText) !== -1) {
