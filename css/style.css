@@ -85,26 +85,26 @@ body, html {
 .direction-text {
   cursor: pointer;
   width: 100%;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   text-align: center;
   display: block;
   position: absolute;
-  top: 6px;
+  top: 11px;
   color: #fff;
 }
 
 #blue-div {
   position: absolute; 
   height: 45px; 
-  background-color: #183885;
+  background: linear-gradient(to right, #025891, #2082d9);  
   top: 0; 
   width: 100%;
   cursor: pointer;
 }
 
 #blue-div:hover {
-  background-color: #2185D0;
+  background: #2185D0;
 }
 
 #direction-content {
