@@ -17,13 +17,39 @@ var buildingData = {
       "infoVN": "Chưa có thông tin.",
       "infoEN": "No information.",
       "latitude": 21.037439688219646,
-      "longitude": 105.78331516196478
+      "longitude": 105.78331516196478,
+      "source-image": []
   },
+  "ktxA5": {
+      "polygon": [
+        [21.040547104689804, 105.78535637607521],
+        [21.040717201438433, 105.78536173838764],
+        [21.04071219859566, 105.78561912938419],
+        [21.04072720712347, 105.78561912938419],
+        [21.04072720712347, 105.78569420175819],
+        [21.040709697174197, 105.78569420175819],
+        [21.040702192909603, 105.78595159275474],
+        [21.040532096143824, 105.78594623044232],
+        [21.04053459756825, 105.78585775228727],
+        [21.04057211892973, 105.78585507113105],
+        [21.040582124624514, 105.78544217307407],
+        [21.040547104689804, 105.78544217307407]
+      ],
+      "infoDivId": "infoDivA5",
+      "nameVN": "KÝ TÚC XÁ A5 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+      "nameEN": "A5 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
+      "infoVN": "<b>Toà nhà A5:</b><br><br>Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 63 phòng tương ứng 490 chỗ ở, mỗi tầng 16 phòng. Tiêu chuẩn là loại phòng cơ bản.<br> <br><b>Đối tượng sắp xếp ở là:</b><br><br>Nữ sinh viên năm thứ 3 các khoa.<br> <br><b>Loại phòng:</b><br><br>Cơ bản (tiêu chuẩn) gồm 2 mã phòng.<br>- Loại phòng A5-06 (6 người): Có 8 phòng xếp 6 chỗ ở.<br>- Loại phòng A5-08 (8 người): Có 55 phòng xếp 8 chỗ ở.<br> <br><b>Diện tích - Điều kiện cơ sở vật chất:</b><br><br> Phòng có S = 25 - 36 m<sup>2</sup>. Công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, bình nóng lạnh, Wifi. ",
+      "infoEN": "No information.",
+      "latitude": 21.040557663003472,
+      "longitude": 105.78565049910145,
+      "source-image": ['source-img/A5.jpg', 'source-img/A6.jpg']
+  }
   // Thêm thông tin của các toà nhà khác tương tự
 };
 
 // Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
 setPolygonClickEvent("NhaHieuBo");
+setPolygonClickEvent("ktxA5");
 
 // Hàm để tạo và chèn khối div khi nhấp vào polygon
 function createInfoDiv(buildingKey) {
@@ -57,6 +83,9 @@ function createInfoDiv(buildingKey) {
       </div>
       <div class="building-info contentEnglish" id="info-${building.infoDivId}">
           ${building.infoEN}
+      </div>
+      <div class="building-images">
+            ${building['source-image'].map(image => `<img class="img-demo" src="${image}" alt="Building Image">`).join('')}
       </div>`;
 
   // Chèn các phần tử vào khối div chính
