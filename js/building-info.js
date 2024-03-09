@@ -42,16 +42,14 @@ var buildingData = {
       "infoEN": "No information.",
       "latitude": 21.040557663003472,
       "longitude": 105.78565049910145,
-      "source-image": ['source-img/A5.jpg', 'source-img/A6.jpg']
+      "source-image": ['source-img/A5.jpg']
   }
   // Thêm thông tin của các toà nhà khác tương tự
 };
 
-// Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
-setPolygonClickEvent("NhaHieuBo");
-setPolygonClickEvent("ktxA5");
 
-// Hàm để tạo và chèn khối div khi nhấp vào polygon
+
+// Hàm để tạo và chèn khối div 
 function createInfoDiv(buildingKey) {
   var building = buildingData[buildingKey];
 
@@ -140,6 +138,10 @@ function setPolygonClickEvent(buildingKey) {
       }
   });
 }
+
+// Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
+setPolygonClickEvent("NhaHieuBo");
+setPolygonClickEvent("ktxA5");
 
 function toggleInfoDiv(buildingKey) {
   var building = buildingData[buildingKey];
@@ -2335,84 +2337,84 @@ function toggleInfoDivSVD() {
 
 
 // Info kí túc xá A5
-var ktxA5 = L.polygon([
-  [21.040547104689804, 105.78535637607521],
-  [21.040717201438433, 105.78536173838764],
-  [21.04071219859566, 105.78561912938419],
-  [21.04072720712347, 105.78561912938419],
-  [21.04072720712347, 105.78569420175819],
-  [21.040709697174197, 105.78569420175819],
-  [21.040702192909603, 105.78595159275474],
-  [21.040532096143824, 105.78594623044232],
-  [21.04053459756825, 105.78585775228727],
-  [21.04057211892973, 105.78585507113105],
-  [21.040582124624514, 105.78544217307407],
-  [21.040547104689804, 105.78544217307407]
+// var ktxA5 = L.polygon([
+//   [21.040547104689804, 105.78535637607521],
+//   [21.040717201438433, 105.78536173838764],
+//   [21.04071219859566, 105.78561912938419],
+//   [21.04072720712347, 105.78561912938419],
+//   [21.04072720712347, 105.78569420175819],
+//   [21.040709697174197, 105.78569420175819],
+//   [21.040702192909603, 105.78595159275474],
+//   [21.040532096143824, 105.78594623044232],
+//   [21.04053459756825, 105.78585775228727],
+//   [21.04057211892973, 105.78585507113105],
+//   [21.040582124624514, 105.78544217307407],
+//   [21.040547104689804, 105.78544217307407]
 
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivA5 = document.getElementById('infoDivA5');
-
-ktxA5.on('click', function () {
-  document.getElementById('infoDivA5').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivA5');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivA5 = document.getElementById('infoDivA5');
-    infoDivA5.style.display = 'none';
-  });
-});
+// ], {
+//   opacity: 0,        
+//   fillOpacity: 0     
+// }).addTo(mymap);
 
 
-mymap.on('click', function (e) {
-  if (!ktxA5.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivA5').style.display = 'none';
-  }
-});
+// var infoDivA5 = document.getElementById('infoDivA5');
 
-function openGoogleMapsForA5() {
-  var latitude = 21.040557663003472; 
-  var longitude = 105.78565049910145; 
+// ktxA5.on('click', function () {
+//   document.getElementById('infoDivA5').style.display = 'block';
+// });
 
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+// document.addEventListener('DOMContentLoaded', function () {
+//   var closeButton = document.getElementById('closeinfoDivA5');
 
-  window.open(googleMapsUrl, '_blank');
-}
+//   closeButton.addEventListener('click', function () {
+//     var infoDivA5 = document.getElementById('infoDivA5');
+//     infoDivA5.style.display = 'none';
+//   });
+// });
 
-function toggleInfoDivA5() {
-  var infoDiv = document.getElementById('infoDivA5');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  ktxA5.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
 
-  setTimeout(function () {
-    ktxA5.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.040557663003472, 105.78565049910145], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
+// mymap.on('click', function (e) {
+//   if (!ktxA5.getBounds().contains(e.latlng)) {
+//     document.getElementById('infoDivA5').style.display = 'none';
+//   }
+// });
+
+// function openGoogleMapsForA5() {
+//   var latitude = 21.040557663003472; 
+//   var longitude = 105.78565049910145; 
+
+//   var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+//   window.open(googleMapsUrl, '_blank');
+// }
+
+// function toggleInfoDivA5() {
+//   var infoDiv = document.getElementById('infoDivA5');
+//   if (infoDiv.style.display === 'block') {
+//     infoDiv.style.display = 'none';
+//   } else {
+//     setTimeout(function() {
+//       infoDiv.style.display = 'block';
+//     }, 3000);
+//   }
+//   ktxA5.setStyle({
+//     opacity: 0.8,
+//     fillOpacity: 0.2
+//   });
+
+//   setTimeout(function () {
+//     ktxA5.setStyle({
+//       opacity: 0,
+//       fillOpacity: 0
+//     });
+//   }, 3000);
+//   mymap.flyTo([21.040557663003472, 105.78565049910145], 19, {
+//     duration: 2, 
+//     animate: true,
+//     easeLinearity: 0.5
+//   });
+//   toggleHide();
+// }
 
 // Info kí túc xá A6
 var ktxA6 = L.polygon([

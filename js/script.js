@@ -31,24 +31,51 @@ document.addEventListener('DOMContentLoaded', function () {
   btn.addEventListener('click', function () {
       sidebar.classList.toggle('show');
       homeContent.classList.toggle('show');
-});
+  });
 });
 
+// Lưu trữ cài đặt ngôn ngữ hiện tại
+let isEnglish = false;
 const languageToggle = document.getElementById('language-toggle');
-const contentVN = document.querySelectorAll('.contentVN');
-const contentEnglish = document.querySelectorAll('.contentEnglish');
 
-languageToggle.addEventListener('change', function() {
-  const isChecked = this.checked;
+// Lấy danh sách các phần tử contentVN và contentEnglish khi trang được tải
+let contentVN = document.querySelectorAll('.contentVN');
+let contentEnglish = document.querySelectorAll('.contentEnglish');
 
+// Hàm để cập nhật ngôn ngữ cho danh sách các phần tử
+function updateLanguage() {
   contentVN.forEach(item => {
-    item.style.display = isChecked ? 'none' : 'block';
+    item.style.display = isEnglish ? 'none' : 'block';
   });
 
   contentEnglish.forEach(item => {
-    item.style.display = isChecked ? 'block' : 'none';
+    item.style.display = isEnglish ? 'block' : 'none';
   });
+}
+
+// Hàm xử lý sự kiện khi toggle thay đổi
+function handleToggleChange(isChecked) {
+  isEnglish = isChecked;
+  updateLanguage();
+}
+
+// Tạo một MutationObserver để theo dõi thay đổi trong DOM
+const observer = new MutationObserver(() => {
+  // Cập nhật danh sách phần tử khi có thay đổi trong DOM
+  contentVN = document.querySelectorAll('.contentVN');
+  contentEnglish = document.querySelectorAll('.contentEnglish');
+  updateLanguage();
 });
+
+// Thêm lắng nghe cho sự kiện thay đổi trong DOM
+observer.observe(document.body, { subtree: true, childList: true });
+
+// Lắng nghe sự kiện thay đổi khi toggle được thay đổi
+languageToggle.addEventListener('change', function () {
+  const isChecked = this.checked;
+  handleToggleChange(isChecked);
+});
+
 
 var mymap = L.map('map', {
     zoomControl: false
