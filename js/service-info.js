@@ -146,31 +146,31 @@ function toggleInfoDivWM77TQV() {
 
 // Info CK số 177 Xuân Thuỷ
 
-var CK177XT = L.marker([21.036429162538166, 105.78466057777405], {
+var CK177XTLatLng = L.latLng(21.036429162538166, 105.78466057777405);
+var CK177XTBounds = L.latLngBounds(CK177XTLatLng, CK177XTLatLng);
+
+var CK177XT = L.marker(CK177XTLatLng, {
   opacity: 0,
   fillOpacity: 0,
 }).addTo(mymap);
 
-
 var infoDivCK177XT = document.getElementById('infoDivCK177XT');
 
 CK177XT.on('click', function () {
-  document.getElementById('infoDivCK177XT').style.display = 'block';
+  infoDivCK177XT.style.display = 'block';
 });
 
 document.addEventListener('DOMContentLoaded', function () {
   var closeButton = document.getElementById('closeinfoDivCK177XT');
 
   closeButton.addEventListener('click', function () {
-    var infoDivCK177XT = document.getElementById('infoDivCK177XT');
     infoDivCK177XT.style.display = 'none';
   });
 });
 
-
 mymap.on('click', function (e) {
-  if (!CK177XT.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivCK177XT').style.display = 'none';
+  if (!CK177XTBounds.contains(e.latlng)) {
+    infoDivCK177XT.style.display = 'none';
   }
 });
 
