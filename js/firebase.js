@@ -446,10 +446,8 @@ function addComment(e) {
 
   // Check if the comment is not empty
   if (newCommentText.trim() !== '') {
-    const commentId = Math.random().toString(36).substr(2, 10);
     // Prepare the comment object
     const commentData = {
-      commentId: commentId,
       username: user.displayName || '',
       avatarURL: user.photoURL || '',
       text: newCommentText,

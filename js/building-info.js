@@ -22,6 +22,9 @@ var buildingData = {
   // Thêm thông tin của các toà nhà khác tương tự
 };
 
+// Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
+setPolygonClickEvent("NhaHieuBo");
+
 // Hàm để tạo và chèn khối div khi nhấp vào polygon
 function createInfoDiv(buildingKey) {
   var building = buildingData[buildingKey];
@@ -47,9 +50,13 @@ function createInfoDiv(buildingKey) {
   var content = document.createElement('div');
   content.className = 'content contentVN';
   content.innerHTML = `
-      <div class="building-name" id="${building.infoDivId}">${building.nameVN}</div>
-      <div class="building-info" id="info-${building.infoDivId}">
+      <div class="building-name contentVN" id="${building.infoDivId}">${building.nameVN}</div>
+      <div class="building-name contentEnglish" id="${building.infoDivId}">${building.nameEN}</div>
+      <div class="building-info contentVN" id="info-${building.infoDivId}">
           ${building.infoVN}
+      </div>
+      <div class="building-info contentEnglish" id="info-${building.infoDivId}">
+          ${building.infoEN}
       </div>`;
 
   // Chèn các phần tử vào khối div chính
@@ -81,11 +88,14 @@ function setPolygonClickEvent(buildingKey) {
   }).addTo(mymap);
 
   polygon.on('click', function () {
+
       var infoDiv = document.getElementById(building.infoDivId);
+      console.log(infoDiv);
       if (!infoDiv) {
           // Nếu khối div chưa được tạo, tạo nó và hiển thị
           infoDiv = createInfoDiv(buildingKey);
-          infoDiv.style.display = 'block'
+          infoDiv.style.display = 'block';
+          
       } else {
           // Nếu khối div đã tồn tại, chỉ hiển thị nó
           infoDiv.style.display = 'block';
@@ -102,22 +112,12 @@ function setPolygonClickEvent(buildingKey) {
   });
 }
 
-function openGoogleMaps(buildingKey) {
-    var building = buildingData[buildingKey];
-    var latitude = building.latitude; 
-    var longitude = building.longitude; 
-    var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-    window.open(googleMapsUrl, '_blank');
-  }
-
-// Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
-setPolygonClickEvent("NhaHieuBo");
-
 function toggleInfoDiv(buildingKey) {
   var building = buildingData[buildingKey];
 
   // Kiểm tra xem infoDiv đã được tạo hay chưa
   var infoDiv = document.getElementById(building.infoDivId);
+
   if (!infoDiv) {
       // Nếu chưa được tạo, tạo nó và hiển thị
       infoDiv = createInfoDiv(buildingKey);
@@ -129,27 +129,20 @@ function toggleInfoDiv(buildingKey) {
       if (infoDiv.style.display === 'block') {
           infoDiv.style.display = 'none';
       } else {
-          // Các hành động khác ở đây...
           setTimeout(function () {
               infoDiv.style.display = 'block';
           }, 3000);
       }    
   }
   var polygon = L.polygon(building.polygon, {
-      opacity: 0,
-      fillOpacity: 0
-  }).addTo(mymap);
-
-  polygon.setStyle({
       opacity: 0.8,
       fillOpacity: 0.2
-  });
+  }).addTo(mymap);
 
   setTimeout(function () {
-      polygon.setStyle({
-          opacity: 0,
-          fillOpacity: 0
-      });
+      if (polygon) {
+          mymap.removeLayer(polygon);
+      }
   }, 3000);
 
   mymap.flyTo([building.latitude, building.longitude], 19, {
@@ -158,6 +151,16 @@ function toggleInfoDiv(buildingKey) {
       easeLinearity: 0.5
   });
   toggleHide();
+}
+
+// Hàm gọi google map đến toạ độ của toà nhà
+
+function openGoogleMaps(buildingKey) {
+  var building = buildingData[buildingKey];
+  var latitude = building.latitude; 
+  var longitude = building.longitude; 
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+  window.open(googleMapsUrl, '_blank');
 }
 
 

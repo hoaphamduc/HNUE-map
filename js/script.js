@@ -26,7 +26,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const sidebar = document.querySelector('.sidebar');
   const btn = document.getElementById('menu-btn');
-  const homeContent = document.querySelector('.main_content');
+  const homeContent = document.getElementById('main-content');
 
   btn.addEventListener('click', function () {
       sidebar.classList.toggle('show');
