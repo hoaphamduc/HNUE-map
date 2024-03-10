@@ -83,7 +83,7 @@ var mymap = L.map('map', {
 
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: '&copy; Nhóm nghiên cứu khoa học năm 2024'
 }).addTo(mymap);
 
 var maxBounds = L.latLngBounds(
@@ -105,55 +105,16 @@ var zoomControl = L.control.zoom({
 zoomControl.addTo(mymap);
 
 
-if (navigator.permissions) {
-  navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
-    if (result.state === 'granted') {
-      // Đã có quyền truy cập vị trí, thực hiện các hành động cần thiết ở đây
-
-      var marker;
-
-      // Hàm để cập nhật vị trí trên bản đồ
-      function updateMap(position) {
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
-
-        // Kiểm tra xem marker đã được tạo hay chưa
-        if (marker) {
-          marker.setLatLng([lat, lon]).update();
-        } else {
-          marker = L.marker([lat, lon]).addTo(mymap).openPopup();
-        }
-      }
-
-      // Sử dụng hàm watchPosition để liên tục theo dõi vị trí
-      var watchId = navigator.geolocation.watchPosition(
-        function (position) {
-          updateMap(position);
-        },
-        function (error) {
-          console.log('Error getting geolocation:', error.message);
-        }
-      );
-
-    } else if (result.state === 'prompt') {
-      // Chưa có quyền truy cập vị trí, hiển thị cửa sổ yêu cầu quyền
-      navigator.geolocation.getCurrentPosition(
-        function (position) {
-          // Lưu trạng thái đã được cấp quyền
-          navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
-            if (result.state === 'granted') {
-              // Thực hiện các hành động cần thiết khi đã được cấp quyền
-              updateMap(position);
-            }
-          });
-        },
-        function (error) {
-          console.log('Error getting geolocation:', error.message);
-        }
-      );
-    }
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function (position) {
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
+    L.marker([lat, lon]).addTo(mymap)
+      .bindPopup('Vị trí của bạn').openPopup();
+  }, function (error) {
+    console.log('Error getting geolocation:', error.message);
   });
-} else {
+  } else {
   console.log('Geolocation is not supported by this browser.');
 }
 
