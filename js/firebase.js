@@ -494,24 +494,36 @@ function getCommentsForPost(postId) {
     const commentsData = snapshot.val();
 
     // Hiển thị bình luận
-    commentContainer.innerHTML = '';
     // Gọi hàm để đếm số lượng bình luận và cập nhật vào span
     updateCommentCount(postId);
+
+    // Xoá toàn bộ nội dung bình luận cũ
+    commentContainer.innerHTML = '';
 
     if (!commentsData) {
       console.error("No comments found for postId:", postId);
       return;
     }
 
+    // Lưu trữ danh sách các commentId đã hiển thị để tránh hiển thị trùng lặp
+    const displayedComments = [];
+
     Object.keys(commentsData).forEach((commentId) => {
-      const comment = commentsData[commentId];
-      const commentElement = createCommentElement(comment);
-      commentContainer.appendChild(commentElement);
+      if (!displayedComments.includes(commentId)) {
+        const comment = commentsData[commentId];
+        const commentElement = createCommentElement(comment);
+        commentContainer.appendChild(commentElement);
+
+        // Thêm commentId vào danh sách đã hiển thị
+        displayedComments.push(commentId);
+      }
     });
   }, (error) => {
     console.error("Error fetching comments:", error);
   });
 }
+
+
 
 
 function createCommentElement(comment) {
