@@ -34,7 +34,6 @@ function openCommentAction(postId) {
     commentActionDiv.classList.add('comment-action');
     commentActionDiv.id = `comment-action-${postId}`;
     commentActionDiv.style.display = 'none';
-    console.log(commentActionDiv.id);
 
     // Set the content of the comment-action div
     commentActionDiv.innerHTML = `
@@ -43,7 +42,7 @@ function openCommentAction(postId) {
       <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; top: 50px;"></div>
       <div class="comment-container" id="comment-container-${postId}"></div>
       <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; bottom: 50px;"></div>
-      <input type="text" placeholder="Add a comment..." class="comment-input" id="comment-input-${postId}">
+      <input type="text" placeholder="Để lại bình luận của bạn..." class="comment-input" id="comment-input-${postId}">
       <button class="comment-button" onclick="addComment('${postId}')"></button>
     `;
     
@@ -363,11 +362,26 @@ function hideSocialNetworkDiv() {
 function hideEnterPostDiv() {
   var enterPost = document.getElementById("enter-post");
   enterPost.style.display = "none";
+  var socialDiv = document.getElementById("social-network-div");
+  socialDiv.classList.remove("darken");
 }
+
+document.addEventListener("click", function(event) {
+  var enterPost = document.getElementById("enter-post");
+  var socialDiv = document.getElementById("social-network-div");
+
+  if (!enterPost.contains(event.target) && event.target.id !== "openEnterDiv") {
+    enterPost.style.display = "none";
+    socialDiv.classList.remove("darken");
+  }
+});
+
 
 function openEnterPostDiv() {
   var enterPost = document.getElementById("enter-post");
   enterPost.style.display = "block";
+  var socialDiv = document.getElementById("social-network-div");
+  socialDiv.classList.add("darken");
 }
 
 

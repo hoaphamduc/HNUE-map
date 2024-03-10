@@ -488,7 +488,7 @@ body, html {
 }
 
 .darken {
-  filter: brightness(0.9);
+  filter: brightness(0.3);
 }
 
 .creat-post-span {
@@ -664,7 +664,7 @@ body, html {
   position: absolute; 
   left: 20%; 
   top: 5px;
-  z-index: 5000;
+  z-index: 200000;
 }
 
 .show-post {

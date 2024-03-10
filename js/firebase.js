@@ -406,11 +406,6 @@ async function loadPosts() {
         boxes.forEach(box => {
           box.addEventListener('click', addComment);
         });
-        // const boxes2 = Array.from(document.getElementsByClassName('comment-post'));
-        // boxes2.forEach(box => {
-        //   const postId = box.getAttribute('data-postid');
-        //   box.addEventListener('click', () => getCommentsForPost(postId));
-        // });
       }
     }
   } catch (error) {
