@@ -93,10 +93,12 @@ document.getElementById('post-status').addEventListener('click', async function(
       // Collect status content
       const statusVN = document.getElementById('statusVN').value;
       const statusEng = document.getElementById('statusEng').value;
-      
-      status = statusVN;
+      const encodedStrVN = statusVN.replace(/[\u00A0-\u9999<>\&]/g, i => '&#'+i.charCodeAt(0)+';')
+      const encodedStrEN = statusEng.replace(/[\u00A0-\u9999<>\&]/g, i => '&#'+i.charCodeAt(0)+';')
+
+      status = encodedStrVN;
       if (isDisplayedBlock(document.getElementById('statusEng'))) {
-          status = statusEng;
+          status = encodedStrEN;
       }
 
       // Collect address and location (optional)
@@ -112,11 +114,11 @@ document.getElementById('post-status').addEventListener('click', async function(
       }
 
       // Check for inappropriate words in the status
-      const inappropriateWords = ['địt', 'lồn', 'mẹ mày', 'vãi', 'vcl', 'đm', 'đmm',
-      'dm', 'duma', 'Đuma', 'dmm', 'lon', 'dit', 'me may',
-      'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'tình dục',
-      'xuất tinh', 'đụ', 'chơi gái', 'choi gai', 'bulon',
-      'cac', 'cặc', 'nwngs', 'loz', 'buoi'
+      const inappropriateWords = [
+        'địt', 'lồn', 'mẹ mày', 'vãi', 'vcl', 'đm', 'đmm',
+        'dm', 'duma', 'Đuma', 'dmm', 'lon', 'dit', 'me may',
+        'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'đụ', 'chơi gái', 'choi gai', 'bulon',
+        'cac', 'cặc', 'nwngs', 'loz', 'buoi'
       ];
 
       const inappropriateWordsFound = findInappropriateWords(status, inappropriateWords);
@@ -437,27 +439,31 @@ function addComment(e) {
   var postId = e.target.getAttribute('data');
   // Get the input element based on the postId
   const inputElement = document.getElementById(`comment-input-${postId}`);
-  const user = auth.currentUser; 
+  const user = auth.currentUser;
 
-  
   // Get the new comment text from the input element
   const newCommentText = inputElement.value;
 
-  // Check if the comment is not empty
+  // Check if the comment is not empty and does not exceed 500 characters
   if (newCommentText.trim() !== '') {
-    // Prepare the comment object
-    const commentData = {
-      username: user.displayName || '',
-      avatarURL: user.photoURL || '',
-      text: newCommentText,
-      timestamp: new Date().getTime()
-    };
+    if (newCommentText.length <= 470) {
+      // Prepare the comment object
+      const commentData = {
+        username: user.displayName || '',
+        avatarURL: user.photoURL || '',
+        text: newCommentText,
+        timestamp: new Date().getTime()
+      };
 
-    // Save the comment data to the database
-    saveCommentToDatabase(postId, commentData);
+      // Save the comment data to the database
+      saveCommentToDatabase(postId, commentData);
 
-    // Clear the input field after saving the comment
-    inputElement.value = '';
+      // Clear the input field after saving the comment
+      inputElement.value = '';
+    } else {
+      // Handle the case where the comment exceeds 500 characters
+      alert('Chỉ được bình luận tối đa 470 kí tự.');
+    }
   } else {
     // Handle the case where the comment is empty
     console.log('Comment cannot be empty');

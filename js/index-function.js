@@ -376,25 +376,25 @@ document.addEventListener("click", function(event) {
   }
 });
 
-function handleEnterKeyVN(event) {
-  if (event.key === 'Enter') {
-      const textarea = document.getElementById('statusVN');
-      const cursorPos = textarea.selectionStart;
-      const textBefore = textarea.value.substring(0, cursorPos);
-      const textAfter = textarea.value.substring(cursorPos);
-      textarea.value = textBefore + '<br>' + textAfter;
-  }
-}
+// function handleEnterKeyVN(event) {
+//   if (event.key === 'Enter') {
+//       const textarea = document.getElementById('statusVN');
+//       const cursorPos = textarea.selectionStart;
+//       const textBefore = textarea.value.substring(0, cursorPos);
+//       const textAfter = textarea.value.substring(cursorPos);
+//       textarea.value = textBefore + '<br>' + textAfter;
+//   }
+// }
 
-function handleEnterKeyEN(event) {
-  if (event.key === 'Enter') {
-      const textarea = document.getElementById('statusEng');
-      const cursorPos = textarea.selectionStart;
-      const textBefore = textarea.value.substring(0, cursorPos);
-      const textAfter = textarea.value.substring(cursorPos);
-      textarea.value = textBefore + '<br>' + textAfter;
-  }
-}
+// function handleEnterKeyEN(event) {
+//   if (event.key === 'Enter') {
+//       const textarea = document.getElementById('statusEng');
+//       const cursorPos = textarea.selectionStart;
+//       const textBefore = textarea.value.substring(0, cursorPos);
+//       const textAfter = textarea.value.substring(cursorPos);
+//       textarea.value = textBefore + '<br>' + textAfter;
+//   }
+// }
 
 function openEnterPostDiv() {
   var enterPost = document.getElementById("enter-post");
