@@ -9,9 +9,13 @@
     <meta property="og:image" content="" id="ogImage2"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Thư viện Leaflet Routing Machine -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="icon" type="image/png" href="source-img/Logo Đại học Sư phạm Hà Nội - HNUE.png">
     <link rel="stylesheet" href="css/sidebar.css"/>
+    <link rel="stylesheet" href="css/routing-machine.css"/>
 
 </head>
 
@@ -48,6 +52,14 @@
                 </a>
             </li>
             <li>
+                <a href="https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436" target="_blank" style="cursor: pointer;">
+                    <div class="highlight"></div>
+                    <img src="source-img/book.png" class="icon">
+                    <span class="links_name contentVN">Thông tin tuyển sinh 2024</span>
+                    <span class="links_name contentEnglish">2024 Admission Information</span>
+                </a>
+            </li>
+            <li>
                 <a onclick="toggleSocialNetworkDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
                     <img src="source-img/user-group-solid.svg" class="icon">
@@ -64,11 +76,11 @@
                 </a>
             </li>
             <li>
-                <a  onclick="toggleDonateDiv()" style="cursor: pointer;">
+                <a onclick="toggleDonateDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/coffee-icon.svg" class="icon">
-                    <span class="links_name contentVN">Mua cà phê cho chúng tôi</span>
-                    <span class="links_name contentEnglish">Buy us coffee</span>
+                    <img src="source-img/donate.svg" class="icon">
+                    <span class="links_name contentVN">Mua trà sữa cho chúng tôi</span>
+                    <span class="links_name contentEnglish">Buy milk tea for us</span>
                 </a>
             </li>
             <li style="position: absolute; bottom: 50px;">
@@ -101,7 +113,7 @@
             </li>
         </ul>
     </div>
-    <div class="main-content">
+    <div class="main-content" id="main-content">
         <div id="map"></div>
 
         <!-- New UI -->
@@ -356,56 +368,52 @@
         </div>
 
         <!-- Mạng xã hội -->
-
+        <div id="enter-post">
+            <center><span class="contentVN creat-post-span">Tạo bài viết</span></center>
+            <center><span class="contentEnglish creat-post-span">Create post</span></center>
+            <button class="close-div" onclick="hideEnterPostDiv()"></button>
+            <div style="height: 1px; width: 100%; background-color: #e5e5e5; position: relative; top: 18px"></div>
+            <img id="userProfilePicture2" alt="Profile Picture">
+            <span id="userName2"></span>
+            <textarea class="contentVN status pre" id="statusVN" placeholder="Chia sẻ với mọi người gì đó đi nào" oninput="checkTextArea(this)" onkeydown="handleEnterKeyVN(event)"></textarea>
+            <textarea class="contentEnglish status" id="statusEng" placeholder="Share something to everyone" oninput="checkTextArea(this)" onkeydown="handleEnterKeyEN(event)"></textarea>
+            <div id="add-photo" onclick="uploadImage()">
+                <input type="file" id="imageInput" onchange="setBackgroundImage()">
+            </div>
+            <div id="add-location">
+                <label for="text-location" style="font-size: 10px;">
+                    <span class="contentVN">Thêm toạ độ (có thể mất vài phút):</span>
+                    <span class="contentEnglish">Add current coordinates (take few minutes):</span>
+                </label><br>
+                <input type="text" name="text-location" id="text-location-vn" class="contentVN" readonly placeholder="Nhấn nút để thêm tọa độ" >
+                <input type="text" name="text-location" id="text-location-eng" class="contentEnglish" readonly placeholder="Press the button to add coordinates">
+                <img src="source-img/location.png" id="add-location-button" onclick="getLocationAndFillInput()">
+            </div>
+            <div id="add-address">
+                <label for="text-location" style="font-size: 10px;">
+                    <span class="contentVN">Thêm địa chỉ:</span>
+                    <span class="contentEnglish">Add address:</span>
+                </label><br>
+                <input type="text" name="text-location" id="text-address-vn" class="contentVN" placeholder="Nhập địa chỉ" >
+                <input type="text" name="text-location" id="text-address-eng" class="contentEnglish" placeholder="Enter address">
+                <img src="source-img/building-regular.svg" id="add-address-img">
+            </div>
+            <button class="post-status" id="post-status" disabled onclick="postStatus()">
+                <span class="contentVN">Đăng</span>
+                <span class="contentEnglish">Post</span>
+            </button>
+        </div>
         <div id="social-network-div">
             <button class="close-div" onclick="hideSocialNetworkDiv()" style="background-color: #f0f2f5;"></button>
             <div id="post-div">
                 <img id="userProfilePicture1" alt="Profile Picture">
-                <div class="contentVN post-btn" onclick="openEnterPostDiv()">
-                    <span>Chia sẻ gì đó với mọi người</span>
-                </div>
-                <div class="contentEnglish post-btn" onclick="openEnterPostDiv()">
-                    <span>Share something with everyone</span>
+                <div id="openEnterDiv" class="post-btn" onclick="openEnterPostDiv()">
+                    <span class="contentVN" id="textVN">Chia sẻ gì đó với mọi người</span>
+                    <span class="contentEnglish" id="textEN">Share something with everyone</span>
                 </div>
             </div>
-            <div id="enter-post">
-                <center><span class="contentVN creat-post-span">Tạo bài viết</span></center>
-                <center><span class="contentEnglish creat-post-span">Create post</span></center>
-                <button class="close-div" onclick="hideEnterPostDiv()"></button>
-                <div style="height: 1px; width: 100%; background-color: #e5e5e5; position: relative; top: 18px"></div>
-                <img id="userProfilePicture2" alt="Profile Picture">
-                <span id="userName2"></span>
-                <textarea class="contentVN status" id="statusVN" placeholder="Chia sẻ với mọi người gì đó đi nào" oninput="checkTextArea(this)"></textarea>
-                <textarea class="contentEnglish status" id="statusEng" placeholder="Share something to everyone" oninput="checkTextArea(this)"></textarea>
-                <div id="add-photo" onclick="uploadImage()">
-                    <input type="file" id="imageInput" onchange="setBackgroundImage()">
-                </div>
-                <div id="add-location">
-                    <label for="text-location" style="font-size: 10px;">
-                        <span class="contentVN">Thêm toạ độ (có thể mất vài phút):</span>
-                        <span class="contentEnglish">Add current coordinates (take few minutes):</span>
-                    </label><br>
-                    <input type="text" name="text-location" id="text-location-vn" class="contentVN" readonly placeholder="Nhấn nút để thêm tọa độ" >
-                    <input type="text" name="text-location" id="text-location-eng" class="contentEnglish" readonly placeholder="Press the button to add coordinates">
-                    <img src="source-img/location.png" id="add-location-button" onclick="getLocationAndFillInput()">
-                </div>
-                <div id="add-address">
-                    <label for="text-location" style="font-size: 10px;">
-                        <span class="contentVN">Thêm địa chỉ:</span>
-                        <span class="contentEnglish">Add address:</span>
-                    </label><br>
-                    <input type="text" name="text-location" id="text-address-vn" class="contentVN" placeholder="Nhập địa chỉ" >
-                    <input type="text" name="text-location" id="text-address-eng" class="contentEnglish" placeholder="Enter address">
-                    <img src="source-img/building-regular.svg" id="add-address-img">
-                </div>
-                <button class="post-status" id="post-status" disabled onclick="postStatus()">
-                    <span class="contentVN">Đăng</span>
-                    <span class="contentEnglish">Post</span>
-                </button>
-            </div>
-            <!-- <button id="show-more">Show more 5 posts</button> -->
-            <div id="posts-container">
-            </div>
+            <div id="posts-container"></div>
+            <button id="show-more">Show more 5 posts</button>
         </div>
 
 
@@ -448,7 +456,7 @@
                 <span class="contentVN redtext">KHU HÀNH CHÍNH</span>
                 <span class="contentEnglish redtext">ADMINISTRATIVE REGION</span>
                 <ul id="admin-area">
-                    <li onclick="toggleInfoDivNhaHieuBo()">
+                    <li onclick="toggleInfoDiv('NhaHieuBo')">
                         <span class="contentVN">Nhà hiệu bộ</span>
                         <span class="contentEnglish">Administrative Office</span>
                     </li>
@@ -559,7 +567,7 @@
                 <span class="contentVN redtext">KHU KÝ TÚC XÁ</span>
                 <span class="contentEnglish redtext">DORMITORY REGION</span>
                 <ul id="domestic-area">
-                    <li onclick="toggleInfoDivA5()">
+                    <li onclick="toggleInfoDiv('ktxA5')">
                         <span class="contentVN">A5: Ký túc xá</span>
                         <span class="contentEnglish">A5: Dormitory</span>
                     </li>
@@ -647,7 +655,7 @@
             <span class="contentEnglish">Tap on buildings to interact</span>
         </span> -->
 
-        <div class="infoDiv" id="infoDivNhaHieuBo">
+        <!-- <div class="infoDiv" id="infoDivNhaHieuBo">
             <div class="toolbar">
                 <button class="direct-btn" onclick="openGoogleMapsForNhaHieuBo()"></button>
                 <span class="tim-duong contentVN">Chỉ đường: </span>
@@ -669,7 +677,7 @@
                     No information.
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="infoDiv" id="infoDivA2">
             <div class="toolbar">
@@ -2084,7 +2092,8 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
     <script src="js/index-function.js"></script>
     <script src="js/building-info.js"></script>
     <script src="js/service-info.js"></script>

@@ -1,78 +1,363 @@
-// Info nhà hiệu bộ
-
-var nhahieubo = L.polygon([
-  [21.037571428706993, 105.78304857015611],
-  [21.03755387737855, 105.7836386561394],
-  [21.037423496016842, 105.78363597393037],
-  [21.037428510686713, 105.78342944383624],
-  [21.03738839332303, 105.78342944383624],
-  [21.037393407994085, 105.78323364257812],
-  [21.037436032691193, 105.78323096036914],
-  [21.037441047360645, 105.78304320573808]
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-var infoDivNhaHieuBo = document.getElementById('infoDivNhaHieuBo');
-
-nhahieubo.on('click', function () {
-  document.getElementById('infoDivNhaHieuBo').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivNhaHieuBo');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivNhaHieuBo = document.getElementById('infoDivNhaHieuBo');
-    infoDivNhaHieuBo.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhahieubo.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivNhaHieuBo').style.display = 'none';
+// Tạo một đối tượng JSON để lưu trữ thông tin của toà nhà
+var buildingData = {
+  "NhaHieuBo": {
+      "polygon": [
+        [21.037571428706993, 105.78304857015611],
+        [21.03755387737855, 105.7836386561394],
+        [21.037423496016842, 105.78363597393037],
+        [21.037428510686713, 105.78342944383624],
+        [21.03738839332303, 105.78342944383624],
+        [21.037393407994085, 105.78323364257812],
+        [21.037436032691193, 105.78323096036914],
+        [21.037441047360645, 105.78304320573808]
+      ],
+      "infoDivId": "infoDivNhaHieuBo",
+      "nameVN": "NHÀ HIỆU BỘ - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+      "nameEN": "HEAD BUILDING - HANOI NATIONAL UNIVERSITY OF EDUCATION",
+      "infoVN": "Chưa có thông tin.",
+      "infoEN": "No information.",
+      "latitude": 21.037439688219646,
+      "longitude": 105.78331516196478,
+      "source-image": []
+  },
+  "ktxA5": {
+      "polygon": [
+        [21.040547104689804, 105.78535637607521],
+        [21.040717201438433, 105.78536173838764],
+        [21.04071219859566, 105.78561912938419],
+        [21.04072720712347, 105.78561912938419],
+        [21.04072720712347, 105.78569420175819],
+        [21.040709697174197, 105.78569420175819],
+        [21.040702192909603, 105.78595159275474],
+        [21.040532096143824, 105.78594623044232],
+        [21.04053459756825, 105.78585775228727],
+        [21.04057211892973, 105.78585507113105],
+        [21.040582124624514, 105.78544217307407],
+        [21.040547104689804, 105.78544217307407]
+      ],
+      "infoDivId": "infoDivA5",
+      "nameVN": "KÝ TÚC XÁ A5 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+      "nameEN": "A5 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
+      "infoVN": "<b>Toà nhà A5:</b><br><br>Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 63 phòng tương ứng 490 chỗ ở, mỗi tầng 16 phòng. Tiêu chuẩn là loại phòng cơ bản.<br> <br><b>Đối tượng sắp xếp ở là:</b><br><br>Nữ sinh viên năm thứ 3 các khoa.<br> <br><b>Loại phòng:</b><br><br>Cơ bản (tiêu chuẩn) gồm 2 mã phòng.<br>- Loại phòng A5-06 (6 người): Có 8 phòng xếp 6 chỗ ở.<br>- Loại phòng A5-08 (8 người): Có 55 phòng xếp 8 chỗ ở.<br> <br><b>Diện tích - Điều kiện cơ sở vật chất:</b><br><br> Phòng có S = 25 - 36 m<sup>2</sup>. Công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, bình nóng lạnh, Wifi. ",
+      "infoEN": "No information.",
+      "latitude": 21.040557663003472,
+      "longitude": 105.78565049910145,
+      "source-image": ['source-img/A5.jpg']
   }
-});
+  // Thêm thông tin của các toà nhà khác tương tự
+};
 
-function openGoogleMapsForNhaHieuBo() {
-  var latitude = 21.037439688219646; 
-  var longitude = 105.78331516196478; 
 
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
 
-  window.open(googleMapsUrl, '_blank');
+// Hàm để tạo và chèn khối div 
+function createInfoDiv(buildingKey) {
+  var building = buildingData[buildingKey];
+
+  // Tạo một khối div mới
+  var infoDiv = document.createElement('div');
+  infoDiv.className = 'infoDiv';
+  infoDiv.id = building.infoDivId;
+
+  // Tạo nội dung cho toolbar
+  var toolbar = document.createElement('div');
+  toolbar.className = 'toolbar';
+  toolbar.innerHTML = `
+      <button class="direct-btn" onclick="initRoutingControl('${buildingKey}')"></button>
+      <span class="tim-duong contentVN">Chỉ đường trên bản đồ của chúng tôi: </span>
+      <span class="tim-duong contentEnglish">Directions on our map: </span>
+      <button class="direct-btn-ggm" onclick="openGoogleMaps('${buildingKey}')"></button>
+      <span class="tim-duong-ggm contentVN">Chỉ đường bằng Google Maps: </span>
+      <span class="tim-duong-ggm contentEnglish">Directions using Google Maps: </span>
+      <span class="dong-gop contentVN">Đóng góp ý kiến của bạn: </span>
+      <span class="dong-gop contentEnglish">Give us your feedback: </span>
+      <img class="send-feedback" src="source-img/gop-y.png" onclick="composeEmail()">
+      <button class="close" id="close${building.infoDivId}"></button>`;
+
+  // Tạo nội dung cho phần content
+  var content = document.createElement('div');
+  content.className = 'content contentVN';
+  content.innerHTML = `
+      <div class="building-name contentVN" id="${building.infoDivId}">${building.nameVN}</div>
+      <div class="building-name contentEnglish" id="${building.infoDivId}">${building.nameEN}</div>
+      <div class="building-info contentVN" id="info-${building.infoDivId}">
+          ${building.infoVN}
+      </div>
+      <div class="building-info contentEnglish" id="info-${building.infoDivId}">
+          ${building.infoEN}
+      </div>
+      <div class="building-images">
+            ${building['source-image'].map(image => `<img class="img-demo" src="${image}" alt="Building Image">`).join('')}
+      </div>`;
+
+  // Chèn các phần tử vào khối div chính
+  infoDiv.appendChild(toolbar);
+  infoDiv.appendChild(content);
+
+  // Lấy thẻ div có id là 'main-content'
+  var mainContentDiv = document.getElementById('main-content');
+
+  // Chèn khối div vào khối 'main-content'
+  mainContentDiv.appendChild(infoDiv);
+
+  // Thiết lập sự kiện cho nút đóng
+  var closeButton = document.getElementById(`close${building.infoDivId}`);
+  closeButton.addEventListener('click', function () {
+      infoDiv.style.display = 'none';
+  });
+
+  return infoDiv;
 }
 
-function toggleInfoDivNhaHieuBo() {
-  var infoDiv = document.getElementById('infoDivNhaHieuBo');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhahieubo.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
 
-  setTimeout(function () {
-    nhahieubo.setStyle({
+// Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
+function setPolygonClickEvent(buildingKey) {
+  var building = buildingData[buildingKey];
+  var polygon = L.polygon(building.polygon, {
       opacity: 0,
       fillOpacity: 0
-    });
+  }).addTo(mymap);
+
+  polygon.on('click', function () {
+
+      var infoDiv = document.getElementById(building.infoDivId);
+      console.log(infoDiv);
+      if (!infoDiv) {
+          // Nếu khối div chưa được tạo, tạo nó và hiển thị
+          infoDiv = createInfoDiv(buildingKey);
+          infoDiv.style.display = 'block';
+          
+      } else {
+          // Nếu khối div đã tồn tại, chỉ hiển thị nó
+          infoDiv.style.display = 'block';
+      }
+  });
+
+  mymap.on('click', function (e) {
+      if (!polygon.getBounds().contains(e.latlng)) {
+          var infoDiv = document.getElementById(building.infoDivId);
+          if (infoDiv) {
+              infoDiv.style.display = 'none';
+          }
+      }
+  });
+}
+
+// Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
+setPolygonClickEvent("NhaHieuBo");
+setPolygonClickEvent("ktxA5");
+
+function toggleInfoDiv(buildingKey) {
+  var building = buildingData[buildingKey];
+
+  // Kiểm tra xem infoDiv đã được tạo hay chưa
+  var infoDiv = document.getElementById(building.infoDivId);
+
+  if (!infoDiv) {
+      // Nếu chưa được tạo, tạo nó và hiển thị
+      infoDiv = createInfoDiv(buildingKey);
+      setTimeout(function () {
+          infoDiv.style.display = 'block';
+      }, 3000);
+  } else {
+      // Nếu đã tồn tại, chỉ hiển thị nó
+      if (infoDiv.style.display === 'block') {
+          infoDiv.style.display = 'none';
+      } else {
+          setTimeout(function () {
+              infoDiv.style.display = 'block';
+          }, 3000);
+      }    
+  }
+  var polygon = L.polygon(building.polygon, {
+      opacity: 0.8,
+      fillOpacity: 0.2
+  }).addTo(mymap);
+
+  setTimeout(function () {
+      if (polygon) {
+          mymap.removeLayer(polygon);
+      }
   }, 3000);
-  
-  mymap.flyTo([21.037439688219646, 105.78331516196478], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
+
+  mymap.flyTo([building.latitude, building.longitude], 19, {
+      duration: 2, 
+      animate: true,
+      easeLinearity: 0.5
   });
   toggleHide();
 }
+
+// Hàm gọi google map đến toạ độ của toà nhà
+
+function openGoogleMaps(buildingKey) {
+  var building = buildingData[buildingKey];
+  var latitude = building.latitude; 
+  var longitude = building.longitude; 
+  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+  window.open(googleMapsUrl, '_blank');
+}
+
+// Gọi hàm điều hướng đến toà nhà ngay trên bản đồ
+
+function initRoutingControl(buildingKey) {
+  if (typeof L.Routing !== 'undefined') {
+    // Custom Vietnamese translation
+    L.Routing.Localization['vi'] = {
+      directions: {
+        north: 'Bắc',
+        northeast: 'Đông Bắc',
+        east: 'Đông',
+        southeast: 'Đông Nam',
+        south: 'Nam',
+        southwest: 'Tây Nam',
+        west: 'Tây',
+        northwest: 'Tây Bắc',
+      },
+      instructions: {
+        continue: 'Tiếp tục',
+        turn: 'Rẽ',
+        name: 'Tên',
+        destination: 'Đến',
+        distance: 'Khoảng cách',
+        duration: 'Thời gian',
+      },
+      travelMode: {
+        car: 'Xe ô tô',
+        bicycle: 'Xe đạp',
+        foot: 'Đi bộ',
+      },
+    };
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        var currentLocation = L.latLng(position.coords.latitude, position.coords.longitude);
+        var building = buildingData[buildingKey];
+
+        if (building) {
+          var buildingCoordinates = [building.latitude, building.longitude];
+
+          var routingControl = L.Routing.control({
+            waypoints: [
+              currentLocation,
+              L.latLng(buildingCoordinates[0], buildingCoordinates[1]),
+            ],
+            routeWhileDragging: true,
+            routeDragTimeout: 250,
+            reverseWaypoints: true,
+            showAlternatives: true,
+            altLineOptions: {
+              styles: [
+                { color: 'black', opacity: 0.15, weight: 9 },
+                { color: 'white', opacity: 0.8, weight: 6 },
+                { color: 'blue', opacity: 0.5, weight: 2 },
+              ],
+            },
+            position: 'topleft', // Set the position of the control panel to the top left corner
+            language: 'vi', // Set language to Vietnamese
+          }).addTo(mymap);
+
+          // Create close button
+          var closeButton = document.createElement('button');
+          closeButton.classList.add('closeRoutingButton');
+          closeButton.addEventListener('click', function () {
+            mymap.removeControl(routingControl);
+            closeButton.style.display = 'none';
+          });
+
+          // Append close button to the map container
+          mymap.getContainer().appendChild(closeButton);
+          var infoDiv = document.getElementById(building.infoDivId);
+          infoDiv.style.display = 'none';
+        } else {
+          console.error('Building not found in buildingData!');
+        }
+      });
+    } else {
+      console.error('Geolocation is not supported by this browser.');
+    }
+  } else {
+    console.error('LRM library not loaded!');
+  }
+}
+
+
+
+
+// Info nhà hiệu bộ
+
+// var nhahieubo = L.polygon([
+//   [21.037571428706993, 105.78304857015611],
+//   [21.03755387737855, 105.7836386561394],
+//   [21.037423496016842, 105.78363597393037],
+//   [21.037428510686713, 105.78342944383624],
+//   [21.03738839332303, 105.78342944383624],
+//   [21.037393407994085, 105.78323364257812],
+//   [21.037436032691193, 105.78323096036914],
+//   [21.037441047360645, 105.78304320573808]
+// ], {
+//   opacity: 0,        
+//   fillOpacity: 0     
+// }).addTo(mymap);
+
+// var infoDivNhaHieuBo = document.getElementById('infoDivNhaHieuBo');
+
+// nhahieubo.on('click', function () {
+//   document.getElementById('infoDivNhaHieuBo').style.display = 'block';
+// });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   var closeButton = document.getElementById('closeinfoDivNhaHieuBo');
+
+//   closeButton.addEventListener('click', function () {
+//     var infoDivNhaHieuBo = document.getElementById('infoDivNhaHieuBo');
+//     infoDivNhaHieuBo.style.display = 'none';
+//   });
+// });
+
+
+// mymap.on('click', function (e) {
+//   if (!nhahieubo.getBounds().contains(e.latlng)) {
+//     document.getElementById('infoDivNhaHieuBo').style.display = 'none';
+//   }
+// });
+
+// function openGoogleMapsForNhaHieuBo() {
+//   var latitude = 21.037439688219646; 
+//   var longitude = 105.78331516196478; 
+
+//   var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+//   window.open(googleMapsUrl, '_blank');
+// }
+
+// function toggleInfoDivNhaHieuBo() {
+//   var infoDiv = document.getElementById('infoDivNhaHieuBo');
+//   if (infoDiv.style.display === 'block') {
+//     infoDiv.style.display = 'none';
+//   } else {
+//     setTimeout(function() {
+//       infoDiv.style.display = 'block';
+//     }, 3000);
+//   }
+//   nhahieubo.setStyle({
+//     opacity: 0.8,
+//     fillOpacity: 0.2
+//   });
+
+//   setTimeout(function () {
+//     nhahieubo.setStyle({
+//       opacity: 0,
+//       fillOpacity: 0
+//     });
+//   }, 3000);
+  
+//   mymap.flyTo([21.037439688219646, 105.78331516196478], 19, {
+//     duration: 2, 
+//     animate: true,
+//     easeLinearity: 0.5
+//   });
+//   toggleHide();
+// }
 
 // Info nhà A2
 
@@ -2140,84 +2425,84 @@ function toggleInfoDivSVD() {
 
 
 // Info kí túc xá A5
-var ktxA5 = L.polygon([
-  [21.040547104689804, 105.78535637607521],
-  [21.040717201438433, 105.78536173838764],
-  [21.04071219859566, 105.78561912938419],
-  [21.04072720712347, 105.78561912938419],
-  [21.04072720712347, 105.78569420175819],
-  [21.040709697174197, 105.78569420175819],
-  [21.040702192909603, 105.78595159275474],
-  [21.040532096143824, 105.78594623044232],
-  [21.04053459756825, 105.78585775228727],
-  [21.04057211892973, 105.78585507113105],
-  [21.040582124624514, 105.78544217307407],
-  [21.040547104689804, 105.78544217307407]
+// var ktxA5 = L.polygon([
+//   [21.040547104689804, 105.78535637607521],
+//   [21.040717201438433, 105.78536173838764],
+//   [21.04071219859566, 105.78561912938419],
+//   [21.04072720712347, 105.78561912938419],
+//   [21.04072720712347, 105.78569420175819],
+//   [21.040709697174197, 105.78569420175819],
+//   [21.040702192909603, 105.78595159275474],
+//   [21.040532096143824, 105.78594623044232],
+//   [21.04053459756825, 105.78585775228727],
+//   [21.04057211892973, 105.78585507113105],
+//   [21.040582124624514, 105.78544217307407],
+//   [21.040547104689804, 105.78544217307407]
 
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivA5 = document.getElementById('infoDivA5');
-
-ktxA5.on('click', function () {
-  document.getElementById('infoDivA5').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivA5');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivA5 = document.getElementById('infoDivA5');
-    infoDivA5.style.display = 'none';
-  });
-});
+// ], {
+//   opacity: 0,        
+//   fillOpacity: 0     
+// }).addTo(mymap);
 
 
-mymap.on('click', function (e) {
-  if (!ktxA5.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivA5').style.display = 'none';
-  }
-});
+// var infoDivA5 = document.getElementById('infoDivA5');
 
-function openGoogleMapsForA5() {
-  var latitude = 21.040557663003472; 
-  var longitude = 105.78565049910145; 
+// ktxA5.on('click', function () {
+//   document.getElementById('infoDivA5').style.display = 'block';
+// });
 
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+// document.addEventListener('DOMContentLoaded', function () {
+//   var closeButton = document.getElementById('closeinfoDivA5');
 
-  window.open(googleMapsUrl, '_blank');
-}
+//   closeButton.addEventListener('click', function () {
+//     var infoDivA5 = document.getElementById('infoDivA5');
+//     infoDivA5.style.display = 'none';
+//   });
+// });
 
-function toggleInfoDivA5() {
-  var infoDiv = document.getElementById('infoDivA5');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  ktxA5.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
 
-  setTimeout(function () {
-    ktxA5.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.040557663003472, 105.78565049910145], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
+// mymap.on('click', function (e) {
+//   if (!ktxA5.getBounds().contains(e.latlng)) {
+//     document.getElementById('infoDivA5').style.display = 'none';
+//   }
+// });
+
+// function openGoogleMapsForA5() {
+//   var latitude = 21.040557663003472; 
+//   var longitude = 105.78565049910145; 
+
+//   var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
+
+//   window.open(googleMapsUrl, '_blank');
+// }
+
+// function toggleInfoDivA5() {
+//   var infoDiv = document.getElementById('infoDivA5');
+//   if (infoDiv.style.display === 'block') {
+//     infoDiv.style.display = 'none';
+//   } else {
+//     setTimeout(function() {
+//       infoDiv.style.display = 'block';
+//     }, 3000);
+//   }
+//   ktxA5.setStyle({
+//     opacity: 0.8,
+//     fillOpacity: 0.2
+//   });
+
+//   setTimeout(function () {
+//     ktxA5.setStyle({
+//       opacity: 0,
+//       fillOpacity: 0
+//     });
+//   }, 3000);
+//   mymap.flyTo([21.040557663003472, 105.78565049910145], 19, {
+//     duration: 2, 
+//     animate: true,
+//     easeLinearity: 0.5
+//   });
+//   toggleHide();
+// }
 
 // Info kí túc xá A6
 var ktxA6 = L.polygon([

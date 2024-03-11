@@ -103,6 +103,23 @@ body, html {
   cursor: pointer;
 }
 
+#show-more {
+  width: 60%;
+  height: 45px;
+  margin: 0 auto; 
+  margin-top: 12px;
+  display: block; 
+  background: linear-gradient(to right, #025891, #2082d9);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+}
+
+#show-more:hover {
+  background: #2185D0;
+}
+
 #blue-div:hover {
   background: #2185D0;
 }
@@ -145,6 +162,10 @@ body, html {
   cursor: pointer;
 }
 
+.pre {
+  white-space: pre-wrap;
+}
+
 #welcome-text {
   position: absolute;
   bottom: -20px;
@@ -161,6 +182,24 @@ body, html {
   cursor: default;
   animation: zoomAnimation 0.7s infinite alternate;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+}
+
+@keyframes imgScaleAnimation {
+  0% {
+      transform: scale(1);
+  }
+  25% {
+      transform: scale(1.3);
+  }
+  50% {
+      transform: scale(1);
+  }
+  75% {
+    transform: scale(1.3);
+  }
+  100% {
+      transform: scale(1);
+  }
 }
 
 @keyframes zoomAnimation {
@@ -227,7 +266,7 @@ body, html {
   height: 100%;
   z-index: 100000; 
   display: none;
-  padding: 15px;
+  padding: 0px;
   border-radius: 8px;
   border: 1px solid #ccc;
   background-color: #f0f2f5;
@@ -295,7 +334,7 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 120px;
 }
 
 .infoDiv .toolbar .close {
@@ -330,14 +369,28 @@ body, html {
   background: url(../source-img/direct.svg);
   background-size: contain;  
   background-repeat: no-repeat;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   border: none;
   background-color: #fff;
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  left: 115px;
+  top: 14px;
+  left: 270px;
+}
+
+.infoDiv .toolbar .direct-btn-ggm {
+  background: url(../source-img/direct.svg);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 47px;
+  left: 270px;
 }
 
 .infoDiv .toolbar .tim-duong {
@@ -350,26 +403,36 @@ body, html {
   cursor: default;
 }
 
+.infoDiv .toolbar .tim-duong-ggm {
+  font-size: 15px; 
+  color: #000; 
+  font-weight: bold;
+  left: 15px; 
+  position: absolute; 
+  top: 50px;
+  cursor: default;
+}
+
 .infoDiv .toolbar .dong-gop {
   font-size: 15px; 
   color: #000; 
   font-weight: bold;
-  left: 40%; 
+  left: 15px; 
   position: absolute; 
-  top: 16px;
+  top: 84px;
   cursor: default;
 }
 
 .infoDiv .toolbar .send-feedback {
-  height: 35px; 
+  height: 25px; 
   position: absolute; 
-  top: 10px; 
-  left: calc(40% + 100px);
+  top: 82px; 
+  left: 270px;
   cursor: pointer;
 }
 
 .infoDiv .content {
-  margin-top: 40px;
+  margin-top: 105px;
 }
 
 .infoDiv .building-name {
@@ -488,7 +551,7 @@ body, html {
 }
 
 .darken {
-  filter: brightness(0.9);
+  filter: brightness(0.3);
 }
 
 .creat-post-span {
@@ -578,6 +641,7 @@ body, html {
   font-size: 13px;
   word-wrap: break-word;
   cursor: default;
+  white-space: pre-wrap;
 }
 
 .show-post .post-image {
@@ -664,17 +728,17 @@ body, html {
   position: absolute; 
   left: 20%; 
   top: 5px;
-  z-index: 5000;
+  z-index: 200000;
 }
 
 .show-post {
-  width: 62%; 
+  width: 60%; 
   border-radius: 15px; 
   height: 570px; 
   background-color: #fff; 
   border: 1px solid #e4e6e9; 
   position: relative; 
-  left: 19%; 
+  left: 20%; 
   margin-top: 10px;
 }
 
@@ -685,7 +749,7 @@ body, html {
   background-color: transparent; 
   position: relative; 
   left: 0; 
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .show-post #line {
@@ -944,6 +1008,17 @@ body, html {
   bottom: 7px;
   border-radius: 15px;
   padding-left: 10px;
+  border: 1.5px solid #65676b;
+}
+
+.comment-input:hover {
+  border: 1.5px solid #2185D0; 
+}
+
+.comment-input:focus {
+  border-color: #2185D0;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
 }
 
 .comment-button {
@@ -955,6 +1030,10 @@ body, html {
   border: none;
   background-color: transparent;
   background-image: url(../source-img/paper-plane.svg);
+}
+
+.comment-button:hover {
+  transform: scale(1.2);
 }
 
 .comment-container {
@@ -1007,6 +1086,7 @@ body, html {
   font-size: 13px;
   height: 60px;
   cursor: default;
+  white-space: pre-wrap;
 }
 
 #search-input-container {
@@ -1579,8 +1659,8 @@ body, html {
     left: 120px;
   }
   #post-div {
-    width: 90%;  
-    left: 5%; 
+    width: 98%;  
+    left: 1%; 
     top: 30px;
   }
   #enter-post {
@@ -1588,10 +1668,17 @@ body, html {
     left: 5%; 
     top: 30px;
   }
+  #show-more {
+    margin-top: 45px;
+    width: 98%;
+  }
   .show-post {
     width: 98%;
     left: 1%;
     top: 30px;
+  }
+  .show-post .post-image {
+    top: 160px;
   }
 
   .sidebar

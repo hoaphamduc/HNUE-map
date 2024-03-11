@@ -26,107 +26,155 @@
 document.addEventListener('DOMContentLoaded', function () {
   const sidebar = document.querySelector('.sidebar');
   const btn = document.getElementById('menu-btn');
-  const homeContent = document.querySelector('.main_content');
+  const homeContent = document.getElementById('main-content');
 
   btn.addEventListener('click', function () {
       sidebar.classList.toggle('show');
       homeContent.classList.toggle('show');
-});
+  });
 });
 
+// Lưu trữ cài đặt ngôn ngữ hiện tại
+let isEnglish = false;
 const languageToggle = document.getElementById('language-toggle');
-const contentVN = document.querySelectorAll('.contentVN');
-const contentEnglish = document.querySelectorAll('.contentEnglish');
 
-languageToggle.addEventListener('change', function() {
-  const isChecked = this.checked;
+// Lấy danh sách các phần tử contentVN và contentEnglish khi trang được tải
+let contentVN = document.querySelectorAll('.contentVN');
+let contentEnglish = document.querySelectorAll('.contentEnglish');
 
+// Hàm để cập nhật ngôn ngữ cho danh sách các phần tử
+function updateLanguage() {
   contentVN.forEach(item => {
-    item.style.display = isChecked ? 'none' : 'block';
+    item.style.display = isEnglish ? 'none' : 'block';
   });
 
   contentEnglish.forEach(item => {
-    item.style.display = isChecked ? 'block' : 'none';
+    item.style.display = isEnglish ? 'block' : 'none';
   });
+}
+
+// Hàm xử lý sự kiện khi toggle thay đổi
+function handleToggleChange(isChecked) {
+  isEnglish = isChecked;
+  updateLanguage();
+}
+
+// Tạo một MutationObserver để theo dõi thay đổi trong DOM
+const observer = new MutationObserver(() => {
+  // Cập nhật danh sách phần tử khi có thay đổi trong DOM
+  contentVN = document.querySelectorAll('.contentVN');
+  contentEnglish = document.querySelectorAll('.contentEnglish');
+  updateLanguage();
 });
 
-var mymap = L.map('map', {
-    zoomControl: false
-  }).fitWorld().setView([21.037138, 105.783182], 17);
+// Thêm lắng nghe cho sự kiện thay đổi trong DOM
+observer.observe(document.body, { subtree: true, childList: true });
 
+// Lắng nghe sự kiện thay đổi khi toggle được thay đổi
+languageToggle.addEventListener('change', function () {
+  const isChecked = this.checked;
+  handleToggleChange(isChecked);
+});
+
+// Initialize Leaflet map
+var mymap = L.map('map', {
+  zoomControl: false
+}).fitWorld().setView([21.037635818709738, 105.78335434198381], 18);
+
+// Add OpenStreetMap layer
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  maxZoom: 19,
+  attribution: '&copy; Nhóm nghiên cứu khoa học năm 2024'
 }).addTo(mymap);
 
-var maxBounds = L.latLngBounds(
-  L.latLng(21.027863833645036, 105.7683849334717),   // Tọa độ góc trái dưới của giới hạn
-  L.latLng(21.04615122410683, 105.79756736755371)    // Tọa độ góc phải trên của giới hạn
-);
+// // Add Max Bounds
+// var maxBounds = L.latLngBounds(
+//   L.latLng(21.027863833645036, 105.7683849334717),
+//   L.latLng(21.04615122410683, 105.79756736755371)
+// );
 
-mymap.setMaxBounds(maxBounds);
-mymap.on('drag', function() {
-  mymap.panInsideBounds(maxBounds, { animate: false });
-});
+// mymap.setMaxBounds(maxBounds);
+// mymap.on('drag', function () {
+//   mymap.panInsideBounds(maxBounds, { animate: false });
+// });
 
-// Fit bounds to the maximum bounds
-mymap.fitBounds(maxBounds);
+// mymap.fitBounds(maxBounds);
 
 var zoomControl = L.control.zoom({
-  position: 'bottomright' 
+  position: 'bottomright'
 });
 zoomControl.addTo(mymap);
 
+// function initRoutingControl(destinationCoordinates) {
+//   if (typeof L.Routing !== 'undefined') {
+//     // Custom Vietnamese translation
+//     L.Routing.Localization['vi'] = {
+//       directions: {
+//         north: 'Bắc',
+//         northeast: 'Đông Bắc',
+//         east: 'Đông',
+//         southeast: 'Đông Nam',
+//         south: 'Nam',
+//         southwest: 'Tây Nam',
+//         west: 'Tây',
+//         northwest: 'Tây Bắc',
+//       },
+//       instructions: {
+//         continue: 'Tiếp tục',
+//         turn: 'Rẽ',
+//         name: 'Tên',
+//         destination: 'Đến',
+//         distance: 'Khoảng cách',
+//         duration: 'Thời gian',
+//       },
+//       travelMode: {
+//         car: 'Xe ô tô',
+//         bicycle: 'Xe đạp',
+//         foot: 'Đi bộ',
+//       },
+//     };
 
-if (navigator.permissions) {
-  navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
-    if (result.state === 'granted') {
-      // Đã có quyền truy cập vị trí, thực hiện các hành động cần thiết ở đây
+//     var currentLocation = mymap.getCenter();
 
-      var marker;
+//     var routingControl = L.Routing.control({
+//       waypoints: [
+//         currentLocation,
+//         L.latLng(destinationCoordinates[0], destinationCoordinates[1])
+//       ],
+//       routeWhileDragging: true,
+//       routeDragTimeout: 250,
+//       reverseWaypoints: true,
+//       showAlternatives: true,
+//       altLineOptions: {
+//         styles: [
+//           { color: 'black', opacity: 0.15, weight: 9 },
+//           { color: 'white', opacity: 0.8, weight: 6 },
+//           { color: 'blue', opacity: 0.5, weight: 2 }
+//         ]
+//       },
+//       position: 'topleft', // Đặt vị trí của bảng điều khiển ở góc trên bên trái
+//       language: 'vi', // Đặt ngôn ngữ sang tiếng Việt
+//     }).addTo(mymap);
+//   } else {
+//     console.error("LRM library not loaded!");
+//   }
+// }
 
-      // Hàm để cập nhật vị trí trên bản đồ
-      function updateMap(position) {
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
 
-        // Kiểm tra xem marker đã được tạo hay chưa
-        if (marker) {
-          marker.setLatLng([lat, lon]).update();
-        } else {
-          marker = L.marker([lat, lon]).addTo(mymap).openPopup();
-        }
-      }
 
-      // Sử dụng hàm watchPosition để liên tục theo dõi vị trí
-      var watchId = navigator.geolocation.watchPosition(
-        function (position) {
-          updateMap(position);
-        },
-        function (error) {
-          console.log('Error getting geolocation:', error.message);
-        }
-      );
 
-    } else if (result.state === 'prompt') {
-      // Chưa có quyền truy cập vị trí, hiển thị cửa sổ yêu cầu quyền
-      navigator.geolocation.getCurrentPosition(
-        function (position) {
-          // Lưu trạng thái đã được cấp quyền
-          navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
-            if (result.state === 'granted') {
-              // Thực hiện các hành động cần thiết khi đã được cấp quyền
-              updateMap(position);
-            }
-          });
-        },
-        function (error) {
-          console.log('Error getting geolocation:', error.message);
-        }
-      );
-    }
+
+
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function (position) {
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
+    L.marker([lat, lon]).addTo(mymap)
+      .bindPopup('Vị trí của bạn').openPopup();
+  }, function (error) {
+    console.log('Error getting geolocation:', error.message);
   });
-} else {
+  } else {
   console.log('Geolocation is not supported by this browser.');
 }
 

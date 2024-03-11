@@ -34,7 +34,6 @@ function openCommentAction(postId) {
     commentActionDiv.classList.add('comment-action');
     commentActionDiv.id = `comment-action-${postId}`;
     commentActionDiv.style.display = 'none';
-    console.log(commentActionDiv.id);
 
     // Set the content of the comment-action div
     commentActionDiv.innerHTML = `
@@ -43,7 +42,7 @@ function openCommentAction(postId) {
       <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; top: 50px;"></div>
       <div class="comment-container" id="comment-container-${postId}"></div>
       <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; bottom: 50px;"></div>
-      <input type="text" placeholder="Add a comment..." class="comment-input" id="comment-input-${postId}">
+      <input type="text" placeholder="Để lại bình luận của bạn..." class="comment-input" id="comment-input-${postId}">
       <button class="comment-button" onclick="addComment('${postId}')"></button>
     `;
     
@@ -69,7 +68,7 @@ function hideCommentAction(postId) {
 document.addEventListener('DOMContentLoaded', function () {
     const sidebar = document.querySelector('.sidebar');
     const btn = document.getElementById('menu-btn');
-    const homeContent = document.querySelector('.main_content');
+    const homeContent = document.getElementById('main-content');
   
     btn.addEventListener('click', function () {
         sidebar.classList.toggle('show');
@@ -77,20 +76,46 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Lưu trữ cài đặt ngôn ngữ hiện tại
+let isEnglish = false;
 const languageToggle = document.getElementById('language-toggle');
-const contentVN = document.querySelectorAll('.contentVN');
-const contentEnglish = document.querySelectorAll('.contentEnglish');
 
-languageToggle.addEventListener('change', function() {
-  const isChecked = this.checked;
+// Lấy danh sách các phần tử contentVN và contentEnglish khi trang được tải
+let contentVN = document.querySelectorAll('.contentVN');
+let contentEnglish = document.querySelectorAll('.contentEnglish');
 
+// Hàm để cập nhật ngôn ngữ cho danh sách các phần tử
+function updateLanguage() {
   contentVN.forEach(item => {
-    item.style.display = isChecked ? 'none' : 'block';
+    item.style.display = isEnglish ? 'none' : 'block';
   });
 
   contentEnglish.forEach(item => {
-    item.style.display = isChecked ? 'block' : 'none';
+    item.style.display = isEnglish ? 'block' : 'none';
   });
+}
+
+// Hàm xử lý sự kiện khi toggle thay đổi
+function handleToggleChange(isChecked) {
+  isEnglish = isChecked;
+  updateLanguage();
+}
+
+// Tạo một MutationObserver để theo dõi thay đổi trong DOM
+const observer = new MutationObserver(() => {
+  // Cập nhật danh sách phần tử khi có thay đổi trong DOM
+  contentVN = document.querySelectorAll('.contentVN');
+  contentEnglish = document.querySelectorAll('.contentEnglish');
+  updateLanguage();
+});
+
+// Thêm lắng nghe cho sự kiện thay đổi trong DOM
+observer.observe(document.body, { subtree: true, childList: true });
+
+// Lắng nghe sự kiện thay đổi khi toggle được thay đổi
+languageToggle.addEventListener('change', function () {
+  const isChecked = this.checked;
+  handleToggleChange(isChecked);
 });
 
 var mymap = L.map('map', {
@@ -99,77 +124,38 @@ var mymap = L.map('map', {
 
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: '&copy; Nhóm nghiên cứu khoa học năm 2024'
 }).addTo(mymap);
 
-var maxBounds = L.latLngBounds(
-  L.latLng(21.027863833645036, 105.7683849334717),   // Tọa độ góc trái dưới của giới hạn
-  L.latLng(21.04615122410683, 105.79756736755371)    // Tọa độ góc phải trên của giới hạn
-);
+// var maxBounds = L.latLngBounds(
+//   L.latLng(21.027863833645036, 105.7683849334717),   // Tọa độ góc trái dưới của giới hạn
+//   L.latLng(21.04615122410683, 105.79756736755371)    // Tọa độ góc phải trên của giới hạn
+// );
 
-mymap.setMaxBounds(maxBounds);
-mymap.on('drag', function() {
-    mymap.panInsideBounds(maxBounds, { animate: false });
-});
+// mymap.setMaxBounds(maxBounds);
+// mymap.on('drag', function() {
+//     mymap.panInsideBounds(maxBounds, { animate: false });
+// });
 
-// Fit bounds to the maximum bounds
-mymap.fitBounds(maxBounds);
+// // Fit bounds to the maximum bounds
+// mymap.fitBounds(maxBounds);
 
 var zoomControl = L.control.zoom({
   position: 'bottomright' 
 });
 zoomControl.addTo(mymap);
 
-if (navigator.permissions) {
-    navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
-      if (result.state === 'granted') {
-        // Đã có quyền truy cập vị trí, thực hiện các hành động cần thiết ở đây
-  
-        var marker;
-  
-        // Hàm để cập nhật vị trí trên bản đồ
-        function updateMap(position) {
-          var lat = position.coords.latitude;
-          var lon = position.coords.longitude;
-  
-          // Kiểm tra xem marker đã được tạo hay chưa
-          if (marker) {
-            marker.setLatLng([lat, lon]).update();
-          } else {
-            marker = L.marker([lat, lon]).addTo(mymap).openPopup();
-          }
-        }
-  
-        // Sử dụng hàm watchPosition để liên tục theo dõi vị trí
-        var watchId = navigator.geolocation.watchPosition(
-          function (position) {
-            updateMap(position);
-          },
-          function (error) {
-            console.log('Error getting geolocation:', error.message);
-          }
-        );
-  
-      } else if (result.state === 'prompt') {
-        // Chưa có quyền truy cập vị trí, hiển thị cửa sổ yêu cầu quyền
-        navigator.geolocation.getCurrentPosition(
-          function (position) {
-            // Lưu trạng thái đã được cấp quyền
-            navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
-              if (result.state === 'granted') {
-                // Thực hiện các hành động cần thiết khi đã được cấp quyền
-                updateMap(position);
-              }
-            });
-          },
-          function (error) {
-            console.log('Error getting geolocation:', error.message);
-          }
-        );
-      }
-    });
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function (position) {
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
+    L.marker([lat, lon]).addTo(mymap)
+      .bindPopup('Vị trí của bạn').openPopup();
+  }, function (error) {
+    console.log('Error getting geolocation:', error.message);
+  });
   } else {
-    console.log('Geolocation is not supported by this browser.');
+  console.log('Geolocation is not supported by this browser.');
 }
 
 // Lấy tọa độ khi click
@@ -178,41 +164,6 @@ mymap.on('click', function (e) {
     var lng = e.latlng.lng;
     console.log('Latitude: ' + lat + ', Longitude: ' + lng);
 });
-
-// var HNUE = L.polygon([
-//   [21.03683472026718, 105.78238070011139],
-//   [21.036717058570588, 105.78593999147417],
-//   [21.041263238673896, 105.78608751296998],
-//   [21.041273252133305, 105.78533113002779],
-//   [21.041135567007366, 105.78532844781877],
-//   [21.04114307710843, 105.78477323055269],
-//   [21.04100539186213, 105.78476786613466],
-//   [21.04101790870796, 105.78408926725389],
-//   [21.040529750941104, 105.7840731739998],
-//   [21.040552281334804, 105.78333020210268],
-//   [21.03919043808257, 105.78331410884859],
-//   [21.039202955080917, 105.78286081552507],
-//   [21.03906777144307, 105.78285008668901],
-//   [21.039066708368225, 105.78264958239745],
-//   [21.038574600464806, 105.78263819217683],
-//   [21.038544559540274, 105.78373789787294],
-//   [21.037650839264398, 105.78371107578279],
-//   [21.03768088036915, 105.78224658966066],
-//   [21.0374863675158, 105.78223942477054],
-//   [21.0374863675158, 105.78236817080327],
-//   [21.03722775972886, 105.78235924243927],
-//   [21.03722525629609, 105.78239142894745]
-// ], {
-//   opacity: 1,        
-//   fillOpacity: 0.1
-// }).addTo(mymap);
-
-// var welcomeText = document.getElementById('welcome-text');
-
-// setTimeout(function () {
-//   mymap.removeLayer(HNUE);
-//   welcomeText.style.display = 'none';
-// }, 7000); 
 
 var directionBoard = document.getElementById('direction-board');
 var directionArrow = document.getElementById('directionArrow');
@@ -376,11 +327,45 @@ function hideSocialNetworkDiv() {
 function hideEnterPostDiv() {
   var enterPost = document.getElementById("enter-post");
   enterPost.style.display = "none";
+  var socialDiv = document.getElementById("social-network-div");
+  socialDiv.classList.remove("darken");
 }
+
+document.addEventListener("click", function(event) {
+  var enterPost = document.getElementById("enter-post");
+  var socialDiv = document.getElementById("social-network-div");
+
+  if (!enterPost.contains(event.target) && event.target.id !== "openEnterDiv" && event.target.id !== "textVN" && event.target.id !== "textEN") {
+    enterPost.style.display = "none";
+    socialDiv.classList.remove("darken");
+  }
+});
+
+// function handleEnterKeyVN(event) {
+//   if (event.key === 'Enter') {
+//       const textarea = document.getElementById('statusVN');
+//       const cursorPos = textarea.selectionStart;
+//       const textBefore = textarea.value.substring(0, cursorPos);
+//       const textAfter = textarea.value.substring(cursorPos);
+//       textarea.value = textBefore + '<br>' + textAfter;
+//   }
+// }
+
+// function handleEnterKeyEN(event) {
+//   if (event.key === 'Enter') {
+//       const textarea = document.getElementById('statusEng');
+//       const cursorPos = textarea.selectionStart;
+//       const textBefore = textarea.value.substring(0, cursorPos);
+//       const textAfter = textarea.value.substring(cursorPos);
+//       textarea.value = textBefore + '<br>' + textAfter;
+//   }
+// }
 
 function openEnterPostDiv() {
   var enterPost = document.getElementById("enter-post");
   enterPost.style.display = "block";
+  var socialDiv = document.getElementById("social-network-div");
+  socialDiv.classList.add("darken");
 }
 
 

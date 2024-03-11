@@ -93,9 +93,12 @@ document.getElementById('post-status').addEventListener('click', async function(
       // Collect status content
       const statusVN = document.getElementById('statusVN').value;
       const statusEng = document.getElementById('statusEng').value;
-      status = statusVN;
+      const encodedStrVN = statusVN.replace(/[\u00A0-\u9999<>\&]/g, i => '&#'+i.charCodeAt(0)+';')
+      const encodedStrEN = statusEng.replace(/[\u00A0-\u9999<>\&]/g, i => '&#'+i.charCodeAt(0)+';')
+
+      status = encodedStrVN;
       if (isDisplayedBlock(document.getElementById('statusEng'))) {
-          status = statusEng;
+          status = encodedStrEN;
       }
 
       // Collect address and location (optional)
@@ -111,22 +114,19 @@ document.getElementById('post-status').addEventListener('click', async function(
       }
 
       // Check for inappropriate words in the status
-      const inappropriateWords = ['địt', 'lồn', 'mẹ mày', 'vãi', 'vcl', 'đm', 'đmm' , 
-                                  'dm', 'duma', 'Đuma', 'dmm', 'lon', 'dit', 'me may', 
-                                  'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'tình dục', 
-                                  'xuất tinh', 'đụ', 'chơi gái', 'choi gai', 'bulon', 
-                                  'cac', 'cặc', 'nwngs', 'loz', 'buoi',
-                                  'fuck', 'bitch', 'như l', 'lz', "đụ", "địt", "lồn", "cặc", "buồi", "đĩ", "địt mẹ", "địt con mẹ", "địt mẹ mày", "đụ má", "đụ má mày", "đụ con mẹ mày", "lỗ l", "cặc bò", "lồn buồi", "lồn cặc", "buồi lồn", "buồi địt", "buồi má", "đĩ mẹ", "đĩ con", "đĩ mẹ mày", "đĩ con mẹ mày", "đĩ mẹ má", "đĩ con mẹ má", "địt mẹ má", "địt con mẹ má", "đụ mẹ má", "đụ con mẹ má", "địt má", "địt con", "địt mẹ con", "địt má con", "địt mẹ má con", "đụ má con", "đụ mẹ con", "đụ má mày", "địt mày", "địt con mày", "địt mẹ mày", "địt mẹ mày", "đụ mẹ mày", "đụ mày", "đụ con mày", "lỗ l", "đụ má", "đụ má mày", "đụ con mẹ mày", "lỗ l", "cặc bò", "lồn buồi", "lồn cặc", "buồi lồn", "buồi địt", "buồi má", "đĩ mẹ", "đĩ con", "đĩ mẹ mày", "đĩ con mẹ mày", "đĩ mẹ má", "đĩ con mẹ má", "địt mẹ má", "địt con mẹ má", "đụ mẹ má", "đụ con mẹ má", "địt má", "địt con", "địt mẹ con", "địt má con", "địt mẹ má con", "đụ má con", "đụ mẹ con", "đụ má mày", "địt mày", "địt con mày", "địt mẹ mày", "địt mẹ mày", "đụ mẹ mày", "đụ mày", "đụ con mày", "đụ má", "đụ má mày", "đụ con mẹ mày", "lỗ l", "cặc bò", "lồn buồi", "lồn cặc", "buồi lồn", "buồi địt", "buồi má", "đĩ mẹ", "đĩ con", "đĩ mẹ mày", "đĩ con mẹ mày", "đĩ mẹ má", "đĩ con mẹ má", "địt mẹ má", "địt con mẹ má", "đụ mẹ má", "đụ con mẹ má", "địt má", "địt con", "địt mẹ con", "địt má con", "địt mẹ má con", "đụ má con", "đụ mẹ con", "đụ má mày", "địt mày", "địt con mày", "địt mẹ mày", "địt mẹ mày", "đụ mẹ mày", "đụ mày", "đụ con mày", "lỗ l", "đụ má", "đụ má mày", "đụ con mẹ mày", "lỗ l", "cặc bò", "lồn buồi", "lồn cặc", "buồi lồn", "buồi địt", "buồi má", "đĩ mẹ", "đĩ con", "đĩ mẹ mày", "đĩ con mẹ mày", "đĩ mẹ má", "đĩ con mẹ má", "địt mẹ má", "địt con mẹ má", "đụ mẹ má", "đụ con mẹ má", "địt má", "địt con", "địt mẹ con", "địt má con", "địt mẹ má con", "đụ má con", "đụ mẹ con", "đụ má mày", "địt mày", "địt con mày", "địt mẹ mày", "địt mẹ mày", "đụ mẹ mày", "đụ mày", "đụ con mày", "lỗ l",
-                                  "fuck", "shit", "asshole", "bitch", "motherfucker", "cunt", "dick", "cock", "pussy", "bastard",
-                                  "ass", "wanker", "twat", "bollocks", "crap", "damn", "hell", "arsehole", "bloody", "bugger", 
-                                  "arse", "bellend", "prick", "shithead", "slut", "wank", "whore", "sod off", "screw you", 
-                                  "son of a bitch", "douchebag", "crap", "goddamn", "asswipe", "dipshit", "jackass", "piss off", 
-                                  "bastard", "piss", "suck", "motherfucking", "bollox", "tosser", "fanny", "knobhead", "motherfucker",
-                                  "motherfucking", "motherfuck", "motherfuckers", "motherfucked", "motherfucker's", "motherfuckings" ];
+      const inappropriateWords = [
+        'địt', 'lồn', 'mẹ mày', 'vãi', 'vcl', 'đm', 'đmm',
+        'dm', 'duma', 'Đuma', 'dmm', 'lon', 'dit', 'me may',
+        'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'đụ', 'chơi gái', 'choi gai', 'bulon',
+        'cac', 'cặc', 'nwngs', 'loz', 'buoi'
+      ];
 
-      if (containsInappropriateWords(status, inappropriateWords)) {
-          alert('Nội dung chứa từ ngữ không phù hợp. Vui lòng kiểm tra lại!');
-          return;
+      const inappropriateWordsFound = findInappropriateWords(status, inappropriateWords);
+
+      if (inappropriateWordsFound.length > 0) {
+      const message = 'Nội dung chứa các từ ngữ không phù hợp: ' + inappropriateWordsFound.join(', ');
+      alert(message);
+      return;
       }
 
       location = locationEng;
@@ -176,6 +176,8 @@ document.getElementById('post-status').addEventListener('click', async function(
       
       // Display success message if status is updated successfully
       alert('Bạn đã đăng bài thành công!');
+      var socialDiv = document.getElementById("social-network-div");
+      socialDiv.classList.remove("darken");
       loadPosts();
       document.getElementById('statusVN').value = '';
       document.getElementById('statusEng').value = '';
@@ -194,16 +196,19 @@ document.getElementById('post-status').addEventListener('click', async function(
   }
 });
 
-// Function to check if a string contains inappropriate words
-function containsInappropriateWords(text, inappropriateWords) {
-  const lowercasedText = text.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
-  for (const word of inappropriateWords) {
-    var newWord = word.toLowerCase();
-      if (lowercasedText.includes(newWord)) {
-          return true;
+// Function to find inappropriate words in the status
+function findInappropriateWords(status, inappropriateWords) {
+  const foundWords = [];
+  const wordsInStatus = status.split(/\s+/); // Split the status into words
+
+  wordsInStatus.forEach(word => {
+      // Check if the word is in the list of inappropriate words
+      if (inappropriateWords.includes(word.toLowerCase())) {
+          foundWords.push(word);
       }
-  }
-  return false;
+  });
+
+  return foundWords;
 }
 
 function resetImageInput() {
@@ -393,10 +398,11 @@ async function loadPosts() {
             <div class="comment-container" id="comment-container-${post.postId}">
             </div>
             <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; bottom: 50px;"></div>
-            <input type="text" placeholder="Add a comment..." class="comment-input" id="comment-input-${post.postId}">
+            <input type="text" placeholder="Để lại bình luận của bạn..." class="comment-input" id="comment-input-${post.postId}">
             <button class="comment-button addComment" data='${post.postId}'"></button>
           </div>
         `;
+        // postDiv.querySelector('.post-text-status').textContent = post.status;
         const commentBox = postDiv.querySelector('.comment-post');
 
         // Bind the click event directly to the specific comment box
@@ -406,11 +412,6 @@ async function loadPosts() {
         boxes.forEach(box => {
           box.addEventListener('click', addComment);
         });
-        // const boxes2 = Array.from(document.getElementsByClassName('comment-post'));
-        // boxes2.forEach(box => {
-        //   const postId = box.getAttribute('data-postid');
-        //   box.addEventListener('click', () => getCommentsForPost(postId));
-        // });
       }
     }
   } catch (error) {
@@ -438,29 +439,31 @@ function addComment(e) {
   var postId = e.target.getAttribute('data');
   // Get the input element based on the postId
   const inputElement = document.getElementById(`comment-input-${postId}`);
-  const user = auth.currentUser; 
+  const user = auth.currentUser;
 
-  
   // Get the new comment text from the input element
   const newCommentText = inputElement.value;
 
-  // Check if the comment is not empty
+  // Check if the comment is not empty and does not exceed 500 characters
   if (newCommentText.trim() !== '') {
-    const commentId = Math.random().toString(36).substr(2, 10);
-    // Prepare the comment object
-    const commentData = {
-      commentId: commentId,
-      username: user.displayName || '',
-      avatarURL: user.photoURL || '',
-      text: newCommentText,
-      timestamp: new Date().getTime()
-    };
+    if (newCommentText.length <= 470) {
+      // Prepare the comment object
+      const commentData = {
+        username: user.displayName || '',
+        avatarURL: user.photoURL || '',
+        text: newCommentText,
+        timestamp: new Date().getTime()
+      };
 
-    // Save the comment data to the database
-    saveCommentToDatabase(postId, commentData);
+      // Save the comment data to the database
+      saveCommentToDatabase(postId, commentData);
 
-    // Clear the input field after saving the comment
-    inputElement.value = '';
+      // Clear the input field after saving the comment
+      inputElement.value = '';
+    } else {
+      // Handle the case where the comment exceeds 500 characters
+      alert('Chỉ được bình luận tối đa 470 kí tự.');
+    }
   } else {
     // Handle the case where the comment is empty
     console.log('Comment cannot be empty');
@@ -496,24 +499,36 @@ function getCommentsForPost(postId) {
     const commentsData = snapshot.val();
 
     // Hiển thị bình luận
-    commentContainer.innerHTML = '';
     // Gọi hàm để đếm số lượng bình luận và cập nhật vào span
     updateCommentCount(postId);
+
+    // Xoá toàn bộ nội dung bình luận cũ
+    commentContainer.innerHTML = '';
 
     if (!commentsData) {
       console.error("No comments found for postId:", postId);
       return;
     }
 
+    // Lưu trữ danh sách các commentId đã hiển thị để tránh hiển thị trùng lặp
+    const displayedComments = [];
+
     Object.keys(commentsData).forEach((commentId) => {
-      const comment = commentsData[commentId];
-      const commentElement = createCommentElement(comment);
-      commentContainer.appendChild(commentElement);
+      if (!displayedComments.includes(commentId)) {
+        const comment = commentsData[commentId];
+        const commentElement = createCommentElement(comment);
+        commentContainer.appendChild(commentElement);
+
+        // Thêm commentId vào danh sách đã hiển thị
+        displayedComments.push(commentId);
+      }
     });
   }, (error) => {
     console.error("Error fetching comments:", error);
   });
 }
+
+
 
 
 function createCommentElement(comment) {
