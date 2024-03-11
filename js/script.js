@@ -79,7 +79,7 @@ languageToggle.addEventListener('change', function () {
 // Initialize Leaflet map
 var mymap = L.map('map', {
   zoomControl: false
-}).fitWorld().setView([21.037138, 105.783182], 17);
+}).fitWorld().setView([21.037635818709738, 105.78335434198381], 18);
 
 // Add OpenStreetMap layer
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -87,41 +87,54 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
   attribution: '&copy; Nhóm nghiên cứu khoa học năm 2024'
 }).addTo(mymap);
 
-// Add Max Bounds
-var maxBounds = L.latLngBounds(
-  L.latLng(21.027863833645036, 105.7683849334717),
-  L.latLng(21.04615122410683, 105.79756736755371)
-);
+// // Add Max Bounds
+// var maxBounds = L.latLngBounds(
+//   L.latLng(21.027863833645036, 105.7683849334717),
+//   L.latLng(21.04615122410683, 105.79756736755371)
+// );
 
-mymap.setMaxBounds(maxBounds);
-mymap.on('drag', function () {
-  mymap.panInsideBounds(maxBounds, { animate: false });
-});
+// mymap.setMaxBounds(maxBounds);
+// mymap.on('drag', function () {
+//   mymap.panInsideBounds(maxBounds, { animate: false });
+// });
 
-mymap.fitBounds(maxBounds);
+// mymap.fitBounds(maxBounds);
 
 var zoomControl = L.control.zoom({
   position: 'bottomright'
 });
 zoomControl.addTo(mymap);
 
-function initRoutingControl() {
-  if (typeof L.Routing !== 'undefined') {
-      var routingControl = L.Routing.control({
-        waypoints: [
-            L.latLng(51.505, -0.09),
-            L.latLng(51.515, -0.105)
-        ],
-        routeWhileDragging: true
-      }).addTo(mymap);
-  } else {
-      console.error("LRM library not loaded!");
-  }
-}
-
 // function initRoutingControl(destinationCoordinates) {
 //   if (typeof L.Routing !== 'undefined') {
-//     var currentLocation = mymap.getCenter(); 
+//     // Custom Vietnamese translation
+//     L.Routing.Localization['vi'] = {
+//       directions: {
+//         north: 'Bắc',
+//         northeast: 'Đông Bắc',
+//         east: 'Đông',
+//         southeast: 'Đông Nam',
+//         south: 'Nam',
+//         southwest: 'Tây Nam',
+//         west: 'Tây',
+//         northwest: 'Tây Bắc',
+//       },
+//       instructions: {
+//         continue: 'Tiếp tục',
+//         turn: 'Rẽ',
+//         name: 'Tên',
+//         destination: 'Đến',
+//         distance: 'Khoảng cách',
+//         duration: 'Thời gian',
+//       },
+//       travelMode: {
+//         car: 'Xe ô tô',
+//         bicycle: 'Xe đạp',
+//         foot: 'Đi bộ',
+//       },
+//     };
+
+//     var currentLocation = mymap.getCenter();
 
 //     var routingControl = L.Routing.control({
 //       waypoints: [
@@ -129,7 +142,6 @@ function initRoutingControl() {
 //         L.latLng(destinationCoordinates[0], destinationCoordinates[1])
 //       ],
 //       routeWhileDragging: true,
-//       // geocoder: L.Control.Geocoder.nominatim(),
 //       routeDragTimeout: 250,
 //       reverseWaypoints: true,
 //       showAlternatives: true,
@@ -139,32 +151,14 @@ function initRoutingControl() {
 //           { color: 'white', opacity: 0.8, weight: 6 },
 //           { color: 'blue', opacity: 0.5, weight: 2 }
 //         ]
-//       }
+//       },
+//       position: 'topleft', // Đặt vị trí của bảng điều khiển ở góc trên bên trái
+//       language: 'vi', // Đặt ngôn ngữ sang tiếng Việt
 //     }).addTo(mymap);
 //   } else {
 //     console.error("LRM library not loaded!");
 //   }
 // }
-
-document.onreadystatechange = function() {
-  if (document.readyState === "complete") {
-    
-    var destinationCoordinates = [21.03683472026718, 105.78238070011139];
-    initRoutingControl(destinationCoordinates);
-  }
-};
-
-// Load LRM asynchronously (adjust paths as needed)
-// var script = document.createElement('script');
-// script.src = "https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js";
-// script.onload = initRoutingControl;
-// document.head.appendChild(script);
-
-
-
-// Example usage:
-// initRoutingControl(destinationCoordinates);
-
 
 
 

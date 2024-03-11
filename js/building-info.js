@@ -62,11 +62,14 @@ function createInfoDiv(buildingKey) {
   var toolbar = document.createElement('div');
   toolbar.className = 'toolbar';
   toolbar.innerHTML = `
-      <button class="direct-btn" onclick="openGoogleMaps('${buildingKey}')"></button>
-      <span class="tim-duong contentVN">Chỉ đường: </span>
-      <span class="tim-duong contentEnglish">Direct: </span>
-      <span class="dong-gop contentVN">Đóng góp: </span>
-      <span class="dong-gop contentEnglish">Contribute: </span>
+      <button class="direct-btn" onclick="initRoutingControl('${buildingKey}')"></button>
+      <span class="tim-duong contentVN">Chỉ đường trên bản đồ của chúng tôi: </span>
+      <span class="tim-duong contentEnglish">Directions on our map: </span>
+      <button class="direct-btn-ggm" onclick="openGoogleMaps('${buildingKey}')"></button>
+      <span class="tim-duong-ggm contentVN">Chỉ đường bằng Google Maps: </span>
+      <span class="tim-duong-ggm contentEnglish">Directions using Google Maps: </span>
+      <span class="dong-gop contentVN">Đóng góp ý kiến của bạn: </span>
+      <span class="dong-gop contentEnglish">Give us your feedback: </span>
       <img class="send-feedback" src="source-img/gop-y.png" onclick="composeEmail()">
       <button class="close" id="close${building.infoDivId}"></button>`;
 
@@ -193,6 +196,91 @@ function openGoogleMaps(buildingKey) {
   var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
   window.open(googleMapsUrl, '_blank');
 }
+
+// Gọi hàm điều hướng đến toà nhà ngay trên bản đồ
+
+function initRoutingControl(buildingKey) {
+  if (typeof L.Routing !== 'undefined') {
+    // Custom Vietnamese translation
+    L.Routing.Localization['vi'] = {
+      directions: {
+        north: 'Bắc',
+        northeast: 'Đông Bắc',
+        east: 'Đông',
+        southeast: 'Đông Nam',
+        south: 'Nam',
+        southwest: 'Tây Nam',
+        west: 'Tây',
+        northwest: 'Tây Bắc',
+      },
+      instructions: {
+        continue: 'Tiếp tục',
+        turn: 'Rẽ',
+        name: 'Tên',
+        destination: 'Đến',
+        distance: 'Khoảng cách',
+        duration: 'Thời gian',
+      },
+      travelMode: {
+        car: 'Xe ô tô',
+        bicycle: 'Xe đạp',
+        foot: 'Đi bộ',
+      },
+    };
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        var currentLocation = L.latLng(position.coords.latitude, position.coords.longitude);
+        var building = buildingData[buildingKey];
+
+        if (building) {
+          var buildingCoordinates = [building.latitude, building.longitude];
+
+          var routingControl = L.Routing.control({
+            waypoints: [
+              currentLocation,
+              L.latLng(buildingCoordinates[0], buildingCoordinates[1]),
+            ],
+            routeWhileDragging: true,
+            routeDragTimeout: 250,
+            reverseWaypoints: true,
+            showAlternatives: true,
+            altLineOptions: {
+              styles: [
+                { color: 'black', opacity: 0.15, weight: 9 },
+                { color: 'white', opacity: 0.8, weight: 6 },
+                { color: 'blue', opacity: 0.5, weight: 2 },
+              ],
+            },
+            position: 'topleft', // Set the position of the control panel to the top left corner
+            language: 'vi', // Set language to Vietnamese
+          }).addTo(mymap);
+
+          // Create close button
+          var closeButton = document.createElement('button');
+          closeButton.classList.add('closeRoutingButton');
+          closeButton.addEventListener('click', function () {
+            mymap.removeControl(routingControl);
+            closeButton.style.display = 'none';
+          });
+
+          // Append close button to the map container
+          mymap.getContainer().appendChild(closeButton);
+          var infoDiv = document.getElementById(building.infoDivId);
+          infoDiv.style.display = 'none';
+        } else {
+          console.error('Building not found in buildingData!');
+        }
+      });
+    } else {
+      console.error('Geolocation is not supported by this browser.');
+    }
+  } else {
+    console.error('LRM library not loaded!');
+  }
+}
+
+
 
 
 // Info nhà hiệu bộ

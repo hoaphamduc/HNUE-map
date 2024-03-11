@@ -124,7 +124,7 @@ document.getElementById('post-status').addEventListener('click', async function(
       const inappropriateWordsFound = findInappropriateWords(status, inappropriateWords);
 
       if (inappropriateWordsFound.length > 0) {
-      const message = 'Nội dung chứa các từ không phù hợp: ' + inappropriateWordsFound.join(', ');
+      const message = 'Nội dung chứa các từ ngữ không phù hợp: ' + inappropriateWordsFound.join(', ');
       alert(message);
       return;
       }

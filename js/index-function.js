@@ -127,18 +127,18 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
     attribution: '&copy; Nhóm nghiên cứu khoa học năm 2024'
 }).addTo(mymap);
 
-var maxBounds = L.latLngBounds(
-  L.latLng(21.027863833645036, 105.7683849334717),   // Tọa độ góc trái dưới của giới hạn
-  L.latLng(21.04615122410683, 105.79756736755371)    // Tọa độ góc phải trên của giới hạn
-);
+// var maxBounds = L.latLngBounds(
+//   L.latLng(21.027863833645036, 105.7683849334717),   // Tọa độ góc trái dưới của giới hạn
+//   L.latLng(21.04615122410683, 105.79756736755371)    // Tọa độ góc phải trên của giới hạn
+// );
 
-mymap.setMaxBounds(maxBounds);
-mymap.on('drag', function() {
-    mymap.panInsideBounds(maxBounds, { animate: false });
-});
+// mymap.setMaxBounds(maxBounds);
+// mymap.on('drag', function() {
+//     mymap.panInsideBounds(maxBounds, { animate: false });
+// });
 
-// Fit bounds to the maximum bounds
-mymap.fitBounds(maxBounds);
+// // Fit bounds to the maximum bounds
+// mymap.fitBounds(maxBounds);
 
 var zoomControl = L.control.zoom({
   position: 'bottomright' 
@@ -164,41 +164,6 @@ mymap.on('click', function (e) {
     var lng = e.latlng.lng;
     console.log('Latitude: ' + lat + ', Longitude: ' + lng);
 });
-
-// var HNUE = L.polygon([
-//   [21.03683472026718, 105.78238070011139],
-//   [21.036717058570588, 105.78593999147417],
-//   [21.041263238673896, 105.78608751296998],
-//   [21.041273252133305, 105.78533113002779],
-//   [21.041135567007366, 105.78532844781877],
-//   [21.04114307710843, 105.78477323055269],
-//   [21.04100539186213, 105.78476786613466],
-//   [21.04101790870796, 105.78408926725389],
-//   [21.040529750941104, 105.7840731739998],
-//   [21.040552281334804, 105.78333020210268],
-//   [21.03919043808257, 105.78331410884859],
-//   [21.039202955080917, 105.78286081552507],
-//   [21.03906777144307, 105.78285008668901],
-//   [21.039066708368225, 105.78264958239745],
-//   [21.038574600464806, 105.78263819217683],
-//   [21.038544559540274, 105.78373789787294],
-//   [21.037650839264398, 105.78371107578279],
-//   [21.03768088036915, 105.78224658966066],
-//   [21.0374863675158, 105.78223942477054],
-//   [21.0374863675158, 105.78236817080327],
-//   [21.03722775972886, 105.78235924243927],
-//   [21.03722525629609, 105.78239142894745]
-// ], {
-//   opacity: 1,        
-//   fillOpacity: 0.1
-// }).addTo(mymap);
-
-// var welcomeText = document.getElementById('welcome-text');
-
-// setTimeout(function () {
-//   mymap.removeLayer(HNUE);
-//   welcomeText.style.display = 'none';
-// }, 7000); 
 
 var directionBoard = document.getElementById('direction-board');
 var directionArrow = document.getElementById('directionArrow');
