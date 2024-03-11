@@ -371,8 +371,8 @@
             <div style="height: 1px; width: 100%; background-color: #e5e5e5; position: relative; top: 18px"></div>
             <img id="userProfilePicture2" alt="Profile Picture">
             <span id="userName2"></span>
-            <textarea class="contentVN status" id="statusVN" placeholder="Chia sẻ với mọi người gì đó đi nào" oninput="checkTextArea(this)"></textarea>
-            <textarea class="contentEnglish status" id="statusEng" placeholder="Share something to everyone" oninput="checkTextArea(this)"></textarea>
+            <textarea class="contentVN status" id="statusVN" placeholder="Chia sẻ với mọi người gì đó đi nào" oninput="checkTextArea(this)" onkeydown="handleEnterKeyVN(event)"></textarea>
+            <textarea class="contentEnglish status" id="statusEng" placeholder="Share something to everyone" oninput="checkTextArea(this)" onkeydown="handleEnterKeyEN(event)"></textarea>
             <div id="add-photo" onclick="uploadImage()">
                 <input type="file" id="imageInput" onchange="setBackgroundImage()">
             </div>
@@ -403,17 +403,13 @@
             <button class="close-div" onclick="hideSocialNetworkDiv()" style="background-color: #f0f2f5;"></button>
             <div id="post-div">
                 <img id="userProfilePicture1" alt="Profile Picture">
-                <div id="openEnterDiv" class="contentVN post-btn" onclick="openEnterPostDiv()">
-                    <span>Chia sẻ gì đó với mọi người</span>
-                </div>
-                <div class="contentEnglish post-btn" onclick="openEnterPostDiv()">
-                    <span>Share something with everyone</span>
+                <div id="openEnterDiv" class="post-btn" onclick="openEnterPostDiv()">
+                    <span class="contentVN" id="textVN">Chia sẻ gì đó với mọi người</span>
+                    <span class="contentEnglish" id="textEN">Share something with everyone</span>
                 </div>
             </div>
-            
-            <!-- <button id="show-more">Show more 5 posts</button> -->
-            <div id="posts-container">
-            </div>
+            <div id="posts-container"></div>
+            <button id="show-more">Show more 5 posts</button>
         </div>
 
 
