@@ -645,7 +645,7 @@ var buildingData = {
     "infoVN": "<b>Lịch sử:</b> - Sân vận động Đại học Sư phạm Hà Nội được xây dựng cùng thời điểm với việc thành lập trường. - Sân vận động đã trải qua nhiều lần sửa chữa và nâng cấp, hiện là một trong những sân vận động có quy mô và hiện đại nhất trong các trường đại học trên cả nước. <b>Địa lý:</b> - Sân vận động nằm trong khuôn viên Đại học Sư phạm Hà Nội, số 136 Xuân Thuỷ, phường Dịch Vọng Hậu, quận Cầu GIấy, Hà Nội. - Sân có diện tích khoảng 10.000m², bao gồm:  + Sân thi đấu chính  + Khán đài  + Khu vực phụ trợ <b>Giá trị:</b> - Sân vận động là nơi diễn ra các hoạt động thể dục thể thao của sinh viên và cán bộ, viên chức nhà trường. - Sân cũng là nơi tổ chức các giải thi đấu thể thao cấp trường, khu vực và quốc gia. <b>Ý nghĩa:</b> - Sân vận động góp phần nâng cao chất lượng giáo dục thể chất cho sinh viên. - Sân cũng là nơi rèn luyện sức khỏe, phát triển tinh thần thể thao và tăng cường đoàn kết cho sinh viên.",
     "infoEN": "<b>History:</b> - The Sports Stadium of Hanoi University of Education was built coinciding with the establishment of the university. - The stadium has undergone several repairs and upgrades, and is currently one of the largest and most modern stadiums in universities nationwide. <b>Location:</b> - The stadium is located within the campus of Hanoi University of Education, at 136 Xuan Thuy, Dich Vong Hau ward, Cau Giay district, Hanoi. - The stadium covers an area of ​​about 10,000m², including:  + Main sports field  + Grandstand  + Support area <b>Significance:</b> - The stadium is where physical education and sports activities for students and university staff take place. - It is also a venue for organizing university, regional, and national sports competitions. <b>Meaning:</b> - The stadium contributes to improving the quality of physical education for students. - It is a place for promoting health, developing a sports spirit, and enhancing unity among students.",
     "latitude": 21.040301318576297,
-    "longitude": 21.040301318576297,
+    "longitude": 105.78517080395068,
     "source-image": []
   },
   "KTXA6": {
@@ -669,7 +669,7 @@ var buildingData = {
     "infoVN": "<b>Tòa nhà A6:</b> Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 64 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> Nữ sinh viên năm thứ 2 (khóa 70) các khoa. <b>Loại phòng:</b> Cơ bản (tiêu chuẩn) gồm 2 mã phòng - Loại phòng A6-04.1 (4 người): Có 8 phòng xếp 4 chỗ ở. - Loại phòng A6-06.1 (6 người): Có 56 phòng xếp 6 chỗ ở. <b>Diện tích -  Điều kiện cơ sở vật chất:</b> Phòng có S = 25 - 36 m². Công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, bình nóng lạnh, wifi,...",
     "infoEN": "<b>Building A6:</b> It has a high-rise structure (4 floors) with 64 rooms, 16 rooms on each floor. The standard is high-quality room type. <b>Occupants:</b> Second-year female students (class of 70) from various faculties. <b>Room Types:</b> Basic (standard) rooms with 2 room codes: - Room type A6-04.1 (4 persons): 8 rooms with 4 beds each. - Room type A6-06.1 (6 persons): 56 rooms with 6 beds each. <b>Area - Facilities:</b> Room area S = 25 - 36 m². Closed facilities (bathroom, toilet, laundry area, balcony, ...), full utilities with electricity and water, bunk beds, ceiling fan, water heater, Wifi, ...",
     "latitude": 21.040977854797603,
-    "longitude": 21.7853525876999,
+    "longitude": 105.7853525876999,
     "source-image": ['source-img/A6.jpg']
   },
   "KTXA8": {
@@ -693,7 +693,7 @@ var buildingData = {
     "infoVN": "<b>Tòa nhà A8:</b> Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 56 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn là loại phòng cơ bản. <b>Đối tượng xếp ở là:</b> - Tầng 2, 3, 4 đơn nguyên đông xếp nam sinh viên các khoa. - Tầng 1, 2, 3, 4 đơn nguyên tây xếp nữ sinh viên năm thứ 4 các khoa. <b>Loại phòng:</b> Cơ bản (tiêu chuẩn) gồm 2 mã phòng. - Loại phòng A8-06 (6 người): Có 50 phòng có 6 chỗ. - Loại phòng A8-08 (8 người): Có 6 phòng có 8 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 25 - 36m², công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, wifi. <b>Tiện ích:</b> Một số phòng thêm các tiện ích như điều hòa, bình nóng lạnh.",
     "infoEN": "<b>Building A8:</b> It has a structure of a multi-story building (4 floors) with 56 rooms, each floor having 16 rooms. The standard is the basic room type. <b>Occupants:</b> - Floors 2, 3, 4 are for male students from various faculties. - Floors 1, 2, 3, 4 are for female senior students from the 4th year of various faculties. <b>Room Types:</b> The basic (standard) room includes 2 room codes. - Room type A8-06 (6 people): There are 50 rooms with 6 beds each. - Room type A8-08 (8 people): There are 6 rooms with 8 beds each. <b>Area - Facilities:</b> Room area ranges from 25 to 36 square meters, with enclosed facilities (bathroom, toilet, laundry area, balcony, etc.), sufficient utilities such as electricity, water, bunk beds, ceiling fans, and wifi. <b>Amenities:</b> Some rooms have additional amenities such as air conditioning and water heaters.",
     "latitude": 21.04047779705717,
-    "longitude": 21.78523665624702,
+    "longitude": 105.78523665624702,
     "source-image": ['source-img/A8.jpg']
   },
   "KTXA9": {
@@ -713,7 +713,7 @@ var buildingData = {
     "infoVN": "<b>Tòa nhà A9:</b> Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 63 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn là phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> - Nam học sinh trường THPT Nguyễn Tất Thành và THPT Chuyên ĐHSP Hà Nội. - Nam học viên cao học, NCS,... <b>Loại phòng:</b> Phòng ở chất lượng cao gồm 2 mã phòng. - Loại phòng A9-03 (3 người): Có 57 phòng có 6 chỗ. - Loại phòng A9-04 (4 người): Có 6 phòng có 8 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 25 - 36 m². Công trình phụ hiện đại, khép kín (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn, bàn ghế, tủ quần áo, Wifi. <b>Tiện ích:</b> Một số phòng thêm các tiện ích như bình nóng lạnh, điều hòa.",
     "infoEN": "<b>Building A9:</b> It has a structure of a multi-story building (4 floors) with 63 rooms, each floor having 16 rooms. The standard is high-quality rooms. <b>Occupants:</b> - Male students from Nguyen Tat Thanh High School and Specialized High School of Hanoi University of Education. - Male postgraduate students, doctoral candidates, etc. <b>Room Types:</b> High-quality rooms include 2 room codes. - Room type A9-03 (3 people): There are 57 rooms with 6 beds each. - Room type A9-04 (4 people): There are 6 rooms with 8 beds each. <b>Area - Facilities:</b> Room area ranges from 25 to 36 square meters. Modern and enclosed facilities (bathroom, toilet, laundry area, balcony, etc.), with sufficient utilities such as electricity, water, single beds, tables, chairs, wardrobes, and Wifi. <b>Amenities:</b> Some rooms have additional amenities such as water heaters and air conditioning.",
     "latitude": 21.040737070276787,
-    "longitude": 21.78423878844119,
+    "longitude": 105.78423878844119,
     "source-image": ['source-img/A8.jpg']
   },
   "KTXA10": {
@@ -733,7 +733,7 @@ var buildingData = {
     "infoVN": "CCC",
     "infoEN": "No information.",
     "latitude": 21.04046323762088,
-    "longitude": 21.78426431564917,
+    "longitude": 105.78426431564917,
     "source-image": ['source-img/A9.jpg']
   },
   "KTXA11": {
@@ -755,7 +755,7 @@ var buildingData = {
     "infoVN": "<b>Tòa nhà A11:</b> Có kết cấu xây dựng là nhà cao tầng (5 tầng) với 62 phòng ở, mỗi tầng 11 phòng. Tiêu chuẩn là phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> - LHS Lào, Trung Quốc, Hàn Quốc, .... - Nữ sinh viên, học viên cao học, NCS, ... <b>Loại Phòng:</b> Phòng ở chất lượng cao gồm 3 mã phòng. - Loại phòng A11-03 (3 người): Có 11 phòng có 3 chỗ. - Loại phòng A11-04 (4 người): Có 28 phòng có 4 chỗ. - Loại phòng A11-06 (6 người): Có 16 phòng có 6 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 36m², công trình phụ khép kín, hiện đại (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn với phòng 3 người và giường tầng với phòng 4, 6 người, bàn ghế, tủ quần áo, quạt đảo trần, wifi. <b>Tiện ích:</b> Một số phòng thêm các tiện ích như bình nóng lạnh, điều hòa, tủ lạnh, Ti vi - THC.",
     "infoEN": "<b>Building A11:</b> This building has a structure of a high-rise (5 floors) with 62 rooms, each floor having 11 rooms. The standard is high-quality rooms. <b>Occupants:</b> - Students from Laos, China, South Korea, etc. - Female students, postgraduate students, PhD candidates, etc. <b>Room Types:</b> High-quality rooms include 3 room codes. - Room type A11-03 (3 people): 11 rooms with 3 beds. - Room type A11-04 (4 people): 28 rooms with 4 beds. - Room type A11-06 (6 people): 16 rooms with 6 beds. <b>Area - Facilities:</b> Rooms have an area of S = 36m², enclosed and modern facilities (bathroom, toilet, laundry, balcony, etc.), full electricity and water supply, single beds for 3-person rooms, and bunk beds for 4, 6-person rooms. It includes tables, chairs, wardrobes, ceiling fans, and Wi-Fi. <b>Amenities:</b> Some rooms have additional amenities such as water heaters, air conditioning, refrigerators, and TVs.",
     "latitude": 21.040843008631303,
-    "longitude": 21.7848553645986,
+    "longitude": 105.7848553645986,
     "source-image": ['source-img/A11.jpg']
   },
   "KTXA12": {
@@ -773,7 +773,7 @@ var buildingData = {
     "infoVN": "<b>Tòa nhà A12:</b> Có kết cấu xây dựng là nhà cao tầng (12 tầng) với 198 phòng ở, mỗi tầng 22 phòng. Tiêu chuẩn là phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> - Nữ học sinh trường THPT Nguyễn Tất Thành và THPT Chuyên ĐHSP Hà Nội. - Nữ sinh viên năm thứ nhất các khoa. <b>Loại phòng:</b> Phòng ở chất lượng cao gồm 3 mã phòng. - Loại phòng A12-03 (3 người): Có 22 phòng có 3 chỗ. - Loại phòng A12-04 (4 người): Có 57 phòng có 4 chỗ. - Loại phòng A12-06 (6 người): Có 119 phòng có 6 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 36 m², Công trình phụ hiện đại, khép kín (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn với phòng 3 người và giường tầng với phòng 4, 6 người, bàn ghế, tủ quần áo, quạt đảo trần, wifi.",
     "infoEN": "<b>Building A12:</b> This building has a structure of a high-rise (12 floors) with 198 rooms, each floor having 22 rooms. The standard is high-quality rooms. <b>Occupants:</b> - Female students from Nguyen Tat Thanh High School and Specialized High School of Hanoi University of Education. - Female freshmen from various faculties. <b>Room Types:</b> High-quality rooms include 3 room codes. - Room type A12-03 (3 people): 22 rooms with 3 beds. - Room type A12-04 (4 people): 57 rooms with 4 beds. - Room type A12-06 (6 people): 119 rooms with 6 beds. <b>Area - Facilities:</b> Rooms have an area of S = 36 m², modern enclosed facilities (bathroom, toilet, laundry, balcony, etc.), full electricity and water supply, single beds for 3-person rooms, and bunk beds for 4, 6-person rooms. It includes tables, chairs, wardrobes, ceiling fans, and Wi-Fi.",
     "latitude": 21.04080760993697,
-    "longitude": 21.78427053649243,
+    "longitude": 105.78427053649243,
     "source-image": ['source-img/A12.jpg']
   },
   "HT1110": {
@@ -789,661 +789,133 @@ var buildingData = {
     "infoVN": "<b>Hội trường 11.10</b> là một trong những giảng đường lớn và hiện đại nhất của Trường Đại học Sư phạm Hà Nội. Hội trường được khánh thành vào năm 2013, nhân dịp kỷ niệm 65 năm thành lập trường. <b>Giảng đường lớn đa năng - Hội trường 11/10</b> là một công trình được khởi công từ ngày 30/9/2011, với tổng diện tích 4250m² và quy mô 1200 chỗ ngồi, bao gồm tầng hầm để xe, phòng truyền thống và các phòng chức năng. Đây được xem là một bước tiến quan trọng, đánh dấu sự phát triển của trường trong việc cung cấp không gian hội họp, giảng dạy, sinh hoạt chính trị, văn hóa và văn nghệ cho cộng đồng cán bộ, giáo viên và sinh viên. <b>Hội trường 11.10</b> bao gồm các khu vực chức năng chính sau: <b>Sân khấu:</b> rộng rãi, được trang bị hệ thống âm thanh, ánh sáng hiện đại. <b>Khu vực khán đài:</b> có 1200 chỗ ngồi, được bố trí thành các dãy ghế cao dần về phía sau, đảm bảo cho tất cả các sinh viên đều có thể nhìn rõ sân khấu. <b>Hệ thống phòng chức năng:</b> bao gồm các phòng họp, phòng hội thảo, phòng trang điểm… <b>Hội trường 11.10</b> là một biểu tượng của Trường Đại học Sư phạm Hà Nội. Hội trường không chỉ là nơi diễn ra các hoạt động học tập, nghiên cứu khoa học mà còn là nơi diễn ra các hoạt động văn hóa, văn nghệ, thể dục thể thao của nhà trường.",
     "infoEN": "<b>Hall 11.10</b> is one of the largest and most modern auditoriums at Hanoi University of Education. The hall was inaugurated in 2013, commemorating the 65th anniversary of the university's establishment. <b>Multipurpose Auditorium - Hall 11/10</b> is a project that commenced on September 30, 2011, covering a total area of 4250m² and accommodating 1200 seats, including an underground parking lot, traditional meeting rooms, and functional rooms. This is considered a significant step forward, marking the university's development in providing space for meetings, teaching, political activities, cultural and artistic events for the community of faculty, staff, and students. <b>Hall 11.10</b> includes the following main functional areas: <b>Stage:</b> spacious, equipped with a modern sound and lighting system. <b>Audience area:</b> with 1200 seats arranged in escalating rows, ensuring all students have a clear view of the stage. <b>Functional room system:</b> including meeting rooms, seminar rooms, dressing rooms, etc. <b>Hall 11.10</b> is an iconic symbol of Hanoi University of Education. It serves not only as a venue for academic and scientific activities but also for cultural, artistic, and sports events within the university.",
     "latitude": 21.03786212246022,
-    "longitude": 21.78466057777405,
+    "longitude": 105.78466057777405,
     "source-image": ['source-img/1110.jpg']
+  },
+
+
+
+
+  "WM27165": {
+    "polygon": [
+      [21.035851235744246, 105.78656226396564],
+      [21.03587128440539, 105.78659445047381],
+      [21.035738461975026, 105.78669637441637],
+      [21.035715907210925, 105.78666418790819]
+    ],
+    "infoDivId": "infoDivWM27165",
+    "nameVN": "WinMart+ số 27 ngõ 165 đường Xuân Thuỷ, phường Dịch Vọng Hậu, quận Cầu Giấy, Hà Nội",
+    "nameEN": "WinMart+ No. 27 Lane 165 Xuan Thuy Street, Dich Vong Hau Ward, Cau Giay District, Hanoi",
+    "infoVN": "WinMart (tên cũ là Vinmart) là hệ thống siêu thị thuộc tập đoàn Vingroup, Việt Nam. Hệ thống này khai trương ngày 20 tháng 11 năm 2014. Theo thống kê của Vietnam Report, tính đến tháng 11/2017, VinMart và chuỗi cửa hàng con VinMart+ nằm top 2 nhà bán lẻ được người tiêu dùng quan tâm nhất và top 4 trên bảng xếp hạng 10 nhà bán lẻ uy tín năm 2017. Tháng 5 năm 2019, VinMart có khoảng 111 siêu thị và khoảng hơn 1.800 cửa hàng VinMart+ trên gần 50 tỉnh thành với tổng diện tích mặt bằng kinh doanh hơn 300.000 m², số lượng nhân viên khoảng hơn 11.000 người. Đến tháng 8 năm 2019, con số VM và VM+ đã lên đến con số 2.200. Các sản phẩm của VinMart bao gồm thực phẩm tươi sống, thực phẩm sơ chế, quần áo, mỹ phẩm, đồ gia dụng, văn phòng phẩm, đồ chơi, v.v. Tháng 10/2018, VinGroup mua lại chuỗi 23 siêu thị Fivimart, một thương hiệu đã có hơn 10 năm hoạt động trên thị trường, và sáp nhập vào VinMart. Sau khi hợp nhất, số lượng siêu thị của Vin là khoảng hơn 100, cùng với hơn 1.400 cửa hàng tiện lợi VinMart+. Với cơ cấu tổ chức của VinMart được chia thành các tuyến chức năng, mỗi tuyến là một bộ phận hay đơn vị đảm nhận thực hiện một số chức năng, nhiệm vụ nào đó của tổ chức. Giám đốc là người có trách nhiệm cao nhất, ban hành các chiến lược và dự án xuống cho các bộ phận. Các bộ phận nhận công việc từ giám đốc sau đó thực hiện sao cho thực hiện tốt nhất và đem lại lợi ích cao nhất cho công ty. Cơ cấu tổ chức của VinMart có ưu điểm là thúc đẩy chuyên môn hoá kỹ năng, tạo điều kiện cho mỗi cá nhân phát huy tối đa năng lực của mình. Nhưng bên cạnh đó cơ cấu tổ chức này còn có những nhược điểm, chỉ có những nhà quản trị cao nhất mới có trách nhiệm về lợi nhuận, còn những nhà quản trị thấp hơn chỉ có trách nhiệm với bộ phận mà mình quản lý. Ngày 15 tháng 1 năm 2022, VinMart và VinMart+ chính thức đổi tên thành WinMart và WinMart+.",
+    "infoEN": "WinMart (formerly known as Vinmart) is a supermarket chain under the Vingroup conglomerate in Vietnam. The system was inaugurated on November 20, 2014. According to Vietnam Report statistics until November 2017, VinMart and its subsidiary chain VinMart+ ranked 2nd in the most consumer-focused retail houses and 4th among the top 10 reputable retail houses in 2017. In May 2019, VinMart had approximately 111 supermarkets and over 1,800 VinMart+ stores in nearly 50 provinces and cities, with a total business area of over 300,000 m² and a staff of over 11,000 people. By August 2019, the numbers had increased to 2,200. VinMart's products include fresh food, processed food, clothing, cosmetics, household items, office supplies, toys, etc. In October 2018, VinGroup acquired the chain of 23 Fivimart supermarkets, a brand that had been operating for over 10 years, and merged it into VinMart. After the merger, Vin's total number of supermarkets reached over 100, along with more than 1,400 VinMart+ convenience stores. VinMart's organizational structure is divided into functional lines, with each line being a department or unit responsible for specific functions or tasks. The director is the highest responsible person, issuing strategies and projects to the departments. Departments then carry out their tasks to achieve the best results and bring the highest benefits to the company. VinMart's organizational structure has the advantage of promoting the specialization of skills, providing conditions for each individual to maximize their potential. However, it also has disadvantages, as only top-level managers are responsible for profit, while lower-level managers are only responsible for their managed department. On January 15, 2022, VinMart and VinMart+ officially changed their names to WinMart and WinMart+.",
+    "latitude": 21.035876874492814,
+    "longitude": 105.78656762838365,
+    "source-image": ['source-img/wm27165.jpg']
+  },  
+  "WM77TQV": {
+    "polygon": [
+      [21.0346721729676, 105.78491806983949],
+      [21.034727307215594, 105.78501731157304],
+      [21.034860130547415, 105.78493952751161],
+      [21.034804996348576, 105.78482419252398]
+    ],
+    "infoDivId": "infoDivWM77TQV",
+    "nameVN": "WinMart+ số 77 đường Trần Quốc Vượng, phường Dịch Vọng Hậu, quận Cầu Giấy, Hà Nội",
+    "nameEN": "WinMart+ No. 77 Tran Quoc Vuong Street, Dich Vong Hau Ward, Cau Giay District, Hanoi",
+    "infoVN": "WinMart (tên cũ là Vinmart) là hệ thống siêu thị thuộc tập đoàn Vingroup, Việt Nam. Hệ thống này khai trương ngày 20 tháng 11 năm 2014. Theo thống kê của Vietnam Report, tính đến tháng 11/2017, VinMart và chuỗi cửa hàng con VinMart+ nằm top 2 nhà bán lẻ được người tiêu dùng quan tâm nhất và top 4 trên bảng xếp hạng 10 nhà bán lẻ uy tín năm 2017. Tháng 5 năm 2019, VinMart có khoảng 111 siêu thị và khoảng hơn 1.800 cửa hàng VinMart+ trên gần 50 tỉnh thành với tổng diện tích mặt bằng kinh doanh hơn 300.000 m², số lượng nhân viên khoảng hơn 11.000 người. Đến tháng 8 năm 2019, con số VM và VM+ đã lên đến con số 2.200. Các sản phẩm của VinMart bao gồm thực phẩm tươi sống, thực phẩm sơ chế, quần áo, mỹ phẩm, đồ gia dụng, văn phòng phẩm, đồ chơi, v.v. Tháng 10/2018, VinGroup mua lại chuỗi 23 siêu thị Fivimart, một thương hiệu đã có hơn 10 năm hoạt động trên thị trường, và sáp nhập vào VinMart. Sau khi hợp nhất, số lượng siêu thị của Vin là khoảng hơn 100, cùng với hơn 1.400 cửa hàng tiện lợi VinMart+. Với cơ cấu tổ chức của VinMart được chia thành các tuyến chức năng, mỗi tuyến là một bộ phận hay đơn vị đảm nhận thực hiện một số chức năng, nhiệm vụ nào đó của tổ chức. Giám đốc là người có trách nhiệm cao nhất, ban hành các chiến lược và dự án xuống cho các bộ phận. Các bộ phận nhận công việc từ giám đốc sau đó thực hiện sao cho thực hiện tốt nhất và đem lại lợi ích cao nhất cho công ty. Cơ cấu tổ chức của VinMart có ưu điểm là thúc đẩy chuyên môn hoá kỹ năng, tạo điều kiện cho mỗi cá nhân phát huy tối đa năng lực của mình. Nhưng bên cạnh đó cơ cấu tổ chức này còn có những nhược điểm, chỉ có những nhà quản trị cao nhất mới có trách nhiệm về lợi nhuận, còn những nhà quản trị thấp hơn chỉ có trách nhiệm với bộ phận mà mình quản lý. Ngày 15 tháng 1 năm 2022, VinMart và VinMart+ chính thức đổi tên thành WinMart và WinMart+.",
+    "infoEN": "<b>WinMart (formerly known as Vinmart) is a supermarket chain under the Vingroup conglomerate in Vietnam. The system was inaugurated on November 20, 2014. According to Vietnam Report statistics until November 2017, VinMart and its subsidiary chain VinMart+ ranked 2nd in the most consumer-focused retail houses and 4th among the top 10 reputable retail houses in 2017. In May 2019, VinMart had approximately 111 supermarkets and over 1,800 VinMart+ stores in nearly 50 provinces and cities, with a total business area of over 300,000 m² and a staff of over 11,000 people. By August 2019, the numbers had increased to 2,200. VinMart's products include fresh food, processed food, clothing, cosmetics, household items, office supplies, toys, etc. In October 2018, VinGroup acquired the chain of 23 Fivimart supermarkets, a brand that had been operating for over 10 years, and merged it into VinMart. After the merger, Vin's total number of supermarkets reached over 100, along with more than 1,400 VinMart+ convenience stores. VinMart's organizational structure is divided into functional lines, with each line being a department or unit responsible for specific functions or tasks. The director is the highest responsible person, issuing strategies and projects to the departments. Departments then carry out their tasks to achieve the best results and bring the highest benefits to the company. VinMart's organizational structure has the advantage of promoting the specialization of skills, providing conditions for each individual to maximize their potential. However, it also has disadvantages, as only top-level managers are responsible for profit, while lower-level managers are only responsible for their managed department. On January 15, 2022, VinMart and VinMart+ officially changed their names to WinMart and WinMart+.",
+    "latitude": 21.034743,
+    "longitude": 105.784939,
+    "source-image": ['source-img/wm27165.jpg']
+  },  
+  "CK177XT": {
+    "polygon": [
+      [21.036361686877246, 105.78467667102815],
+      [21.036376703238854, 105.7846122980118],
+      [21.03645679047517, 105.78461766242982],
+      [21.036461795926012, 105.7847008109093]
+    ],
+    "infoDivId": "infoDivCK177XT",
+    "nameVN": "Circle K số 177 đường Xuân Thuỷ, phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+    "nameEN": "Circle K No. 177 Xuan Thuy Street, Dich Vong Hau Ward, Cau Giay, Hanoi",
+    "infoVN": "<b>Tại Việt Nam</b>, chúng tôi chú trọng vào việc phát triển nhanh chóng trong lĩnh vực kinh doanh chuỗi cửa hàng tiện lợi theo giấy phép nhượng quyền thương hiệu của Circle K Mỹ. <b>Circle K</b> tự hào giới thiệu rằng chúng tôi là chuỗi cửa hàng tiện lợi quốc tế đầu tiên tại Việt Nam, và cửa hàng đầu tiên được khai trương vào 20 tháng 12 năm 2008. Chúng tôi đã tổ chức Lễ Kỷ Niệm 10 năm hoạt động của Circle K tại Việt Nam trong năm 2018. <b>Circle K</b> Việt Nam hiện đã có hơn 400 cửa hàng tại các thành phố lớn như Hà Nội, Hạ Long, Hồ Chí Minh, Vũng Tàu, Cần Thơ, Bình Dương, Hải Phòng, Long Xuyên, Biên Hòa và sẽ còn tiếp tục phát triển để đáp ứng nhu cầu của khách hàng ở khắp mọi nơi. <b>Cam Kết Dịch Vụ</b> của chúng tôi đối với khách hàng được gói gọn trong 4 chữ F (4Fs) (Tươi, Thân Thiện, Nhanh, và Đầy Đủ). <b>Tầm Nhìn</b> của chúng tôi là mong muốn trở thành chuỗi cửa hàng tiện lợi được ưa chuộng nhất tại Việt Nam. <b>Sứ Mệnh</b> của chúng tôi là mang đến một không gian mua sắm thú vị, thân thiện và đáng tin cậy cho khách hàng với những mặt hàng, dịch vụ, món ăn phong phú, đa dạng được phục vụ nhanh chóng và niềm nở.",
+    "infoEN": "<b>In Vietnam</b>, we focus on rapid development in the convenience store business under the brand licensing agreement of Circle K USA. <b>Circle K</b> proudly introduces itself as the first international convenience store chain in Vietnam, with the first store opening on December 20, 2008. We celebrated the 10th anniversary of Circle K's operations in Vietnam in 2018. <b>Circle K</b> Vietnam currently operates over 400 stores in major cities such as Hanoi, Ha Long, Ho Chi Minh City, Vung Tau, Can Tho, Binh Duong, Hai Phong, Long Xuyen, Bien Hoa, and continues to expand to meet customer needs everywhere. Our <b>Service Commitment</b> to customers is encapsulated in the 4Fs (Fresh, Friendly, Fast, and Full). Our <b>Vision</b> is to become the most preferred convenience store chain in Vietnam. Our <b>Mission</b> is to provide an enjoyable, friendly, and reliable shopping space for customers with a variety of products, services, and a quick and cheerful service for diverse and abundant choices.",
+    "latitude": 21.036429162538166,
+    "longitude": 105.78466057777405,
+    "source-image": ['source-img/CK177XT.jpg']
+  },  
+  "XD171XT": {
+    "polygon": [
+      [21.03633621189048, 105.78569054603577],
+      [21.0363337058158, 105.78583270311357],
+      [21.036128207549012, 105.78583002090456],
+      [21.036133219705228, 105.78568786382678]
+    ],
+    "infoDivId": "infoDivXD171XT",
+    "nameVN": "Cửa hàng Xăng dầu Petrolimex Số 60. Địa chỉ số 171 đường Xuân Thuỷ, phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+    "nameEN": "Petrolimex Petroleum Store No. 60. Address No. 171 Xuan Thuy Street, Dich Vong Hau Ward, Cau Giay, Hanoi",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.03634373011426,
+    "longitude": 105.78575760126115,
+    "source-image": []
+  },  
+  "XD107PVT": {
+    "polygon": [
+      [21.040035851912883, 105.7861822575777],
+      [21.040136092375718, 105.7861822575777],
+      [21.04013358636498, 105.78636474895004],
+      [21.040035851912883, 105.78636474895004]
+    ],
+    "infoDivId": "infoDivXD107PVT",
+    "nameVN": "Trạm Xăng Dầu Quân Đội BQP. Địa chỉ số 107 đường Phan Văn Trường, phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+    "nameEN": "Military Gas Station of the Ministry of National Defense. Address: 107 Phan Van Truong Street, Dich Vong Hau Ward, Cau Giay, Hanoi",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": " No information.",
+    "latitude": 21.040089155890687,
+    "longitude": 105.78627258539203,
+    "source-image": []
   }
   // Thêm thông tin của các toà nhà khác tương tự
 };
 
+for (const buildingId in buildingData) {
+  if (buildingData.hasOwnProperty(buildingId)) {
+      const building = buildingData[buildingId];
+      setPolygonClickEvent(buildingId);
+  }
+}
 
 
 // Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
-setPolygonClickEvent("NhaHieuBo");
-setPolygonClickEvent("nhaA2");
-setPolygonClickEvent("nhaA3");
-setPolygonClickEvent("nhaA4");
-setPolygonClickEvent("nhaB1");
-setPolygonClickEvent("nhaB2");
-setPolygonClickEvent("nhaC1");
-setPolygonClickEvent("nhaC2");
-setPolygonClickEvent("nhaC3");
-setPolygonClickEvent("nhaC4");
-setPolygonClickEvent("nhaD124");
-setPolygonClickEvent("nhaD3");
-setPolygonClickEvent("nhaH8");
-setPolygonClickEvent("nhaM1234");
-setPolygonClickEvent("nhaN");
-setPolygonClickEvent("nhaK1");
-setPolygonClickEvent("nhaK2");
-setPolygonClickEvent("nhaK3");
-setPolygonClickEvent("nhaKT");
-setPolygonClickEvent("nhaT1");
-setPolygonClickEvent("nhaT2");
-setPolygonClickEvent("nhaV");
-setPolygonClickEvent("CDTY");
-setPolygonClickEvent("TV");
-setPolygonClickEvent("SDN");
-setPolygonClickEvent("CTC");
-setPolygonClickEvent("ktxA5");
-setPolygonClickEvent("VTN");
-
-
-// Info sân vận động
-var SVD = L.polygon([
-  [21.040396673539313, 105.78428116288529],
-  [21.040371678795882, 105.78505959767023],
-  [21.040206713384016, 105.78522065314296],
-  [21.03903195441039, 105.78518307353264],
-  [21.03903195441039, 105.78512938837508],
-  [21.038981964461318, 105.78508107173325],
-  [21.03885199051521, 105.78507570321749],
-  [21.038866987514783, 105.78439927023193],
-  [21.039016957427442, 105.78441537577923],
-  [21.03928190390412, 105.78429726843252],
-  [21.039276904918353, 105.78423821475921]
-
-], {
-  opacity: 0,
-  fillOpacity: 0
-}).addTo(mymap);
-
-
-var infoDivSVD = document.getElementById('infoDivSVD');
-
-SVD.on('click', function () {
-  document.getElementById('infoDivSVD').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivSVD');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivSVD = document.getElementById('infoDivSVD');
-    infoDivSVD.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!SVD.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivSVD').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForSVD() {
-  var latitude = 21.040301318576297; 
-  var longitude = 21.040301318576297; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivSVD() {
-  var infoDiv = document.getElementById('infoDivSVD');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  SVD.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    SVD.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.03965606971299, 105.78473031520845], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-
-// Info kí túc xá A6
-var ktxA6 = L.polygon([
-  [21.0409026560483, 105.7853661970565],
-  [21.04107025097548, 105.78537156355203],
-  [21.041065248144562, 105.78563183858496],
-  [21.041080256636818, 105.7856345218327],
-  [21.04107775522155, 105.78570428627451],
-  [21.041065248144562, 105.78570696952227],
-  [21.04105774389787, 105.78596187805967],
-  [21.040885146119635, 105.78595651156418],
-  [21.040887647538145, 105.78587333088358],
-  [21.04092516881067, 105.78587333088358],
-  [21.040935174481742, 105.7854574274804],
-  [21.0409026560483, 105.78545474423265]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivA6 = document.getElementById('infoDivA6');
-
-ktxA6.on('click', function () {
-  document.getElementById('infoDivA6').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivA6');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivA6 = document.getElementById('infoDivA6');
-    infoDivA6.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!ktxA6.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivA6').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForA6() {
-  var latitude = 21.040977854797603; 
-  var longitude = 105.7853525876999; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivA6() {
-  var infoDiv = document.getElementById('infoDivA6');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  ktxA6.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    ktxA6.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.040977854797603, 105.7853525876999], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info kí túc xá A8
-var ktxA8 = L.polygon([
-  [21.0404577934922, 105.78465580959691],
-  [21.040552847638555, 105.78465849284467],
-  [21.040545343366063, 105.78494291710746],
-  [21.04059787326567, 105.78494291710746],
-  [21.040590368995417, 105.78522734137023],
-  [21.040535337668796, 105.78522734137023],
-  [21.040532254318343, 105.78525871038438],
-  [21.040495107879135, 105.78525557336546],
-  [21.040497816298068, 105.78522734137023],
-  [21.04048781059761, 105.78522734137023],
-  [21.040497816298068, 105.78494291710746],
-  [21.040452790640725, 105.78494291710746]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivA8 = document.getElementById('infoDivA8');
-
-ktxA8.on('click', function () {
-  document.getElementById('infoDivA8').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivA8');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivA8 = document.getElementById('infoDivA8');
-    infoDivA8.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!ktxA8.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivA8').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForA8() {
-  var latitude = 21.04047779705717; 
-  var longitude = 105.78523665624702; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivA8() {
-  var infoDiv = document.getElementById('infoDivA8');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  ktxA8.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    ktxA8.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.04047779705717, 105.78523665624702], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info kí túc xá A9
-var ktxA9 = L.polygon([
-  [21.040626917877212, 105.78407585620882],
-  [21.04072219452683, 105.78407853841783],
-  [21.04071467268828, 105.78436553478242],
-  [21.0407648182714, 105.78436553478242],
-  [21.040757296435018, 105.784647166729],
-  [21.04065951252738, 105.78464448451997],
-  [21.04066703436871, 105.78436285257341],
-  [21.040616888752655, 105.78436285257341]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivA9 = document.getElementById('infoDivA9');
-
-ktxA9.on('click', function () {
-  document.getElementById('infoDivA9').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivA9');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivA9 = document.getElementById('infoDivA9');
-    infoDivA9.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!ktxA9.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivA9').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForA9() {
-  var latitude = 21.040737070276787; 
-  var longitude = 105.78423878844119; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivA9() {
-  var infoDiv = document.getElementById('infoDivA9');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  ktxA9.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    ktxA9.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.040737070276787, 105.78423878844119], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info kí túc xá A10: căng tin
-var ktxA10 = L.polygon([
-  [21.040477687714638, 105.78407049179079],
-  [21.040588008150717, 105.78407585620882],
-  [21.040577979023553, 105.7844486832619],
-  [21.04055541348494, 105.7844486832619],
-  [21.040552906202656, 105.78453719615938],
-  [21.040507775114392, 105.78453719615938],
-  [21.040505267831318, 105.78462839126587],
-  [21.040457629444763, 105.78462839126587]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivA10 = document.getElementById('infoDivA10');
-
-ktxA10.on('click', function () {
-  document.getElementById('infoDivA10').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivA10');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivA10 = document.getElementById('infoDivA10');
-    infoDivA10.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!ktxA10.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivA10').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForA10() {
-  var latitude = 21.04046323762088; 
-  var longitude = 105.78426431564917; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivA10() {
-  var infoDiv = document.getElementById('infoDivA10');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  ktxA10.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    ktxA10.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.04046323762088, 105.78426431564917], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info kí túc xá A11
-var ktxA11 = L.polygon([
-  [21.040983482497634, 105.78471958637239],
-  [21.040978467947454, 105.78497171401978],
-  [21.0410035406967, 105.78497171401978],
-  [21.04099852614719, 105.78525602817537],
-  [21.040910771503356, 105.78525602817537],
-  [21.040910771503356, 105.78510314226152],
-  [21.040868147800566, 105.78510314226152],
-  [21.040873162354472, 105.78496098518373],
-  [21.040880684185016, 105.78496098518373],
-  [21.04088569873849, 105.78471422195436]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivA11 = document.getElementById('infoDivA11');
-
-ktxA11.on('click', function () {
-  document.getElementById('infoDivA11').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivA11');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivA11 = document.getElementById('infoDivA11');
-    infoDivA11.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!ktxA11.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivA11').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForA11() {
-  var latitude = 21.040843008631303; 
-  var longitude = 105.7848553645986; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivA11() {
-  var infoDiv = document.getElementById('infoDivA11');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  ktxA11.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    ktxA11.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.040843008631303, 105.7848553645986], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info kí túc xá A12
-var ktxA12 = L.polygon([
-  [21.040824907029684, 105.78412413597108],
-  [21.04080986336258, 105.78465521335603],
-  [21.041005430916247, 105.78466057777405],
-  [21.041020474563595, 105.78408658504488],
-  [21.040890096236176, 105.78408390283586],
-  [21.040890096236176, 105.78412681818011]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivA12 = document.getElementById('infoDivA12');
-
-ktxA12.on('click', function () {
-  document.getElementById('infoDivA12').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivA12');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivA12 = document.getElementById('infoDivA12');
-    infoDivA12.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!ktxA12.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivA12').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForA12() {
-  var latitude = 21.04080760993697; 
-  var longitude = 105.78427053649243; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivA12() {
-  var infoDiv = document.getElementById('infoDivA12');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  ktxA12.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    ktxA12.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.04080760993697, 105.78427053649243], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-
-// Info Hội trường 11.10
-var HT1110 = L.polygon([
-  [21.03842398570617, 105.78449696302415],
-  [21.0384139564333, 105.7848456501961],
-  [21.037887418658645, 105.784829556942],
-  [21.037897447966973, 105.78447818756105]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDiv1110 = document.getElementById('infoDiv1110');
-
-HT1110.on('click', function () {
-  document.getElementById('infoDiv1110').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDiv1110');
-
-  closeButton.addEventListener('click', function () {
-    var infoDiv1110 = document.getElementById('infoDiv1110');
-    infoDiv1110.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!HT1110.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDiv1110').style.display = 'none';
-  }
-});
-
-function openGoogleMapsFor1110() {
-  var latitude = 21.03786212246022; 
-  var longitude = 105.78466057777405; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDiv1110() {
-  var infoDiv = document.getElementById('infoDiv1110');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  HT1110.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    HT1110.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.03786212246022, 105.78466057777405], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
+// setPolygonClickEvent("NhaHieuBo");
+// setPolygonClickEvent("nhaA2");
+// setPolygonClickEvent("nhaA3");
+// setPolygonClickEvent("nhaA4");
+// setPolygonClickEvent("nhaB1");
+// setPolygonClickEvent("nhaB2");
+// setPolygonClickEvent("nhaC1");
+// setPolygonClickEvent("nhaC2");
+// setPolygonClickEvent("nhaC3");
+// setPolygonClickEvent("nhaC4");
+// setPolygonClickEvent("nhaD124");
+// setPolygonClickEvent("nhaD3");
+// setPolygonClickEvent("nhaH8");
+// setPolygonClickEvent("nhaM1234");
+// setPolygonClickEvent("nhaN");
+// setPolygonClickEvent("nhaK1");
+// setPolygonClickEvent("nhaK2");
+// setPolygonClickEvent("nhaK3");
+// setPolygonClickEvent("nhaKT");
+// setPolygonClickEvent("nhaT1");
+// setPolygonClickEvent("nhaT2");
+// setPolygonClickEvent("nhaV");
+// setPolygonClickEvent("CDTY");
+// setPolygonClickEvent("TV");
+// setPolygonClickEvent("SDN");
+// setPolygonClickEvent("CTC");
+// setPolygonClickEvent("ktxA5");
+// setPolygonClickEvent("VTN");
 
 // --------------------------------------------------------------------------------------- //
 
