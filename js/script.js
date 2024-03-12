@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
 // Lưu trữ cài đặt ngôn ngữ hiện tại
 let isEnglish = false;
 const languageToggle = document.getElementById('language-toggle');
@@ -300,6 +301,15 @@ document.getElementById("music").addEventListener("click", function() {
 });
 
 
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  const homeContent = document.getElementById('main-content');
+
+  sidebar.classList.remove('show');
+  homeContent.classList.remove('show');
+}
+
+
 function toggleSupportDiv() {
   var supportDiv = document.getElementById("support-div");
   var computedStyle = window.getComputedStyle(supportDiv);
@@ -309,12 +319,7 @@ function toggleSupportDiv() {
   } else {
     supportDiv.style.display = "none";
   }
-}
-
-
-function hideSupportDiv() {
-  var supportDiv = document.getElementById("support-div");
-  supportDiv.style.display = "none";
+  hideSidebar();
 }
 
 function toggleSocialNetworkDiv() {
@@ -326,6 +331,7 @@ function toggleSocialNetworkDiv() {
   } else {
     socialDiv.style.display = "none";
   }
+  hideSidebar();
 }
 
 function toggleHNUEIntroductionDiv() {
@@ -337,6 +343,7 @@ function toggleHNUEIntroductionDiv() {
   } else {
     HNUEIntrductionDiv.style.display = "none";
   }
+  hideSidebar();
 }
 
 function toggleProductIntroductionDiv() {
@@ -348,6 +355,7 @@ function toggleProductIntroductionDiv() {
   } else {
     ProductIntrductionDiv.style.display = "none";
   }
+  hideSidebar();
 }
 
 function toggleInfomationPagesDiv() {
@@ -359,6 +367,19 @@ function toggleInfomationPagesDiv() {
   } else {
     InfomationPagesDiv.style.display = "none";
   }
+  hideSidebar();
+}
+
+function toggleDonateDiv() {
+  var donateDiv = document.getElementById("donate-div");
+  var computedStyle = window.getComputedStyle(donateDiv);
+
+  if (computedStyle.display === "none") {
+    donateDiv.style.display = "block";
+  } else {
+    donateDiv.style.display = "none";
+  }
+  hideSidebar();
 }
 
 function hideInfomationPagesDiv() {
@@ -381,6 +402,16 @@ function hideSocialNetworkDiv() {
   socialDiv.style.display = "none";
 }
 
+function hideSupportDiv() {
+  var supportDiv = document.getElementById("support-div");
+  supportDiv.style.display = "none";
+}
+
+function hideDonateDiv() {
+  var donateDiv = document.getElementById("donate-div");
+  donateDiv.style.display = "none";
+}
+
 function hideEnterPostDiv() {
   var enterPost = document.getElementById("enter-post");
   enterPost.style.display = "none";
@@ -392,21 +423,9 @@ function openEnterPostDiv() {
 }
 
 
-function toggleDonateDiv() {
-  var donateDiv = document.getElementById("donate-div");
-  var computedStyle = window.getComputedStyle(donateDiv);
 
-  if (computedStyle.display === "none") {
-    donateDiv.style.display = "block";
-  } else {
-    donateDiv.style.display = "none";
-  }
-}
 
-function hideDonateDiv() {
-  var donateDiv = document.getElementById("donate-div");
-  donateDiv.style.display = "none";
-}
+
 
 function composeEmail() {
   var emailAddress = "hoaphamduc2399@gmail.com";

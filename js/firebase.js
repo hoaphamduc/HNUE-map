@@ -48,6 +48,7 @@ function logout() {
     .catch((error) => {
       console.error("Error signing out:", error);
     });
+  hideSidebar();
 }
 
 // Function to clear user profile information
