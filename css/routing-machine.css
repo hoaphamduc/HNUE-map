@@ -61,9 +61,9 @@
         left: 0px;
     }
     .leaflet-routing-alternatives-container {
-        max-height: 200px;
+        max-height: 150px;
     }
     .closeRoutingButton {
-        top: 45px;
+        top: 53px;
     }
 }

@@ -71,7 +71,7 @@ body, html {
   background-color: #fff;
   top: 8px;
   right: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   transition: 1s ease-in-out;
   border: 1px solid #81858A;
   overflow: hidden;
@@ -1670,9 +1670,16 @@ body, html {
     top: 160px;
   }
   #direction-board {
-    width: 100%;
-    right: 0;
-    top: 0;
+    width: 99%;
+    right: 0.5%;
+    top: 2px;
+    border-radius: 5px;
+    border: none;
   }
-
+  #search-input-img {
+    left: 6.5%;
+  }
+  #clear-input {
+    right: 6.5%;
+  }
 }
