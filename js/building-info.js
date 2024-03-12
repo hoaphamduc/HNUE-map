@@ -164,29 +164,450 @@ var buildingData = {
     "longitude": 105.78374855294989,
     "source-image": []
   },
+  "nhaC2": {
+    "polygon": [
+      [21.0371742550829, 105.78418314456941],
+      [21.03716924296171, 105.78428775072099],
+      [21.037402306418958, 105.78429311513904],
+      [21.037404812475675, 105.78423142433168],
+      [21.03744240332109, 105.7842341065407],
+      [21.03744240332109, 105.78419119119646]
+    ],
+    "infoDivId": "infoDivC2",
+    "nameVN": "C2 - KHOA CÔNG NGHỆ THÔNG TIN - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "C2 - FACULTY OF INFORMATION TECHNOLOGY - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "nhaC3": {
+    "polygon": [
+      [21.037563219340893, 105.78387261332273],
+      [21.037548198777404, 105.78444142805806],
+      [21.037440551361414, 105.78443874496965],
+      [21.03745056507781, 105.78407384495078],
+      [21.037438047932216, 105.78406579568568],
+      [21.037433041073676, 105.78405238024379],
+      [21.037440551361414, 105.78403896480191],
+      [21.03745056507781, 105.78403359862519],
+      [21.037455571935766, 105.78386993023439]
+    ],
+    "infoDivId": "infoDivC3",
+    "nameVN": "C3 - KHOA VẬT LÝ - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "C3 - FACULTY OF PHYSICS - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.037494326242005,
+    "longitude": 105.78374421706172,
+    "source-image": []
+  },
+  "nhaC4": {
+    "polygon": [
+      [21.037443054790582, 105.78376249150337],
+      [21.037455571935766, 105.78377322385688],
+      [21.03745056507781, 105.7839529907779],
+      [21.03718019449884, 105.78394494151281],
+      [21.03718019449884, 105.78389127974529],
+      [21.037220249430398, 105.78389396283367],
+      [21.03722775972886, 105.78376785768015],
+      [21.03723527002695, 105.78375712532662]
+    ],
+    "infoDivId": "infoDivC4",
+    "nameVN": "C4 - GIẢNG ĐƯỜNG - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "C4 - LECTURE HALL - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.037494326242005,
+    "longitude": 105.78374421706172,
+    "source-image": []
+  },
+  "nhaD124": {
+    "polygon": [
+      [21.038161537221455, 105.78381078709413],
+      [21.03815152355284, 105.78422129961533],
+      [21.03813399963117, 105.7842239827037],
+      [21.03813149621363, 105.78426691211766],
+      [21.037911195304414, 105.78426154594092],
+      [21.03790869188312, 105.78421861652694],
+      [21.03787614740244, 105.78421593343857],
+      [21.03787114055864, 105.78437423565265],
+      [21.037796037881286, 105.78437155256427],
+      [21.037808554996815, 105.78380542091733]
+    ],
+    "infoDivId": "infoDivD124",
+    "nameVN": "D1, D2, D4 - TRƯỜNG THPT CHUYÊN - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "D1, D2, D4 - SPECIALIZED HIGH SCHOOL - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.03804219021729,
+    "longitude": 105.78404903411867,
+    "source-image": []
+  },
+  "nhaD3": {
+    "polygon": [
+      [21.038164040638502, 105.78381068684716],
+      [21.038296721681732, 105.78381336993554],
+      [21.03828420460723, 105.78437950158246],
+      [21.038149020135595, 105.78437950158246],
+      [21.03815402697008, 105.78417826995441],
+      [21.03817405430626, 105.78417558686603],
+      [21.038179061139893, 105.78410046039154],
+      [21.038169047472465, 105.78408972803805],
+      [21.038169047472465, 105.78406289715431],
+      [21.038179061139893, 105.78405484788921],
+      [21.03818406797336, 105.78391264420537],
+      [21.03815903380436, 105.78391264420537]
+    ],
+    "infoDivId": "infoDivD3",
+    "nameVN": "D3 - KHOA ÂM NHẠC, MỸ THUẬT, KHOA TIẾNG ANH, KHOA QUẢN LÝ GIÁO DỤC, TRUNG TÂM NGHIỆP VỤ SƯ PHẠM - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "D3 - FACULTY OF MUSIC, FINE ARTS, FACULTY OF ENGLISH, FACULTY OF EDUCATION MANAGEMENT, CENTER FOR PEDAGOGICAL PROFESSIONALISM - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "nhaH8": {
+    "polygon": [
+      [21.038003821862752, 105.7853876454793],
+      [21.03799881502323, 105.78565327122834],
+      [21.037776010494266, 105.7856479050516],
+      [21.037778513917797, 105.78538227930257]
+    ],
+    "infoDivId": "infoDivH8",
+    "nameVN": "H8 - NHÀ CÔNG VỤ CHO CÁN BỘ NƯỚC NGOÀI - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "H8 - OFFICIAL RESIDENCE FOR FOREIGN STAFF - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.037883657667848,
+    "longitude": 105.78534990549089,
+    "source-image": []
+  },
+  "nhaM1234": {
+    "polygon": [
+      [21.037528171357064, 105.7845752588726],
+      [21.037513150790037, 105.785087728752],
+      [21.037455571935766, 105.785087728752],
+      [21.037455571935766, 105.78510382728223],
+      [21.037062533075126, 105.78509041184041],
+      [21.037062533075126, 105.78507431331015],
+      [21.037017471228655, 105.7850689471334],
+      [21.0370299884096, 105.78459404049121],
+      [21.03707505025228, 105.78459404049121],
+      [21.037080057122832, 105.7845430618121],
+      [21.037425530785555, 105.7845537941656],
+      [21.037425530785555, 105.78456184343071],
+      [21.037465585651148, 105.78456452651908],
+      [21.037468089079884, 105.7845725757842]
+    ],
+    "infoDivId": "infoDivM1234",
+    "nameVN": "M1, M2, M3, M4 -TRƯỜNG THCS, THPT NGUYỄN TẤT THÀNH - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "M1, M2, M3, M4 - NGUYEN TAT THANH MIDDLE SCHOOL, HIGH SCHOOL - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.03725780091894,
+    "longitude": 105.78450500965118,
+    "source-image": []
+  },
+  "nhaN": {
+    "polygon": [
+      [21.036917333743286, 105.78535013060683],
+      [21.036904816552873, 105.78583040342578],
+      [21.036799672111957, 105.78583040342578],
+      [21.036799672111957, 105.78577942474666],
+      [21.036774637710316, 105.78577405856991],
+      [21.036784651471486, 105.78534476443008]
+    ],
+    "infoDivId": "infoDivN",
+    "nameVN": "N - NHÀ XUẤT BẢN ĐẠI HỌC SƯ PHẠM, TRUNG TÂM NGHIÊN CỨU VÀ SẢN XUẤT HỌC LIỆU - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "N - UNIVERSITY PUBLISHING HOUSE, RESEARCH AND PRODUCTION CENTER FOR EDUCATIONAL MATERIALS - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.0367247914678,
+    "longitude": 105.78547313729273,
+    "source-image": []
+  },
+  "nhaK1": {
+    "polygon": [
+      [21.03897764894967, 105.78273773640991],
+      [21.038967635335936, 105.78319922761024],
+      [21.03873231521919, 105.78319386143349],
+      [21.038737322034056, 105.78300604524732],
+      [21.038679743652953, 105.78300336215892],
+      [21.038682247061296, 105.78292018641935],
+      [21.038734818626644, 105.78292018641935],
+      [21.038744832256047, 105.78273237023313],
+      [21.038814927642953, 105.78273505332153],
+      [21.038819934455045, 105.78271358861456],
+      [21.03891005704384, 105.78271358861456],
+      [21.03891005704384, 105.78273773640991]
+    ],
+    "infoDivId": "infoDivK1",
+    "nameVN": "K1 - GIẢNG ĐƯỜNG, CÁC TT NGHIÊN CỨU KHCN VÀ QUAN HỆ QUỐC TẾ - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "K1 - LECTURE HALL, RESEARCH CENTERS FOR SCIENCE AND TECHNOLOGY, AND INTERNATIONAL RELATIONS - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "nhaK2": {
+    "polygon": [
+      [21.039200451681328, 105.782979171275],
+      [21.03919043808257, 105.78327699408447],
+      [21.03905525443335, 105.78327699408447],
+      [21.039062764639308, 105.78297380509825]
+    ],
+    "infoDivId": "infoDivK2",
+    "nameVN": "K2 - NHÀ TRẺ BÚP SEN XANH - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "K2 - GREEN LOTUS PRESCHOOL - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.039126286970678,
+    "longitude": 105.7832668617139,
+    "source-image": []
+  },
+  "nhaK3": {
+    "polygon": [
+      [21.039202955080917, 105.78285851847535],
+      [21.0391979482817, 105.78297657436379],
+      [21.039142873479236, 105.78297657436379],
+      [21.03914037007864, 105.78293901112654],
+      [21.03906777144307, 105.78293901112654],
+      [21.039065268041202, 105.78285315229857]
+    ],
+    "infoDivId": "infoDivK3",
+    "nameVN": "K3 - TRUNG TÂM GIÁO DỤC ĐẶC BIỆT - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "K3 - SPECIAL EDUCATION CENTER - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.039095308860723,
+    "longitude": 105.78294396400453,
+    "source-image": []
+  },
+  "nhaKT": {
+    "polygon": [
+      [21.03882616756567, 105.78490922595851],
+      [21.03882616756567, 105.78507028143126],
+      [21.038976137519423, 105.78508101846278],
+      [21.03903112646463, 105.78512933510463],
+      [21.039026127470454, 105.78517765174642],
+      [21.03853622522696, 105.78517228323066],
+      [21.03853955271893, 105.78489929437639]
+    ],
+    "infoDivId": "infoDivKT",
+    "nameVN": "KT - TRƯỜNG TIỂU HỌC THỰC HÀNH NGUYỄN TẤT THÀNH - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "KT - NGUYEN TAT THANH ELEMENTARY PRACTICE SCHOOL - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.038531226216158,
+    "longitude": 105.78513470362036,
+    "source-image": []
+  
+  },
+  "nhaT1": {
+    "polygon": [
+      [21.038554573182463, 105.78434471200755],
+      [21.038852478729513, 105.7843527612727],
+      [21.0388399617017, 105.78490279438934],
+      [21.038544559540274, 105.78489474512426]
+    ],
+    "infoDivId": "infoDivT1",
+    "nameVN": "NHÀ LUYỆN TẬP VÀ THI ĐẤU THỂ DỤC THỂ THAO - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "ATHLETIC TRAINING AND SPORTS COMPETITION CENTER - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.038542669242013,
+    "longitude": 105.78458709452437,
+    "source-image": []
+  },
+  "nhaT2": {
+    "polygon": [
+      [21.038682247061296, 105.7842854615855],
+      [21.038679743652953, 105.78434717261811],
+      [21.038554573182463, 105.78434448952973],
+      [21.03855707659289, 105.7842854615855]
+    ],
+    "infoDivId": "infoDivT2",
+    "nameVN": "KHOA GIÁO DỤC THỂ CHẤT - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "FACULTY OF PHYSICAL EDUCATION - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.038542056129614,
+    "longitude": 105.78431725502014,
+    "source-image": []
+  },
+  "nhaV": {
+    "polygon": [
+      [21.038361810452184, 105.78496175814038],
+      [21.038356803624698, 105.78512810961956],
+      [21.037866133714665, 105.7851120110893],
+      [21.037868637136672, 105.78494565961012],
+      [21.03805138682979, 105.78495102578687],
+      [21.038053890248694, 105.78492419490316],
+      [21.03817405430626, 105.78492956107989],
+      [21.03817405430626, 105.78495370887525]
+    ],
+    "infoDivId": "infoDivV",
+    "nameVN": "<center>TOÀ NHÀ V<br> </center><center><span style=\"font-size: 10px; color: #707070\">GIẢNG ĐƯỜNG, KHOA GD THỂ CHẾT, KHOA GD ĐẶC BIỆT, KHOA GD TIỂU HỌC, KHOA SƯ PHẠM KỸ THUẬT, KHOA GD MẦM NON, KHOA GD QUỐC PHÒNG & AN NINH, KHOA ĐỊA LÝ, KHOA TÂM LÝ GD, VIỆN NGHIÊN CỨU SƯ PHẠM</span></center>",
+    "nameEN": "<center>V BUILDING</center><center><span style=\"font-size: 10px; color: #707070\">LECTURE HALL, FACULTY OF EDUCATIONAL ADMINISTRATION, FACULTY OF SPECIAL EDUCATION, FACULTY OF ELEMENTARY EDUCATION, FACULTY OF TECHNICAL PEDAGOGY, FACULTY OF PRESCHOOL EDUCATION, FACULTY OF NATIONAL DEFENSE & SECURITY EDUCATION, FACULTY OF GEOGRAPHY, FACULTY OF EDUCATIONAL PSYCHOLOGY, INSTITUTE FOR EDUCATIONAL RESEARCH - HANOI UNIVERSITY OF EDUCATION</span></center>",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "CDTY": {
+    "polygon": [
+      [21.03855707659289, 105.78329026179401],
+      [21.03855707659289, 105.78331977576616],
+      [21.040479683387375, 105.78338953606385],
+      [21.040479683387375, 105.78336002209176]
+    ],
+    "infoDivId": "infoDivCDTY",
+    "nameVN": "CON ĐƯỜNG TÌNH YÊU",
+    "nameEN": "LOVE LANE",
+    "infoVN": "Có người còn gọi là: \"Con đường của người không có tình yêu\"<br><br><b>Thông tin chung:</b><br><br>- Địa chỉ: Đại học Sư phạm Hà Nội, 136 Xuân Thủy, Dịch Vọng Hậu, Cầu Giấy, Hà Nội.<br>- Đặc điểm:<br>&ensp;+ Con đường dài khoảng 100 mét, được rợp bóng cây cổ thụ.<br>&ensp;+ Vào mùa lá rụng vàng rực tạo nên khung cảnh lãng mạn.<br>&ensp;+ Con đường là địa điểm yêu thích của các cặp đôi sinh viên trong trường.<br><br><b>Lịch sử:</b><br><br>Con đường tình yêu được đặt tên bởi các sinh viên Đại học Sư phạm Hà Nội.<br>Tên gọi này xuất phát từ khung cảnh lãng mạn và nên thơ của con đường.<br>Con đường đã trở thành một biểu tượng cho tình yêu và tuổi trẻ của sinh viên trường.<br><br><b>Ý nghĩa:</b><br><br>Con đường tình yêu là nơi lưu giữ những kỷ niệm đẹp của các cặp đôi sinh viên.<br>Con đường cũng là nơi để các bạn trẻ thể hiện tình cảm và tình yêu của mình.<br>Con đường là một phần không thể thiếu trong đời sống sinh viên của Đại học Sư phạm Hà Nội.<br><br><b>Lưu ý:</b><br><br>Con đường tình yêu là một địa điểm tham quan yêu thích của du khách khi đến Đại học Sư phạm Hà Nội.<br>Du khách cần giữ gìn vệ sinh chung và không được phép xả rác bừa bãi trên con đường.",
+    "infoEN": "Also known as: \"The Lane of those without love\"<br><br><b>General Information:</b><br><br>- Address: Hanoi University of Education, 136 Xuan Thuy, Dich Vong Hau, Cau Giay, Hanoi.<br>- Characteristics:<br>&ensp;+ The lane is approximately 100 meters long, adorned with old tamarind trees.<br>&ensp;+ In the season of golden falling leaves, it creates a romantic ambiance.<br>&ensp;+ The lane is a favorite spot for student couples in the university.<br><br><b>History:</b><br><br>Love Lane was named by the students of Hanoi University of Education.<br>This name originates from the romantic and poetic scenery of the lane.<br>The lane has become a symbol of love and youth for the university students.<br><br><b>Significance:</b><br><br>Love Lane is a place to preserve beautiful memories for student couples.<br>The lane is also a place for young people to express their emotions and love.<br>The lane is an integral part of the student life at Hanoi University of Education.<br><br><b>Note:</b><br><br>Love Lane is a popular tourist attraction for visitors to Hanoi University of Education.<br>Visitors should maintain cleanliness and are not allowed to litter on the lane.",
+    "latitude": 21.038914821717466,
+    "longitude": 105.78331432193048,
+    "source-image": ['source-img/cdty.jpg', 'source-img/cdty2.jpg']
+  },
+  "TV": {
+    "polygon": [
+      [21.040389561748245, 105.78345131568648],
+      [21.04037454146976, 105.78393695468218],
+      [21.04003157803211, 105.78392622232869],
+      [21.040049101730556, 105.7834379002446]
+    ],
+    "infoDivId": "infoDivTV",
+    "nameVN": "TRUNG TÂM THÔNG TIN THƯ VIỆN - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "LIBRARY INFORMATION CENTER - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.04001756530523,
+    "longitude": 105.7836799710749,
+    "source-image": []
+  },
+  "SDN": {
+    "polygon": [
+      [21.03981628671161, 105.78396892574736],
+      [21.039803769764802, 105.78425601620339],
+      [21.040394568507402, 105.78428014553222],
+      [21.04040207864583, 105.78399307354273]
+    ],
+    "infoDivId": "infoDivSDN",
+    "nameVN": "SÂN ĐA NĂNG - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "MULTIPURPOSE COURT - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.04025667948982,
+    "longitude": 105.78429755527353,
+    "source-image": []
+  },
+  "CTC": {
+    "polygon": [
+      [21.039798762985786, 105.78353404998781],
+      [21.039886381594307, 105.78396891343634],
+      [21.03981628671161, 105.78396623034799],
+      [21.039801266375314, 105.78425600389234],
+      [21.039260533259778, 105.78423453918538],
+      [21.039255526462505, 105.78429088404124],
+      [21.039057757835383, 105.78436332742733],
+      [21.03901269659248, 105.78440357375293],
+      [21.038577103874918, 105.78421575756676],
+      [21.03859462774445, 105.78336537771617],
+      [21.038880016186976, 105.78337342698131],
+      [21.038882519591947, 105.7835075814]
+    ],
+    "infoDivId": "infoDivCTC",
+    "nameVN": "CHÙA THÁNH CHÚA",
+    "nameEN": "THANH CHUA PAGODA",
+    "infoVN": "<b>Lịch sử:</b><br><br>\
+              - Chùa Thánh Chúa được xây dựng từ trước năm 1064, thuộc thời Lý, tọa lạc tại làng Vòng (nay thuộc phường Dịch Vọng Hậu, quận Cầu Giấy, Hà Nội).<br>\
+              - Chùa gắn liền với hai vị vua nổi tiếng trong lịch sử Việt Nam:<br>\
+              &ensp;+ Vua Lý Thánh Tông: Tương truyền vua thường đến chùa để cầu tự và sau đó sinh ra vua Lý Nhân Tông.<br>\
+              &ensp;+ Vua Lê Thánh Tông: Vua từng sống và học tập tại chùa khi còn nhỏ.<br>\
+              - Chùa đã trải qua nhiều thăng trầm lịch sử và được trùng tu nhiều lần.<br>\
+              - Năm 1954, chùa được di dời về vị trí hiện tại trong khuôn viên Đại học Sư phạm Hà Nội để phục vụ cho việc quy hoạch và xây dựng khu đô thị mới.<br><br>\
+              <b>Địa lý:</b><br><br>\
+              - Chùa Thánh Chúa hiện nay nằm trong khuôn viên Đại học Sư phạm Hà Nội, số 1 Tây Sơn, phường Đống Đa, quận Đống Đa, Hà Nội.<br>\
+              - Chùa có diện tích khoảng 2000m², bao gồm các hạng mục:<br>\
+              &ensp;+ Tam quan<br>\
+              &ensp;+ Hậu cung<br>\
+              &ensp;+ Nhà Mẫu<br>\
+              &ensp;+ Tháp Phổ Minh<br>\
+              &ensp;+ Các khu vườn tược<br><br>\
+              <b>Giá trị:</b><br><br>\
+              - Chùa Thánh Chúa là một di tích lịch sử văn hóa cấp quốc gia được công nhận năm 1989.<br>\
+              - Chùa là nơi lưu giữ nhiều giá trị văn hóa, kiến trúc và nghệ thuật độc đáo, bao gồm:<br>\
+              &ensp;+ Các pho tượng Phật cổ<br>\
+              &ensp;+ Hệ thống các câu đối, bia đá<br>\
+              &ensp;+ Các chi tiết trang trí tinh xảo<br><br>\
+              <b>Ý nghĩa:</b><br><br>\
+              - Chùa Thánh Chúa là một điểm đến tâm linh thu hút đông đảo du khách và người dân địa phương.<br>\
+              - Chùa là nơi để người dân cầu nguyện bình an, may mắn và thể hiện lòng thành kính đối với Phật pháp.<br>\
+              - Chùa cũng là một địa điểm để tham quan, tìm hiểu về lịch sử và văn hóa Việt Nam.<br><br>\
+              <b>Lưu ý:</b><br><br>\
+              - Khi đến thăm chùa, du khách cần ăn mặc lịch sự và giữ gìn vệ sinh chung.<br>\
+              - Du khách không nên chụp ảnh các pho tượng Phật và các di vật trong chùa.",
+    "infoEN": "<b>History:</b><br><br>\
+              - Thanh Chua Pagoda was built before 1064, during the Ly dynasty, located in Vong village (now part of Dich Vong Hau ward, Cau Giay district, Hanoi).<br>\
+              - The pagoda is closely associated with two famous kings in Vietnamese history:<br>\
+              &ensp;+ King Ly Thanh Tong: Legend has it that the king often visited the pagoda for prayers and later gave birth to King Ly Nhan Tong.<br>\
+              &ensp;+ King Le Thanh Tong: The king lived and studied at the pagoda when he was young.<br>\
+              - The pagoda has undergone many historical ups and downs and has been renovated several times.<br>\
+              - In 1954, the pagoda was relocated to its current location within the campus of Hanoi University of Education to support the planning and construction of a new urban area.<br><br>\
+              <b>Location:</b><br><br>\
+              - Thanh Chua Pagoda is currently located within the campus of Hanoi University of Education, at 1 Tay Son, Dong Da ward, Dong Da district, Hanoi.<br>\
+              - The pagoda covers an area of ​​about 2000m², including the following sections:<br>\
+              &ensp;+ Three gates<br>\
+              &ensp;+ Rear palace<br>\
+              &ensp;+ Ancestor's house<br>\
+              &ensp;+ Pho Minh Tower<br>\
+              &ensp;+ Various gardens<br><br>\
+              <b>Significance:</b><br><br>\
+              - Thanh Chua Pagoda is a nationally recognized historical and cultural monument since 1989.<br>\
+              - The pagoda preserves many unique cultural, architectural, and artistic values, including:<br>\
+              &ensp;+ Ancient Buddha statues<br>\
+              &ensp;+ A system of couplets, stone steles<br>\
+              &ensp;+ Exquisite decorative details<br><br>\
+              <b>Meaning:</b><br><br>\
+              - Thanh Chua Pagoda is a spiritual destination attracting many tourists and local residents.<br>\
+              - The pagoda is a place for people to pray for peace, luck, and to express their sincere respect for Buddhism.<br>\
+              - The pagoda is also a site for sightseeing, learning about the history and culture of Vietnam.<br><br>\
+              <b>Notes:</b><br><br>\
+              - When visiting the pagoda, tourists should dress modestly and maintain general hygiene.<br>\
+              - Visitors should refrain from taking photos of Buddha statues and other artifacts in the pagoda.",
+    "latitude": 21.038781898211674,
+    "longitude": 105.78383495574235,
+    "source-image": ['source-img/CTC.jpg']
+  },
   "ktxA5": {
-      "polygon": [
-        [21.040547104689804, 105.78535637607521],
-        [21.040717201438433, 105.78536173838764],
-        [21.04071219859566, 105.78561912938419],
-        [21.04072720712347, 105.78561912938419],
-        [21.04072720712347, 105.78569420175819],
-        [21.040709697174197, 105.78569420175819],
-        [21.040702192909603, 105.78595159275474],
-        [21.040532096143824, 105.78594623044232],
-        [21.04053459756825, 105.78585775228727],
-        [21.04057211892973, 105.78585507113105],
-        [21.040582124624514, 105.78544217307407],
-        [21.040547104689804, 105.78544217307407]
-      ],
-      "infoDivId": "infoDivA5",
-      "nameVN": "KÝ TÚC XÁ A5 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-      "nameEN": "A5 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
-      "infoVN": "<b>Toà nhà A5:</b><br><br>Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 63 phòng tương ứng 490 chỗ ở, mỗi tầng 16 phòng. Tiêu chuẩn là loại phòng cơ bản.<br> <br><b>Đối tượng sắp xếp ở là:</b><br><br>Nữ sinh viên năm thứ 3 các khoa.<br> <br><b>Loại phòng:</b><br><br>Cơ bản (tiêu chuẩn) gồm 2 mã phòng.<br>- Loại phòng A5-06 (6 người): Có 8 phòng xếp 6 chỗ ở.<br>- Loại phòng A5-08 (8 người): Có 55 phòng xếp 8 chỗ ở.<br> <br><b>Diện tích - Điều kiện cơ sở vật chất:</b><br><br> Phòng có S = 25 - 36 m<sup>2</sup>. Công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, bình nóng lạnh, Wifi. ",
-      "infoEN": "<b>Building A5:</b><br><br>It has a high-rise structure (4 floors) with 63 rooms, providing accommodation for 490 residents, 16 rooms on each floor. The standard is basic room type.<br><br><b>Occupants:</b><br><br>Third-year female students from various faculties.<br><br><b>Room Types:</b><br><br>Basic (standard) rooms with 2 room codes:<br>- Room type A5-06 (6 persons): 8 rooms with 6 beds each.<br>- Room type A5-08 (8 persons): 55 rooms with 8 beds each.<br><br><b>Area - Facilities:</b><br><br>Room area S = 25 - 36 m<sup>2</sup>. Closed facilities (bathroom, toilet, laundry area, balcony, ...), full utilities with electricity and water, bunk beds, ceiling fan, water heater, Wifi.",
-      "latitude": 21.040557663003472,
-      "longitude": 105.78565049910145,
-      "source-image": ['source-img/A5.jpg']
+    "polygon": [
+      [21.040547104689804, 105.78535637607521],
+      [21.040717201438433, 105.78536173838764],
+      [21.04071219859566, 105.78561912938419],
+      [21.04072720712347, 105.78561912938419],
+      [21.04072720712347, 105.78569420175819],
+      [21.040709697174197, 105.78569420175819],
+      [21.040702192909603, 105.78595159275474],
+      [21.040532096143824, 105.78594623044232],
+      [21.04053459756825, 105.78585775228727],
+      [21.04057211892973, 105.78585507113105],
+      [21.040582124624514, 105.78544217307407],
+      [21.040547104689804, 105.78544217307407]
+    ],
+    "infoDivId": "infoDivA5",
+    "nameVN": "KÝ TÚC XÁ A5 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "A5 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Toà nhà A5:</b><br><br>Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 63 phòng tương ứng 490 chỗ ở, mỗi tầng 16 phòng. Tiêu chuẩn là loại phòng cơ bản.<br> <br><b>Đối tượng sắp xếp ở là:</b><br><br>Nữ sinh viên năm thứ 3 các khoa.<br> <br><b>Loại phòng:</b><br><br>Cơ bản (tiêu chuẩn) gồm 2 mã phòng.<br>- Loại phòng A5-06 (6 người): Có 8 phòng xếp 6 chỗ ở.<br>- Loại phòng A5-08 (8 người): Có 55 phòng xếp 8 chỗ ở.<br> <br><b>Diện tích - Điều kiện cơ sở vật chất:</b><br><br> Phòng có S = 25 - 36 m<sup>2</sup>. Công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, bình nóng lạnh, Wifi. ",
+    "infoEN": "<b>Building A5:</b><br><br>It has a high-rise structure (4 floors) with 63 rooms, providing accommodation for 490 residents, 16 rooms on each floor. The standard is basic room type.<br><br><b>Occupants:</b><br><br>Third-year female students from various faculties.<br><br><b>Room Types:</b><br><br>Basic (standard) rooms with 2 room codes:<br>- Room type A5-06 (6 persons): 8 rooms with 6 beds each.<br>- Room type A5-08 (8 persons): 55 rooms with 8 beds each.<br><br><b>Area - Facilities:</b><br><br>Room area S = 25 - 36 m<sup>2</sup>. Closed facilities (bathroom, toilet, laundry area, balcony, ...), full utilities with electricity and water, bunk beds, ceiling fan, water heater, Wifi.",
+    "latitude": 21.040557663003472,
+    "longitude": 105.78565049910145,
+    "source-image": ['source-img/A5.jpg']
   },
   "VTN": {
     "polygon": [
@@ -202,7 +623,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.040027118063747,
     "longitude": 105.78531054929083,
-    "source-image": ['source-img/A5.jpg']
+    "source-image": []
 }
   
   
@@ -219,1445 +640,28 @@ setPolygonClickEvent("nhaA4");
 setPolygonClickEvent("nhaB1");
 setPolygonClickEvent("nhaB2");
 setPolygonClickEvent("nhaC1");
+setPolygonClickEvent("nhaC2");
+setPolygonClickEvent("nhaC3");
+setPolygonClickEvent("nhaC4");
+setPolygonClickEvent("nhaD124");
+setPolygonClickEvent("nhaD3");
+setPolygonClickEvent("nhaH8");
+setPolygonClickEvent("nhaM1234");
+setPolygonClickEvent("nhaN");
+setPolygonClickEvent("nhaK1");
+setPolygonClickEvent("nhaK2");
+setPolygonClickEvent("nhaK3");
+setPolygonClickEvent("nhaKT");
+setPolygonClickEvent("nhaT1");
+setPolygonClickEvent("nhaT2");
+setPolygonClickEvent("nhaV");
+setPolygonClickEvent("CDTY");
+setPolygonClickEvent("TV");
+setPolygonClickEvent("SDN");
+setPolygonClickEvent("CTC");
 setPolygonClickEvent("ktxA5");
 setPolygonClickEvent("VTN");
 
-
-
-// Info nhà C2
-
-var nhaC2 = L.polygon([
-  [21.0371742550829, 105.78418314456941],
-  [21.03716924296171, 105.78428775072099],
-  [21.037402306418958, 105.78429311513904],
-  [21.037404812475675, 105.78423142433168],
-  [21.03744240332109, 105.7842341065407],
-  [21.03744240332109, 105.78419119119646]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivC2 = document.getElementById('infoDivC2');
-
-nhaC2.on('click', function () {
-  document.getElementById('infoDivC2').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivC2');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivC2 = document.getElementById('infoDivC2');
-    infoDivC2.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaC2.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivC2').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForC2() {
-  var latitude = 21.037137948558595; 
-  var longitude = 105.78374855294989; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivC2() {
-  var infoDiv = document.getElementById('infoDivC2');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaC2.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaC2.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.037137948558595, 105.78374855294989], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà C3
-
-var nhaC3 = L.polygon([
-  [21.037563219340893, 105.78387261332273],
-  [21.037548198777404, 105.78444142805806],
-  [21.037440551361414, 105.78443874496965],
-  [21.03745056507781, 105.78407384495078],
-  [21.037438047932216, 105.78406579568568],
-  [21.037433041073676, 105.78405238024379],
-  [21.037440551361414, 105.78403896480191],
-  [21.03745056507781, 105.78403359862519],
-  [21.037455571935766, 105.78386993023439]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivC3 = document.getElementById('infoDivC3');
-
-nhaC3.on('click', function () {
-  document.getElementById('infoDivC3').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivC3');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivC3 = document.getElementById('infoDivC3');
-    infoDivC3.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaC3.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivC3').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForC3() {
-  var latitude = 21.037494326242005; 
-  var longitude = 105.78374421706172; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivC3() {
-  var infoDiv = document.getElementById('infoDivC3');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaC3.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaC3.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.037494326242005, 105.78374421706172], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-
-// Info nhà C4
-
-var nhaC4 = L.polygon([
-  [21.037443054790582, 105.78376249150337],
-  [21.037455571935766, 105.78377322385688],
-  [21.03745056507781, 105.7839529907779],
-  [21.03718019449884, 105.78394494151281],
-  [21.03718019449884, 105.78389127974529],
-  [21.037220249430398, 105.78389396283367],
-  [21.03722775972886, 105.78376785768015],
-  [21.03723527002695, 105.78375712532662]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivC4 = document.getElementById('infoDivC4');
-
-nhaC4.on('click', function () {
-  document.getElementById('infoDivC4').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivC4');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivC4 = document.getElementById('infoDivC4');
-    infoDivC4.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaC4.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivC4').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForC4() {
-  var latitude = 21.037494326242005; 
-  var longitude = 105.78374421706172; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivC4() {
-  var infoDiv = document.getElementById('infoDivC4');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaC4.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaC4.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.037494326242005, 105.78374421706172], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà D1, D2, D4
-
-var nhaD124 = L.polygon([
-  [21.038161537221455, 105.78381078709413],
-  [21.03815152355284, 105.78422129961533],
-  [21.03813399963117, 105.7842239827037],
-  [21.03813149621363, 105.78426691211766],
-  [21.037911195304414, 105.78426154594092],
-  [21.03790869188312, 105.78421861652694],
-  [21.03787614740244, 105.78421593343857],
-  [21.03787114055864, 105.78437423565265],
-  [21.037796037881286, 105.78437155256427],
-  [21.037808554996815, 105.78380542091733]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivD124 = document.getElementById('infoDivD124');
-
-nhaD124.on('click', function () {
-  document.getElementById('infoDivD124').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivD124');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivD124 = document.getElementById('infoDivD124');
-    infoDivD124.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaD124.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivD124').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForD124() {
-  var latitude = 21.03804219021729; 
-  var longitude = 105.78404903411867; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivD124() {
-  var infoDiv = document.getElementById('infoDivD124');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaD124.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaD124.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.03804219021729, 105.78404903411867], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà D3
-var nhaD3 = L.polygon([
-  [21.038164040638502, 105.78381068684716],
-  [21.038296721681732, 105.78381336993554],
-  [21.03828420460723, 105.78437950158246],
-  [21.038149020135595, 105.78437950158246],
-  [21.03815402697008, 105.78417826995441],
-  [21.03817405430626, 105.78417558686603],
-  [21.038179061139893, 105.78410046039154],
-  [21.038169047472465, 105.78408972803805],
-  [21.038169047472465, 105.78406289715431],
-  [21.038179061139893, 105.78405484788921],
-  [21.03818406797336, 105.78391264420537],
-  [21.03815903380436, 105.78391264420537]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivD3 = document.getElementById('infoDivD3');
-
-nhaD3.on('click', function () {
-  document.getElementById('infoDivD3').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivD3');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivD3 = document.getElementById('infoDivD3');
-    infoDivD3.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaD3.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivD3').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForD3() {
-  var latitude = 21.03818907480665; 
-  var longitude = 105.78376471996307; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivD3() {
-  var infoDiv = document.getElementById('infoDivD3');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaD3.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaD3.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.03818907480665, 105.78376471996307], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà H8
-var nhaH8 = L.polygon([
-  [21.038003821862752, 105.7853876454793],
-  [21.03799881502323, 105.78565327122834],
-  [21.037776010494266, 105.7856479050516],
-  [21.037778513917797, 105.78538227930257]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivH8 = document.getElementById('infoDivH8');
-
-nhaH8.on('click', function () {
-  document.getElementById('infoDivH8').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivH8');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivH8 = document.getElementById('infoDivH8');
-    infoDivH8.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaH8.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivH8').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForH8() {
-  var latitude = 21.037883657667848; 
-  var longitude = 105.78534990549089; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivH8() {
-  var infoDiv = document.getElementById('infoDivH8');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaH8.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaH8.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.037883657667848, 105.78534990549089], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà M1, M2, M3, M4
-var nhaM = L.polygon([
-  [21.037528171357064, 105.7845752588726],
-  [21.037513150790037, 105.785087728752],
-  [21.037455571935766, 105.785087728752],
-  [21.037455571935766, 105.78510382728223],
-  [21.037062533075126, 105.78509041184041],
-  [21.037062533075126, 105.78507431331015],
-  [21.037017471228655, 105.7850689471334],
-  [21.0370299884096, 105.78459404049121],
-  [21.03707505025228, 105.78459404049121],
-  [21.037080057122832, 105.7845430618121],
-  [21.037425530785555, 105.7845537941656],
-  [21.037425530785555, 105.78456184343071],
-  [21.037465585651148, 105.78456452651908],
-  [21.037468089079884, 105.7845725757842]
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivM1234 = document.getElementById('infoDivM1234');
-
-nhaM.on('click', function () {
-  document.getElementById('infoDivM1234').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivM1234');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivM1234 = document.getElementById('infoDivM1234');
-    infoDivM1234.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaM.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivM1234').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForM1234() {
-  var latitude = 21.03725780091894; 
-  var longitude = 105.78450500965118; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivM1234() {
-  var infoDiv = document.getElementById('infoDivM1234');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaM.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaM.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.03725780091894, 105.78450500965118], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà N
-var nhaN = L.polygon([
-  [21.036917333743286, 105.78535013060683],
-  [21.036904816552873, 105.78583040342578],
-  [21.036799672111957, 105.78583040342578],
-  [21.036799672111957, 105.78577942474666],
-  [21.036774637710316, 105.78577405856991],
-  [21.036784651471486, 105.78534476443008]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivN = document.getElementById('infoDivN');
-
-nhaN.on('click', function () {
-  document.getElementById('infoDivN').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivN');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivN = document.getElementById('infoDivN');
-    infoDivN.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaN.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivN').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForN() {
-  var latitude = 21.0367247914678; 
-  var longitude = 105.78547313729273; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivN() {
-  var infoDiv = document.getElementById('infoDivN');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaN.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaN.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.0367247914678, 105.78547313729273], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-
-// Info nhà K1
-var nhaK1 = L.polygon([
-  [21.03897764894967, 105.78273773640991],
-  [21.038967635335936, 105.78319922761024],
-  [21.03873231521919, 105.78319386143349],
-  [21.038737322034056, 105.78300604524732],
-  [21.038679743652953, 105.78300336215892],
-  [21.038682247061296, 105.78292018641935],
-  [21.038734818626644, 105.78292018641935],
-  [21.038744832256047, 105.78273237023313],
-  [21.038814927642953, 105.78273505332153],
-  [21.038819934455045, 105.78271358861456],
-  [21.03891005704384, 105.78271358861456],
-  [21.03891005704384, 105.78273773640991]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivK1 = document.getElementById('infoDivK1');
-
-nhaK1.on('click', function () {
-  document.getElementById('infoDivK1').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivK1');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivK1 = document.getElementById('infoDivK1');
-    infoDivK1.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaK1.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivK1').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForK1() {
-  var latitude = 21.038680962142024; 
-  var longitude = 105.78296637234962; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivK1() {
-  var infoDiv = document.getElementById('infoDivK1');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaK1.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaK1.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.038680962142024, 105.78296637234962], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà K2
-var nhaK2 = L.polygon([
-  [21.039200451681328, 105.782979171275],
-  [21.03919043808257, 105.78327699408447],
-  [21.03905525443335, 105.78327699408447],
-  [21.039062764639308, 105.78297380509825]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivK2 = document.getElementById('infoDivK2');
-
-nhaK2.on('click', function () {
-  document.getElementById('infoDivK2').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivK2');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivK2 = document.getElementById('infoDivK2');
-    infoDivK2.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaK2.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivK2').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForK2() {
-  var latitude = 21.039126286970678; 
-  var longitude = 105.7832668617139; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivK2() {
-  var infoDiv = document.getElementById('infoDivK2');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaK2.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaK2.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.039126286970678, 105.7832668617139], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà K3
-var nhaK3 = L.polygon([
-  [21.039202955080917, 105.78285851847535],
-  [21.0391979482817, 105.78297657436379],
-  [21.039142873479236, 105.78297657436379],
-  [21.03914037007864, 105.78293901112654],
-  [21.03906777144307, 105.78293901112654],
-  [21.039065268041202, 105.78285315229857]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivK3 = document.getElementById('infoDivK3');
-
-nhaK3.on('click', function () {
-  document.getElementById('infoDivK3').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivK3');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivK3 = document.getElementById('infoDivK3');
-    infoDivK3.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaK3.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivK3').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForK3() {
-  var latitude = 21.039095308860723; 
-  var longitude = 105.78294396400453; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivK3() {
-  var infoDiv = document.getElementById('infoDivK3');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaK3.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaK3.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.039095308860723, 105.78294396400453], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà KT
-var nhaKT = L.polygon([
-  [21.03882616756567, 105.78490922595851],
-  [21.03882616756567, 105.78507028143126],
-  [21.038976137519423, 105.78508101846278],
-  [21.03903112646463, 105.78512933510463],
-  [21.039026127470454, 105.78517765174642],
-  [21.03853622522696, 105.78517228323066],
-  [21.03853955271893, 105.78489929437639]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivKT = document.getElementById('infoDivKT');
-
-nhaKT.on('click', function () {
-  document.getElementById('infoDivKT').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivKT');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivKT = document.getElementById('infoDivKT');
-    infoDivKT.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaKT.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivKT').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForKT() {
-  var latitude = 21.038531226216158; 
-  var longitude = 105.78513470362036; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivKT() {
-  var infoDiv = document.getElementById('infoDivKT');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaKT.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaKT.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.038531226216158, 105.78513470362036], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-
-// Info nhà T1
-var nhaT1 = L.polygon([
-  [21.038554573182463, 105.78434471200755],
-  [21.038852478729513, 105.7843527612727],
-  [21.0388399617017, 105.78490279438934],
-  [21.038544559540274, 105.78489474512426]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivT1 = document.getElementById('infoDivT1');
-
-nhaT1.on('click', function () {
-  document.getElementById('infoDivT1').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivT1');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivT1 = document.getElementById('infoDivT1');
-    infoDivT1.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaT1.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivT1').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForT1() {
-  var latitude = 21.038542669242013; 
-  var longitude = 105.78458709452437; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivT1() {
-  var infoDiv = document.getElementById('infoDivT1');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaT1.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaT1.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.038542669242013, 105.78458709452437], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà T2
-var nhaT2 = L.polygon([
-  [21.038682247061296, 105.7842854615855],
-  [21.038679743652953, 105.78434717261811],
-  [21.038554573182463, 105.78434448952973],
-  [21.03855707659289, 105.7842854615855]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivT2 = document.getElementById('infoDivT2');
-
-nhaT2.on('click', function () {
-  document.getElementById('infoDivT2').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivT2');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivT2 = document.getElementById('infoDivT2');
-    infoDivT2.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaT2.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivT2').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForT2() {
-  var latitude = 21.038542669242013; 
-  var longitude = 105.78458709452437; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivT2() {
-  var infoDiv = document.getElementById('infoDivT2');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaT2.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaT2.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.038542669242013, 105.78458709452437], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà V
-var nhaV = L.polygon([
-  [21.038361810452184, 105.78496175814038],
-  [21.038356803624698, 105.78512810961956],
-  [21.037866133714665, 105.7851120110893],
-  [21.037868637136672, 105.78494565961012],
-  [21.03805138682979, 105.78495102578687],
-  [21.038053890248694, 105.78492419490316],
-  [21.03817405430626, 105.78492956107989],
-  [21.03817405430626, 105.78495370887525]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivV = document.getElementById('infoDivV');
-
-nhaV.on('click', function () {
-  document.getElementById('infoDivV').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivV');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivV = document.getElementById('infoDivV');
-    infoDivV.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaV.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivV').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForV() {
-  var latitude = 21.03811551883931; 
-  var longitude = 105.78491461906061; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivV() {
-  var infoDiv = document.getElementById('infoDivV');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaV.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaV.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.03811551883931, 105.78491461906061], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà CDTY
-var CDTY = L.polygon([
-  [21.03855707659289, 105.78329026179401],
-  [21.03855707659289, 105.78331977576616],
-  [21.040479683387375, 105.78338953606385],
-  [21.040479683387375, 105.78336002209176]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivCDTY = document.getElementById('infoDivCDTY');
-
-CDTY.on('click', function () {
-  document.getElementById('infoDivCDTY').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivCDTY');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivCDTY = document.getElementById('infoDivCDTY');
-    infoDivCDTY.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!CDTY.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivCDTY').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForCDTY() {
-  var latitude = 21.038914821717466; 
-  var longitude = 105.78331432193048; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivCDTY() {
-  var infoDiv = document.getElementById('infoDivCDTY');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  CDTY.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    CDTY.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.038914821717466, 105.78331432193048], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info nhà TV
-var nhaTV = L.polygon([
-  [21.040389561748245, 105.78345131568648],
-  [21.04037454146976, 105.78393695468218],
-  [21.04003157803211, 105.78392622232869],
-  [21.040049101730556, 105.7834379002446]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivTV = document.getElementById('infoDivTV');
-
-nhaTV.on('click', function () {
-  document.getElementById('infoDivTV').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivTV');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivTV = document.getElementById('infoDivTV');
-    infoDivTV.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!nhaTV.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivTV').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForTV() {
-  var latitude = 21.04001756530523; 
-  var longitude = 105.7836799710749; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivTV() {
-  var infoDiv = document.getElementById('infoDivTV');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  nhaTV.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    nhaTV.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.04001756530523, 105.7836799710749], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info Sân đa năng
-var SDN = L.polygon([
-  [21.03981628671161, 105.78396892574736],
-  [21.039803769764802, 105.78425601620339],
-  [21.040394568507402, 105.78428014553222],
-  [21.04040207864583, 105.78399307354273]
-
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivSDN = document.getElementById('infoDivSDN');
-
-SDN.on('click', function () {
-  document.getElementById('infoDivSDN').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivSDN');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivSDN = document.getElementById('infoDivSDN');
-    infoDivSDN.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!SDN.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivSDN').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForSDN() {
-  var latitude = 21.04025667948982; 
-  var longitude = 105.78429755527353; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivSDN() {
-  var infoDiv = document.getElementById('infoDivSDN');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  SDN.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    SDN.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.04025667948982, 105.78429755527353], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
-
-// Info Chùa thánh chúa
-var CTC = L.polygon([
-  [21.039798762985786, 105.78353404998781],
-  [21.039886381594307, 105.78396891343634],
-  [21.03981628671161, 105.78396623034799],
-  [21.039801266375314, 105.78425600389234],
-  [21.039260533259778, 105.78423453918538],
-  [21.039255526462505, 105.78429088404124],
-  [21.039057757835383, 105.78436332742733],
-  [21.03901269659248, 105.78440357375293],
-  [21.038577103874918, 105.78421575756676],
-  [21.03859462774445, 105.78336537771617],
-  [21.038880016186976, 105.78337342698131],
-  [21.038882519591947, 105.7835075814]
-], {
-  opacity: 0,        
-  fillOpacity: 0     
-}).addTo(mymap);
-
-
-var infoDivCTC = document.getElementById('infoDivCTC');
-
-CTC.on('click', function () {
-  document.getElementById('infoDivCTC').style.display = 'block';
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var closeButton = document.getElementById('closeinfoDivCTC');
-
-  closeButton.addEventListener('click', function () {
-    var infoDivCTC = document.getElementById('infoDivCTC');
-    infoDivCTC.style.display = 'none';
-  });
-});
-
-
-mymap.on('click', function (e) {
-  if (!CTC.getBounds().contains(e.latlng)) {
-    document.getElementById('infoDivCTC').style.display = 'none';
-  }
-});
-
-function openGoogleMapsForCTC() {
-  var latitude = 21.038781898211674; 
-  var longitude = 105.78383495574235; 
-
-  var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-  window.open(googleMapsUrl, '_blank');
-}
-
-function toggleInfoDivCTC() {
-  var infoDiv = document.getElementById('infoDivCTC');
-  if (infoDiv.style.display === 'block') {
-    infoDiv.style.display = 'none';
-  } else {
-    setTimeout(function() {
-      infoDiv.style.display = 'block';
-    }, 3000);
-  }
-  CTC.setStyle({
-    opacity: 0.8,
-    fillOpacity: 0.2
-  });
-
-  setTimeout(function () {
-    CTC.setStyle({
-      opacity: 0,
-      fillOpacity: 0
-    });
-  }, 3000);
-  mymap.flyTo([21.039117839471388, 105.78391492366792], 19, {
-    duration: 2, 
-    animate: true,
-    easeLinearity: 0.5
-  });
-  toggleHide();
-}
 
 // Info sân vận động
 var SVD = L.polygon([
@@ -1738,86 +742,6 @@ function toggleInfoDivSVD() {
   toggleHide();
 }
 
-
-// Info kí túc xá A5
-// var ktxA5 = L.polygon([
-//   [21.040547104689804, 105.78535637607521],
-//   [21.040717201438433, 105.78536173838764],
-//   [21.04071219859566, 105.78561912938419],
-//   [21.04072720712347, 105.78561912938419],
-//   [21.04072720712347, 105.78569420175819],
-//   [21.040709697174197, 105.78569420175819],
-//   [21.040702192909603, 105.78595159275474],
-//   [21.040532096143824, 105.78594623044232],
-//   [21.04053459756825, 105.78585775228727],
-//   [21.04057211892973, 105.78585507113105],
-//   [21.040582124624514, 105.78544217307407],
-//   [21.040547104689804, 105.78544217307407]
-
-// ], {
-//   opacity: 0,        
-//   fillOpacity: 0     
-// }).addTo(mymap);
-
-
-// var infoDivA5 = document.getElementById('infoDivA5');
-
-// ktxA5.on('click', function () {
-//   document.getElementById('infoDivA5').style.display = 'block';
-// });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   var closeButton = document.getElementById('closeinfoDivA5');
-
-//   closeButton.addEventListener('click', function () {
-//     var infoDivA5 = document.getElementById('infoDivA5');
-//     infoDivA5.style.display = 'none';
-//   });
-// });
-
-
-// mymap.on('click', function (e) {
-//   if (!ktxA5.getBounds().contains(e.latlng)) {
-//     document.getElementById('infoDivA5').style.display = 'none';
-//   }
-// });
-
-// function openGoogleMapsForA5() {
-//   var latitude = 21.040557663003472; 
-//   var longitude = 105.78565049910145; 
-
-//   var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
-
-//   window.open(googleMapsUrl, '_blank');
-// }
-
-// function toggleInfoDivA5() {
-//   var infoDiv = document.getElementById('infoDivA5');
-//   if (infoDiv.style.display === 'block') {
-//     infoDiv.style.display = 'none';
-//   } else {
-//     setTimeout(function() {
-//       infoDiv.style.display = 'block';
-//     }, 3000);
-//   }
-//   ktxA5.setStyle({
-//     opacity: 0.8,
-//     fillOpacity: 0.2
-//   });
-
-//   setTimeout(function () {
-//     ktxA5.setStyle({
-//       opacity: 0,
-//       fillOpacity: 0
-//     });
-//   }, 3000);
-//   mymap.flyTo([21.040557663003472, 105.78565049910145], 19, {
-//     duration: 2, 
-//     animate: true,
-//     easeLinearity: 0.5
-//   });
-//   toggleHide();
-// }
 
 // Info kí túc xá A6
 var ktxA6 = L.polygon([
@@ -2429,7 +1353,6 @@ function setPolygonClickEvent(buildingKey) {
   polygon.on('click', function () {
 
       var infoDiv = document.getElementById(building.infoDivId);
-      console.log(infoDiv);
       if (!infoDiv) {
           // Nếu khối div chưa được tạo, tạo nó và hiển thị
           infoDiv = createInfoDiv(buildingKey);

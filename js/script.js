@@ -468,60 +468,6 @@ var ogImage2Element = document.getElementById("ogImage2");
 // });
 
 
-// behavior toolbar
-var toolBar = document.getElementById('tool-bar');
-
-var lifePosition;
-var firstPosition;
-var movingToolBar = false;
-var positionToolBar = 0;
-var defaultPositionToolBar = 389;
-var limitTop = 390;
-var limitBottom = 10;
-
-// setup
-
-toolBar.addEventListener('touchstart', handleStart);
-document.addEventListener('touchmove', handleMove);
-toolBar.addEventListener('touchend', handleEnd);
-
-moveToolBarY(defaultPositionToolBar);
-positionToolBar = defaultPositionToolBar;
-
-function handleStart(event) {
-
-    var mouseX, mouseY;
-    mouseX = event.touches[0].clientX; 
-    mouseY = event.touches[0].clientY; 
-    firstPosition = event.touches[0].clientY;
-    movingToolBar = true;
-  }
-  
-  function handleEnd(event){
-    movingToolBar = false;
-
-    // save position tool bar
-    positionToolBar = positionToolBar - (firstPosition - lifePosition);
-
-    if(positionToolBar > limitTop)
-      positionToolBar = limitTop;
-    else if(positionToolBar < limitBottom)
-      positionToolBar = limitBottom;
-
-  }
-  
-  function handleMove(event) {
-    lifePosition = event.clientY || event.touches[0].clientY;
-    if(movingToolBar)
-    {
-      moveToolBarY(positionToolBar -( firstPosition - lifePosition));
-    }
-  }
-  
-  function moveToolBarY(yOffset) {
-    if(yOffset <= limitBottom || yOffset >= limitTop) return;
-    toolBar.style.transform = 'translateY(' + yOffset + 'px)';
-}
 
 // Hàm chuyển đổi tiếng Việt có dấu thành tiếng Việt không dấu
 function removeVietnameseSigns(str) {
