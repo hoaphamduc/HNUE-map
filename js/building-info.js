@@ -624,9 +624,174 @@ var buildingData = {
     "latitude": 21.040027118063747,
     "longitude": 105.78531054929083,
     "source-image": []
-}
-  
-  
+  },
+  "SVD": {
+    "polygon": [
+      [21.040396673539313, 105.78428116288529],
+      [21.040371678795882, 105.78505959767023],
+      [21.040206713384016, 105.78522065314296],
+      [21.03903195441039, 105.78518307353264],
+      [21.03903195441039, 105.78512938837508],
+      [21.038981964461318, 105.78508107173325],
+      [21.03885199051521, 105.78507570321749],
+      [21.038866987514783, 105.78439927023193],
+      [21.039016957427442, 105.78441537577923],
+      [21.03928190390412, 105.78429726843252],
+      [21.039276904918353, 105.78423821475921]
+    ],
+    "infoDivId": "infoDivSVD",
+    "nameVN": "SÂN VẬN ĐỘNG - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "SPORTS STADIUM - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Lịch sử:</b> - Sân vận động Đại học Sư phạm Hà Nội được xây dựng cùng thời điểm với việc thành lập trường. - Sân vận động đã trải qua nhiều lần sửa chữa và nâng cấp, hiện là một trong những sân vận động có quy mô và hiện đại nhất trong các trường đại học trên cả nước. <b>Địa lý:</b> - Sân vận động nằm trong khuôn viên Đại học Sư phạm Hà Nội, số 136 Xuân Thuỷ, phường Dịch Vọng Hậu, quận Cầu GIấy, Hà Nội. - Sân có diện tích khoảng 10.000m², bao gồm:  + Sân thi đấu chính  + Khán đài  + Khu vực phụ trợ <b>Giá trị:</b> - Sân vận động là nơi diễn ra các hoạt động thể dục thể thao của sinh viên và cán bộ, viên chức nhà trường. - Sân cũng là nơi tổ chức các giải thi đấu thể thao cấp trường, khu vực và quốc gia. <b>Ý nghĩa:</b> - Sân vận động góp phần nâng cao chất lượng giáo dục thể chất cho sinh viên. - Sân cũng là nơi rèn luyện sức khỏe, phát triển tinh thần thể thao và tăng cường đoàn kết cho sinh viên.",
+    "infoEN": "<b>History:</b> - The Sports Stadium of Hanoi University of Education was built coinciding with the establishment of the university. - The stadium has undergone several repairs and upgrades, and is currently one of the largest and most modern stadiums in universities nationwide. <b>Location:</b> - The stadium is located within the campus of Hanoi University of Education, at 136 Xuan Thuy, Dich Vong Hau ward, Cau Giay district, Hanoi. - The stadium covers an area of ​​about 10,000m², including:  + Main sports field  + Grandstand  + Support area <b>Significance:</b> - The stadium is where physical education and sports activities for students and university staff take place. - It is also a venue for organizing university, regional, and national sports competitions. <b>Meaning:</b> - The stadium contributes to improving the quality of physical education for students. - It is a place for promoting health, developing a sports spirit, and enhancing unity among students.",
+    "latitude": 21.040301318576297,
+    "longitude": 21.040301318576297,
+    "source-image": []
+  },
+  "KTXA6": {
+    "polygon": [
+      [21.0409026560483, 105.7853661970565],
+      [21.04107025097548, 105.78537156355203],
+      [21.041065248144562, 105.78563183858496],
+      [21.041080256636818, 105.7856345218327],
+      [21.04107775522155, 105.78570428627451],
+      [21.041065248144562, 105.78570696952227],
+      [21.04105774389787, 105.78596187805967],
+      [21.040885146119635, 105.78595651156418],
+      [21.040887647538145, 105.78587333088358],
+      [21.04092516881067, 105.78587333088358],
+      [21.040935174481742, 105.7854574274804],
+      [21.0409026560483, 105.78545474423265]
+    ],
+    "infoDivId": "infoDivA6",
+    "nameVN": "KÝ TÚC XÁ A6 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "A6 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Tòa nhà A6:</b> Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 64 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> Nữ sinh viên năm thứ 2 (khóa 70) các khoa. <b>Loại phòng:</b> Cơ bản (tiêu chuẩn) gồm 2 mã phòng - Loại phòng A6-04.1 (4 người): Có 8 phòng xếp 4 chỗ ở. - Loại phòng A6-06.1 (6 người): Có 56 phòng xếp 6 chỗ ở. <b>Diện tích -  Điều kiện cơ sở vật chất:</b> Phòng có S = 25 - 36 m². Công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, bình nóng lạnh, wifi,...",
+    "infoEN": "<b>Building A6:</b> It has a high-rise structure (4 floors) with 64 rooms, 16 rooms on each floor. The standard is high-quality room type. <b>Occupants:</b> Second-year female students (class of 70) from various faculties. <b>Room Types:</b> Basic (standard) rooms with 2 room codes: - Room type A6-04.1 (4 persons): 8 rooms with 4 beds each. - Room type A6-06.1 (6 persons): 56 rooms with 6 beds each. <b>Area - Facilities:</b> Room area S = 25 - 36 m². Closed facilities (bathroom, toilet, laundry area, balcony, ...), full utilities with electricity and water, bunk beds, ceiling fan, water heater, Wifi, ...",
+    "latitude": 21.040977854797603,
+    "longitude": 21.7853525876999,
+    "source-image": ['source-img/A6.jpg']
+  },
+  "KTXA8": {
+    "polygon": [
+      [21.0404577934922, 105.78465580959691],
+      [21.040552847638555, 105.78465849284467],
+      [21.040545343366063, 105.78494291710746],
+      [21.04059787326567, 105.78494291710746],
+      [21.040590368995417, 105.78522734137023],
+      [21.040535337668796, 105.78522734137023],
+      [21.040532254318343, 105.78525871038438],
+      [21.040495107879135, 105.78525557336546],
+      [21.040497816298068, 105.78522734137023],
+      [21.04048781059761, 105.78522734137023],
+      [21.040497816298068, 105.78494291710746],
+      [21.040452790640725, 105.78494291710746]
+    ],
+    "infoDivId": "infoDivA8",
+    "nameVN": "KÝ TÚC XÁ A8, PHÒNG Y TẾ - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "A8 DORMITORY, HEALTH ROOM - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Tòa nhà A8:</b> Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 56 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn là loại phòng cơ bản. <b>Đối tượng xếp ở là:</b> - Tầng 2, 3, 4 đơn nguyên đông xếp nam sinh viên các khoa. - Tầng 1, 2, 3, 4 đơn nguyên tây xếp nữ sinh viên năm thứ 4 các khoa. <b>Loại phòng:</b> Cơ bản (tiêu chuẩn) gồm 2 mã phòng. - Loại phòng A8-06 (6 người): Có 50 phòng có 6 chỗ. - Loại phòng A8-08 (8 người): Có 6 phòng có 8 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 25 - 36m², công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, wifi. <b>Tiện ích:</b> Một số phòng thêm các tiện ích như điều hòa, bình nóng lạnh.",
+    "infoEN": "<b>Building A8:</b> It has a structure of a multi-story building (4 floors) with 56 rooms, each floor having 16 rooms. The standard is the basic room type. <b>Occupants:</b> - Floors 2, 3, 4 are for male students from various faculties. - Floors 1, 2, 3, 4 are for female senior students from the 4th year of various faculties. <b>Room Types:</b> The basic (standard) room includes 2 room codes. - Room type A8-06 (6 people): There are 50 rooms with 6 beds each. - Room type A8-08 (8 people): There are 6 rooms with 8 beds each. <b>Area - Facilities:</b> Room area ranges from 25 to 36 square meters, with enclosed facilities (bathroom, toilet, laundry area, balcony, etc.), sufficient utilities such as electricity, water, bunk beds, ceiling fans, and wifi. <b>Amenities:</b> Some rooms have additional amenities such as air conditioning and water heaters.",
+    "latitude": 21.04047779705717,
+    "longitude": 21.78523665624702,
+    "source-image": ['source-img/A8.jpg']
+  },
+  "KTXA9": {
+    "polygon": [
+      [21.040626917877212, 105.78407585620882],
+      [21.04072219452683, 105.78407853841783],
+      [21.04071467268828, 105.78436553478242],
+      [21.0407648182714, 105.78436553478242],
+      [21.040757296435018, 105.784647166729],
+      [21.04065951252738, 105.78464448451997],
+      [21.04066703436871, 105.78436285257341],
+      [21.040616888752655, 105.78436285257341]
+    ],
+    "infoDivId": "infoDivA9",
+    "nameVN": "KÝ TÚC XÁ A9 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "A9 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Tòa nhà A9:</b> Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 63 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn là phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> - Nam học sinh trường THPT Nguyễn Tất Thành và THPT Chuyên ĐHSP Hà Nội. - Nam học viên cao học, NCS,... <b>Loại phòng:</b> Phòng ở chất lượng cao gồm 2 mã phòng. - Loại phòng A9-03 (3 người): Có 57 phòng có 6 chỗ. - Loại phòng A9-04 (4 người): Có 6 phòng có 8 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 25 - 36 m². Công trình phụ hiện đại, khép kín (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn, bàn ghế, tủ quần áo, Wifi. <b>Tiện ích:</b> Một số phòng thêm các tiện ích như bình nóng lạnh, điều hòa.",
+    "infoEN": "<b>Building A9:</b> It has a structure of a multi-story building (4 floors) with 63 rooms, each floor having 16 rooms. The standard is high-quality rooms. <b>Occupants:</b> - Male students from Nguyen Tat Thanh High School and Specialized High School of Hanoi University of Education. - Male postgraduate students, doctoral candidates, etc. <b>Room Types:</b> High-quality rooms include 2 room codes. - Room type A9-03 (3 people): There are 57 rooms with 6 beds each. - Room type A9-04 (4 people): There are 6 rooms with 8 beds each. <b>Area - Facilities:</b> Room area ranges from 25 to 36 square meters. Modern and enclosed facilities (bathroom, toilet, laundry area, balcony, etc.), with sufficient utilities such as electricity, water, single beds, tables, chairs, wardrobes, and Wifi. <b>Amenities:</b> Some rooms have additional amenities such as water heaters and air conditioning.",
+    "latitude": 21.040737070276787,
+    "longitude": 21.78423878844119,
+    "source-image": ['source-img/A8.jpg']
+  },
+  "KTXA10": {
+    "polygon": [
+      [21.040477687714638, 105.78407049179079],
+      [21.040588008150717, 105.78407585620882],
+      [21.040577979023553, 105.7844486832619],
+      [21.04055541348494, 105.7844486832619],
+      [21.040552906202656, 105.78453719615938],
+      [21.040507775114392, 105.78453719615938],
+      [21.040505267831318, 105.78462839126587],
+      [21.040457629444763, 105.78462839126587]
+    ],
+    "infoDivId": "infoDivA10",
+    "nameVN": "AAA",
+    "nameEN": "BBB",
+    "infoVN": "CCC",
+    "infoEN": "No information.",
+    "latitude": 21.04046323762088,
+    "longitude": 21.78426431564917,
+    "source-image": ['source-img/A9.jpg']
+  },
+  "KTXA11": {
+    "polygon": [
+      [21.040983482497634, 105.78471958637239],
+      [21.040978467947454, 105.78497171401978],
+      [21.0410035406967, 105.78497171401978],
+      [21.04099852614719, 105.78525602817537],
+      [21.040910771503356, 105.78525602817537],
+      [21.040910771503356, 105.78510314226152],
+      [21.040868147800566, 105.78510314226152],
+      [21.040873162354472, 105.78496098518373],
+      [21.040880684185016, 105.78496098518373],
+      [21.04088569873849, 105.78471422195436]
+    ],
+    "infoDivId": "infoDivA11",
+    "nameVN": "KÝ TÚC XÁ A11 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "A11 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Tòa nhà A11:</b> Có kết cấu xây dựng là nhà cao tầng (5 tầng) với 62 phòng ở, mỗi tầng 11 phòng. Tiêu chuẩn là phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> - LHS Lào, Trung Quốc, Hàn Quốc, .... - Nữ sinh viên, học viên cao học, NCS, ... <b>Loại Phòng:</b> Phòng ở chất lượng cao gồm 3 mã phòng. - Loại phòng A11-03 (3 người): Có 11 phòng có 3 chỗ. - Loại phòng A11-04 (4 người): Có 28 phòng có 4 chỗ. - Loại phòng A11-06 (6 người): Có 16 phòng có 6 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 36m², công trình phụ khép kín, hiện đại (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn với phòng 3 người và giường tầng với phòng 4, 6 người, bàn ghế, tủ quần áo, quạt đảo trần, wifi. <b>Tiện ích:</b> Một số phòng thêm các tiện ích như bình nóng lạnh, điều hòa, tủ lạnh, Ti vi - THC.",
+    "infoEN": "<b>Building A11:</b> This building has a structure of a high-rise (5 floors) with 62 rooms, each floor having 11 rooms. The standard is high-quality rooms. <b>Occupants:</b> - Students from Laos, China, South Korea, etc. - Female students, postgraduate students, PhD candidates, etc. <b>Room Types:</b> High-quality rooms include 3 room codes. - Room type A11-03 (3 people): 11 rooms with 3 beds. - Room type A11-04 (4 people): 28 rooms with 4 beds. - Room type A11-06 (6 people): 16 rooms with 6 beds. <b>Area - Facilities:</b> Rooms have an area of S = 36m², enclosed and modern facilities (bathroom, toilet, laundry, balcony, etc.), full electricity and water supply, single beds for 3-person rooms, and bunk beds for 4, 6-person rooms. It includes tables, chairs, wardrobes, ceiling fans, and Wi-Fi. <b>Amenities:</b> Some rooms have additional amenities such as water heaters, air conditioning, refrigerators, and TVs.",
+    "latitude": 21.040843008631303,
+    "longitude": 21.7848553645986,
+    "source-image": ['source-img/A11.jpg']
+  },
+  "KTXA12": {
+    "polygon": [
+      [21.040824907029684, 105.78412413597108],
+      [21.04080986336258, 105.78465521335603],
+      [21.041005430916247, 105.78466057777405],
+      [21.041020474563595, 105.78408658504488],
+      [21.040890096236176, 105.78408390283586],
+      [21.040890096236176, 105.78412681818011]
+    ],
+    "infoDivId": "infoDivA12",
+    "nameVN": "KÝ TÚC XÁ A12 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "A12 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Tòa nhà A12:</b> Có kết cấu xây dựng là nhà cao tầng (12 tầng) với 198 phòng ở, mỗi tầng 22 phòng. Tiêu chuẩn là phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> - Nữ học sinh trường THPT Nguyễn Tất Thành và THPT Chuyên ĐHSP Hà Nội. - Nữ sinh viên năm thứ nhất các khoa. <b>Loại phòng:</b> Phòng ở chất lượng cao gồm 3 mã phòng. - Loại phòng A12-03 (3 người): Có 22 phòng có 3 chỗ. - Loại phòng A12-04 (4 người): Có 57 phòng có 4 chỗ. - Loại phòng A12-06 (6 người): Có 119 phòng có 6 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 36 m², Công trình phụ hiện đại, khép kín (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn với phòng 3 người và giường tầng với phòng 4, 6 người, bàn ghế, tủ quần áo, quạt đảo trần, wifi.",
+    "infoEN": "<b>Building A12:</b> This building has a structure of a high-rise (12 floors) with 198 rooms, each floor having 22 rooms. The standard is high-quality rooms. <b>Occupants:</b> - Female students from Nguyen Tat Thanh High School and Specialized High School of Hanoi University of Education. - Female freshmen from various faculties. <b>Room Types:</b> High-quality rooms include 3 room codes. - Room type A12-03 (3 people): 22 rooms with 3 beds. - Room type A12-04 (4 people): 57 rooms with 4 beds. - Room type A12-06 (6 people): 119 rooms with 6 beds. <b>Area - Facilities:</b> Rooms have an area of S = 36 m², modern enclosed facilities (bathroom, toilet, laundry, balcony, etc.), full electricity and water supply, single beds for 3-person rooms, and bunk beds for 4, 6-person rooms. It includes tables, chairs, wardrobes, ceiling fans, and Wi-Fi.",
+    "latitude": 21.04080760993697,
+    "longitude": 21.78427053649243,
+    "source-image": ['source-img/A12.jpg']
+  },
+  "HT1110": {
+    "polygon": [
+      [21.03842398570617, 105.78449696302415],
+      [21.0384139564333, 105.7848456501961],
+      [21.037887418658645, 105.784829556942],
+      [21.037897447966973, 105.78447818756105]
+    ],
+    "infoDivId": "infoDiv1110",
+    "nameVN": "GIẢNG ĐƯỜNG LỚN ĐA NĂNG - HỘI TRƯỜNG 11.10 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "MULTIPURPOSE AUDITORIUM - HALL 11.10 - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Hội trường 11.10</b> là một trong những giảng đường lớn và hiện đại nhất của Trường Đại học Sư phạm Hà Nội. Hội trường được khánh thành vào năm 2013, nhân dịp kỷ niệm 65 năm thành lập trường. <b>Giảng đường lớn đa năng - Hội trường 11/10</b> là một công trình được khởi công từ ngày 30/9/2011, với tổng diện tích 4250m² và quy mô 1200 chỗ ngồi, bao gồm tầng hầm để xe, phòng truyền thống và các phòng chức năng. Đây được xem là một bước tiến quan trọng, đánh dấu sự phát triển của trường trong việc cung cấp không gian hội họp, giảng dạy, sinh hoạt chính trị, văn hóa và văn nghệ cho cộng đồng cán bộ, giáo viên và sinh viên. <b>Hội trường 11.10</b> bao gồm các khu vực chức năng chính sau: <b>Sân khấu:</b> rộng rãi, được trang bị hệ thống âm thanh, ánh sáng hiện đại. <b>Khu vực khán đài:</b> có 1200 chỗ ngồi, được bố trí thành các dãy ghế cao dần về phía sau, đảm bảo cho tất cả các sinh viên đều có thể nhìn rõ sân khấu. <b>Hệ thống phòng chức năng:</b> bao gồm các phòng họp, phòng hội thảo, phòng trang điểm… <b>Hội trường 11.10</b> là một biểu tượng của Trường Đại học Sư phạm Hà Nội. Hội trường không chỉ là nơi diễn ra các hoạt động học tập, nghiên cứu khoa học mà còn là nơi diễn ra các hoạt động văn hóa, văn nghệ, thể dục thể thao của nhà trường.",
+    "infoEN": "<b>Hall 11.10</b> is one of the largest and most modern auditoriums at Hanoi University of Education. The hall was inaugurated in 2013, commemorating the 65th anniversary of the university's establishment. <b>Multipurpose Auditorium - Hall 11/10</b> is a project that commenced on September 30, 2011, covering a total area of 4250m² and accommodating 1200 seats, including an underground parking lot, traditional meeting rooms, and functional rooms. This is considered a significant step forward, marking the university's development in providing space for meetings, teaching, political activities, cultural and artistic events for the community of faculty, staff, and students. <b>Hall 11.10</b> includes the following main functional areas: <b>Stage:</b> spacious, equipped with a modern sound and lighting system. <b>Audience area:</b> with 1200 seats arranged in escalating rows, ensuring all students have a clear view of the stage. <b>Functional room system:</b> including meeting rooms, seminar rooms, dressing rooms, etc. <b>Hall 11.10</b> is an iconic symbol of Hanoi University of Education. It serves not only as a venue for academic and scientific activities but also for cultural, artistic, and sports events within the university.",
+    "latitude": 21.03786212246022,
+    "longitude": 21.78466057777405,
+    "source-image": ['source-img/1110.jpg']
+  }
   // Thêm thông tin của các toà nhà khác tương tự
 };
 
@@ -707,7 +872,7 @@ mymap.on('click', function (e) {
 
 function openGoogleMapsForSVD() {
   var latitude = 21.040301318576297; 
-  var longitude = 105.78517080395068; 
+  var longitude = 21.040301318576297; 
 
   var googleMapsUrl = `https://www.google.com/maps/dir//${latitude},${longitude}/`;
 
