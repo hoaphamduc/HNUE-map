@@ -25,7 +25,6 @@ function updateUserProfile(user) {
   document.getElementById("userProfilePicture").src = userProfilePicture;
   document.getElementById("userProfilePicture1").src = userProfilePicture;
   document.getElementById("userProfilePicture2").src = userProfilePicture;
-  document.getElementById("user-avt").src = userProfilePicture;
 }
 
 // Observer for authentication state changes
