@@ -1319,7 +1319,6 @@ function openGoogleMaps(buildingKey) {
 
 function initRoutingControl(buildingKey) {
   if (typeof L.Routing !== 'undefined') {
-    // Custom Vietnamese translation
     L.Routing.Localization['vi'] = {
       directions: {
         north: 'Bắc',
@@ -1346,65 +1345,46 @@ function initRoutingControl(buildingKey) {
       },
     };
 
-    if (navigator.permissions && navigator.geolocation) {
-      navigator.permissions.query({ name: 'geolocation' }).then(function (permissionStatus) {
-        if (permissionStatus.state === 'granted') {
-          // Geolocation permission is granted, proceed with routing control initialization
-          navigator.geolocation.getCurrentPosition(function (position) {
-            var currentLocation = L.latLng(position.coords.latitude, position.coords.longitude);
-            var building = buildingData[buildingKey];
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        var currentLocation = L.latLng(position.coords.latitude, position.coords.longitude);
+        var building = buildingData[buildingKey];
 
-            if (building) {
-              var buildingCoordinates = [building.latitude, building.longitude];
+        if (building) {
+          var buildingCoordinates = [building.latitude, building.longitude];
 
-              var routingControl = L.Routing.control({
-                waypoints: [
-                  currentLocation,
-                  L.latLng(buildingCoordinates[0], buildingCoordinates[1]),
-                ],
-                routeWhileDragging: true,
-                routeDragTimeout: 250,
-                reverseWaypoints: true,
-                showAlternatives: true,
-                altLineOptions: {
-                  styles: [
-                    { color: 'black', opacity: 0.15, weight: 9 },
-                    { color: 'white', opacity: 0.8, weight: 6 },
-                    { color: 'blue', opacity: 0.5, weight: 2 },
-                  ],
-                },
-                position: 'topleft',
-                language: 'vi',
-              }).addTo(mymap);
-
-              var closeButton = document.createElement('button');
-              closeButton.classList.add('closeRoutingButton');
-              closeButton.addEventListener('click', function () {
-                mymap.removeControl(routingControl);
-                closeButton.style.display = 'none';
-              });
-
-              mymap.getContainer().appendChild(closeButton);
-              var infoDiv = document.getElementById(building.infoDivId);
-              infoDiv.style.display = 'none';
-            } else {
-              console.error('Building not found!');
-            }
-          });
-        } else if (permissionStatus.state === 'prompt') {
-          // Geolocation permission is not granted yet, prompt the user
-          navigator.geolocation.getCurrentPosition(
-            function (position) {
-              // Retry the function to initialize routing control
-              initRoutingControl(buildingKey);
+          var routingControl = L.Routing.control({
+            waypoints: [
+              currentLocation,
+              L.latLng(buildingCoordinates[0], buildingCoordinates[1]),
+            ],
+            routeWhileDragging: true,
+            routeDragTimeout: 250,
+            reverseWaypoints: true,
+            showAlternatives: true,
+            altLineOptions: {
+              styles: [
+                { color: 'black', opacity: 0.15, weight: 9 },
+                { color: 'white', opacity: 0.8, weight: 6 },
+                { color: 'blue', opacity: 0.5, weight: 2 },
+              ],
             },
-            function (error) {
-              console.error('Geolocation permission denied or error:', error);
-            }
-          );
+            position: 'topleft', 
+            language: 'vi',
+          }).addTo(mymap);
+
+          var closeButton = document.createElement('button');
+          closeButton.classList.add('closeRoutingButton');
+          closeButton.addEventListener('click', function () {
+            mymap.removeControl(routingControl);
+            closeButton.style.display = 'none';
+          });
+
+          mymap.getContainer().appendChild(closeButton);
+          var infoDiv = document.getElementById(building.infoDivId);
+          infoDiv.style.display = 'none';
         } else {
-          // Geolocation permission is denied, handle accordingly
-          console.error('Geolocation permission denied.');
+          console.error('Building not found in buildingData!');
         }
       });
     } else {
@@ -1414,3 +1394,4 @@ function initRoutingControl(buildingKey) {
     console.error('LRM library not loaded!');
   }
 }
+
