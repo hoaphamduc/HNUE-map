@@ -402,7 +402,7 @@ async function loadPosts() {
             </div>
             <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; bottom: 50px;"></div>
             <input type="text" placeholder="Để lại bình luận của bạn..." class="comment-input" id="comment-input-${post.postId}">
-            <button class="comment-button addComment" data='${post.postId}'"></button>
+            <button class="comment-button addComment" data='${post.postId}'" data-bs-toggle="tooltip" title="Gửi bình luận"></button>
           </div>
         `;
         // postDiv.querySelector('.post-text-status').textContent = post.status;

@@ -243,6 +243,10 @@
     top: 5px;
     cursor: pointer;
 }
+
+.sidebar #google-login-btn img:hover {
+    transform: scale(1.2);
+}
  
 /* button đổi ngôn ngữ */
 
