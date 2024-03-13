@@ -56,12 +56,14 @@ function clearUserProfile() {
   document.getElementById("userName").textContent = "";
   document.getElementById("userName2").textContent = "";
   document.getElementById("userEmail").textContent = "";
-  document.getElementById("userProfilePicture").src = "";
-  document.getElementById("userProfilePicture1").src = "";
-  document.getElementById("userProfilePicture2").src = "";
+  document.getElementById("userProfilePicture").src = "source-img/grey-img.jpg";
+  document.getElementById("userProfilePicture1").src = "source-img/grey-img.jpg";
+  document.getElementById("userProfilePicture2").src = "source-img/grey-img.jpg";
 }
 
 document.getElementById("logout-btn").addEventListener("click", logout);
+document.getElementById("userProfilePicture").addEventListener("click", logout);
+
 
 document.getElementById('post-status').addEventListener('click', async function() {
   try {

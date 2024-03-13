@@ -642,13 +642,41 @@ var buildingData = {
     "infoDivId": "infoDivSVD",
     "nameVN": "SÂN VẬN ĐỘNG - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
     "nameEN": "SPORTS STADIUM - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "<b>Lịch sử:</b> - Sân vận động Đại học Sư phạm Hà Nội được xây dựng cùng thời điểm với việc thành lập trường. - Sân vận động đã trải qua nhiều lần sửa chữa và nâng cấp, hiện là một trong những sân vận động có quy mô và hiện đại nhất trong các trường đại học trên cả nước. <b>Địa lý:</b> - Sân vận động nằm trong khuôn viên Đại học Sư phạm Hà Nội, số 136 Xuân Thuỷ, phường Dịch Vọng Hậu, quận Cầu GIấy, Hà Nội. - Sân có diện tích khoảng 10.000m², bao gồm:  + Sân thi đấu chính  + Khán đài  + Khu vực phụ trợ <b>Giá trị:</b> - Sân vận động là nơi diễn ra các hoạt động thể dục thể thao của sinh viên và cán bộ, viên chức nhà trường. - Sân cũng là nơi tổ chức các giải thi đấu thể thao cấp trường, khu vực và quốc gia. <b>Ý nghĩa:</b> - Sân vận động góp phần nâng cao chất lượng giáo dục thể chất cho sinh viên. - Sân cũng là nơi rèn luyện sức khỏe, phát triển tinh thần thể thao và tăng cường đoàn kết cho sinh viên.",
-    "infoEN": "<b>History:</b> - The Sports Stadium of Hanoi University of Education was built coinciding with the establishment of the university. - The stadium has undergone several repairs and upgrades, and is currently one of the largest and most modern stadiums in universities nationwide. <b>Location:</b> - The stadium is located within the campus of Hanoi University of Education, at 136 Xuan Thuy, Dich Vong Hau ward, Cau Giay district, Hanoi. - The stadium covers an area of ​​about 10,000m², including:  + Main sports field  + Grandstand  + Support area <b>Significance:</b> - The stadium is where physical education and sports activities for students and university staff take place. - It is also a venue for organizing university, regional, and national sports competitions. <b>Meaning:</b> - The stadium contributes to improving the quality of physical education for students. - It is a place for promoting health, developing a sports spirit, and enhancing unity among students.",
+    "infoVN": "<b>Lịch sử:</b><br><br>\
+              - Sân vận động Đại học Sư phạm Hà Nội được xây dựng cùng thời điểm với việc thành lập trường.<br>\
+              - Sân vận động đã trải qua nhiều lần sửa chữa và nâng cấp, hiện là một trong những sân vận động có quy mô và hiện đại nhất trong các trường đại học trên cả nước.<br><br>\
+              <b>Địa lý:</b><br><br>\
+              - Sân vận động nằm trong khuôn viên Đại học Sư phạm Hà Nội, số 136 Xuân Thuỷ, phường Dịch Vọng Hậu, quận Cầu GIấy, Hà Nội.<br>\
+              - Sân có diện tích khoảng 10.000m², bao gồm:<br>\
+              &ensp;+ Sân thi đấu chính<br>\
+              &ensp;+ Khán đài<br>\
+              &ensp;+ Khu vực phụ trợ<br><br>\
+              <b>Giá trị:</b><br><br>\
+              - Sân vận động là nơi diễn ra các hoạt động thể dục thể thao của sinh viên và cán bộ, viên chức nhà trường.<br>\
+              - Sân cũng là nơi tổ chức các giải thi đấu thể thao cấp trường, khu vực và quốc gia.<br><br>\
+              <b>Ý nghĩa:</b><br><br>\
+              - Sân vận động góp phần nâng cao chất lượng giáo dục thể chất cho sinh viên.<br>\
+              - Sân cũng là nơi rèn luyện sức khỏe, phát triển tinh thần thể thao và tăng cường đoàn kết cho sinh viên.",
+    "infoEN": "<b>History:</b><br><br>\
+              - The Sports Stadium of Hanoi University of Education was built coinciding with the establishment of the university.<br>\
+              - The stadium has undergone several repairs and upgrades, and is currently one of the largest and most modern stadiums in universities nationwide.<br><br>\
+              <b>Location:</b><br><br>\
+              - The stadium is located within the campus of Hanoi University of Education, at 136 Xuan Thuy, Dich Vong Hau ward, Cau Giay district, Hanoi.<br>\
+              - The stadium covers an area of ​​about 10,000m², including:<br>\
+              &ensp;+ Main sports field<br>\
+              &ensp;+ Grandstand<br>\
+              &ensp;+ Support area<br><br>\
+              <b>Significance:</b><br><br>\
+              - The stadium is where physical education and sports activities for students and university staff take place.<br>\
+              - It is also a venue for organizing university, regional, and national sports competitions.<br><br>\
+              <b>Meaning:</b><br><br>\
+              - The stadium contributes to improving the quality of physical education for students.<br>\
+              - It is a place for promoting health, developing a sports spirit, and enhancing unity among students.",
     "latitude": 21.040301318576297,
     "longitude": 105.78517080395068,
     "source-image": []
   },
-  "KTXA6": {
+  "ktxA6": {
     "polygon": [
       [21.0409026560483, 105.7853661970565],
       [21.04107025097548, 105.78537156355203],
@@ -666,13 +694,31 @@ var buildingData = {
     "infoDivId": "infoDivA6",
     "nameVN": "KÝ TÚC XÁ A6 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
     "nameEN": "A6 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "<b>Tòa nhà A6:</b> Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 64 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> Nữ sinh viên năm thứ 2 (khóa 70) các khoa. <b>Loại phòng:</b> Cơ bản (tiêu chuẩn) gồm 2 mã phòng - Loại phòng A6-04.1 (4 người): Có 8 phòng xếp 4 chỗ ở. - Loại phòng A6-06.1 (6 người): Có 56 phòng xếp 6 chỗ ở. <b>Diện tích -  Điều kiện cơ sở vật chất:</b> Phòng có S = 25 - 36 m². Công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, bình nóng lạnh, wifi,...",
-    "infoEN": "<b>Building A6:</b> It has a high-rise structure (4 floors) with 64 rooms, 16 rooms on each floor. The standard is high-quality room type. <b>Occupants:</b> Second-year female students (class of 70) from various faculties. <b>Room Types:</b> Basic (standard) rooms with 2 room codes: - Room type A6-04.1 (4 persons): 8 rooms with 4 beds each. - Room type A6-06.1 (6 persons): 56 rooms with 6 beds each. <b>Area - Facilities:</b> Room area S = 25 - 36 m². Closed facilities (bathroom, toilet, laundry area, balcony, ...), full utilities with electricity and water, bunk beds, ceiling fan, water heater, Wifi, ...",
+    "infoVN": "<b>Tòa nhà A6:</b><br><br> \
+              Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 64 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn phòng ở chất lượng cao.<br> <br> \
+              <b>Đối tượng xếp ở là:</b><br><br>\
+              Nữ sinh viên năm thứ 2 (khóa 70) các khoa.<br> <br> \
+              <b>Loại phòng:</b><br><br>\
+              Cơ bản (tiêu chuẩn) gồm 2 mã phòng<br> \
+              - Loại phòng A6-04.1 (4 người): Có 8 phòng xếp 4 chỗ ở.<br> \
+              - Loại phòng A6-06.1 (6 người): Có 56 phòng xếp 6 chỗ ở.<br> <br> \
+              <b>Diện tích -  Điều kiện cơ sở vật chất:</b><br><br>\
+              Phòng có S = 25 - 36 m<sup>2</sup>. Công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, bình nóng lạnh, wifi,...",
+    "infoEN": "<b>Building A6:</b><br><br>\
+              It has a high-rise structure (4 floors) with 64 rooms, 16 rooms on each floor. The standard is high-quality room type.<br><br>\
+              <b>Occupants:</b><br><br>\
+              Second-year female students (class of 70) from various faculties.<br><br>\
+              <b>Room Types:</b><br><br>\
+              Basic (standard) rooms with 2 room codes:<br>\
+              - Room type A6-04.1 (4 persons): 8 rooms with 4 beds each.<br>\
+              - Room type A6-06.1 (6 persons): 56 rooms with 6 beds each.<br><br>\
+              <b>Area - Facilities:</b><br><br>\
+              Room area S = 25 - 36 m<sup>2</sup>. Closed facilities (bathroom, toilet, laundry area, balcony, ...), full utilities with electricity and water, bunk beds, ceiling fan, water heater, Wifi, ...",
     "latitude": 21.040977854797603,
     "longitude": 105.7853525876999,
     "source-image": ['source-img/A6.jpg']
   },
-  "KTXA8": {
+  "ktxA8": {
     "polygon": [
       [21.0404577934922, 105.78465580959691],
       [21.040552847638555, 105.78465849284467],
@@ -690,13 +736,37 @@ var buildingData = {
     "infoDivId": "infoDivA8",
     "nameVN": "KÝ TÚC XÁ A8, PHÒNG Y TẾ - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
     "nameEN": "A8 DORMITORY, HEALTH ROOM - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "<b>Tòa nhà A8:</b> Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 56 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn là loại phòng cơ bản. <b>Đối tượng xếp ở là:</b> - Tầng 2, 3, 4 đơn nguyên đông xếp nam sinh viên các khoa. - Tầng 1, 2, 3, 4 đơn nguyên tây xếp nữ sinh viên năm thứ 4 các khoa. <b>Loại phòng:</b> Cơ bản (tiêu chuẩn) gồm 2 mã phòng. - Loại phòng A8-06 (6 người): Có 50 phòng có 6 chỗ. - Loại phòng A8-08 (8 người): Có 6 phòng có 8 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 25 - 36m², công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, wifi. <b>Tiện ích:</b> Một số phòng thêm các tiện ích như điều hòa, bình nóng lạnh.",
-    "infoEN": "<b>Building A8:</b> It has a structure of a multi-story building (4 floors) with 56 rooms, each floor having 16 rooms. The standard is the basic room type. <b>Occupants:</b> - Floors 2, 3, 4 are for male students from various faculties. - Floors 1, 2, 3, 4 are for female senior students from the 4th year of various faculties. <b>Room Types:</b> The basic (standard) room includes 2 room codes. - Room type A8-06 (6 people): There are 50 rooms with 6 beds each. - Room type A8-08 (8 people): There are 6 rooms with 8 beds each. <b>Area - Facilities:</b> Room area ranges from 25 to 36 square meters, with enclosed facilities (bathroom, toilet, laundry area, balcony, etc.), sufficient utilities such as electricity, water, bunk beds, ceiling fans, and wifi. <b>Amenities:</b> Some rooms have additional amenities such as air conditioning and water heaters.",
+    "infoVN": "<b>Tòa nhà A8:</b><br><br>\
+              Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 56 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn là loại phòng cơ bản.<br><br>\
+              <b>Đối tượng xếp ở là:</b><br><br>\
+              - Tầng 2, 3, 4 đơn nguyên đông xếp nam sinh viên các khoa.<br>\
+              - Tầng 1, 2, 3, 4 đơn nguyên tây xếp nữ sinh viên năm thứ 4 các khoa.<br><br>\
+              <b>Loại phòng:</b><br><br>\
+              Cơ bản (tiêu chuẩn) gồm 2 mã phòng.<br>\
+              - Loại phòng A8-06 (6 người): Có 50 phòng có 6 chỗ.<br>\
+              - Loại phòng A8-08 (8 người): Có 6 phòng có 8 chỗ.<br><br>\
+              <b>Diện tích - Điều kiện cơ sở vật chất:</b><br><br>\
+              Phòng có S = 25 - 36m<sup>2</sup>, công trình phụ khép kín (Nhà vệ sinh, WC, khu giặt, phơi, ban công, ...), điện nước đầy đủ, giường tầng, quạt trần, wifi<br><br>\
+              <b>Tiện ích:</b><br><br> \
+              Một số phòng thêm các tiện ích như điều hòa, bình nóng lạnh.",
+    "infoEN": "<b>Building A8:</b><br><br>\
+              It has a structure of a multi-story building (4 floors) with 56 rooms, each floor having 16 rooms. The standard is the basic room type.<br><br>\
+              <b>Occupants:</b><br><br>\
+              - Floors 2, 3, 4 are for male students from various faculties.<br>\
+              - Floors 1, 2, 3, 4 are for female senior students from the 4th year of various faculties.<br><br>\
+              <b>Room Types:</b><br><br>\
+              The basic (standard) room includes 2 room codes.<br>\
+              - Room type A8-06 (6 people): There are 50 rooms with 6 beds each.<br>\
+              - Room type A8-08 (8 people): There are 6 rooms with 8 beds each.<br><br>\
+              <b>Area - Facilities:</b><br><br>\
+              Room area ranges from 25 to 36 square meters, with enclosed facilities (bathroom, toilet, laundry area, balcony, etc.), sufficient utilities such as electricity, water, bunk beds, ceiling fans, and wifi.<br><br>\
+              <b>Amenities:</b><br><br>\
+              Some rooms have additional amenities such as air conditioning and water heaters.",
     "latitude": 21.04047779705717,
     "longitude": 105.78523665624702,
     "source-image": ['source-img/A8.jpg']
   },
-  "KTXA9": {
+  "ktxA9": {
     "polygon": [
       [21.040626917877212, 105.78407585620882],
       [21.04072219452683, 105.78407853841783],
@@ -710,13 +780,37 @@ var buildingData = {
     "infoDivId": "infoDivA9",
     "nameVN": "KÝ TÚC XÁ A9 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
     "nameEN": "A9 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "<b>Tòa nhà A9:</b> Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 63 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn là phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> - Nam học sinh trường THPT Nguyễn Tất Thành và THPT Chuyên ĐHSP Hà Nội. - Nam học viên cao học, NCS,... <b>Loại phòng:</b> Phòng ở chất lượng cao gồm 2 mã phòng. - Loại phòng A9-03 (3 người): Có 57 phòng có 6 chỗ. - Loại phòng A9-04 (4 người): Có 6 phòng có 8 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 25 - 36 m². Công trình phụ hiện đại, khép kín (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn, bàn ghế, tủ quần áo, Wifi. <b>Tiện ích:</b> Một số phòng thêm các tiện ích như bình nóng lạnh, điều hòa.",
-    "infoEN": "<b>Building A9:</b> It has a structure of a multi-story building (4 floors) with 63 rooms, each floor having 16 rooms. The standard is high-quality rooms. <b>Occupants:</b> - Male students from Nguyen Tat Thanh High School and Specialized High School of Hanoi University of Education. - Male postgraduate students, doctoral candidates, etc. <b>Room Types:</b> High-quality rooms include 2 room codes. - Room type A9-03 (3 people): There are 57 rooms with 6 beds each. - Room type A9-04 (4 people): There are 6 rooms with 8 beds each. <b>Area - Facilities:</b> Room area ranges from 25 to 36 square meters. Modern and enclosed facilities (bathroom, toilet, laundry area, balcony, etc.), with sufficient utilities such as electricity, water, single beds, tables, chairs, wardrobes, and Wifi. <b>Amenities:</b> Some rooms have additional amenities such as water heaters and air conditioning.",
+    "infoVN": "<b>Tòa nhà A9:</b><br><br>\
+              Có kết cấu xây dựng là nhà cao tầng (4 tầng) với 63 phòng ở, mỗi tầng 16 phòng. Tiêu chuẩn là phòng ở chất lượng cao.<br><br>\
+              <b>Đối tượng xếp ở là:</b><br><br>\
+              - Nam học sinh trường THPT Nguyễn Tất Thành và THPT Chuyên ĐHSP Hà Nội.<br>\
+              - Nam học viên cao học, NCS,...<br><br>\
+              <b>Loại phòng:</b><br><br>\
+              Phòng ở chất lượng cao gồm 2 mã phòng.<br>\
+              - Loại phòng A9-03 (3 người): Có 57 phòng có 6 chỗ.<br>\
+              - Loại phòng A9-04 (4 người): Có 6 phòng có 8 chỗ.<br><br>\
+              <b>Diện tích - Điều kiện cơ sở vật chất:</b><br><br>\
+              Phòng có S = 25 - 36 m<sup>2</sup>.Công trình phụ hiện đại, khép kín (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn, bàn ghế, tủ quần áo, Wifi.<br><br>\
+              <b>Tiện ích:</b><br><br> \
+              Một số phòng thêm các tiện ích như bình nóng lạnh, điều hòa.",
+    "infoEN": "<b>Building A9:</b><br><br>\
+              It has a structure of a multi-story building (4 floors) with 63 rooms, each floor having 16 rooms. The standard is high-quality rooms.<br><br>\
+              <b>Occupants:</b><br><br>\
+              - Male students from Nguyen Tat Thanh High School and Specialized High School of Hanoi University of Education.<br>\
+              - Male postgraduate students, doctoral candidates, etc.<br><br>\
+              <b>Room Types:</b><br><br>\
+              High-quality rooms include 2 room codes.<br>\
+              - Room type A9-03 (3 people): There are 57 rooms with 6 beds each.<br>\
+              - Room type A9-04 (4 people): There are 6 rooms with 8 beds each.<br><br>\
+              <b>Area - Facilities:</b><br><br>\
+              Room area ranges from 25 to 36 square meters. Modern and enclosed facilities (bathroom, toilet, laundry area, balcony, etc.), with sufficient utilities such as electricity, water, single beds, tables, chairs, wardrobes, and Wifi.<br><br>\
+              <b>Amenities:</b><br><br>\
+              Some rooms have additional amenities such as water heaters and air conditioning.",
     "latitude": 21.040737070276787,
     "longitude": 105.78423878844119,
-    "source-image": ['source-img/A8.jpg']
+    "source-image": ['source-img/A9.jpg']
   },
-  "KTXA10": {
+  "ktxA10": {
     "polygon": [
       [21.040477687714638, 105.78407049179079],
       [21.040588008150717, 105.78407585620882],
@@ -728,15 +822,61 @@ var buildingData = {
       [21.040457629444763, 105.78462839126587]
     ],
     "infoDivId": "infoDivA10",
-    "nameVN": "AAA",
-    "nameEN": "BBB",
-    "infoVN": "CCC",
-    "infoEN": "No information.",
+    "nameVN": "CĂNG TIN A10 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "A10 STUDENT CANTEEN - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>THÔNG TIN DƯỚI ĐÂY CHƯA ĐƯỢC XÁC THỰC HOẶC CÓ THỂ ĐÃ THAY ĐỔI THEO THỜI GIAN.\
+              <br>Góp ý để chúng mình sửa lại tại email: <span style=\"color: #2185D0;\">hoaphamduc2399@gmail.com</span><br>\
+                  Chúng mình cảm ơn các bạn đã đóng góp!</b><br><br>\
+              <b>Loại hình:</b><br><br> \
+              Căng tin sinh viên<br> <br> \
+              <b>Giờ mở cửa:</b><br><br>\
+              6h00 - 20h00<br> <br> \
+              <b>Thực đơn:</b><br><br>\
+              - Cơm bình dân<br> \
+              - Món ăn theo suất<br> \
+              - Bánh mì, phở, bún, miến<br>\
+              - Nước uống<br> <br>\
+              <b>Giá cả:</b><br><br>\
+              - Cơm bình dân: 25.000 - 30.000 VNĐ/suất<br>\
+              - Món ăn theo suất: 30.000 - 40.000 VNĐ/suất<br>\
+              - Bánh mì, phở, bún, miến: 15.000 - 20.000 VNĐ/bát<br>\
+              - Nước uống: 5.000 - 15.000 VNĐ/chai<br> <br>\
+              <b>Chất lượng:</b><br><br>\
+              - Căng tin A10 được đánh giá cao về chất lượng thực phẩm, đảm bảo vệ sinh an toàn.<br>\
+              - Các món ăn được chế biến đa dạng, phong phú, phù hợp với khẩu vị của sinh viên.<br>\
+              - Giá cả hợp lý, phù hợp với túi tiền của sinh viên.<br> <br>\
+              <b>Dịch vụ:</b><br><br>\
+              - Căng tin A10 có không gian rộng rãi, thoáng mát, có chỗ ngồi cho khoảng 200 người.<br>\
+              - Cán bộ nhân viên phục vụ nhiệt tình, chu đáo.",
+    "infoEN": "<b>THE INFORMATION BELOW HAS NOT BEEN VERIFIED OR MAY HAVE CHANGED OVER TIME.\
+                  <br>Provide feedback for us to update at email: <span style=\"color: #2185D0;\">hoaphamduc2399@gmail.com</span><br>\
+                  We appreciate your contribution!</b><br><br>\
+              <b>Type:</b><br><br>\
+              Student Canteen<br> <br>\
+              <b>Opening Hours:</b><br><br>\
+              6:00 AM - 8:00 PM<br> <br> \
+              <b>Menu:</b><br><br>\
+              - Standard rice meals<br> \
+              - Set meals<br>\
+              - Bread, pho, bun, mien (vermicelli)<br>\
+              - Beverages<br> <br>\
+              <b>Prices:</b><br><br>\
+              - Standard rice meals: 25,000 - 30,000 VND/meal<br> \
+              - Set meals: 30,000 - 40,000 VND/meal<br> \
+              - Bread, pho, bun, mien: 15,000 - 20,000 VND/bowl<br> \
+              - Beverages: 5,000 - 15,000 VND/bottle<br> <br> \
+              <b>Quality:</b><br><br>\
+              - A10 Student Canteen is highly rated for food quality, ensuring safety and hygiene.<br> \
+              - Diverse and richly prepared dishes suitable for students' tastes.<br> \
+              - Reasonable prices, suitable for students' budgets.<br> <br> \
+              <b>Service:</b><br><br>\
+              - A10 Student Canteen has a spacious, airy space with seating for about 200 people.<br>\
+              - The staff provides enthusiastic and attentive service.",
     "latitude": 21.04046323762088,
     "longitude": 105.78426431564917,
-    "source-image": ['source-img/A9.jpg']
+    "source-image": []
   },
-  "KTXA11": {
+  "ktxA11": {
     "polygon": [
       [21.040983482497634, 105.78471958637239],
       [21.040978467947454, 105.78497171401978],
@@ -752,13 +892,39 @@ var buildingData = {
     "infoDivId": "infoDivA11",
     "nameVN": "KÝ TÚC XÁ A11 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
     "nameEN": "A11 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "<b>Tòa nhà A11:</b> Có kết cấu xây dựng là nhà cao tầng (5 tầng) với 62 phòng ở, mỗi tầng 11 phòng. Tiêu chuẩn là phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> - LHS Lào, Trung Quốc, Hàn Quốc, .... - Nữ sinh viên, học viên cao học, NCS, ... <b>Loại Phòng:</b> Phòng ở chất lượng cao gồm 3 mã phòng. - Loại phòng A11-03 (3 người): Có 11 phòng có 3 chỗ. - Loại phòng A11-04 (4 người): Có 28 phòng có 4 chỗ. - Loại phòng A11-06 (6 người): Có 16 phòng có 6 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 36m², công trình phụ khép kín, hiện đại (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn với phòng 3 người và giường tầng với phòng 4, 6 người, bàn ghế, tủ quần áo, quạt đảo trần, wifi. <b>Tiện ích:</b> Một số phòng thêm các tiện ích như bình nóng lạnh, điều hòa, tủ lạnh, Ti vi - THC.",
-    "infoEN": "<b>Building A11:</b> This building has a structure of a high-rise (5 floors) with 62 rooms, each floor having 11 rooms. The standard is high-quality rooms. <b>Occupants:</b> - Students from Laos, China, South Korea, etc. - Female students, postgraduate students, PhD candidates, etc. <b>Room Types:</b> High-quality rooms include 3 room codes. - Room type A11-03 (3 people): 11 rooms with 3 beds. - Room type A11-04 (4 people): 28 rooms with 4 beds. - Room type A11-06 (6 people): 16 rooms with 6 beds. <b>Area - Facilities:</b> Rooms have an area of S = 36m², enclosed and modern facilities (bathroom, toilet, laundry, balcony, etc.), full electricity and water supply, single beds for 3-person rooms, and bunk beds for 4, 6-person rooms. It includes tables, chairs, wardrobes, ceiling fans, and Wi-Fi. <b>Amenities:</b> Some rooms have additional amenities such as water heaters, air conditioning, refrigerators, and TVs.",
+    "infoVN": "<b>Tòa nhà A11:</b><br><br>\
+              Có kết cấu xây dựng là nhà cao tầng (5 tầng) với 62 phòng ở, mỗi tầng 11 phòng. Tiêu chuẩn là phòng ở chất lượng cao.<br><br>\
+              <b>Đối tượng xếp ở là:</b><br><br>\
+              - LHS Lào, Trung Quốc, Hàn Quốc, ....<br>\
+              - Nữ sinh viên, học viên cao học, NCS, ...<br><br>\
+              <b>Loại Phòng:</b><br><br>\
+              Phòng ở chất lượng cao gồm 3 mã phòng.<br>\
+              - Loại phòng A11-03 (3 người): Có 11 phòng có 3 chỗ.<br>\
+              - Loại phòng A11-04 (4 người): Có 28 phòng có 4 chỗ.<br>\
+              - Loại phòng A11-06 (6 người): Có 16 phòng có 6 chỗ.<br><br>\
+              <b>Diện tích - Điều kiện cơ sở vật chất:</b><br><br>\
+              Phòng có S = 36m<sup>2</sup>, công trình phụ khép kín, hiện đại (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn với phòng 3 người và giường tầng với phòng 4, 6 người, bàn ghế, tủ quần áo, quạt đảo trần, wifi.<br><br>\
+              <b>Tiện ích:</b><br><br>\
+              Một số phòng thêm các tiện ích như bình nóng lạnh, điều hòa, tủ lạnh, Ti vi - THC.",
+    "infoEN": "<b>Building A11:</b><br><br>\
+              This building has a structure of a high-rise (5 floors) with 62 rooms, each floor having 11 rooms. The standard is high-quality rooms.<br><br>\
+              <b>Occupants:</b><br><br>\
+              - Students from Laos, China, South Korea, etc.<br>\
+              - Female students, postgraduate students, PhD candidates, etc.<br><br>\
+              <b>Room Types:</b><br><br>\
+              High-quality rooms include 3 room codes.<br>\
+              - Room type A11-03 (3 people): 11 rooms with 3 beds.<br>\
+              - Room type A11-04 (4 people): 28 rooms with 4 beds.<br>\
+              - Room type A11-06 (6 people): 16 rooms with 6 beds.<br><br>\
+              <b>Area - Facilities:</b><br><br>\
+              Rooms have an area of S = 36m², enclosed and modern facilities (bathroom, toilet, laundry, balcony, etc.), full electricity and water supply, single beds for 3-person rooms, and bunk beds for 4, 6-person rooms. It includes tables, chairs, wardrobes, ceiling fans, and Wi-Fi.<br><br>\
+              <b>Amenities:</b><br><br>\
+              Some rooms have additional amenities such as water heaters, air conditioning, refrigerators, and TVs.",
     "latitude": 21.040843008631303,
     "longitude": 105.7848553645986,
     "source-image": ['source-img/A11.jpg']
   },
-  "KTXA12": {
+  "ktxA12": {
     "polygon": [
       [21.040824907029684, 105.78412413597108],
       [21.04080986336258, 105.78465521335603],
@@ -770,8 +936,30 @@ var buildingData = {
     "infoDivId": "infoDivA12",
     "nameVN": "KÝ TÚC XÁ A12 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
     "nameEN": "A12 DORMITORY - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "<b>Tòa nhà A12:</b> Có kết cấu xây dựng là nhà cao tầng (12 tầng) với 198 phòng ở, mỗi tầng 22 phòng. Tiêu chuẩn là phòng ở chất lượng cao. <b>Đối tượng xếp ở là:</b> - Nữ học sinh trường THPT Nguyễn Tất Thành và THPT Chuyên ĐHSP Hà Nội. - Nữ sinh viên năm thứ nhất các khoa. <b>Loại phòng:</b> Phòng ở chất lượng cao gồm 3 mã phòng. - Loại phòng A12-03 (3 người): Có 22 phòng có 3 chỗ. - Loại phòng A12-04 (4 người): Có 57 phòng có 4 chỗ. - Loại phòng A12-06 (6 người): Có 119 phòng có 6 chỗ. <b>Diện tích - Điều kiện cơ sở vật chất:</b> Phòng có S = 36 m², Công trình phụ hiện đại, khép kín (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn với phòng 3 người và giường tầng với phòng 4, 6 người, bàn ghế, tủ quần áo, quạt đảo trần, wifi.",
-    "infoEN": "<b>Building A12:</b> This building has a structure of a high-rise (12 floors) with 198 rooms, each floor having 22 rooms. The standard is high-quality rooms. <b>Occupants:</b> - Female students from Nguyen Tat Thanh High School and Specialized High School of Hanoi University of Education. - Female freshmen from various faculties. <b>Room Types:</b> High-quality rooms include 3 room codes. - Room type A12-03 (3 people): 22 rooms with 3 beds. - Room type A12-04 (4 people): 57 rooms with 4 beds. - Room type A12-06 (6 people): 119 rooms with 6 beds. <b>Area - Facilities:</b> Rooms have an area of S = 36 m², modern enclosed facilities (bathroom, toilet, laundry, balcony, etc.), full electricity and water supply, single beds for 3-person rooms, and bunk beds for 4, 6-person rooms. It includes tables, chairs, wardrobes, ceiling fans, and Wi-Fi.",
+    "infoVN": "<b>Tòa nhà A12:</b><br><br>\
+              Có kết cấu xây dựng là nhà cao tầng (12 tầng) với 198 phòng ở, mỗi tầng 22 phòng. Tiêu chuẩn là phòng ở chất lượng cao.<br><br>\
+              <b>Đối tượng xếp ở là:</b><br><br>\
+              - Nữ học sinh trường THPT Nguyễn Tất Thành và THPT Chuyên ĐHSP Hà Nội.<br>\
+              - Nữ sinh viên năm thứ nhất các khoa<br><br>\
+              <b>Loại phòng:</b><br><br>\
+              Phòng ở chất lượng cao gồm 3 mã phòng.<br>\
+              - Loại phòng A12-03 (3 người): Có 22 phòng có 3 chỗ.<br>\
+              - Loại phòng A12-04 (4 người): Có 57 phòng có 4 chỗ.<br>\
+              - Loại phòng A12-06 (6 người): Có 119 phòng có 6 chỗ.<br><br>\
+              <b>Diện tích - Điều kiện cơ sở vật chất:</b><br><br>\
+              Phòng có S = 36 m<sup>2</sup>, Công trình phụ hiện đại, khép kín (Nhà vệ sinh, WC, giặt, phơi, ban công, ...), điện nước đầy đủ, giường đơn với phòng 3 người và giường tầng với phòng 4, 6 người, bàn ghế, tủ quần áo, quạt đảo trần, wifi.",
+    "infoEN": "<b>Building A12:</b><br><br>\
+              This building has a structure of a high-rise (12 floors) with 198 rooms, each floor having 22 rooms. The standard is high-quality rooms.<br><br>\
+              <b>Occupants:</b><br><br>\
+              - Female students from Nguyen Tat Thanh High School and Specialized High School of Hanoi University of Education.<br>\
+              - Female freshmen from various faculties.<br><br>\
+              <b>Room Types:</b><br><br>\
+              High-quality rooms include 3 room codes.<br>\
+              - Room type A12-03 (3 people): 22 rooms with 3 beds.<br>\
+              - Room type A12-04 (4 people): 57 rooms with 4 beds.<br>\
+              - Room type A12-06 (6 people): 119 rooms with 6 beds.<br><br>\
+              <b>Area - Facilities:</b><br><br>\
+              Rooms have an area of S = 36 m<sup>2</sup>, modern enclosed facilities (bathroom, toilet, laundry, balcony, etc.), full electricity and water supply, single beds for 3-person rooms, and bunk beds for 4, 6-person rooms. It includes tables, chairs, wardrobes, ceiling fans, and Wi-Fi.",
     "latitude": 21.04080760993697,
     "longitude": 105.78427053649243,
     "source-image": ['source-img/A12.jpg']
@@ -786,15 +974,12 @@ var buildingData = {
     "infoDivId": "infoDiv1110",
     "nameVN": "GIẢNG ĐƯỜNG LỚN ĐA NĂNG - HỘI TRƯỜNG 11.10 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
     "nameEN": "MULTIPURPOSE AUDITORIUM - HALL 11.10 - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "<b>Hội trường 11.10</b> là một trong những giảng đường lớn và hiện đại nhất của Trường Đại học Sư phạm Hà Nội. Hội trường được khánh thành vào năm 2013, nhân dịp kỷ niệm 65 năm thành lập trường. <b>Giảng đường lớn đa năng - Hội trường 11/10</b> là một công trình được khởi công từ ngày 30/9/2011, với tổng diện tích 4250m² và quy mô 1200 chỗ ngồi, bao gồm tầng hầm để xe, phòng truyền thống và các phòng chức năng. Đây được xem là một bước tiến quan trọng, đánh dấu sự phát triển của trường trong việc cung cấp không gian hội họp, giảng dạy, sinh hoạt chính trị, văn hóa và văn nghệ cho cộng đồng cán bộ, giáo viên và sinh viên. <b>Hội trường 11.10</b> bao gồm các khu vực chức năng chính sau: <b>Sân khấu:</b> rộng rãi, được trang bị hệ thống âm thanh, ánh sáng hiện đại. <b>Khu vực khán đài:</b> có 1200 chỗ ngồi, được bố trí thành các dãy ghế cao dần về phía sau, đảm bảo cho tất cả các sinh viên đều có thể nhìn rõ sân khấu. <b>Hệ thống phòng chức năng:</b> bao gồm các phòng họp, phòng hội thảo, phòng trang điểm… <b>Hội trường 11.10</b> là một biểu tượng của Trường Đại học Sư phạm Hà Nội. Hội trường không chỉ là nơi diễn ra các hoạt động học tập, nghiên cứu khoa học mà còn là nơi diễn ra các hoạt động văn hóa, văn nghệ, thể dục thể thao của nhà trường.",
-    "infoEN": "<b>Hall 11.10</b> is one of the largest and most modern auditoriums at Hanoi University of Education. The hall was inaugurated in 2013, commemorating the 65th anniversary of the university's establishment. <b>Multipurpose Auditorium - Hall 11/10</b> is a project that commenced on September 30, 2011, covering a total area of 4250m² and accommodating 1200 seats, including an underground parking lot, traditional meeting rooms, and functional rooms. This is considered a significant step forward, marking the university's development in providing space for meetings, teaching, political activities, cultural and artistic events for the community of faculty, staff, and students. <b>Hall 11.10</b> includes the following main functional areas: <b>Stage:</b> spacious, equipped with a modern sound and lighting system. <b>Audience area:</b> with 1200 seats arranged in escalating rows, ensuring all students have a clear view of the stage. <b>Functional room system:</b> including meeting rooms, seminar rooms, dressing rooms, etc. <b>Hall 11.10</b> is an iconic symbol of Hanoi University of Education. It serves not only as a venue for academic and scientific activities but also for cultural, artistic, and sports events within the university.",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
     "latitude": 21.03786212246022,
     "longitude": 105.78466057777405,
     "source-image": ['source-img/1110.jpg']
   },
-
-
-
 
   "WM27165": {
     "polygon": [
@@ -806,8 +991,44 @@ var buildingData = {
     "infoDivId": "infoDivWM27165",
     "nameVN": "WinMart+ số 27 ngõ 165 đường Xuân Thuỷ, phường Dịch Vọng Hậu, quận Cầu Giấy, Hà Nội",
     "nameEN": "WinMart+ No. 27 Lane 165 Xuan Thuy Street, Dich Vong Hau Ward, Cau Giay District, Hanoi",
-    "infoVN": "WinMart (tên cũ là Vinmart) là hệ thống siêu thị thuộc tập đoàn Vingroup, Việt Nam. Hệ thống này khai trương ngày 20 tháng 11 năm 2014. Theo thống kê của Vietnam Report, tính đến tháng 11/2017, VinMart và chuỗi cửa hàng con VinMart+ nằm top 2 nhà bán lẻ được người tiêu dùng quan tâm nhất và top 4 trên bảng xếp hạng 10 nhà bán lẻ uy tín năm 2017. Tháng 5 năm 2019, VinMart có khoảng 111 siêu thị và khoảng hơn 1.800 cửa hàng VinMart+ trên gần 50 tỉnh thành với tổng diện tích mặt bằng kinh doanh hơn 300.000 m², số lượng nhân viên khoảng hơn 11.000 người. Đến tháng 8 năm 2019, con số VM và VM+ đã lên đến con số 2.200. Các sản phẩm của VinMart bao gồm thực phẩm tươi sống, thực phẩm sơ chế, quần áo, mỹ phẩm, đồ gia dụng, văn phòng phẩm, đồ chơi, v.v. Tháng 10/2018, VinGroup mua lại chuỗi 23 siêu thị Fivimart, một thương hiệu đã có hơn 10 năm hoạt động trên thị trường, và sáp nhập vào VinMart. Sau khi hợp nhất, số lượng siêu thị của Vin là khoảng hơn 100, cùng với hơn 1.400 cửa hàng tiện lợi VinMart+. Với cơ cấu tổ chức của VinMart được chia thành các tuyến chức năng, mỗi tuyến là một bộ phận hay đơn vị đảm nhận thực hiện một số chức năng, nhiệm vụ nào đó của tổ chức. Giám đốc là người có trách nhiệm cao nhất, ban hành các chiến lược và dự án xuống cho các bộ phận. Các bộ phận nhận công việc từ giám đốc sau đó thực hiện sao cho thực hiện tốt nhất và đem lại lợi ích cao nhất cho công ty. Cơ cấu tổ chức của VinMart có ưu điểm là thúc đẩy chuyên môn hoá kỹ năng, tạo điều kiện cho mỗi cá nhân phát huy tối đa năng lực của mình. Nhưng bên cạnh đó cơ cấu tổ chức này còn có những nhược điểm, chỉ có những nhà quản trị cao nhất mới có trách nhiệm về lợi nhuận, còn những nhà quản trị thấp hơn chỉ có trách nhiệm với bộ phận mà mình quản lý. Ngày 15 tháng 1 năm 2022, VinMart và VinMart+ chính thức đổi tên thành WinMart và WinMart+.",
-    "infoEN": "WinMart (formerly known as Vinmart) is a supermarket chain under the Vingroup conglomerate in Vietnam. The system was inaugurated on November 20, 2014. According to Vietnam Report statistics until November 2017, VinMart and its subsidiary chain VinMart+ ranked 2nd in the most consumer-focused retail houses and 4th among the top 10 reputable retail houses in 2017. In May 2019, VinMart had approximately 111 supermarkets and over 1,800 VinMart+ stores in nearly 50 provinces and cities, with a total business area of over 300,000 m² and a staff of over 11,000 people. By August 2019, the numbers had increased to 2,200. VinMart's products include fresh food, processed food, clothing, cosmetics, household items, office supplies, toys, etc. In October 2018, VinGroup acquired the chain of 23 Fivimart supermarkets, a brand that had been operating for over 10 years, and merged it into VinMart. After the merger, Vin's total number of supermarkets reached over 100, along with more than 1,400 VinMart+ convenience stores. VinMart's organizational structure is divided into functional lines, with each line being a department or unit responsible for specific functions or tasks. The director is the highest responsible person, issuing strategies and projects to the departments. Departments then carry out their tasks to achieve the best results and bring the highest benefits to the company. VinMart's organizational structure has the advantage of promoting the specialization of skills, providing conditions for each individual to maximize their potential. However, it also has disadvantages, as only top-level managers are responsible for profit, while lower-level managers are only responsible for their managed department. On January 15, 2022, VinMart and VinMart+ officially changed their names to WinMart and WinMart+.",
+    "infoVN": "WinMart (tên cũ là Vinmart) là hệ thống siêu thị thuộc tập đoàn Vingroup, Việt Nam. \
+              Hệ thống này khai trương ngày 20 tháng 11 năm 2014. Theo thống kê của Vietnam Report, tính đến tháng 11/2017, \
+              VinMart và chuỗi cửa hàng con VinMart+ nằm top 2 nhà bán lẻ được người tiêu dùng quan tâm nhất và top 4 trên bảng xếp hạng 10 nhà bán lẻ uy tín năm 2017.\
+              <br>\
+              Tháng 5 năm 2019, VinMart có khoảng 111 siêu thị và khoảng hơn 1.800 cửa hàng VinMart+ trên gần 50 tỉnh thành với tổng diện tích mặt bằng kinh doanh hơn 300.000 m²,\
+              số lượng nhân viên khoảng hơn 11.000 người. Đến tháng 8 năm 2019, con số VM và VM+ đã lên đến con số 2.200.\
+              <br>\
+              Các sản phẩm của VinMart bao gồm <b>thực phẩm tươi sống, thực phẩm sơ chế, quần áo, mỹ phẩm, đồ gia dụng, văn phòng phẩm, đồ chơi, v.v</b>.\
+              <br>\
+              Tháng 10/2018, VinGroup mua lại chuỗi 23 siêu thị Fivimart, một thương hiệu đã có hơn 10 năm hoạt động trên thị trường, và sáp nhập vào VinMart. \
+              Sau khi hợp nhất, số lượng siêu thị của Vin là khoảng hơn 100, cùng với hơn 1.400 cửa hàng tiện lợi VinMart+.\
+              <br>\
+              Với cơ cấu tổ chức của VinMart được chia thành các tuyến chức năng, mỗi tuyến là một bộ phận hay đơn vị đảm nhận thực hiện một số chức năng,\
+              nhiệm vụ nào đó của tổ chức. Giám đốc là người có trách nhiệm cao nhất, ban hành các chiến lược và dự án xuống cho các bộ phận. \
+              Các bộ phận nhận công việc từ giám đốc sau đó thực hiện sao cho thực hiện tốt nhất và đem lại lợi ích cao nhất cho công ty. \
+              Cơ cấu tổ chức của VinMart có ưu điểm là thúc đẩy chuyên môn hoá kỹ năng, tạo điều kiện cho mỗi cá nhân phát huy tối đa năng lực của mình. \
+              Nhưng bên cạnh đó cơ cấu tổ chức này còn có những nhược điểm, chỉ có những nhà quản trị cao nhất mới có trách nhiệm về lợi nhuận, \
+              còn những nhà quản trị thấp hơn chỉ có trách nhiệm với bộ phận mà mình quản lý.\
+              <br>\
+              Ngày 15 tháng 1 năm 2022, VinMart và VinMart+ chính thức đổi tên thành WinMart và WinMart+.",
+    "infoEN": "WinMart (formerly known as Vinmart) is a supermarket chain under the Vingroup conglomerate in Vietnam.\
+              The system was inaugurated on November 20, 2014. According to Vietnam Report statistics until November 2017,\
+              VinMart and its subsidiary chain VinMart+ ranked 2nd in the most consumer-focused retail houses and 4th among the top 10 reputable retail houses in 2017.\
+              <br>\
+              In May 2019, VinMart had approximately 111 supermarkets and over 1,800 VinMart+ stores in nearly 50 provinces and cities,\
+              with a total business area of over 300,000 m² and a staff of over 11,000 people. By August 2019, the numbers had increased to 2,200.\
+              <br>\
+              VinMart's products include <b>fresh food, processed food, clothing, cosmetics, household items, office supplies, toys, etc.</b>.\
+              <br>\
+              In October 2018, VinGroup acquired the chain of 23 Fivimart supermarkets, a brand that had been operating for over 10 years,\
+              and merged it into VinMart. After the merger, Vin's total number of supermarkets reached over 100, along with more than 1,400 VinMart+ convenience stores.\
+              <br>\
+              VinMart's organizational structure is divided into functional lines, with each line being a department or unit responsible for specific functions or tasks.\
+              The director is the highest responsible person, issuing strategies and projects to the departments. Departments then carry out their tasks to achieve the best results and bring the highest benefits to the company.\
+              VinMart's organizational structure has the advantage of promoting the specialization of skills, providing conditions for each individual to maximize their potential.\
+              However, it also has disadvantages, as only top-level managers are responsible for profit, while lower-level managers are only responsible for their managed department.\
+              <br>\
+              On January 15, 2022, VinMart and VinMart+ officially changed their names to WinMart and WinMart+.",
     "latitude": 21.035876874492814,
     "longitude": 105.78656762838365,
     "source-image": ['source-img/wm27165.jpg']
@@ -822,28 +1043,91 @@ var buildingData = {
     "infoDivId": "infoDivWM77TQV",
     "nameVN": "WinMart+ số 77 đường Trần Quốc Vượng, phường Dịch Vọng Hậu, quận Cầu Giấy, Hà Nội",
     "nameEN": "WinMart+ No. 77 Tran Quoc Vuong Street, Dich Vong Hau Ward, Cau Giay District, Hanoi",
-    "infoVN": "WinMart (tên cũ là Vinmart) là hệ thống siêu thị thuộc tập đoàn Vingroup, Việt Nam. Hệ thống này khai trương ngày 20 tháng 11 năm 2014. Theo thống kê của Vietnam Report, tính đến tháng 11/2017, VinMart và chuỗi cửa hàng con VinMart+ nằm top 2 nhà bán lẻ được người tiêu dùng quan tâm nhất và top 4 trên bảng xếp hạng 10 nhà bán lẻ uy tín năm 2017. Tháng 5 năm 2019, VinMart có khoảng 111 siêu thị và khoảng hơn 1.800 cửa hàng VinMart+ trên gần 50 tỉnh thành với tổng diện tích mặt bằng kinh doanh hơn 300.000 m², số lượng nhân viên khoảng hơn 11.000 người. Đến tháng 8 năm 2019, con số VM và VM+ đã lên đến con số 2.200. Các sản phẩm của VinMart bao gồm thực phẩm tươi sống, thực phẩm sơ chế, quần áo, mỹ phẩm, đồ gia dụng, văn phòng phẩm, đồ chơi, v.v. Tháng 10/2018, VinGroup mua lại chuỗi 23 siêu thị Fivimart, một thương hiệu đã có hơn 10 năm hoạt động trên thị trường, và sáp nhập vào VinMart. Sau khi hợp nhất, số lượng siêu thị của Vin là khoảng hơn 100, cùng với hơn 1.400 cửa hàng tiện lợi VinMart+. Với cơ cấu tổ chức của VinMart được chia thành các tuyến chức năng, mỗi tuyến là một bộ phận hay đơn vị đảm nhận thực hiện một số chức năng, nhiệm vụ nào đó của tổ chức. Giám đốc là người có trách nhiệm cao nhất, ban hành các chiến lược và dự án xuống cho các bộ phận. Các bộ phận nhận công việc từ giám đốc sau đó thực hiện sao cho thực hiện tốt nhất và đem lại lợi ích cao nhất cho công ty. Cơ cấu tổ chức của VinMart có ưu điểm là thúc đẩy chuyên môn hoá kỹ năng, tạo điều kiện cho mỗi cá nhân phát huy tối đa năng lực của mình. Nhưng bên cạnh đó cơ cấu tổ chức này còn có những nhược điểm, chỉ có những nhà quản trị cao nhất mới có trách nhiệm về lợi nhuận, còn những nhà quản trị thấp hơn chỉ có trách nhiệm với bộ phận mà mình quản lý. Ngày 15 tháng 1 năm 2022, VinMart và VinMart+ chính thức đổi tên thành WinMart và WinMart+.",
-    "infoEN": "<b>WinMart (formerly known as Vinmart) is a supermarket chain under the Vingroup conglomerate in Vietnam. The system was inaugurated on November 20, 2014. According to Vietnam Report statistics until November 2017, VinMart and its subsidiary chain VinMart+ ranked 2nd in the most consumer-focused retail houses and 4th among the top 10 reputable retail houses in 2017. In May 2019, VinMart had approximately 111 supermarkets and over 1,800 VinMart+ stores in nearly 50 provinces and cities, with a total business area of over 300,000 m² and a staff of over 11,000 people. By August 2019, the numbers had increased to 2,200. VinMart's products include fresh food, processed food, clothing, cosmetics, household items, office supplies, toys, etc. In October 2018, VinGroup acquired the chain of 23 Fivimart supermarkets, a brand that had been operating for over 10 years, and merged it into VinMart. After the merger, Vin's total number of supermarkets reached over 100, along with more than 1,400 VinMart+ convenience stores. VinMart's organizational structure is divided into functional lines, with each line being a department or unit responsible for specific functions or tasks. The director is the highest responsible person, issuing strategies and projects to the departments. Departments then carry out their tasks to achieve the best results and bring the highest benefits to the company. VinMart's organizational structure has the advantage of promoting the specialization of skills, providing conditions for each individual to maximize their potential. However, it also has disadvantages, as only top-level managers are responsible for profit, while lower-level managers are only responsible for their managed department. On January 15, 2022, VinMart and VinMart+ officially changed their names to WinMart and WinMart+.",
+    "infoVN": "WinMart (tên cũ là Vinmart) là hệ thống siêu thị thuộc tập đoàn Vingroup, Việt Nam. \
+              Hệ thống này khai trương ngày 20 tháng 11 năm 2014. Theo thống kê của Vietnam Report, tính đến tháng 11/2017, \
+              VinMart và chuỗi cửa hàng con VinMart+ nằm top 2 nhà bán lẻ được người tiêu dùng quan tâm nhất và top 4 trên bảng xếp hạng 10 nhà bán lẻ uy tín năm 2017.\
+              <br>\
+              Tháng 5 năm 2019, VinMart có khoảng 111 siêu thị và khoảng hơn 1.800 cửa hàng VinMart+ trên gần 50 tỉnh thành với tổng diện tích mặt bằng kinh doanh hơn 300.000 m²,\
+              số lượng nhân viên khoảng hơn 11.000 người. Đến tháng 8 năm 2019, con số VM và VM+ đã lên đến con số 2.200.\
+              <br>\
+              Các sản phẩm của VinMart bao gồm <b>thực phẩm tươi sống, thực phẩm sơ chế, quần áo, mỹ phẩm, đồ gia dụng, văn phòng phẩm, đồ chơi, v.v</b>.\
+              <br>\
+              Tháng 10/2018, VinGroup mua lại chuỗi 23 siêu thị Fivimart, một thương hiệu đã có hơn 10 năm hoạt động trên thị trường, và sáp nhập vào VinMart. \
+              Sau khi hợp nhất, số lượng siêu thị của Vin là khoảng hơn 100, cùng với hơn 1.400 cửa hàng tiện lợi VinMart+.\
+              <br>\
+              Với cơ cấu tổ chức của VinMart được chia thành các tuyến chức năng, mỗi tuyến là một bộ phận hay đơn vị đảm nhận thực hiện một số chức năng,\
+              nhiệm vụ nào đó của tổ chức. Giám đốc là người có trách nhiệm cao nhất, ban hành các chiến lược và dự án xuống cho các bộ phận. \
+              Các bộ phận nhận công việc từ giám đốc sau đó thực hiện sao cho thực hiện tốt nhất và đem lại lợi ích cao nhất cho công ty. \
+              Cơ cấu tổ chức của VinMart có ưu điểm là thúc đẩy chuyên môn hoá kỹ năng, tạo điều kiện cho mỗi cá nhân phát huy tối đa năng lực của mình. \
+              Nhưng bên cạnh đó cơ cấu tổ chức này còn có những nhược điểm, chỉ có những nhà quản trị cao nhất mới có trách nhiệm về lợi nhuận, \
+              còn những nhà quản trị thấp hơn chỉ có trách nhiệm với bộ phận mà mình quản lý.\
+              <br>\
+              Ngày 15 tháng 1 năm 2022, VinMart và VinMart+ chính thức đổi tên thành WinMart và WinMart+.",
+    "infoEN": "WinMart (formerly known as Vinmart) is a supermarket chain under the Vingroup conglomerate in Vietnam.\
+              The system was inaugurated on November 20, 2014. According to Vietnam Report statistics until November 2017,\
+              VinMart and its subsidiary chain VinMart+ ranked 2nd in the most consumer-focused retail houses and 4th among the top 10 reputable retail houses in 2017.\
+              <br>\
+              In May 2019, VinMart had approximately 111 supermarkets and over 1,800 VinMart+ stores in nearly 50 provinces and cities,\
+              with a total business area of over 300,000 m² and a staff of over 11,000 people. By August 2019, the numbers had increased to 2,200.\
+              <br>\
+              VinMart's products include <b>fresh food, processed food, clothing, cosmetics, household items, office supplies, toys, etc.</b>.\
+              <br>\
+              In October 2018, VinGroup acquired the chain of 23 Fivimart supermarkets, a brand that had been operating for over 10 years,\
+              and merged it into VinMart. After the merger, Vin's total number of supermarkets reached over 100, along with more than 1,400 VinMart+ convenience stores.\
+              <br>\
+              VinMart's organizational structure is divided into functional lines, with each line being a department or unit responsible for specific functions or tasks.\
+              The director is the highest responsible person, issuing strategies and projects to the departments. Departments then carry out their tasks to achieve the best results and bring the highest benefits to the company.\
+              VinMart's organizational structure has the advantage of promoting the specialization of skills, providing conditions for each individual to maximize their potential.\
+              However, it also has disadvantages, as only top-level managers are responsible for profit, while lower-level managers are only responsible for their managed department.\
+              <br>\
+              On January 15, 2022, VinMart and VinMart+ officially changed their names to WinMart and WinMart+.",
     "latitude": 21.034743,
     "longitude": 105.784939,
-    "source-image": ['source-img/wm27165.jpg']
+    "source-image": []
   },  
   "CK177XT": {
     "polygon": [
-      [21.036361686877246, 105.78467667102815],
-      [21.036376703238854, 105.7846122980118],
-      [21.03645679047517, 105.78461766242982],
-      [21.036461795926012, 105.7847008109093]
+      [21.03644642071275, 105.78468990814392],
+      [21.03651156151119, 105.78470063551538],
+      [21.03651406692594, 105.78462018022931],
+      [21.03644892612861, 105.7846148165436]
     ],
     "infoDivId": "infoDivCK177XT",
     "nameVN": "Circle K số 177 đường Xuân Thuỷ, phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
     "nameEN": "Circle K No. 177 Xuan Thuy Street, Dich Vong Hau Ward, Cau Giay, Hanoi",
-    "infoVN": "<b>Tại Việt Nam</b>, chúng tôi chú trọng vào việc phát triển nhanh chóng trong lĩnh vực kinh doanh chuỗi cửa hàng tiện lợi theo giấy phép nhượng quyền thương hiệu của Circle K Mỹ. <b>Circle K</b> tự hào giới thiệu rằng chúng tôi là chuỗi cửa hàng tiện lợi quốc tế đầu tiên tại Việt Nam, và cửa hàng đầu tiên được khai trương vào 20 tháng 12 năm 2008. Chúng tôi đã tổ chức Lễ Kỷ Niệm 10 năm hoạt động của Circle K tại Việt Nam trong năm 2018. <b>Circle K</b> Việt Nam hiện đã có hơn 400 cửa hàng tại các thành phố lớn như Hà Nội, Hạ Long, Hồ Chí Minh, Vũng Tàu, Cần Thơ, Bình Dương, Hải Phòng, Long Xuyên, Biên Hòa và sẽ còn tiếp tục phát triển để đáp ứng nhu cầu của khách hàng ở khắp mọi nơi. <b>Cam Kết Dịch Vụ</b> của chúng tôi đối với khách hàng được gói gọn trong 4 chữ F (4Fs) (Tươi, Thân Thiện, Nhanh, và Đầy Đủ). <b>Tầm Nhìn</b> của chúng tôi là mong muốn trở thành chuỗi cửa hàng tiện lợi được ưa chuộng nhất tại Việt Nam. <b>Sứ Mệnh</b> của chúng tôi là mang đến một không gian mua sắm thú vị, thân thiện và đáng tin cậy cho khách hàng với những mặt hàng, dịch vụ, món ăn phong phú, đa dạng được phục vụ nhanh chóng và niềm nở.",
-    "infoEN": "<b>In Vietnam</b>, we focus on rapid development in the convenience store business under the brand licensing agreement of Circle K USA. <b>Circle K</b> proudly introduces itself as the first international convenience store chain in Vietnam, with the first store opening on December 20, 2008. We celebrated the 10th anniversary of Circle K's operations in Vietnam in 2018. <b>Circle K</b> Vietnam currently operates over 400 stores in major cities such as Hanoi, Ha Long, Ho Chi Minh City, Vung Tau, Can Tho, Binh Duong, Hai Phong, Long Xuyen, Bien Hoa, and continues to expand to meet customer needs everywhere. Our <b>Service Commitment</b> to customers is encapsulated in the 4Fs (Fresh, Friendly, Fast, and Full). Our <b>Vision</b> is to become the most preferred convenience store chain in Vietnam. Our <b>Mission</b> is to provide an enjoyable, friendly, and reliable shopping space for customers with a variety of products, services, and a quick and cheerful service for diverse and abundant choices.",
-    "latitude": 21.036429162538166,
-    "longitude": 105.78466057777405,
+    "infoVN": "<b>Tại Việt Nam</b>, chúng tôi chú trọng vào việc phát triển nhanh chóng trong lĩnh vực kinh doanh chuỗi cửa hàng tiện lợi theo giấy phép nhượng quyền thương hiệu của Circle K Mỹ.\
+              <br>\
+              <b>Circle K</b> tự hào giới thiệu rằng chúng tôi là chuỗi cửa hàng tiện lợi quốc tế đầu tiên tại Việt Nam, \
+              và cửa hàng đầu tiên được khai trương vào 20 tháng 12 năm 2008. \
+              Chúng tôi đã tổ chức Lễ Kỷ Niệm 10 năm hoạt động của Circle K tại Việt Nam trong năm 2018.\
+              <br>\
+              <b>Circle K</b> Việt Nam hiện đã có hơn 400 cửa hàng tại các thành phố lớn như Hà Nội, Hạ Long, Hồ Chí Minh, Vũng Tàu, Cần Thơ, Bình Dương, \
+              Hải Phòng, Long Xuyên, Biên Hòa và sẽ còn tiếp tục phát triển để đáp ứng nhu cầu của khách hàng ở khắp mọi nơi.\
+              <br>\
+              <b>Cam Kết Dịch Vụ</b> của chúng tôi đối với khách hàng được gói gọn trong 4 chữ F (4Fs) (Tươi, Thân Thiện, Nhanh, và Đầy Đủ).\
+              <br>\
+              <b>Tầm Nhìn</b> của chúng tôi là mong muốn trở thành chuỗi cửa hàng tiện lợi được ưa chuộng nhất tại Việt Nam.\
+              <br>\
+              <b>Sứ Mệnh</b> của chúng tôi là mang đến một không gian mua sắm thú vị, thân thiện và đáng tin cậy cho khách hàng với những mặt hàng, dịch vụ, \
+              món ăn phong phú, đa dạng được phục vụ nhanh chóng và niềm nở.",
+    "infoEN": "<b>In Vietnam</b>, we focus on rapid development in the convenience store business under the brand licensing agreement of Circle K USA.\
+              <br>\
+              <b>Circle K</b> proudly introduces itself as the first international convenience store chain in Vietnam, with the first store opening on December 20, 2008.\
+              We celebrated the 10th anniversary of Circle K's operations in Vietnam in 2018.\
+              <br>\
+              <b>Circle K</b> Vietnam currently operates over 400 stores in major cities such as Hanoi, Ha Long, Ho Chi Minh City, Vung Tau, Can Tho, Binh Duong,\
+              Hai Phong, Long Xuyen, Bien Hoa, and continues to expand to meet customer needs everywhere.\
+              <br>\
+              Our <b>Service Commitment</b> to customers is encapsulated in the 4Fs (Fresh, Friendly, Fast, and Full).\
+              <br>\
+              Our <b>Vision</b> is to become the most preferred convenience store chain in Vietnam.\
+              <br>\
+              Our <b>Mission</b> is to provide an enjoyable, friendly, and reliable shopping space for customers with a variety of products, services,\
+              and a quick and cheerful service for diverse and abundant choices.",
+    "latitude": 21.03650378916904,
+    "longitude": 105.78465770406073,
     "source-image": ['source-img/CK177XT.jpg']
-  },  
+  },
   "XD171XT": {
     "polygon": [
       [21.03633621189048, 105.78569054603577],
@@ -876,48 +1160,15 @@ var buildingData = {
     "longitude": 105.78627258539203,
     "source-image": []
   }
-  // Thêm thông tin của các toà nhà khác tương tự
 };
+
+// --------------------------------------------------------------------------------------- //
 
 for (const buildingId in buildingData) {
   if (buildingData.hasOwnProperty(buildingId)) {
-      const building = buildingData[buildingId];
       setPolygonClickEvent(buildingId);
   }
 }
-
-
-// Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
-// setPolygonClickEvent("NhaHieuBo");
-// setPolygonClickEvent("nhaA2");
-// setPolygonClickEvent("nhaA3");
-// setPolygonClickEvent("nhaA4");
-// setPolygonClickEvent("nhaB1");
-// setPolygonClickEvent("nhaB2");
-// setPolygonClickEvent("nhaC1");
-// setPolygonClickEvent("nhaC2");
-// setPolygonClickEvent("nhaC3");
-// setPolygonClickEvent("nhaC4");
-// setPolygonClickEvent("nhaD124");
-// setPolygonClickEvent("nhaD3");
-// setPolygonClickEvent("nhaH8");
-// setPolygonClickEvent("nhaM1234");
-// setPolygonClickEvent("nhaN");
-// setPolygonClickEvent("nhaK1");
-// setPolygonClickEvent("nhaK2");
-// setPolygonClickEvent("nhaK3");
-// setPolygonClickEvent("nhaKT");
-// setPolygonClickEvent("nhaT1");
-// setPolygonClickEvent("nhaT2");
-// setPolygonClickEvent("nhaV");
-// setPolygonClickEvent("CDTY");
-// setPolygonClickEvent("TV");
-// setPolygonClickEvent("SDN");
-// setPolygonClickEvent("CTC");
-// setPolygonClickEvent("ktxA5");
-// setPolygonClickEvent("VTN");
-
-// --------------------------------------------------------------------------------------- //
 
 // Hàm để tạo và chèn khối div 
 function createInfoDiv(buildingKey) {
@@ -1095,48 +1346,65 @@ function initRoutingControl(buildingKey) {
       },
     };
 
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function (position) {
-        var currentLocation = L.latLng(position.coords.latitude, position.coords.longitude);
-        var building = buildingData[buildingKey];
+    if (navigator.permissions && navigator.geolocation) {
+      navigator.permissions.query({ name: 'geolocation' }).then(function (permissionStatus) {
+        if (permissionStatus.state === 'granted') {
+          // Geolocation permission is granted, proceed with routing control initialization
+          navigator.geolocation.getCurrentPosition(function (position) {
+            var currentLocation = L.latLng(position.coords.latitude, position.coords.longitude);
+            var building = buildingData[buildingKey];
 
-        if (building) {
-          var buildingCoordinates = [building.latitude, building.longitude];
+            if (building) {
+              var buildingCoordinates = [building.latitude, building.longitude];
 
-          var routingControl = L.Routing.control({
-            waypoints: [
-              currentLocation,
-              L.latLng(buildingCoordinates[0], buildingCoordinates[1]),
-            ],
-            routeWhileDragging: true,
-            routeDragTimeout: 250,
-            reverseWaypoints: true,
-            showAlternatives: true,
-            altLineOptions: {
-              styles: [
-                { color: 'black', opacity: 0.15, weight: 9 },
-                { color: 'white', opacity: 0.8, weight: 6 },
-                { color: 'blue', opacity: 0.5, weight: 2 },
-              ],
-            },
-            position: 'topleft', // Set the position of the control panel to the top left corner
-            language: 'vi', // Set language to Vietnamese
-          }).addTo(mymap);
+              var routingControl = L.Routing.control({
+                waypoints: [
+                  currentLocation,
+                  L.latLng(buildingCoordinates[0], buildingCoordinates[1]),
+                ],
+                routeWhileDragging: true,
+                routeDragTimeout: 250,
+                reverseWaypoints: true,
+                showAlternatives: true,
+                altLineOptions: {
+                  styles: [
+                    { color: 'black', opacity: 0.15, weight: 9 },
+                    { color: 'white', opacity: 0.8, weight: 6 },
+                    { color: 'blue', opacity: 0.5, weight: 2 },
+                  ],
+                },
+                position: 'topleft',
+                language: 'vi',
+              }).addTo(mymap);
 
-          // Create close button
-          var closeButton = document.createElement('button');
-          closeButton.classList.add('closeRoutingButton');
-          closeButton.addEventListener('click', function () {
-            mymap.removeControl(routingControl);
-            closeButton.style.display = 'none';
+              var closeButton = document.createElement('button');
+              closeButton.classList.add('closeRoutingButton');
+              closeButton.addEventListener('click', function () {
+                mymap.removeControl(routingControl);
+                closeButton.style.display = 'none';
+              });
+
+              mymap.getContainer().appendChild(closeButton);
+              var infoDiv = document.getElementById(building.infoDivId);
+              infoDiv.style.display = 'none';
+            } else {
+              console.error('Building not found!');
+            }
           });
-
-          // Append close button to the map container
-          mymap.getContainer().appendChild(closeButton);
-          var infoDiv = document.getElementById(building.infoDivId);
-          infoDiv.style.display = 'none';
+        } else if (permissionStatus.state === 'prompt') {
+          // Geolocation permission is not granted yet, prompt the user
+          navigator.geolocation.getCurrentPosition(
+            function (position) {
+              // Retry the function to initialize routing control
+              initRoutingControl(buildingKey);
+            },
+            function (error) {
+              console.error('Geolocation permission denied or error:', error);
+            }
+          );
         } else {
-          console.error('Building not found in buildingData!');
+          // Geolocation permission is denied, handle accordingly
+          console.error('Geolocation permission denied.');
         }
       });
     } else {

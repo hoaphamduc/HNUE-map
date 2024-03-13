@@ -167,18 +167,25 @@ zoomControl.addTo(mymap);
 
 
 if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function (position) {
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
-    L.marker([lat, lon]).addTo(mymap)
-      .bindPopup('Vị trí của bạn').openPopup();
-  }, function (error) {
-    console.log('Error getting geolocation:', error.message);
-  });
-  } else {
+  var marker;
+  var watchId = navigator.geolocation.watchPosition(
+    function (position) {
+      var lat = position.coords.latitude;
+      var lon = position.coords.longitude;
+
+      if (!marker) {
+        marker = L.marker([lat, lon]).addTo(mymap).bindPopup('Vị trí của bạn').openPopup();
+      } else {
+        marker.setLatLng([lat, lon]);
+      }
+    },
+    function (error) {
+      console.log('Error getting geolocation:', error.message);
+    }
+  );
+} else {
   console.log('Geolocation is not supported by this browser.');
 }
-
 // Lấy tọa độ khi click
 mymap.on('click', function (e) {
   var lat = e.latlng.lat;
@@ -422,11 +429,6 @@ function openEnterPostDiv() {
   enterPost.style.display = "block";
 }
 
-
-
-
-
-
 function composeEmail() {
   var emailAddress = "hoaphamduc2399@gmail.com";
   var subject = "Hỗ trợ về HNUE map"; 
@@ -525,3 +527,9 @@ function clearInput() {
   clearInput.style.display = "none";
   filterItems();
 }
+
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
