@@ -604,3 +604,17 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+function checkTextArea(textarea) {
+  var statusVN = document.getElementById('statusVN').value;
+  var statusEng = document.getElementById('statusEng').value;
+  var postButton = document.getElementById('post-status');
+
+  // Enable the button if either textarea has at least 1 character
+  if (statusVN.length > 0 || statusEng.length > 0) {
+      postButton.disabled = false;
+  } else {
+      postButton.disabled = true;
+  }
+}
+
