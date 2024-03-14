@@ -140,31 +140,31 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 // // Fit bounds to the maximum bounds
 // mymap.fitBounds(maxBounds);
 
-var zoomControl = L.control.zoom({
-  position: 'bottomright' 
-});
-zoomControl.addTo(mymap);
+// var zoomControl = L.control.zoom({
+//   position: 'bottomright' 
+// });
+// zoomControl.addTo(mymap);
 
-if (navigator.geolocation) {
-  var marker;
-  var watchId = navigator.geolocation.watchPosition(
-    function (position) {
-      var lat = position.coords.latitude;
-      var lon = position.coords.longitude;
+// if (navigator.geolocation) {
+//   var marker;
+//   var watchId = navigator.geolocation.watchPosition(
+//     function (position) {
+//       var lat = position.coords.latitude;
+//       var lon = position.coords.longitude;
 
-      if (!marker) {
-        marker = L.marker([lat, lon]).addTo(mymap).bindPopup('Vị trí của bạn').openPopup();
-      } else {
-        marker.setLatLng([lat, lon]);
-      }
-    },
-    function (error) {
-      console.log('Error getting geolocation:', error.message);
-    }
-  );
-} else {
-  console.log('Geolocation is not supported by this browser.');
-}
+//       if (!marker) {
+//         marker = L.marker([lat, lon]).addTo(mymap).bindPopup('Vị trí của bạn').openPopup();
+//       } else {
+//         marker.setLatLng([lat, lon]);
+//       }
+//     },
+//     function (error) {
+//       console.log('Error getting geolocation:', error.message);
+//     }
+//   );
+// } else {
+//   console.log('Geolocation is not supported by this browser.');
+// }
 
 
 // Lấy tọa độ khi click
