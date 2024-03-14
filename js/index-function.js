@@ -120,7 +120,7 @@ languageToggle.addEventListener('change', function () {
 
 var mymap = L.map('map', {
     zoomControl: false
-  }).fitWorld().setView([21.037138, 105.783182], 13);
+  }).fitWorld().setView([21.039045240824837, 105.78336238861085], 17);
 
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,

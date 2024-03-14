@@ -80,12 +80,11 @@ languageToggle.addEventListener('change', function () {
 // Initialize Leaflet map
 var mymap = L.map('map', {
   zoomControl: false
-}).fitWorld().setView([21.037635818709738, 105.78335434198381], 18);
+}).fitWorld().setView([21.039045240824837, 105.78336238861085], 17);
 
-// Add OpenStreetMap layer
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 19,
-  attribution: '&copy; Nhóm nghiên cứu khoa học năm 2024'
+    maxZoom: 19,
+    attribution: '&copy; Nhóm nghiên cứu khoa học năm 2024'
 }).addTo(mymap);
 
 // // Add Max Bounds
@@ -106,86 +105,28 @@ var zoomControl = L.control.zoom({
 });
 zoomControl.addTo(mymap);
 
-// function initRoutingControl(destinationCoordinates) {
-//   if (typeof L.Routing !== 'undefined') {
-//     // Custom Vietnamese translation
-//     L.Routing.Localization['vi'] = {
-//       directions: {
-//         north: 'Bắc',
-//         northeast: 'Đông Bắc',
-//         east: 'Đông',
-//         southeast: 'Đông Nam',
-//         south: 'Nam',
-//         southwest: 'Tây Nam',
-//         west: 'Tây',
-//         northwest: 'Tây Bắc',
-//       },
-//       instructions: {
-//         continue: 'Tiếp tục',
-//         turn: 'Rẽ',
-//         name: 'Tên',
-//         destination: 'Đến',
-//         distance: 'Khoảng cách',
-//         duration: 'Thời gian',
-//       },
-//       travelMode: {
-//         car: 'Xe ô tô',
-//         bicycle: 'Xe đạp',
-//         foot: 'Đi bộ',
-//       },
-//     };
 
-//     var currentLocation = mymap.getCenter();
+// if (navigator.geolocation) {
+//   var marker;
+//   var watchId = navigator.geolocation.watchPosition(
+//     function (position) {
+//       var lat = position.coords.latitude;
+//       var lon = position.coords.longitude;
 
-//     var routingControl = L.Routing.control({
-//       waypoints: [
-//         currentLocation,
-//         L.latLng(destinationCoordinates[0], destinationCoordinates[1])
-//       ],
-//       routeWhileDragging: true,
-//       routeDragTimeout: 250,
-//       reverseWaypoints: true,
-//       showAlternatives: true,
-//       altLineOptions: {
-//         styles: [
-//           { color: 'black', opacity: 0.15, weight: 9 },
-//           { color: 'white', opacity: 0.8, weight: 6 },
-//           { color: 'blue', opacity: 0.5, weight: 2 }
-//         ]
-//       },
-//       position: 'topleft', // Đặt vị trí của bảng điều khiển ở góc trên bên trái
-//       language: 'vi', // Đặt ngôn ngữ sang tiếng Việt
-//     }).addTo(mymap);
-//   } else {
-//     console.error("LRM library not loaded!");
-//   }
+//       if (!marker) {
+//         marker = L.marker([lat, lon]).addTo(mymap).bindPopup('Vị trí của bạn').openPopup();
+//       } else {
+//         marker.setLatLng([lat, lon]);
+//       }
+//     },
+//     function (error) {
+//       console.log('Error getting geolocation:', error.message);
+//     }
+//   );
+// } else {
+//   console.log('Geolocation is not supported by this browser.');
 // }
 
-
-
-
-
-
-if (navigator.geolocation) {
-  var marker;
-  var watchId = navigator.geolocation.watchPosition(
-    function (position) {
-      var lat = position.coords.latitude;
-      var lon = position.coords.longitude;
-
-      if (!marker) {
-        marker = L.marker([lat, lon]).addTo(mymap).bindPopup('Vị trí của bạn').openPopup();
-      } else {
-        marker.setLatLng([lat, lon]);
-      }
-    },
-    function (error) {
-      console.log('Error getting geolocation:', error.message);
-    }
-  );
-} else {
-  console.log('Geolocation is not supported by this browser.');
-}
 // Lấy tọa độ khi click
 mymap.on('click', function (e) {
   var lat = e.latlng.lat;
