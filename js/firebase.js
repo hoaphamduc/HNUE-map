@@ -100,7 +100,7 @@ document.getElementById('post-status').addEventListener('click', async function(
 
       let userNameHTML = `<span>${userName}</span>`;
       if (verifyImageSrc) {
-        userNameHTML += `<img class="verified" src="${verifyImageSrc}" alt="Verified" />`;
+        userNameHTML += `<img class="verified2" src="${verifyImageSrc}" alt="Verified" />`;
       }
 
       // Fetch user data

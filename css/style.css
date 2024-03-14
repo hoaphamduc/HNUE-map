@@ -1097,12 +1097,19 @@ body, html {
 }
 
 .verified {
-  z-index: 100000;
   width: 17px;
   height: 17px;
   border-radius: 50%;
   margin-left: 5px;
-  margin-bottom: 1px;
+  margin-bottom: 2.5px;
+}
+
+.verified2 {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-bottom: 0;
 }
 
 .delete-post {
