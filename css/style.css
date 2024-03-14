@@ -1808,4 +1808,13 @@ body, html {
   #clear-input {
     right: 6.5%;
   }
+  #teamInfo .gallery {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0%;
+    height: 500px;
+    background-color: #000;
+  }
 }
