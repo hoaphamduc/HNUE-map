@@ -30,7 +30,7 @@ function updateUserProfile(user) {
   let verifyImageSrc = "";
 
   if (authenticatedUIDs.includes(uid)) {
-    verifyImageSrc = "source-img/verify.png"; 
+    verifyImageSrc = "source-img/verify.svg"; 
   }
 
   let userNameHTML = `<span>${userName}</span>`;
@@ -95,7 +95,7 @@ document.getElementById('post-status').addEventListener('click', async function(
       let verifyImageSrc = "";
 
       if (authenticatedUIDs.includes(uid)) {
-        verifyImageSrc = "source-img/verify.png"; 
+        verifyImageSrc = "source-img/verify.svg"; 
       }
 
       let userNameHTML = `<span>${userName}</span>`;
@@ -523,7 +523,7 @@ async function addComment(e) {
   let verifyImageSrc = "";
 
   if (authenticatedUIDs.includes(uid)) {
-    verifyImageSrc = "source-img/verify.png"; 
+    verifyImageSrc = "source-img/verify.svg"; 
   }
 
   let userNameHTML = `<span>${userName}</span>`;
