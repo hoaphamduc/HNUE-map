@@ -14,18 +14,34 @@ const storage = getStorage(app);
 const firebase = getDatabase(app);
 
 const user = auth.currentUser;
+const authenticatedUIDs = ["8Ut3NdciZVcEWxRCx8PV1KDkvCA2", "mQ2IYPwucKZZ8NjRwKzfFvWdM3M2", "HxmAlnp55JO19UOrWn644FW5rRp2", "FHjisOJFrZP4vVm2FSW0GWeQrEt2"];
 
 function updateUserProfile(user) {
   const userName = user.displayName;
   const userEmail = user.email;
   const userProfilePicture = user.photoURL;
-  document.getElementById("userName").textContent = userName;
-  document.getElementById("userName2").textContent = userName;
+  const uid = user.uid;
+
+  let verifyImageSrc = "";
+
+  if (authenticatedUIDs.includes(uid)) {
+    verifyImageSrc = "source-img/verify.png"; 
+  }
+
+  let userNameHTML = `<span>${userName}</span>`;
+  if (verifyImageSrc) {
+    userNameHTML += `<img class="verified" src="${verifyImageSrc}" alt="Verified" />`;
+  }
+
+  document.getElementById("userName").innerHTML = userNameHTML;
+  document.getElementById("userName2").innerHTML = userNameHTML;
+
   document.getElementById("userEmail").textContent = userEmail;
   document.getElementById("userProfilePicture").src = userProfilePicture;
   document.getElementById("userProfilePicture1").src = userProfilePicture;
   document.getElementById("userProfilePicture2").src = userProfilePicture;
 }
+
 
 // Observer for authentication state changes
 onAuthStateChanged(auth, (user) => {
@@ -69,13 +85,23 @@ document.getElementById('post-status').addEventListener('click', async function(
       // Get current user
       const user = auth.currentUser;
       const uid = user.uid;
+      const userName = user.displayName;
+
+      let verifyImageSrc = "";
+
+      if (authenticatedUIDs.includes(uid)) {
+        verifyImageSrc = "source-img/verify.png"; 
+      }
+
+      let userNameHTML = `<span>${userName}</span>`;
+      if (verifyImageSrc) {
+        userNameHTML += `<img class="verified" src="${verifyImageSrc}" alt="Verified" />`;
+      }
 
       // Fetch user data
       const userRef = ref(getDatabase(app), `users/${uid}`);
       const userSnapshot = await get(userRef);
       const userData = userSnapshot.exists() ? userSnapshot.val() : {};
-
-      
 
       // Check if the user can post (last post timestamp is more than a day ago)
       const canPost = await canUserPost(uid);
@@ -112,9 +138,9 @@ document.getElementById('post-status').addEventListener('click', async function(
       const inappropriateWordsFound = findInappropriateWords(status, inappropriateWords);
 
       if (inappropriateWordsFound.length > 0) {
-      const message = 'Nội dung chứa các từ ngữ không phù hợp: ' + inappropriateWordsFound.join(', ');
-      alert(message);
-      return;
+        const message = 'Nội dung chứa các từ ngữ không phù hợp: ' + inappropriateWordsFound.join(', ');
+        alert(message);
+        return;
       }
 
       const encodedStrVN = statusVN.replace(/[\u00A0-\u9999<>\&]/g, i => '&#'+i.charCodeAt(0)+';')
@@ -125,7 +151,6 @@ document.getElementById('post-status').addEventListener('click', async function(
           status = encodedStrEN;
       }
 
-      // Collect address and location (optional)
       const addressVN = document.getElementById('text-address-vn').value;
       const addressEng = document.getElementById('text-address-eng').value;
       const locationVN = document.getElementById('text-location-vn').value;
@@ -137,44 +162,32 @@ document.getElementById('post-status').addEventListener('click', async function(
           address = addressEng;
       }
 
-      
-
       location = locationEng;
       location = locationVN;
 
       // Check if image is selected
       const imageInput = document.getElementById('imageInput');
       if (imageInput.files.length > 0) {
+          this.disabled = true;
           const imageFile = imageInput.files[0];
-
-          // Create a unique timestamp for the image file name
           const timestamp = new Date().getTime();
-
-          // Create a unique path for the image
           const imagePath = `images/${newStatusRef.key}/${timestamp}_${imageFile.name}`;
-
-          // Create storage reference with the new path
           const storageReference = storageRef(storage, imagePath);
-
-          // Upload the file to storage
           const uploadTask = uploadBytes(storageReference, imageFile);
-
-          // Get the download URL directly from the storage reference
           imageURL = await uploadTask.then(() => getDownloadURL(storageReference));
       } else {
-          // Handle the case when no image is selected
           alert('Vui lòng chọn một ảnh để đăng bài.');
-          return; // Stop execution if no image is selected
+          return; 
       }
-      this.disabled = true;
+
       // Save status data to the database
       const timestamp = new Date().getTime();
       const dataToSave = {
           uid,
-          postId: newStatusRef.key, // Include post ID
+          postId: newStatusRef.key, 
           timestamp,
-          username: user.displayName || '', // Include username
-          avatarURL: user.photoURL || '', // Include avatarURL
+          username: userNameHTML || '', 
+          avatarURL: user.photoURL || '', 
       };
 
       if (status) dataToSave.status = status;
@@ -451,11 +464,24 @@ function updateCommentCount(postId) {
   });
 }
 
-function addComment(e) {
+async function addComment(e) {
   var postId = e.target.getAttribute('data');
   // Get the input element based on the postId
   const inputElement = document.getElementById(`comment-input-${postId}`);
   const user = auth.currentUser;
+  const uid = user.uid;
+  const userName = user.displayName;
+
+  let verifyImageSrc = "";
+
+  if (authenticatedUIDs.includes(uid)) {
+    verifyImageSrc = "source-img/verify.png"; 
+  }
+
+  let userNameHTML = `<span>${userName}</span>`;
+  if (verifyImageSrc) {
+    userNameHTML += `<img class="verified" src="${verifyImageSrc}" alt="Verified" />`;
+  }
 
   // Get the new comment text from the input element
   const newCommentText = inputElement.value;
@@ -463,19 +489,34 @@ function addComment(e) {
   // Check if the comment is not empty and does not exceed 500 characters
   if (newCommentText.trim() !== '') {
     if (newCommentText.length <= 470) {
-      // Prepare the comment object
-      const commentData = {
-        username: user.displayName || '',
-        avatarURL: user.photoURL || '',
-        text: newCommentText,
-        timestamp: new Date().getTime()
-      };
+      // Kiểm tra thời gian bình luận cuối cùng của người dùng trên bài viết này
+      const lastCommentRef = ref(getDatabase(app), `lastComments/${postId}/${uid}`);
+      const lastCommentSnapshot = await get(lastCommentRef);
+      const lastCommentData = lastCommentSnapshot.exists() ? lastCommentSnapshot.val() : null;
 
-      // Save the comment data to the database
-      saveCommentToDatabase(postId, commentData);
+      const currentTime = new Date().getTime();
 
-      // Clear the input field after saving the comment
-      inputElement.value = '';
+      // Nếu người dùng đã bình luận trước đó trong vòng 24 giờ, hiển thị thông báo và không lưu bình luận mới
+      if (lastCommentData && currentTime - lastCommentData.timestamp < 24 * 60 * 60 * 1000) {
+        alert('Bạn chỉ được bình luận một lần mỗi 24 giờ.');
+      } else {
+        // Chuẩn bị dữ liệu bình luận
+        const commentData = {
+          username: userNameHTML || '',
+          avatarURL: user.photoURL || '',
+          text: newCommentText,
+          timestamp: currentTime
+        };
+
+        // Lưu dữ liệu bình luận vào cơ sở dữ liệu
+        saveCommentToDatabase(postId, commentData);
+
+        // Cập nhật thời gian bình luận cuối cùng của người dùng
+        await set(lastCommentRef, { timestamp: currentTime });
+
+        // Clear the input field after saving the comment
+        inputElement.value = '';
+      }
     } else {
       // Handle the case where the comment exceeds 500 characters
       alert('Chỉ được bình luận tối đa 470 kí tự.');
@@ -485,6 +526,7 @@ function addComment(e) {
     console.log('Comment cannot be empty');
   }
 }
+
 
 function saveCommentToDatabase(postId, commentData) {
   const commentsRef = ref(getDatabase(app), `comments/${postId}`);
@@ -560,10 +602,7 @@ function createCommentElement(comment) {
   commentElement.appendChild(commentAvt);
 
   // Thêm tên người dùng
-  const commentUsername = document.createElement('span');
-  commentUsername.classList.add('comment-username');
-  commentUsername.textContent = comment.username;
-  commentElement.appendChild(commentUsername);
+  commentElement.innerHTML += `<span class="comment-username">${comment.username}</span>`;
 
   // Thêm thời gian bình luận
   const commentTime = document.createElement('span');

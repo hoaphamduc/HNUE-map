@@ -1096,6 +1096,14 @@ body, html {
  top: 45px;
 }
 
+.verified {
+  z-index: 100000;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
 .search-input {
   width: 90%; 
   position: absolute; 
