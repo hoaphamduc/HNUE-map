@@ -140,10 +140,10 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 // // Fit bounds to the maximum bounds
 // mymap.fitBounds(maxBounds);
 
-// var zoomControl = L.control.zoom({
-//   position: 'bottomright' 
-// });
-// zoomControl.addTo(mymap);
+var zoomControl = L.control.zoom({
+  position: 'bottomright' 
+});
+zoomControl.addTo(mymap);
 
 // if (navigator.geolocation) {
 //   var marker;
