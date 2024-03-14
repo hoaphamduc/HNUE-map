@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getAuth, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-import { get, ref, set, onValue, push, getDatabase } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js';
+import { get, ref, set, onValue, push, getDatabase, remove } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js';
 import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js';
 
 const _0x34a23d=_0x5abd;function _0x5abd(_0x19d45f,_0x189364){const _0x2fae36=_0x2fae();return _0x5abd=function(_0x5abd36,_0x2c8a1e){_0x5abd36=_0x5abd36-0x172;let _0x5dac42=_0x2fae36[_0x5abd36];return _0x5dac42;},_0x5abd(_0x19d45f,_0x189364);}(function(_0x5a1125,_0x5eb62a){const _0x181d7b=_0x5abd,_0x426777=_0x5a1125();while(!![]){try{const _0x250367=parseInt(_0x181d7b(0x176))/0x1*(-parseInt(_0x181d7b(0x182))/0x2)+parseInt(_0x181d7b(0x17c))/0x3+-parseInt(_0x181d7b(0x178))/0x4*(parseInt(_0x181d7b(0x17d))/0x5)+-parseInt(_0x181d7b(0x179))/0x6*(-parseInt(_0x181d7b(0x180))/0x7)+parseInt(_0x181d7b(0x174))/0x8+-parseInt(_0x181d7b(0x17b))/0x9*(parseInt(_0x181d7b(0x175))/0xa)+-parseInt(_0x181d7b(0x172))/0xb*(-parseInt(_0x181d7b(0x17f))/0xc);if(_0x250367===_0x5eb62a)break;else _0x426777['push'](_0x426777['shift']());}catch(_0x44df3d){_0x426777['push'](_0x426777['shift']());}}}(_0x2fae,0x930d7));const firebaseConfig={'apiKey':_0x34a23d(0x17e),'authDomain':_0x34a23d(0x181),'projectId':_0x34a23d(0x177),'storageBucket':_0x34a23d(0x17a),'messagingSenderId':'18471638048','appId':_0x34a23d(0x173),'measurementId':'G-Q43VE2X9Z1'};function _0x2fae(){const _0x3893ee=['252672UeAZmY','71650rLeKHM','4349FECztj','hnue-map-42e10','13640xQtrHN','98898SnPTcT','hnue-map-42e10.appspot.com','1233xKFzZF','1011468MeVWHS','805ofwKwv','AIzaSyCRD_Jsz7rBhGf2B-oZ4wniLAp8QrglFTQ','1188MvUCcc','224oqBjpT','hnue-map-42e10.firebaseapp.com','124frlfFo','167376ImQsiP','1:18471638048:web:8f538cd825d504c5e49845'];_0x2fae=function(){return _0x3893ee;};return _0x2fae();}
@@ -14,7 +14,12 @@ const storage = getStorage(app);
 const firebase = getDatabase(app);
 
 const user = auth.currentUser;
-const authenticatedUIDs = ["8Ut3NdciZVcEWxRCx8PV1KDkvCA2", "mQ2IYPwucKZZ8NjRwKzfFvWdM3M2", "HxmAlnp55JO19UOrWn644FW5rRp2", "FHjisOJFrZP4vVm2FSW0GWeQrEt2"];
+const authenticatedUIDs = ["8Ut3NdciZVcEWxRCx8PV1KDkvCA2", "mQ2IYPwucKZZ8NjRwKzfFvWdM3M2", "HxmAlnp55JO19UOrWn644FW5rRp2", "FHjisOJFrZP4vVm2FSW0GWeQrEt2", "PI7tSAdBXATtgtQNPRPnYtgl1CA2"];
+
+// Hàm kiểm tra xem UID của người dùng có trong mảng authenticatedUIDs không
+function checkAuthenticatedUser(uid) {
+  return authenticatedUIDs.includes(uid);
+}
 
 function updateUserProfile(user) {
   const userName = user.displayName;
@@ -369,7 +374,6 @@ async function loadPosts() {
       // Duyệt qua 20 bài đăng mới nhất và tạo các phần tử HTML
       for (const post of latestPosts) {
         const postId = post.postId;
-
         // Tạo div cho mỗi bài đăng
         const postDiv = document.createElement('div');
         postDiv.classList.add('show-post');
@@ -383,6 +387,7 @@ async function loadPosts() {
           <img class="post-userProfilePicture" src="${post.avatarURL}" alt="Profile Picture">
           <span class="post-username">${post.username}</span>
           <span class="post-time">${new Date(post.timestamp).toLocaleString()}</span>
+          <button class="delete-post"></button>
           <span class="post-text-status">${post.status}</span>
           <span class="contentVN post-address">Địa chỉ: ${post.address !== undefined ? post.address : 'Người dùng không chia sẻ địa chỉ'}</span>
           <span class="contentEnglish post-address">Address: ${post.address !== undefined ? post.address : 'The user did not shared the address'}</span>
@@ -441,12 +446,55 @@ async function loadPosts() {
         boxes.forEach(box => {
           box.addEventListener('click', addComment);
         });
+
+        // Lấy tất cả các nút delete-post
+        const deletePostButtons = document.querySelectorAll('.delete-post');
+        // Đặt thuộc tính dataset cho nút delete-post để lưu postId
+        postDiv.querySelector('.delete-post').dataset.postId = postId;
+        // Lặp qua từng nút và thêm sự kiện nghe
+        deletePostButtons.forEach(button => {
+            button.addEventListener('click', async function() {
+                // Lấy postId của bài viết tương ứng
+                const postId = this.dataset.postId;
+                // Gọi hàm xóa bài viết với postId tương ứng
+                await deletePost(postId);
+            });
+        });
+      }
+      const user = auth.currentUser;
+      const uid = user.uid;
+
+      // Kiểm tra xem người dùng có phải là người dùng được xác thực không
+      if (checkAuthenticatedUser(uid)) {
+          // Nếu là người dùng được xác thực, lặp qua tất cả các phần tử có lớp CSS delete-post và hiển thị chúng
+          const deletePostButtons = document.querySelectorAll('.delete-post');
+          deletePostButtons.forEach(button => {
+              button.style.display = 'block';
+          });
       }
     }
   } catch (error) {
     console.error('Error loading posts:', error);
   }
 }
+
+async function deletePost(postId) {
+  try {
+      const confirmDelete = confirm("Bạn có chắc chắn muốn xóa bài viết này không?");
+
+      if (confirmDelete) {
+          const postRef = ref(getDatabase(app), `statuses/${postId}`);
+          await remove(postRef);
+          console.log('Bài viết đã được xóa thành công');
+          await loadPosts();
+      } else {
+      }
+  } catch (error) {
+      console.error('Đã có lỗi khi xóa bài viết:', error);
+  }
+}
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   loadPosts(true);
