@@ -14,7 +14,9 @@ const storage = getStorage(app);
 const firebase = getDatabase(app);
 
 const user = auth.currentUser;
-const authenticatedUIDs = ["8Ut3NdciZVcEWxRCx8PV1KDkvCA2", "mQ2IYPwucKZZ8NjRwKzfFvWdM3M2", "HxmAlnp55JO19UOrWn644FW5rRp2", "FHjisOJFrZP4vVm2FSW0GWeQrEt2", "PI7tSAdBXATtgtQNPRPnYtgl1CA2"];
+const authenticatedUIDs = ["8Ut3NdciZVcEWxRCx8PV1KDkvCA2", "mQ2IYPwucKZZ8NjRwKzfFvWdM3M2", "HxmAlnp55JO19UOrWn644FW5rRp2", 
+                            "PI7tSAdBXATtgtQNPRPnYtgl1CA2", "Rsqd0z5flcS1v0InedmRKqKg9Pu1"
+                          ];
 
 // Hàm kiểm tra xem UID của người dùng có trong mảng authenticatedUIDs không
 function checkAuthenticatedUser(uid) {

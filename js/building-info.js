@@ -1191,7 +1191,7 @@ function createInfoDiv(buildingKey) {
       <span class="tim-duong-ggm contentEnglish">Directions using Google Maps: </span>
       <span class="dong-gop contentVN">Đóng góp ý kiến của bạn: </span>
       <span class="dong-gop contentEnglish">Give us your feedback: </span>
-      <img class="send-feedback" src="source-img/gop-y.png" onclick="composeEmail()">
+      <img class="send-feedback" src="source-img/mail.svg" onclick="composeEmail()">
       <button class="close" id="close${building.infoDivId}"></button>`;
 
   // Tạo nội dung cho phần content
