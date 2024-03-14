@@ -95,6 +95,28 @@ document.getElementById('post-status').addEventListener('click', async function(
       // Collect status content
       const statusVN = document.getElementById('statusVN').value;
       const statusEng = document.getElementById('statusEng').value;
+
+      status = statusVN;
+      if (isDisplayedBlock(document.getElementById('statusEng'))) {
+          status = statusEng;
+      }
+
+      // Check for inappropriate words in the status
+      const inappropriateWords = [
+        'địt', 'lồn', 'mẹ mày', 'vãi', 'vcl', 'đm', 'đmm',
+        'dm', 'duma', 'Đuma', 'dmm', 'lon', 'dit', 'me may',
+        'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'đụ', 'chơi gái', 'choi gai', 'bulon',
+        'cac', 'cặc', 'nwngs', 'loz', 'buoi'
+      ];
+
+      const inappropriateWordsFound = findInappropriateWords(status, inappropriateWords);
+
+      if (inappropriateWordsFound.length > 0) {
+      const message = 'Nội dung chứa các từ ngữ không phù hợp: ' + inappropriateWordsFound.join(', ');
+      alert(message);
+      return;
+      }
+
       const encodedStrVN = statusVN.replace(/[\u00A0-\u9999<>\&]/g, i => '&#'+i.charCodeAt(0)+';')
       const encodedStrEN = statusEng.replace(/[\u00A0-\u9999<>\&]/g, i => '&#'+i.charCodeAt(0)+';')
 
@@ -115,21 +137,7 @@ document.getElementById('post-status').addEventListener('click', async function(
           address = addressEng;
       }
 
-      // Check for inappropriate words in the status
-      const inappropriateWords = [
-        'địt', 'lồn', 'mẹ mày', 'vãi', 'vcl', 'đm', 'đmm',
-        'dm', 'duma', 'Đuma', 'dmm', 'lon', 'dit', 'me may',
-        'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'đụ', 'chơi gái', 'choi gai', 'bulon',
-        'cac', 'cặc', 'nwngs', 'loz', 'buoi'
-      ];
-
-      const inappropriateWordsFound = findInappropriateWords(status, inappropriateWords);
-
-      if (inappropriateWordsFound.length > 0) {
-      const message = 'Nội dung chứa các từ ngữ không phù hợp: ' + inappropriateWordsFound.join(', ');
-      alert(message);
-      return;
-      }
+      
 
       location = locationEng;
       location = locationVN;
@@ -158,7 +166,7 @@ document.getElementById('post-status').addEventListener('click', async function(
           alert('Vui lòng chọn một ảnh để đăng bài.');
           return; // Stop execution if no image is selected
       }
-
+      this.disabled = true;
       // Save status data to the database
       const timestamp = new Date().getTime();
       const dataToSave = {
@@ -173,7 +181,6 @@ document.getElementById('post-status').addEventListener('click', async function(
       if (address) dataToSave.address = address;
       if (location) dataToSave.location = location;
       if (imageURL) dataToSave.imageURL = imageURL;
-
       await set(newStatusRef, dataToSave);
       
       // Display success message if status is updated successfully
@@ -198,20 +205,27 @@ document.getElementById('post-status').addEventListener('click', async function(
   }
 });
 
-// Function to find inappropriate words in the status
 function findInappropriateWords(status, inappropriateWords) {
   const foundWords = [];
-  const wordsInStatus = status.split(/\s+/); // Split the status into words
+  const statusLowercase = status.toLowerCase(); // Chuyển đổi văn bản sang chữ thường để so sánh
 
-  wordsInStatus.forEach(word => {
-      // Check if the word is in the list of inappropriate words
-      if (inappropriateWords.includes(word.toLowerCase())) {
-          foundWords.push(word);
-      }
+  inappropriateWords.forEach(word => {
+    const regex = new RegExp(escapeRegExp(word.toLowerCase()), 'gi'); // 'gi' để tìm kiếm toàn bộ văn bản và không phân biệt chữ hoa chữ thường
+    const matches = statusLowercase.match(regex); // Tìm kiếm các từ cấm trong văn bản
+
+    if (matches) {
+      foundWords.push(...matches.map(match => match.toLowerCase())); // Thêm từ cấm vào danh sách các từ tìm thấy
+    }
   });
 
   return foundWords;
 }
+
+// Hàm để tránh lỗi với các ký tự đặc biệt trong biểu thức chính quy
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
 
 function resetImageInput() {
   document.getElementById('add-photo').style.backgroundImage = 'url(source-img/add-a-photo.png)';
