@@ -22,6 +22,81 @@ body, html {
   padding: 0;
 }
 
+#teamInfo .gallery {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 15%;
+  height: 500px;
+  background-color: #000;
+}
+.item:nth-child(1) {
+  background-image: url(../source-img/team-profile/pdung.jpg);
+}
+.item:nth-child(2) {
+  background-image: url(../source-img/team-profile/meo.jpg);
+}
+.item:nth-child(3) {
+  background-image: url(../source-img/team-profile/ciu.jpg);
+}
+.item:nth-child(4) {
+  background-image: url(../source-img/team-profile/phat.jpg);
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: flex 0.8s ease;
+}
+
+.item:hover {
+  flex: 5;
+}
+
+#groupInfo {
+  cursor: pointer;
+  color: #2185D0;
+}
+
+#teamInfo {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  z-index: 10001; 
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  display: none;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+}
+
+.infoContainer {
+ width: 90%; 
+ text-align: center;
+ position: relative; 
+ margin-left: 5%;
+ margin-top: 5px;
+ background-color: #fff;
+ border-radius: 15px;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ padding: 5px;
+}
+
+.infoText {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: default;
+  color: #000;
+}
+
 .main-content #map {
     height: 100%;
     position: relative;
@@ -365,6 +440,20 @@ body, html {
   right: 10px;
 }
 
+#closeTeamInfo {
+  position: absolute;
+  background: url(../source-img/close.svg);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+}
+
 .infoDiv .toolbar .direct-btn {
   background: url(../source-img/direct.svg);
   background-size: contain;  
@@ -442,7 +531,14 @@ body, html {
   cursor: default;
 }
 
-.infoDiv .building-info {
+.infoTeam {
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  cursor: default;
+}
+
+.infoDiv .building-info, .teamInfo {
   font-size: 13px;
   word-wrap: break-word; 
   margin-top: 10px;

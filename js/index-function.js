@@ -124,7 +124,7 @@ var mymap = L.map('map', {
 
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; Nhóm nghiên cứu khoa học năm 2024'
+    attribution: '<span id="groupInfo" onclick="toggleGroupInfo()" data-bs-toggle="tooltip" title="Xem thông tin nhóm">&copy; Nhóm nghiên cứu khoa học năm 2024</span>'
 }).addTo(mymap);
 
 // var maxBounds = L.latLngBounds(
@@ -618,3 +618,18 @@ function checkTextArea(textarea) {
   }
 }
 
+function toggleGroupInfo() {
+  var infoTeam = document.getElementById("teamInfo");
+  var style = window.getComputedStyle(infoTeam);
+
+  if (style.display === "none") {
+    infoTeam.style.display = "block";
+  } else {
+    infoTeam.style.display = "none";
+  }
+}
+
+function closeGroupInfo() {
+  var infoTeam = document.getElementById("teamInfo");
+  infoTeam.style.display = "none";
+}
