@@ -270,6 +270,11 @@ function toggleSupportDiv() {
     supportDiv.style.display = "none";
   }
   hideSidebar();
+  hideInfomationPagesDiv();
+  hideProductIntroductionDiv();
+  hideHNUEIntroductionDiv();
+  hideSocialNetworkDiv();
+  hideDonateDiv();
 }
 
 function toggleSocialNetworkDiv() {
@@ -282,6 +287,11 @@ function toggleSocialNetworkDiv() {
     socialDiv.style.display = "none";
   }
   hideSidebar();
+  hideInfomationPagesDiv();
+  hideProductIntroductionDiv();
+  hideHNUEIntroductionDiv();
+  hideSupportDiv();
+  hideDonateDiv();
 }
 
 function toggleHNUEIntroductionDiv() {
@@ -294,6 +304,11 @@ function toggleHNUEIntroductionDiv() {
     HNUEIntrductionDiv.style.display = "none";
   }
   hideSidebar();
+  hideInfomationPagesDiv();
+  hideProductIntroductionDiv();
+  hideSocialNetworkDiv();
+  hideSupportDiv();
+  hideDonateDiv();
 }
 
 function toggleProductIntroductionDiv() {
@@ -306,6 +321,11 @@ function toggleProductIntroductionDiv() {
     ProductIntrductionDiv.style.display = "none";
   }
   hideSidebar();
+  hideInfomationPagesDiv();
+  hideHNUEIntroductionDiv();
+  hideSocialNetworkDiv();
+  hideSupportDiv();
+  hideDonateDiv();
 }
 
 function toggleInfomationPagesDiv() {
@@ -318,6 +338,11 @@ function toggleInfomationPagesDiv() {
     InfomationPagesDiv.style.display = "none";
   }
   hideSidebar();
+  hideProductIntroductionDiv();
+  hideHNUEIntroductionDiv();
+  hideSocialNetworkDiv();
+  hideSupportDiv();
+  hideDonateDiv();
 }
 
 function toggleDonateDiv() {
@@ -330,6 +355,11 @@ function toggleDonateDiv() {
     donateDiv.style.display = "none";
   }
   hideSidebar();
+  hideInfomationPagesDiv();
+  hideProductIntroductionDiv();
+  hideHNUEIntroductionDiv();
+  hideSocialNetworkDiv();
+  hideSupportDiv();
 }
 
 function hideInfomationPagesDiv() {
@@ -635,4 +665,24 @@ function toggleGroupInfo() {
 function closeGroupInfo() {
   var infoTeam = document.getElementById("teamInfo");
   infoTeam.style.display = "none";
+}
+
+function hideOtherDivs(clickedElement) {
+  // Lặp qua tất cả các li trong nav list
+  const navList = document.getElementById('nav_list');
+  const navListItems = navList.getElementsByTagName('li');
+  
+  for (let i = 0; i < navListItems.length; i++) {
+    const listItem = navListItems[i];
+    const anchor = listItem.querySelector('a');
+    const divId = anchor.getAttribute('onclick').replace('toggle', '');
+
+    // Ẩn các khối div có id không giống với khối div được gọi bởi li được click
+    if (divId && divId !== clickedElement) {
+      const divToHide = document.getElementById(divId + 'Div');
+      if (divToHide) {
+        divToHide.style.display = 'none';
+      }
+    }
+  }
 }

@@ -625,7 +625,7 @@ async function deletePost(postId) {
         }
 
         // Tải lại danh sách bài viết
-        await loadPosts();
+        // await loadPosts();
       } else {
         // Không làm gì nếu người dùng không xác nhận xóa
       }
@@ -656,11 +656,6 @@ function updateCommentCount(postId) {
     }
   });
 }
-
-
-
-
-
 
 async function addComment(e) {
   var postId = e.target.getAttribute('data');
