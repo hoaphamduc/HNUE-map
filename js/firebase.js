@@ -371,6 +371,8 @@ async function loadPosts() {
         postDiv.classList.add('show-post');
         updateCommentCount(postId);
 
+        var numberLike = post.likes.length.toString();
+
         // Lấy tọa độ từ thuộc tính "location"
         const coordinates = extractCoordinates(post.location);
 
@@ -389,7 +391,7 @@ async function loadPosts() {
           
           <div class="number-like">
             <img class="liked-img" src="source-img/heart-solid.svg">
-            <span id="number-like">0</span>
+            <span id="number-like" id="number-like-${post.postId}">${numberLike}</span>
           </div>
 
           <div class="number-comment">
@@ -428,7 +430,27 @@ async function loadPosts() {
             <button class="comment-button addComment" data='${post.postId}'" data-bs-toggle="tooltip" title="Gửi bình luận"></button>
           </div>
         `;
-        
+
+        // Lấy nút like-post
+        const likeButton = postDiv.querySelector(`#like-action-${post.postId}`);
+
+        // Kiểm tra xem người dùng đã thích bài viết hay chưa
+        const userLiked = await userLikedPost(postId, auth.currentUser.uid);
+
+        // Thay đổi trạng thái của nút like dựa trên kết quả kiểm tra
+        if (userLiked) {
+            likeButton.innerHTML = `
+                <img src="source-img/heart-solid.svg" class="action-img">
+                <span class="contentVN action-text">Bỏ thích</span>
+                <span class="contentEnglish action-text">Unlike</span>
+            `;
+        } else {
+            likeButton.innerHTML = `
+                <img src="source-img/heart-regular.svg" class="action-img">
+                <span class="contentVN action-text">Thích</span>
+                <span class="contentEnglish action-text">Like</span>
+            `;
+        }
 
         // Lấy tất cả các nút delete-post
         const likePostButtons = Array.from(postDiv.getElementsByClassName('like-post'));
@@ -466,8 +488,6 @@ async function loadPosts() {
         });
 
       }
-
-
       const user = auth.currentUser;
       const uid = user.uid;
 
@@ -533,6 +553,31 @@ document.addEventListener('click', async function(event) {
       }
   }
 });
+
+
+async function userLikedPost(postId, uid) {
+  try {
+      // Tham chiếu đến nhánh "statuses" trong Firebase
+      const statusRef = ref(getDatabase(app), `statuses/${postId}`);
+
+      // Lấy dữ liệu từ nhánh "statuses"
+      const statusSnapshot = await get(statusRef);
+
+      // Kiểm tra xem bài viết có tồn tại hay không
+      if (statusSnapshot.exists()) {
+          const postData = statusSnapshot.val();
+          const likes = postData.likes || [];
+          return likes.includes(uid);
+      } else {
+          console.log('Post not found');
+          return false;
+      }
+  } catch (error) {
+      console.error('Error checking if user liked post:', error);
+      return false;
+  }
+}
+
 
 
 
@@ -603,6 +648,11 @@ function updateCommentCount(postId) {
     }
   });
 }
+
+
+
+
+
 
 async function addComment(e) {
   var postId = e.target.getAttribute('data');
