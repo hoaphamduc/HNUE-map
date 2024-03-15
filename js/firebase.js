@@ -194,7 +194,8 @@ document.getElementById('post-status').addEventListener('click', async function(
           postId: newStatusRef.key, 
           timestamp,
           username: userNameHTML || '', 
-          avatarURL: user.photoURL || '', 
+          avatarURL: user.photoURL || '',
+          likes: [],
       };
 
       if (status) dataToSave.status = status;
@@ -398,7 +399,7 @@ async function loadPosts() {
 
           <div id="line"></div>
 
-          <div class="like-post" onclick="underDevelopment()">
+          <div class="like-post" id="like-action-${post.postId}" data-postId='${post.postId}'>
             <img src="source-img/heart-regular.svg" class="action-img">
             <span class="contentVN action-text">Thích</span>
             <span class="contentEnglish action-text">Like</span>
@@ -427,6 +428,19 @@ async function loadPosts() {
             <button class="comment-button addComment" data='${post.postId}'" data-bs-toggle="tooltip" title="Gửi bình luận"></button>
           </div>
         `;
+        
+
+        // Lấy tất cả các nút delete-post
+        const likePostButtons = Array.from(postDiv.getElementsByClassName('like-post'));
+
+        // Đặt thuộc tính dataset cho nút delete-post để lưu postId
+        likePostButtons.forEach(button => {
+            button.dataset.postId = postId;
+        });
+
+
+
+
         const commentBox = postDiv.querySelector('.comment-post');
 
         commentBox.addEventListener('click', () => getCommentsForPost(postId));
@@ -452,6 +466,8 @@ async function loadPosts() {
         });
 
       }
+
+
       const user = auth.currentUser;
       const uid = user.uid;
 
@@ -468,6 +484,57 @@ async function loadPosts() {
     console.error('Error loading posts:', error);
   }
 }
+
+document.addEventListener('click', async function(event) {
+  const likeButton = event.target.closest('.like-post');
+  if (likeButton) {
+      const postId = likeButton.dataset.postId;
+      const postDiv = likeButton.closest('.show-post');
+
+      try {
+          const user = auth.currentUser;
+          const uid = user.uid;
+          const userRef = ref(getDatabase(app), `users/${uid}`);
+          const userSnapshot = await get(userRef);
+          const userData = userSnapshot.exists() ? userSnapshot.val() : {};
+
+          const statusRef = ref(getDatabase(app), `statuses/${postId}`);
+          const statusSnapshot = await get(statusRef);
+
+          const postData = statusSnapshot.exists() ? statusSnapshot.val() : {};
+
+          let likes = postData.likes || [];
+
+          if (likes.includes(uid)) {
+              // Unlike
+              likes = likes.filter(likeUid => likeUid !== uid);
+              likeButton.innerHTML = `
+                  <img src="source-img/heart-regular.svg" class="action-img">
+                  <span class="contentVN action-text">Thích</span>
+                  <span class="contentEnglish action-text">Like</span>
+              `;
+          } else {
+              // Like
+              likes.push(uid);
+              likeButton.innerHTML = `
+                  <img src="source-img/heart-solid.svg" class="action-img">
+                  <span class="contentVN action-text">Bỏ thích</span>
+                  <span class="contentEnglish action-text">Unlike</span>
+              `;
+          }
+
+          await set(statusRef, { ...postData, likes });
+
+          // Update the like count
+          const likeCountElement = postDiv.querySelector('#number-like');
+          likeCountElement.textContent = likes.length.toString();
+      } catch (error) {
+          console.error('Error liking post:', error);
+      }
+  }
+});
+
+
 
 async function deletePost(postId) {
   try {
