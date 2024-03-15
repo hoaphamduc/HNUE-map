@@ -19,6 +19,57 @@
 </head>
 
 <body>
+    <!-- Mạng xã hội -->
+    <div id="enter-post">
+        <center><span class="contentVN creat-post-span">Tạo bài viết</span></center>
+        <center><span class="contentEnglish creat-post-span">Create post</span></center>
+        <button class="close-div" onclick="hideEnterPostDiv()"></button>
+        <div style="height: 1px; width: 100%; background-color: #e5e5e5; position: relative; top: 18px"></div>
+        <img id="userProfilePicture2" src="source-img/grey-img.jpg" alt="Profile Picture">
+        <span id="userName2"></span>
+        <textarea class="contentVN status pre" id="statusVN" placeholder="Chia sẻ với mọi người gì đó đi nào" oninput="checkTextArea(this)"></textarea>
+        <textarea class="contentEnglish status" id="statusEng" placeholder="Share something to everyone" oninput="checkTextArea(this)"></textarea>
+        <div id="add-photo" onclick="uploadImage()">
+            <input type="file" id="imageInput" onchange="setBackgroundImage()">
+        </div>
+        <div id="add-location">
+            <label for="text-location" style="font-size: 10px;">
+                <span class="contentVN">Thêm toạ độ (có thể mất vài phút):</span>
+                <span class="contentEnglish">Add current coordinates (take few minutes):</span>
+            </label><br>
+            <input type="text" name="text-location" id="text-location-vn" class="contentVN" readonly placeholder="Nhấn nút để thêm tọa độ" >
+            <input type="text" name="text-location" id="text-location-eng" class="contentEnglish" readonly placeholder="Press the button to add coordinates">
+            <img src="source-img/location.png" id="add-location-button" onclick="getLocationAndFillInput()">
+        </div>
+        <div id="add-address">
+            <label for="text-location" style="font-size: 10px;">
+                <span class="contentVN">Thêm địa chỉ:</span>
+                <span class="contentEnglish">Add address:</span>
+            </label><br>
+            <input type="text" name="text-location" id="text-address-vn" class="contentVN" placeholder="Nhập địa chỉ" >
+            <input type="text" name="text-location" id="text-address-eng" class="contentEnglish" placeholder="Enter address">
+            <img src="source-img/building-regular.svg" id="add-address-img">
+        </div>
+        <button class="post-status" id="post-status" disabled>
+            <span class="contentVN">Đăng</span>
+            <span class="contentEnglish">Post</span>
+        </button>
+    </div>
+    <div id="social-network-div">
+        <button class="close-div" onclick="hideSocialNetworkDiv()" style="background-color: #f0f2f5;"></button>
+        <div id="post-div">
+            <img id="userProfilePicture1" src="source-img/grey-img.jpg" alt="Profile Picture">
+            <div id="openEnterDiv" class="post-btn" onclick="openEnterPostDiv()">
+                <span class="contentVN" id="textVN">Chia sẻ gì đó với mọi người</span>
+                <span class="contentEnglish" id="textEN">Share something with everyone</span>
+            </div>
+        </div>
+        <div id="posts-container"></div>
+        <button id="show-more">
+            <span class="contentVN">Xem thêm 5 bài viết cũ hơn</span>
+            <span class="contentEnglish">Load 5 older posts</span>
+        </button>
+    </div>
     <div class="sidebar" id="sidebar">
         <div class="logo-content" id="logo-content">
             <btn id="menu-btn"></btn>
@@ -229,54 +280,7 @@
               </span>
         </div>
 
-        <!-- Mạng xã hội -->
-        <div id="enter-post">
-            <center><span class="contentVN creat-post-span">Tạo bài viết</span></center>
-            <center><span class="contentEnglish creat-post-span">Create post</span></center>
-            <button class="close-div" onclick="hideEnterPostDiv()"></button>
-            <div style="height: 1px; width: 100%; background-color: #e5e5e5; position: relative; top: 18px"></div>
-            <img id="userProfilePicture2" src="source-img/grey-img.jpg" alt="Profile Picture">
-            <span id="userName2"></span>
-            <textarea class="contentVN status pre" id="statusVN" placeholder="Chia sẻ với mọi người gì đó đi nào" oninput="checkTextArea(this)"></textarea>
-            <textarea class="contentEnglish status" id="statusEng" placeholder="Share something to everyone" oninput="checkTextArea(this)"></textarea>
-            <div id="add-photo" onclick="uploadImage()">
-                <input type="file" id="imageInput" onchange="setBackgroundImage()">
-            </div>
-            <div id="add-location">
-                <label for="text-location" style="font-size: 10px;">
-                    <span class="contentVN">Thêm toạ độ (có thể mất vài phút):</span>
-                    <span class="contentEnglish">Add current coordinates (take few minutes):</span>
-                </label><br>
-                <input type="text" name="text-location" id="text-location-vn" class="contentVN" readonly placeholder="Nhấn nút để thêm tọa độ" >
-                <input type="text" name="text-location" id="text-location-eng" class="contentEnglish" readonly placeholder="Press the button to add coordinates">
-                <img src="source-img/location.png" id="add-location-button" onclick="getLocationAndFillInput()">
-            </div>
-            <div id="add-address">
-                <label for="text-location" style="font-size: 10px;">
-                    <span class="contentVN">Thêm địa chỉ:</span>
-                    <span class="contentEnglish">Add address:</span>
-                </label><br>
-                <input type="text" name="text-location" id="text-address-vn" class="contentVN" placeholder="Nhập địa chỉ" >
-                <input type="text" name="text-location" id="text-address-eng" class="contentEnglish" placeholder="Enter address">
-                <img src="source-img/building-regular.svg" id="add-address-img">
-            </div>
-            <button class="post-status" id="post-status" disabled>
-                <span class="contentVN">Đăng</span>
-                <span class="contentEnglish">Post</span>
-            </button>
-        </div>
-        <div id="social-network-div">
-            <button class="close-div" onclick="hideSocialNetworkDiv()" style="background-color: #f0f2f5;"></button>
-            <div id="post-div">
-                <img id="userProfilePicture1" src="source-img/grey-img.jpg" alt="Profile Picture">
-                <div id="openEnterDiv" class="post-btn" onclick="openEnterPostDiv()">
-                    <span class="contentVN" id="textVN">Chia sẻ gì đó với mọi người</span>
-                    <span class="contentEnglish" id="textEN">Share something with everyone</span>
-                </div>
-            </div>
-            <div id="posts-container"></div>
-            <button id="show-more">Show more 5 posts</button>
-        </div>
+        
 
 
         <!-- Hộp thông báo -->

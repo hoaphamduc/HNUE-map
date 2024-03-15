@@ -338,6 +338,9 @@ function extractCoordinates(location) {
   }
 }
 
+// Biến để lưu số lượng bài đăng đã tải, khai báo ở phạm vi toàn cục
+let loadedPostsCount = 0;
+
 async function loadPosts() {
   try {
     // Tham chiếu đến nhánh "statuses" trong Firebase
@@ -354,16 +357,14 @@ async function loadPosts() {
       // Sắp xếp bài đăng theo timestamp (mới nhất trước)
       posts.sort((a, b) => b.timestamp - a.timestamp);
 
-      // Lấy 20 bài đăng mới nhất
-      const latestPosts = posts.slice(0, 20);
-
+      const latestPosts = posts.slice(loadedPostsCount, loadedPostsCount + 5);
+      loadedPostsCount += 5;
       // Lấy container để hiển thị bài đăng
       const postsContainer = document.getElementById('posts-container');
 
       // Xóa nội dung hiện có trong container
       postsContainer.innerHTML = '';
 
-      // Duyệt qua 20 bài đăng mới nhất và tạo các phần tử HTML
       for (const post of latestPosts) {
         const postId = post.postId;
         // Tạo div cho mỗi bài đăng
@@ -371,7 +372,7 @@ async function loadPosts() {
         postDiv.classList.add('show-post');
         updateCommentCount(postId);
 
-        var numberLike = post.likes.length.toString();
+        var numberLike = post.likes ? post.likes.length.toString() : '0';
 
         // Lấy tọa độ từ thuộc tính "location"
         const coordinates = extractCoordinates(post.location);
@@ -552,6 +553,13 @@ document.addEventListener('click', async function(event) {
           console.error('Error liking post:', error);
       }
   }
+});
+
+// Gắn sự kiện click cho nút "Show more 5 posts"
+const showMoreButton = document.getElementById('show-more');
+showMoreButton.addEventListener('click', async function() {
+  await loadPosts();
+  console.log(loadedPostsCount);
 });
 
 

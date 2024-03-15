@@ -1779,12 +1779,12 @@ body, html {
     top: 30px;
   }
   #enter-post {
-    width: 90%; 
-    left: 5%; 
+    width: 98%; 
+    left: 1%; 
     top: 30px;
   }
   #show-more {
-    margin-top: 45px;
+    margin-top: 90px;
     width: 98%;
   }
   .show-post {
