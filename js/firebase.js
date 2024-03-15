@@ -689,9 +689,8 @@ async function addComment(e) {
 
       const currentTime = new Date().getTime();
 
-      // Nếu người dùng đã bình luận trước đó trong vòng 24 giờ, hiển thị thông báo và không lưu bình luận mới
-      if (lastCommentData && currentTime - lastCommentData.timestamp < 24 * 60 * 60 * 1000) {
-        alert('Bạn chỉ được bình luận một lần mỗi 24 giờ.');
+      if (lastCommentData && currentTime - lastCommentData.timestamp < 3 * 60 * 1000) {
+        alert('Bạn chỉ được bình luận một lần mỗi 3 phút.');
       } else {
         // Chuẩn bị dữ liệu bình luận
         const commentData = {
