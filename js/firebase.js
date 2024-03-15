@@ -194,7 +194,8 @@ document.getElementById('post-status').addEventListener('click', async function(
           postId: newStatusRef.key, 
           timestamp,
           username: userNameHTML || '', 
-          avatarURL: user.photoURL || '', 
+          avatarURL: user.photoURL || '',
+          likes: [],
       };
 
       if (status) dataToSave.status = status;
@@ -337,6 +338,9 @@ function extractCoordinates(location) {
   }
 }
 
+// Biến để lưu số lượng bài đăng đã tải, khai báo ở phạm vi toàn cục
+let loadedPostsCount = 0;
+
 async function loadPosts() {
   try {
     // Tham chiếu đến nhánh "statuses" trong Firebase
@@ -353,22 +357,22 @@ async function loadPosts() {
       // Sắp xếp bài đăng theo timestamp (mới nhất trước)
       posts.sort((a, b) => b.timestamp - a.timestamp);
 
-      // Lấy 20 bài đăng mới nhất
-      const latestPosts = posts.slice(0, 20);
-
+      const latestPosts = posts.slice(loadedPostsCount, loadedPostsCount + 5);
+      loadedPostsCount += 5;
       // Lấy container để hiển thị bài đăng
       const postsContainer = document.getElementById('posts-container');
 
       // Xóa nội dung hiện có trong container
       postsContainer.innerHTML = '';
 
-      // Duyệt qua 20 bài đăng mới nhất và tạo các phần tử HTML
       for (const post of latestPosts) {
         const postId = post.postId;
         // Tạo div cho mỗi bài đăng
         const postDiv = document.createElement('div');
         postDiv.classList.add('show-post');
         updateCommentCount(postId);
+
+        var numberLike = post.likes ? post.likes.length.toString() : '0';
 
         // Lấy tọa độ từ thuộc tính "location"
         const coordinates = extractCoordinates(post.location);
@@ -388,7 +392,7 @@ async function loadPosts() {
           
           <div class="number-like">
             <img class="liked-img" src="source-img/heart-solid.svg">
-            <span id="number-like">0</span>
+            <span id="number-like" id="number-like-${post.postId}">${numberLike}</span>
           </div>
 
           <div class="number-comment">
@@ -398,7 +402,7 @@ async function loadPosts() {
 
           <div id="line"></div>
 
-          <div class="like-post" onclick="underDevelopment()">
+          <div class="like-post" id="like-action-${post.postId}" data-postId='${post.postId}'>
             <img src="source-img/heart-regular.svg" class="action-img">
             <span class="contentVN action-text">Thích</span>
             <span class="contentEnglish action-text">Like</span>
@@ -427,6 +431,39 @@ async function loadPosts() {
             <button class="comment-button addComment" data='${post.postId}'" data-bs-toggle="tooltip" title="Gửi bình luận"></button>
           </div>
         `;
+
+        // Lấy nút like-post
+        const likeButton = postDiv.querySelector(`#like-action-${post.postId}`);
+
+        // Kiểm tra xem người dùng đã thích bài viết hay chưa
+        const userLiked = await userLikedPost(postId, auth.currentUser.uid);
+
+        // Thay đổi trạng thái của nút like dựa trên kết quả kiểm tra
+        if (userLiked) {
+            likeButton.innerHTML = `
+                <img src="source-img/heart-solid.svg" class="action-img">
+                <span class="contentVN action-text">Bỏ thích</span>
+                <span class="contentEnglish action-text">Unlike</span>
+            `;
+        } else {
+            likeButton.innerHTML = `
+                <img src="source-img/heart-regular.svg" class="action-img">
+                <span class="contentVN action-text">Thích</span>
+                <span class="contentEnglish action-text">Like</span>
+            `;
+        }
+
+        // Lấy tất cả các nút delete-post
+        const likePostButtons = Array.from(postDiv.getElementsByClassName('like-post'));
+
+        // Đặt thuộc tính dataset cho nút delete-post để lưu postId
+        likePostButtons.forEach(button => {
+            button.dataset.postId = postId;
+        });
+
+
+
+
         const commentBox = postDiv.querySelector('.comment-post');
 
         commentBox.addEventListener('click', () => getCommentsForPost(postId));
@@ -468,6 +505,89 @@ async function loadPosts() {
     console.error('Error loading posts:', error);
   }
 }
+
+document.addEventListener('click', async function(event) {
+  const likeButton = event.target.closest('.like-post');
+  if (likeButton) {
+      const postId = likeButton.dataset.postId;
+      const postDiv = likeButton.closest('.show-post');
+
+      try {
+          const user = auth.currentUser;
+          const uid = user.uid;
+          const userRef = ref(getDatabase(app), `users/${uid}`);
+          const userSnapshot = await get(userRef);
+          const userData = userSnapshot.exists() ? userSnapshot.val() : {};
+
+          const statusRef = ref(getDatabase(app), `statuses/${postId}`);
+          const statusSnapshot = await get(statusRef);
+
+          const postData = statusSnapshot.exists() ? statusSnapshot.val() : {};
+
+          let likes = postData.likes || [];
+
+          if (likes.includes(uid)) {
+              // Unlike
+              likes = likes.filter(likeUid => likeUid !== uid);
+              likeButton.innerHTML = `
+                  <img src="source-img/heart-regular.svg" class="action-img">
+                  <span class="contentVN action-text">Thích</span>
+                  <span class="contentEnglish action-text">Like</span>
+              `;
+          } else {
+              // Like
+              likes.push(uid);
+              likeButton.innerHTML = `
+                  <img src="source-img/heart-solid.svg" class="action-img">
+                  <span class="contentVN action-text">Bỏ thích</span>
+                  <span class="contentEnglish action-text">Unlike</span>
+              `;
+          }
+
+          await set(statusRef, { ...postData, likes });
+
+          // Update the like count
+          const likeCountElement = postDiv.querySelector('#number-like');
+          likeCountElement.textContent = likes.length.toString();
+      } catch (error) {
+          console.error('Error liking post:', error);
+      }
+  }
+});
+
+// Gắn sự kiện click cho nút "Show more 5 posts"
+const showMoreButton = document.getElementById('show-more');
+showMoreButton.addEventListener('click', async function() {
+  await loadPosts();
+  console.log(loadedPostsCount);
+});
+
+
+async function userLikedPost(postId, uid) {
+  try {
+      // Tham chiếu đến nhánh "statuses" trong Firebase
+      const statusRef = ref(getDatabase(app), `statuses/${postId}`);
+
+      // Lấy dữ liệu từ nhánh "statuses"
+      const statusSnapshot = await get(statusRef);
+
+      // Kiểm tra xem bài viết có tồn tại hay không
+      if (statusSnapshot.exists()) {
+          const postData = statusSnapshot.val();
+          const likes = postData.likes || [];
+          return likes.includes(uid);
+      } else {
+          console.log('Post not found');
+          return false;
+      }
+  } catch (error) {
+      console.error('Error checking if user liked post:', error);
+      return false;
+  }
+}
+
+
+
 
 async function deletePost(postId) {
   try {
@@ -536,6 +656,11 @@ function updateCommentCount(postId) {
     }
   });
 }
+
+
+
+
+
 
 async function addComment(e) {
   var postId = e.target.getAttribute('data');

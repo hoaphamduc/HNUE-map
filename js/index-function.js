@@ -491,21 +491,24 @@ function openFullscreen(element) {
     element.requestFullscreen();
   } else if (element.mozRequestFullScreen) { /* Firefox */
     element.mozRequestFullScreen();
-  } else if (element.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-    element.webkitRequestFullscreen();
+  } else if (element.webkitRequestFullscreen) { /* Chrome, Safari và Opera */
+    if (element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
   } else if (element.msRequestFullscreen) { /* IE/Edge */
     element.msRequestFullscreen();
   }
 
-  // Thêm sự kiện để theo dõi thay đổi fullscreen
+  // Thêm bộ lắng nghe sự kiện để theo dõi thay đổi fullscreen
   document.addEventListener("fullscreenchange", exitFullscreenHandler);
   document.addEventListener("webkitfullscreenchange", exitFullscreenHandler);
   document.addEventListener("mozfullscreenchange", exitFullscreenHandler);
   document.addEventListener("MSFullscreenChange", exitFullscreenHandler);
 
-  // Thêm sự kiện click để thoát fullscreen khi bấm vào bất kỳ nơi nào
+  // Thêm bộ lắng nghe sự kiện click để thoát fullscreen khi nhấp chuột vào bất kỳ đâu
   document.addEventListener("click", exitFullscreenOnClickHandler);
 }
+
 
 // Hàm để thoát fullscreen khi sự kiện xảy ra
 function exitFullscreenHandler() {
