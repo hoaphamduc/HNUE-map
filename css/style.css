@@ -475,28 +475,32 @@ body, html {
   background: url(../source-img/direct.svg);
   background-size: contain;  
   background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border: none;
   background-color: #fff;
   cursor: pointer;
   position: absolute;
-  top: 14px;
-  left: 237px;
+  top: 45px;
+  left: 15px;
 }
 
 .infoDiv .toolbar .direct-btn-ggm {
   background: url(../source-img/direct.svg);
   background-size: contain;  
   background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border: none;
   background-color: #fff;
   cursor: pointer;
   position: absolute;
-  top: 47px;
-  left: 237px;
+  top: 115px;
+  left: 15px;
+}
+
+.infoDiv .toolbar .direct-btn-ggm:hover, .infoDiv .toolbar .direct-btn:hover, .infoDiv .toolbar .send-feedback:hover {
+  transform: scale(1.3);
 }
 
 .infoDiv .toolbar .tim-duong {
@@ -505,7 +509,7 @@ body, html {
   font-weight: bold;
   left: 15px; 
   position: absolute; 
-  top: 16px;
+  top: 15px;
   cursor: default;
 }
 
@@ -515,7 +519,7 @@ body, html {
   font-weight: bold;
   left: 15px; 
   position: absolute; 
-  top: 50px;
+  top: 85px;
   cursor: default;
 }
 
@@ -525,20 +529,20 @@ body, html {
   font-weight: bold;
   left: 15px; 
   position: absolute; 
-  top: 84px;
+  top: 155px;
   cursor: default;
 }
 
 .infoDiv .toolbar .send-feedback {
-  height: 25px; 
+  height: 35px; 
   position: absolute; 
-  top: 82px; 
-  left: 237px;
+  top: 185px; 
+  left: 15px;
   cursor: pointer;
 }
 
 .infoDiv .content {
-  margin-top: 105px;
+  margin-top: 220px;
 }
 
 .infoDiv .building-name {
@@ -1781,14 +1785,14 @@ body, html {
     font-size: 25px;
   }
   .infoDiv {
-    height: 60%;
-    width: 96%;
+    height: 80%;
+    width: 98%;
   }
   .infoDiv .toolbar {
     top: 20px;
   }
   .infoDiv .content {
-    margin-top: 120px;
+    margin-top: 235px;
   }
   #post-div {
     width: 98%;  
@@ -1833,5 +1837,40 @@ body, html {
     margin-left: 0%;
     height: 500px;
     background-color: #000;
+  }
+}
+
+@media (max-width: 345px) {
+  .infoDiv .toolbar .direct-btn {
+    top: 60px;
+    left: 15px;
+  }
+  
+  .infoDiv .toolbar .direct-btn-ggm {
+    top: 130px;
+    left: 15px;
+  }
+
+  .infoDiv .toolbar .send-feedback {
+    top: 200px; 
+    left: 15px;
+  }
+
+  .infoDiv .toolbar .tim-duong {
+    left: 15px; 
+    top: 15px;
+  }
+  
+  .infoDiv .toolbar .tim-duong-ggm {
+    left: 15px; 
+    top: 100px;
+  }
+  
+  .infoDiv .toolbar .dong-gop {
+    left: 15px; 
+    top: 170px;
+  }
+  .infoDiv .content {
+    margin-top: 245px;
   }
 }

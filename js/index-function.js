@@ -686,3 +686,8 @@ function hideOtherDivs(clickedElement) {
     }
   }
 }
+
+// Ngăn chặn sự kiện phóng to trên các trình duyệt di động
+document.addEventListener('gesturestart', function (e) {
+  e.preventDefault();
+});

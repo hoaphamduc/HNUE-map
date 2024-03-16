@@ -1184,8 +1184,8 @@ function createInfoDiv(buildingKey) {
   toolbar.className = 'toolbar';
   toolbar.innerHTML = `
       <button class="direct-btn" onclick="initRoutingControl('${buildingKey}')"></button>
-      <span class="tim-duong contentVN">Chỉ đường (có thể mất vài phút) : </span>
-      <span class="tim-duong contentEnglish">Directions (take a few minutes) : </span>
+      <span class="tim-duong contentVN">Chỉ đường (dùng PC có thể lỗi) : </span>
+      <span class="tim-duong contentEnglish">Directions (using PC might have errors) : </span>
       <button class="direct-btn-ggm" onclick="openGoogleMaps('${buildingKey}')"></button>
       <span class="tim-duong-ggm contentVN">Chỉ đường bằng Google Maps: </span>
       <span class="tim-duong-ggm contentEnglish">Directions using Google Maps: </span>
