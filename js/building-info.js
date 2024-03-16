@@ -1226,9 +1226,17 @@ function createInfoDiv(buildingKey) {
       infoDiv.style.display = 'none';
   });
 
+  var directionBoard = document.getElementById('direction-board');
+  directionBoard.addEventListener('click', function(event) {
+      var clickedElement = event.target;
+      if (directionBoard.contains(clickedElement)) {
+          infoDiv.style.display = 'none';
+      }
+  });
+
+
   return infoDiv;
 }
-
 
 // Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
 function setPolygonClickEvent(buildingKey) {
