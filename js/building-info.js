@@ -1159,6 +1159,23 @@ var buildingData = {
     "latitude": 21.040089155890687,
     "longitude": 105.78627258539203,
     "source-image": []
+  },
+  "BVDKYHCT": {
+    "polygon": [
+      [21.035340176069692, 105.77889928384097],
+      [21.035330158305655, 105.77996432499651],
+      [21.035117280660344, 105.77999383495296],
+      [21.034045565869395, 105.77982485167065],
+      [21.034063097107182, 105.7789019948507]
+    ],
+    "infoDivId": "infoDivBVDKYHCT",
+    "nameVN": "Bệnh viện Đa khoa Y học cổ truyền Hà Nội",
+    "nameEN": "Hanoi Traditional Medicine General Hospital",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": " No information.",
+    "latitude": 21.034196074739974,
+    "longitude": 105.77983528529914,
+    "source-image": []
   }
 };
 
