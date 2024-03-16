@@ -461,9 +461,6 @@ async function loadPosts() {
             button.dataset.postId = postId;
         });
 
-
-
-
         const commentBox = postDiv.querySelector('.comment-post');
 
         commentBox.addEventListener('click', () => getCommentsForPost(postId));
@@ -623,11 +620,8 @@ async function deletePost(postId) {
             console.log('Ảnh không tồn tại trên Firebase Storage');
           }
         }
-
-        // Tải lại danh sách bài viết
-        // await loadPosts();
       } else {
-        // Không làm gì nếu người dùng không xác nhận xóa
+        alert('Bạn đã huỷ');
       }
     } else {
       // Người dùng chưa đăng nhập hoặc không có quyền xóa bài viết
@@ -637,9 +631,6 @@ async function deletePost(postId) {
     console.error('Đã có lỗi khi xóa bài viết:', error);
   }
 }
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
   loadPosts(true);
