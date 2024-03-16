@@ -208,6 +208,7 @@ document.getElementById('post-status').addEventListener('click', async function(
       alert('Bạn đã đăng bài thành công!');
       var socialDiv = document.getElementById("social-network-div");
       socialDiv.classList.remove("darken");
+      loadedPostsCount = 0;
       loadPosts();
       document.getElementById('statusVN').value = '';
       document.getElementById('statusEng').value = '';
@@ -358,7 +359,7 @@ async function loadPosts() {
       posts.sort((a, b) => b.timestamp - a.timestamp);
 
       const latestPosts = posts.slice(loadedPostsCount, loadedPostsCount + 5);
-      loadedPostsCount += 5;
+
       // Lấy container để hiển thị bài đăng
       const postsContainer = document.getElementById('posts-container');
 
@@ -555,6 +556,7 @@ document.addEventListener('click', async function(event) {
 // Gắn sự kiện click cho nút "Show more 5 posts"
 const showMoreButton = document.getElementById('show-more');
 showMoreButton.addEventListener('click', async function() {
+  loadedPostsCount += 5;
   await loadPosts();
   console.log(loadedPostsCount);
 });
@@ -605,7 +607,7 @@ async function deletePost(postId) {
         // Xóa bài viết từ cơ sở dữ liệu
         await remove(postRef);
         alert('Bài viết đã được xóa thành công');
-
+        loadPosts();
         if (imageURL) {
           const storageReference = storageRef(storage, imageURL);
 
