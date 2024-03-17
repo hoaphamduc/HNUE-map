@@ -371,7 +371,7 @@ async function loadPosts() {
         // Tạo div cho mỗi bài đăng
         const postDiv = document.createElement('div');
         postDiv.classList.add('show-post');
-        updateCommentCount(postId);
+        
 
         var numberLike = post.likes ? post.likes.length.toString() : '0';
 
@@ -432,12 +432,12 @@ async function loadPosts() {
             <button class="comment-button addComment" data='${post.postId}'" data-bs-toggle="tooltip" title="Gửi bình luận"></button>
           </div>
         `;
-
         // Lấy nút like-post
         const likeButton = postDiv.querySelector(`#like-action-${post.postId}`);
 
         // Kiểm tra xem người dùng đã thích bài viết hay chưa
         const userLiked = await userLikedPost(postId, auth.currentUser.uid);
+        updateCommentCount(postId);
 
         // Thay đổi trạng thái của nút like dựa trên kết quả kiểm tra
         if (userLiked) {
