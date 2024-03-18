@@ -495,3 +495,11 @@ function closeGroupInfo() {
 document.addEventListener('gesturestart', function (e) {
   e.preventDefault();
 });
+
+function confirmRedirect() {
+  var answer = confirm("Bạn sẽ mở trang tuyển sinh ở trang mới!");
+  if (answer) {
+      hideSidebar()
+      window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
+  }
+}
