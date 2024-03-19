@@ -764,7 +764,7 @@ var buildingData = {
               Some rooms have additional amenities such as air conditioning and water heaters.",
     "latitude": 21.04047779705717,
     "longitude": 105.78523665624702,
-    "source-image": ['source-img/A8.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FA8.jpg?alt=media&token=1f85cf48-d069-453e-aea4-59334461fe63']
   },
   "ktxA9": {
     "polygon": [
