@@ -473,7 +473,8 @@ var buildingData = {
     "infoEN": "Also known as: \"The Lane of those without love\"<br><br><b>General Information:</b><br><br>- Address: Hanoi University of Education, 136 Xuan Thuy, Dich Vong Hau, Cau Giay, Hanoi.<br>- Characteristics:<br>&ensp;+ The lane is approximately 100 meters long, adorned with old tamarind trees.<br>&ensp;+ In the season of golden falling leaves, it creates a romantic ambiance.<br>&ensp;+ The lane is a favorite spot for student couples in the university.<br><br><b>History:</b><br><br>Love Lane was named by the students of Hanoi University of Education.<br>This name originates from the romantic and poetic scenery of the lane.<br>The lane has become a symbol of love and youth for the university students.<br><br><b>Significance:</b><br><br>Love Lane is a place to preserve beautiful memories for student couples.<br>The lane is also a place for young people to express their emotions and love.<br>The lane is an integral part of the student life at Hanoi University of Education.<br><br><b>Note:</b><br><br>Love Lane is a popular tourist attraction for visitors to Hanoi University of Education.<br>Visitors should maintain cleanliness and are not allowed to litter on the lane.",
     "latitude": 21.038914821717466,
     "longitude": 105.78331432193048,
-    "source-image": ['source-img/cdty.jpg', 'source-img/cdty2.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fcdty.jpg?alt=media&token=de766619-5eab-4767-b2c6-4890e8ac50a8', 
+    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fcdty2.jpg?alt=media&token=139452cc-24f7-44ad-8db8-647e816474e5g']
   },
   "TV": {
     "polygon": [
@@ -583,7 +584,7 @@ var buildingData = {
               - Visitors should refrain from taking photos of Buddha statues and other artifacts in the pagoda.",
     "latitude": 21.038781898211674,
     "longitude": 105.78383495574235,
-    "source-image": ['source-img/CTC.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FCTC.jpg?alt=media&token=8ef7d160-5c09-4b3d-a171-92e9833d5d9c']
   },
   "ktxA5": {
     "polygon": [
@@ -607,7 +608,7 @@ var buildingData = {
     "infoEN": "<b>Building A5:</b><br><br>It has a high-rise structure (4 floors) with 63 rooms, providing accommodation for 490 residents, 16 rooms on each floor. The standard is basic room type.<br><br><b>Occupants:</b><br><br>Third-year female students from various faculties.<br><br><b>Room Types:</b><br><br>Basic (standard) rooms with 2 room codes:<br>- Room type A5-06 (6 persons): 8 rooms with 6 beds each.<br>- Room type A5-08 (8 persons): 55 rooms with 8 beds each.<br><br><b>Area - Facilities:</b><br><br>Room area S = 25 - 36 m<sup>2</sup>. Closed facilities (bathroom, toilet, laundry area, balcony, ...), full utilities with electricity and water, bunk beds, ceiling fan, water heater, Wifi.",
     "latitude": 21.040557663003472,
     "longitude": 105.78565049910145,
-    "source-image": ['source-img/A5.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FA5.jpg?alt=media&token=0184b6cb-5a1e-4459-a1e3-0bd51cf97632']
   },
   "VTN": {
     "polygon": [
@@ -623,7 +624,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.040027118063747,
     "longitude": 105.78531054929083,
-    "source-image": []
+    "source-image": ['']
   },
   "SVD": {
     "polygon": [
@@ -716,7 +717,7 @@ var buildingData = {
               Room area S = 25 - 36 m<sup>2</sup>. Closed facilities (bathroom, toilet, laundry area, balcony, ...), full utilities with electricity and water, bunk beds, ceiling fan, water heater, Wifi, ...",
     "latitude": 21.040977854797603,
     "longitude": 105.7853525876999,
-    "source-image": ['source-img/A6.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FA6.jpg?alt=media&token=e8ffdb12-888b-48bf-b54c-cf9654b1e351']
   },
   "ktxA8": {
     "polygon": [
@@ -808,7 +809,7 @@ var buildingData = {
               Some rooms have additional amenities such as water heaters and air conditioning.",
     "latitude": 21.040737070276787,
     "longitude": 105.78423878844119,
-    "source-image": ['source-img/A9.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FA9.jpg?alt=media&token=3e078192-54fd-46a4-b425-bd603684e6c6']
   },
   "ktxA10": {
     "polygon": [
@@ -922,7 +923,7 @@ var buildingData = {
               Some rooms have additional amenities such as water heaters, air conditioning, refrigerators, and TVs.",
     "latitude": 21.040843008631303,
     "longitude": 105.7848553645986,
-    "source-image": ['source-img/A11.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FA11.jpg?alt=media&token=8d198f83-fb8a-45b5-96e3-b02bfac6c3b0']
   },
   "ktxA12": {
     "polygon": [
@@ -962,7 +963,7 @@ var buildingData = {
               Rooms have an area of S = 36 m<sup>2</sup>, modern enclosed facilities (bathroom, toilet, laundry, balcony, etc.), full electricity and water supply, single beds for 3-person rooms, and bunk beds for 4, 6-person rooms. It includes tables, chairs, wardrobes, ceiling fans, and Wi-Fi.",
     "latitude": 21.04080760993697,
     "longitude": 105.78427053649243,
-    "source-image": ['source-img/A12.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FA12.jpg?alt=media&token=8352521e-a558-4f20-b26a-a0581764f62b']
   },
   "HT1110": {
     "polygon": [
@@ -978,7 +979,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.03786212246022,
     "longitude": 105.78466057777405,
-    "source-image": ['source-img/1110.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2F1110.jpg?alt=media&token=e71cf0ca-b920-47e8-b620-fc87a5bb6a29']
   },
 
   "WM27165": {
@@ -1031,7 +1032,7 @@ var buildingData = {
               On January 15, 2022, VinMart and VinMart+ officially changed their names to WinMart and WinMart+.",
     "latitude": 21.035876874492814,
     "longitude": 105.78656762838365,
-    "source-image": ['source-img/wm27165.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fwm27165.jpg?alt=media&token=c917f408-4d27-414f-9c7d-142bf469fc52']
   },  
   "WM77TQV": {
     "polygon": [
@@ -1126,7 +1127,7 @@ var buildingData = {
               and a quick and cheerful service for diverse and abundant choices.",
     "latitude": 21.03650378916904,
     "longitude": 105.78465770406073,
-    "source-image": ['source-img/CK177XT.jpg']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCK177XT.jpg?alt=media&token=6e49077b-236c-4c2b-a979-3e971c392019']
   },
   "XD171XT": {
     "polygon": [
@@ -1142,7 +1143,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.03634373011426,
     "longitude": 105.78575760126115,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FXD171XT.jpg?alt=media&token=968d1773-88ab-4d8e-9c95-39fbaa74e9f9']
   },  
   "XD107PVT": {
     "polygon": [
