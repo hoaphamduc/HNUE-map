@@ -414,11 +414,11 @@ body, html {
   left: calc((100% - 270px)/2);
   border-radius: 15px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
-  top: 100px;
+  top: 160px;
 }
 
 #qr-pdung {
-  top: 470px;
+  top: 530px;
 }
 
 .infoDiv .toolbar {
