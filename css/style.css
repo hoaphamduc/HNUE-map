@@ -1840,37 +1840,3 @@ body, html {
   }
 }
 
-@media (max-width: 375px) {
-  .infoDiv .toolbar .direct-btn {
-    top: 60px;
-    left: 15px;
-  }
-  
-  .infoDiv .toolbar .direct-btn-ggm {
-    top: 130px;
-    left: 15px;
-  }
-
-  .infoDiv .toolbar .send-feedback {
-    top: 200px; 
-    left: 15px;
-  }
-
-  .infoDiv .toolbar .tim-duong {
-    left: 15px; 
-    top: 15px;
-  }
-  
-  .infoDiv .toolbar .tim-duong-ggm {
-    left: 15px; 
-    top: 100px;
-  }
-  
-  .infoDiv .toolbar .dong-gop {
-    left: 15px; 
-    top: 170px;
-  }
-  .infoDiv .content {
-    margin-top: 245px;
-  }
-}

@@ -436,17 +436,41 @@ function setBackgroundImage() {
     var input = document.getElementById('imageInput');
   
     if (input.files && input.files[0]) {
-        var file = input.files[0];
-  
-        // Kiểm tra kích thước tệp tin (25MB = 25 * 1024 * 1024 bytes)
-        if (file.size > 25 * 1024 * 1024) {
-            alert("File quá lớn. Vui lòng chọn một tệp tin dưới 25MB.");
+          var file = input.files[0];
+    
+          // Kiểm tra kích thước tệp tin (20MB = 20 * 1024 * 1024 bytes)
+          if (file.size > 20 * 1024 * 1024) {
+            var contentEnglish = document.querySelector('.contentEnglish');
+            var contentVN = document.querySelector('.contentVN');
+            var alertMessage = '';
+            if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+                alertMessage = "File is too large. Please select a file under 20MB.";
+            } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+                alertMessage = "File quá lớn. Vui lòng chọn một tệp tin dưới 20MB.";
+            } else {
+                console.error('Không tìm thấy phần tử nội dung hoặc không hiển thị!');
+                return; 
+            }
+
+            alert(alertMessage);
             return;
         }
   
         // Kiểm tra loại MIME của tệp tin chỉ cho phép ảnh
         if (!isValidImageFileType(file.type)) {
-            alert("Bạn chỉ được phép chọn ảnh.");
+            var contentEnglish = document.querySelector('.contentEnglish');
+            var contentVN = document.querySelector('.contentVN');
+            var alertMessage = '';
+        
+            if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+                alertMessage = "You are only allowed to select an image.";
+            } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+                alertMessage = "Bạn chỉ được phép chọn ảnh.";
+            } else {
+                console.error('Không tìm thấy phần tử nội dung hoặc không hiển thị!');
+                return; 
+            }
+            alert(alertMessage);
             return;
         }
   
@@ -502,19 +526,42 @@ function underDevelopment() {
 }
   
 function redirectToGoogleMap(latitude, longitude) {
-    // Kiểm tra tọa độ
-    if (latitude === 0 && longitude === 0) {
-        // Hiện cảnh báo người dùng chưa chia sẻ vị trí
-        alert('Người dùng chưa chia sẻ vị trí!');
+  if (latitude === 0 && longitude === 0) {
+      var contentEnglish = document.querySelector('.contentEnglish');
+      var contentVN = document.querySelector('.contentVN');
+      var alertMessage = '';
+      if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+        alertMessage = 'User has not shared their location!';
+      } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+        alertMessage = 'Người dùng chưa chia sẻ vị trí!';
+      } else {
+        console.error('Content element not found or not displayed!');
         return; 
-    }
+      }
+      alert(alertMessage);
+      return; 
+  }
+  
+  var confirmationMessage = '';
+  var contentEnglish = document.querySelector('.contentEnglish');
+  var contentVN = document.querySelector('.contentVN');
 
-    // Tạo URL Google Map với tọa độ
-    const googleMapURL = `https://www.google.com/maps?q=${latitude},${longitude}`;
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+      confirmationMessage = 'You will open Google Maps to see the location of the user who is sharing!';
+  } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+      confirmationMessage = 'Bạn sẽ mở Google Maps để xem vị trí của người dùng chia sẻ!';
+  } else {
+      console.error('Content element not found or not displayed!');
+      return; 
+  }
 
-    // Mở Google Map với URL được tạo
-    window.location.href = googleMapURL;
+  var confirmation = confirm(confirmationMessage);
+  if (confirmation) {
+      const googleMapURL = `https://www.google.com/maps?q=${latitude},${longitude}`;
+      window.open(googleMapURL, '_blank');
+  }
 }
+
   
 function openFullscreen(element) {
   if (element.requestFullscreen) {
@@ -693,9 +740,22 @@ document.addEventListener('gesturestart', function (e) {
 });
 
 function confirmRedirect() {
-  var answer = confirm("Bạn sẽ mở trang tuyển sinh ở trang mới!");
+  var contentEnglish = document.querySelector('.contentEnglish');
+  var contentVN = document.querySelector('.contentVN');
+  var confirmationMessage = '';
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    confirmationMessage = "You will open the admissions page in a new tab!";
+  } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+    confirmationMessage = "Bạn sẽ mở trang tuyển sinh ở trang mới!";
+  } else {
+    console.error('Content element not found or not displayed!');
+    return;
+  }
+
+  var answer = confirm(confirmationMessage);
   if (answer) {
-      hideSidebar()
-      window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
+    hideSidebar();
+    window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
   }
 }

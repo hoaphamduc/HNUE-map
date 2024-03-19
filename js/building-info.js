@@ -1201,8 +1201,8 @@ function createInfoDiv(buildingKey) {
   toolbar.className = 'toolbar';
   toolbar.innerHTML = `
       <button class="direct-btn" onclick="initRoutingControl('${buildingKey}')"></button>
-      <span class="tim-duong contentVN">Chỉ đường (dùng PC có thể lỗi) : </span>
-      <span class="tim-duong contentEnglish">Directions (using PC might have errors) : </span>
+      <span class="tim-duong contentVN">Chỉ đường: </span>
+      <span class="tim-duong contentEnglish">Directions: </span>
       <button class="direct-btn-ggm" onclick="openGoogleMaps('${buildingKey}')"></button>
       <span class="tim-duong-ggm contentVN">Chỉ đường bằng Google Maps: </span>
       <span class="tim-duong-ggm contentEnglish">Directions using Google Maps: </span>
@@ -1370,6 +1370,25 @@ function initRoutingControl(buildingKey) {
       },
     };
 
+    // Kiểm tra xem class contentEnglish hoặc contentVN có hiển thị không
+    var contentEnglish = document.querySelector('.contentEnglish');
+    var contentVN = document.querySelector('.contentVN');
+    var confirmationMessage = '';
+
+    if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+      confirmationMessage = "Due to certain factors, using the computer may not yield the expected results. Do you want to continue?";
+    } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+      confirmationMessage = "Do một số yếu tố nên khi sử dụng máy tính sẽ không đưa ra kết quả mong đợi. Bạn muốn tiếp tục chứ?";
+    } else {
+      console.error('Content element not found or not displayed!');
+      return;
+    }
+
+    var confirmation = confirm(confirmationMessage);
+    if (!confirmation) {
+      return; 
+    }
+
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function (position) {
         var currentLocation = L.latLng(position.coords.latitude, position.coords.longitude);
@@ -1419,4 +1438,5 @@ function initRoutingControl(buildingKey) {
     console.error('LRM library not loaded!');
   }
 }
+
 

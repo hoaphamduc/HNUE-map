@@ -497,9 +497,22 @@ document.addEventListener('gesturestart', function (e) {
 });
 
 function confirmRedirect() {
-  var answer = confirm("Bạn sẽ mở trang tuyển sinh ở trang mới!");
+  var contentEnglish = document.querySelector('.contentEnglish');
+  var contentVN = document.querySelector('.contentVN');
+  var confirmationMessage = '';
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    confirmationMessage = "You will open the admissions page in a new tab!";
+  } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+    confirmationMessage = "Bạn sẽ mở trang tuyển sinh ở trang mới!";
+  } else {
+    console.error('Content element not found or not displayed!');
+    return;
+  }
+
+  var answer = confirm(confirmationMessage);
   if (answer) {
-      hideSidebar()
-      window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
+    hideSidebar();
+    window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
   }
 }

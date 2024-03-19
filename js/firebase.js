@@ -18,7 +18,6 @@ const authenticatedUIDs = ["8Ut3NdciZVcEWxRCx8PV1KDkvCA2", "mQ2IYPwucKZZ8NjRwKzf
                             "PI7tSAdBXATtgtQNPRPnYtgl1CA2", "Rsqd0z5flcS1v0InedmRKqKg9Pu1"
                           ];
 
-// Hàm kiểm tra xem UID của người dùng có trong mảng authenticatedUIDs không
 function checkAuthenticatedUser(uid) {
   return authenticatedUIDs.includes(uid);
 }
@@ -44,13 +43,12 @@ function updateUserProfile(user) {
   document.getElementById("userName2").innerHTML = userNameHTML;
 
   document.getElementById("userEmail").textContent = userEmail;
+
   document.getElementById("userProfilePicture").src = userProfilePicture;
   document.getElementById("userProfilePicture1").src = userProfilePicture;
   document.getElementById("userProfilePicture2").src = userProfilePicture;
 }
 
-
-// Observer for authentication state changes
 onAuthStateChanged(auth, (user) => {
   if (user) {
     updateUserProfile(user);
@@ -60,7 +58,6 @@ onAuthStateChanged(auth, (user) => {
   }
 });
 
-// Function to logout
 function logout() {
   signOut(auth)
     .then(() => {
@@ -73,7 +70,6 @@ function logout() {
   hideSidebar();
 }
 
-// Function to clear user profile information
 function clearUserProfile() {
   document.getElementById("userName").textContent = "";
   document.getElementById("userName2").textContent = "";
@@ -83,9 +79,18 @@ function clearUserProfile() {
   document.getElementById("userProfilePicture2").src = "source-img/grey-img.jpg";
 }
 
-document.getElementById("logout-btn").addEventListener("click", logout);
-document.getElementById("userProfilePicture").addEventListener("click", logout);
+// Mảng chứa các từ ngữ cấm
+const inappropriateWords = [
+  'địt', 'lồn', 'mẹ mày', 'vãi', 'vcl', 'đm', 'đmm', 'đi khách', 'tình 1 đêm', 'tinh 1 dem',
+  'dm', 'duma', 'Đuma', 'dmm', 'dit', 'me may', 'ngứa dái', 'tà dăm', 'răm', 'trai bao',
+  'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'đụ', 'chơi gái', 'choi gai', 'bulon',
+  'cac', 'cặc', 'nwngs', 'loz', 'buoi', 'me m', 'xam l', 'đá phò', 'bitch', 'fuck', 'dick',
+  'trường l', 'fwb', 'ons'
+];
 
+document.getElementById("logout-btn").addEventListener("click", logout);
+
+document.getElementById("userProfilePicture").addEventListener("click", logout);
 
 document.getElementById('post-status').addEventListener('click', async function() {
   try {
@@ -114,7 +119,19 @@ document.getElementById('post-status').addEventListener('click', async function(
       const canPost = await canUserPost(uid);
 
       if (!canPost) {
-          alert('Bạn chỉ có thể đăng bài 1 lần mỗi 24h.');
+          var contentEnglish = document.querySelector('.contentEnglish');
+          var contentVN = document.querySelector('.contentVN');
+          var alertMessage = '';
+        
+          if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+            alertMessage = 'You can only post once every 24 hours.';
+          } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+            alertMessage = 'Bạn chỉ có thể đăng bài 1 lần mỗi 24 giờ.';
+          } else {
+            console.error('Content element not found or not displayed!');
+            return; 
+          }
+          alert(alertMessage);          
           return;
       }
 
@@ -133,14 +150,6 @@ document.getElementById('post-status').addEventListener('click', async function(
       if (isDisplayedBlock(document.getElementById('statusEng'))) {
           status = statusEng;
       }
-
-      // Check for inappropriate words in the status
-      const inappropriateWords = [
-        'địt', 'lồn', 'mẹ mày', 'vãi', 'vcl', 'đm', 'đmm',
-        'dm', 'duma', 'Đuma', 'dmm', 'lon', 'dit', 'me may',
-        'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'đụ', 'chơi gái', 'choi gai', 'bulon',
-        'cac', 'cặc', 'nwngs', 'loz', 'buoi'
-      ];
 
       const inappropriateWordsFound = findInappropriateWords(status, inappropriateWords);
 
@@ -183,7 +192,20 @@ document.getElementById('post-status').addEventListener('click', async function(
           const uploadTask = uploadBytes(storageReference, imageFile);
           imageURL = await uploadTask.then(() => getDownloadURL(storageReference));
       } else {
-          alert('Vui lòng chọn một ảnh để đăng bài.');
+          var contentEnglish = document.querySelector('.contentEnglish');
+          var contentVN = document.querySelector('.contentVN');
+          var alertMessage = '';
+        
+          if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+            alertMessage = "Please select an image to post.";
+          } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+            alertMessage = "Vui lòng chọn một ảnh để đăng bài.";
+          } else {
+            console.error('Content element not found or not displayed!');
+            return;
+          }
+        
+          alert(alertMessage);
           return; 
       }
 
@@ -204,8 +226,20 @@ document.getElementById('post-status').addEventListener('click', async function(
       if (imageURL) dataToSave.imageURL = imageURL;
       await set(newStatusRef, dataToSave);
       
-      // Display success message if status is updated successfully
-      alert('Bạn đã đăng bài thành công!');
+      var contentEnglish = document.querySelector('.contentEnglish');
+      var contentVN = document.querySelector('.contentVN');
+      var alertMessage = '';
+    
+      if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+        alertMessage = "You have successfully posted!";
+      } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+        alertMessage = "Bạn đã đăng bài thành công!";
+      } else {
+        console.error('Content element not found or not displayed!');
+        return;
+      }
+      alert(alertMessage);
+
       var socialDiv = document.getElementById("social-network-div");
       socialDiv.classList.remove("darken");
       loadedPostsCount = 0;
@@ -247,7 +281,6 @@ function findInappropriateWords(status, inappropriateWords) {
 function escapeRegExp(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
 }
-
 
 function resetImageInput() {
   document.getElementById('add-photo').style.backgroundImage = 'url(source-img/add-a-photo.png)';
@@ -302,8 +335,6 @@ async function getDatabaseData(path) {
 async function setDatabaseData(path, data) {
   await set(ref(getDatabase(app), path), data);
 }
-
-
 
 // Add event listeners to continuously monitor changes in the textareas
 document.getElementById('statusVN').addEventListener('input', function() {
@@ -422,7 +453,7 @@ async function loadPosts() {
           </div>
 
           <div class="comment-action" id="comment-action-${post.postId}" style="display: none;">
-            <center><span class="creat-post-span">Bình luận</span></center>
+            <center><span class="creat-post-span"><span class="contentVN">Bình luận</span><span class="contentEnglish">Comment</span></span></center>
             <button class="close-div" onclick="hideCommentAction('${encodeURIComponent(postId)}')"></button>
             <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; top: 50px;"></div>
             <div class="comment-container" id="comment-container-${post.postId}">
@@ -561,7 +592,6 @@ showMoreButton.addEventListener('click', async function() {
   console.log(loadedPostsCount);
 });
 
-
 async function userLikedPost(postId, uid) {
   try {
       // Tham chiếu đến nhánh "statuses" trong Firebase
@@ -585,16 +615,26 @@ async function userLikedPost(postId, uid) {
   }
 }
 
-
-
-
 async function deletePost(postId) {
   try {
     const user = auth.currentUser;
 
     // Kiểm tra xem người dùng đã đăng nhập và UID của người dùng nằm trong danh sách được xác thực hay không
     if (user && authenticatedUIDs.includes(user.uid)) {
-      const confirmDelete = confirm("Bạn có chắc chắn muốn xóa bài viết này không?");
+      var contentEnglish = document.querySelector('.contentEnglish');
+      var contentVN = document.querySelector('.contentVN');
+      var confirmationMessage = '';
+
+      if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+        confirmationMessage = "Are you sure you want to delete this post?";
+      } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+        confirmationMessage = "Bạn có chắc chắn muốn xóa bài viết này không?";
+      } else {
+        console.error('Content element not found or not displayed!');
+        return; // Nếu không tìm thấy hoặc không hiển thị, thoát khỏi hàm
+      }
+
+      const confirmDelete = confirm(confirmationMessage);
 
       if (confirmDelete) {
         const postRef = ref(getDatabase(app), `statuses/${postId}`);
@@ -606,7 +646,20 @@ async function deletePost(postId) {
 
         // Xóa bài viết từ cơ sở dữ liệu
         await remove(postRef);
-        alert('Bài viết đã được xóa thành công');
+        var contentEnglish = document.querySelector('.contentEnglish');
+        var contentVN = document.querySelector('.contentVN');
+        var alertMessage = '';
+
+        if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+          alertMessage = "The post has been successfully deleted!";
+        } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+          alertMessage = "Bài viết đã được xóa thành công!";
+        } else {
+          console.error('Content element not found or not displayed!');
+          return; // Nếu không tìm thấy hoặc không hiển thị, thoát khỏi hàm
+        }
+
+        alert(alertMessage);
         loadPosts();
         if (imageURL) {
           const storageReference = storageRef(storage, imageURL);
@@ -623,7 +676,20 @@ async function deletePost(postId) {
           }
         }
       } else {
-        alert('Bạn đã huỷ');
+        var contentEnglish = document.querySelector('.contentEnglish');
+        var contentVN = document.querySelector('.contentVN');
+        var alertMessage = '';
+
+        if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+          alertMessage = "You have cancelled!";
+        } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+          alertMessage = "Bạn đã huỷ!";
+        } else {
+          console.error('Content element not found or not displayed!');
+          return; // Nếu không tìm thấy hoặc không hiển thị, thoát khỏi hàm
+        }
+
+        alert(alertMessage);
       }
     } else {
       // Người dùng chưa đăng nhập hoặc không có quyền xóa bài viết
@@ -652,7 +718,6 @@ function updateCommentCount(postId) {
 
 async function addComment(e) {
   var postId = e.target.getAttribute('data');
-  // Get the input element based on the postId
   const inputElement = document.getElementById(`comment-input-${postId}`);
   const user = auth.currentUser;
   const uid = user.uid;
@@ -669,10 +734,8 @@ async function addComment(e) {
     userNameHTML += `<img class="verified" src="${verifyImageSrc}" alt="Verified" />`;
   }
 
-  // Get the new comment text from the input element
   const newCommentText = inputElement.value;
 
-  // Check if the comment is not empty and does not exceed 500 characters
   if (newCommentText.trim() !== '') {
     if (newCommentText.length <= 470) {
       // Kiểm tra thời gian bình luận cuối cùng của người dùng trên bài viết này
@@ -683,8 +746,30 @@ async function addComment(e) {
       const currentTime = new Date().getTime();
 
       if (lastCommentData && currentTime - lastCommentData.timestamp < 3 * 60 * 1000) {
-        alert('Bạn chỉ được bình luận một lần mỗi 3 phút.');
+        var contentEnglish = document.querySelector('.contentEnglish');
+        var contentVN = document.querySelector('.contentVN');
+        var alertMessage = '';
+
+        if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+          alertMessage = "You can only comment once every 3 minutes.";
+        } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+          alertMessage = "Bạn chỉ được bình luận một lần mỗi 3 phút.";
+        } else {
+          console.error('Content element not found or not displayed!');
+          return; 
+        }
+
+        alert(alertMessage);
       } else {
+        // Kiểm tra từ không phù hợp trong nội dung comment
+        const inappropriateWordsFound = findInappropriateWords(newCommentText, inappropriateWords);
+
+        if (inappropriateWordsFound.length > 0) {
+          const message = 'Nội dung chứa các từ ngữ không phù hợp: ' + inappropriateWordsFound.join(', ');
+          alert(message);
+          return;
+        }
+
         // Chuẩn bị dữ liệu bình luận
         const commentData = {
           username: userNameHTML || '',
@@ -703,11 +788,22 @@ async function addComment(e) {
         inputElement.value = '';
       }
     } else {
-      // Handle the case where the comment exceeds 500 characters
-      alert('Chỉ được bình luận tối đa 470 kí tự.');
+        var contentEnglish = document.querySelector('.contentEnglish');
+        var contentVN = document.querySelector('.contentVN');
+        var alertMessage = '';
+      
+        if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+          alertMessage = "You can only comment up to 470 characters.";
+        } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+          alertMessage = "Chỉ được bình luận tối đa 470 kí tự.";
+        } else {
+          console.error('Content element not found or not displayed!');
+          return;
+        }
+      
+        alert(alertMessage);
     }
   } else {
-    // Handle the case where the comment is empty
     console.log('Comment cannot be empty');
   }
 }
@@ -771,9 +867,6 @@ function getCommentsForPost(postId) {
   });
 }
 
-
-
-
 function createCommentElement(comment) {
   const avatarUrl = comment.avatarURL || 'Logo Đại học Sư phạm Hà Nội - HNUE.png';
 
@@ -803,7 +896,6 @@ function createCommentElement(comment) {
 
   return commentElement;
 }
-
 
 // Hàm định dạng thời gian
 function formatTime(timestamp) {
