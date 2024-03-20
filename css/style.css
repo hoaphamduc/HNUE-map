@@ -118,7 +118,6 @@ body, html {
     height: 100%;
     position: relative;
     z-index: 1;
-    cursor: default;
 }
 
 .main-content .button-box {
