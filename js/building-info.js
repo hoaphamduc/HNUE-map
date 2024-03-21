@@ -60,10 +60,18 @@ var buildingData = {
       [21.039858844322897, 105.78558862209321]
     ],
     "infoDivId": "infoDivA3",
-    "nameVN": "A3 - KHOA SINH HỌC, PTN KHOA HÓA - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "A3 - DEPARTMENT OF BIOLOGY, FACULTY OF CHEMISTRY - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "Chưa có thông tin.",
-    "infoEN": "No information.",
+    "nameVN": "TOÀ NHÀ A3 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "A3 BUILDING - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Khoa Sinh Học</b><br>\
+              Tầng 1, 2, 3, 4<br>\
+              Số điện thoại: 02438346828<br>\
+              Email: k.sinhhoc@hnue.edu.vn<br>\
+              Website: <a href=\"https://bio.hnue.edu.vn/\" target=\"_blank\">bio.hnue.edu.vn</a>",
+    "infoEN": "<b>Faculty of Biology</b><br>\
+              Floor 1, 2, 3, 4<br>\
+              Phone: 02438346828<br>\
+              Email: k.sinhhoc@hnue.edu.vn<br>\
+              Website: <a href=\"https://bio.hnue.edu.vn/\" target=\"_blank\">bio.hnue.edu.vn</a>",
     "latitude": 21.039801266375314,
     "longitude": 105.78532040119173,
     "source-image": []
@@ -84,10 +92,30 @@ var buildingData = {
       [21.04020208268026, 105.78534722328186]
     ],
     "infoDivId": "infoDivA4",
-    "nameVN": "A4 - KHOA GIÁO DỤC CHÍNH TRỊ, KHOA HÓA HỌC - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "A4 - FACULTY OF POLITICAL EDUCATION, DEPARTMENT OF CHEMISTRY - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "Chưa có thông tin.",
-    "infoEN": "No information.",
+    "nameVN": "A4 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "A4 - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Khoa Lý Luận Chính Trị - Giáo Dục Công Dân</b><br>\
+              Tầng 1<br>\
+              Số điện thoại: 0983832528<br>\
+              Email: k.nguvan@hnue.edu.vn<br>\
+              Website: <a href=\"http://fpe.hnue.edu.vn/\" target=\"_blank\">fpe.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/p/Tuy%E1%BB%83n-sinh-Khoa-L%C3%AD-lu%E1%BA%ADn-ch%C3%ADnh-tr%E1%BB%8BGi%C3%A1o-d%E1%BB%A5c-c%C3%B4ng-d%C3%A2n-%C4%90%E1%BA%A1i-h%E1%BB%8Dc-S%C6%B0-ph%E1%BA%A1m-H%C3%A0-N%E1%BB%99i-100063815312396/?paipv=0&eav=AfYh_Y0DubJqhCvTgN5hzebbc_yFqbUd_yOx-3VhfmbeKHLQQOUv8Xmjxq_gtgNv2Fg&_rdr\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Khoa Hoá Học</b><br>\
+              Số điện thoại: 0437549487<br>\
+              Email: k.khoahoc@hnue.edu.vn<br>\
+              Website: <a href=\"http://chem.hnue.edu.vn/\" target=\"_blank\">chem.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/tuyensinhkhoahochocdhsphn\" target=\"_blank\">Facebook</a>",
+    "infoEN": "<b>Faculty of Politic Theory - Civic Education</b><br>\
+              Floor 1<br>\
+              Phone: 0983832528<br>\
+              Email: k.nguvan@hnue.edu.vn<br>\
+              Website: <a href=\"http://fpe.hnue.edu.vn/\" target=\"_blank\">fpe.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/p/Tuy%E1%BB%83n-sinh-Khoa-L%C3%AD-lu%E1%BA%ADn-ch%C3%ADnh-tr%E1%BB%8BGi%C3%A1o-d%E1%BB%A5c-c%C3%B4ng-d%C3%A2n-%C4%90%E1%BA%A1i-h%E1%BB%8Dc-S%C6%B0-ph%E1%BA%A1m-H%C3%A0-N%E1%BB%99i-100063815312396/?paipv=0&eav=AfYh_Y0DubJqhCvTgN5hzebbc_yFqbUd_yOx-3VhfmbeKHLQQOUv8Xmjxq_gtgNv2Fg&_rdr\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Faculty of Chemistry</b><br>\
+              Floor: 0437549487<br>\
+              Email: k.khoahoc@hnue.edu.vn<br>\
+              Website: <a href=\"http://chem.hnue.edu.vn/\" target=\"_blank\">chem.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/tuyensinhkhoahochocdhsphn\" target=\"_blank\">Facebook</a>",
     "latitude": 21.040267185120243,
     "longitude": 105.78533187197176,
     "source-image": []
@@ -300,13 +328,23 @@ var buildingData = {
       [21.037808554996815, 105.78380542091733]
     ],
     "infoDivId": "infoDivD124",
-    "nameVN": "D1, D2, D4 - TRƯỜNG THPT CHUYÊN - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "D1, D2, D4 - SPECIALIZED HIGH SCHOOL - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "Chưa có thông tin.",
-    "infoEN": "No information.",
+    "nameVN": "CÁC TOÀ NHÀ D1, D2, D4 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "D1, D2, D4 BUILDINGS - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Trường THPT Chuyên Sư Phạm</b><br>\
+              Tầng 1, 2, 3, 4, 5, 6<br>\
+              Số điện thoại: 02437547661<br>\
+              Email: c3chuyendhsp@hanoiedu.vn<br>\
+              Website: <a href=\"https://chuyensp.edu.vn/\" target=\"_blank\">chuyensp.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/chuyendaihocsupham/?locale=vi_VN\" target=\"_blank\">Facebook</a>",
+    "infoEN": "<b>High School for Gifted students, HNUE</b><br>\
+              Floor 1, 2, 3, 4, 5, 6<br>\
+              Phone: 02437547661<br>\
+              Email: c3chuyendhsp@hanoiedu.vn<br>\
+              Website: <a href=\"https://chuyensp.edu.vn/\" target=\"_blank\">chuyensp.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/chuyendaihocsupham/?locale=vi_VN\" target=\"_blank\">Facebook</a>",
     "latitude": 21.03804219021729,
     "longitude": 105.78404903411867,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FChuy%C3%AAn%20SP.jpg?alt=media&token=1ed32abb-7c70-40ba-a66f-98b7a8363171']
   },
   "nhaD3": {
     "polygon": [
@@ -324,10 +362,84 @@ var buildingData = {
       [21.03815903380436, 105.78391264420537]
     ],
     "infoDivId": "infoDivD3",
-    "nameVN": "D3 - KHOA ÂM NHẠC, MỸ THUẬT, KHOA TIẾNG ANH, KHOA QUẢN LÝ GIÁO DỤC, TRUNG TÂM NGHIỆP VỤ SƯ PHẠM - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "D3 - FACULTY OF MUSIC, FINE ARTS, FACULTY OF ENGLISH, FACULTY OF EDUCATION MANAGEMENT, CENTER FOR PEDAGOGICAL PROFESSIONALISM - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "Chưa có thông tin.",
-    "infoEN": "No information.",
+    "nameVN": "D3 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "D3 - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Khoa Tiếng Anh</b><br>\
+              Tầng 1<br>\
+              Số điện thoại: 02437549180<br>\
+              Email: k.tienganh@hnue.edu.vn<br>\
+              Website: <a href=\"https://foe.hnue.edu.vn/\" target=\"_blank\">foe.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoatienganhDHSPHN/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Khoa Việt Nam Học</b><br>\
+              Tầng 1<br>\
+              Số điện thoại: 02437549039<br>\
+              Email: k.vnh@hnue.edu.vn<br>\
+              Website: <a href=\"http://vns.hnue.edu.vn/\" target=\"_blank\">vns.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/vnstrongtoi/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Khoa Quản Lý Giáo Dục</b><br>\
+              Tầng 2<br>\
+              Số điện thoại: 02437549310<br>\
+              Email: k.qlgd@hnue.edu.vn<br>\
+              Website: <a href=\"https://qlgd.hnue.edu.vn/\" target=\"_blank\">qlgd.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/qlgd.hnue/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Khoa Công Tác Xã Hội</b><br>\
+              Tầng 3<br>\
+              Số điện thoại: 02432191073<br>\
+              Email: k.ctxh@hnue.edu.vn<br>\
+              Website: <a href=\"https://ctxh.hnue.edu.vn/\" target=\"_blank\">ctxh.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoaCTXH.DHSPHN/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Bộ môn Tiếng Trung Quốc</b><br>\
+              Tầng 3<br>\
+              Số điện thoại: 02438342917<br>\
+              Email: ttq@hnue.edu.vn<br>\
+              Website: <a href=\"https://ttq.hnue.edu.vn/\" target=\"_blank\">ttq.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/ttqhnue/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Bảo tàng sinh vật</b><br>\
+              Tầng 4<br><br>\
+              <b>Khoa Nghệ Thuật</b><br>\
+              Tầng 5<br>\
+              Số điện thoại: 0979336113<br>\
+              Email: k.nghethuat@hnue.edu.vn<br>\
+              Website: <a href=\"https://nghethuat.hnue.edu.vn/\" target=\"_blank\">nghethuat.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoanghethuatdhsphn/\" target=\"_blank\">Facebook</a>",
+    "infoEN": "<b>Faculty of English</b><br>\
+              Floor 1<br>\
+              Phone: 02437549180<br>\
+              Email: k.tienganh@hnue.edu.vn<br>\
+              Website: <a href=\"https://foe.hnue.edu.vn/\" target=\"_blank\">foe.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoatienganhDHSPHN/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Faculty of Vietnamese Studies</b><br>\
+              Floor 1<br>\
+              Phone: 02437549039<br>\
+              Email: k.vnh@hnue.edu.vn<br>\
+              Website: <a href=\"http://vns.hnue.edu.vn/\" target=\"_blank\">vns.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/vnstrongtoi/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Faculty of Education Management</b><br>\
+              Floor 2<br>\
+              Phone: 02437549310<br>\
+              Email: k.qlgd@hnue.edu.vn<br>\
+              Website: <a href=\"https://qlgd.hnue.edu.vn/\" target=\"_blank\">qlgd.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/qlgd.hnue/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Faculty of Social Work</b><br>\
+              Floor 3<br>\
+              Phone: 02432191073<br>\
+              Email: k.ctxh@hnue.edu.vn<br>\
+              Website: <a href=\"https://ctxh.hnue.edu.vn/\" target=\"_blank\">ctxh.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoaCTXH.DHSPHN/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Faculty of Chinese</b><br>\
+              Floor 3<br>\
+              Phone: 02438342917<br>\
+              Email: ttq@hnue.edu.vn<br>\
+              Website: <a href=\"https://ttq.hnue.edu.vn/\" target=\"_blank\">ttq.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/ttqhnue/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Museum of Biology</b><br>\
+              Floor 4<br><br>\
+              <b>Faculty of Arts</b><br>\
+              Floor 5<br>\
+              Phone: 0979336113<br>\
+              Email: k.nghethuat@hnue.edu.vn<br>\
+              Website: <a href=\"https://nghethuat.hnue.edu.vn/\" target=\"_blank\">nghethuat.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoanghethuatdhsphn/\" target=\"_blank\">Facebook</a>",
     "latitude": 21.038169047472465,
     "longitude": 105.78403294086458,
     "source-image": []
@@ -366,13 +478,23 @@ var buildingData = {
       [21.037468089079884, 105.7845725757842]
     ],
     "infoDivId": "infoDivM1234",
-    "nameVN": "M1, M2, M3, M4 -TRƯỜNG THCS, THPT NGUYỄN TẤT THÀNH - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameVN": "M1, M2, M3, M4 - TRƯỜNG THCS, THPT NGUYỄN TẤT THÀNH - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
     "nameEN": "M1, M2, M3, M4 - NGUYEN TAT THANH MIDDLE SCHOOL, HIGH SCHOOL - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "Chưa có thông tin.",
-    "infoEN": "No information.",
+    "infoVN": "<b>Trường THCS & THPT Nguyễn Tất Thành</b><br>\
+              Tầng 1, 2, 3, 4, 5, 6<br>\
+              Số điện thoại: Văn phòng - 02466849823, Tài vụ - 02466849824<br>\
+              Email: c23bcnguyentatthanh@hanoiedu.vn<br>\
+              Website: <a href=\"https://ntthnue.edu.vn/\" target=\"_blank\">ntthnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/ntthnue.edu.vn/\" target=\"_blank\">Facebook</a>",
+    "infoEN": "<b>Nguyen Tat Thanh Lower and Upper Secondary School - HNUE</b><br>\
+              Floor 1, 2, 3, 4, 5, 6<br>\
+              Phone: Office - 02466849823, Finance - 02466849824<br>\
+              Email: c23bcnguyentatthanh@hanoiedu.vn<br>\
+              Website: <a href=\"https://ntthnue.edu.vn/\" target=\"_blank\">ntthnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/ntthnue.edu.vn/\" target=\"_blank\">Facebook</a>",
     "latitude": 21.03725780091894,
     "longitude": 105.78450500965118,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FtruongNguyenTatThanh.jpg?alt=media&token=07d577c3-e236-493c-a536-765f163849bc']
   },
   "nhaN": {
     "polygon": [
