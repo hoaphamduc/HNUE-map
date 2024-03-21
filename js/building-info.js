@@ -1482,6 +1482,48 @@ var buildingData = {
     "latitude": 21.034196074739974,
     "longitude": 105.77983528529914,
     "source-image": []
+  },
+  "CVCG": {
+    "polygon": [
+      [21.029987656277157, 105.78960657119752],
+      [21.02968722944542, 105.79121589660646],
+      [21.02951698730526, 105.79187572002412],
+      [21.02916648816905, 105.79293787479402],
+      [21.026587790612236, 105.79177379608156],
+      [21.026082060227512, 105.791135430336],
+      [21.027549174334936, 105.7895475625992],
+      [21.02781455520793, 105.78937590122223],
+      [21.028220136383915, 105.78922569751741],
+      [21.028610694991734, 105.78928470611574]
+    ],
+    "infoDivId": "infoDivCVCG",
+    "nameVN": "Công viên Cầu Giấy",
+    "nameEN": "Cau Giay park",
+    "infoVN": "Sở hữu 3 điều đặc biệt so với những công viên khác ở Hà Nội: đẹp nhất, an toàn và miễn phí vé vào cửa, công viên Cầu Giấy giờ đây đã trở thành một trong những địa chỉ vui chơi quen thuộc của trẻ em cũng như nhiều người dân thủ đô.<br>\
+              Công viên Cầu Giấy hay còn gọi là công viên Yên Hòa. Công viên với diện tích 6540 m2 bao gồm hệ thống cây xanh được trồng theo quy hoạch từ đầu tạo nên khuôn viên thoáng mát và sạch sẽ cho công viên.<br>\
+              Nằm trên mặt phố Thành Thái, khu đô thị Dịch Vọng, Cầu Giấy, Hà Nội. Du khách có thể đi ô tô, xe buýt hoặc xe máy để di chuyển tới công viên Cầu Giấy. Nếu di chuyển bằng xe buýt để đến công viên, du khách đi xe số 51 đỗ ngay tại cửa công viên hoặc đi xe 39 thì đi bộ mất 5 phút đến công viên. Nếu di chuyển bằng ô tô hoặc xe máy thì bạn cũng sẽ mất tầm khoảng 15 phút – 20 phút để có thể đến được đây.<br>\
+              Công viên được chia làm 3 phân khu chính là: khu vui chơi cho trẻ em, khu thể dục thể thao, khu hồ nước và quảng trường là nơi đi dạo của các cư dân sống quanh khu vực nơi đây. Đây thực sự là điểm đến lý tưởng cho du khách tới đây thư giãn, vui chơi sau những ngày làm việc mệt mỏi, áp lực.<br>\
+              Phải kể đến đầu tiên là khu vui chơi trẻ em với nhiều trò chơi hấp dẫn khác nhau là một điểm thu hút của công viên này. Trải bằng những thảm cỏ nhân tạo mềm mại, sạch sẽ giúp các em vui chơi thỏa thích, đảm bảo không không đau khi ngã. Nhất là vào những ngày cuối tuần hay những tối trời mát, buổi tối ở đây đông kín các gia đình bố mẹ đưa con tới đây vui chơi cùng các bạn thật vui vẻ và thoải mái.<br>\
+              Ngoài ra, công viên Cầu Giấy còn tổ chức nhiều hoạt động ngoại khóa vui chơi khác như thi kéo co, lễ hội hay những trò chơi dân gian cũng nhanh chóng thu hút được sự góp mặt của các em nhỏ. Du khách đến đây sẽ thấy công viên có nhiều hoạt động bổ ích, thú vị và dễ cuốn theo những trò chơi  kích thích vận động cũng như sức khỏe của các em nhỏ ở đây như: tô tượng, câu cá, học nhảy, trượt patin.<br>\
+              Du khách có thể dành chút ít thời gian đến khu thể dục thể thao ngay bên cạnh để tập thể dục cùng với người dân nơi đây. Nếu đến đây, du khách sẽ thấy từ sáng sớm đến tối muộn, dân cư sống quanh đây rất chăm chỉ luyện tập thể thao. Cứ vào tầm chiều tối, rất đông người đến công viên Cầu Giấy tập thể dục như đi bộ, đánh cầu, tập thể thao dụng cụ bởi nơi đây gió mát, khí hậu thiên nhiên trong lành.<br>\
+              Sau những ngày làm việt mệt mỏi, áp lực, du khách sẽ dễ dàng bắt gặp hình ảnh những cô chú tầm trung tuổi tập chạy bộ bằng dụng cụ thể thao hay đi bộ quanh khu công viên. Thậm chí du khách sẽ thấy hình ảnh những màn múa uyển chuyển nhẹ nhàng vào mỗi buổi sáng sớm của ông bà đi tập dưỡng sinh hay thanh niên chạy bộ thể dục thể thao quanh vòng công viên. Du khách sẽ dễ dàng cảm nhận được con người ngày càng quan tâm tới  sức khỏe của mình mỗi ngày để luôn tràn đầy năng lượng.<br>\
+              Quảng trường và hồ nước tại công viên Cầu Giấy nằm tại trung tâm công viên. Đây là nơi tập trung của nhiều bạn trẻ vào những buổi chiều tối tới học trượt Patin. Đây còn là nơi hóng gió mát, vài ba câu chuyện của những người dân sống xung quanh đây. Điểm tthu hút là hồ nước tại công viên Cầu Giấy vào đêm lại mang không khí thoáng mát, trong lành và dễ chịu. Du khách tới đây sẽ có cảm giác ta có một khoảng trời trong lành, mát rượi sau ngày hè nóng bức.<br>\
+              Hà Nội đẹp với những khu phố cổ lâu đời, ngon với thiên đường ẩm thực ăn uống và giờ thì thu hút bởi khí hậu trong lành của công viên Cầu Giấy mãn nguyện hít thở không khí trong lành. Một chuyến dã ngoại cùng bạn bè hay gia đình sẽ giúp bạn cảm thấy tinh thần thoải mái và xua tan đi mọi ưu phiền. Du khách có thể vào chơi ở đây thoải mái mà không mất thêm giá vé nào cả. Hãy để mùa hè của bạn trở nên ý nghĩa, nhanh chóng lên kế hoạch để chuyến du lịch của bạn vui vẻ và nhớ mãi không quên.<br>\
+              Trích dẫn: vntrip",
+    "infoEN": "Own 3 special things compared to other parks in Hanoi: the most beautiful, safe, and free entrance tickets, Cau Giay Park has now become one of the familiar recreational addresses for children as well as many residents of the capital.<br>\
+              Cau Giay Park, also known as Yen Hoa Park, covers an area of ​​6540 m2, including a green tree system planned from the beginning to create a spacious and clean park.<br>\
+              Located on Thanh Thai Street, Dinh Vong urban area, Cau Giay District, Hanoi. Visitors can travel to Cau Giay Park by car, bus, or motorbike. If traveling by bus to the park, visitors can take bus number 51 directly to the park entrance or take bus 39 and then walk for 5 minutes to the park. If traveling by car or motorbike, it will take about 15-20 minutes to reach here.<br>\
+              The park is divided into 3 main areas: a playground for children, a sports and exercise area, a lake area, and a square where residents stroll around the area. This is truly an ideal destination for visitors to relax and have fun after busy and stressful working days.<br>\
+              Firstly, the children's playground with various attractive games is a highlight of this park. Covered with soft, clean artificial grass, children can play freely without fear of getting hurt when falling. Especially on weekends or cool evenings, the park is crowded with families bringing their children here to play happily and comfortably with their friends.<br>\
+              Furthermore, Cau Giay Park also organizes many other extracurricular recreational activities such as tug-of-war competitions, festivals, or traditional folk games that quickly attract the participation of children. Visitors here will find the park full of beneficial, interesting activities that stimulate the physical and mental health of children such as sculpture painting, fishing, learning to jump, and rollerblading.<br>\
+              Visitors can spend some time in the adjacent sports and exercise area to exercise with the locals. If you come here, you will see from early morning until late at night, the residents around here are very diligent in exercising. Especially in the late afternoon, many people come to Cau Giay Park to exercise such as walking, playing badminton, or using sports equipment because the park has a cool breeze and fresh, natural climate.<br>\
+              After days of hard work and pressure, visitors will easily encounter images of middle-aged people jogging with sports equipment or walking around the park. Even visitors will see graceful morning dances performed by elderly people practicing qigong or young people jogging around the park. Visitors will easily feel that people are increasingly concerned about their health every day to always be full of energy.<br>\
+              The square and lake in Cau Giay Park are located in the center of the park. This is where many young people gather on late afternoons to learn rollerblading. It's also a place to enjoy the cool breeze, and listen to stories of the people living around here. The highlight is the lake in Cau Giay Park at night brings a cool, fresh, and pleasant atmosphere. Visitors here will feel like they have a refreshing, cool space after hot summer days.<br>\
+              Hanoi is beautiful with its ancient old streets, delicious with its culinary paradise, and now it attracts people with the fresh air of Cau Giay Park, satisfyingly breathing in the fresh air. An outdoor trip with friends or family will help you feel mentally comfortable and dispel all worries. Visitors can enjoy playing here freely without any additional ticket costs. Make your summer meaningful, quickly plan your trip to be joyful and unforgettable.<br>\
+              Quote: vntrip",
+    "latitude": 21.0295570442969,
+    "longitude": 105.79117298126222,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FCVCG.jpg?alt=media&token=073ba661-fe95-4fc8-b8d3-0d5203ff218d']
   }
 };
 
@@ -1592,8 +1634,6 @@ function setPolygonClickEvent(buildingKey) {
       }
   });
 }
-
-
 
 function toggleInfoDiv(buildingKey) {
   var building = buildingData[buildingKey];
