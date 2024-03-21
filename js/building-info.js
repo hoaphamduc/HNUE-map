@@ -451,13 +451,133 @@ var buildingData = {
       [21.03817405430626, 105.78495370887525]
     ],
     "infoDivId": "infoDivV",
-    "nameVN": "<center>TOÀ NHÀ V<br> </center><center><span style=\"font-size: 10px; color: #707070\">GIẢNG ĐƯỜNG, KHOA GD THỂ CHẾT, KHOA GD ĐẶC BIỆT, KHOA GD TIỂU HỌC, KHOA SƯ PHẠM KỸ THUẬT, KHOA GD MẦM NON, KHOA GD QUỐC PHÒNG & AN NINH, KHOA ĐỊA LÝ, KHOA TÂM LÝ GD, VIỆN NGHIÊN CỨU SƯ PHẠM</span></center>",
-    "nameEN": "<center>V BUILDING</center><center><span style=\"font-size: 10px; color: #707070\">LECTURE HALL, FACULTY OF EDUCATIONAL ADMINISTRATION, FACULTY OF SPECIAL EDUCATION, FACULTY OF ELEMENTARY EDUCATION, FACULTY OF TECHNICAL PEDAGOGY, FACULTY OF PRESCHOOL EDUCATION, FACULTY OF NATIONAL DEFENSE & SECURITY EDUCATION, FACULTY OF GEOGRAPHY, FACULTY OF EDUCATIONAL PSYCHOLOGY, INSTITUTE FOR EDUCATIONAL RESEARCH - HANOI UNIVERSITY OF EDUCATION</span></center>",
-    "infoVN": "Chưa có thông tin.",
-    "infoEN": "No information.",
+    "nameVN": "<center>TOÀ NHÀ V<br>",
+    "nameEN": "<center>V BUILDING</center>",
+    "infoVN": "<b>Phòng làm việc giáo sư</b><br>\
+              Tầng 2, 3<br><br>\
+              <b>Giảng đường, lớp học</b><br>\
+              Tầng 2, 3, 4, 5, 8<br><br>\
+              <b>Khoa Sư phạm Kỹ thuật</b><br>\
+              Tầng 1, 3<br>\
+              Số điện thoại: 02437549499<br>\
+              Email: k.spkt@hnue.edu.vn<br>\
+              Website: <a href=\"https://spkt.hnue.edu.vn/\" target=\"blank\">spkt.hnue.edu.vn</a><br><br>\
+              <b>Khoa Giáo dục Thể chất</b><br>\
+              Tầng 2<br>\
+              Số điện thoại: 02437549517<br>\
+              Email: hoanb1974@gmail.com<br>\
+              Website: <a href=\"http://gdtc.hnue.edu.vn/\" target=\"blank\">gdtc.hnue.edu.vn</a><br><br>\
+              <b>Khoa Giáo dục Đặc biệt</b><br>\
+              Tầng 4<br>\
+              Số điện thoại: 024385876448<br>\
+              Email: k.gddb@hnue.edu.vn<br>\
+              Website: <a href=\"http://gddb.hnue.edu.vn/\" target=\"blank\">gddb.hnue.edu.vn</a><br><br>\
+              <b>Khoa Giáo dục Quốc Phòng và An Ninh</b><br>\
+              Tầng 5<br>\
+              Số điện thoại: 0438347106<br>\
+              Email: k.gdqp@hnue.edu.vn<br>\
+              Website: <a href=\"http://gdqp.hnue.edu.vn/\" target=\"blank\">gdqp.hnue.edu.vn</a><br><br>\
+              <b>Khoa Địa Lý</b><br>\
+              Tầng 5<br>\
+              Số điện thoại: 02438346826<br>\
+              Email: k.dialy@hnue.edu.vn<br>\
+              Website: <a href=\"https://dialy.hnue.edu.vn/\" target=\"blank\">dialy.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/geo.hnue/\" target=\"blank\">Facebook</a><br><br>\
+              <b>Khoa Giáo dục Tiểu học</b><br>\
+              Tầng 6<br>\
+              Số điện thoại: 0437549273<br>\
+              Email: k.gdth@hnue.edu.vn<br>\
+              Website: <a href=\"http://gdth.hnue.edu.vn/\" target=\"blank\">gdth.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoagiaoductieuhoc/\" target=\"blank\">Facebook</a><br><br>\
+              <b>Khoa Tâm Lý Học - Giáo Dục</b><br>\
+              Tầng 6<br>\
+              Số điện thoại: 0437547098<br>\
+              Email: k.tamly@hnue.edu.vn<br>\
+              Website: <a href=\"http://psy.hnue.edu.vn/\" target=\"blank\">psy.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/tlgdhnue/\" target=\"blank\">Facebook</a><br><br>\
+              <b>Khoa Giáo dục Mầm non</b><br>\
+              Tầng 6 phòng 605<br>\
+              Số điện thoại: 0437547095<br>\
+              Email: k.gdmn@hnue.edu.vn<br>\
+              Website: <a href=\"https://gdmn.hnue.edu.vn/\" target=\"blank\">gdmn.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoaGDMNHNUE/\" target=\"blank\">Facebook</a><br><br>\
+              <b>Viện Nghiên Cứu Sư Phạm</b><br>\
+              Tầng 7<br>\
+              Số điện thoại: 0462570159<br><br>\
+              <b>Bộ môn tiếng Nga</b><br>\
+              Tầng 8<br>\
+              Số điện thoại: 0437546757<br>\
+              Email: k.tiengnga@hnue.edu.vn<br><br>\
+              <b>Khoa tiếng Pháp</b><br>\
+              Tầng 8<br>\
+              Số điện thoại: 0437549499<br>\
+              Email: k.tiengphap@hnue.edu.vn<br>\
+              Website: <a href=\"http://tiengphap.hnue.edu.vn/\" target=\"blank\">tiengphap.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/phapdhsphn/\" target=\"blank\">Facebook</a>",
+    "infoEN": "<b>Professor's Office</b><br>\
+              Floors 2, 3<br><br>\
+              <b>Lecture Theaters, classrooms</b><br>\
+              Floors 2, 3, 4, 5, 8<br><br>\
+              <b>Faculty of Technology Education</b><br>\
+              Floors 1, 3<br>\
+              Phone: 02437549499<br>\
+              Email: k.spkt@hnue.edu.vn<br>\
+              Website: <a href=\"https://spkt.hnue.edu.vn/\" target=\"blank\">spkt.hnue.edu.vn</a><br><br>\
+              <b>Faculty of Physical Education</b><br>\
+              Floor 2<br>\
+              Phone: 02437549517<br>\
+              Email: hoanb1974@gmail.com<br>\
+              Website: <a href=\"http://gdtc.hnue.edu.vn/\" target=\"blank\">gdtc.hnue.edu.vn</a><br><br>\
+              <b>Faculty of Special Education</b><br>\
+              Floor 4<br>\
+              Phone: 024385876448<br>\
+              Email: k.gddb@hnue.edu.vn<br>\
+              Website: <a href=\"http://gddb.hnue.edu.vn/\" target=\"blank\">gddb.hnue.edu.vn</a><br><br>\
+              <b>Faculty of Military and Security Education</b><br>\
+              Floor 5<br>\
+              Phone: 0438347106<br>\
+              Email: k.gdqp@hnue.edu.vn<br>\
+              Website: <a href=\"http://gdqp.hnue.edu.vn/\" target=\"blank\">gdqp.hnue.edu.vn</a><br><br>\
+              <b>Faculty of Geography</b><br>\
+              Floor 5<br>\
+              Phone: 02438346826<br>\
+              Email: k.dialy@hnue.edu.vn<br>\
+              Website: <a href=\"https://dialy.hnue.edu.vn/\" target=\"blank\">dialy.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/geo.hnue/\" target=\"blank\">Facebook</a><br><br>\
+              <b>Faculty of Primary Education</b><br>\
+              Floor 6<br>\
+              Phone: 0437549273<br>\
+              Email: k.gdth@hnue.edu.vn<br>\
+              Website: <a href=\"http://gdth.hnue.edu.vn/\" target=\"blank\">gdth.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoagiaoductieuhoc/\" target=\"blank\">Facebook</a><br><br>\
+              <b>Faculty of Psychology and Education</b><br>\
+              Floor 6<br>\
+              Phone: 0437547098<br>\
+              Email: k.tamly@hnue.edu.vn<br>\
+              Website: <a href=\"http://psy.hnue.edu.vn/\" target=\"blank\">psy.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/tlgdhnue/\" target=\"blank\">Facebook</a><br><br>\
+              <b>Faculty of Early Childhood Education</b><br>\
+              Room 605, Floor 6<br>\
+              Phone: 0437547095<br>\
+              Email: k.gdmn@hnue.edu.vn<br>\
+              Website: <a href=\"https://gdmn.hnue.edu.vn/\" target=\"blank\">gdmn.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoaGDMNHNUE/\" target=\"blank\">Facebook</a><br><br>\
+              <b>Institute of Educational Research</b><br>\
+              Floor 7<br>\
+              Phone: 0462570159<br><br>\
+              <b>Department of Russian Language</b><br>\
+              Floor 8<br>\
+              Phone: 0437546757<br>\
+              Email: k.tiengnga@hnue.edu.vn<br><br>\
+              <b>Department of French Language</b><br>\
+              Floor 8<br>\
+              Phone: 0437549499<br>\
+              Email: k.tiengphap@hnue.edu.vn<br>\
+              Website: <a href=\"http://tiengphap.hnue.edu.vn/\" target=\"blank\">tiengphap.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/phapdhsphn/\" target=\"blank\">Facebook</a>",
     "latitude": 21.03811551883931,
     "longitude": 105.78491461906061,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaV.jpg?alt=media&token=b1254921-1e24-4ec9-ae26-64486ec0bbdd']
   },
   "CDTY": {
     "polygon": [
