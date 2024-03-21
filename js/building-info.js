@@ -18,7 +18,7 @@ var buildingData = {
       "infoEN": "No information.",
       "latitude": 21.037439688219646,
       "longitude": 105.78331516196478,
-      "source-image": []
+      "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FNhaHieuBo.jpg?alt=media&token=9142cb5e-61f2-4bdf-9e27-64227f245f12']
   },
   "nhaA2": {
     "polygon": [
@@ -203,8 +203,7 @@ var buildingData = {
               Fanpage: <a href=\"https://www.facebook.com/KhoaTriethoc.HNUE/\" target=\"_blank\">Facebook</a>",
     "latitude": 21.037230376421423,
     "longitude": 105.78290690593676,
-    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaB.jfif?alt=media&token=037c4692-23ca-4e91-803e-398d2da9fd57',
-    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaB-img2.jfif?alt=media&token=f4cfbe80-faed-45ca-b3af-064dd358e2f4']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaB.jpg?alt=media&token=5f8d44a1-24ad-4179-8d63-3cab286c83d4']
   },
   "nhaC1": {
     "polygon": [
@@ -929,7 +928,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.040027118063747,
     "longitude": 105.78531054929083,
-    "source-image": ['']
+    "source-image": []
   },
   "SVD": {
     "polygon": [
@@ -968,7 +967,7 @@ var buildingData = {
               - The stadium has undergone several repairs and upgrades, and is currently one of the largest and most modern stadiums in universities nationwide.<br><br>\
               <b>Location:</b><br><br>\
               - The stadium is located within the campus of Hanoi University of Education, at 136 Xuan Thuy, Dich Vong Hau ward, Cau Giay district, Hanoi.<br>\
-              - The stadium covers an area of ​​about 10,000m², including:<br>\
+              - The stadium covers an area of about 10,000m², including:<br>\
               &ensp;+ Main sports field<br>\
               &ensp;+ Grandstand<br>\
               &ensp;+ Support area<br><br>\
@@ -1284,7 +1283,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.03786212246022,
     "longitude": 105.78466057777405,
-    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2F1110.jpg?alt=media&token=e71cf0ca-b920-47e8-b620-fc87a5bb6a29']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FHT1110.jpg?alt=media&token=af0933e1-b419-4c9d-bee2-2d6bda1e740d']
   },
 
   "WM27165": {
