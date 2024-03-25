@@ -647,7 +647,7 @@ var buildingData = {
       [21.03817405430626, 105.78495370887525]
     ],
     "infoDivId": "infoDivV",
-    "nameVN": "<center>TOÀ NHÀ V- TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI<br>",
+    "nameVN": "<center>TOÀ NHÀ V - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI<br>",
     "nameEN": "<center>V BUILDING - HANOI UNIVERSITY OF EDUCATION</center>",
     "infoVN": "<b>Phòng làm việc giáo sư</b><br>\
               Tầng 2, 3<br><br>\
