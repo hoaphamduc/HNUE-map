@@ -545,10 +545,18 @@ var buildingData = {
       [21.039062764639308, 105.78297380509825]
     ],
     "infoDivId": "infoDivK2",
-    "nameVN": "K2 - NHÀ TRẺ BÚP SEN XANH - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "K2 - GREEN LOTUS PRESCHOOL - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "Chưa có thông tin.",
-    "infoEN": "No information.",
+    "nameVN": "K2 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "K2 - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Trường Mầm Non Búp Sen Xanh</b><br>\
+              Số điện thoại: 0941528998<br>\
+              Email: mnbupsenxanh@caugiay.edu.vn<br>\
+              Website: <a href=\"http://mannonbupsenxanh.hnue.edu.vn/\" target=\"_blank\">mannonbupsenxanh.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/mamnonbupsenxanh/\" target=\"_blank\">Facebook</a><br><br>",
+    "infoEN": "<b>Bup Sen Xanh Kindergarten</b><br>\
+              Phone: 0941528998<br>\
+              Email: mnbupsenxanh@caugiay.edu.vn<br>\
+              Website: <a href=\"http://mannonbupsenxanh.hnue.edu.vn/\" target=\"_blank\">mannonbupsenxanh.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/mamnonbupsenxanh/\" target=\"_blank\">Facebook</a><br><br>",
     "latitude": 21.039126286970678,
     "longitude": 105.7832668617139,
     "source-image": []
@@ -582,9 +590,13 @@ var buildingData = {
       [21.03853955271893, 105.78489929437639]
     ],
     "infoDivId": "infoDivKT",
-    "nameVN": "KT - TRƯỜNG TIỂU HỌC THỰC HÀNH NGUYỄN TẤT THÀNH - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "KT - NGUYEN TAT THANH ELEMENTARY PRACTICE SCHOOL - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "Chưa có thông tin.",
+    "nameVN": "KT - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "KT - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Trường Tiểu Học Nguyễn Tất Thành</b><br>\
+              Số điện thoại: 02437547632<br>\
+              Email: tieuhocntt@hnue.edu.vn<br>\
+              Website: <a href=\"http://thntt.hnue.edu.vn/\" target=\"_blank\">thntt.hnue.edu.vn/</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100063122835016\" target=\"_blank\">Facebook</a><br><br>",
     "infoEN": "No information.",
     "latitude": 21.038531226216158,
     "longitude": 105.78513470362036,
@@ -645,12 +657,14 @@ var buildingData = {
               Tầng 1, 3<br>\
               Số điện thoại: 02437549499<br>\
               Email: k.spkt@hnue.edu.vn<br>\
-              Website: <a href=\"https://spkt.hnue.edu.vn/\" target=\"_blank\">spkt.hnue.edu.vn</a><br><br>\
+              Website: <a href=\"https://spkt.hnue.edu.vn/\" target=\"_blank\">spkt.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/SuPhamKythuat.DHSPHN\" target=\"_blank\">Facebook</a><br><br>\
               <b>Khoa Giáo dục Thể chất</b><br>\
               Tầng 2<br>\
               Số điện thoại: 02437549517<br>\
               Email: hoanb1974@gmail.com<br>\
-              Website: <a href=\"http://gdtc.hnue.edu.vn/\" target=\"_blank\">gdtc.hnue.edu.vn</a><br><br>\
+              Website: <a href=\"http://gdtc.hnue.edu.vn/\" target=\"_blank\">gdtc.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoagdtc.dhsphn\" target=\"_blank\">Facebook</a><br><br>\
               <b>Khoa Giáo dục Đặc biệt</b><br>\
               Tầng 4<br>\
               Số điện thoại: 024385876448<br>\
@@ -660,7 +674,8 @@ var buildingData = {
               Tầng 5<br>\
               Số điện thoại: 0438347106<br>\
               Email: k.gdqp@hnue.edu.vn<br>\
-              Website: <a href=\"http://gdqp.hnue.edu.vn/\" target=\"_blank\">gdqp.hnue.edu.vn</a><br><br>\
+              Website: <a href=\"http://gdqp.hnue.edu.vn/\" target=\"_blank\">gdqp.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/gdqp.dhsphn\" target=\"_blank\">Facebook</a><br><br>\
               <b>Khoa Địa Lý</b><br>\
               Tầng 5<br>\
               Số điện thoại: 02438346826<br>\
