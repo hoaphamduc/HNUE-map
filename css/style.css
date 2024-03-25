@@ -1336,5 +1336,9 @@ body, html {
     margin-left: 0%;
     height: 500px;
   }
+  #email-to-us #my-mail {
+    font-size: 13px;
+    bottom: 10px;
+  }  
 }
 
