@@ -496,6 +496,7 @@ function removeVietnameseSigns(str) {
   str = str.replace(/[óòỏõọôốồổỗộơớờởỡợ]/g, 'o');
   str = str.replace(/[úùủũụưứừửữự]/g, 'u');
   str = str.replace(/[ýỳỷỹỵ]/g, 'y');
+  str = str.replace(/[đ]/g, 'd');
   // Loại bỏ các ký tự khác
   str = str.replace(/[^a-z0-9\s]/g, '');
   return str;
