@@ -15,6 +15,7 @@
     <link rel="icon" type="image/png" href="source-img/Logo Đại học Sư phạm Hà Nội - HNUE.png">
     <link rel="stylesheet" href="css/sidebar.css"/>
     <link rel="stylesheet" href="css/routing-machine.css"/>
+    <link rel="stylesheet" href="css/other-style.css"/>
 
 </head>
 
@@ -54,7 +55,16 @@
             <span class="contentVN">Đăng</span>
             <span class="contentEnglish">Post</span>
         </button>
+        <div id="loader">
+            <div class="face">
+                <div class="circle"></div>
+            </div>
+            <div class="face">
+                <div class="circle"></div>
+            </div>
+        </div>
     </div>
+
     <div id="social-network-div">
         <button class="close-div" onclick="hideSocialNetworkDiv()"></button>
         <div id="post-div">
@@ -299,10 +309,11 @@
             <button class="close-div" onclick="hideSupportDiv()"></button>
             <center><span class="big-text contentVN">Góp ý với chúng tôi thông qua</span></center>
             <center><span class="big-text contentEnglish">Give us your feedback via</span></center>
-            <div id="email-to-us">
-                <button id="send-mail" onclick="composeEmail()"></button>
+            <div id="email-to-us" onclick="composeEmail()" data-bs-toggle="tooltip" title="Gửi email cho chúng tôi">
+                <button id="send-mail"></button>
                 <span id="my-mail">Email: hoaphamduc2399@gmail.com</span>
             </div>
+            <a href="#" onclick="openGoogleForms(event)" target="_blank" style="font-size: 20px; margin-left: 5px; cursor: pointer;" data-bs-toggle="tooltip" title="Thực hiện kháo sát">Google Forms</a>
         </div>
 
         <div id="donate-div">
@@ -651,6 +662,8 @@
                 research team hopes to receive much support and love as well as suggestions and help from users. Sincere thanks! 
             </div>
         </div>
+
+        
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>

@@ -401,9 +401,30 @@ function openEnterPostDiv() {
 }
 
 function composeEmail() {
+  var confirmation;
+  var contentEnglish = document.querySelector('.contentEnglish');
+  var contentVN = document.querySelector('.contentVN');
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    confirmation = confirm("Would you like to open the email application to send support email about HNUE map?");
+  } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+    confirmation = confirm("Bạn có muốn mở ứng dụng email để gửi email hỗ trợ về HNUE map không?");
+  } else {
+    console.error('Content element not found or not displayed!');
+    return;
+  }
+
+  if (!confirmation) {
+    return; 
+  }
+
   var emailAddress = "hoaphamduc2399@gmail.com";
   var subject = "Hỗ trợ về HNUE map"; 
   var body = ""; 
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    subject = "Support regarding HNUE map";
+  }
 
   var mailtoLink = "mailto:" + encodeURIComponent(emailAddress) +
                    "?subject=" + encodeURIComponent(subject) +
@@ -411,6 +432,29 @@ function composeEmail() {
 
   window.location.href = mailtoLink;
 }
+
+function openGoogleForms(event) {
+  var confirmation;
+  var contentEnglish = document.querySelector('.contentEnglish');
+  var contentVN = document.querySelector('.contentVN');
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    confirmation = confirm("Would you like to open the Google Forms page in a new tab?");
+  } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+    confirmation = confirm("Bạn có muốn mở trang Google Forms trong một tab mới không?");
+  } else {
+    console.error('Content element not found or not displayed!');
+    return;
+  }
+
+  if (confirmation) {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLScKPY1U0hpQpsgPCS5Trff4d1BUM9VXhhl3gvJiyull8k1X8g/viewform', '_blank');
+  } else {
+    event.preventDefault();
+  }
+}
+
+
 
 // Lấy thẻ hình ảnh bằng cách sử dụng ID
 var imageElement = document.getElementById("hnue-img");
@@ -546,94 +590,3 @@ function confirmRedirect() {
     window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
   }
 }
-
-const khacRadio = document.getElementById('khac');
-const khacInput = document.getElementById('khacInput');
-
-khacInput.addEventListener('click', function() {
-    khacRadio.checked = true; // Check the checkbox when input is clicked
-    khacInput.disabled = false; // Enable the input
-});
-
-khacRadio.addEventListener('change', function() {
-    if (!this.checked) {
-        khacInput.disabled = true;
-        khacInput.value = '';
-    }
-});
-
-
-const option6Checkbox = document.getElementById('option6');
-const inputForOption6 = document.getElementById('inputForOption6');
-
-inputForOption6.addEventListener('click', function() {
-    option6Checkbox.checked = true; 
-    inputForOption6.disabled = false; 
-});
-
-option6Checkbox.addEventListener('change', function() {
-    if (!this.checked) {
-        inputForOption6.disabled = true;
-        inputForOption6.value = '';
-    }
-});
-
-document.getElementById("googleForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Ngăn chặn gửi form mặc định
-  
-  // Lấy dữ liệu từ các trường input
-  var doiTuong = document.querySelector('input[name="doiTuong"]:checked').value;
-  var khacInput = "";
-  
-  // Kiểm tra nếu đối tượng là "Khác" thì lấy giá trị của khacInput
-  if (doiTuong === "khac") {
-    khacInput = document.getElementById("khacInput").value;
-  }
-  
-  var needs = [];
-  var checkboxes = document.querySelectorAll('input[name^="option"]:checked');
-  checkboxes.forEach(function(checkbox) {
-      needs.push(checkbox.value);
-  });
-
-  var feedback = document.getElementById("yourFeedback").value;
-  
-  // Gọi hàm postToGoogleForms với dữ liệu form
-  postToGoogleForms({
-    doiTuong: doiTuong,
-    needs: needs.join(", "),
-    feedback: feedback,
-    khacInput: khacInput
-  });
-});
-
-async function postToGoogleForms(data) {
-  const formURL = "https://docs.google.com/forms/d/e/1FAIpQLScKPY1U0hpQpsgPCS5Trff4d1BUM9VXhhl3gvJiyull8k1X8g/formResponse";
-  const formData = new FormData();
-  formData.append('entry.1572871648', data.doiTuong);
-  formData.append('entry.1643110176_sentinel', data.needs);
-  formData.append('entry.36802850_sentinel', data.feedback);
-  
-  // Nếu doiTuong là "Khác", thêm giá trị của khacInput vào FormData
-  if (data.doiTuong === "khac") {
-    formData.append('entry.123456789', data.khacInput);
-  }
-  
-  await fetch(formURL, {
-    method: "POST",
-    body: formData,
-  }).then(response => {
-    if (response.ok) {
-      // Thực hiện các công việc khác sau khi submit thành công
-      alert("Dữ liệu đã được gửi đi!");
-    } else {
-      // Xử lý lỗi nếu có
-      alert("Đã xảy ra lỗi khi gửi dữ liệu.");
-    }
-  }).catch(error => {
-    // Xử lý lỗi nếu có
-    alert("Đã xảy ra lỗi khi gửi dữ liệu: " + error.message);
-  });
-}
-
-

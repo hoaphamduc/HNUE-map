@@ -417,15 +417,57 @@ function openEnterPostDiv() {
 }
 
 function composeEmail() {
+  var confirmation;
+  var contentEnglish = document.querySelector('.contentEnglish');
+  var contentVN = document.querySelector('.contentVN');
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    confirmation = confirm("Would you like to open the email application to send support email about HNUE map?");
+  } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+    confirmation = confirm("Bạn có muốn mở ứng dụng email để gửi email hỗ trợ về HNUE map không?");
+  } else {
+    console.error('Content element not found or not displayed!');
+    return;
+  }
+
+  if (!confirmation) {
+    return; 
+  }
+
   var emailAddress = "hoaphamduc2399@gmail.com";
   var subject = "Hỗ trợ về HNUE map"; 
   var body = ""; 
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    subject = "Support regarding HNUE map";
+  }
 
   var mailtoLink = "mailto:" + encodeURIComponent(emailAddress) +
                    "?subject=" + encodeURIComponent(subject) +
                    "&body=" + encodeURIComponent(body);
 
   window.location.href = mailtoLink;
+}
+
+function openGoogleForms(event) {
+  var confirmation;
+  var contentEnglish = document.querySelector('.contentEnglish');
+  var contentVN = document.querySelector('.contentVN');
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    confirmation = confirm("Would you like to open the Google Forms page in a new tab?");
+  } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+    confirmation = confirm("Bạn có muốn mở trang Google Forms trong một tab mới không?");
+  } else {
+    console.error('Content element not found or not displayed!');
+    return;
+  }
+
+  if (confirmation) {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLScKPY1U0hpQpsgPCS5Trff4d1BUM9VXhhl3gvJiyull8k1X8g/viewform', '_blank');
+  } else {
+    event.preventDefault();
+  }
 }
 
 function uploadImage() {

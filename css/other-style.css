@@ -1,0 +1,80 @@
+/* loading animation */
+
+#loader {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    font-size: 10px;
+    display: grid;
+    place-items: center;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.face {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    animation: anim 3s linear infinite;
+}
+
+.face:nth-child(1) {
+    --deg: -45deg;
+    width: 100%;
+    height: 100%;
+    color: gold;
+    border-color: currentColor
+    transparent transparent
+    currentColor;
+    border-width: 0.2em 0.2em 0em 0em;
+    animation-direction: normal;
+}
+
+.face:nth-child(2) {
+    --deg: -135deg;
+    width: 70%;
+    height: 70%;
+    color: lime;
+    border-color: currentColor
+    currentColor transparent
+    transparent;
+    border-width: 0.2em 0em 0em 0.2em;
+    animation-direction: reverse;
+}
+
+.circle {
+    position: absolute;
+    width: 50%;
+    height: 0.1em;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: rotate(var(--deg));
+    transform-origin: left;
+}
+
+.circle::before {
+    position: absolute;
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    top: -0.5em;
+    right: -0.5em;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 2em,
+        0 0 4em,
+        0 0 6em,
+        0 0 8em,
+        0 0 10em,
+        0 0 0 0.5em #ffff001a;
+}
+
+@keyframes anim {
+    to {
+        transform: rotate(1turn);
+    }
+}

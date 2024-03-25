@@ -14,9 +14,13 @@ const storage = getStorage(app);
 const firebase = getDatabase(app);
 
 const user = auth.currentUser;
-const authenticatedUIDs = ["8Ut3NdciZVcEWxRCx8PV1KDkvCA2", "mQ2IYPwucKZZ8NjRwKzfFvWdM3M2", "HxmAlnp55JO19UOrWn644FW5rRp2", 
-                            "PI7tSAdBXATtgtQNPRPnYtgl1CA2", "Rsqd0z5flcS1v0InedmRKqKg9Pu1"
-                          ];
+const authenticatedUIDs = [
+  "8Ut3NdciZVcEWxRCx8PV1KDkvCA2", 
+  "mQ2IYPwucKZZ8NjRwKzfFvWdM3M2", 
+  "HxmAlnp55JO19UOrWn644FW5rRp2", 
+  "PI7tSAdBXATtgtQNPRPnYtgl1CA2", 
+  "Rsqd0z5flcS1v0InedmRKqKg9Pu1"
+];
 
 function checkAuthenticatedUser(uid) {
   return authenticatedUIDs.includes(uid);
@@ -85,7 +89,7 @@ const inappropriateWords = [
   'dm', 'duma', 'Đuma', 'dmm', 'dit', 'me may', 'ngứa dái', 'tà dăm', 'răm', 'trai bao',
   'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'đụ', 'chơi gái', 'choi gai', 'bulon',
   'cac', 'cặc', 'nwngs', 'loz', 'buoi', 'me m', 'xam l', 'đá phò', 'bitch', 'fuck', 'dick',
-  'trường l', 'fwb', 'ons'
+  'trường l', 'fwb', 'ons', 'tình 1 đêm', 'tình một đêm', 'tinh 1 dem', 'tinh mot dem'
 ];
 
 document.getElementById("logout-btn").addEventListener("click", logout);
@@ -180,11 +184,12 @@ document.getElementById('post-status').addEventListener('click', async function(
 
       location = locationEng;
       location = locationVN;
-
+      var loadingAnimation = document.getElementById('loader');
       // Check if image is selected
       const imageInput = document.getElementById('imageInput');
       if (imageInput.files.length > 0) {
           this.disabled = true;
+          loadingAnimation.style.visibility = "visible";
           const imageFile = imageInput.files[0];
           const timestamp = new Date().getTime();
           const imagePath = `images/${newStatusRef.key}/${timestamp}_${imageFile.name}`;
@@ -251,6 +256,7 @@ document.getElementById('post-status').addEventListener('click', async function(
       document.getElementById('text-address-vn').value = '';
       document.getElementById('text-address-eng').value = '';
       resetImageInput();
+      loadingAnimation.style.visibility = "hidden";
       var enterPost = document.getElementById("enter-post");
       enterPost.style.display = "none";
 
@@ -294,17 +300,18 @@ function isDisplayedBlock(element) {
 
 async function canUserPost(uid) {
   try {
-    // Retrieve the last post timestamp from the user's data
+    if (authenticatedUIDs.includes(uid)) {
+      return true; 
+    }
+
     const lastPostSnapshot = await getDatabaseData(`/users/${uid}/lastPostTimestamp`);
     const lastPostTimestamp = lastPostSnapshot.val();
 
     if (!lastPostTimestamp) {
-      // If no previous timestamp, the user can post
       return true;
     }
 
-    // Check if the last post was more than a day ago
-    const oneDayInMilliseconds = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+    const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
     const currentTime = new Date().getTime();
 
     return currentTime - lastPostTimestamp > oneDayInMilliseconds;
@@ -556,7 +563,6 @@ document.addEventListener('click', async function(event) {
           let likes = postData.likes || [];
 
           if (likes.includes(uid)) {
-              // Unlike
               likes = likes.filter(likeUid => likeUid !== uid);
               likeButton.innerHTML = `
                   <img src="source-img/heart-regular.svg" class="action-img">
@@ -564,7 +570,6 @@ document.addEventListener('click', async function(event) {
                   <span class="contentEnglish action-text">Like</span>
               `;
           } else {
-              // Like
               likes.push(uid);
               likeButton.innerHTML = `
                   <img src="source-img/heart-solid.svg" class="action-img">
@@ -656,7 +661,7 @@ async function deletePost(postId) {
           alertMessage = "Bài viết đã được xóa thành công!";
         } else {
           console.error('Content element not found or not displayed!');
-          return; // Nếu không tìm thấy hoặc không hiển thị, thoát khỏi hàm
+          return;
         }
 
         alert(alertMessage);
@@ -686,13 +691,12 @@ async function deletePost(postId) {
           alertMessage = "Bạn đã huỷ!";
         } else {
           console.error('Content element not found or not displayed!');
-          return; // Nếu không tìm thấy hoặc không hiển thị, thoát khỏi hàm
+          return;
         }
 
         alert(alertMessage);
       }
     } else {
-      // Người dùng chưa đăng nhập hoặc không có quyền xóa bài viết
       console.log('Bạn không có quyền xóa bài viết này.');
     }
   } catch (error) {
@@ -738,7 +742,6 @@ async function addComment(e) {
 
   if (newCommentText.trim() !== '') {
     if (newCommentText.length <= 470) {
-      // Kiểm tra thời gian bình luận cuối cùng của người dùng trên bài viết này
       const lastCommentRef = ref(getDatabase(app), `lastComments/${postId}/${uid}`);
       const lastCommentSnapshot = await get(lastCommentRef);
       const lastCommentData = lastCommentSnapshot.exists() ? lastCommentSnapshot.val() : null;
@@ -837,7 +840,6 @@ function getCommentsForPost(postId) {
   onValue(commentsRef, (snapshot) => {
     const commentsData = snapshot.val();
 
-    // Hiển thị bình luận
     // Gọi hàm để đếm số lượng bình luận và cập nhật vào span
     updateCommentCount(postId);
 
@@ -904,6 +906,6 @@ function formatTime(timestamp) {
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
 
-  return `${hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}, ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+  return `${hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds} ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 }
 

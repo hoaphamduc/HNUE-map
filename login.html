@@ -253,98 +253,11 @@
             <button class="close-div" onclick="hideSupportDiv()"></button>
             <center><span class="big-text contentVN">Góp ý với chúng tôi thông qua</span></center>
             <center><span class="big-text contentEnglish">Give us your feedback via</span></center>
-            <div id="email-to-us">
-                <button id="send-mail" onclick="composeEmail()"></button>
+            <div id="email-to-us" onclick="composeEmail()" data-bs-toggle="tooltip" title="Gửi email cho chúng tôi">
+                <button id="send-mail"></button>
                 <span id="my-mail">Email: hoaphamduc2399@gmail.com</span>
             </div>
-            <center><span class="big-text contentVN">Hoặc là tại đây</span></center>
-            <center><span class="big-text contentEnglish">Or here</span></center>
-            <form id="googleForm">
-                <span class="contentVN">Bạn thuộc đối tượng nào?</span>
-                <span class="contentEnglish">What audience do you belong to?</span>
-                <input type="radio" name="doiTuong" id="sinhVienNamNhat" value="sinhVienNamNhat">
-                <label for="sinhVienNamNhat">
-                    <span class="contentVN">Sinh viên năm nhất.</span>
-                    <span class="contentEnglish">Freshman student.</span>
-                </label><br>
-                <input type="radio" name="doiTuong" id="sinhVienNamHaiTroLen" value="sinhVienNamHaiTroLen">
-                <label for="sinhVienNamHaiTroLen">
-                    <span class="contentVN">Sinh viên năm thứ 2 trở lên.</span>
-                    <span class="contentEnglish">Second year and above student.</span>
-                </label><br>
-                <input type="radio" name="doiTuong" id="hocSinh" value="hocSinh">
-                <label for="hocSinh">
-                    <span class="contentVN">Học sinh tham gia kì thi ĐGNL và các cuộc thi khác.</span>
-                    <span class="contentEnglish">Students participate in the Competency Assessment Exam and other competitions.</span>
-                </label><br>
-                <input type="radio" name="doiTuong" id="giaoVien" value="giaoVien">
-                <label for="giaoVien">
-                    <span class="contentVN">Cán bộ, giáo viên nhà trường.</span>
-                    <span class="contentEnglish">School staff, teachers.</span>
-                </label><br>
-                <input type="radio" name="doiTuong" id="phuHuynh" value="phuHuynh">
-                <label for="phuHuynh">
-                    <span class="contentVN">Phụ huynh.</span>
-                    <span class="contentEnglish">Parents of students.</span>
-                </label><br>
-                <input type="radio" name="doiTuong" id="duHocSinh" value="duHocSinh">
-                <label for="duHocSinh">
-                    <span class="contentVN">Du học sinh, nghiên cứu sinh.</span>
-                    <span class="contentEnglish">International students, researchers.</span>
-                </label><br>
-                <input type="radio" name="doiTuong" id="sinhVienTruongNgoai" value="sinhVienTruongNgoai">
-                <label for="sinhVienTruongNgoai">
-                    <span class="contentVN">Sinh viên trường ngoài.</span>
-                    <span class="contentEnglish">Students from other universities.</span>
-                </label><br>
-                <input type="radio" name="doiTuong" id="khac" value="khac">
-                <label for="khac">
-                    <span class="contentVN">Khác:</span>
-                    <span class="contentEnglish">Other:</span>
-                </label>
-                <input type="text" id="khacInput" name="khacInput"><br>
-                <span class="contentVN">Bạn có nhu cầu gì khi tìm hiểu về trường?</span>
-                <span class="contentEnglish">What are your needs when researching about the school?</span>
-                <input type="checkbox" id="option1" name="vehicle1" value="1">
-                <label for="option1"> 
-                    <span class="contentVN">Không có nhu cầu.</span>
-                    <span class="contentEnglish">I don't need anything.</span>
-                </label><br>
-                <input type="checkbox" id="option2" name="option2" value="2">
-                <label for="option2"> 
-                    <span class="contentVN">Tìm thông tin chi tiết về địa điểm (các tòa nhà, phòng ban trực thuộc, cơ sở dịch vụ...).</span>
-                    <span class="contentEnglish">Find detailed information about the location (buildings, departments, facilities...).</span>
-                </label><br>
-                <input type="checkbox" id="option3" name="option3" value="3">
-                <label for="option3">
-                    <span class="contentVN">Nhu cầu về trao đổi thông tin với mọi người qua mạng xã hội.</span>
-                    <span class="contentEnglish">The need for exchanging information with everyone through social networks.</span>
-                </label><br>
-                <input type="checkbox" id="option4" name="option4" value="4">
-                <label for="option4">
-                    <span class="contentVN">Tìm kiếm đường đi đến địa điểm mong muốn trong khuôn viên trường và các cơ sở dịch vụ gần đó.</span>
-                    <span class="contentEnglish">Search for directions to desired locations within the campus and nearby service.</span>
-                </label><br>
-                <input type="checkbox" id="option5" name="option5" value="5">
-                <label for="option5">
-                    <span class="contentVN">Cần tìm hiểu thông tin về nhà trường (tuyển sinh, các website của trường,...).</span>
-                    <span class="contentEnglish">I need to find information about the school (admissions, school websites,...).</span>
-                </label><br>
-                <input type="checkbox" id="option6" name="option6" value="6">
-                <label for="option6">
-                    <span class="contentVN">Nhu cầu khác: </span>
-                    <span class="contentEnglish">Other:</span>
-                </label>
-                <input type="text" id="inputForOption6" name="inputForOption6">
-                <span class="contentVN">Ý kiến đóng góp của bạn để chúng tôi cải thiện sản phẩm:</span>
-                <span class="contentEnglish">Your feedback to help us improve our product:</span>
-                <input type="text" id="yourFeedback" name="yourFeedback">
-                <br><br>
-                <button type="submit" id="btnSubmitGoogleForm">
-                    <span class="contentVN">Gửi</span>
-                    <span class="contentEnglish">Submit</span>
-                </button>
-            </form>
+            <a href="#" onclick="openGoogleForms(event)" target="_blank" style="font-size: 20px; margin-left: 5px; cursor: pointer;" data-bs-toggle="tooltip" title="Thực hiện kháo sát">Google Forms</a>
         </div>
 
         <div id="donate-div">
