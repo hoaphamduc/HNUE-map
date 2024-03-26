@@ -686,7 +686,6 @@ function exitFullscreen() {
   }
 }
 
-
 function closeFullscreen() {
   exitFullscreen();
 }

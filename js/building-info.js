@@ -1642,7 +1642,7 @@ function createInfoDiv(buildingKey) {
           ${building.infoEN}
       </div>
       <div class="building-images">
-            ${building['source-image'].map(image => `<img class="img-demo" src="${image}" alt="Building Image">`).join('')}
+            ${building['source-image'].map(image => `<img class="img-demo" src="${image}" onclick="openFullscreen(this)" alt="Building Image">`).join('')}
       </div>`;
 
   // Chèn các phần tử vào khối div chính
@@ -1734,7 +1734,7 @@ function toggleInfoDiv(buildingKey) {
       if (polygon) {
           mymap.removeLayer(polygon);
       }
-  }, 3000);
+  }, 4444);
 
   mymap.flyTo([building.latitude, building.longitude], 19, {
       duration: 2, 
@@ -1798,9 +1798,11 @@ function initRoutingControl(buildingKey) {
       return;
     }
 
-    var confirmation = confirm(confirmationMessage);
-    if (!confirmation) {
-      return; 
+    if (!isMobileDevice()) {
+      var confirmation = confirm(confirmationMessage);
+      if (!confirmation) {
+        return; 
+      }
     }
 
     if (navigator.geolocation) {
@@ -1853,4 +1855,7 @@ function initRoutingControl(buildingKey) {
   }
 }
 
-
+// Kiểm tra xem có phải là thiết bị di động không
+function isMobileDevice() {
+  return /Mobi|Android/i.test(navigator.userAgent);
+}

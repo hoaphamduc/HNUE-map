@@ -592,3 +592,61 @@ function confirmRedirect() {
     window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
   }
 }
+
+function openFullscreen(element) {
+  if (element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if (element.mozRequestFullScreen) { /* Firefox */
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    element.webkitRequestFullscreen();
+  } else if (element.msRequestFullscreen) { /* IE/Edge */
+    element.msRequestFullscreen();
+  }
+
+  // Thêm sự kiện để theo dõi thay đổi fullscreen
+  document.addEventListener("fullscreenchange", exitFullscreenHandler);
+  document.addEventListener("webkitfullscreenchange", exitFullscreenHandler);
+  document.addEventListener("mozfullscreenchange", exitFullscreenHandler);
+  document.addEventListener("MSFullscreenChange", exitFullscreenHandler);
+
+  // Thêm sự kiện click để thoát fullscreen khi bấm vào bất kỳ nơi nào
+  document.addEventListener("click", exitFullscreenOnClickHandler);
+}
+
+// Hàm để thoát fullscreen khi sự kiện xảy ra
+function exitFullscreenHandler() {
+  const fullscreenElement =
+    document.fullscreenElement ||
+    document.webkitFullscreenElement ||
+    document.mozFullScreenElement ||
+    document.msFullscreenElement;
+
+  if (!fullscreenElement) {
+    exitFullscreen();
+  }
+}
+
+// Hàm để thoát fullscreen khi click bất kỳ nơi nào
+function exitFullscreenOnClickHandler() {
+  exitFullscreen();
+}
+
+// Hàm để thoát fullscreen
+function exitFullscreen() {
+  if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    }
+  }
+}
+
+function closeFullscreen() {
+  exitFullscreen();
+}
