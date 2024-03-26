@@ -806,9 +806,9 @@ var buildingData = {
     "nameVN": "TRUNG TÂM THÔNG TIN THƯ VIỆN - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
     "nameEN": "LIBRARY INFORMATION CENTER - HANOI UNIVERSITY OF EDUCATION",
     "infoVN": "<b>CHỨC NĂNG, NHIỆM VỤ CỦA TRUNG TÂM THÔNG TIN - THƯ VIỆN</b><br>\
-              <b>I. CHỨC NĂNG</b><br>\
+              <b>I. CHỨC NĂNG</b><br><br>\
               Giúp Hiệu trưởng thực hiện chức năng phục vụ hoạt động giảng dạy, học tập, đào tạo, nghiên cứu khoa học, triển khai ứng dụng tiến bộ khoa học công nghệ và quản lý của Nhà trường thông qua việc sử dụng, khai thác các loại tài liệu có trong thư viện (tài liệu chép tay, in, sao chụp, khắc trên mọi chất liệu, tài liệu điện tử, mạng Internet...).<br>\
-              <b>II. NHIỆM VỤ</b><br>\
+              <b>II. NHIỆM VỤ</b><br><br>\
               1. Tham mưu giúp Hiệu trưởng xây dựng quy hoạch, kế hoạch hoạt động dài hạn và ngắn hạn của Thư viện; tổ chức điều phối toàn bộ hệ thống thông tin, tư liệu, thư viện trong Nhà trường.<br>\
               2. Bổ sung, phát triển nguồn lực thông tin trong nước và nước ngoài đáp ứng nhu cầu giảng dạy, học tập, nghiên cứu khoa học và chuyển giao công nghệ  của Nhà trường; thu nhận các tài liệu do Trường xuất bản, các công trình nghiên cứu khoa học đã được nghiệm thu, tài liệu hội thảo, luận văn thạc sỹ, luận án tiến sỹ của cán bộ, giảng viên, sinh viên, học viên sau đại học, chương trình đào tạo, giáo trình, tập bài giảng và các dạng tài liệu khác của Nhà trường, các ấn phẩm tài trợ, biếu tặng, tài liệu trao đổi giữa các thư viện.<br>\
               3. Tổ chức xử lý, sắp xếp, lưu trữ, bảo quản, quản lý tài liệu; xây dựng hệ thống tra cứu truyền thống và hiện đại; thiết lập mạng lưới truy nhập và tìm kiếm thông tin tự động hoá; xây dựng các cơ sở dữ liệu; biên soạn, xuất bản các ấn phẩm thông tin theo quy định của pháp luật và của Nhà trường trên Phần mềm Libol 5.5.<br>\
@@ -820,9 +820,9 @@ var buildingData = {
               <b>Tel: 04-37547823 - Fax: 04-37547971</b><br>\
               <b>Email: tt.thuvien@hnue.edu.vn</b>",
     "infoEN": "<b>FUNCTIONS AND RESPONSIBILITIES OF THE INFORMATION AND LIBRARY CENTER</b><br>\
-              <b>I. FUNCTIONS</b><br>\
+              <b>I. FUNCTIONS</b><br><br>\
               To assist the Principal in serving the teaching, learning, training, scientific research, and implementation of advanced scientific and technological applications and management of the School through the use and exploitation of various types of documents available in the library (handwritten, printed, photocopied, engraved on all materials, electronic documents, Internet...).<br>\
-              <b>II. RESPONSIBILITIES</b><br>\
+              <b>II. RESPONSIBILITIES</b><br><br>\
               1. To advise and assist the Principal in developing long-term and short-term plans and plans of the Library; to organize the coordination of the entire information system, documentation, and library within the School.<br>\
               2. To supplement and develop information resources domestically and internationally to meet the teaching, learning, scientific research needs, and technology transfer of the School; to collect documents published by the School, research works that have been approved, seminar materials, master's theses, doctoral dissertations of officers, lecturers, students, postgraduate students, training programs, textbooks, lecture notes, and other documents of the School, sponsored publications, gifts, exchange documents between libraries.<br>\
               3. To organize processing, arranging, storing, preserving, managing documents; to establish traditional and modern retrieval systems; to establish access networks and automate information retrieval; to build databases; to compile and publish information publications according to the regulations of the law and the School on Libol 5.5 software.<br>\

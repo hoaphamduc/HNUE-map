@@ -309,27 +309,26 @@ body, html {
 
 .infoDiv {
   position: absolute;
-  width: 80%;
-  height: 80%;
-  max-width: 1000px;
-  max-height: 600px;
+  width: 30%;
+  height: 99%;
+  min-width: 350px;
   z-index: 10001; 
   display: none;
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
   background-color: white;
-  top: 50%;
-  left: 50%;
+  top: 0.5%;
+  left: 5px;
   overflow: auto;
-  transform: translate(-50%, -50%);
+  transform: translate(0, 0);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
 }
 
 .img-demo {
-  width: 80%; 
+  width: 99%; 
   margin-top: 20px; 
-  margin-left: 10%; 
+  margin-left: 0.5%; 
   border-radius: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
 }
@@ -1285,8 +1284,12 @@ body, html {
     font-size: 15px;
   }
   .infoDiv {
+    min-width: 0;
     height: 80%;
     width: 98%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .infoDiv .toolbar {
     top: 20px;
