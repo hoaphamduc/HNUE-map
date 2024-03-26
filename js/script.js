@@ -80,7 +80,7 @@ languageToggle.addEventListener('change', function () {
 // Initialize Leaflet map
 var mymap = L.map('map', {
   zoomControl: false
-}).fitWorld().setView([21.039045240824837, 105.78336238861085], 17);
+}).fitWorld().setView([21.03749740008041, 105.783335342976], 18);
 
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -162,12 +162,12 @@ var HNUE = L.polygon([
   fillOpacity: 0.1
 }).addTo(mymap);
 
-var welcomeText = document.getElementById('welcome-text');
+// var welcomeText = document.getElementById('welcome-text');
 
-setTimeout(function () {
-  mymap.removeLayer(HNUE);
-  welcomeText.style.display = 'none';
-}, 5000); 
+// setTimeout(function () {
+//   // mymap.removeLayer(HNUE);
+//   welcomeText.style.display = 'none';
+// }, 5000); 
 
 var directionBoard = document.getElementById('direction-board');
 var directionArrow = document.getElementById('directionArrow');
@@ -497,6 +497,7 @@ function removeVietnameseSigns(str) {
   str = str.replace(/[úùủũụưứừửữự]/g, 'u');
   str = str.replace(/[ýỳỷỹỵ]/g, 'y');
   str = str.replace(/[đ]/g, 'd');
+  str = str.replace(/[ ]/g, '');
   // Loại bỏ các ký tự khác
   str = str.replace(/[^a-z0-9\s]/g, '');
   return str;

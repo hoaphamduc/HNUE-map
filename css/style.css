@@ -57,7 +57,7 @@ body, html {
 }
 
 .Hnue-item:nth-child(1) {
-  background-image: url(../source-img/university-img/1.jpg);
+  background-image: url(../source-img/university-img/3.jpg);
 }
 .Hnue-item:nth-child(2) {
   background-image: url(../source-img/university-img/2.jpg);
@@ -66,10 +66,10 @@ body, html {
   background-image: url(../source-img/university-img/1.jpg);
 }
 .Hnue-item:nth-child(4) {
-  background-image: url(../source-img/university-img/2.jpg);
+  background-image: url(../source-img/university-img/4.jpg);
 }
 .Hnue-item:nth-child(5) {
-  background-image: url(../source-img/university-img/1.jpg);
+  background-image: url(../source-img/university-img/5.jpg);
 }
 
 #groupInfo {
