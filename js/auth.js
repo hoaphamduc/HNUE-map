@@ -15,7 +15,9 @@ googleLogin.addEventListener("click", function(){
         window.location.href = "../index.html";
     }).catch((error) => {
         const errorCode = error.code;
+        console.log(errorCode);
         const errorMessage = error.message;
+        console.log(errorMessage);
     });
 })
 

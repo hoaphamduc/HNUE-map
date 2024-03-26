@@ -15,11 +15,11 @@ const firebase = getDatabase(app);
 
 const user = auth.currentUser;
 const authenticatedUIDs = [
-  "8Ut3NdciZVcEWxRCx8PV1KDkvCA2", 
-  "mQ2IYPwucKZZ8NjRwKzfFvWdM3M2", 
-  "HxmAlnp55JO19UOrWn644FW5rRp2", 
-  "PI7tSAdBXATtgtQNPRPnYtgl1CA2", 
-  "Rsqd0z5flcS1v0InedmRKqKg9Pu1"
+  "8Ut3NdciZVcEWxRCx8PV1KDkvCA2", // mail em mèo
+  "mQ2IYPwucKZZ8NjRwKzfFvWdM3M2", // mail em cìu
+  "HxmAlnp55JO19UOrWn644FW5rRp2", // mail em pdung
+  "PI7tSAdBXATtgtQNPRPnYtgl1CA2", // mail em phát
+  "Rsqd0z5flcS1v0InedmRKqKg9Pu1"  // lạm quyền nên em mèo có 2 mail =))
 ];
 
 function checkAuthenticatedUser(uid) {

@@ -1475,7 +1475,7 @@ var buildingData = {
     "nameVN": "Trạm Xăng Dầu Quân Đội BQP. Địa chỉ số 107 đường Phan Văn Trường, phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
     "nameEN": "Military Gas Station of the Ministry of National Defense. Address: 107 Phan Van Truong Street, Dich Vong Hau Ward, Cau Giay, Hanoi",
     "infoVN": "Chưa có thông tin.",
-    "infoEN": " No information.",
+    "infoEN": "No information.",
     "latitude": 21.040089155890687,
     "longitude": 105.78627258539203,
     "source-image": []
@@ -1492,7 +1492,7 @@ var buildingData = {
     "nameVN": "Bệnh viện Đa khoa Y học cổ truyền Hà Nội",
     "nameEN": "Hanoi Traditional Medicine General Hospital",
     "infoVN": "Chưa có thông tin.",
-    "infoEN": " No information.",
+    "infoEN": "No information.",
     "latitude": 21.034196074739974,
     "longitude": 105.77983528529914,
     "source-image": []
@@ -1538,9 +1538,39 @@ var buildingData = {
     "latitude": 21.0295570442969,
     "longitude": 105.79117298126222,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FCVCG.jpg?alt=media&token=073ba661-fe95-4fc8-b8d3-0d5203ff218d']
+  },
+  "TVCG": {
+    "polygon": [
+      [21.03808643469052, 105.79066872596742],
+      [21.037991304763633, 105.79102009534837],
+      [21.037793534458057, 105.79095840454102],
+      [21.037886161089563, 105.79060703516008]
+    ],
+    "infoDivId": "infoDivTVCG",
+    "nameVN": "Thư viện Quận Cầu Giấy - 30 Nguyễn Phong Sắc, quận Cầu Giấy, Hà Nội",
+    "nameEN": "Cau Giay District Library - 30 Nguyen Phong Sac, Cau Giay District, Hanoi",
+    "infoVN": "Thời gian mở cửa: 8 giờ đến 17 giờ<br>\
+              Số điện thoại: 0243.7565843<br>\
+              Giám đốc Trung tâm VHTTTT: Nguyễn Trường Giang<br>\
+              Tổ Trưởng tổ Thông tin tuyên truyền: Nguyễn Thị Hạnh - Mobi: 0969251282<br>\
+              Cán bộ thư viện: Nguyễn Hữu Hưng- Mobi: 0988593990<br>\
+              Email: trungtamvhttttcaugiay@gmail.com",
+    "infoEN": "Opening hours: 8:00 AM to 5:00 PM<br>\
+              Phone number: 0243.7565843<br>\
+              Director of Information Technology Center: Nguyen Truong Giang<br>\
+              Head of Information and Communication Team: Nguyen Thi Hanh - Mobile: 0969251282<br>\
+              Library staff: Nguyen Huu Hung - Mobile: 0988593990<br>\
+              Email: trungtamvhttttcaugiay@gmail.com",
+    "latitude": 21.03794624319812,
+    "longitude": 105.79080283641817,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fthu-vien-cau-giay.jpg?alt=media&token=b659cedc-707c-4d44-b962-fa90455a988f']
   }
 };
 
+// --------------------------------------------------------------------------------------- //
+// --------------------------------------------------------------------------------------- //
+// --------------------------------------------------------------------------------------- //
+// --------------------------------------------------------------------------------------- //
 // --------------------------------------------------------------------------------------- //
 
 for (const buildingId in buildingData) {
