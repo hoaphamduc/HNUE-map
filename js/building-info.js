@@ -1561,8 +1561,8 @@ var buildingData = {
               Head of Information and Communication Team: Nguyen Thi Hanh - Mobile: 0969251282<br>\
               Library staff: Nguyen Huu Hung - Mobile: 0988593990<br>\
               Email: trungtamvhttttcaugiay@gmail.com",
-    "latitude": 21.03794624319812,
-    "longitude": 105.79080283641817,
+    "latitude": 21.03798629792369,
+    "longitude": 105.79063922166826,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fthu-vien-cau-giay.jpg?alt=media&token=b659cedc-707c-4d44-b962-fa90455a988f']
   }
 };
