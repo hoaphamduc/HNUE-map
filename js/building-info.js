@@ -387,7 +387,7 @@ var buildingData = {
               Email: k.ctxh@hnue.edu.vn<br>\
               Website: <a href=\"https://ctxh.hnue.edu.vn/\" target=\"_blank\">ctxh.hnue.edu.vn</a><br>\
               Fanpage: <a href=\"https://www.facebook.com/khoaCTXH.DHSPHN/\" target=\"_blank\">Facebook</a><br><br>\
-              <b>Bộ môn Tiếng Trung Quốc</b><br>\
+              <b>Khoa Ngôn ngữ và Văn hoá Trung Quốc</b><br>\
               Tầng 3<br>\
               Số điện thoại: 02438342917<br>\
               Email: ttq@hnue.edu.vn<br>\
@@ -425,7 +425,7 @@ var buildingData = {
               Email: k.ctxh@hnue.edu.vn<br>\
               Website: <a href=\"https://ctxh.hnue.edu.vn/\" target=\"_blank\">ctxh.hnue.edu.vn</a><br>\
               Fanpage: <a href=\"https://www.facebook.com/khoaCTXH.DHSPHN/\" target=\"_blank\">Facebook</a><br><br>\
-              <b>Faculty of Chinese</b><br>\
+              <b>Department of Chinese Language</b><br>\
               Floor 3<br>\
               Phone: 02438342917<br>\
               Email: ttq@hnue.edu.vn<br>\

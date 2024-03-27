@@ -146,17 +146,28 @@ var zoomControl = L.control.zoom({
 zoomControl.addTo(mymap);
 
 // if (navigator.geolocation) {
-//   var marker;
-//   var watchId = navigator.geolocation.watchPosition(
+//   // Hỏi quyền truy cập vị trí
+//   navigator.geolocation.getCurrentPosition(
 //     function (position) {
 //       var lat = position.coords.latitude;
 //       var lon = position.coords.longitude;
+      
+//       // Tạo marker và thêm vào bản đồ
+//       var marker = L.marker([lat, lon]).addTo(mymap).bindPopup('Vị trí của bạn').openPopup();
+      
+//       // Sử dụng watchPosition để theo dõi vị trí và cập nhật marker
+//       var watchId = navigator.geolocation.watchPosition(
+//         function (position) {
+//           var lat = position.coords.latitude;
+//           var lon = position.coords.longitude;
 
-//       if (!marker) {
-//         marker = L.marker([lat, lon]).addTo(mymap).bindPopup('Vị trí của bạn').openPopup();
-//       } else {
-//         marker.setLatLng([lat, lon]);
-//       }
+//           // Cập nhật vị trí của marker
+//           marker.setLatLng([lat, lon]);
+//         },
+//         function (error) {
+//           console.log('Error getting geolocation:', error.message);
+//         }
+//       );
 //     },
 //     function (error) {
 //       console.log('Error getting geolocation:', error.message);
@@ -168,10 +179,16 @@ zoomControl.addTo(mymap);
 
 var HNUE = L.polygon([
   [21.03683472026718, 105.78238070011139],
-  [21.036717058570588, 105.78593999147417],
-  [21.041263238673896, 105.78608751296998],
+  [21.03675711362668, 105.78519701957704],
+  [21.03684223058507, 105.78519701957704],
+  [21.036849740902603, 105.78517824411395],
+  [21.038880016186976, 105.78526675701143],
+  [21.038882519591947, 105.78540086746217],
+  [21.038985159159534, 105.7854062318802],
+  [21.03897264214289, 105.78589439392091],
+  [21.041265742038803, 105.78597217798234],
   [21.041273252133305, 105.78533113002779],
-  [21.041135567007366, 105.78532844781877],
+  [21.041128056905922, 105.78532844781877],
   [21.04114307710843, 105.78477323055269],
   [21.04100539186213, 105.78476786613466],
   [21.04101790870796, 105.78408926725389],
