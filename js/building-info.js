@@ -1590,6 +1590,210 @@ var buildingData = {
     "latitude": 21.03798629792369,
     "longitude": 105.79063922166826,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fthu-vien-cau-giay.jpg?alt=media&token=b659cedc-707c-4d44-b962-fa90455a988f']
+  },
+  "NTDCG": {
+    "polygon": [
+      [21.03717550552506, 105.79112470149994],
+      [21.03722805003638, 105.79121053218843],
+      [21.037167999164787, 105.7916370034218],
+      [21.03711045039013, 105.79167723655702],
+      [21.036785174289292, 105.79163432121277],
+      [21.036735131749214, 105.79155921936037],
+      [21.036792680668853, 105.79114615917207],
+      [21.0368752508191, 105.7910817861557]
+    ],
+    "infoDivId": "infoDivNTDCG",
+    "nameVN": "Nhà Thi Đấu Cầu Giấy - 35 Trần Quý Kiên, quận Cầu Giấy, Hà Nội",
+    "nameEN": "Cau Giay Gymnasium - 35 Tran Quy Kien, Cau Giay District, Hanoi",
+    "infoVN": "Nhà thi đấu Cầu Giấy có lẽ là một trong những địa chỉ cho thuê sân cầu lông không còn quá xa lạ với nhiều lông thủ. \
+            Đây là một trong những sân cầu lông chuyên nghiệp và chất lượng tốt nhất tại Hà Nội hiện nay. Với quy mô 5 sân trải thảm và 5 sân sàn gỗ; \
+            Sân cầu lông nhà thi đấu Cầu Giấy đã và đang tổ chức rất nhiều giải đấu lớn, nhỏ trong và ngoài thành phố.<br>\
+            Với mục tiêu mang lại cho những người yêu thích môn cầu lông trải nghiệm tốt nhất, Sân Nhà thi đấu Cầu Giấy trang bị những thiết bị hiện đại. \
+            Đây là sân cầu có trần cao, không gian thoáng, phù hợp cho các câu lạc bộ đông người. Do đây là nhà thi đấu có chất lượng tốt, ở khu vực trung \
+            tâm nên giá thuê sân sẽ cao hơn những sân cầu lông khác. Giờ cao điểm, sân có mức giá cho thuê khoảng 140.000đ/giờ. Do đó, sân sẽ phù hợp hơn với những người chơi \
+            cầu lông chuyên nghiệp hoặc các câu lạc bộ gồm những thành viên đã đi làm. Sân cũng thường xuyên trong tình trạng 'cháy sân', nên nếu muốn tổ chức giải đấu, hãy gọi \
+            đặt sân sớm nhé!<br><br>\
+            <b>THÔNG TIN LIÊN HỆ:</b><br>\
+            <b>Địa chỉ:</b> Nhà thi đấu Cầu Giấy, Số 35, Trần Quý Kiên, Cầu Giấy, Hà Nội<br>\
+            <b>Điện thoại:</b> 0977 621 551 & 0973 789 301<br>\
+            <b>Giờ mở cửa:</b> 8:00 - 23:00",
+    "infoEN": "The Cau Giay Sports Complex is likely one of the most renowned addresses for badminton court rentals among badminton enthusiasts. \
+    It stands out as one of the top professional and high-quality badminton facilities in Hanoi today. Boasting a total of 5 carpet courts and 5 wooden courts, \
+    the Cau Giay Sports Complex has been hosting numerous major and minor tournaments both within and outside the city.<br>\
+              With the aim of providing the best experience for badminton enthusiasts, the Cau Giay Sports Complex is equipped with state-of-the-art facilities. \
+              Featuring high ceilings and spacious surroundings, it is ideal for large badminton clubs. Due to its excellent quality and central location, the rental rates \
+              for courts here tend to be higher compared to other badminton facilities. During peak hours, the rental price for a court is approximately 140,000 VND per hour. \
+              Therefore, the facility is better suited for professional badminton players or clubs with working members. The courts are often fully booked, so if you intend to \
+              organize a tournament, it is advisable to make reservations early!<br><br>\
+              <b>CONTACT INFORMATION:</b><br>\
+              <b>Address:</b> Cau Giay Sports Complex, No. 35, Tran Quy Kien Street, Cau Giay District, Hanoi<br>\
+              <b>Phone:</b> 0977 621 551 & 0973 789 301<br>\
+              <b>Opening Hours:</b> 8:00 - 23:00",
+    "latitude": 21.0369903485279,
+    "longitude": 105.7913848757744,
+    "source-image": ['https://imagev3.vietnamplus.vn/h600/Uploaded/2024/mzdic/2022_04_02/ttxvn_nha_thi_dau_cau_giay_1.jpeg.webp']
+  },
+  "CVTL": {
+    "polygon": [
+      [21.029476930302835, 105.80340385437013],
+      [21.029637158247905, 105.80349236726762],
+      [21.02966285068646, 105.80344408750535],
+      [21.029817989869418, 105.80355674028398],
+      [21.030138276703997, 105.80291837453844],
+      [21.031264279642816, 105.80366134643556],
+      [21.03141441272517, 105.80414146184923],
+      [21.031376879468773, 105.80438017845155],
+      [21.031369372816346, 105.80451965332031],
+      [21.031547030155423, 105.80473423004152],
+      [21.03161709214639, 105.80478250980379],
+      [21.031652123129533, 105.80503195524217],
+      [21.031632105425903, 105.80515801906587],
+      [21.031632105425903, 105.80547183752061],
+      [21.031687154104432, 105.80560326576233],
+      [21.03172718949424, 105.80568373203279],
+      [21.03173719834, 105.80583393573762],
+      [21.031697162952888, 105.8059573173523],
+      [21.031607083292553, 105.80646157264711],
+      [21.031627100999568, 105.80663859844209],
+      [21.031739700551338, 105.80675661563875],
+      [21.031932370698133, 105.8068183064461],
+      [21.03216007145955, 105.80695241689683],
+      [21.032325216849046, 105.80718576908112],
+      [21.032302697033998, 105.80751568078998],
+      [21.032187595703856, 105.80805212259294],
+      [21.03219510231504, 105.80826401710512],
+      [21.032347736660693, 105.80843031406404],
+      [21.032390274073435, 105.80853760242462],
+      [21.031780568785393, 105.81082284450532],
+      [21.031480303207267, 105.81073969602586],
+      [21.03009832102128, 105.81092476844789],
+      [21.0297802066128, 105.80943882465364],
+      [21.029622555947928, 105.80835521221162],
+      [21.029552493019242, 105.80771416425708],
+      [21.029537479530237, 105.80759078264238],
+      [21.029452403063956, 105.8070892095566],
+      [21.029402358061112, 105.80683976411822],
+      [21.02929976575274, 105.8065152168274],
+      [21.029237209432477, 105.80636769533159],
+      [21.029049540314166, 105.80571591854097],
+      [21.029860269210552, 105.8047664165497],
+      [21.02909207866836, 105.80415219068529]
+    ],
+    "infoDivId": "infoDivCVTL",
+    "nameVN": "Công viên Thủ Lệ",
+    "nameEN": "Thu Le park",
+    "infoVN": "<b>Công viên Thủ Lệ - Điểm đến không thể bỏ lỡ ở Hà Nội</b><br>\
+              Công viên Thủ Lệ có lẽ là điểm đến nằm trong lịch trình vi vu Hà Nội của phần lớn du khách ở thủ đô. Với không gian rộng lớn được bao phủ bởi những mảng thực vật xanh ngát và những giây \
+              phút giao tiếp với các loài động vật đa dạng, công viên Thủ Lệ tiếp đón hàng nghìn lượt khách ghé thăm mỗi năm.<br><br>\
+              <b>Giới thiệu về công viên Thủ Lệ</b><br>\
+              Công viên Thủ Lệ (còn gọi là Vườn Thú Hà Nội) nằm ở đường Bưởi, Thủ Lệ, phường Ngọc Khánh, quận Ba Đình, Hà Nội. \
+              Nơi đây là nút giao giữa những con đường lớn tại Hà Nội như đường Đào Tấn, đường Bưởi, phố Nguyễn Văn Ngọc. Khu vực này thuộc phạm vị của làng Thủ Lệ - Một ngôi làng cổ ở thời nhà Lý \
+              (khoảng thế kỷ thứ 11).<br>\
+              Công viên được khởi công xây dựng vào tháng 5/1976 và năm 1978 bắt đầu mở cửa hoạt động. Nơi đây có diện tích khoảng 29ha, tuy không phải là diện tích công viên lớn nhất Hà Nội \
+              nhưng nơi đây lại sở hữu hồ nước có hình dạng giọt lệ và đường bờ hồ uốn lượn được nhiều du khách chọn làm địa điểm nghỉ chân khi tham quan công viên.<br>\
+              Năm 1993, công viên Thủ Lệ chính thức trở thành viên của Hiệp hội các vườn thú Đông Nam Á và góp phần thực hiện công tác bảo tồn động vật của các cơ quan quốc tế như Bảo tồn chim Trĩ Thế Giới, Quỹ Quốc Tế Bảo Vệ Thiên Nhiên,...<br>\
+              Công viên Thủ Lệ sở hữu vẻ đẹp ấn tượng với những tán cây cổ thụ cao to với tán cây xòe rộng, vườn thú với những loài vật thân thiện. Bên cạnh đó, nơi đây còn là điểm đến được nhiều bạn nhỏ yêu thích \
+              vì có nhiều hoạt động vui chơi giải trí đa dạng như thú nhún, đạp vịt, di chuyển dưới nước cùng quả bóng to,...<br><br>\
+              <b>Đường đi đến công viên Thủ Lệ</b><br>\
+              Công viên Thủ Lệ nằm cách trung tâm Hà Nội khoảng 5km về hướng Tây. Công viên có tổng cộng 3 cổng là cổng đường Bưởi - cổng chính, cổng đường Nguyễn Văn Ngọc. \
+              Nhiều du khách sẽ chọn đi cổng đường Bưởi vì đường tương đối đơn giản.<br>\
+              Nếu bạn xuất phát từ trung tâm quận Hoàn Kiếm, bạn sẽ di chuyển theo tuyến đường: phố Lê Thái Tổ - Tràng Thi - phố Trần Phú - phố Kim Mã - phố Liễu Giai - đường Nguyễn Chí Thanh - \
+              đường La Thành - phố Kim Mã/đường Cầu Giấy - đường Bưởi. Đến đây, bạn có thể gửi xe tại công viên với mức giá dao động từ 5.000 - 30.000 VNĐ/xe (giá cả sẽ thay đổi theo từng thời điểm).<br>\
+              Ngoài ra, bạn cũng có thể di chuyển bằng xe buýt. Có rất nhiều tuyến xe buýt chạy đến công viên Thủ Lệ như 20A, 26, 28, 27, 32, E05, 105,....Tùy tuyến mà bạn sẽ đi từ 1-2 chuyến, \
+              với giá vé trung bình khoảng 7.000 VNĐ/vé/người (tùy thời điểm).<br><br>\
+              <b>Thời điểm lý tưởng để tham quan công viên Thủ Lệ</b><br>\
+              Bạn có thể đến công viên vào bất kỳ thời điểm nào trong năm. Nhưng nếu bạn là du khách đến từ nơi xa và hiếm khi vi vu Hà Nội, \
+              bạn có thể tham quan công viên Thủ Lệ vào mùa xuân và mùa thu ở Hà Nội, cụ thể là tháng 3-4 và tháng 8-11.<br>\
+              Nếu bạn yêu thích không khí ấm áp, trăm hoa đua nở thì hãy đến công viên Thủ Lệ vào tháng 3-4. Nhưng nếu bạn thích cảm giác se lạnh của Hà Nội vào thu thì hãy đến vào tháng 8-11.<br><br>\
+              <b>Những điểm đặc sắc ở công viên Thủ Lệ</b><br>\
+              Giống như một khu rừng giữa lòng Hà Nội náo nhiệt, công viên Thủ Lệ là điểm đến lý tưởng để bạn tìm hiểu về thế giới thiên nhiên hiền hòa mà không cần phải mất quá nhiều thời gian chuẩn bị. \
+              Ở đây hội tụ những thảm thực vật xanh mướt, những loài động vật thân thiện cùng vô vàn những hoạt động trải nghiệm thú vị.<br><br>\
+              <b>Vườn thú tập trung những loài động vật thân thiện</b><br>\
+              Công viên Thủ Lệ còn được gọi là Vườn Thú Hà Nội. Đây là nơi sinh sống của gần 600 cá thể động vật bao gồm 50 loài chim, 40 loài cá nước mặn, 5 loài bò sát thổ cư, trong đó có hơn 40 loài \
+              động vật quý hiếm thuộc Sách Đỏ Việt Nam như chim trĩ, cá cóc Tam Đảo, báo gấm, báo hoa mai, hổ Đông Dương,....Ngoài ra, công viên Thủ Lệ còn là nơi nuôi dưỡng một đôi sếu Nhật Bản do thủ tướng \
+              Kim Nhật thành gửi tặng Bác Hồ, đôi trăn được Đại Tướng Võ Nguyên Giáp gửi tặng công viên,....<br><br>\
+              <b>Khu vui chơi dưới nước đầy thú vị</b><br>\
+              Khu vui chơi dưới nước hội tụ các hoạt động ngoài trời diễn ra dưới nước như bong bóng nước, đạp vịt,....Đây là khu vực đông du khách ở công viên Thủ Lệ, nhất là những ngày Hà Nội nắng nóng. \
+              Có hoạt động giải trí sẽ diễn ra ở hồ nước rộng lớn và xanh trong, thử tượng tượng xem, vào một ngày oi bức mà được đạp thuyền vịt ra giữa hồ tận hưởng những làn gió mát mẻ thì còn gì tuyệt vời hơn đúng không!<br>\
+              Nếu bạn đi cùng với gia đình, bạn có thể cùng mọi người tham quan trò bong bóng dưới nước. Các thành viên sẽ ở trong một chiếc bóng khổng lồ được bơm căng hơi và bắt đầu hợp tác cử động để bóng di chuyển theo ý muốn.<br><br>\
+              <b>Khu vui chơi dành cho trẻ em</b><br>\
+              Khu vui chơi có diện tích rộng rãi, đây là thiên đường giải trí được rất nhiều trẻ em yêu thích. Ở đây, các bé sẽ được tham gia các trò chơi năng động như tàu lượn, đu quay,....\
+              hoặc tận hưởng những giây phút mãn nhãn với màn biểu xiếc điệu nghệ hoặc các bộ phim 5D, 6D cực hấp dẫn.<br><br>\
+              <b>Những lưu ý khi tham quan công viên Thủ Lệ</b><br>\
+              -  Một số trò chơi ở công viên Thủ Lệ cần phải mua vé để tham gia, giá vé tương đối phải chăng, trung bình chỉ từ 5.000 - 30.000 VNĐ/lượt (tùy trò chơi và thời điểm).<br>\
+              -  Bạn có thể mang một chút đồ ăn nhẹ và thức uống vào công viên để lót dạ trong quá trình vui chơi và tham quan.<br>\
+              -  Có những thời điểm công viên rất đông người, nên khi tham quan, bạn cần chú ý để ý tài sản của bản thân.<br>\
+              -  Nếu bạn dắt theo trẻ nhỏ thì hãy theo sát các bé để tránh việc lạc nhau nhé!<br>\
+              -  Chú ý giữ gìn vệ sinh môi trường ở công viên để góp phần xây dựng một điểm tham quan xanh sạch đẹp.<br>\
+              -  Công viên Thủ Lệ mở cửa tất cả các ngày trong tuần, từ 6h00 -18h00, bạn đừng quên để đến vui chơi đúng lúc nha.<br>\
+              Là một trong những công viên nổi tiếng ở Hà Nội, công viên Thủ Lệ là một trong những điểm tham quan không thể bỏ lỡ ở mảnh đất thủ đô. Sau khi tìm hiểu đôi nét về công viên Thủ Lệ, \
+              bạn nhớ thêm điểm đến này vào hành trình khám phá Hà Nội của mình nha.<br><br>\
+              Trích dẫn: Traveloka<br>\
+              Dưới đây là những hình ảnh về công viên Thủ Lệ",
+    "infoEN": "<b>Thu Le Park - An Unmissable Destination in Hanoi</b><br>\
+              Thu Le Park is perhaps a must-visit destination on the itinerary of most tourists in the capital city of Hanoi. With vast green spaces covered by lush vegetation and moments of interaction with diverse\
+              animal species, Thu Le Park welcomes thousands of visitors every year.<br><br>\
+              <b>Introduction to Thu Le Park</b><br>\
+              Thu Le Park (also known as Hanoi Zoo) is located on Buoi Street, Thu Le Ward, Ngoc Khanh District, Ba Dinh District, Hanoi.\
+              This place is the intersection of major roads in Hanoi such as Dao Tan Street, Buoi Street, Nguyen Van Ngoc Street. This area belongs to the jurisdiction of Thu Le Village - \
+              An ancient village in the time of the Ly dynasty(around the 11th century).<br>\
+              The park was started construction in May 1976 and opened in 1978. It covers an area of about 29 hectares, although not the largest park in Hanoi\
+              but it owns a teardrop-shaped lake and winding lake shore that many visitors choose as a resting place when visiting the park.<br>\
+              In 1993, Thu Le Park officially became a member of the Association of Southeast Asian Zoos and contributed to the conservation of animals by international organizations such as the \
+              World Pheasant Conservation Society, the International Nature Conservation Foundation, etc.<br>\
+              Thu Le Park possesses an impressive beauty with tall ancient trees with wide canopies, a zoo with friendly animals. Besides, it is also a favorite destination for many children\
+              because of its various entertaining activities such as swings, duck pedaling, underwater movement with a big ball, etc.<br><br>\
+              <b>Directions to Thu Le Park</b><br>\
+              Thu Le Park is about 5km west of Hanoi city center. The park has a total of 3 gates: Buoi Street gate - main gate, Nguyen Van Ngoc Street gate.\
+              Many tourists will choose to go through the Buoi Street gate because the route is relatively simple.<br>\
+              If you depart from the center of Hoan Kiem district, you will travel along the route: Le Thai To Street - Trang Thi Street - Tran Phu Street - Kim Ma Street - Lieu Giai Street - Nguyen Chi Thanh Street -\
+              La Thanh Street - Kim Ma Street/Cau Giay Street - Buoi Street. Here, you can park at the park with prices ranging from 5,000 - 30,000 VND/vehicle (prices will vary depending on the time).<br>\
+              Alternatively, you can also take the bus. There are many bus routes to Thu Le Park such as 20A, 26, 28, 27, 32, E05, 105, etc. Depending on the route, you will take 1-2 trips,\
+              with an average ticket price of about 7,000 VND/ticket/person (depending on the time).<br><br>\
+              <b>Ideal Time to Visit Thu Le Park</b><br>\
+              You can visit the park at any time of the year. But if you are a traveler from afar and rarely visit Hanoi,\
+              you can visit Thu Le Park in spring and autumn in Hanoi, specifically in March-April and August-November.<br>\
+              If you love the warm atmosphere, with flowers blooming, then visit Thu Le Park in March-April. But if you like the cool feeling of Hanoi in autumn, then visit in August-November.<br><br>\
+              <b>Highlights of Thu Le Park</b><br>\
+              Like a forest in the bustling heart of Hanoi, Thu Le Park is an ideal destination for you to explore the peaceful natural world without having to spend too much time preparing.\
+              Here converge lush green vegetation, friendly animal species along with countless interesting experiential activities.<br><br>\
+              <b>Zoo Focuses on Friendly Animal Species</b><br>\
+              Thu Le Park is also known as Hanoi Zoo. This is the home of nearly 600 animals including 50 bird species, 40 species of saltwater fish, 5 species of indigenous reptiles, including over 40\
+              rare and precious species listed in the Vietnam Red Data Book such as pheasants, Tam Dao frogs, leopards, tigers, Indochinese tigers, etc. In addition, Thu Le Park is also where a pair of \
+              Japanese cranes sent by Prime Minister Kim Nhat Thanh to President Ho Chi Minh, a pair of pythons sent by General Vo Nguyen Giap to the park, etc.<br><br>\
+              <b>Fascinating Underwater Play Area</b><br>\
+              The underwater play area gathers outdoor activities taking place underwater such as water bubbles, duck pedaling, etc. This is a crowded area in Thu Le Park, especially on hot days in Hanoi.\
+              There are entertainment activities taking place on a large and green water lake, imagine, on a scorching day being able to paddle a duck boat in the middle of the lake to enjoy the cool breeze, \
+              what could be better!<br>\
+              If you go with your family, you can explore underwater bubble games together. Members will be inside a giant ball inflated and start cooperating to move the ball as desired.<br><br>\
+              <b>Children's Play Area</b><br>\
+              The playground has a spacious area, this is a paradise of entertainment loved by many children. Here, kids can participate in dynamic games such as roller coasters, merry-go-rounds, etc.\
+              or enjoy eye-catching moments with graceful circus performances or extremely attractive 5D, 6D movies.<br><br>\
+              <b>Notes When Visiting Thu Le Park</b><br>\
+              - Some games at Thu Le Park require purchasing tickets to participate, ticket prices are relatively affordable, averaging only from 5,000 - 30,000 VND/turn (depending on the game and time).<br>\
+              - You can bring some snacks and drinks into the park to eat during the fun and sightseeing.<br>\
+              - There are times when the park is very crowded, so when visiting, you need to pay attention to your belongings.<br>\
+              - If you bring along young children, be sure to keep an eye on them to avoid getting lost!<br>\
+              - Pay attention to environmental hygiene in the park to contribute to building a clean and beautiful sightseeing spot.<br>\
+              - Thu Le Park is open every day of the week, from 6:00 a.m. to 6:00 p.m., so don't forget to come and have fun on time.<br>\
+              As one of the famous parks in Hanoi, Thu Le Park is one of the unmissable attractions in the capital city. After learning a few details about Thu Le Park,\
+              remember to add this destination to your Hanoi exploration itinerary.<br><br>\
+              Citation: Traveloka<br>\
+              Below are some images of Thu Le Park",
+    "latitude": 21.029446887543962,
+    "longitude": 105.8035195201325,
+    "source-image": ['https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-4.jpg?tr=dpr-2,w-675',
+                    'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-3.jpg?tr=dpr-2,w-675',
+                    'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-2.jpg?tr=dpr-2,w-675',
+                    'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-5.jpg?tr=dpr-2,w-675',
+                    'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-10.jpg?tr=dpr-2,w-675',
+                    'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-9.jpg?tr=dpr-2,w-675',
+                    'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-6.jpg?tr=dpr-2,w-675', 
+                    'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-7.jpg?tr=dpr-2,w-675', 
+                    'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-1.jpg?tr=dpr-2,w-675', 
+                    'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-8.jpg?tr=dpr-2,w-675',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FC%C3%B4ng%20vi%C3%AAn%20th%E1%BB%A7%20l%E1%BB%87%201.jpg?alt=media&token=872f09a6-925f-488f-8f37-74932b84a339',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FC%C3%B4ng%20vi%C3%AAn%20th%E1%BB%A7%20l%E1%BB%87%202.jpg?alt=media&token=2ad5efa0-bca3-46e5-be51-8bbd4e66939b']
   }
 };
 
