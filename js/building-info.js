@@ -1474,6 +1474,49 @@ var buildingData = {
     "longitude": 105.78465770406073,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCK177XT.jpg?alt=media&token=6e49077b-236c-4c2b-a979-3e971c392019']
   },
+  "CK03PTT": {
+    "polygon": [
+      [21.04274213422731, 105.78604754760937],
+      [21.04274213422731, 105.78613342590224],
+      [21.042794759522483, 105.78613342590224],
+      [21.042864926553772, 105.78604754760937]
+    ],
+    "infoDivId": "infoDivCK03PTT",
+    "nameVN": "Circle K số 03 đường Phạm Tuấn Tài, phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+    "nameEN": "Circle K No. 93 Pham Tuan Tai Street, Dich Vong Hau Ward, Cau Giay, Hanoi",
+    "infoVN": "<b>Tại Việt Nam</b>, chúng tôi chú trọng vào việc phát triển nhanh chóng trong lĩnh vực kinh doanh chuỗi cửa hàng tiện lợi theo giấy phép nhượng quyền thương hiệu của Circle K Mỹ.\
+              <br>\
+              <b>Circle K</b> tự hào giới thiệu rằng chúng tôi là chuỗi cửa hàng tiện lợi quốc tế đầu tiên tại Việt Nam, \
+              và cửa hàng đầu tiên được khai trương vào 20 tháng 12 năm 2008. \
+              Chúng tôi đã tổ chức Lễ Kỷ Niệm 10 năm hoạt động của Circle K tại Việt Nam trong năm 2018.\
+              <br>\
+              <b>Circle K</b> Việt Nam hiện đã có hơn 400 cửa hàng tại các thành phố lớn như Hà Nội, Hạ Long, Hồ Chí Minh, Vũng Tàu, Cần Thơ, Bình Dương, \
+              Hải Phòng, Long Xuyên, Biên Hòa và sẽ còn tiếp tục phát triển để đáp ứng nhu cầu của khách hàng ở khắp mọi nơi.\
+              <br>\
+              <b>Cam Kết Dịch Vụ</b> của chúng tôi đối với khách hàng được gói gọn trong 4 chữ F (4Fs) (Tươi, Thân Thiện, Nhanh, và Đầy Đủ).\
+              <br>\
+              <b>Tầm Nhìn</b> của chúng tôi là mong muốn trở thành chuỗi cửa hàng tiện lợi được ưa chuộng nhất tại Việt Nam.\
+              <br>\
+              <b>Sứ Mệnh</b> của chúng tôi là mang đến một không gian mua sắm thú vị, thân thiện và đáng tin cậy cho khách hàng với những mặt hàng, dịch vụ, \
+              món ăn phong phú, đa dạng được phục vụ nhanh chóng và niềm nở.",
+    "infoEN": "<b>In Vietnam</b>, we focus on rapid development in the convenience store business under the brand licensing agreement of Circle K USA.\
+              <br>\
+              <b>Circle K</b> proudly introduces itself as the first international convenience store chain in Vietnam, with the first store opening on December 20, 2008.\
+              We celebrated the 10th anniversary of Circle K's operations in Vietnam in 2018.\
+              <br>\
+              <b>Circle K</b> Vietnam currently operates over 400 stores in major cities such as Hanoi, Ha Long, Ho Chi Minh City, Vung Tau, Can Tho, Binh Duong,\
+              Hai Phong, Long Xuyen, Bien Hoa, and continues to expand to meet customer needs everywhere.\
+              <br>\
+              Our <b>Service Commitment</b> to customers is encapsulated in the 4Fs (Fresh, Friendly, Fast, and Full).\
+              <br>\
+              Our <b>Vision</b> is to become the most preferred convenience store chain in Vietnam.\
+              <br>\
+              Our <b>Mission</b> is to provide an enjoyable, friendly, and reliable shopping space for customers with a variety of products, services,\
+              and a quick and cheerful service for diverse and abundant choices.",
+    "latitude": 21.042822325145867,
+    "longitude": 105.7860904867558,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCK03PTT.jpg?alt=media&token=339bad85-a9cc-430e-b7d3-d5f610d42453']
+  },
   "XD171XT": {
     "polygon": [
       [21.03633621189048, 105.78569054603577],

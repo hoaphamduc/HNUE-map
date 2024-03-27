@@ -320,9 +320,14 @@ body, html {
   background-color: white;
   top: 0.5%;
   left: 5px;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
   transform: translate(0, 0);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+}
+
+.infoDiv::-webkit-scrollbar {
+  display: none;
 }
 
 .img-demo {
@@ -352,6 +357,10 @@ body, html {
   overflow-y: scroll;
 }
 
+#social-network-div::-webkit-scrollbar {
+  display: none;
+}
+
 #HNUE-introduction, #product-introduction, #infomation-pages, #donate-div, #support-div {
   position: absolute;
   width: 99.6%;
@@ -369,9 +378,6 @@ body, html {
   overflow: auto;
 }
 
-#social-network-div::-webkit-scrollbar {
-  display: none;
-}
 
 .image-qr {
   width: 270px; 
