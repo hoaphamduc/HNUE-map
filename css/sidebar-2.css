@@ -146,9 +146,9 @@
     width: calc(100% - 240px);
     left: 240px;
 }
-.main-content.show {
-    width: calc(100% - 240px);
-    left: 240px;
+
+.darkFilter {
+    filter: brightness(0.5);
 }
 
 .selected {

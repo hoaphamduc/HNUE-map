@@ -39,12 +39,25 @@ document.addEventListener('DOMContentLoaded', function () {
   const btn = document.getElementById('open-menu');
   const homeContent = document.getElementById('main-content');
 
+  // Hàm xử lý khi click ra ngoài sidebar
+  function handleClickOutside(event) {
+      if (!sidebar.contains(event.target) && event.target !== btn) {
+          sidebar.classList.remove('show');
+          homeContent.classList.remove('show');
+          homeContent.classList.remove('darkFilter');
+      }
+  }
+
+  // Sự kiện click ngoài sidebar
+  document.addEventListener('click', handleClickOutside);
+
+  // Sự kiện khi click vào button mở sidebar
   btn.addEventListener('click', function () {
       sidebar.classList.toggle('show');
       homeContent.classList.toggle('show');
+      homeContent.classList.toggle('darkFilter');
   });
 });
-
 
 // Lưu trữ cài đặt ngôn ngữ hiện tại
 let isEnglish = false;
