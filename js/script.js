@@ -34,6 +34,17 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const sidebar = document.querySelector('.sidebar2');
+  const btn = document.getElementById('open-menu');
+  const homeContent = document.getElementById('main-content');
+
+  btn.addEventListener('click', function () {
+      sidebar.classList.toggle('show');
+      homeContent.classList.toggle('show');
+  });
+});
+
 
 // Lưu trữ cài đặt ngôn ngữ hiện tại
 let isEnglish = false;
@@ -188,13 +199,15 @@ var HNUE = L.polygon([
 
 var directionBoard = document.getElementById('direction-board');
 var directionArrow = document.getElementById('directionArrow');
-
+var openSearchMenu = document.getElementById('open-search-menu');
 function toggleHide() {
   directionBoard.classList.toggle('hide');
   
   if (directionBoard.classList.contains('hide')) {
+    openSearchMenu.src = 'source-img/magnifying-glass-solid.svg';
     directionArrow.src = 'source-img/Icon ionic-md-arrow-dropdown.svg';
   } else {
+    openSearchMenu.src = 'source-img/xmark-solid.svg';
     directionArrow.src = 'source-img/close-direction-board.svg';
   }
 }
@@ -272,6 +285,14 @@ function hideSidebar() {
   homeContent.classList.remove('show');
 }
 
+function hideSidebarMobile() {
+  const sidebar = document.querySelector('.sidebar2');
+  const homeContent = document.getElementById('main-content');
+
+  sidebar.classList.remove('show');
+  homeContent.classList.remove('show');
+}
+
 
 function toggleSupportDiv() {
   var supportDiv = document.getElementById("support-div");
@@ -283,6 +304,7 @@ function toggleSupportDiv() {
     supportDiv.style.display = "none";
   }
   hideSidebar();
+  hideSidebarMobile();
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
@@ -300,6 +322,7 @@ function toggleSocialNetworkDiv() {
     socialDiv.style.display = "none";
   }
   hideSidebar();
+  hideSidebarMobile();
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
@@ -317,6 +340,7 @@ function toggleHNUEIntroductionDiv() {
     HNUEIntrductionDiv.style.display = "none";
   }
   hideSidebar();
+  hideSidebarMobile();
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideSocialNetworkDiv();
@@ -334,6 +358,7 @@ function toggleProductIntroductionDiv() {
     ProductIntrductionDiv.style.display = "none";
   }
   hideSidebar();
+  hideSidebarMobile();
   hideInfomationPagesDiv();
   hideHNUEIntroductionDiv();
   hideSocialNetworkDiv();
@@ -351,6 +376,7 @@ function toggleInfomationPagesDiv() {
     InfomationPagesDiv.style.display = "none";
   }
   hideSidebar();
+  hideSidebarMobile();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
   hideSocialNetworkDiv();
@@ -368,6 +394,7 @@ function toggleDonateDiv() {
     donateDiv.style.display = "none";
   }
   hideSidebar();
+  hideSidebarMobile();
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();

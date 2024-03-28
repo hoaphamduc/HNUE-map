@@ -57,13 +57,13 @@
 
 @media (max-width: 769px){ 
     .leaflet-routing-container {
-        top: 45px;
+        top: 0px;
         left: 0px;
     }
     .leaflet-routing-alternatives-container {
-        max-height: 150px;
+        max-height: 170px;
     }
     .closeRoutingButton {
-        top: 53px;
+        top: 1px;
     }
 }
