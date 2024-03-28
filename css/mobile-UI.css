@@ -1,0 +1,107 @@
+#mobile-toolbar{
+    display: none;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    z-index: 100000;
+}
+
+#open-menu {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-image: url(/source-img/bars-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+}
+
+#app-name {
+    font-size: 1.125rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+}
+
+#open-search-menu {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background-color: transparent;
+}
+
+@media (max-width: 769px){
+    .sidebar {
+        width: 0px;
+    }
+    #mobile-toolbar {
+        display: block;
+    }
+    .main-content {
+        position: absolute;
+        height: calc(100% - 50px);
+        top: 50px;
+        width: 100%;
+        left: 0;
+        transition: ease-in-out 1s;
+        background-color: #f8fafb;
+        z-index: 1;
+        padding: 0;
+    }
+    #direction-board {
+        width: 100%;
+        height: calc(100% + 46px);
+        right: 0;
+        top: -46px;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+    #HNUE-introduction, #product-introduction, #infomation-pages, #donate-div, #support-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        border: none;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+    .infoDiv {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-width: 0;
+        border-radius: 0;
+        border: none;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        box-shadow: none;
+    }
+    #directionArrow {
+        display: none;
+    }
+    .darkFilter {
+        filter: brightness(0.5);
+    }
+    .sidebar.show + .main-content {
+        width: 100%;
+        left: 0px;
+    }
+    .main-content.show {
+        width: 100%;
+        left: 0px;
+    }
+}

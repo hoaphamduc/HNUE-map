@@ -77,13 +77,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const sidebar = document.querySelector('.sidebar2');
+  const sidebar = document.querySelector('.sidebar');
   const btn = document.getElementById('open-menu');
+  const mobileToolbar = document.getElementById('mobile-toolbar');
   const homeContent = document.getElementById('main-content');
-
+  const appName = document.getElementById('app-name');
   // Hàm xử lý khi click ra ngoài sidebar
   function handleClickOutside(event) {
-      if (!sidebar.contains(event.target) && event.target !== btn) {
+      if (!sidebar.contains(event.target) && event.target !== btn && event.target !== mobileToolbar && event.target !== appName) {
           sidebar.classList.remove('show');
           homeContent.classList.remove('show');
           homeContent.classList.remove('darkFilter');
