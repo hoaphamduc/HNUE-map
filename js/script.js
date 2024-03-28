@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!sidebar.contains(event.target) && event.target !== btn && event.target !== mobileToolbar && event.target !== appName) {
           sidebar.classList.remove('show');
           homeContent.classList.remove('show');
-          homeContent.classList.remove('darkFilter');
+          removeDarken();
       }
   }
 
@@ -59,6 +59,11 @@ document.addEventListener('DOMContentLoaded', function () {
       homeContent.classList.toggle('darkFilter');
   });
 });
+
+function removeDarken() {
+  const homeContent = document.getElementById('main-content');
+  homeContent.classList.remove('darkFilter');
+}
 
 
 // Lưu trữ cài đặt ngôn ngữ hiện tại
@@ -300,15 +305,6 @@ function hideSidebar() {
   homeContent.classList.remove('show');
 }
 
-function hideSidebarMobile() {
-  const sidebar = document.querySelector('.sidebar2');
-  const homeContent = document.getElementById('main-content');
-
-  sidebar.classList.remove('show');
-  homeContent.classList.remove('show');
-}
-
-
 function toggleSupportDiv() {
   var supportDiv = document.getElementById("support-div");
   var computedStyle = window.getComputedStyle(supportDiv);
@@ -318,8 +314,9 @@ function toggleSupportDiv() {
   } else {
     supportDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
@@ -336,8 +333,9 @@ function toggleSocialNetworkDiv() {
   } else {
     socialDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
@@ -354,8 +352,9 @@ function toggleHNUEIntroductionDiv() {
   } else {
     HNUEIntrductionDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideSocialNetworkDiv();
@@ -372,8 +371,9 @@ function toggleProductIntroductionDiv() {
   } else {
     ProductIntrductionDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideInfomationPagesDiv();
   hideHNUEIntroductionDiv();
   hideSocialNetworkDiv();
@@ -390,8 +390,9 @@ function toggleInfomationPagesDiv() {
   } else {
     InfomationPagesDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
   hideSocialNetworkDiv();
@@ -408,8 +409,9 @@ function toggleDonateDiv() {
   } else {
     donateDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
