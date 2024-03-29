@@ -17,8 +17,9 @@ const user = auth.currentUser;
 const authenticatedUIDs = [
   "8Ut3NdciZVcEWxRCx8PV1KDkvCA2", // mail em mèo
   "mQ2IYPwucKZZ8NjRwKzfFvWdM3M2", // mail em cìu
-  "HxmAlnp55JO19UOrWn644FW5rRp2", // mail em pdung
+  "7GoRdlsTNkNMgf5ZJgW7VGrY6Hr1", // mail em pdung
   "PI7tSAdBXATtgtQNPRPnYtgl1CA2", // mail em phát
+  "dXtwTOnpEbTXYlO7V45mJyZnryW2", // cô xuyến
   "Rsqd0z5flcS1v0InedmRKqKg9Pu1"  // lạm quyền nên em mèo có 2 mail =))
 ];
 
