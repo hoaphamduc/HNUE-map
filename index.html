@@ -11,12 +11,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css" />
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="icon" type="image/png" href="source-img/Logo Đại học Sư phạm Hà Nội - HNUE.png">
     <link rel="stylesheet" href="css/sidebar.css"/>
-    <link rel="stylesheet" href="css/sidebar-2.css"/>
+    <link rel="stylesheet" href="css/mobile-UI.css"/>
     <link rel="stylesheet" href="css/routing-machine.css"/>
     <link rel="stylesheet" href="css/other-style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
@@ -66,21 +68,7 @@
         </div>
     </div>
 
-    <div id="social-network-div">
-        <button class="close-div" onclick="hideSocialNetworkDiv()"></button>
-        <div id="post-div">
-            <img id="userProfilePicture1" src="source-img/grey-img.jpg" alt="Profile Picture">
-            <div id="openEnterDiv" class="post-btn" onclick="openEnterPostDiv()">
-                <span class="contentVN" id="textVN">Chia sẻ gì đó với mọi người</span>
-                <span class="contentEnglish" id="textEN">Share something with everyone</span>
-            </div>
-        </div>
-        <div id="posts-container"></div>
-        <button id="show-more">
-            <span class="contentVN">Xem thêm 5 bài viết cũ hơn</span>
-            <span class="contentEnglish">Load 5 older posts</span>
-        </button>
-    </div>
+    
 
     <!-- Sidebar PC -->
     <div class="sidebar" id="sidebar">
@@ -184,95 +172,31 @@
         <span id="app-name">HNUE map</span>
         <img id="open-search-menu" onclick="toggleHide()" src="source-img/magnifying-glass-solid.svg">
     </div>
-
-    <div class="sidebar2" id="sidebar2">
-        <ul class="nav_list" id="nav_list">
-            <li>
-                <a onclick="toggleHNUEIntroductionDiv()">
-                    <div class="highlight"></div>
-                    <img src="source-img/school.png" class="icon">
-                    <span class="links_name contentVN">Giới thiệu về HNUE</span>
-                    <span class="links_name contentEnglish">HNUE introduction</span>
-                </a>
-            </li>
-            <li>
-                <a onclick="toggleProductIntroductionDiv()">
-                    <div class="highlight"></div>
-                    <img src="source-img/map-solid.svg" class="icon">
-                    <span class="links_name contentVN">Giới thiệu về sản phẩm</span>
-                    <span class="links_name contentEnglish">Product introduction</span>
-                </a>
-            </li>
-            <li>
-                <a onclick="toggleInfomationPagesDiv()">
-                    <div class="highlight"></div>
-                    <img src="source-img/browser.png" class="icon">
-                    <span class="links_name contentVN">Các trang thông tin</span>
-                    <span class="links_name contentEnglish">Information pages</span>
-                </a>
-            </li>
-            <li>
-                <a target="_blank" onclick="confirmRedirect()" style="cursor: pointer;">
-                    <div class="highlight"></div>
-                    <img src="source-img/book.png" class="icon">
-                    <span class="links_name contentVN">Thông tin tuyển sinh 2024</span>
-                    <span class="links_name contentEnglish">2024 Admission Information</span>
-                </a>
-            </li>
-            <li>
-                <a onclick="toggleSocialNetworkDiv()" style="cursor: pointer;">
-                    <div class="highlight"></div>
-                    <img src="source-img/user-group-solid.svg" class="icon">
-                    <span class="links_name contentVN">Mạng xã hội HNUE</span>
-                    <span class="links_name contentEnglish">HNUE social network</span>
-                </a>
-            </li>
-            <li>
-                <a onclick="toggleSupportDiv()" style="cursor: pointer;">
-                    <div class="highlight"></div>
-                    <img src="source-img/feedback.png" class="icon">
-                    <span class="links_name contentVN">Góp ý với chúng tôi</span>
-                    <span class="links_name contentEnglish">Give us your feedback</span>
-                </a>
-            </li>
-            <li>
-                <a onclick="toggleDonateDiv()" style="cursor: pointer;">
-                    <div class="highlight"></div>
-                    <img src="source-img/donate.svg" class="icon">
-                    <span class="links_name contentVN">Mua trà sữa cho chúng tôi</span>
-                    <span class="links_name contentEnglish">Buy milk tea for us</span>
-                </a>
-            </li>
-            <li style="position: absolute; bottom: 50px;">
-                <!-- Button đổi ngôn ngữ -->
-                <div class="language-toggle-box">
-                    <input type="checkbox" id="language-toggle"/>
-                    <label for="language-toggle">
-                        <img class="vi" src="source-img/Vi.png">
-                        <img class="en" src="source-img/En.png">
-                    </label>
-                </div>
-
-                <!-- Nhạc nền -->
-                <img id="music" src="source-img/muted.png" onclick="toggleImageBorderAndMusic()" draggable="false">
-                <audio id="backgroundMusic" loop>
-                    <source src="sound/ciu.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </li>
-            <li style="position: absolute; bottom: 0; cursor: pointer;">
-                <div id="google-login-btn">
-                    <span class="contentVN login-text">Đăng nhập với Google</span>
-                    <span class="contentEnglish login-text">Login with Google</span>
-                    <img src="source-img/Google__G__logo.svg" data-bs-toggle="tooltip" title="Đăng nhập">
-                </div>
-            </li>
-        </ul>
+    <div id="social-network-toolbar">
+        <button id="close-social-network-div" onclick="hideSocialNetworkDiv()" data-bs-toggle="tooltip" title="Rời khỏi mạng xã hội"></button>
+        <img id="userProfilePicture3" src="source-img/grey-img.jpg" alt="Profile Picture">
+        <span id="userName3"></span>
+        <span id="userEmail2"></span>
+        <button id="toolbar-notification" onclick="toggleNotificationDiv()"></button>
     </div>
-
+    <div id="notification-div">
+    </div>
     <div class="main-content" id="main-content">
         <div id="map"></div>
-        
+        <div id="social-network-div">
+            <div id="post-div">
+                <img id="userProfilePicture1" src="source-img/grey-img.jpg" alt="Profile Picture">
+                <div id="openEnterDiv" class="post-btn" onclick="openEnterPostDiv()">
+                    <span class="contentVN" id="textVN">Chia sẻ gì đó với mọi người</span>
+                    <span class="contentEnglish" id="textEN">Share something with everyone</span>
+                </div>
+            </div>
+            <div id="posts-container"></div>
+            <button id="show-more">
+                <span class="contentVN">Xem thêm 5 bài viết cũ hơn</span>
+                <span class="contentEnglish">Load 5 older posts</span>
+            </button>
+        </div>
         <!-- Giới thiệu về HNUE -->
         <div id="HNUE-introduction">
             <button class="close-div" onclick="hideHNUEIntroductionDiv()"></button>
@@ -776,6 +700,7 @@
 
         
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
 
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>

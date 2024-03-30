@@ -77,15 +77,35 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const sidebar = document.querySelector('.sidebar2');
+  const sidebar = document.querySelector('.sidebar');
   const btn = document.getElementById('open-menu');
+  const mobileToolbar = document.getElementById('mobile-toolbar');
   const homeContent = document.getElementById('main-content');
+  const appName = document.getElementById('app-name');
+  // Hàm xử lý khi click ra ngoài sidebar
+  function handleClickOutside(event) {
+      if (!sidebar.contains(event.target) && event.target !== btn && event.target !== mobileToolbar && event.target !== appName) {
+          sidebar.classList.remove('show');
+          homeContent.classList.remove('show');
+          removeDarken();
+      }
+  }
 
+  // Sự kiện click ngoài sidebar
+  document.addEventListener('click', handleClickOutside);
+
+  // Sự kiện khi click vào button mở sidebar
   btn.addEventListener('click', function () {
       sidebar.classList.toggle('show');
       homeContent.classList.toggle('show');
+      homeContent.classList.toggle('darkFilter');
   });
 });
+
+function removeDarken() {
+  const homeContent = document.getElementById('main-content');
+  homeContent.classList.remove('darkFilter');
+}
 
 // Lưu trữ cài đặt ngôn ngữ hiện tại
 let isEnglish = false;
@@ -235,7 +255,7 @@ var openSearchMenu = document.getElementById('open-search-menu');
 
 function toggleHide() {
   directionBoard.classList.toggle('hide');
-  
+  hideSocialNetworkDiv();
   if (directionBoard.classList.contains('hide')) {
     openSearchMenu.src = 'source-img/magnifying-glass-solid.svg';
     directionArrow.src = 'source-img/Icon ionic-md-arrow-dropdown.svg';
@@ -317,12 +337,17 @@ function hideSidebar() {
   homeContent.classList.remove('show');
 }
 
-function hideSidebarMobile() {
-  const sidebar = document.querySelector('.sidebar2');
-  const homeContent = document.getElementById('main-content');
-
-  sidebar.classList.remove('show');
-  homeContent.classList.remove('show');
+function toggleNotificationDiv() {
+  var notificationDiv = document.getElementById("notification-div");
+  var computedStyle = window.getComputedStyle(notificationDiv);
+  var socialNetworkDiv = document.getElementById("social-network-div");
+  if (computedStyle.display === "none") {
+    notificationDiv.style.display = "block";
+    socialNetworkDiv.classList.add('darkFilter');
+  } else {
+    notificationDiv.style.display = "none";
+    socialNetworkDiv.classList.remove('darkFilter');
+  }
 }
 
 
@@ -335,8 +360,9 @@ function toggleSupportDiv() {
   } else {
     supportDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
@@ -346,15 +372,18 @@ function toggleSupportDiv() {
 
 function toggleSocialNetworkDiv() {
   var socialDiv = document.getElementById("social-network-div");
+  var socialToolbar = document.getElementById("social-network-toolbar");
   var computedStyle = window.getComputedStyle(socialDiv);
 
   if (computedStyle.display === "none") {
     socialDiv.style.display = "block";
+    socialToolbar.style.display = "block";
   } else {
     socialDiv.style.display = "none";
+    socialToolbar.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
@@ -371,8 +400,9 @@ function toggleHNUEIntroductionDiv() {
   } else {
     HNUEIntrductionDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideSocialNetworkDiv();
@@ -389,8 +419,9 @@ function toggleProductIntroductionDiv() {
   } else {
     ProductIntrductionDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideInfomationPagesDiv();
   hideHNUEIntroductionDiv();
   hideSocialNetworkDiv();
@@ -407,8 +438,9 @@ function toggleInfomationPagesDiv() {
   } else {
     InfomationPagesDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
   hideSocialNetworkDiv();
@@ -425,8 +457,9 @@ function toggleDonateDiv() {
   } else {
     donateDiv.style.display = "none";
   }
+  removeDarken();
   hideSidebar();
-  hideSidebarMobile();
+  
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
@@ -451,7 +484,9 @@ function hideHNUEIntroductionDiv() {
 
 function hideSocialNetworkDiv() {
   var socialDiv = document.getElementById("social-network-div");
+  var socialToolbar = document.getElementById("social-network-toolbar");
   socialDiv.style.display = "none";
+  socialToolbar.style.display = "none";
 }
 
 function hideSupportDiv() {
@@ -872,5 +907,52 @@ function confirmRedirect() {
   if (answer) {
     hideSidebar();
     window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
+  }
+}
+
+
+
+function toggleEmojiMenu(postId) {
+  const input = $(`#comment-input-${postId}`);
+
+  if (input.length === 0) {
+      console.error("Input element not found");
+      return;
+  }
+
+  input.emojioneArea({
+      pickerPosition: "top",
+      tones: false,
+      autocomplete: false,
+      events: {
+          keyup: function (editor, event) {
+              if (event.which === 13 && !event.shiftKey) {
+                  event.preventDefault();
+              }
+          },
+          focus: function (editor) {
+              input.css('width', '150px'); 
+          }
+      }
+  });
+
+  const emojioneArea = input.data("emojioneArea");
+  if (emojioneArea) {
+      emojioneArea.setFocus(); 
+  } else {
+      console.error("emojioneArea not initialized");
+  }
+}
+
+
+
+
+function clearInput2(postId) {
+  const input = $(`#comment-input-${postId}`);
+  const emojioneArea = input.data("emojioneArea");
+  if (emojioneArea) {
+      emojioneArea.setText('');
+  } else {
+      console.error("emojioneArea not initialized");
   }
 }
