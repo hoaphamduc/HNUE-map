@@ -803,8 +803,12 @@ async function addComment(e) {
           // Lấy thông tin của bài viết để lưu vào thông báo
           const postOwnerUID = await getPostOwnerUID(postId);
           const saveNotificationText = "Người dùng " + userName + " đã bình luận: " + newCommentText + ".";
-          saveNotificationToDatabase(postOwnerUID, uid, postId, saveNotificationText, user.photoURL);
-
+          
+          // Kiểm tra nếu uid không bằng postOwnerUID thì lưu thông báo
+          if (uid !== postOwnerUID) {
+            saveNotificationToDatabase(postOwnerUID, uid, postId, saveNotificationText, user.photoURL);
+        }
+          
           inputElement.value = '';
       } else {
           var contentEnglish = document.querySelector('.contentEnglish');
