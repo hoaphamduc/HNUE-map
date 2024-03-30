@@ -802,7 +802,7 @@ async function addComment(e) {
 
           // Lấy thông tin của bài viết để lưu vào thông báo
           const postOwnerUID = await getPostOwnerUID(postId);
-          const saveNotificationText = "Người dùng " + userName + " đã bình luận: " + newCommentText + ".";
+          const saveNotificationText = userName + " đã bình luận: " + newCommentText + " ở bài viết của bạn.";
           
           // Kiểm tra nếu uid không bằng postOwnerUID thì lưu thông báo
           if (uid !== postOwnerUID) {
