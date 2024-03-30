@@ -41,6 +41,10 @@
     background-color: transparent;
 }
 
+.darkFilter {
+    filter: brightness(0.5);
+}
+
 @media (max-width: 769px){
     .sidebar {
         width: 0px;
@@ -54,7 +58,7 @@
         top: 50px;
         width: 100%;
         left: 0;
-        transition: ease-in-out 1s;
+        transition: ease-in-out 0.3s;
         background-color: #f8fafb;
         z-index: 1;
         padding: 0;
@@ -92,9 +96,6 @@
     }
     #directionArrow {
         display: none;
-    }
-    .darkFilter {
-        filter: brightness(0.5);
     }
     .sidebar.show + .main-content {
         width: 100%;
@@ -152,5 +153,18 @@
     }
     .emojionearea .emojionearea-button.active+.emojionearea-picker-position-top {
         margin-right: -40px;
+    }
+}
+
+@media (max-width: 400px){
+    #notification-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50px;
+        background-color: #fff;
+        z-index: 1000000000;
+        border-radius: 0;
+        border: 1px solid #e4e6e9;
     }
 }

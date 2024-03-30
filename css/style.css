@@ -16,7 +16,7 @@ body, html {
   height: 100%;
   width: calc(100% - 50px);
   left: 50px;
-  transition: ease-in-out 1s;
+  transition: ease-in-out 0.3s;
   background-color: #f8fafb;
   z-index: 1;
   padding: 0;
@@ -370,7 +370,6 @@ body, html {
   background-color: #fff;
   top: 0.2%;
   left: 0.2%;
-  overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
   overflow: auto;
 }
@@ -413,16 +412,16 @@ body, html {
 
 .close-div {
   position: absolute;
-  background: url(../source-img/close.svg);
+  background: url(../source-img/logout.png);
   background-size: contain;  
   background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
 }
 
 #close-social-network-div {
@@ -451,7 +450,7 @@ body, html {
   background-color: #fff;
   cursor: pointer;
   top: 10px;
-  left: 10px;
+  right: 55px;
   z-index: 1000;
 }
 
@@ -605,6 +604,56 @@ body, html {
   border: 1px solid #e4e6e9;
 }
 
+#notification-div {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  top: 50px;
+  right: 0px;
+  display: none;
+  background-color: #fff;
+  z-index: 1000000000;
+  border: 1px solid #e4e6e9;
+  border-radius: 0 0 0 15px;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#notification-div::-webkit-scrollbar {
+  display: none;
+}
+
+.notification {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e6e9;
+  display: block;
+  position: relative;
+}
+
+.notification-img {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.notification-text {
+  font-size: 13px;
+  background-color: #fff;
+  width: calc(100% - 55px);
+  height: 40px;
+  left: 50px;
+  top: 5px;
+  position: absolute;
+  overflow: hidden;
+}
+
 #userProfilePicture3 {
   width: 40px; 
   border: none; 
@@ -612,7 +661,7 @@ body, html {
   height: 40px; 
   position: absolute; 
   top: 5px; 
-  left: 50px;
+  left: 5px;
 }
 
 #userName3 {
@@ -624,7 +673,7 @@ body, html {
   position: absolute; 
   cursor: default; 
   top: 5px; 
-  left: 100px;
+  left: 55px;
   z-index: 100;
 }
 
@@ -637,7 +686,7 @@ body, html {
   position: absolute; 
   cursor: default; 
   bottom: 5px; 
-  left: 100px;
+  left: 55px;
   z-index: 100;
 }
 

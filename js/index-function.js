@@ -337,6 +337,20 @@ function hideSidebar() {
   homeContent.classList.remove('show');
 }
 
+function toggleNotificationDiv() {
+  var notificationDiv = document.getElementById("notification-div");
+  var computedStyle = window.getComputedStyle(notificationDiv);
+  var socialNetworkDiv = document.getElementById("social-network-div");
+  if (computedStyle.display === "none") {
+    notificationDiv.style.display = "block";
+    socialNetworkDiv.classList.add('darkFilter');
+  } else {
+    notificationDiv.style.display = "none";
+    socialNetworkDiv.classList.remove('darkFilter');
+  }
+}
+
+
 function toggleSupportDiv() {
   var supportDiv = document.getElementById("support-div");
   var computedStyle = window.getComputedStyle(supportDiv);
