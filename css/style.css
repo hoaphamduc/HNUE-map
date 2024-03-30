@@ -1050,13 +1050,15 @@ body, html {
   z-index: 100000;
 }
 
-.comment-input {
+.comment-input, .emojionearea, .emojionearea.form-control, .mojionearea-inline {
   width: calc(100% - 57px);
-  position: absolute;
+  position: absolute !important;
   height: 36px;
   left: 7px;
   bottom: 7px;
+  font-size: 15px;
   border-radius: 15px;
+  line-height: 0;
   padding-left: 10px;
   border: 1.5px solid #65676b;
 }
@@ -1159,7 +1161,7 @@ body, html {
   height: 17px;
   border-radius: 50%;
   margin-left: 5px;
-  margin-bottom: 0;
+  margin-bottom: 2px;
 }
 
 .delete-post {

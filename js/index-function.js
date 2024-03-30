@@ -255,7 +255,7 @@ var openSearchMenu = document.getElementById('open-search-menu');
 
 function toggleHide() {
   directionBoard.classList.toggle('hide');
-  
+  hideSocialNetworkDiv();
   if (directionBoard.classList.contains('hide')) {
     openSearchMenu.src = 'source-img/magnifying-glass-solid.svg';
     directionArrow.src = 'source-img/Icon ionic-md-arrow-dropdown.svg';
@@ -889,5 +889,48 @@ function confirmRedirect() {
   if (answer) {
     hideSidebar();
     window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
+  }
+}
+
+
+
+function toggleEmojiMenu(postId) {
+  const input = $(`#comment-input-${postId}`);
+
+  if (input.length === 0) {
+      console.error("Input element not found");
+      return;
+  }
+
+  input.emojioneArea({
+      pickerPosition: "top",
+      tones: false,
+      autocomplete: false,
+      events: {
+          keyup: function (editor, event) {
+              if (event.which === 13 && !event.shiftKey) {
+                  event.preventDefault();
+              }
+          }
+      }
+  });
+
+  const emojioneArea = input.data("emojioneArea");
+  if (emojioneArea) {
+      emojioneArea.setFocus(); 
+  } else {
+      console.error("emojioneArea not initialized");
+  }
+}
+
+
+
+function clearInput2(postId) {
+  const input = $(`#comment-input-${postId}`);
+  const emojioneArea = input.data("emojioneArea");
+  if (emojioneArea) {
+      emojioneArea.setText('');
+  } else {
+      console.error("emojioneArea not initialized");
   }
 }

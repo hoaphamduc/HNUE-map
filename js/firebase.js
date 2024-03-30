@@ -378,6 +378,9 @@ function extractCoordinates(location) {
   }
 }
 
+
+
+
 // Biến để lưu số lượng bài đăng đã tải, khai báo ở phạm vi toàn cục
 let loadedPostsCount = 0;
 
@@ -416,7 +419,7 @@ async function loadPosts() {
 
         // Lấy tọa độ từ thuộc tính "location"
         const coordinates = extractCoordinates(post.location);
-
+        
         // Điền dữ liệu bài đăng vào các phần tử HTML
         postDiv.innerHTML = `
           <img class="post-userProfilePicture" src="${post.avatarURL}" alt="Profile Picture">
@@ -467,8 +470,8 @@ async function loadPosts() {
             <div class="comment-container" id="comment-container-${post.postId}">
             </div>
             <div style="position: absolute; width: 100%; height: 1px; background-color: #e5e5e5; bottom: 50px;"></div>
-            <input type="text" placeholder="Để lại bình luận của bạn..." class="comment-input" id="comment-input-${post.postId}">
-            <button class="comment-button addComment" data='${post.postId}'" data-bs-toggle="tooltip" title="Gửi bình luận"></button>
+            <input type="text" placeholder="Để lại bình luận của bạn..." class="comment-input" id="comment-input-${post.postId}" onclick="toggleEmojiMenu('${post.postId}')">
+            <button class="comment-button addComment" data='${post.postId}' data-bs-toggle="tooltip" title="Gửi bình luận"></button>
           </div>
         `;
         // Lấy nút like-post
@@ -526,6 +529,7 @@ async function loadPosts() {
         });
 
       }
+      
       const user = auth.currentUser;
       const uid = user.uid;
 
@@ -705,9 +709,9 @@ async function deletePost(postId) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  loadPosts(true);
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//   loadPosts(true);
+// });
 
 function updateCommentCount(postId) {
   const commentsRef = ref(firebase, `comments/${postId}`);
@@ -765,7 +769,6 @@ async function addComment(e) {
 
         alert(alertMessage);
       } else {
-        // Kiểm tra từ không phù hợp trong nội dung comment
         const inappropriateWordsFound = findInappropriateWords(newCommentText, inappropriateWords);
 
         if (inappropriateWordsFound.length > 0) {
@@ -782,13 +785,10 @@ async function addComment(e) {
           timestamp: currentTime
         };
 
-        // Lưu dữ liệu bình luận vào cơ sở dữ liệu
         saveCommentToDatabase(postId, commentData);
-
-        // Cập nhật thời gian bình luận cuối cùng của người dùng
+        clearInput2(postId);
         await set(lastCommentRef, { timestamp: currentTime });
 
-        // Clear the input field after saving the comment
         inputElement.value = '';
       }
     } else {
@@ -818,7 +818,6 @@ function saveCommentToDatabase(postId, commentData) {
 
   push(commentsRef, commentData)
     .then(() => {
-      console.log('Comment added successfully');
     })
     .catch((error) => {
       console.error('Error adding comment:', error);
@@ -827,7 +826,6 @@ function saveCommentToDatabase(postId, commentData) {
 
 
 function getCommentsForPost(postId) {
-  console.log('getCommentsForPost called for postId:', postId);
 
   const commentsRef = ref(firebase, `comments/${postId}`);
   const commentContainer = document.getElementById('comment-container-' + postId);
@@ -909,4 +907,3 @@ function formatTime(timestamp) {
 
   return `${hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds} ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 }
-
