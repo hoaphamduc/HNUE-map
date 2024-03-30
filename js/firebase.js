@@ -46,12 +46,13 @@ function updateUserProfile(user) {
 
   document.getElementById("userName").innerHTML = userNameHTML;
   document.getElementById("userName2").innerHTML = userNameHTML;
-
+  document.getElementById("userName3").innerHTML = userNameHTML;
   document.getElementById("userEmail").textContent = userEmail;
-
+  document.getElementById("userEmail2").textContent = userEmail;
   document.getElementById("userProfilePicture").src = userProfilePicture;
   document.getElementById("userProfilePicture1").src = userProfilePicture;
   document.getElementById("userProfilePicture2").src = userProfilePicture;
+  document.getElementById("userProfilePicture3").src = userProfilePicture;
 }
 
 onAuthStateChanged(auth, (user) => {
@@ -78,10 +79,13 @@ function logout() {
 function clearUserProfile() {
   document.getElementById("userName").textContent = "";
   document.getElementById("userName2").textContent = "";
+  document.getElementById("userName3").textContent = "";
   document.getElementById("userEmail").textContent = "";
+  document.getElementById("userEmail2").textContent = "";
   document.getElementById("userProfilePicture").src = "source-img/grey-img.jpg";
   document.getElementById("userProfilePicture1").src = "source-img/grey-img.jpg";
   document.getElementById("userProfilePicture2").src = "source-img/grey-img.jpg";
+  document.getElementById("userProfilePicture3").src = "source-img/grey-img.jpg";
 }
 
 // Mảng chứa các từ ngữ cấm
@@ -709,9 +713,9 @@ async function deletePost(postId) {
   }
 }
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   loadPosts(true);
-// });
+document.addEventListener('DOMContentLoaded', () => {
+  loadPosts(true);
+});
 
 function updateCommentCount(postId) {
   const commentsRef = ref(firebase, `comments/${postId}`);

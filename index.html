@@ -172,11 +172,16 @@
         <span id="app-name">HNUE map</span>
         <img id="open-search-menu" onclick="toggleHide()" src="source-img/magnifying-glass-solid.svg">
     </div>
-
+    <div id="social-network-toolbar">
+        <button id="close-social-network-div" onclick="hideSocialNetworkDiv()" data-bs-toggle="tooltip" title="Rời khỏi mạng xã hội"></button>
+        <img id="userProfilePicture3" src="source-img/grey-img.jpg" alt="Profile Picture">
+        <span id="userName3"></span>
+        <span id="userEmail2"></span>
+        <button id="toolbar-notification"></button>
+    </div>
     <div class="main-content" id="main-content">
         <div id="map"></div>
         <div id="social-network-div">
-            <button class="close-div" onclick="hideSocialNetworkDiv()"></button>
             <div id="post-div">
                 <img id="userProfilePicture1" src="source-img/grey-img.jpg" alt="Profile Picture">
                 <div id="openEnterDiv" class="post-btn" onclick="openEnterPostDiv()">

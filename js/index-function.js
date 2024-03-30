@@ -358,16 +358,18 @@ function toggleSupportDiv() {
 
 function toggleSocialNetworkDiv() {
   var socialDiv = document.getElementById("social-network-div");
+  var socialToolbar = document.getElementById("social-network-toolbar");
   var computedStyle = window.getComputedStyle(socialDiv);
 
   if (computedStyle.display === "none") {
     socialDiv.style.display = "block";
+    socialToolbar.style.display = "block";
   } else {
     socialDiv.style.display = "none";
+    socialToolbar.style.display = "none";
   }
   removeDarken();
   hideSidebar();
-  
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
@@ -468,7 +470,9 @@ function hideHNUEIntroductionDiv() {
 
 function hideSocialNetworkDiv() {
   var socialDiv = document.getElementById("social-network-div");
+  var socialToolbar = document.getElementById("social-network-toolbar");
   socialDiv.style.display = "none";
+  socialToolbar.style.display = "none";
 }
 
 function hideSupportDiv() {
@@ -911,6 +915,9 @@ function toggleEmojiMenu(postId) {
               if (event.which === 13 && !event.shiftKey) {
                   event.preventDefault();
               }
+          },
+          focus: function (editor) {
+              input.css('width', '150px'); 
           }
       }
   });
@@ -922,6 +929,7 @@ function toggleEmojiMenu(postId) {
       console.error("emojioneArea not initialized");
   }
 }
+
 
 
 
