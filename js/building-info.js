@@ -1866,13 +1866,13 @@ function createInfoDiv(buildingKey) {
   toolbar.className = 'toolbar';
   toolbar.innerHTML = `
       <button class="direct-btn" onclick="initRoutingControl('${buildingKey}')"></button>
-      <span class="tim-duong contentVN">Chỉ đường: </span>
-      <span class="tim-duong contentEnglish">Directions: </span>
+      <span class="tim-duong contentVN">Chỉ đường</span>
+      <span class="tim-duong contentEnglish">Directions</span>
       <button class="direct-btn-ggm" onclick="openGoogleMaps('${buildingKey}')"></button>
-      <span class="tim-duong-ggm contentVN">Chỉ đường bằng Google Maps: </span>
-      <span class="tim-duong-ggm contentEnglish">Directions using Google Maps: </span>
-      <span class="dong-gop contentVN">Đóng góp ý kiến của bạn: </span>
-      <span class="dong-gop contentEnglish">Give us your feedback: </span>
+      <span class="tim-duong-ggm contentVN">Chỉ đường bằng Google Maps</span>
+      <span class="tim-duong-ggm contentEnglish">Directions using Google Maps</span>
+      <span class="dong-gop contentVN">Đóng góp ý kiến của bạn</span>
+      <span class="dong-gop contentEnglish">Give us your feedback</span>
       <img class="send-feedback" src="source-img/mail.svg" onclick="composeEmail()">
       <button class="close" id="close${building.infoDivId}"></button>`;
 

@@ -6,6 +6,8 @@ const auth = getAuth(app);
 auth.languageCode = 'en'
 const provider = new GoogleAuthProvider();
 const googleLogin =  document.getElementById("google-login-btn");
+const loginWithGoogle =  document.getElementById("login-with-google");
+
 googleLogin.addEventListener("click", function(){
     signInWithPopup(auth, provider)
     .then((result) => {
@@ -21,3 +23,17 @@ googleLogin.addEventListener("click", function(){
     });
 })
 
+loginWithGoogle.addEventListener("click", function(){
+    signInWithPopup(auth, provider)
+    .then((result) => {
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const user = result.user;
+        console.log(user);
+        window.location.href = "../index.html";
+    }).catch((error) => {
+        const errorCode = error.code;
+        console.log(errorCode);
+        const errorMessage = error.message;
+        console.log(errorMessage);
+    });
+})

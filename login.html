@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/sidebar.css"/>
     <link rel="stylesheet" href="css/mobile-UI.css"/>
     <link rel="stylesheet" href="css/routing-machine.css">
+    <link rel="stylesheet" href="css/slide.css">
     <link rel="icon" type="image/png" href="source-img/Logo Đại học Sư phạm Hà Nội - HNUE.png">
 </head>
 
@@ -251,10 +252,46 @@
         
         <!-- Mạng xã hội -->
 
-        <div id="social-network-div">
+        <div id="social-network-div-unlogin">
             <button class="close-div" onclick="hideSocialNetworkDiv()"></button>
             <center><span class="contentVN" style="font-size: 20px; font-weight: 600; cursor: default; margin-top: 30px;">Hãy đăng nhập để sử dụng mạng xã hội HNUE</span></center>
             <center><span class="contentEnglish" style="font-size: 20px; font-weight: 600; cursor: default; margin-top: 30px;">Please login to use HNUE social network</span></center>
+            <button id="login-with-google">
+                Log in with Google
+                <img src="source-img/Google__G__logo.svg" style="margin-left: 10px;">
+            </button>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="source-img/slide/mxh1.png" style="width:100%">
+                  <div class="text">
+                    <span class="contentVN">Chia sẻ với mọi người</span>
+                    <span class="contentEnglish">Share with everyone</span>
+                </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="source-img/slide/mxh2.png" style="width:100%">
+                  <div class="text">
+                    <span class="contentVN">Xem thế giới đang làm gì</span>
+                    <span class="contentEnglish">See what the world is doing</span>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="source-img/slide/mxh3.png" style="width:100%">
+                  <div class="text">
+                    <span class="contentVN">Tương tác với cộng đồng</span>
+                    <span class="contentEnglish">Interact with the community</span>
+                  </div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
         </div>
 
         <!-- Hộp thông báo -->
