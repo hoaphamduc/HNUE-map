@@ -116,11 +116,38 @@ body, html {
   color: #000;
 }
 
+.button-support {
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  transition: ease-in-out 0.3s;
+}
+
+.button-support:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 16px 0px #2185D0;
+}
+
+.support-img {
+  width: 80%;
+  height: 80%;
+}
+
+.support-text {
+  display: block;
+  font-size: 20px;
+}
+
 .main-content #map {
     height: 100%;
     position: relative;
     z-index: 1;
-    cursor: default;
 }
 
 .main-content .button-box {
@@ -401,16 +428,15 @@ body, html {
 
 #HNUE-introduction, #product-introduction, #infomation-pages, #donate-div, #support-div {
   position: absolute;
-  width: 99.6%;
-  height: 99.6%;
+  width: 100%;
+  height: 100%;
   z-index: 100000; 
   display: none;
   padding: 15px;
-  border-radius: 8px;
   border: 1px solid #ccc;
-  background-color: #fff;
-  top: 0.2%;
-  left: 0.2%;
+  background-color: #f0f2f5;
+  top: 0;
+  left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
   overflow: auto;
 }
