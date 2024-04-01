@@ -16,7 +16,6 @@
 //   }
 // });
 
-
 // // Chặn việc mở DevTools bằng chuột phải
 // window.addEventListener('contextmenu', function (event) { 
 //   event.preventDefault();
