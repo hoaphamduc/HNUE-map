@@ -42,7 +42,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.03945579822238,
     "longitude": 105.7852989435196,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fnha%20A2.jpg?alt=media&token=5fd4e539-1a20-44b8-81bf-2e384205b530']
   },
   "nhaA3": {
     "polygon": [
@@ -74,7 +74,7 @@ var buildingData = {
               Website: <a href=\"https://bio.hnue.edu.vn/\" target=\"_blank\">bio.hnue.edu.vn</a>",
     "latitude": 21.039801266375314,
     "longitude": 105.78532040119173,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fnha%20A3.jpg?alt=media&token=603d4bce-79c4-448e-a061-e05fbbeb7767']
   },
   "nhaA4": {
     "polygon": [
@@ -118,7 +118,7 @@ var buildingData = {
               Fanpage: <a href=\"https://www.facebook.com/tuyensinhkhoahochocdhsphn\" target=\"_blank\">Facebook</a>",
     "latitude": 21.040267185120243,
     "longitude": 105.78533187197176,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fnha%20A4.jpg?alt=media&token=5b2accb3-c074-46d0-aedd-a3c11d2723bc']
   },
   "nhaB1": {
     "polygon": [
@@ -559,7 +559,7 @@ var buildingData = {
               Fanpage: <a href=\"https://www.facebook.com/mamnonbupsenxanh/\" target=\"_blank\">Facebook</a><br><br>",
     "latitude": 21.039126286970678,
     "longitude": 105.7832668617139,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fnha%20K2.jpg?alt=media&token=98770544-c295-4271-9d03-f8335e8cbecc']
   },
   "nhaK3": {
     "polygon": [
@@ -851,7 +851,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.04025667948982,
     "longitude": 105.78429755527353,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fsdn.jpg?alt=media&token=1ed20e1c-0229-4bb1-aa68-e7dec11d9291']
   },
   "CTC": {
     "polygon": [
@@ -1020,7 +1020,10 @@ var buildingData = {
               - It is a place for promoting health, developing a sports spirit, and enhancing unity among students.",
     "latitude": 21.040301318576297,
     "longitude": 105.78517080395068,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fsvd1.jpg?alt=media&token=a7eff48a-921e-4e09-bcf4-b439b6673e74',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fsvd2.jpg?alt=media&token=a369c1ef-0f90-49c2-91e0-ccc89b497328',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fsvd3.jpg?alt=media&token=7b66d7b9-fdab-4bc9-9336-03a05b4fdd68'
+                    ]
   },
   "ktxA6": {
     "polygon": [
@@ -1517,6 +1520,49 @@ var buildingData = {
     "longitude": 105.7860904867558,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCK03PTT.jpg?alt=media&token=339bad85-a9cc-430e-b7d3-d5f610d42453']
   },
+  "CK13C12PVD": {
+    "polygon": [
+      [21.04109296247795, 105.78127562999727],
+      [21.040987710666368, 105.78127294778825],
+      [21.040990216662742, 105.78121125698091],
+      [21.041095468472555, 105.78121393918994]
+    ],
+    "infoDivId": "infoDivCK13C12PVD",
+    "nameVN": "Circle K số 13 C12 TT DHNN đường Phạm Văn Đồng, phường Mai Dịch, Cầu Giấy, Hà Nội",
+    "nameEN": "Circle K No. 13 C12 TT DHNN Pham Van Dong Street, Mai Dich Ward, Cau Giay, Hanoi",
+    "infoVN": "<b>Tại Việt Nam</b>, chúng tôi chú trọng vào việc phát triển nhanh chóng trong lĩnh vực kinh doanh chuỗi cửa hàng tiện lợi theo giấy phép nhượng quyền thương hiệu của Circle K Mỹ.\
+              <br>\
+              <b>Circle K</b> tự hào giới thiệu rằng chúng tôi là chuỗi cửa hàng tiện lợi quốc tế đầu tiên tại Việt Nam, \
+              và cửa hàng đầu tiên được khai trương vào 20 tháng 12 năm 2008. \
+              Chúng tôi đã tổ chức Lễ Kỷ Niệm 10 năm hoạt động của Circle K tại Việt Nam trong năm 2018.\
+              <br>\
+              <b>Circle K</b> Việt Nam hiện đã có hơn 400 cửa hàng tại các thành phố lớn như Hà Nội, Hạ Long, Hồ Chí Minh, Vũng Tàu, Cần Thơ, Bình Dương, \
+              Hải Phòng, Long Xuyên, Biên Hòa và sẽ còn tiếp tục phát triển để đáp ứng nhu cầu của khách hàng ở khắp mọi nơi.\
+              <br>\
+              <b>Cam Kết Dịch Vụ</b> của chúng tôi đối với khách hàng được gói gọn trong 4 chữ F (4Fs) (Tươi, Thân Thiện, Nhanh, và Đầy Đủ).\
+              <br>\
+              <b>Tầm Nhìn</b> của chúng tôi là mong muốn trở thành chuỗi cửa hàng tiện lợi được ưa chuộng nhất tại Việt Nam.\
+              <br>\
+              <b>Sứ Mệnh</b> của chúng tôi là mang đến một không gian mua sắm thú vị, thân thiện và đáng tin cậy cho khách hàng với những mặt hàng, dịch vụ, \
+              món ăn phong phú, đa dạng được phục vụ nhanh chóng và niềm nở.",
+    "infoEN": "<b>In Vietnam</b>, we focus on rapid development in the convenience store business under the brand licensing agreement of Circle K USA.\
+              <br>\
+              <b>Circle K</b> proudly introduces itself as the first international convenience store chain in Vietnam, with the first store opening on December 20, 2008.\
+              We celebrated the 10th anniversary of Circle K's operations in Vietnam in 2018.\
+              <br>\
+              <b>Circle K</b> Vietnam currently operates over 400 stores in major cities such as Hanoi, Ha Long, Ho Chi Minh City, Vung Tau, Can Tho, Binh Duong,\
+              Hai Phong, Long Xuyen, Bien Hoa, and continues to expand to meet customer needs everywhere.\
+              <br>\
+              Our <b>Service Commitment</b> to customers is encapsulated in the 4Fs (Fresh, Friendly, Fast, and Full).\
+              <br>\
+              Our <b>Vision</b> is to become the most preferred convenience store chain in Vietnam.\
+              <br>\
+              Our <b>Mission</b> is to provide an enjoyable, friendly, and reliable shopping space for customers with a variety of products, services,\
+              and a quick and cheerful service for diverse and abundant choices.",
+    "latitude": 21.04103281859471,
+    "longitude": 105.78121930360795,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCKPVD.png?alt=media&token=b118288a-e69d-44b9-8c86-86442c20590c']
+  },
   "XD171XT": {
     "polygon": [
       [21.03633621189048, 105.78569054603577],
@@ -1565,6 +1611,41 @@ var buildingData = {
     "latitude": 21.034196074739974,
     "longitude": 105.77983528529914,
     "source-image": []
+  },
+  "NSTT36XT": {
+    "polygon": [
+      [21.036641285450077, 105.78826546669008],
+      [21.036618730822664, 105.78846663236621],
+      [21.036849289075192, 105.78849613666536],
+      [21.036874349733317, 105.78829228878021]
+    ],
+    "infoDivId": "infoDivNSTT36XT",
+    "nameVN": "Nhà sách Tiến Thọ 36 Xuân Thuỷ, phường Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
+    "nameEN": "Tien Tho Bookstore, 36 Xuan Thuy, Dich Vong Hau Ward, Cau Giay District, Hanoi",
+    "infoVN": "&emsp;Nhà sách Tiến Thọ là tổ hợp mua sắm - giải trí với chất lượng tốt nhất. Đây là nơi để độc giả trau dồi văn hóa đọc sách của mình với nhiều dòng sách khác nhau, \
+              đồng thời cũng là nơi để đắm chìm vào không gian nhiều màu sắc, cùng nét văn hóa hiện đại qua gian hàng bày bán đồ lưu niệm, đồ chơi đẹp mắt, bắt kịp xu hướng.<br>\
+              &emsp;Ban đầu chỉ là một tiệm sách cũ mở cửa năm 1997 tại số 612 Đường Láng (Hà Nội), đến năm 2010, thương hiệu Nhà sách Tiến Thọ chính thức ra đời và nhanh chóng mở rộng hình thành 7 cơ sở phân phối, \
+              mục tiêu đến năm 2028 trở thành một chuỗi nhà sách & khu vui chơi lên đến 18-20 cơ sở. Nhà sách Tiến Thọ có tư tưởng luôn luôn đổi mới, nâng cấp theo hướng ngày càng hoàn thiện hơn: Đổi mới về hình \
+              ảnh, thông qua việc tìm tòi và áp dụng những phong cách trang trí mới; Đổi mới về mô hình kinh doanh, quản lý. Luôn tìm kiếm những mô hình, dịch vụ và sản phẩm mới nhằm đem đến cho khách hàng những trải \
+              nghiệm tốt nhất.<br>\
+              &emsp;Nhà sách Tiến Thọ kinh doanh hệ thống độc đáo, mới lạ, thoát khỏi vùng an toàn là nhà sách đơn thuần chỉ bán sách. Khi đến đây, độc giả không chỉ tìm thấy các loại sách cần thiết mà còn được \
+              đắm mình trong khu vui chơi với nhiều những trò chơi mới lạ, không khí vui tươi, cùng các sản phẩm lưu niệm, đồ dùng cá nhân được bày bán như quần áo, gấu bông, giày dép, sản phẩm decor (đặc biệt là vào \
+              những ngày lễ như Noel, Valentine, ngày Tết), Nhà sách chủ yếu kinh doanh các sản phẩm sách thông dụng như sách giáo khoa các cấp học, sách tài liệu ôn thi, truyện tranh, sách văn học, tâm lý - kỹ năng, \
+              sách phụ nữ, sách kinh doanh kinh tế,.. đến từ nhiều nhà xuất bản khác nhau, bên cạnh đó còn kinh doanh thêm một số sản phẩm văn phòng phẩm.",
+    "infoEN": "&emsp;Tien Tho Bookstore is a blend of shopping and entertainment offering top-notch quality. It serves as a place for readers to enrich their reading culture with diverse book \
+              genres while providing a vibrant space infused with modern cultural elements through souvenir stands, appealing toys, and keeping up with trends.<br>\
+              &emsp;Initially starting as a second-hand bookstore in 1997 at 612 Lang Street (Hanoi), by 2010, the Tien Tho Bookstore brand officially emerged and rapidly expanded to establish 7 \
+              distribution outlets. Its goal by 2028 is to evolve into a chain of bookstores & entertainment hubs comprising 18-20 locations. Tien Tho Bookstore embraces a philosophy of constant innovation \
+              and enhancement: rejuvenating its image by exploring and adopting new decoration styles; innovating its business models and management practices. It consistently seeks out new models, services, \
+              and products to offer customers the finest experiences.<br>\
+              &emsp;Tien Tho Bookstore operates a unique and innovative system, breaking away from the conventional bookstore model of solely selling books. Visitors not only find a wide array of essential books \
+              but also immerse themselves in an amusement area featuring novel and exciting games, a lively ambiance, and a selection of souvenir products and personal items for sale such as clothing, teddy \
+              bears, shoes, and decor items (especially during holidays like Christmas, Valentine's Day, and Lunar New Year). The bookstore primarily deals in popular book categories such as textbooks for all \
+              educational levels, exam preparation materials, comics, literature, psychology, skills, women's interest, business, and economics, sourced from various publishers. Additionally, it offers a \
+              selection of office supplies.",
+    "latitude": 21.036633767241334,
+    "longitude": 105.7883593440056,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fnha-sach-tien-tho-tren-duong-xuan-thuy-5803-2817.jpg?alt=media&token=a45619aa-1f80-4a1f-8598-f5d28cf0748e']
   },
   "CVCG": {
     "polygon": [
@@ -1836,7 +1917,42 @@ var buildingData = {
                     'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-1.jpg?tr=dpr-2,w-675', 
                     'https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thu-le-8.jpg?tr=dpr-2,w-675',
                     'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FC%C3%B4ng%20vi%C3%AAn%20th%E1%BB%A7%20l%E1%BB%87%201.jpg?alt=media&token=872f09a6-925f-488f-8f37-74932b84a339',
-                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FC%C3%B4ng%20vi%C3%AAn%20th%E1%BB%A7%20l%E1%BB%87%202.jpg?alt=media&token=2ad5efa0-bca3-46e5-be51-8bbd4e66939b']
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FC%C3%B4ng%20vi%C3%AAn%20th%E1%BB%A7%20l%E1%BB%87%202.jpg?alt=media&token=2ad5efa0-bca3-46e5-be51-8bbd4e66939b'
+                  ]
+  },
+  "ChoXanh": {
+    "polygon": [
+      [21.03665293841021, 105.78593462705614],
+      [21.036647926271478, 105.7860526442528],
+      [21.03904010530394, 105.78615456819536],
+      [21.039045117362193, 105.7860177755356]
+    ],
+    "infoDivId": "infoDivChoXanh",
+    "nameVN": "Chợ nhà xanh",
+    "nameEN": "Nha Xanh market",
+    "infoVN": "Thiên đường mua sắm cho sinh viên (hoặc là không) toạ lạc tại Xuân Thuỷ. Nơi đây có đủ mọi loại quần áo, đồ gia dụng, ... \
+              nói chung là các thứ mà sinh viên cần với mức giá siêu siêu rẻ (nên đừng thử mặc cả vì mặc cả có thể sẽ không vui lắm :>).",
+    "infoEN": "The Student Paradise Shopping Center (or Not) is located at Xuan Thuy. Here, you can find all kinds of clothing, household items, \
+              and generally everything that students need at incredibly low prices (so don't even bother haggling because bargaining might not be too enjoyable :>)",
+    "latitude": 21.037876712182833,
+    "longitude": 105.78599095344545,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fmarket%2Fcho%20xanh.jpg?alt=media&token=14afaed8-44a3-4e65-85ca-06fdfee8f929']
+  },
+  "template": {
+    "polygon": [
+      [, ],
+      [, ],
+      [, ],
+      [, ]
+    ],
+    "infoDivId": "infoDivtemplate",
+    "nameVN": "Meobeo",
+    "nameEN": "Vẫn là Meobeo nhưng mà là tiếng Anh =))",
+    "infoVN": "Thông tin về Meobeo",
+    "infoEN": "Vẫn là thông tin về Meobeo nhưng mà là tiếng Anh",
+    "latitude": 21.0,
+    "longitude": 105.0,
+    "source-image": ['']
   }
 };
 
@@ -1871,7 +1987,7 @@ function createInfoDiv(buildingKey) {
       <button class="direct-btn-ggm" onclick="openGoogleMaps('${buildingKey}')"></button>
       <span class="tim-duong-ggm contentVN">Chỉ đường bằng Google Maps</span>
       <span class="tim-duong-ggm contentEnglish">Directions using Google Maps</span>
-      <span class="dong-gop contentVN">Đóng góp ý kiến của bạn</span>
+      <span class="dong-gop contentVN">Đóng góp ý kiến</span>
       <span class="dong-gop contentEnglish">Give us your feedback</span>
       <img class="send-feedback" src="source-img/mail.svg" onclick="composeEmail()">
       <button class="close" id="close${building.infoDivId}"></button>`;
