@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="css/mobile-UI.css"/>
     <link rel="stylesheet" href="css/routing-machine.css"/>
     <link rel="stylesheet" href="css/other-style.css"/>
+    <link rel="stylesheet" href="css/grid-layout.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script src="https://kit.fontawesome.com/205daebc46.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -314,13 +315,134 @@
         <div id="infomation-pages">
             <button class="close-div" onclick="hideInfomationPagesDiv()"></button>
             <span class="contentVN">
-                <center><span style="font-size: 25px; font-weight: bold;">Các trang thông tin</span></center><br>
-                <b>Trang chủ của trường: </b><a href="https://hnue.edu.vn/">https://hnue.edu.vn/</a><br>
-                <b>Trang tuyển sinh của trường: </b><a href="https://tuyensinh.hnue.edu.vn/">https://tuyensinh.hnue.edu.vn/</a><br>
-                <b>Hệ thống quản lí học tập trực tuyến: </b><a href="https://cst.hnue.edu.vn/">https://cst.hnue.edu.vn/</a><br>
-                <b>Cổng đăng kí học phần: </b><a href="https://tinchi.hnue.edu.vn/">https://tinchi.hnue.edu.vn/</a><br>
-                <b>Cổng thông tin đào tạo: </b><a href="https://dtdh.hnue.edu.vn/">https://dtdh.hnue.edu.vn/</a><br>
-                <b>Cổng thông tin ký túc xá: </b><a href="https://kytucxa.hnue.edu.vn/">https://kytucxa.hnue.edu.vn/</a><br>
+                <div class="contentVN-header"> <b> Thông tin về trường </b></div>
+                <div class="grid-container">
+                    <a href="https://hnue.edu.vn/" class="grid-item">
+                        <div class="grid-item_icon"><i class="fa-solid fa-house fa-2xl" style="color: #000000;"></i>
+                        </div>    
+                        <div class="grid-item_title">Trang chủ</div>
+                    </a>
+                    <a href="https://tuyensinh.hnue.edu.vn/" class="grid-item">
+                        <div class="grid-item_icon"><i class="fa-solid fa-graduation-cap fa-2xl" style="color: #000000;"></i>
+                        </div>    
+                        <div class="grid-item_title">Tuyển sinh</div>
+                    </a>
+                    <a href="https://cst.hnue.edu.vn/" class="grid-item">
+                        <div class="grid-item_icon"><i class="fa-solid fa-calendar fa-2xl" style="color: #000000;"></i>
+                        </div>    
+                        <div class="grid-item_title">Quản lí học tập</div>
+                    </a>
+                    <a href="https://tinchi.hnue.edu.vn/" class="grid-item">
+                        <div class="grid-item_icon"><i class="fa-solid fa-pen-to-square fa-2xl" style="color: #000000;"></i>
+                        </div>    
+                        <div class="grid-item_title">Đăng kí học phần</div>
+                    </a>
+                    <a href="https://dtdh.hnue.edu.vn/" class="grid-item">
+                        <div class="grid-item_icon"><i class="fa-solid fa-newspaper fa-2xl" style="color: #000000;"></i>
+                        </div>    
+                        <div class="grid-item_title">Thông tin đào tạo</div>
+                    </a>
+                    <a href="https://kytucxa.hnue.edu.vn/" class="grid-item">
+                        <div class="grid-item_icon"><i class="fa-solid fa-school fa-2xl" style="color: #000000;"></i>
+                        </div>    
+                        <div class="grid-item_title">Thông tin ký túc xá</div>
+                    </a>
+                </div>
+                <div class="contentVN-header"> <b> Thông tin về CLB </b></div>
+                <div class="grid-container">
+                    <a href="https://www.facebook.com/clbdayhoctinhnguyenhtc" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/dayHoc.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB dạy học tình nguyện</div>
+                    </a>
+                    <a href="https://www.facebook.com/Mausupham" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/mau.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB vận động hiến máu - CLB máu sư phạm</div>
+                    </a>
+                    <a href="https://www.facebook.com/ChalkMediaClub" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/truyenthong.jpg" alt=""></div>    
+                        <div class="grid-item_title">Chalk media club - CLB truyền thông sư phạm</div>
+                    </a>
+                    <a href="https://www.facebook.com/clbnghethuat.hnue" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/ngheThuat.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB nghệ thuật - SAP</div>
+                    </a>
+                    <a href="https://www.facebook.com/kynanghnue" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/kyNang.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB kỹ năng - CTC</div>
+                    </a>
+                    <a href="https://www.facebook.com/clbsachvahanhdongsupham" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/sachVaHanhDong.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB sách và hành động sư phạm - BAP</div>
+                    </a>
+                    <a href="https://www.facebook.com/clbchusupham" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/chuSuPham.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB chữ sư phạm</div>
+                    </a>
+                    <a href="https://www.facebook.com/trietquyendaosp" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/trietQuyenDao.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB triệt quyền đạo</div>
+                    </a>
+                    <a href="https://www.facebook.com/Karate.Hnue" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/karate.png" alt=""></div>    
+                        <div class="grid-item_title">CLB karatedo</div>
+                    </a>
+                    <a href="https://www.facebook.com/vothuathkc" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/voThuat.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB võ thuật</div>
+                    </a>
+                    <a href="https://www.facebook.com/hnueguitarclub" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/guilta.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB guitar</div>
+                    </a>
+                    <a href="https://www.facebook.com/hnuebasketballclub" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/bongRo.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB bóng rổ</div>
+                    </a>
+                    <a href="https://www.facebook.com/clbnusinh.hnue" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/nuSinh.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB nữ sinh sư phạm</div>
+                    </a>
+                    <a href="https://www.facebook.com/HnueEC" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/tiengAnh.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB Tiếng Anh - HEC</div>
+                    </a>
+                    <a href="https://www.facebook.com/hnuegleemusical" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/" alt=""></div>    
+                        <div class="grid-item_title">CLB kịch sân khấu</div>
+                    </a>
+                    <a href="https://www.facebook.com/5udebateclub" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/tranhBien.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB tranh biện - 5U Deabate club</div>
+                    </a>
+                    <a href="https://www.facebook.com/HnueChineseLand" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/tiengTrung.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB Tiếng Trung</div>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100076149285847" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/nvsp.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB nghiệp vụ sư phạm</div>
+                    </a>
+                    <a href="https://www.facebook.com/doithanhnienxungkich/" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/xungKich.jpg" alt=""></div>    
+                        <div class="grid-item_title">Đội thanh niên xung kích</div>
+                    </a>
+                    <a href="https://www.facebook.com/sinhvientuquanktx/" class="grid-item">
+                        <div class="grid-item_icon"></div>    
+                        <div class="grid-item_title">Đội thanh niên tự quản kí túc xá</div>
+                    </a>
+                    <a href="https://www.facebook.com/clbhotrosinhvienktx/" class="grid-item">
+                        <div class="grid-item_icon"><img src="source-img/hoTroSinhVienSuPham.jpg" alt=""></div>    
+                        <div class="grid-item_title">CLB hỗ trợ sinh viên kí túc xá</div>
+                    </a>
+                    <a href="https://www.facebook.com/CLBTruyenthongKTXHNUE/" class="grid-item">
+                        <div class="grid-item_icon"></div>    
+                        <div class="grid-item_title">CLB truyền thông kí túc xá</div>
+                    </a>
+                    <a href="https://www.facebook.com/%20H%E1%BB%97tr%E1%BB%A3CNTTchosinhvi%C3%AAnS%C6%B0Ph%E1%BA%A1m%20" class="grid-item">
+                        <div class="grid-item_icon"></div>    
+                        <div class="grid-item_title">CLB kỹ năng công nghệ thông tin</div>
+                    </a>
+                </div>
             </span>
             <span class="contentEnglish">
                 <center><span style="font-size: 25px; font-weight: bold;">Information Pages</span></center><br>
