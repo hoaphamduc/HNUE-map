@@ -1937,22 +1937,6 @@ var buildingData = {
     "latitude": 21.037876712182833,
     "longitude": 105.78599095344545,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fmarket%2Fcho%20xanh.jpg?alt=media&token=14afaed8-44a3-4e65-85ca-06fdfee8f929']
-  },
-  "template": {
-    "polygon": [
-      [, ],
-      [, ],
-      [, ],
-      [, ]
-    ],
-    "infoDivId": "infoDivtemplate",
-    "nameVN": "Meobeo",
-    "nameEN": "Vẫn là Meobeo nhưng mà là tiếng Anh =))",
-    "infoVN": "Thông tin về Meobeo",
-    "infoEN": "Vẫn là thông tin về Meobeo nhưng mà là tiếng Anh",
-    "latitude": 21.0,
-    "longitude": 105.0,
-    "source-image": ['']
   }
 };
 
