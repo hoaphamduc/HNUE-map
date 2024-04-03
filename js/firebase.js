@@ -69,7 +69,7 @@ onAuthStateChanged(auth, (user) => {
     updateUserProfile(user);
   } else {
     clearUserProfile();
-    window.location.href = "../login.html";
+    window.location.href = "login.html";
   }
 });
 
