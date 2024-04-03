@@ -416,6 +416,8 @@ body, html {
   width: 250px;
   background-color: #fff;
   border-radius: 15px;
+  transition: 0.2s ease-in-out;
+  border: 1px solid #000;
 }
 
 #login-with-google:hover {
@@ -610,7 +612,7 @@ body, html {
   margin-top: 90px;
 }
 
-.infoDiv .building-name {
+.building-name {
   font-size: 15px;
   font-weight: bold;
   text-align: center;
@@ -624,7 +626,7 @@ body, html {
   cursor: default;
 }
 
-.infoDiv .building-info, .teamInfo {
+.building-info, .teamInfo {
   font-size: 13px;
   word-wrap: break-word; 
   margin-top: 10px;
