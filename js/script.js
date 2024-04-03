@@ -538,14 +538,28 @@ function filterItems() {
   console.log(searchText);
   // Lặp qua các phần tử li và ẩn/hiển thị phù hợp
   var listItems = document.querySelectorAll("#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li");
+  var count = 0;
   listItems.forEach(function (item) {
     var textContent = removeVietnameseSigns(item.textContent.toLowerCase().trim());
     if (textContent.indexOf(searchText) !== -1) {
-          item.style.display = "block";
-      } else {
-          item.style.display = "none";
-      }
+      item.style.display = "block";
+      count++;
+    } else {
+      item.style.display = "none";
+    }
   });
+
+  var resultVNSpan = document.getElementById("resultVN");
+  var resultENSpan = document.getElementById("resultEN");
+  if (searchText !== "") {
+    resultVNSpan.innerText = count === 0 ? "Không có kết quả" : count === 1 ? "1 kết quả" : count + " kết quả";
+    resultVNSpan.style.display = "block";
+    resultENSpan.innerText = count === 0 ? "No result" : count === 1 ? "1 result" : count + " results";
+    resultENSpan.style.display = "block";
+  } else {
+    resultVNSpan.style.display = "none";
+    resultENSpan.style.display = "none";
+  }
   checkInput();
 }
 

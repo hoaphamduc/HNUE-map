@@ -343,6 +343,8 @@
                 <img id="clear-input" src="source-img/close.svg" onclick="clearInput()">
             </div>
             <div id="direction-content">
+                <span id="resultVN" class="contentVN"></span>
+                <span id="resultEN" class="contentEnglish"></span>
                 <span class="contentVN redtext">KHU HÀNH CHÍNH</span>
                 <span class="contentEnglish redtext">ADMINISTRATIVE REGION</span>
                 <ul id="admin-area">
@@ -415,8 +417,8 @@
                         <span class="contentEnglish">M1, M2, M3, M4: Nguyen Tat Thanh Lower and Upper Secondary School</span>
                     </li>
                     <li onclick="toggleInfoDiv('nhaN')">
-                        <span class="contentVN">N: Nhà xuất bản Đại học Sư phạm Hà Nội, trung tâm nghiên cứu và sản xuất học liệu</span>
-                        <span class="contentEnglish">N: HNUE Publishing House, Center for Researching and Producing Courseware</span>
+                        <span class="contentVN">N: Nhà xuất bản Đại học Sư phạm Hà Nội, trung tâm nghiên cứu và sản xuất học liệu, trung Tâm Phát Triển Giáo Dục và Công Nghệ Số</span>
+                        <span class="contentEnglish">N: University of Education Publisher, Center for Researching and Producing Courseware, EDC - Center for Education and Digital Technology Development</span>
                     </li>
                     <li onclick="toggleInfoDiv('nhaK1')">
                         <span class="contentVN">K1: Giảng đường, các trung tâm nghiên cứu khoa học công nghệ và quan hệ quốc tế</span>
@@ -597,6 +599,13 @@
                     <li onclick="toggleInfoDiv('ChoXanh')">
                         <span class="contentVN">Chợ Nhà Xanh</span>
                         <span class="contentEnglish">Nha Xanh market</span>
+                    </li>
+                    <!-- Chùa -->
+                    <span class="contentVN redtext">Chùa</span>
+                    <span class="contentEnglish redtext">Pagoda</span>
+                    <li onclick="toggleInfoDiv('ChuaHa')">
+                        <span class="contentVN">Chùa Hà</span>
+                        <span class="contentEnglish">Ha Pagoda</span>
                     </li>
                 </ul>
             </div>

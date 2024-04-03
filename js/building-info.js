@@ -505,10 +505,32 @@ var buildingData = {
       [21.036784651471486, 105.78534476443008]
     ],
     "infoDivId": "infoDivN",
-    "nameVN": "N - NHÀ XUẤT BẢN ĐẠI HỌC SƯ PHẠM, TRUNG TÂM NGHIÊN CỨU VÀ SẢN XUẤT HỌC LIỆU - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "N - UNIVERSITY PUBLISHING HOUSE, RESEARCH AND PRODUCTION CENTER FOR EDUCATIONAL MATERIALS - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "Chưa có thông tin.",
-    "infoEN": "No information.",
+    "nameVN": "N - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "N - HANOI UNIVERSITY OF EDUCATION",
+    "infoVN": "<b>Nhà xuất bản Đại học Sư phạm Hà Nội</b><br>\
+              Tầng 6<br>\
+              Số điện thoại: 02437547735<br>\
+              Email: hanhchinh.nxb@hnue.edu.vn<br>\
+              Website: <a href=\"https://nxbdhsp.edu.vn/trang-chu\" target=\"_blank\">nxbdhsp.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/nxbdhspvn\" target=\"_blank\">Facebook</a><br>\
+              <b>Trung Tâm Phát Triển Giáo Dục và Công Nghệ Số</b><br>\
+              Tầng 4<br>\
+              Số điện thoại: 0337112233<br>\
+              Email: edc@hnue.edu.vn<br>\
+              Website: <a href=\"https://edc.hnue.edu.vn/\" target=\"_blank\">edc.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100072514641529\" target=\"_blank\">Facebook</a>",
+    "infoEN": "<b>University of Education Publisher</b><br>\
+              Floor 6<br>\
+              Phone: 02437547735<br>\
+              Email: hanhchinh.nxb@hnue.edu.vn<br>\
+              Website: <a href=\"https://nxbdhsp.edu.vn/trang-chu\" target=\"_blank\">nxbdhsp.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/nxbdhspvn\" target=\"_blank\">Facebook</a><br>\
+              <b>EDC - Center for Education and Digital Technology Development</b><br>\
+              Floor 4<br>\
+              Phone: 0337112233<br>\
+              Email: edc@hnue.edu.vn<br>\
+              Website: <a href=\"https://edc.hnue.edu.vn/\" target=\"_blank\">edc.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100072514641529\" target=\"_blank\">Facebook</a>",
     "latitude": 21.0367247914678,
     "longitude": 105.78547313729273,
     "source-image": []
@@ -930,6 +952,149 @@ var buildingData = {
     "latitude": 21.038781898211674,
     "longitude": 105.78383495574235,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FCTC.jpg?alt=media&token=8ef7d160-5c09-4b3d-a171-92e9833d5d9c']
+  },
+  "ChuaHa": {
+    "polygon": [
+      [21.03680399074284, 105.79488784074785],
+      [21.036889196989147, 105.79486906528474],
+      [21.03725006996268, 105.7948261499405],
+      [21.03742298795271, 105.79486906528474],
+      [21.037508193844968, 105.79498976469041],
+      [21.037588387581433, 105.79518824815752],
+      [21.037608436008778, 105.79544574022295],
+      [21.03745055457025, 105.79548865556718],
+      [21.03685160600414, 105.79555571079256],
+      [21.036834063541214, 105.7951131463051]
+    ],
+    "infoDivId": "infoDivChuaHa",
+    "nameVN": "Chùa Hà",
+    "nameEN": "Ha Pagoda",
+    "infoVN": "Chùa Hà là địa điểm cầu duyên không còn xa lạ với giới trẻ Hà thành. Không chỉ quen thuộc với những bạn trẻ tới cầu duyên, chùa Hà còn là quần thể chùa chiền đẹp, thu hút nhiều phật tử và du khách ghé thăm.<br>\
+              Giữa Hà thành ồn ào, náo nhiệt, chùa Hà nằm ẩn mình trong 1 con ngõ nhỏ trên đường Cầu Giấy. Ghé thăm ngôi chùa Hà Nội này, bạn có thể dâng hương, xin quẻ cầu may mắn hay gửi niềm ước vọng sớm gặp được một mối duyên lành. Cùng khám phá ngôi chùa khi đi lẻ bóng - khi về có đôi này bạn nhé!<br><br>\
+              <b>1. Giới thiệu về chùa Hà Hà Nội</b><br><br>\
+              Nếu đã đi du lịch Hà Nội, ngoài chùa Một Cột thì du khách cũng đừng bỏ qua chùa Hà. Đây là ngôi chùa linh thiêng với tuổi đời hàng trăm năm lịch sử.<br><br>\
+              1.1. Chùa Hà ở đâu? Các cách di chuyển<br>\
+              <b>Địa chỉ:</b> Phố Chùa Hà, phường Dịch Vọng, quận Cầu Giấy, thành phố Hà Nội<br>\
+              <b>Giờ mở cửa:</b> 8:00 - 18:00 hằng ngày. Vào các ngày rằm, mùng 1 và ngày lễ thì chùa mở cửa sớm hơn và đóng cửa muộn hơn<br>\
+              Du khách có thể ghé thăm chùa Hà bằng xe máy, xe bus hoặc xe ô tô riêng. Nếu đi xe bus, bạn có thể tham khảo những tuyến xe có điểm dừng gần chùa Hà như sau:<br>\
+              <ul>\
+                  <li>Tuyến 07: Cầu Giấy - Nội Bài</li>\
+                  <li>Tuyến 16: Bến xe Mỹ Đình - Bến xe Nước Ngầm</li>\
+                  <li>Tuyến 20A: Cầu Giấy - Bến xe Phùng</li>\
+                  <li>Tuyến 20B: Cầu Giấy - Bến xe Sơn Tây</li>\
+                  <li>Tuyến 26: Mai Động - Sân vận động Quốc gia</li>\
+                  <li>Tuyến 27: Bến xe Yên Nghĩa - Nam Thăng Long</li>\
+                  <li>Tuyến 28: Bến xe Giáp Bát - Đại học Mỏ</li>\
+                  <li>Tuyến 32: Bến xe Giáp Bát - Nhổn</li>\
+                  <li>Tuyến 34: Bến xe Mỹ Đình - Bến xe Gia Lâm</li>\
+                  <li>Tuyến 49: Trần Khánh Dư - KĐT Mỹ Đình II</li>\
+              </ul>\
+              1.2. Lịch sử chùa Hà “khi đi lẻ bóng khi về có đôi”<br>\
+              Chùa Hà có tên chữ là Thánh Đức tự, cùng với đình Bối Hà hợp thành cụm di tích Đình - chùa Hà. Ngôi chùa này thuộc phố Chùa Hà, phường Dịch Vọng, quận Cầu Giấy, thành phố Hà Nội. Trải qua nhiều thăng trầm cùng thời gian, tới nay chùa Hà vẫn giữ được nét đẹp vốn có.<br>\
+              Theo tích xưa, chùa Hà Hà Nội do 1 gia đình làm gốm sứ giàu có quê ở Bối Khê công đức, xây dựng nên. Bên phải ngôi chùa là ngôi đình Hà thờ 2 vị Thành hoàng là Triệu Chí Thành và Chu Lý - các tướng của Triệu Việt Vương. Qua bao năm tháng, ngôi chùa Hà đã trải qua nhiều lần trùng tu, sửa chữa với tầm vóc to đẹp, khang trang như ngày nay.<br>\
+              Không biết từ bao giờ, người dân Hà thành đã coi chùa Hà là nơi cầu duyên linh ứng. Những bạn trẻ chưa vợ, chưa chồng đến chùa để sắp lễ khấn cầu tìm được một nửa yêu thương. Những cặp đôi đang yêu cũng thành kính mong đợi tình duyên luôn êm đẹp, trăm năm hạnh phúc.<br>\
+              Dọc con phố đường vào chùa Hà chỉ bán hoa hồng - loài hoa là biểu tượng của tình yêu. Các cửa hàng lưu niệm quanh chùa cũng bán nhiều vòng nhẫn theo cặp. Vì vậy, đầu năm đến chùa, ngoài việc cầu xin bình an, tài lộc, người ta còn mong cầu cuộc sống lứa đôi thêm yên ấm, hạnh phúc, tình cảm mãi bền chặt không phai.<br><br>\
+              <b>2. Kinh nghiệm đi chùa Hà cầu duyên linh ứng</b><br><br>\
+              Người ta vẫn rỉ tai nhau rằng chùa Hà là nơi khi đi lẻ bóng, khi về có đôi. Chính vì vậy, ngôi chùa này không chỉ là địa điểm tham quan nổi tiếng mà còn thu hút nhiều bạn trẻ tới sắp lễ, dâng hương cầu mong một mối tình trọn vẹn. Để lời nguyện cầu của mình được linh ứng, bạn hãy tham khảo những kinh nghiệm dưới đây:<br><br>\
+              2.1. Đi chùa Hà cần chuẩn bị những gì?<br>\
+              Bạn cần chuẩn bị đầy đủ những lễ vật sau khi đến chùa Hà:<br>\
+              <ul>\
+                  <li>Mâm lễ ban Tam Bảo: Gồm nhang thơm, nến, trái cây, hoa tươi, bánh kẹo và sớ riêng. Ban Tam Bảo không được để đồ mặn hoặc tiền vàng;</li>\
+                  <li>Mâm lễ ban Đức Ông: Gồm tiền vàng, trà thơm, thuốc, rượu, các món mặn như giò, xôi trắng và sớ riêng. Bạn nên chuẩn bị thêm 1 thếp tiền vàng dâng lên Đức Ông;</li>\
+                  <li>Mâm lễ ban thờ Mẫu: Gồm tiền vàng, 5 bông hoa hồng đỏ, trầu cau, tiền lẻ công đức, bánh kẹo và sớ xin duyên.</li>\
+              </ul>\
+              Với các loại sớ, bạn nên nhờ cụ ông ngoài cổng chùa viết sớ giúp.<br><br>\
+              2.2. Cách hành lễ và cầu khấn khi đến chùa Hà<br>\
+              Thứ tự sắp xếp mâm lễ là: Dâng lên ban Tam Bảo và ban Đức Ông tại gian thờ chính trước, sau đó dâng lễ ở điện Mẫu.<br>\
+              Khi dâng lễ, bạn thắp 5 nén hương để khấn ở khu vực hóa vàng (khu châm hương). Thứ tự thắp hương là: 1 nén ở lư hương, 1 nén ở ban thờ Tam Bảo, 1 nén ở ban thờ Đức Ông, 1 nén ở Đức Thánh Hiền, 1 nén ở điện thờ Mẫu. Lưu ý trước khi thắp hương bạn nên khấn 3 vái rồi mới thắp.<br>\
+              Thứ tự khấn lễ như sau: Ban thờ Đức Ông cầu công danh, tài lộc -> ban thờ Tam Bảo cầu bình an đến cho gia đình -> Đức Thánh Hiền. Vái 3 lạy ở ban Đức Hộ Pháp bên trái -> vái 3 lạy ở 2 vị Thập Nhị Diêm Vương 2 bên.<br>\
+              Sau khi dâng hương ở ban thờ chính, bạn đến khu điện thờ Mẫu để cầu duyên. Bạn hãy khấn theo bài văn đã chuẩn bị, có thể ghi sẵn ra giấy, sau đó đến nơi hóa lễ để hóa bài khấn. Tiếp theo, bạn vái 3 lạy ở ban Ngũ Hổ, các Quan Âm Dinh, ban Sử Tổ bên phải và ban Địa Tạng Vương Bồ Tát bên trái. Sau đó, bạn ra cổng chùa vái 2 vị trông cửa chùa 3 lạy.<br>\
+              Sau cùng, bạn lễ tạ các ban thờ trong chùa, vái để xin hóa sớ và tiền vàng.<br><br>\
+              2.3. Một số lưu ý khác<br>\
+              Một số lưu ý bạn cần nhớ khi làm lễ cầu duyên, cầu bình an, may mắn tại chùa Hà:<br>\
+              <ul>\
+                  <li>Khi làm lễ hoặc khấn xin, hãy thành tâm mong cầu gặp được người tâm đầu ý hợp, tài đức, chung thủy, vị tha, thấu hiểu;</li>\
+                  <li>Khi đi lễ ở chùa Hà, bạn nên đi 1 mình, soạn lễ đơn giản, không cần cầu kỳ nhưng phải thành tâm. Hãy mặc trang phục nghiêm túc với áo kín cổ, quần dài khi làm lễ ở chốn linh thiêng;</li>\
+                  <li>Không nói những lời báng bổ tại chùa chiền;</li>\
+                  <li>Tắt chuông điện thoại, không khấn quá to, không làm ồn tại chùa;</li>\
+                  <li>Chọn ngày lành để đi lễ cầu duyên. Đi lễ vào ngày mùng 1 và ngày rằm là tốt nhất nhưng những ngày này chùa Hà rất đông nên cũng hơi khó khăn khi bạn làm lễ;</li>\
+                  <li>Đi lễ cầu duyên ở chùa Hà quan trọng nhất là sự thành tâm. Khi bạn gửi gắm ước nguyện của mình tới những đấng tối cao, các ngài sẽ chứng giám cho lòng thành của bạn, ban may mắn, se duyên cho người đang mong cầu.</li>\
+              </ul>\
+              <b>3. Các lễ hội tại chùa Hà Cầu Giấy Hà Nội</b><br><br>\
+              Chùa Hà đã được Nhà nước xếp hạng di tích lịch sử - văn hóa vào năm 1996. Hiện nay, mỗi năm đình và chùa Hà thường tổ chức các lễ hội gồm:<br>\
+              <ul>\
+                  <li>Ngày 11/1 âm lịch: Kỷ niệm ngày sinh của Thành hoàng Triệu Chí Thành.</li>\
+                  <li>Ngày 12/2 âm lịch: Ngày cầu phúc, mong mưa thuận gió hòa, người khỏe của nhiều cho dân chúng.</li>\
+                  <li>Ngày 12/8 âm lịch: Kỷ niệm ngày hóa của Thành hoàng.</li>\
+              </ul>\
+              <b>Nguồn</b>: Vinpearl",
+    "infoEN": "Ha Pagoda is a familiar place for young people in Hanoi to pray for luck. Not only known for young people coming to pray for luck, Ha Pagoda is also a beautiful temple complex, attracting many Buddhists and tourists to visit.<br>\
+              Amidst the hustle and bustle of Hanoi, Ha Pagoda hides itself in a small alley on Cầu Giấy street. When visiting this Hanoi temple, you can burn incense, ask for fortune, or send your wishes to meet a good fate soon. Let's explore this temple when you're single - and leave with a partner!<br><br>\
+              <b>1. Introduction to Ha Pagoda, Hanoi</b><br><br>\
+              If you've traveled to Hanoi, besides One Pillar Pagoda, don't overlook Ha Pagoda. This is a sacred temple with centuries of history.<br><br>\
+              1.1. Where is Ha Pagoda? Transportation methods<br>\
+              <b>Address:</b> Ha Pagoda Street, Dịch Vọng Ward, Cầu Giấy District, Hanoi City<br>\
+              <b>Opening hours:</b> 8:00 - 18:00 daily. On full moon days, the 1st and holidays, the temple opens earlier and closes later.<br>\
+              Visitors can visit Ha Pagoda by motorbike, bus, or private car. If taking the bus, you can refer to the following bus routes that stop near Ha Pagoda:<br>\
+              <ul>\
+                  <li>Route 07: Cầu Giấy - Nội Bài</li>\
+                  <li>Route 16: Mỹ Đình Bus Station - Nước Ngầm Bus Station</li>\
+                  <li>Route 20A: Cầu Giấy - Phùng Bus Station</li>\
+                  <li>Route 20B: Cầu Giấy - Sơn Tây Bus Station</li>\
+                  <li>Route 26: Mai Động - Quốc gia Stadium</li>\
+                  <li>Route 27: Yên Nghĩa Bus Station - Nam Thăng Long</li>\
+                  <li>Route 28: Giáp Bát Bus Station - Mining University</li>\
+                  <li>Route 32: Giáp Bát Bus Station - Nhổn</li>\
+                  <li>Route 34: Mỹ Đình Bus Station - Gia Lâm Bus Station</li>\
+                  <li>Route 49: Trần Khánh Dư - Mỹ Đình II Urban Area</li>\
+              </ul>\
+              1.2. History of Ha Pagoda \"when going alone, returning with a partner\"<br>\
+              Ha Pagoda, also known as Thánh Đức Tự, together with Bối Hà Temple forms the historical complex of Đình - Ha Pagoda. This temple is located in Ha Pagoda street, Dịch Vọng ward, Cầu Giấy district, Hanoi. Through many ups and downs over time, Ha Pagoda still retains its inherent beauty.<br>\
+              According to legend, Ha Pagoda in Hanoi was built by a wealthy pottery-making family from Bối Khê who had accumulated virtue. To the right of the temple is the Hà Temple, dedicated to two Thành Hoàng (local gods) named Triệu Chí Thành and Chu Lý - generals of Triệu Việt Vương. Over the years, Ha Pagoda has undergone many renovations, maintaining its grandeur and beauty as it is today.<br>\
+              For some time now, the people of Hanoi have considered Ha Pagoda as a place to pray for a favorable fate. Young singles come to the temple to pray for a loving partner. Couples in love also come to pray for a peaceful and happy relationship, lasting for a hundred years.<br>\
+              Along the road to Ha Pagoda, only red roses - the symbol of love - are sold. Souvenir shops around the temple also sell many pairs of rings. Therefore, at the beginning of the year, besides praying for peace and prosperity, people also hope for a warm and lasting love life, with feelings that never fade.<br><br>\
+              <b>2. Tips for visiting Ha Pagoda to pray for a favorable fate</b><br><br>\
+              It is said that Ha Pagoda is a place where you go alone and return with a partner. Therefore, this temple is not only a famous tourist attraction but also attracts many young people to come and pray for a complete love. To make your prayers come true, consider the following tips:<br><br>\
+              2.1. What to prepare for a visit to Ha Pagoda?<br>\
+              You need to prepare the following offerings when visiting Ha Pagoda:<br>\
+              <ul>\
+                  <li>Three Treasure Offerings: Including incense, candles, fruits, fresh flowers, cakes, and personal wishes. The Three Treasure Offerings should not include salty food or gold coins;</li>\
+                  <li>Offerings to Đức Ông: Including gold coins, fragrant tea, medicine, wine, savory dishes such as sausage, and sticky rice, and personal wishes. You should also prepare an additional stack of gold coins to offer to Đức Ông;</li>\
+                  <li>Offerings to Mother: Including gold coins, 5 red roses, betel leaves and areca nuts, small change, cakes, and personal wishes.</li>\
+              </ul>\
+              For the personal wishes, you can ask the elderly outside the temple gates to write them for you.<br><br>\
+              2.2. How to perform rituals and pray at Ha Pagoda<br>\
+              The arrangement of offerings is as follows: Offerings are made to the Three Treasures and to Đức Ông at the main altar first, then offerings are made at the Mother's shrine.<br>\
+              When making offerings, you light 5 incense sticks to offer at the gold-plating area. The order of lighting incense sticks is: 1 stick at the incense burner, 1 stick at the Three Treasures altar, 1 stick at the Đức Ông altar, 1 stick at Đức Thánh Hiền altar, 1 stick at the Mother's shrine. Note that before lighting incense sticks, you should bow three times.<br>\
+              The order of bowing is as follows: Bow 3 times at the Đức Hộ Pháp altar on the left -> bow 3 times at the altars of the Twelve Deities on both sides.<br>\
+              After offering incense at the main altar, you go to the Mother's shrine to pray for fate. You recite the prepared prayer, which you can write down beforehand, then go to the ritual area to burn the prayer. Next, you bow 3 times at the Five Tiger altars, the Avalokitesvara altars, the Sūrya Prabha altars on the right, and the Kṣitigarbha altars on the left. After that, you bow 3 times at the temple gates, where the gatekeepers are watching.<br>\
+              Finally, you pay respects to the other altars in the temple, bowing to request for personal wishes and gold coins.<br><br>\
+              2.3. Other notes<br>\
+              Some things to remember when performing rituals, praying for peace, luck, and fortune at Ha Pagoda:<br>\
+              <ul>\
+                  <li>When performing rituals or praying, sincerely wish to meet a partner who is virtuous, loyal, forgiving, and understanding;</li>\
+                  <li>When visiting Ha Pagoda, go alone, prepare simple offerings, but be sincere. Wear modest clothing with a high collar, long pants when performing rituals in sacred places;</li>\
+                  <li>Avoid speaking arrogantly or disrespectfully in the temple precinct;</li>\
+                  <li>Turn off your phone, avoid making loud noises in the temple;</li>\
+                  <li>Choose an auspicious day to visit the temple. Going on the 1st and full moon days is best, but these days the temple is crowded, which may make it difficult for you to perform rituals;</li>\
+                  <li>When visiting Ha Pagoda to pray for fate, sincerity is the most important thing. When you entrust your wishes to the divine beings, they will witness your sincerity, grant you luck, and bring good fortune to those seeking it.</li>\
+              </ul>\
+              <b>3. Festivals at Ha Pagoda, Cầu Giấy, Hanoi</b><br><br>\
+              Ha Pagoda was classified as a historical-cultural relic by the government in 1996. Nowadays, every year, the Đình and Ha Pagoda temples often organize festivals including:<br>\
+              <ul>\
+                  <li>11th of January in lunar calendar: Commemoration of the birth anniversary of Thành Hoàng Triệu Chí Thành.</li>\
+                  <li>12th of February in lunar calendar: Praying for blessings, wishing for favorable weather and health for the people.</li>\
+                  <li>8th of December in lunar calendar: Commemoration of the transformation day of Thành Hoàng.</li>\
+              </ul>\
+              <b>Source</b>: Vinpearl",
+    "latitude": 21.03703040083297,
+    "longitude": 105.79484760761262,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FChuaHa%2Fchuaha1.jpg?alt=media&token=0655a6fc-6492-40db-94f6-bbd4a14ab6ae',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FChuaHa%2Fchuaha2.jpg?alt=media&token=d004dd41-f94a-47a7-bc7f-2970bba90a06',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FChuaHa%2Fchuaha3.jpg?alt=media&token=dc2fc32c-427a-44fe-ba61-e486db791802',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FChuaHa%2Fchuaha4.jpg?alt=media&token=87218c44-2966-42e4-8bcd-e368eba58a38',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FChuaHa%2Fchuaha5.jpg?alt=media&token=1a940d22-ff1c-4812-bc6c-762830dda72a'
+                    ]
   },
   "ktxA5": {
     "polygon": [
