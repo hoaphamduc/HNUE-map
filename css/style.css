@@ -622,6 +622,20 @@ body, html {
   margin-top: 90px;
 }
 
+.scroll-to-top {
+  width: 50px;
+  height: 50px;
+  background-image: url(/source-img/scroll-to-top.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: block;
+}
+
 .building-name {
   font-size: 15px;
   font-weight: bold;

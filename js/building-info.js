@@ -2155,7 +2155,8 @@ function createInfoDiv(buildingKey) {
       </div>
       <div class="building-images">
             ${building['source-image'].map(image => `<img class="img-demo" src="${image}" onclick="openFullscreen(this)" alt="Building Image">`).join('')}
-      </div>`;
+      </div>
+      <button class="scroll-to-top" onclick="scrollToTop('${building.infoDivId}')"></button>`;
 
   // Chèn các phần tử vào khối div chính
   infoDiv.appendChild(toolbar);
@@ -2181,6 +2182,12 @@ function createInfoDiv(buildingKey) {
       }
   });
   return infoDiv;
+}
+
+function scrollToTop(infoDivId) {
+  var infoDiv = document.getElementById(infoDivId);
+  var toolbar = infoDiv.querySelector('.toolbar'); // Lấy phần toolbar trong khối div
+  toolbar.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Cuộn đến vị trí của toolbar trong khối div
 }
 
 // Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
