@@ -349,9 +349,8 @@ body, html {
 
 .infoDiv {
   position: absolute;
-  width: 30%;
   height: 99%;
-  min-width: 350px;
+  width: 400px;
   z-index: 10001; 
   display: none;
   padding: 15px;
@@ -632,8 +631,15 @@ body, html {
   border: 1px solid #707070;
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  left: 396px;
   display: block;
+  z-index: 99999;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 16px rgba(0, 123, 255, 0.5);
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1);
 }
 
 .building-name {

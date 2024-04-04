@@ -1494,7 +1494,6 @@ var buildingData = {
     "longitude": 105.78466057777405,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FHT1110.jpg?alt=media&token=af0933e1-b419-4c9d-bee2-2d6bda1e740d']
   },
-
   "WM27165": {
     "polygon": [
       [21.035851235744246, 105.78656226396564],
@@ -1546,7 +1545,65 @@ var buildingData = {
     "latitude": 21.035876874492814,
     "longitude": 105.78656762838365,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fwm27165.jpg?alt=media&token=c917f408-4d27-414f-9c7d-142bf469fc52']
-  },  
+  },
+  "WM72TDN": {
+    "polygon": [
+      [21.038023229148543, 105.7939785718918],
+      [21.038023229148543, 105.79409927129748],
+      [21.038083422259184, 105.79416364431383],
+      [21.03812355098612, 105.7941234111786],
+      [21.03831917837506, 105.79432994127275],
+      [21.038517313545558, 105.79411536455156],
+      [21.038517313545558, 105.79395174980165],
+      [21.03828657382806, 105.79371571540833],
+      [21.038105994669408, 105.7939222455025],
+      [21.038090946396316, 105.79390883445741]
+    ],
+    "infoDivId": "infoDivWM72TDN",
+    "nameVN": "WinMart+ số 72 đường Trần Đăng Ninh, phường Dịch Vọng, quận Cầu Giấy, Hà Nội",
+    "nameEN": "WinMart+ No. 72 Tran Dang Ninh Street, Dich Vong Ward, Cau Giay District, Hanoi",
+    "infoVN": "WinMart (tên cũ là Vinmart) là hệ thống siêu thị thuộc tập đoàn Vingroup, Việt Nam. \
+              Hệ thống này khai trương ngày 20 tháng 11 năm 2014. Theo thống kê của Vietnam Report, tính đến tháng 11/2017, \
+              VinMart và chuỗi cửa hàng con VinMart+ nằm top 2 nhà bán lẻ được người tiêu dùng quan tâm nhất và top 4 trên bảng xếp hạng 10 nhà bán lẻ uy tín năm 2017.\
+              <br>\
+              Tháng 5 năm 2019, VinMart có khoảng 111 siêu thị và khoảng hơn 1.800 cửa hàng VinMart+ trên gần 50 tỉnh thành với tổng diện tích mặt bằng kinh doanh hơn 300.000 m²,\
+              số lượng nhân viên khoảng hơn 11.000 người. Đến tháng 8 năm 2019, con số VM và VM+ đã lên đến con số 2.200.\
+              <br>\
+              Các sản phẩm của VinMart bao gồm <b>thực phẩm tươi sống, thực phẩm sơ chế, quần áo, mỹ phẩm, đồ gia dụng, văn phòng phẩm, đồ chơi, v.v</b>.\
+              <br>\
+              Tháng 10/2018, VinGroup mua lại chuỗi 23 siêu thị Fivimart, một thương hiệu đã có hơn 10 năm hoạt động trên thị trường, và sáp nhập vào VinMart. \
+              Sau khi hợp nhất, số lượng siêu thị của Vin là khoảng hơn 100, cùng với hơn 1.400 cửa hàng tiện lợi VinMart+.\
+              <br>\
+              Với cơ cấu tổ chức của VinMart được chia thành các tuyến chức năng, mỗi tuyến là một bộ phận hay đơn vị đảm nhận thực hiện một số chức năng,\
+              nhiệm vụ nào đó của tổ chức. Giám đốc là người có trách nhiệm cao nhất, ban hành các chiến lược và dự án xuống cho các bộ phận. \
+              Các bộ phận nhận công việc từ giám đốc sau đó thực hiện sao cho thực hiện tốt nhất và đem lại lợi ích cao nhất cho công ty. \
+              Cơ cấu tổ chức của VinMart có ưu điểm là thúc đẩy chuyên môn hoá kỹ năng, tạo điều kiện cho mỗi cá nhân phát huy tối đa năng lực của mình. \
+              Nhưng bên cạnh đó cơ cấu tổ chức này còn có những nhược điểm, chỉ có những nhà quản trị cao nhất mới có trách nhiệm về lợi nhuận, \
+              còn những nhà quản trị thấp hơn chỉ có trách nhiệm với bộ phận mà mình quản lý.\
+              <br>\
+              Ngày 15 tháng 1 năm 2022, VinMart và VinMart+ chính thức đổi tên thành WinMart và WinMart+.",
+    "infoEN": "WinMart (formerly known as Vinmart) is a supermarket chain under the Vingroup conglomerate in Vietnam.\
+              The system was inaugurated on November 20, 2014. According to Vietnam Report statistics until November 2017,\
+              VinMart and its subsidiary chain VinMart+ ranked 2nd in the most consumer-focused retail houses and 4th among the top 10 reputable retail houses in 2017.\
+              <br>\
+              In May 2019, VinMart had approximately 111 supermarkets and over 1,800 VinMart+ stores in nearly 50 provinces and cities,\
+              with a total business area of over 300,000 m² and a staff of over 11,000 people. By August 2019, the numbers had increased to 2,200.\
+              <br>\
+              VinMart's products include <b>fresh food, processed food, clothing, cosmetics, household items, office supplies, toys, etc.</b>.\
+              <br>\
+              In October 2018, VinGroup acquired the chain of 23 Fivimart supermarkets, a brand that had been operating for over 10 years,\
+              and merged it into VinMart. After the merger, Vin's total number of supermarkets reached over 100, along with more than 1,400 VinMart+ convenience stores.\
+              <br>\
+              VinMart's organizational structure is divided into functional lines, with each line being a department or unit responsible for specific functions or tasks.\
+              The director is the highest responsible person, issuing strategies and projects to the departments. Departments then carry out their tasks to achieve the best results and bring the highest benefits to the company.\
+              VinMart's organizational structure has the advantage of promoting the specialization of skills, providing conditions for each individual to maximize their potential.\
+              However, it also has disadvantages, as only top-level managers are responsible for profit, while lower-level managers are only responsible for their managed department.\
+              <br>\
+              On January 15, 2022, VinMart and VinMart+ officially changed their names to WinMart and WinMart+.",
+    "latitude": 21.03803426085206,
+    "longitude": 105.79403489828111,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FWinmart%20%2B%2Fwm%20tran%20dang%20ninh.jpg?alt=media&token=13c74c99-0717-4226-a3bb-a23cd49f3933']
+  }, 
   "WM77TQV": {
     "polygon": [
       [21.0346721729676, 105.78491806983949],
@@ -2117,7 +2174,7 @@ for (const buildingId in buildingData) {
   }
 }
 
-// Hàm để tạo và chèn khối div 
+// Hàm để tạo và chèn khối div
 function createInfoDiv(buildingKey) {
   var building = buildingData[buildingKey];
 
@@ -2155,8 +2212,7 @@ function createInfoDiv(buildingKey) {
       </div>
       <div class="building-images">
             ${building['source-image'].map(image => `<img class="img-demo" src="${image}" onclick="openFullscreen(this)" alt="Building Image">`).join('')}
-      </div>
-      <button class="scroll-to-top" onclick="scrollToTop('${building.infoDivId}')"></button>`;
+      </div>`;
 
   // Chèn các phần tử vào khối div chính
   infoDiv.appendChild(toolbar);
@@ -2181,7 +2237,35 @@ function createInfoDiv(buildingKey) {
           infoDiv.style.display = 'none';
       }
   });
-  return infoDiv;
+
+   // Tạo button scroll to top
+   var scrollToTopButton = document.createElement('button');
+   var scrollToTopButtonId = `scroll-to-top-${building.infoDivId}`;
+   scrollToTopButton.id = scrollToTopButtonId;
+   scrollToTopButton.className = 'scroll-to-top';
+   scrollToTopButton.innerHTML = '';
+   scrollToTopButton.onclick = function() {
+       scrollToTop(building.infoDivId);
+   };
+ 
+   // Chèn button scroll to top vào main content
+   var mainContentDiv = document.getElementById('main-content');
+   mainContentDiv.appendChild(scrollToTopButton);
+ 
+  // Ẩn hiện button scroll to top dựa trên trạng thái của infoDiv
+  var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.attributeName === "style") {
+        var displayStyle = window.getComputedStyle(infoDiv).getPropertyValue("display");
+        document.getElementById(scrollToTopButtonId).style.display = displayStyle;
+      }
+    });
+  });
+
+  // Bắt đầu theo dõi thay đổi trong infoDiv
+  observer.observe(infoDiv, { attributes: true });
+ 
+   return infoDiv;
 }
 
 function scrollToTop(infoDivId) {

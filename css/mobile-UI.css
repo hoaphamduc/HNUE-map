@@ -154,6 +154,11 @@
     .emojionearea .emojionearea-button.active+.emojionearea-picker-position-top {
         margin-right: -40px;
     }
+    .scroll-to-top {
+        bottom: 10px;
+        left: auto;
+        right: 10px;
+    }
 }
 
 @media (max-width: 400px){
