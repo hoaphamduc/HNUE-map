@@ -536,8 +536,22 @@ function filterItems() {
     resultVNSpan.style.display = "none";
     resultENSpan.style.display = "none";
   }
+  
+  // Kiểm tra nếu không có kết quả thì hiển thị nút searchByGoogle
+  var searchByGoogleButton = document.getElementById("searchByGoogleVN");
+  if (count === 0) {
+    searchByGoogleButton.style.display = "block";
+    searchByGoogleButton.addEventListener("click", function() {
+      // Mở trang tìm kiếm Google với tham số truyền vào là searchText
+      window.open("https://www.google.com/search?q=" + searchText, "_blank");
+    });
+  } else {
+    searchByGoogleButton.style.display = "none";
+  }
+  
   checkInput();
 }
+
 
 // Hàm kiểm tra khi input có chữ và hiển thị nút clear-input
 function checkInput() {

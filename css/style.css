@@ -213,6 +213,21 @@ body, html {
   height: 45px !important;
 }
 
+.searchByGoogle {
+    display: none;
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    color: #2185D0;
+    transition: 0.3s ease-in-out;
+}
+
+.searchByGoogle:hover {
+  transform: scale(1.1);
+}
+
 .direction-text {
   cursor: pointer;
   width: 100%;
