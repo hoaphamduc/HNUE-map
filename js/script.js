@@ -117,19 +117,6 @@ const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
     attribution: '<span id="groupInfo" onclick="toggleGroupInfo()" data-bs-toggle="tooltip" title="Xem thông tin nhóm">&copy; We are Trúc Trúc</span>'
 }).addTo(mymap);
 
-// // Add Max Bounds
-// var maxBounds = L.latLngBounds(
-//   L.latLng(21.027863833645036, 105.7683849334717),
-//   L.latLng(21.04615122410683, 105.79756736755371)
-// );
-
-// mymap.setMaxBounds(maxBounds);
-// mymap.on('drag', function () {
-//   mymap.panInsideBounds(maxBounds, { animate: false });
-// });
-
-// mymap.fitBounds(maxBounds);
-
 var zoomControl = L.control.zoom({
   position: 'bottomright'
 });
@@ -208,13 +195,6 @@ var HNUE = L.polygon([
   opacity: 1,
   fillOpacity: 0.1
 }).addTo(mymap);
-
-// var welcomeText = document.getElementById('welcome-text');
-
-// setTimeout(function () {
-//   // mymap.removeLayer(HNUE);
-//   welcomeText.style.display = 'none';
-// }, 5000); 
 
 var directionBoard = document.getElementById('direction-board');
 var directionArrow = document.getElementById('directionArrow');
@@ -356,7 +336,6 @@ function toggleHNUEIntroductionDiv() {
   }
   removeDarken();
   hideSidebar();
-  
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideSocialNetworkDiv();
@@ -375,7 +354,6 @@ function toggleProductIntroductionDiv() {
   }
   removeDarken();
   hideSidebar();
-  
   hideInfomationPagesDiv();
   hideHNUEIntroductionDiv();
   hideSocialNetworkDiv();
@@ -394,7 +372,6 @@ function toggleInfomationPagesDiv() {
   }
   removeDarken();
   hideSidebar();
-  
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
   hideSocialNetworkDiv();
@@ -413,7 +390,6 @@ function toggleDonateDiv() {
   }
   removeDarken();
   hideSidebar();
-  
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();

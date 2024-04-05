@@ -1869,6 +1869,22 @@ var buildingData = {
     "longitude": 105.7883593440056,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fnha-sach-tien-tho-tren-duong-xuan-thuy-5803-2817.jpg?alt=media&token=a45619aa-1f80-4a1f-8598-f5d28cf0748e']
   },
+  "NSSP": {
+    "polygon": [
+      [21.03695921254119, 105.7829437842169],
+      [21.036956707133932, 105.78308324004611],
+      [21.03681890966925, 105.78307787636038],
+      [21.036821415078826, 105.78293842053118]
+    ],
+    "infoDivId": "infoDivNSSP",
+    "nameVN": "Nhà sách và Học liệu Sư phạm",
+    "nameEN": "HNUE Bookstore and Materials",
+    "infoVN": "Chưa có thông tin.",
+    "infoEN": "No information.",
+    "latitude": 21.036876534079063,
+    "longitude": 105.783085921889,
+    "source-image": []
+  },
   "CVCG": {
     "polygon": [
       [21.029987656277157, 105.78960657119752],
@@ -1910,6 +1926,181 @@ var buildingData = {
     "latitude": 21.0295570442969,
     "longitude": 105.79117298126222,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FCVCG.jpg?alt=media&token=073ba661-fe95-4fc8-b8d3-0d5203ff218d']
+  },
+  "CVND": {
+    "polygon": [
+      [21.04155535626045, 105.79458107771663],
+      [21.04155535626045, 105.79472053354583],
+      [21.041820920997594, 105.79516035577643],
+      [21.041951197865327, 105.7953051752914],
+      [21.04274788853871, 105.79658173249727],
+      [21.042712814196236, 105.79661927829746],
+      [21.042332006517643, 105.79663000566893],
+      [21.042332006517643, 105.79643691298233],
+      [21.041901091391214, 105.79643691298233],
+      [21.041901091391214, 105.79716101055708],
+      [21.042321985249792, 105.79716101055708],
+      [21.04232699588381, 105.7973809216724],
+      [21.04067347750986, 105.79739164904386],
+      [21.04061334922308, 105.79733264850071],
+      [21.040197461241654, 105.79733801218646],
+      [21.040167397005206, 105.79738628535814],
+      [21.03962122898685, 105.79740774010108],
+      [21.03905501599116, 105.79690891732733],
+      [21.039009919288368, 105.79611509183799],
+      [21.039270477827277, 105.79559481432129],
+      [21.039270477827277, 105.79474198828882],
+      [21.039430821317, 105.79474198828882],
+      [21.040292664617, 105.79459716877383]
+    ],
+    "infoDivId": "infoDivCVND",
+    "nameVN": "Công viên Nghĩa Đô - Không gian xanh tuyệt đẹp giữa lòng Hà Nội",
+    "nameEN": "Nghia Do park - The beautiful green space amidst the heart of Hanoi",
+    "infoVN": "<b>Công viên Nghĩa Đô có diện tích 42.000m2 với rất nhiều cây xanh tạo bóng mát. Nơi đây từng được người dân Thủ đô ví von là “hòn ngọc xanh”. \
+              Với khuôn viên rộng, công viên là địa điểm lý tưởng để mọi người vui chơi, tập luyện thể dục thể thao.</b><br><br>\
+              <b>Công viên Nghĩa Đô</b> là một trong những công viên lớn nhất tại Hà Nội. Với vị trí đắc địa nằm giữa trung tâm thành phố cùng khuôn viên xanh mát, \
+              nơi đây được mệnh danh là \"hòn ngọc xanh\” của Thủ đô. Nếu có dịp du lịch Hà Nội, đừng bỏ qua cơ hội khám phá thiên đường xanh này với nhiều trải nghiệm cực thú vị.<br><br>\
+              <b>1. Công viên Nghĩa Đô ở đâu? Hướng dẫn cách di chuyển</b><br><br>\
+              <ul>\
+                <li><b>Địa chỉ:</b> đường Nguyễn Văn Huyên, phường Dịch Vọng, quận Cầu Giấy, Hà Nội</li>\
+                <li><b>Giá vé:</b> miễn phí</li>\
+              </ul>\
+              Nghĩa Đô được xem là một trong những công viên lâu đời nhất tại Thủ đô, được xây dựng từ năm 2002 và đầu tư cải tạo vào năm 2004.  Bao quanh là các \
+              tuyến đường: Nguyễn Văn Huyên, Nguyễn Khánh Toàn, Tô Hiệu, Chùa Hà. Công viên Nghĩa Đô được thiết kế gồm 2 cổng. Trong đó cổng chính nằm ở đường \
+              Nguyễn Văn Huyên, cổng phụ nằm ở đường Tô Hiệu. Với khuôn viên rộng gồm nhiều cây xanh, công viên được nhiều người ví von là “hòn ngọc xanh” giữa lòng Thủ đô.<br><br>\
+              Tọa lạc ở trung tâm thành phố, để di chuyển đến công viên bạn có thể lựa chọn một trong các phương tiện như: xe bus, ô tô, xe máy.<br><br>\
+              <ul>\
+                <li><b>Xe bus:</b> hiện nay có nhiều tuyến xe bus đi qua công viên Nghĩa Đô Hà Nội gồm: xe 12 (Công viên Nghĩa Đô - Đại Áng); xe 28 (Bến xe Giáp Bát - Đại học Mỏ); xe 39 (Công viên Nghĩa Đô - Tứ Hiệp)</li>\
+                <li><b>Xe máy, ô tô:</b> từ bến xe Mỹ Đình, bạn di chuyển ra đường Nguyễn Hoàng, rẽ vào đường Tôn Thất Thuyết. Đến vòng xuyến rẽ phải vào đường Trần Thái Tông, đi hết đường Trần Thái Tông rẽ phải vào Tô Hiệu, đi thẳng một đoạn sẽ gặp cổng công viên nằm ở bên tay phải.</li>\
+              </ul>\
+              <b>2. Công viên Nghĩa Đô rộng bao nhiêu? Gồm những khu vực nào?</b><br><br>\
+              Nghĩa Đô là một trong những công viên rộng nhất ở Hà Nội. Với diện tích 42.000 m2, cùng không gian thoáng đãng, công viên được chia thành nhiều khu vực đáp ứng nhu cầu giải trí, thể dục thể thao của người dân. Có thể kể đến như:<br><br>\
+              <ul>\
+                <li>Khu vui chơi cho trẻ em</li>\
+                <li>Khu vực tập thể thao</li>\
+                <li>Khu vực đi dạo</li>\
+                <li>Khu vực vườn hoa</li>\
+                <li>Hồ nước</li>\
+              </ul>\
+              Không gian bên trong công viên vô cùng rộng rãi thoáng mát. Với nhiều cây xanh và bầu không khí trong lành, nơi đây trở thành địa điểm vui chơi cuối tuần được nhiều người dân Thủ đô yêu thích.<br><br>\
+              <b>3. Những trải nghiệm không thể bỏ qua khi đi công viên Nghĩa Đô Hà Nội</b><br><br>\
+              Nếu có dịp đến Hà Nội, đừng bỏ qua cơ hội khám phá “hòn ngọc xanh” của Thủ đô và trải nghiệm nhiều hoạt động thú vị dưới đây!<br<br>\
+              3.1 Tản bộ tận hưởng không khí trong lành<br><br>\
+              Công viên Nghĩa Đô Cầu Giấy là điểm đến lý tưởng cho những ai muốn tìm kiếm không gian xanh, mát mẻ và trong lành giữa lòng thủ đô. Với khuôn viên rộng lớn, đây là nơi lý tưởng để thư giãn và vui chơi sau những ngày làm việc căng thẳng.<br><br>\
+              Đặc biệt, vào những ngày nắng nóng của mùa hè Hà Nội, Công viên Nghĩa Đô càng trở nên thu hút hơn. Đến đây, bạn sẽ được tản bộ dưới những bóng cây xanh mát, hít thở bầu không khí trong lành.<br><br>\
+              3.2 Nâng cao sức khỏe với các hoạt động vui chơi giải trí và thể thao thú vị<br><br>\
+              Không chỉ là nơi ngắm cảnh mà công viên còn mang đến nhiều hoạt động vui chơi giải trí thú vị cho cả người lớn và trẻ em. Tại đây có các khu vực tập thể dục, đi bộ, đạp xe và cầu lông để người lớn có thể rèn luyện sức khỏe mỗi ngày.<br><br>\
+              Ngoài ra, công viên còn có khu vui chơi riêng dành cho trẻ em với nhiều trò chơi thú vị như: cầu trượt, bập bênh, leo dây, xích đu… Các trò chơi vừa an toàn lại bổ ích, mang đến không gian giải trí lý tưởng cho bé.<br><br>\
+              3.3 Oanh tạc các tọa độ ẩm thực “nổi như cồn” gần công viên Nghĩa Đô<br><br>\
+              Sau khi dạo chơi thỏa thích, bạn có thể lấp đầy chiếc bụng đói của mình với hàng loạt đặc sản Hà Nội. Lân la một chút xung quanh khu vực công viên, bạn sẽ thấy có nhiều tọa độ ẩm thực “nổi như cồn”. Trong đó nổi bật nhất phải kể đến khu phố Tô Hiệu và khu chợ Nghĩa Tân.<br><br>\
+              Nếu muốn thưởng thức các món ăn vặt vỉa hè, bạn có thể đi bộ. “Sa” vào “thánh địa” này, bạn có thể thưởng thức vô vàn món ăn vặt như: bánh mì chảo, tào phớ, ốc, bánh gối, thịt xiên nướng… Còn nếu bạn muốn tìm quán để lấp đầy bụng cho bữa ăn chính thì có thể đi từ cổng chợ Nghĩa Tân, rẽ vào đoạn phố nhỏ để dẫn ra đường Tô Hiệu.<br><br>\
+              Tại đây, bạn có thể thưởng thức loạt món ngon Hà Nội hấp dẫn như: bún riêu, phở cuốn Hà Nội, bún bò Huế, bún đậu mắm tôm, bún hải sản… Dưới đây là gợi ý một số quán ngon mà bạn có thể tham khảo:<br><br>\
+              <ul>\
+                <li><b>Tào phớ thạch găng:</b> 105 C3 khu phố Nghĩa Tân, Cầu Giấy, Hà Nội</li>\
+                <li><b>Thịt xiên nướng:</b> 128C1 Nghĩa Tân, Cầu Giấy, Hà Nội</li>\
+                <li><b>Bánh mì chảo:</b> 104-105B C3 khu tập thể Nghĩa Tân, Cầu Giấy, Hà Nội</li>\
+                <li><b>Bún hải sản - Bánh đa Đồng Nát:</b> 103B C3 Nghĩa Tân, Cầu Giấy, Hà Nội</li>\
+                <li><b>Bún đậu làng Mơ:</b> 104C3 phố Nghĩa Tân, quận Cầu Giấy, Hà Nội</li>\
+                <li><b>Bún riêu Hoàng Kỳ:</b> 122B C5 Tô Hiệu, Nghĩa Tân, quận Cầu Giấy, Hà Nội</li>\
+              </ul>\
+              3.4 Tổ chức buổi picnic - dã ngoại ý nghĩa<br><br>\
+              Công viên Nghĩa Đô với những thảm cỏ xanh rộng lớn dưới tán cây rợp bóng là điểm đến lý tưởng để tổ chức các hoạt hoạt động picnic, dã ngoại vào cuối tuần. Bạn chỉ cần chuẩn bị một chiếc thảm nhỏ và chút đồ ăn nhẹ là đã có buổi picnic đầy ý nghĩa bên người thân, bạn bè.<br><br>\
+              Tại đây, bạn có thể thư giãn với âm nhạc, trò chuyện với bạn bè và tận hưởng bầu không khí trong lành dưới những tán cây rợp bóng. Chắc chắn đây là một trải nghiệm thú vị, giúp bạn tạm quên đi những áp lực trong công việc và tích trữ năng lượng tích cực để sẵn sàng cho tuần tới.<br><br>\
+              3.5 Chiêm ngưỡng và check in không gian đẹp thơ mộng ở công viên<br><br>\
+              Với nhiều background cực xịn, công viên Nghĩa Đô là địa điểm chụp ảnh đẹp ở Hà Nội được nhiều bạn trẻ yêu thích. Dọc bờ hồ là những hàng cây xanh ngát, với khung cảnh thơ mộng như thế, chỉ cần giơ máy lên là bạn đã có ngay bức ảnh sống ảo xinh lung linh.<br><br>\
+              Ngoài ra, vào các mùa hoa tại Hà Nội như hoa bằng lăng, hoa phượng… nhiều bạn trẻ cũng rủ nhau đến công viên để check-in. Công viên Nghĩa Đô cũng là thiên đường chụp ảnh cưới, chụp ảnh kỷ yếu được nhiều người lựa chọn để lưu lại những khoảnh khắc ý nghĩa.<br><br>\
+              3.6 Khám phá bảo tàng Dân tộc Việt Nam học gần công viên<br><br>\
+              Nếu đến công viên Nghĩa Đô bạn có thể kết hợp tham quan, khám phá Bảo tàng Dân tộc học. Bảo tàng nằm đối diện cổng công viên ở mặt đường Nguyễn Văn Huyên. Nơi đây được ví như bức tranh thu nhỏ về 54 dân tộc tại Việt Nam.<br><br>\
+              Đến đây, bạn sẽ được khám phá nhiều hiện vật như: y phục, trang sức, nhạc cụ... Từ đó hiểu hơn về phong tục tập quán cũng như nét đẹp văn hóa của các dân tộc ở nước ta.<br><br>\
+              <b>4. Công viên Nghĩa Đô mở cửa đến mấy giờ? Bỏ túi kinh nghiệm tham quan hữu ích</b><br><br>\
+              Để có chuyến hành trình khám phá công viên Nghĩa Đô Hà Nội thú vị, bạn cần cập nhật giờ mở cửa cũng như một số kinh nghiệm tham quan hữu ích dưới đây:<br><br>\
+              <ul><li><b>Giờ mở cửa:</b> 08:00 - 18:00</li></ul><br>\
+              Một số lưu ý khi đến công viên:<br><br>\
+              <ul>\
+                <li>Không bẻ cành cây, không giẫm đạp lên cỏ tại công viên.</li>\
+                <li>Có ý thức gìn giữ không gian, vệ sinh chung tại công viên, tránh vứt rác bừa bãi.</li>\
+                <li>Nếu mở nhạc để tập luyện thể thao tại công viên thì nên điều chỉnh âm lượng để không ảnh hưởng đến không gian xung quanh.</li>\
+                <li>Tuân thủ các quy định ở công viên để đảm bảo an toàn cho bạn và những người xung quanh.</li>\
+                <li>Vào dịp cuối tuần, công viên Nghĩa Đô thường rất đông. Do đó, nếu bạn đưa bé đi chơi thì hãy trông nom bé cẩn thận để tránh bé đi lạc.</li>\
+              </ul>\
+              <b>Nguồn:</b> Vinpearl",
+    "infoEN": "<b>Nghia Do Park covers an area of 42,000 square meters with abundant greenery providing shade. This place was once dubbed the \"green gem\" by the locals of the capital city. \
+              With its spacious grounds, the park is an ideal destination for recreation and sports activities.</b><br><br>\
+              <b>Nghia Do Park</b> is one of the largest parks in Hanoi. Situated in a prime location amidst the city center and lush surroundings, \
+              it is referred to as the \"green gem\" of the capital. If you have the opportunity to visit Hanoi, don't miss the chance to explore this green paradise with many exciting experiences.<br><br>\
+              <b>1. Where is Nghia Do Park? Directions for getting there</b><br><br>\
+              <ul>\
+                <li><b>Address:</b> Nguyen Van Huyen Street, Dich Vong Ward, Cau Giay District, Hanoi</li>\
+                <li><b>Ticket price:</b> Free</li>\
+              </ul>\
+              Nghia Do Park is considered one of the oldest parks in the capital, built in 2002 and renovated in 2004. It is surrounded by \
+              Nguyen Van Huyen, Nguyen Khanh Toan, To Hieu, and Chua Ha streets. Nghia Do Park is designed with two gates, with the main entrance on Nguyen Van Huyen Street \
+              and a secondary entrance on To Hieu Street. With its expansive greenery, the park is often likened to a \"green gem\" in the heart of Hanoi.<br><br>\
+              Located in the city center, you can choose various transportation options to reach the park, such as: buses, cars, or motorcycles.<br><br>\
+              <ul>\
+                <li><b>By bus:</b> There are several bus routes passing by Nghia Do Park in Hanoi, including: bus 12 (Nghia Do Park - Dai Ang), bus 28 (Giap Bat Bus Station - Mining University), bus 39 (Nghia Do Park - Tu Hiep)</li>\
+                <li><b>By motorcycle or car:</b> From My Dinh Bus Station, head to Nguyen Hoang Street, then turn onto Ton That Thuyet Street. At the roundabout, turn right onto Tran Thai Tong Street, then continue straight until you reach To Hieu Street. Turn right onto To Hieu Street, and after a short distance, you will find the park entrance on your right.</li>\
+              </ul>\
+              <b>2. How large is Nghia Do Park? What are its areas?</b><br><br>\
+              Nghia Do Park is one of the largest parks in Hanoi, covering an area of 42,000 square meters. With its spacious and airy environment, the park is divided into several areas to meet the recreational and sports needs of visitors. These include:<br><br>\
+              <ul>\
+                <li>Children's play area</li>\
+                <li>Sports area</li>\
+                <li>Walking area</li>\
+                <li>Flower garden area</li>\
+                <li>Water pond area</li>\
+              </ul>\
+              The park's interior space is vast and refreshing. With abundant greenery and fresh air, it has become a favorite weekend destination for many Hanoi residents.<br><br>\
+              <b>3. Unmissable Experiences at Nghia Do Park in Hanoi</b><br><br>\
+              If you have the chance to visit Hanoi, don't miss the opportunity to explore the \"green gem\" of the capital and experience the following exciting activities!<br><br>\
+              3.1 Enjoy a Relaxing Stroll in the Fresh Air<br><br>\
+              Nghia Do Park in Cau Giay is an ideal destination for those seeking green, cool, and fresh spaces in the heart of the capital. With its vast grounds, it's the perfect place to relax and play after stressful days of work.<br><br>\
+              Especially on hot summer days in Hanoi, Nghia Do Park becomes even more attractive. Here, you can stroll under the cool shade of green trees, breathing in the fresh air.<br><br>\
+              3.2 Improve Your Health with Fun Recreational and Sports Activities<br><br>\
+              Besides being a sightseeing spot, the park also offers many fun recreational activities for both adults and children. Here, there are areas for exercising, walking, cycling, and playing badminton, allowing adults to stay healthy every day.<br><br>\
+              Additionally, the park has a separate play area for children with various exciting games such as slides, swings, climbing frames, and seesaws. These safe and educational games provide an ideal entertainment space for children.<br><br>\
+              3.3 Explore the Popular Food Stops near Nghia Do Park<br><br>\
+              After enjoying your leisure time, you can satisfy your hunger with a variety of Hanoi specialties. Just wander around the park area, and you'll find many popular food stops. Among them, the most prominent are To Hieu Street and Nghia Tan Market.<br><br>\
+              If you want to enjoy street food, you can walk around. Once you step into these bustling areas, you'll find a variety of street foods such as grilled bread, tofu pudding, snails, pillow cakes, grilled skewers, and more. If you're looking for a restaurant for a main meal, you can head from the Nghia Tan Market gate to a small street leading to To Hieu Street.<br><br>\
+              Here, you can enjoy delicious Hanoi dishes such as crab noodle soup, rolled pho, Hue beef noodle soup, tofu with shrimp paste, seafood noodle soup, etc. Below are some suggested eateries for your reference:<br><br>\
+              <ul>\
+                <li><b>Tofu pudding with jelly:</b> 105 C3 Nghia Tan Residential Area, Cau Giay District, Hanoi</li>\
+                <li><b>Grilled skewers:</b> 128C1 Nghia Tan, Cau Giay District, Hanoi</li>\
+                <li><b>Grilled bread:</b> 104-105B C3 Nghia Tan Residential Area, Cau Giay District, Hanoi</li>\
+                <li><b>Seafood noodle soup - Dong Nat Quay:</b> 103B C3 Nghia Tan, Cau Giay District, Hanoi</li>\
+                <li><b>Mom's tofu:</b> 104C3 Nghia Tan Street, Cau Giay District, Hanoi</li>\
+                <li><b>Hoang Ky crab noodle soup:</b> 122B C5 To Hieu, Nghia Tan, Cau Giay District, Hanoi</li>\
+              </ul>\
+              3.4 Organize a Meaningful Picnic or Outing<br><br>\
+              Nghia Do Park, with its vast green lawns under the shade of trees, is an ideal destination for picnics and outings on weekends. All you need is a small mat and some light snacks to have a meaningful picnic with your family and friends.<br><br>\
+              Here, you can relax with music, chat with friends, and enjoy the fresh air under the shade of trees. It's definitely a fun experience, helping you forget about work pressures and recharge for the upcoming week.<br><br>\
+              3.5 Admire and Check-In at Beautiful and Romantic Spaces in the Park<br><br>\
+              With its picturesque backgrounds, Nghia Do Park is a favorite photo spot in Hanoi among young people. Along the lake shore are lush green trees, providing a romantic setting for perfect selfies.<br><br>\
+              Additionally, during flower seasons in Hanoi such as water lily and phoenix flower seasons, many young people gather at the park for check-in photos. Nghia Do Park is also a paradise for wedding photos and graduation photos chosen by many people to capture meaningful moments.<br><br>\
+              3.6 Explore the Vietnam Museum of Ethnology near the Park<br><br>\
+              When visiting Nghia Do Park, you can also explore the Vietnam Museum of Ethnology. The museum is located opposite the park gate on Nguyen Van Huyen Street. It is like a miniature painting depicting the 54 ethnic groups in Vietnam.<br><br>\
+              Here, you can explore various artifacts such as clothing, jewelry, musical instruments, etc., to better understand the customs and cultural beauty of the ethnic groups in our country.<br><br>\
+              <b>4. What are the Park's Opening Hours? Handy Tips for Visiting</b><br><br>\
+              To have an enjoyable journey exploring Nghia Do Park in Hanoi, you need to know the opening hours and some useful visiting tips as follows:<br><br>\
+              <ul><li><b>Opening hours:</b> 08:00 - 18:00</li></ul><br>\
+              Some notes when visiting the park:<br><br>\
+              <ul>\
+                <li>Do not break tree branches or trample on the grass in the park.</li>\
+                <li>Be conscious of preserving the space and maintaining cleanliness in the park, avoiding littering.</li>\
+                <li>If playing music for sports activities in the park, adjust the volume to avoid disturbing the surrounding environment.</li>\
+                <li>Adhere to park regulations to ensure safety for yourself and those around you.</li>\
+                <li>On weekends, Nghia Do Park is often crowded. Therefore, if you bring children to play, be careful to watch over them to prevent them from getting lost.</li>\
+              </ul>\
+              <b>Source:</b> Vinpearl",
+    "latitude": 21.040438243849316,
+    "longitude": 105.7973350131989,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCongVienNghiaDo%2FCVND1.jpg?alt=media&token=83f50ac1-b25b-40d1-8547-3156d9dc9c8b',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCongVienNghiaDo%2FCVND2.jpg?alt=media&token=6da8751f-515e-4f2a-adc8-1f27de706358',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCongVienNghiaDo%2FCVND3.jpg?alt=media&token=c9868cd7-1b48-426c-86f2-47006a6ae83a',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCongVienNghiaDo%2FCVND4.webp?alt=media&token=a816235b-773c-45ba-b91d-268673fc26cf',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCongVienNghiaDo%2FCVND5.jpg?alt=media&token=27d588a9-ddab-4ce3-af2c-226cd6ef0b61',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FCongVienNghiaDo%2FCVND6.webp?alt=media&token=add7a6fc-07b9-41c4-bde1-dfc6f110e2e1'
+                    ]
   },
   "TVCG": {
     "polygon": [
@@ -2248,7 +2439,6 @@ function createInfoDiv(buildingKey) {
        scrollToTop(building.infoDivId);
    };
  
-   // Chèn button scroll to top vào main content
    var mainContentDiv = document.getElementById('main-content');
    mainContentDiv.appendChild(scrollToTopButton);
  
@@ -2262,16 +2452,15 @@ function createInfoDiv(buildingKey) {
     });
   });
 
-  // Bắt đầu theo dõi thay đổi trong infoDiv
   observer.observe(infoDiv, { attributes: true });
  
-   return infoDiv;
+  return infoDiv;
 }
 
 function scrollToTop(infoDivId) {
   var infoDiv = document.getElementById(infoDivId);
-  var toolbar = infoDiv.querySelector('.toolbar'); // Lấy phần toolbar trong khối div
-  toolbar.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Cuộn đến vị trí của toolbar trong khối div
+  var toolbar = infoDiv.querySelector('.toolbar');
+  toolbar.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
@@ -2285,13 +2474,12 @@ function setPolygonClickEvent(buildingKey) {
   polygon.on('click', function () {
 
       var infoDiv = document.getElementById(building.infoDivId);
+
       if (!infoDiv) {
-          // Nếu khối div chưa được tạo, tạo nó và hiển thị
           infoDiv = createInfoDiv(buildingKey);
           infoDiv.style.display = 'block';
           
       } else {
-          // Nếu khối div đã tồn tại, chỉ hiển thị nó
           infoDiv.style.display = 'block';
       }
   });
@@ -2304,6 +2492,16 @@ function setPolygonClickEvent(buildingKey) {
           }
       }
   });
+
+  var openSearchMenu = document.getElementById('open-search-menu');
+  if (openSearchMenu) {
+      openSearchMenu.addEventListener('click', function() {
+          var infoDiv = document.getElementById(building.infoDivId);
+          if (infoDiv) {
+              infoDiv.style.display = 'none';
+          }
+      });
+  }
 }
 
 function toggleInfoDiv(buildingKey) {
