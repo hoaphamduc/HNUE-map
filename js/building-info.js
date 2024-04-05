@@ -2350,6 +2350,134 @@ var buildingData = {
     "latitude": 21.037876712182833,
     "longitude": 105.78599095344545,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fmarket%2Fcho%20xanh.jpg?alt=media&token=14afaed8-44a3-4e65-85ca-06fdfee8f929']
+  },
+  "BTDTHVN": {
+    "polygon": [
+      [21.041320816056345, 105.79787582159044],
+      [21.041323319420286, 105.79897016286853],
+      [21.041611205993735, 105.79897820949556],
+      [21.04161116527555, 105.79926788806917],
+      [21.041558622308695, 105.79927057027818],
+      [21.041561124355148, 105.79948514699937],
+      [21.041005669009632, 105.79952001571657],
+      [21.041013175176758, 105.79976409673692],
+      [21.039757137946783, 105.79980164766313],
+      [21.039647046529346, 105.79967021942139],
+      [21.039181659183793, 105.79926252365114],
+      [21.03921668838944, 105.79917132854463],
+      [21.03926673009751, 105.79883605241778],
+      [21.03925922384237, 105.79833447933198],
+      [21.03966706315674, 105.79789191484453]
+    ],
+    "infoDivId": "infoDivBTDTHVN",
+    "nameVN": "Bảo tàng Dân tộc học Việt Nam - điểm hẹn văn hóa đặc sắc ở Hà Nội",
+    "nameEN": "Vietnam Museum of Ethnology - a remarkable cultural rendezvous in Hanoi",
+    "infoVN": "Bảo tàng Dân tộc học là nơi để bạn chiêm ngưỡng các tư liệu, hiện vật về văn hóa và lịch sử của 54 dân tộc ở Việt Nam. Cùng bỏ túi ngay kinh nghiệm hữu ích để ghé thăm bảo tàng ấn tượng này.<br><br>\
+              Bảo tàng Dân tộc học là nơi để bạn chiêm ngưỡng các tư liệu, hiện vật về văn hóa và lịch sử của 54 dân tộc ở Việt Nam. Cùng bỏ túi ngay kinh nghiệm hữu ích để ghé thăm bảo tàng ấn tượng này.<br><br>\
+              Du lịch Hà Nội, đừng quên ghé thăm Bảo tàng Dân tộc học tại quận Cầu Giấy. Bảo tàng Dân tộc học Việt Nam được biết đến với tên tiếng Anh là Vietnam Museum of Ethnology. Tại đây có rất nhiều kiến trúc độc đáo và những sự kiện - hoạt động thú vị.<br><br>\
+              <b>1. Bảo tàng Dân tộc học ở đâu? Thời gian mở cửa bảo tàng</b><br><br>\
+              <ul>\
+                <li><b>Địa chỉ:</b> số 1 đường Nguyễn Văn Huyên, phường Nghĩa Đô, quận Cầu Giấy, TP. Hà Nội</li>\
+                <li><b>Giờ mở cửa Bảo tàng Dân tộc học:</b> 8:00 - 17:30 thứ 3 - Chủ nhật</li>\
+              </ul>\
+              Bảo tàng Dân tộc học là một trong những bảo tàng ở Hà Nội nhất định nên ghé thăm một lần. Nơi đây có ý nghĩa văn hóa và lịch sử to lớn, rất phù hợp với những du khách đam mê tìm hiểu, khám phá Việt Nam.<br><br>\
+              Bảo tàng rộng 4,5ha, gồm nhiều công trình kiến trúc mới lạ và được ví như một bức tranh thu nhỏ về đồng bào 54 dân tộc tại Việt Nam. Cực nhiều hiện vật được trưng bày tại đây như trang sức, y phục, vũ khí, tôn giáo, nhạc cụ, tín ngưỡng…<br><br>\
+              <b>2. Giá vé vào Bảo tàng Dân tộc học Việt Nam và lệ phí</b><br><br>\
+              Giá vé Bảo tàng Dân tộc học là 40.000 VNĐ/người. Với sinh viên là 20.000 VNĐ/lượt, với học sinh là 10.000 VNĐ/lượt. Giá vé giảm 50% với người cao tuổi, người khuyết tật nặng và người dân tộc thiểu số. Miễn phí với người khuyết tật nặng đặc biệt và trẻ em dưới 6 tuổi.<br><br>\
+              Tại bảo tàng, bạn có thể thuê dịch vụ thuyết minh để tìm hiểu sâu hơn. Giá thuyết minh là 100.000 VNĐ toàn bộ bảo tàng bằng tiếng Việt, 100.000 VNĐ khu trong nhà bằng tiếng Pháp/Anh, 50.000 VNĐ khu trong nhà bằng tiếng Việt và 50.000 VNĐ khu ngoài trời bằng tiếng Việt.<br><br>\
+              <b>3. Lịch sử bảo tàng Dân tộc học Việt Nam</b><br><br>\
+              Bảo tàng trực thuộc Viện Hàn lâm Khoa học xã hội Việt Nam, do nhà nước xây dựng và thuộc hệ thống bảo tàng quốc gia tại nước ta. Khi tìm hiểu các bài giới thiệu về Bảo tàng Dân tộc học, bạn sẽ được biết về lịch sử và quá trình hình thành bảo tàng:<br><br>\
+              <ul>\
+                <li>Từ những năm 80 của thế kỷ XX, khi đất nước vẫn còn khá khó khăn do đang trong thời kỳ hậu chiến, Bảo tàng Dân tộc học được xúc tiến xây dựng.</li>\
+                <li>Ngày 24/10/1995, bảo tàng được Thủ tướng Chính phủ chính thức ban hành quyết định thành lập.</li>\
+                <li>Ngày 12/11/1997, nhân sự kiện Hội nghị thượng đỉnh các nước họp tại Hà Nội, bảo tàng đã tổ chức lễ khánh thành với sự góp mặt của Tổng thống Cộng hòa Pháp Jacques Chirac.</li>\
+              </ul>\
+              <b>4. Bảo tàng Dân tộc học có gì thu hút khách tham quan?</b><br><br>\
+              Bảo tàng gồm có 3 khu trưng bày thú vị: tòa Trống đồng, Vườn Kiến trúc, tòa Cánh diều. Tại đây còn có nhiều trải nghiệm thú vị không thể bỏ lỡ.<br><br>\
+              4.1. Tòa Trống đồng đậm đà bản sắc văn hóa dân tộc<br><br>\
+              Tòa nhà Trống đồng - tòa nhà 2 tầng là một trong hai tòa trưng bày tại bảo tàng. Tòa nhà được thiết kế bởi kiến trúc sư Hà Đức Lịnh (người Tày), mô phỏng theo hình chiếc trống đồng của văn minh Đông Sơn.<br><br>\
+              Tòa Trống đồng có tổng diện tích trưng bày lên đến 2.000m<sup>2</sup>, khai trương tháng 11/1997. Phần lớn tòa nhà được dành để trưng bày về 54 dân tộc anh em tại Việt Nam với những hiện vật, ảnh, phim cùng các khu tái tạo sinh động cùng nhiều bài viết nghiên cứu hấp dẫn.<br><br>\
+              Lộ trình tham quan tòa Trống đồng gồm 9 phần chính, được hệ thống nhất quán vô cùng lý thú. Tại đây còn có một không gian để tổ chức các trưng bày nhất thời.<br><br>\
+              4.2. Tòa Cánh diều thiết kế ấn tượng<br><br>\
+              Tòa nhà 4 tầng có tên gọi Cánh diều được xây dựng từ tháng 6/2007 và khai trương vào năm 2013. Tòa Cánh diều trưng bày về cư dân ngoài Việt Nam như các dân tộc Đông Nam Á.<br><br>\
+              Nơi đây được thiết kế bởi các kiến trúc sư của Đại học Xây dựng Hà Nội, mô phòng theo cánh diều - nét văn hóa truyền thống đặc trưng của Đông Nam Á.<br><br>\
+              Tại tòa nhà có 4 chủ đề thường xuyên là Văn hóa Đông Nam Á, Một thoáng châu Á, Tranh kính Indonesia, Vòng quanh thế giới. Ngoài ra còn có khu trưng bày nhất thời, hội trường, phòng chiếu phim, các hoạt động giáo dục.<br><br>\
+              4.3. Vườn Kiến trúc ngập tràn màu xanh mướt<br><br>\
+              Khu trưng bày ngoài trời - Vườn Kiến trúc được xây dựng từ năm 1998 - 2006 và rộng khoảng 2ha. Nơi đây giới thiệu 10 công trình kiến trúc dân gian độc đáo của 10 dân tộc Việt Nam như khuôn viên nhà người Chăm, nhà Rông Bana, nhà người Việt, nhà mồ Giarai, nhà Dài Ê Đê, nhà mồ Cơtu, nhà sàn Tày, nhà trệt Hmông, nhà trình tường của người Hà Nhì và nhà nửa sàn nửa trệt của người Dao.<br><br>\
+              Vườn Kiến trúc được bao phủ bởi nhiều loại cây cối xanh ngát, dòng suối nhân tạo mát lành. Nơi đây giới thiệu sự đa dạng, phong phú của văn hóa Việt Nam.<br><br>\
+              4.4. Các hoạt động, sự kiện văn hóa nghệ thuật hấp dẫn<br><br>\
+              Bảo tàng thường xuyên tổ chức các cuộc trình diễn văn hóa phi vật thể vào những dịp như tết Trung thu, Tết Nguyên đán, Quốc tế Thiếu nhi… Những sự kiện này luôn thu hút đông đảo du khách đến tham gia, trải nghiệm.<br><br>\
+              Tại bảo tàng, bạn còn được tìm hiểu về làng nghề thủ công. Đây là cơ hội để chiêm ngưỡng sự khéo léo và tài hoa của các nghệ nhân, thợ thủ công khi dệt chiếu, dệt thổ cẩm, đan lát mây tre, làm gốm, khoan nòng súng, làm giấy dó, làm đồ chơi dân gian, in tranh Đông Hồ.<br><br>\
+              Vào thứ Bảy, Chủ Nhật hàng tuần, bạn còn có thể thưởng thức những màn múa rối nước dân gian. Nhiều tiết mục hấp dẫn từ các phường rối làng quê Bắc Bộ luôn đón chờ du khách.<br><br>\
+              5. Kinh nghiệm tham quan bảo tàng Dân tộc học Hà Nội<br><br>\
+              Để tham quan bảo tàng thuận tiện và trọn vẹn, bạn nên:<br><br>\
+              <ul>\
+                <li>Đi theo nhóm nhỏ, không đi đoàn quá đông</li>\
+                <li>Để tìm hiểu kỹ càng hơn, bạn có thể thuê hướng dẫn viên thuyết minh tại bảo tàng</li>\
+                <li>Không để tiền hay đồ vật giá trị cao tại nơi gửi đồ</li>\
+                <li>Giữ gìn vệ sinh chung, không vứt rác</li>\
+                <li>Không gây ồn ào, không mang theo đồ ăn hay nước uống</li>\
+                <li>Không tự tiện sờ vào hiện vật trưng bày</li>\
+              </ul>\
+              <b>Nguồn:</b> Vinpearl",
+    "infoEN": "The Museum of Ethnology is the place where you can admire documents and artifacts about the culture and history of the 54 ethnic groups in Vietnam. Don't forget to take some useful experiences with you to visit this impressive museum.<br><br>\
+              The Museum of Ethnology is located in Cau Giay district, Hanoi, Vietnam. It is also known as the Vietnam Museum of Ethnology in English. Here, you can explore unique architectures and interesting events and activities.<br><br>\
+              <b>1. Where is the Museum of Ethnology? Museum opening hours</b><br><br>\
+              <ul>\
+                <li><b>Address:</b> No. 1 Nguyen Van Huyen Street, Nghia Do Ward, Cau Giay District, Hanoi</li>\
+                <li><b>Museum opening hours:</b> 8:00 AM - 5:30 PM from Tuesday to Sunday</li>\
+              </ul>\
+              The Museum of Ethnology is one of the must-visit museums in Hanoi. It holds significant cultural and historical values, suitable for travelers passionate about exploring Vietnam.<br><br>\
+              With an area of 4.5 hectares, the museum consists of many unique architectural structures, resembling a miniature portrait of the 54 ethnic groups in Vietnam. There are numerous exhibits displayed here, such as jewelry, costumes, weapons, religious artifacts, musical instruments, and beliefs.<br><br>\
+              <b>2. Admission fees to the Vietnam Museum of Ethnology and charges</b><br><br>\
+              The admission fee to the Museum of Ethnology is 40,000 VND per person. For students, it's 20,000 VND per person, and for pupils, it's 10,000 VND per person. There's a 50% discount for the elderly, severely disabled individuals, and ethnic minorities. Admission is free for special severely disabled individuals and children under 6 years old.<br><br>\
+              You can also rent narration services to gain deeper insights. The narration fee is 100,000 VND for the entire museum in Vietnamese, 100,000 VND for the indoor area in French/English, 50,000 VND for the indoor area in Vietnamese, and 50,000 VND for the outdoor area in Vietnamese.<br><br>\
+              <b>3. History of the Vietnam Museum of Ethnology</b><br><br>\
+              The museum is under the Vietnam Academy of Social Sciences, built by the state and part of the national museum system in our country. When learning about the introductions to the Museum of Ethnology, you will know about its history and formation process:<br><br>\
+              <ul>\
+                <li>Since the 1980s, when the country was still facing difficulties during the post-war period, the Museum of Ethnology was promoted for construction.</li>\
+                <li>On October 24, 1995, the museum was officially established by the Prime Minister's decision.</li>\
+                <li>On November 12, 1997, on the occasion of the Summit Conference of Francophone Countries in Hanoi, the museum held its inauguration ceremony with the participation of President of the French Republic, Jacques Chirac.</li>\
+              </ul>\
+              <b>4. What does the Museum of Ethnology offer to attract visitors?</b><br><br>\
+              The museum comprises three interesting exhibition areas: the Bronze Drum Building, the Garden of Architectures, and the Kite Building. There are also many exciting experiences not to be missed.<br><br>\
+              4.1. The Bronze Drum Building embodies the cultural essence of ethnic groups<br><br>\
+              The Bronze Drum Building - a two-story building is one of the two exhibition areas in the museum. Designed by architect Ha Duc Linh (Tay ethnic group), it is modeled after the Dong Son civilization's bronze drum.<br><br>\
+              The Bronze Drum Building has a total exhibition area of 2,000m<sup>2</sup>, opened in November 1997. Most of the building is dedicated to displaying the 54 brotherly ethnic groups in Vietnam with artifacts, photos, films, vivid reconstruction areas, and many fascinating research articles.<br><br>\
+              The tour of the Bronze Drum Building consists of 9 main parts, systematically and interestingly arranged. There is also a space for temporary exhibitions.<br><br>\
+              4.2. The Kite Building features impressive design<br><br>\
+              The four-story building named Kite was constructed from June 2007 and inaugurated in 2013. The Kite Building exhibits about residents outside Vietnam such as Southeast Asian ethnic groups.<br><br>\
+              It is designed by architects from Hanoi University of Architecture, modeled after kites - a distinctive traditional cultural feature of Southeast Asia.<br><br>\
+              The building has 4 regular themes: Southeast Asian Culture, A Glimpse of Asia, Indonesian Stained Glass, Around the World. There are also temporary exhibition areas, auditoriums, film screening rooms, and educational activities.<br><br>\
+              4.3. The Garden of Architectures is filled with lush greenery<br><br>\
+              The outdoor exhibition area - Garden of Architectures was built from 1998 to 2006 and covers about 2 hectares. It introduces 10 unique folk architectural works of 10 Vietnamese ethnic groups such as the Cham people's courtyard, the Rong Bana house, the Vietnamese people's house, the Giarai tomb, the Dai E De house, the Cotu tomb, the Tay stilt house, the Hmong one-story house, the Hani trinh tuong house, and the Dao people's half-stilt half-one-story house.<br><br>\
+              The Garden of Architectures is covered with various lush green plants, with a cool artificial stream. Here, the diversity and richness of Vietnamese culture are introduced.<br><br>\
+              4.4. Engaging cultural and artistic activities<br><br>\
+              The museum regularly organizes non-material cultural performances on occasions such as Mid-Autumn Festival, Lunar New Year, International Children's Day, etc. These events always attract many tourists to participate and experience.<br><br>\
+              At the museum, you can also learn about traditional handicraft villages. This is an opportunity to admire the ingenuity and talent of artisans, craftsmen when weaving brocade, weaving silk, bamboo and rattan knitting, pottery making, gun drilling, making paper coins, making folk toys, Dong Ho painting printing.<br><br>\
+              Every Saturday and Sunday, you can enjoy traditional water puppetry performances. Many exciting performances from rural puppetry villages in the North are always eagerly awaited by tourists.<br><br>\
+              <b>5. Tips for visiting the Museum of Ethnology in Hanoi</b><br><br>\
+              To visit the museum conveniently and comprehensively, you should:<br><br>\
+              <ul>\
+                <li>Travel in small groups, not in large crowds</li>\
+                <li>To learn more thoroughly, you can rent a guide at the museum</li>\
+                <li>Do not leave money or valuable items at the baggage counter</li>\
+                <li>Maintain general hygiene, do not litter</li>\
+                <li>Avoid making noise, do not bring food or drinks</li>\
+                <li>Do not touch the exhibited artifacts without permission</li>\
+              </ul>\
+              <b>Source:</b> Vinpearl",
+    "latitude": 21.040527042657892,
+    "longitude": 105.79814672470094,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FBaoTangDanTocHoc%2Fbao-tang-dan-toc-hoc-01_1678380768.jpg?alt=media&token=74f215e7-ea3e-4686-8f9d-a3519a167f38',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FBaoTangDanTocHoc%2Fbao-tang-dan-toc-hoc-02_1678380757.webp?alt=media&token=4da808ad-f0a7-4714-af8c-a75d5f7abf6d',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FBaoTangDanTocHoc%2Fbao-tang-dan-toc-hoc-04_1678380733.webp?alt=media&token=8de14f06-07e2-47f9-a65f-6d16dd19ad87',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FBaoTangDanTocHoc%2Fbao-tang-dan-toc-hoc-05_1678380720.webp?alt=media&token=823c3740-5e36-484a-b006-75c0ef602f8c',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FBaoTangDanTocHoc%2Fbao-tang-dan-toc-hoc-06_1678380709.webp?alt=media&token=d44b3f2d-ecf9-4707-a627-78400ab347fe',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FBaoTangDanTocHoc%2Fbao-tang-dan-toc-hoc-07_1678380700.jpg?alt=media&token=ca310f54-57e4-4294-8377-b0f1a49506c9',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FBaoTangDanTocHoc%2Fbao-tang-dan-toc-hoc-08_1678380691.jpg?alt=media&token=71891e13-09ed-45d6-850c-f51fe5758f64',
+                    'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FBaoTangDanTocHoc%2Fbao-tang-dan-toc-hoc-09_1678380680.jpg?alt=media&token=7bf66a2e-5304-4c02-a8e7-8b308b29814d'
+                    ]
   }
 };
 
