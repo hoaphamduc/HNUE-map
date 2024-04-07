@@ -396,9 +396,9 @@ body, html {
 
 #social-network-div {
   position: absolute;
-  width: 100%;
+  width: calc(100% + 50px);
   height: calc(100% - 50px);
-  left: 0;
+  left: -50px;
   top: 50px;
   z-index: 1000000; 
   display: none;

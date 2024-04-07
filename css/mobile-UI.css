@@ -159,6 +159,12 @@
         left: auto;
         right: 10px;
     }
+    #menu-btn {
+        display: none;
+    }
+    #hnue-img-2 {
+        display: none;
+    }
 }
 
 @media (max-width: 400px){
