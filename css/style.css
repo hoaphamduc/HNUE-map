@@ -376,6 +376,7 @@ body, html {
   left: 5px;
   overflow-x: hidden;
   overflow-y: scroll;
+  text-align: justify;
   transform: translate(0, 0);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
 }
@@ -461,6 +462,7 @@ body, html {
   padding: 15px;
   border: 1px solid #ccc;
   background-color: #f0f2f5;
+  text-align: justify;
   top: 0;
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
