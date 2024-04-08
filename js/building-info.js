@@ -1837,7 +1837,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.036876534079063,
     "longitude": 105.783085921889,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fnha%20sach%20su%20pham.jpg?alt=media&token=aa65c9d7-6245-473f-982c-e781a46ae23c']
   },
   "CVCG": {
     "polygon": [
