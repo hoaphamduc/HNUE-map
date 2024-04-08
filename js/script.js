@@ -508,50 +508,53 @@ function removeVietnameseSigns(str) {
   return str;
 }
 
-function filterItems() {
-  // Lấy giá trị từ ô tìm kiếm và chuyển đổi thành tiếng Việt không dấu
-  var searchText = removeVietnameseSigns(document.getElementById("search-input-1").value.toLowerCase() + document.getElementById("search-input-2").value.toLowerCase());
-  console.log(searchText);
-  // Lặp qua các phần tử li và ẩn/hiển thị phù hợp
-  var listItems = document.querySelectorAll("#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li");
-  var count = 0;
-  listItems.forEach(function (item) {
-    var textContent = removeVietnameseSigns(item.textContent.toLowerCase().trim());
-    if (textContent.indexOf(searchText) !== -1) {
-      item.style.display = "block";
-      count++;
-    } else {
-      item.style.display = "none";
-    }
-  });
-
-  var resultVNSpan = document.getElementById("resultVN");
-  var resultENSpan = document.getElementById("resultEN");
-  if (searchText !== "") {
-    resultVNSpan.innerText = count === 0 ? "Không có kết quả" : count === 1 ? "1 kết quả" : count + " kết quả";
-    resultVNSpan.style.display = "block";
-    resultENSpan.innerText = count === 0 ? "No result" : count === 1 ? "1 result" : count + " results";
-    resultENSpan.style.display = "block";
-  } else {
-    resultVNSpan.style.display = "none";
-    resultENSpan.style.display = "none";
-  }
-  
-  // Kiểm tra nếu không có kết quả thì hiển thị nút searchByGoogle
-  var searchByGoogleButton = document.getElementById("searchByGoogleVN");
-  if (count === 0) {
-    searchByGoogleButton.style.display = "block";
-    searchByGoogleButton.addEventListener("click", function() {
-      // Mở trang tìm kiếm Google với tham số truyền vào là searchText
-      window.open("https://www.google.com/search?q=" + searchText, "_blank");
-    });
-  } else {
-    searchByGoogleButton.style.display = "none";
-  }
-  
-  checkInput();
+// Hàm mở Google Search
+function openGoogleSearch(searchText) {
+    var searchText = removeVietnameseSigns((document.getElementById("search-input-1").value.trim() + document.getElementById("search-input-2").value.trim()).toLowerCase());
+    var googleSearchURL = "https://www.google.com/search?q=" + encodeURIComponent(searchText);
+    window.open(googleSearchURL, "_blank");
 }
+  
+// Hàm filterItems
+function filterItems() {
+    var searchText = removeVietnameseSigns((document.getElementById("search-input-1").value.trim() + document.getElementById("search-input-2").value.trim()).toLowerCase());
+    
+    var listItems = document.querySelectorAll("#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li");
+    var count = 0;
+    
+    listItems.forEach(function (item) {
+      var textContent = removeVietnameseSigns(item.textContent.trim().toLowerCase());
+      if (textContent.indexOf(searchText) !== -1) {
+        item.style.display = "block";
+        count++;
+      } else {
+        item.style.display = "none";
+      }
+    });
+  
+    var resultVNSpan = document.getElementById("resultVN");
+    var resultENSpan = document.getElementById("resultEN");
+    
+    if (searchText !== "") {
+      resultVNSpan.innerText = count === 0 ? "Không có kết quả" : count === 1 ? "1 kết quả" : count + " kết quả";
+      resultVNSpan.style.display = "block";
+      resultENSpan.innerText = count === 0 ? "No result" : count === 1 ? "1 result" : count + " results";
+      resultENSpan.style.display = "block";
+    } else {
+      resultVNSpan.style.display = "none";
+      resultENSpan.style.display = "none";
+    }
+  
+    var searchByGoogleButton = document.getElementById("searchByGoogleVN");
+    
+    if (count === 0) {
+      searchByGoogleButton.style.display = "block";
+    } else {
+      searchByGoogleButton.style.display = "none";
+    }
 
+    checkInput();
+}
 
 // Hàm kiểm tra khi input có chữ và hiển thị nút clear-input
 function checkInput() {
