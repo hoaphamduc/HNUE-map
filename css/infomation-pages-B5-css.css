@@ -55,12 +55,3 @@
     margin-top: 20px;
     cursor: default;
 }
-
-@media (min-width: 1600px){
-    .scroll-to-top {
-        left: 498px;
-    }
-    .infoDiv {
-        width: 500px;
-    }      
-}

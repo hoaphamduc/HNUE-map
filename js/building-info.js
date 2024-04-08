@@ -2478,6 +2478,171 @@ var buildingData = {
                     'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FBaoTangDanTocHoc%2Fbao-tang-dan-toc-hoc-08_1678380691.jpg?alt=media&token=71891e13-09ed-45d6-850c-f51fe5758f64',
                     'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FBaoTangDanTocHoc%2Fbao-tang-dan-toc-hoc-09_1678380680.jpg?alt=media&token=7bf66a2e-5304-4c02-a8e7-8b308b29814d'
                     ]
+  },
+  "LangBac": {
+    "polygon": [
+      [21.036340881951524, 105.83414953591483],
+      [21.037393153646782, 105.83436944703013],
+      [21.037363088844362, 105.8345652215596],
+      [21.038300105667705, 105.83476635977482],
+      [21.038167320219614, 105.83546632076376],
+      [21.035298624564795, 105.83477976898916],
+      [21.03541387453822, 105.83416562697205],
+      [21.03629828984547, 105.83435335597291]
+    ],
+    "infoDivId": "infoDivLangBac",
+    "nameVN": "Lăng Chủ tịch Hồ Chí Minh - Lăng Bác",
+    "nameEN": "President Ho Chi Minh Mausoleum - Uncle Ho's Mausoleum",
+    "infoVN": "Lăng Chủ tịch Hồ Chí Minh là nơi lưu giữ di hài của Bác và là điểm đến mà mỗi thế hệ người Việt đều mong mỏi viếng thăm để bày tỏ tình cảm và lòng biết ơn sâu sắc dành cho vị cha già dân tộc.<br><br>\
+              Khi du lịch Hà Nội, không chỉ người Việt mà cả du khách quốc tế cũng đều mong một lần viếng Lăng Chủ tịch Hồ Chí Minh. Công trình mang ý nghĩa to lớn và là một trong những biểu tượng văn hóa, lịch sử của Thủ đô. Bài viết sẽ giúp bạn tìm hiểu rõ hơn về Lăng Bác và những trải nghiệm đáng nhớ trong chuyến viếng thăm.<br><br>\
+              <b>1. Giới thiệu về Lăng Chủ tịch Hồ Chí Minh</b><br><br>\
+              Lăng Chủ tịch Hồ Chí Minh hay Lăng Hồ Chủ tịch còn được gọi với tên thân thương là lăng Bác tọa lạc tại địa chỉ số 2 Hùng Vương, thuộc phường Điện Biên, quận Ba Đình, TP. Hà Nội. Công trình là nơi gìn giữ di hài của Bác theo nguyện vọng, tình cảm của Ban chấp hành trung ương Đảng và nhân dân. Lăng Bác được khởi công vào ngày 02/9/1973 và khánh thành vào ngày 29/8/1975.<br><br>\
+              Công trình lăng Bác được xây dựng gồm 3 lớp, cao 21,6 mét và rộng 41,2 mét. Bên dưới là bậc thềm tam cấp dẫn lên kết cấu trung tâm với phòng di hài và những hành lang, cầu thang. Phần trên cùng là mái lăng được thiết kế theo hình tam cấp.<br><br>\
+              Bên ngoài lăng được ốp đá granite xám, quanh bốn mặt là những hàng cột đá hoa cương vuông vức và ở giữa nổi bật dòng chữ “CHỦ TỊCH HỒ-CHÍ-MINH” bằng đá hồng có màu mận chín. Khu vực bên trong được làm bằng chất liệu đá xám và đỏ được đánh bóng. Khuôn viên quanh lăng trồng nhiều loài cây, hoa đặc trưng của các vùng miền trên cả nước. Đây là điểm tham quan nổi tiếng của Thủ đô, nơi bất kỳ người dân Việt Nam nào cũng muốn được đặt chân đến một lần.<br><br>\
+              <b>2. Giờ mở cửa và giá vé tham quan Lăng Bác</b><br><br>\
+              <b>Giá vé tham quan:</b><br>\
+              <ul>\
+                  <li>Công dân Việt Nam: miễn phí</li>\
+                  <li>Người nước ngoài: 25.000 VNĐ/vé</li>\
+              </ul>\
+              <b>Giờ mở cửa:</b><br><br>\
+              <table class=\"info-table\">\
+                  <tr>\
+                      <td><b>Ngày trong tuần</b></td>\
+                      <td><b>Mùa nóng<br>(từ ngày 01/4 - ngày 31/10)</b></td>\
+                      <td><b>Mùa lạnh<br>(từ ngày 01/11 - ngày 31/3)</b></td>\
+                  </tr>\
+                  <tr>\
+                      <td>Thứ ba, thứ tư, thứ năm</td>\
+                      <td>7h30 - 10h30</td>\
+                      <td>8h00 - 11h00</td>\
+                  </tr>\
+                  <tr>\
+                      <td>Thứ hai, thứ sáu</td>\
+                      <td>không tổ chức lễ viếng</td>\
+                      <td>không tổ chức lễ viếng</td>\
+                  </tr>\
+                  <tr>\
+                      <td>Thứ bảy, Chủ nhật, ngày lễ</td>\
+                      <td>7h30 - 11h00</td>\
+                      <td>8h00 - 11h30</td>\
+                  </tr>\
+              </table><br>\
+              <b>Lưu ý:</b><br>\
+              <ul>\
+                  <li>Trong những dịp đặc biệt như sinh nhật Bác (19/5), lễ Quốc Khánh (2/9) và mùng 1 Tết Nguyên đán nếu rơi vào ngày thứ hai hoặc thứ sáu, lễ viếng lăng vẫn được diễn ra.</li>\
+                  <li>Mỗi năm lăng sẽ đóng cửa, tạm ngừng tổ chức lễ viếng khoảng 2 tháng để duy tu. Năm 2023, Lăng Bác sẽ được bảo dưỡng từ ngày 12/6/2023 đến hết ngày 14/8/2023.</li>\
+                  <li>Thời gian và giá vé mang tính tham khảo và có thể thay đổi vào thời điểm bạn tham quan cụ thể. Vì vậy, bạn hãy cập nhật thông tin mới nhất từ website của ban quản lý lăng. </li>\
+              </ul>\
+              <b>3. Các phương tiện di chuyển đến Lăng Chủ tịch Hồ Chí Minh</b><br><br>\
+              Về vị trí, Lăng Chủ tịch Hồ Chí Minh tọa lạc tại lễ đài cũ giữa Quảng trường Ba Đình. Đây là nơi Bác đã đọc Bản Tuyên ngôn độc lập vào ngày 02/9/1945. Để đến cổng vào Lăng Chủ tịch Hồ Chí Minh, bạn có thể dễ dàng di chuyển bằng nhiều phương tiện như:<br><br>\
+              <ul>\
+                  <li><b>Xe đạp, xe máy, ô tô cá nhân:</b> Bạn lưu ý gửi phương tiện tại điểm giữ xe trên đường Ông Ích Khiêm (đối diện Bộ Tư lệnh Bảo vệ Lăng) hoặc đường Ngọc Hà (cổng vào Bảo tàng Hồ Chí Minh).</li>\
+                  <li><b>Xe buýt:</b> Bạn đón xe buýt số 09, 22, 33, 45, 50 chạy ngang Quảng trường Ba Đình hoặc xe buýt hai tầng Hanoi City Tour. Hiện nay, xe buýt 2 tầng Hà Nội có đi qua Lăng Bác. Với lộ trình di chuyển qua 25 tuyến phố, du lịch Hà Nội, bạn có thể chọn dịch vụ xe buýt 2 tầng để tham quan Lăng Chủ tịch và khám phá toàn cảnh Thủ đô từ trên cao.</li>\
+              </ul>\
+              <b>4. Những trải nghiệm hấp dẫn khi đến Lăng Hồ Chủ tịch</b><br><br>\
+              Du khách viếng thăm Lăng Chủ tịch Hồ Chí Minh không chỉ bày tỏ được tình cảm và lòng biết ơn sâu sắc đến vị cha già dân tộc mà còn có những cảm nhận thiêng liêng và trải nghiệm đáng nhớ:<br><br>\
+              4.1. Trải nghiệm hành trình tham quan Lăng Bác thú vị<br><br>\
+              Đến thăm Lăng Chủ tịch Hồ Chí Minh, bạn sẽ được phổ biến những quy định tham quan và hướng dẫn thực hiện các thủ tục như gửi đồ cá nhân, các thiết bị ghi hình, chụp ảnh và tắt điện thoại, đi qua cổng an ninh…<br><br>\
+              Sau khi hoàn tất thủ tục, bạn sẽ đến xếp hàng tại Quảng trường Ba Đình, chờ đến lượt tham quan. Đến lượt, bạn sẽ được vào lăng, đi qua một vòng ngắm nhìn không gian trang nghiêm và nơi yên nghỉ của Bác. Bạn lưu ý đi theo hàng như hướng dẫn và tuyệt đối không quay phim, chụp ảnh.<br><br>\
+              4.2. Chiêm ngưỡng lễ thượng cờ, hạ cờ trang nghiêm<br><br>\
+              Quảng trường Ba Đình trước Lăng Chủ tịch Hồ Chí Minh là nơi diễn ra nghi lễ thượng cờ Lăng Bác vào lúc 06h00 và lễ hạ cờ lúc 21h00 hàng ngày. Do đó, đến lăng vào những khung giờ này, bạn sẽ được chứng kiến nghi lễ quốc gia trang trọng được thực hiện bởi đội Tiêu binh, chiến sĩ đội Hồng kỳ và hình ảnh cờ đỏ, sao vàng tung bay trong tiếng Quốc ca hào hùng. Trong những ngày đặc biệt như lễ Quốc khánh và sinh nhật Bác, nghi lễ càng trở nên trọng đại và thiêng liêng.<br><br>\
+              4.3. Tham quan kiến trúc Lăng Chủ tịch Hồ Chí Minh<br><br>\
+              Viếng Lăng Bác, bạn sẽ được tận mắt chiêm ngưỡng công trình có kiến trúc vững chãi, trang nghiêm, có thể chống động đất 7 độ richter, bom đạn và lũ lụt. Cảnh quan xung quanh lăng xanh mát, hài hòa với muôn sắc hoa rực rỡ cũng sẽ để lại trong bạn nhiều ấn tượng khó quên.<br><br>\
+              4.4. Lưu lại kỷ niệm đáng nhớ qua những bức ảnh check in<br><br>\
+              Ngoài khu vực lăng và trước Quảng trường Ba Đình, bạn có thể tự do chụp hình, lưu giữ những kỷ niệm trong chuyến viếng Lăng Chủ tịch Hồ Chí Minh. Khuôn viên Lăng Bác còn có nhiều công trình ý nghĩa để bạn tham quan như: Phủ Chủ tịch, ao cá Bác Hồ, khu nhà sàn, Bảo tàng Hồ Chí Minh và chùa Một Cột. Tuy nhiên, bạn cần lưu ý không nên đến và chụp ảnh tại những khu vực có biển cấm.<br><br>\
+              <b>5. Những lưu ý cần thiết khi viếng Lăng Chủ tịch Hồ Chí Minh</b><br><br>\
+              Lăng Chủ tịch Hồ Chí Minh là nơi trang nghiêm. Đối với mỗi con người Việt Nam, đây là nơi vô cùng thiêng liêng. Vì vậy, để thể hiện lòng thành kính, bạn cần lưu ý và tuân thủ những quy định sau để có được chuyến tham quan trọn vẹn nhất:<br><br>\
+              <ul>\
+                  <li>Khi tham quan bạn cần có thái độ nghiêm túc, không đùa giỡn. Chú ý, trẻ 3 tuổi không được phép vào viếng lăng.</li>\
+                  <li>Trước khi vào viếng, bạn phải gửi hành lý và thực hiện kiểm tra an ninh. Bạn chỉ được mang theo ví, túi xách có chứa tiền, kim loại quý, điện thoại và máy ảnh nhỏ đã tắt nguồn. Máy ảnh chuyên dụng và máy quay phim không được phép mang vào.</li>\
+                  <li>Trên đường vào viếng Lăng Chủ tịch Hồ Chí Minh, bạn hãy tuân theo hướng dẫn của Ban Tổ chức, không được phép chen lấn hay xô đẩy.</li>\
+                  <li>Khi đến trước cửa lăng, nếu có đội mũ, nón thì bạn hãy cầm bên tay phải và để phần lòng mũ, nón hướng ra ngoài.</li>\
+                  <li>Trong khi tham quan lăng, chú ý giữ yên tĩnh, không gây ồn ào ảnh hưởng đến xung quanh, không chạm vào tường, không để tay vào túi quần hay túi áo và không hút thuốc lá.</li>\
+                  <li>Tuyệt đối không quay phim, chụp ảnh hoặc vẽ khi tham quan phòng đặt thi hài Chủ tịch Hồ Chí Minh. Lưu ý không được phép đưa những hình ảnh trong lăng lên các phương tiện thông tin đại chúng.</li>\
+                  <li>Sau khi tham quan Lăng Bác, bạn sẽ nhận lại đồ dùng đã gửi ở ngoài.</li>\
+                  <li>Đi Lăng Bác mặc gì? Viếng Lăng Bác, bạn cần ăn mặc chỉnh tề, gọn gàng, lịch sự. Mặc dù không có quy định chính xác về trang phục mà du khách phải mặc tham quan, nhưng để thể hiện sự tôn trọng, bạn cần ăn mặc chỉnh chu, kín đáo, tránh mặc trang phục quá ngắn, không phù hợp như quần short, váy ngắn, áo hai dây, áo hở lưng…</li>\
+              </ul>\
+              <b>Nguồn: </b>Vinpearl",
+    "infoEN": "The President Ho Chi Minh Mausoleum is where Uncle Ho's remains are preserved and is a destination that every generation of Vietnamese people desires to visit to express their deep feelings and gratitude to the venerable father of the nation.<br><br>\
+              When traveling to Hanoi, not only Vietnamese people but also international tourists all hope to visit the President Ho Chi Minh Mausoleum at least once. This structure holds great significance and is one of the cultural and historical symbols of the capital city. This article will help you learn more about Uncle Ho's Mausoleum and the memorable experiences during your visit.<br><br>\
+              <b>1. Introduction to the President Ho Chi Minh Mausoleum</b><br><br>\
+              The President Ho Chi Minh Mausoleum, also affectionately known as Uncle Ho's Mausoleum, is located at 2 Hung Vuong Street, Dien Bien Ward, Ba Dinh District, Hanoi. This structure is where Uncle Ho's remains are preserved according to the wishes and sentiments of the Central Party Committee and the people. Construction of the mausoleum commenced on September 2nd, 1973, and was inaugurated on August 29th, 1975.<br><br>\
+              The mausoleum structure consists of 3 layers, standing at 21.6 meters tall and 41.2 meters wide. Below is a three-level terrace leading to the central structure with the embalmed room and corridors, staircases. The top part is the mausoleum roof designed in a three-level shape.<br><br>\
+              The exterior of the mausoleum is clad in gray granite stone, with square marble columns surrounding all four sides, and in the middle, the prominent inscription \"PRESIDENT HO-CHI-MINH\" in pink stone with a ripe cherry color. The interior area is made of polished gray and red stone. The surrounding area is planted with many characteristic trees and flowers from various regions across the country. This is a famous tourist destination of the capital, where every Vietnamese citizen wants to set foot at least once.<br><br>\
+              <b>2. Opening Hours and Ticket Prices for Visiting Uncle Ho's Mausoleum</b><br><br>\
+              <b>Ticket Prices:</b><br>\
+              <ul>\
+                  <li>Vietnamese citizens: free of charge</li>\
+                  <li>Foreigners: 25,000 VND/ticket</li>\
+              </ul>\
+              <b>Opening Hours:</b><br><br>\
+              <table class=\"info-table\">\
+                  <tr>\
+                      <td><b>Day of the week</b></td>\
+                      <td><b>Hot season<br>(from April 1st - October 31st)</b></td>\
+                      <td><b>Cold season<br>(from November 1st - March 31st)</b></td>\
+                  </tr>\
+                  <tr>\
+                      <td>Tuesday, Wednesday, Thursday</td>\
+                      <td>7:30 AM - 10:30 AM</td>\
+                      <td>8:00 AM - 11:00 AM</td>\
+                  </tr>\
+                  <tr>\
+                      <td>Monday, Friday</td>\
+                      <td>No visiting ceremonies</td>\
+                      <td>No visiting ceremonies</td>\
+                  </tr>\
+                  <tr>\
+                      <td>Saturday, Sunday, holidays</td>\
+                      <td>7:30 AM - 11:00 AM</td>\
+                      <td>8:00 AM - 11:30 AM</td>\
+                  </tr>\
+              </table><br>\
+              <b>Note:</b><br>\
+              <ul>\
+                  <li>On special occasions such as Uncle Ho's birthday (May 19th), National Day (September 2nd), and the first day of the Lunar New Year if falling on Monday or Friday, the mausoleum visiting ceremonies still take place.</li>\
+                  <li>Every year, the mausoleum will close, temporarily suspending visiting ceremonies for about 2 months for maintenance. In 2023, Uncle Ho's Mausoleum will be maintained from June 12th, 2023, to August 14th, 2023.</li>\
+                  <li>Opening hours and ticket prices are for reference only and may change at the time of your specific visit. Therefore, please update the latest information from the mausoleum management website.</li>\
+              </ul>\
+              <b>3. Means of Transportation to Uncle Ho's Mausoleum</b><br><br>\
+              In terms of location, Uncle Ho's Mausoleum is located at the old podium in the middle of Ba Dinh Square. This is where Uncle Ho read the Declaration of Independence on September 2nd, 1945. To reach the entrance gate of Uncle Ho's Mausoleum, you can easily travel by various means such as:<br><br>\
+              <ul>\
+                  <li><b>Bicycles, motorcycles, personal cars:</b> Please note to park your vehicle at the parking lot on Ong Ich Khiem Street (opposite the Guard Command Headquarters of the Mausoleum) or Ngoc Ha Street (entrance gate to the Ho Chi Minh Museum).</li>\
+                  <li><b>Bus:</b> Take bus number 09, 22, 33, 45, 50 passing through Ba Dinh Square or the Hanoi City Tour double-decker bus. Currently, the Hanoi double-decker buses also pass by Uncle Ho's Mausoleum. With a route passing through 25 streets, when visiting Hanoi, you can choose the double-decker bus service to visit Uncle Ho's Mausoleum and explore the panoramic view of the capital from above.</li>\
+              </ul>\
+              <b>4. Interesting Experiences When Visiting Uncle Ho's Mausoleum</b><br><br>\
+              Visitors to Uncle Ho's Mausoleum not only express deep feelings and gratitude to the venerable father of the nation but also have sacred feelings and memorable experiences:<br><br>\
+              4.1. Exciting Experience of Visiting Uncle Ho's Mausoleum<br><br>\
+              When visiting Uncle Ho's Mausoleum, you will be briefed on the visiting regulations and instructions on procedures such as depositing personal belongings, recording devices, photography, and turning off mobile phones, passing through security gates, etc.<br><br>\
+              After completing the procedures, you will queue up at Ba Dinh Square, waiting for your turn to visit. When it's your turn, you will enter the mausoleum, go through a tour to observe the solemn space and Uncle Ho's resting place. Please follow the queue as instructed and absolutely do not film or take photos.<br><br>\
+              4.2. Witnessing Flag-Raising and Flag-Lowering Ceremonies<br><br>\
+              Ba Dinh Square in front of Uncle Ho's Mausoleum is where the flag-raising ceremony takes place at 6:00 AM and the flag-lowering ceremony at 9:00 PM every day. Therefore, visiting the mausoleum during these hours, you will witness the solemn national ceremony performed by the Guard of Honor, soldiers of the Hong Ky Regiment, and the image of the red flag with a yellow star flying high to the tune of the majestic national anthem. On special days such as National Day and Uncle Ho's birthday, the ceremony becomes even more grand and sacred.<br><br>\
+              4.3. Exploring the Architecture of Uncle Ho's Mausoleum<br><br>\
+              When visiting Uncle Ho's Mausoleum, you will have the opportunity to see the solid and solemn architecture of the structure, which can withstand earthquakes of up to 7 Richter, bombs, and floods. The surrounding landscape of the mausoleum is lush and harmonious with colorful flowers, leaving you with many unforgettable impressions.<br><br>\
+              4.4. Capturing Memorable Moments with Check-In Photos<br><br>\
+              Outside the mausoleum and in front of Ba Dinh Square, you are free to take photos, preserving memories of your visit to Uncle Ho's Mausoleum. The area around Uncle Ho's Mausoleum has many significant structures for you to visit such as the Presidential Palace, Ho Chi Minh's fish pond, stilt houses area, Ho Chi Minh Museum, and One Pillar Pagoda. However, please note not to visit and take photos in areas with prohibition signs.<br><br>\
+              <b>5. Important Notes When Visiting Uncle Ho's Mausoleum</b><br><br>\
+              Uncle Ho's Mausoleum is a solemn place. For every Vietnamese person, this is a very sacred place. Therefore, to show respect, you need to pay attention to and comply with the following regulations to have the most complete visit:<br><br>\
+              <ul>\
+                  <li>When visiting, you need to have a serious attitude, no joking. Note that children under 3 years old are not allowed to enter the mausoleum.</li>\
+                  <li>Before entering, you must deposit your luggage and undergo security checks. You are only allowed to carry wallets, bags containing money, precious metals, mobile phones, and small cameras that have been turned off. Specialized cameras and camcorders are not allowed to be brought in.</li>\
+                  <li>On the way to visit Uncle Ho's Mausoleum, please follow the instructions of the Organizing Committee, do not push or shove.</li>\
+                  <li>When arriving at the mausoleum entrance, if wearing a hat, place it in your right hand and let the inner part of the hat face outwards.</li>\
+                  <li>While visiting the mausoleum, pay attention to keep quiet, do not create noise affecting the surroundings, do not touch the walls, do not put your hands in your pockets or bags, and do not smoke.</li>\
+                  <li>Absolutely do not film, take photos, or draw while visiting the embalmed room of President Ho Chi Minh. Note that you are not allowed to show the images inside the mausoleum on public information media.</li>\
+                  <li>After visiting Uncle Ho's Mausoleum, you will retrieve the deposited items from outside.</li>\
+                  <li>What to wear when visiting Uncle Ho's Mausoleum? When visiting Uncle Ho's Mausoleum, you should dress neatly, cleanly, and politely. Although there are no exact regulations on what tourists should wear when visiting, to show respect, you need to dress neatly, modestly, avoid wearing inappropriate clothes such as shorts, short skirts, spaghetti strap tops, backless tops, etc.</li>\
+              </ul>\
+              <b>Source:</b> Vinpearl",
+    "latitude": 21.03675107447656,
+    "longitude": 105.83492931252357,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FLangBac%2Flang-chu-tich-ho-chi-minh-1_1685366034.jpg?alt=media&token=33cd3465-0f45-478e-961c-a13b4154217a',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FLangBac%2Flang-chu-tich-ho-chi-minh-2_1685366073.jpg?alt=media&token=3e9589c9-0da2-4eaa-a90a-586db3808da6',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FLangBac%2Flang-chu-tich-ho-chi-minh-3_1685366144.webp?alt=media&token=92d9e037-4528-42bb-8ea1-3e298960a3fb',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FLangBac%2Flang-chu-tich-ho-chi-minh-4_1685366174.jpg?alt=media&token=b8fdac97-9d45-466c-8dc4-50a439f78b07',
+                      'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FLangBac%2Flang-chu-tich-ho-chi-minh-5_1685366206.jpg?alt=media&token=28895df0-7b1f-42c1-b4ed-121767874ec3'
+                    ]
   }
 };
 

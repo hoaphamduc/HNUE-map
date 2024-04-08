@@ -39,12 +39,12 @@
         </div>
         <div id="add-location">
             <label for="text-location" style="font-size: 10px;">
-                <span class="contentVN">Thêm toạ độ (có thể mất vài phút):</span>
-                <span class="contentEnglish">Add current coordinates (take few minutes):</span>
+                <span class="contentVN">Thêm toạ độ:</span>
+                <span class="contentEnglish">Add current coordinates:</span>
             </label><br>
-            <input type="text" name="text-location" id="text-location-vn" class="contentVN" readonly placeholder="Nhấn nút để thêm tọa độ" >
-            <input type="text" name="text-location" id="text-location-eng" class="contentEnglish" readonly placeholder="Press the button to add coordinates">
-            <img src="source-img/location.png" id="add-location-button" onclick="getLocationAndFillInput()">
+            <input type="text" name="text-location" id="text-location-vn" class="contentVN" readonly placeholder="Nhấn vào đây để thêm tọa độ" onclick="getLocationAndFillInput()">
+            <input type="text" name="text-location" id="text-location-eng" class="contentEnglish" readonly placeholder="Press here to add coordinates" onclick="getLocationAndFillInput()">
+            <img src="source-img/location.png" id="add-location-button">
         </div>
         <div id="add-address">
             <label for="text-location" style="font-size: 10px;">
@@ -685,12 +685,10 @@
                         <span class="contentEnglish">Stadium</span>
                     </li>
                 </ul>
-                <span class="contentVN redtext">CÁC KHU VỰC DỊCH VỤ</span>
-                <span class="contentEnglish redtext">SERVICE AREAS</span>
+                <span class="contentVN redtext">CÁC ĐỊA ĐIỂM KHÁC</span>
+                <span class="contentEnglish redtext">OTHER AREAS</span>
                 <ul id="shopping-area">
                     <!-- WinMart -->
-                    <span class="contentVN redtext">WinMart</span>
-                    <span class="contentEnglish redtext">WinMart</span>
                     <li onclick="toggleInfoDiv('WM27165')">
                         <span class="contentVN">Siêu thị WinMart+ số 27 ngõ 165 đường Xuân Thuỷ, phường Dịch Vọng Hậu</span>
                         <span class="contentEnglish">WinMart+ supermarket number 27, lane 165, Xuan Thuy street, Dich Vong Hau ward</span>
@@ -704,8 +702,6 @@
                         <span class="contentEnglish">WinMart+ Supermarket No. 77 Tran Dang Ninh Street, Dich Vong Ward</span>
                     </li>
                     <!-- Circle K -->
-                    <span class="contentVN redtext">Circle K</span>
-                    <span class="contentEnglish redtext">Circle K</span>
                     <li onclick="toggleInfoDiv('CK03PTT')">
                         <span class="contentVN">Circle K số 03 đường Phạm Tuấn Tài, phường Dịch Vọng Hậu</span>
                         <span class="contentEnglish">Circle K No. 03 Pham Tuan Tai Street, Dich Vong Hau Ward</span>
@@ -719,8 +715,6 @@
                         <span class="contentEnglish">Circle K No. 13 C12 TT DHNN Pham Van Dong Street, Mai Dich Ward</span>
                     </li>
                     <!-- Trạm Xăng -->
-                    <span class="contentVN redtext">Trạm xăng</span>
-                    <span class="contentEnglish redtext">Gas Station</span>
                     <li onclick="toggleInfoDiv('XD171XT')">
                         <span class="contentVN">Cửa hàng Xăng dầu Petrolimex Số 60. Địa chỉ số 171 đường Xuân Thuỷ, phường Dịch Vọng Hậu</span>
                         <span class="contentEnglish">Petrolimex Petroleum Store No. 60. Address No. 171 Xuan Thuy Street, Dich Vong Hau Ward</span>
@@ -730,15 +724,11 @@
                         <span class="contentEnglish">Military Gas Station of the Ministry of National Defense. Address: 107 Phan Van Truong Street, Dich Vong Hau Ward</span>
                     </li>
                     <!-- Bệnh viện -->
-                    <span class="contentVN redtext">Bệnh viện</span>
-                    <span class="contentEnglish redtext">Hospital</span>
                     <li onclick="toggleInfoDiv('BVDKYHCT')">
                         <span class="contentVN">Bệnh viện Đa khoa Y học cổ truyền Hà Nội</span>
                         <span class="contentEnglish">Hanoi Traditional Medicine General Hospital</span>
                     </li>
                     <!-- Công viên -->
-                    <span class="contentVN redtext">Công viên</span>
-                    <span class="contentEnglish redtext">Park</span>
                     <li onclick="toggleInfoDiv('CVCG')">
                         <span class="contentVN">Công viên Cầu Giấy</span>
                         <span class="contentEnglish">Cau Giay park</span>
@@ -752,22 +742,16 @@
                         <span class="contentEnglish">Nghia Do park</span>
                     </li>
                     <!-- Thư viện -->
-                    <span class="contentVN redtext">Thư viện</span>
-                    <span class="contentEnglish redtext">Library</span>
                     <li onclick="toggleInfoDiv('TVCG')">
                         <span class="contentVN">Thư viện Quận Cầu Giấy số 30 Nguyễn Phong Sắc, quận Cầu Giấy, Hà Nội</span>
                         <span class="contentEnglish">Cau Giay District Library 30 Nguyen Phong Sac, Cau Giay District, Hanoi</span>
                     </li>
                     <!-- Nhà thi đấu -->
-                    <span class="contentVN redtext">Nhà thi đấu</span>
-                    <span class="contentEnglish redtext">Gymnasium</span>
                     <li onclick="toggleInfoDiv('NTDCG')">
                         <span class="contentVN">Nhà thi đấu Cầu Giấy số 35 Trần Quý Kiên, quận Cầu Giấy, Hà Nội</span>
                         <span class="contentEnglish">Cau Giay Gymnasium 35 Tran Quy Kien, Cau Giay District, Hanoi</span>
                     </li>
                     <!-- Nhà Sách -->
-                    <span class="contentVN redtext">Nhà sách</span>
-                    <span class="contentEnglish redtext">Bookstore</span>
                     <li onclick="toggleInfoDiv('NSTT36XT')">
                         <span class="contentVN">Nhà sách Tiến Thọ 36 Xuân Thuỷ, quận Cầu Giấy, Hà Nội</span>
                         <span class="contentEnglish">Tien Tho Bookstore, 36 Xuan Thuy, Dich Vong Hau Ward, Cau Giay District, Hanoi</span>
@@ -777,25 +761,24 @@
                         <span class="contentEnglish">HNUE Bookstore and Materials</span>
                     </li>
                     <!-- Chợ -->
-                    <span class="contentVN redtext">Chợ</span>
-                    <span class="contentEnglish redtext">Market</span>
                     <li onclick="toggleInfoDiv('ChoXanh')">
                         <span class="contentVN">Chợ Nhà Xanh</span>
                         <span class="contentEnglish">Nha Xanh market</span>
                     </li>
                     <!-- Chùa -->
-                    <span class="contentVN redtext">Chùa</span>
-                    <span class="contentEnglish redtext">Pagoda</span>
                     <li onclick="toggleInfoDiv('ChuaHa')">
                         <span class="contentVN">Chùa Hà</span>
                         <span class="contentEnglish">Ha Pagoda</span>
                     </li>
                     <!-- Bảo tàng -->
-                    <span class="contentVN redtext">Bảo tàng</span>
-                    <span class="contentEnglish redtext">Museum</span>
                     <li onclick="toggleInfoDiv('BTDTHVN')">
                         <span class="contentVN">Bảo tàng Dân tộc học Việt Nam</span>
                         <span class="contentEnglish">Vietnam Museum of Ethnology</span>
+                    </li>
+                    <!-- Địa điểm khác -->
+                    <li onclick="toggleInfoDiv('LangBac')">
+                        <span class="contentVN">Lăng Chủ tịch Hồ Chí Minh - Lăng Bác</span>
+                        <span class="contentEnglish">President Ho Chi Minh Mausoleum - Uncle Ho's Mausoleum</span>
                     </li>
                 </ul>
             </div>
