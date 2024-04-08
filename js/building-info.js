@@ -205,113 +205,67 @@ var buildingData = {
     "longitude": 105.78290690593676,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaB.jpg?alt=media&token=5f8d44a1-24ad-4179-8d63-3cab286c83d4']
   },
-  "nhaC1": {
+  "nhaC": {
     "polygon": [
-      [21.03718019449884, 105.78377813100816],
-      [21.03717769106527, 105.78402221202852],
-      [21.037187704799326, 105.78402757644655],
-      [21.037192711666112, 105.78404366970064],
-      [21.037187704799326, 105.7840543985367],
-      [21.037175187631647, 105.78405976295473],
-      [21.037167677330526, 105.78426092863084],
-      [21.03704500902534, 105.78425824642183],
-      [21.037057526203963, 105.78377276659015]
+      [21.037053659407256, 105.78377276659015],
+      [21.03704614121929, 105.78425556421281],
+      [21.037168938241546, 105.78426092863084],
+      [21.037168938241546, 105.78428775072099],
+      [21.037402001699277, 105.78429311513904],
+      [21.03740450775598, 105.78423142433168],
+      [21.03744209860147, 105.78423142433168],
+      [21.037439592545404, 105.78443795442583],
+      [21.037547352918402, 105.78443795442583],
+      [21.03756489529734, 105.7838746905327],
+      [21.037454628881214, 105.78386932611467],
+      [21.03745713493703, 105.78377276659015],
+      [21.037444604657498, 105.78376203775409],
+      [21.037236601863615, 105.78375667333604],
+      [21.037229083684885, 105.78376471996307],
+      [21.037221565505796, 105.7838934659958],
+      [21.03718146854424, 105.7838934659958],
+      [21.03718146854424, 105.78377544879913]
     ],
-    "infoDivId": "infoDivC1",
-    "nameVN": "TOÀ NHÀ C1 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "C1 BUILDING - HANOI UNIVERSITY OF EDUCATION",
+    "infoDivId": "infoDivC",
+    "nameVN": "TOÀ NHÀ C - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
+    "nameEN": "C BUILDING - HANOI UNIVERSITY OF EDUCATION",
     "infoVN": "<b>Khoa Toán - Tin</b><br>\
               Tầng 1<br>\
               Số điện thoại: 02437547727<br>\
               Email: tapchi@hnue.edu.vn<br>\
-              Website: <a href=\"http://math.hnue.edu.vn/\" target=\"_blank\">math.hnue.edu.vn</a><br>",
-    "infoEN": "<b>Faculty of Mathematics and Informatics</b><br>\
-              Floor 1<br>\
-              Phone: 02437547727<br>\
-              Email: tapchi@hnue.edu.vn<br>\
-              Website: <a href=\"http://math.hnue.edu.vn/\" target=\"_blank\">math.hnue.edu.vn</a><br>",
-    "latitude": 21.037137948558595,
-    "longitude": 105.78374855294989,
-    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaC.jfif?alt=media&token=3001411f-42ce-4470-a2a8-1ce683c0d578']
-  },
-  "nhaC2": {
-    "polygon": [
-      [21.0371742550829, 105.78418314456941],
-      [21.03716924296171, 105.78428775072099],
-      [21.037402306418958, 105.78429311513904],
-      [21.037404812475675, 105.78423142433168],
-      [21.03744240332109, 105.7842341065407],
-      [21.03744240332109, 105.78419119119646]
-    ],
-    "infoDivId": "infoDivC2",
-    "nameVN": "TOÀ NHÀ C2 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "C2 BUILDING - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "<b>Khoa Công nghệ Thông tin</b><br>\
+              Website: <a href=\"http://math.hnue.edu.vn/\" target=\"_blank\">math.hnue.edu.vn</a><br><br>\
+              <b>Khoa Công nghệ Thông tin</b><br>\
               Tầng 2<br>\
               Số điện thoại: 0904031397<br>\
               Email: cntt@hnue.edu.vn<br>\
               Website: <a href=\"https://fit.hnue.edu.vn/\" target=\"_blank\">fit.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100093662272135&locale=vi_VN\" target=\"_blank\">Facebook</a>",
-    "infoEN": "<b>Faculty of Information Technology</b><br>\
-              Floor 2<br>\
-              Phone: 0904031397<br>\
-              Email: cntt@hnue.edu.vn<br>\
-              Website: <a href=\"https://fit.hnue.edu.vn/\" target=\"_blank\">fit.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100093662272135&locale=vi_VN\" target=\"_blank\">Facebook</a>",
-    "latitude": 21.037137948558595,
-    "longitude": 105.78374855294989,
-    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaC.jfif?alt=media&token=3001411f-42ce-4470-a2a8-1ce683c0d578']
-  },
-  "nhaC3": {
-    "polygon": [
-      [21.037563219340893, 105.78387261332273],
-      [21.037548198777404, 105.78444142805806],
-      [21.037440551361414, 105.78443874496965],
-      [21.03745056507781, 105.78407384495078],
-      [21.037438047932216, 105.78406579568568],
-      [21.037433041073676, 105.78405238024379],
-      [21.037440551361414, 105.78403896480191],
-      [21.03745056507781, 105.78403359862519],
-      [21.037455571935766, 105.78386993023439]
-    ],
-    "infoDivId": "infoDivC3",
-    "nameVN": "TOÀ NHÀ C3 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "C3 BUILDING - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "<b>Khoa Vật Lí</b><br>\
+              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100093662272135&locale=vi_VN\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Khoa Vật Lí</b><br>\
               Tầng 1<br>\
               Số điện thoại: 0437547797<br>\
               Email: khoavatli@hnue.edu.vn<br>\
               Website: <a href=\"https://phys.hnue.edu.vn/\" target=\"_blank\">phys.hnue.edu.vn</a><br>\
               Fanpage: <a href=\"https://www.facebook.com/phys.hnue?locale=vi_VN\" target=\"_blank\">Facebook</a>",
-    "infoEN": "<b>Faculty of Physics</b><br>\
+    "infoEN": "<b>Faculty of Mathematics and Informatics</b><br>\
+              Floor 1<br>\
+              Phone: 02437547727<br>\
+              Email: tapchi@hnue.edu.vn<br>\
+              Website: <a href=\"http://math.hnue.edu.vn/\" target=\"_blank\">math.hnue.edu.vn</a><br><br>\
+              <b>Faculty of Information Technology</b><br>\
+              Floor 2<br>\
+              Phone: 0904031397<br>\
+              Email: cntt@hnue.edu.vn<br>\
+              Website: <a href=\"https://fit.hnue.edu.vn/\" target=\"_blank\">fit.hnue.edu.vn</a><br>\
+              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100093662272135&locale=vi_VN\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Faculty of Physics</b><br>\
               Floor 1<br>\
               Phone: 0437547797<br>\
               Email: khoavatli@hnue.edu.vn<br>\
               Website: <a href=\"https://phys.hnue.edu.vn/\" target=\"_blank\">phys.hnue.edu.vn</a><br>\
               Fanpage: <a href=\"https://www.facebook.com/phys.hnue?locale=vi_VN\" target=\"_blank\">Facebook</a>",
-    "latitude": 21.037494326242005,
-    "longitude": 105.78374421706172,
-    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaC3.jfif?alt=media&token=70b2311b-98ec-429e-a865-647f8229e473']
-  },
-  "nhaC4": {
-    "polygon": [
-      [21.037443054790582, 105.78376249150337],
-      [21.037455571935766, 105.78377322385688],
-      [21.03745056507781, 105.7839529907779],
-      [21.03718019449884, 105.78394494151281],
-      [21.03718019449884, 105.78389127974529],
-      [21.037220249430398, 105.78389396283367],
-      [21.03722775972886, 105.78376785768015],
-      [21.03723527002695, 105.78375712532662]
-    ],
-    "infoDivId": "infoDivC4",
-    "nameVN": "C4 - GIẢNG ĐƯỜNG - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
-    "nameEN": "C4 - LECTURE HALL - HANOI UNIVERSITY OF EDUCATION",
-    "infoVN": "Chưa có thông tin.",
-    "infoEN": "No information.",
-    "latitude": 21.037494326242005,
-    "longitude": 105.78374421706172,
-    "source-image": []
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaC.jfif?alt=media&token=3001411f-42ce-4470-a2a8-1ce683c0d578']
   },
   "nhaD124": {
     "polygon": [
