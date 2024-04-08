@@ -101,9 +101,9 @@ function clearUserProfile() {
 const inappropriateWords = [
   'địt', 'lồn', 'mẹ mày', 'vãi', 'vcl', 'đm', 'đmm', 'đi khách', 'tình 1 đêm', 'tinh 1 dem',
   'dm', 'duma', 'Đuma', 'dmm', 'dit', 'me may', 'ngứa dái', 'tà dăm', 'răm', 'trai bao',
-  'đéo', 'deo', 'vch', 'Đitme', 'ditme', 'đĩ', 'đụ', 'chơi gái', 'choi gai', 'bulon',
+  'đéo', 'vch', 'Đitme', 'ditme', 'đĩ', 'đụ', 'chơi gái', 'choi gai', 'bulon',
   'cac', 'cặc', 'nwngs', 'loz', 'buoi', 'me m', 'xam l', 'đá phò', 'bitch', 'fuck', 'dick',
-  'trường l', 'fwb', 'ons', 'tình 1 đêm', 'tình một đêm', 'tinh 1 dem', 'tinh mot dem'
+  'fwb', 'ons', 'tình 1 đêm', 'tình một đêm', 'tinh 1 dem', 'tinh mot dem'
 ];
 
 document.getElementById("logout-btn").addEventListener("click", logout);
@@ -390,9 +390,6 @@ function extractCoordinates(location) {
     return { latitude: 0, longitude: 0 };
   }
 }
-
-
-
 
 // Biến để lưu số lượng bài đăng đã tải, khai báo ở phạm vi toàn cục
 let loadedPostsCount = 0;
