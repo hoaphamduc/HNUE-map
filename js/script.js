@@ -22,6 +22,11 @@
 //   console.log('DevTools đã bị chặn.');
 // });
 
+document.addEventListener("copy", function(e) {
+  e.preventDefault();
+  alert("Bạn không được phép copy.");
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   const sidebar = document.querySelector('.sidebar');
   const btn = document.getElementById('menu-btn');

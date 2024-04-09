@@ -22,6 +22,11 @@
 //   console.log('DevTools đã bị chặn.');
 // });
 
+document.addEventListener("copy", function(e) {
+  e.preventDefault();
+  alert("Bạn không được phép copy.");
+});
+
 function openCommentAction(postId) {
 
   // Check if the comment-action div already exists
