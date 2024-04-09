@@ -991,9 +991,6 @@ function toggleEmojiMenu(postId) {
   }
 }
 
-
-
-
 function clearInput2(postId) {
   const input = $(`#comment-input-${postId}`);
   const emojioneArea = input.data("emojioneArea");
@@ -1002,4 +999,32 @@ function clearInput2(postId) {
   } else {
       console.error("emojioneArea not initialized");
   }
+}
+
+function openBuildingOption() {
+  var classroom = document.getElementById('direction-content-2');
+  var building = document.getElementById('direction-content');
+  var classroomOption = document.getElementById('classroom-option');
+  var buildingOption = document.getElementById('building-option');
+
+  building.style.display = "block";
+  classroom.style.display = "none";
+  buildingOption.style.borderBottom = "none";
+  classroomOption.style.borderBottom = "0.5px solid #000";
+  buildingOption.style.opacity = "1";
+  classroomOption.style.opacity = "0.3";
+}
+
+function openClassroomOption() {
+  var classroom = document.getElementById('direction-content-2');
+  var building = document.getElementById('direction-content');
+  var classroomOption = document.getElementById('classroom-option');
+  var buildingOption = document.getElementById('building-option');
+
+  building.style.display = "none";
+  classroom.style.display = "block";
+  buildingOption.style.borderBottom = "0.5px solid #000";
+  classroomOption.style.borderBottom = "none";
+  buildingOption.style.opacity = "0.3";
+  classroomOption.style.opacity = "1";
 }

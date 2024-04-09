@@ -483,12 +483,40 @@
                 <input class="search-input contentEnglish" id="search-input-2" type="text" placeholder="What are you searching for?" oninput="filterItems()">
                 <img id="clear-input" src="source-img/close.svg" onclick="clearInput()">
             </div>
+            <div id="search-option">
+                <div id="building-option" onclick="openBuildingOption()">
+                    <span class="contentVN option-text">Địa điểm</span>
+                    <span class="contentEnglish option-text">Location</span>
+                </div>
+                <div id="classroom-option" onclick="openClassroomOption()">
+                    <span class="contentVN option-text">Phòng học</span>
+                    <span class="contentEnglish option-text">Classroom</span>
+                </div>
+            </div>
+            <div id="direction-content-2">
+                <span class="contentVN redtext" style="margin-top: 10px;">NHÀ A</span>
+                <span class="contentEnglish redtext" style="margin-top: 10px;">A BUILDING</span>
+                <ul id="nha-A">
+                    <li onclick="">
+                        <span class="contentVN">101A1: Phòng học</span>
+                        <span class="contentEnglish">101A1</span>
+                    </li>
+                    <li onclick="">
+                        <span class="contentVN">102A1: Phòng học</span>
+                        <span class="contentEnglish">102A1</span>
+                    </li>
+                    <li onclick="">
+                        <span class="contentVN">103A1: Phòng học</span>
+                        <span class="contentEnglish">103A1</span>
+                    </li>
+                </ul>
+            </div>
             <div id="direction-content">
                 <span id="resultVN" class="contentVN"></span>
                 <span id="resultEN" class="contentEnglish"></span>
                 <span id="searchByGoogleVN" class="searchByGoogle" onclick="openGoogleSearch()">Thử tìm kiếm bằng Google</span>
-                <span class="contentVN redtext">KHU HÀNH CHÍNH</span>
-                <span class="contentEnglish redtext">ADMINISTRATIVE REGION</span>
+                <span class="contentVN redtext" style="margin-top: 10px;">KHU HÀNH CHÍNH</span>
+                <span class="contentEnglish redtext" style="margin-top: 10px;">ADMINISTRATIVE REGION</span>
                 <ul id="admin-area">
                     <li onclick="toggleInfoDiv('NhaHieuBo')">
                         <span class="contentVN">Nhà hiệu bộ</span>

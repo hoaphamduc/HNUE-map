@@ -122,6 +122,8 @@
         border: 1px solid #e4e6e9;
     }
     #social-network-div {
+        left: 0;
+        width: 100%;
         top: 0;
         height: 100%;
     }
