@@ -354,6 +354,13 @@ function toggleNotificationDiv() {
   }
 }
 
+document.getElementById("close-social-network-div").addEventListener("click", function() {
+  var notificationDiv = document.getElementById("notification-div");
+  var socialNetworkDiv = document.getElementById("social-network-div");
+  notificationDiv.style.display = "none";
+  socialNetworkDiv.classList.remove('darkFilter');
+});
+
 
 function toggleSupportDiv() {
   var supportDiv = document.getElementById("support-div");
