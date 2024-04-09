@@ -792,7 +792,7 @@ function removeVietnameseSigns(str) {
 }
 
 // Hàm mở Google Search
-function openGoogleSearch(searchText) {
+function openGoogleSearch() {
   var searchText = removeVietnameseSigns((document.getElementById("search-input-1").value.trim() + document.getElementById("search-input-2").value.trim()).toLowerCase());
   var googleSearchURL = "https://www.google.com/search?q=" + encodeURIComponent(searchText);
   window.open(googleSearchURL, "_blank");
