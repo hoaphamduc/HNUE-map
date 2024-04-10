@@ -446,7 +446,7 @@ mymap.on('click', function (e) {
 
 var zoomControl = L.control.zoom({
     position: 'bottomright' 
-  });
+});
 
 zoomControl.addTo(mymap);
 
@@ -489,20 +489,6 @@ function removeDarken() {
   const homeContent = document.getElementById('main-content');
   homeContent.classList.remove('darkFilter');
 }
-
-// var maxBounds = L.latLngBounds(
-//   L.latLng(21.027863833645036, 105.7683849334717),   // Tọa độ góc trái dưới của giới hạn
-//   L.latLng(21.04615122410683, 105.79756736755371)    // Tọa độ góc phải trên của giới hạn
-// );
-
-// mymap.setMaxBounds(maxBounds);
-// mymap.on('drag', function() {
-//     mymap.panInsideBounds(maxBounds, { animate: false });
-// });
-
-// // Fit bounds to the maximum bounds
-// mymap.fitBounds(maxBounds);
-
 
 // if (navigator.geolocation) {
 //   // Hỏi quyền truy cập vị trí

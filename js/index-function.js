@@ -1,5 +1,4 @@
 function openCommentAction(postId) {
-
   // Check if the comment-action div already exists
   const existingCommentAction = document.getElementById(`comment-action-${postId}`);
 
