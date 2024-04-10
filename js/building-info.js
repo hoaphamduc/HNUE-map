@@ -511,7 +511,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaK.jpg?alt=media&token=9045f9ae-375c-46aa-a80e-3f36e1846abe']
   },
   "nhaK2": {
     "polygon": [
@@ -811,7 +811,7 @@ var buildingData = {
               <b>Email: tt.thuvien@hnue.edu.vn</b>",
     "latitude": 21.04001756530523,
     "longitude": 105.7836799710749,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fthuvien.jpg?alt=media&token=425347c0-945f-4f10-af46-da3453c5d4ae']
   },
   "SDN": {
     "polygon": [
