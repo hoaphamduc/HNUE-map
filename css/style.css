@@ -271,7 +271,7 @@ body, html {
   width: 100%;
   height: calc(100% - 85px);
   position: absolute;
-  top: 110px;
+  top: 120px;
   overflow: auto;
 }
 
@@ -395,7 +395,7 @@ body, html {
   height: 25px;
   display: flex;
   position: absolute;
-  top: 85px;
+  top: 55px;
 }
 
 .option-text {
@@ -412,8 +412,7 @@ body, html {
   justify-content: center;
   cursor: pointer;
   position: relative;
-  border-right: 0.25px solid #000;
-  border-bottom: none;
+  border-bottom: 0.5px solid #000;
   font-weight: 500;
 }
 
@@ -426,8 +425,7 @@ body, html {
   justify-content: center;
   cursor: pointer;
   position: relative;
-  border-left: 0.25px solid #000;
-  border-bottom: 0.5px solid #000;
+  border-bottom: none;
   font-weight: 500;
   opacity: 0.3;
 }
@@ -1449,7 +1447,7 @@ body, html {
  height: 40px;
  position: absolute;
  display: block;
- top: 45px;
+ top: 80px;
 }
 
 .verified {
