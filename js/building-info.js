@@ -2600,37 +2600,45 @@ var buildingData = {
   },
   "104K1": {
     "polygon": [
-      [21.03897764894967, 105.78273773640991],
-      [21.038967635335936, 105.78319922761024],
-      [21.03873231521919, 105.78319386143349],
-      [21.038737322034056, 105.78300604524732],
-      [21.038679743652953, 105.78300336215892],
-      [21.038682247061296, 105.78292018641935],
-      [21.038734818626644, 105.78292018641935],
-      [21.038744832256047, 105.78273237023313],
-      [21.038814927642953, 105.78273505332153],
-      [21.038819934455045, 105.78271358861456],
-      [21.03891005704384, 105.78271358861456],
-      [21.03891005704384, 105.78273773640991]
+      [0, 0],
+      [0, 0]
     ],
     "infoDivId": "infoDiv104K1",
     "nameVN": "104K1: Phòng kính hiển vi. Bộ môn: Công nghệ sinh học - vi sinh",
     "nameEN": "104K1: Microscope Room. Department: Biotechnology - Microbiology",
-    "infoVN": "Thời gian mở cửa: 8 giờ đến 17 giờ<br>\
-              Số điện thoại: 0243.7565843<br>\
-              Giám đốc Trung tâm VHTTTT: Nguyễn Trường Giang<br>\
-              Tổ Trưởng tổ Thông tin tuyên truyền: Nguyễn Thị Hạnh - Mobi: 0969251282<br>\
-              Cán bộ thư viện: Nguyễn Hữu Hưng- Mobi: 0988593990<br>\
-              Email: trungtamvhttttcaugiay@gmail.com",
-    "infoEN": "Opening hours: 8:00 AM to 5:00 PM<br>\
-              Phone number: 0243.7565843<br>\
-              Director of Information Technology Center: Nguyen Truong Giang<br>\
-              Head of Information and Communication Team: Nguyen Thi Hanh - Mobile: 0969251282<br>\
-              Library staff: Nguyen Huu Hung - Mobile: 0988593990<br>\
-              Email: trungtamvhttttcaugiay@gmail.com",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải",
+    "infoEN": "Enter through the first floor door and then turn right.",
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
-    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2Fthu-vien-cau-giay.jpg?alt=media&token=b659cedc-707c-4d44-b962-fa90455a988f']
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fphong%20kinh%20hien%20vi.jpg?alt=media&token=226df12c-c83b-43eb-82ed-bc513ffc49be']
+  },
+  "105K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv105K1",
+    "nameVN": "105K1: Phòng thí nghiệm Công nghệ Sinh học",
+    "nameEN": "105K1: Laboratory of Biotechnology",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải",
+    "infoEN": "Enter through the first floor door and then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fphong%20thi%20nghiem%20cong%20nghe%20sinh%20hoc.jpg?alt=media&token=e7c1f698-4199-42eb-9fd0-5da70c959a9f']
+  },
+  "107K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv107K1",
+    "nameVN": "107K1: Phòng thí nghiệm Nuôi cấy mô",
+    "nameEN": "107K1: Tissue Culture Laboratory",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải",
+    "infoEN": "Enter through the first floor door and then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fphong%20thi%20nghiem%20nuoi%20cay%20mo.jpg?alt=media&token=32e5383f-dfbd-4543-ab90-f45027fa2769']
   },
 };
 

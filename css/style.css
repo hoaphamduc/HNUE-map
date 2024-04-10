@@ -282,17 +282,17 @@ body, html {
   cursor: default;
 }
 
-#admin-area, #lecture-hall-area, #domestic-area, #other-areas, #shopping-area, #nha-A {
+#admin-area, #lecture-hall-area, #domestic-area, #other-areas, #shopping-area, #nha-A, #nha-B, #nha-C, #nha-D, #nha-K, #nha-V {
   font-size: 14px;
   list-style: none;
 }
 
-#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li, #nha-A li {
+#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li, #nha-A li, #nha-B li, #nha-C li, #nha-D li, #nha-K li, #nha-V li {
   cursor: pointer;
   margin-bottom: 3px;
 }
 
-#admin-area li:hover, #lecture-hall-area li:hover, #domestic-area li:hover, #other-areas li:hover, #shopping-area li:hover, #nha-A li:hover {
+#admin-area li:hover, #lecture-hall-area li:hover, #domestic-area li:hover, #other-areas li:hover, #shopping-area li:hover, #nha-A li:hover, #nha-B li:hover, #nha-C li:hover, #nha-D li:hover, #nha-K li:hover, #nha-V li:hover {
   color: #2185D0;
 }
 
