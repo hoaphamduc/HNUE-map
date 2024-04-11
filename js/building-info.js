@@ -2606,7 +2606,7 @@ var buildingData = {
     "infoDivId": "infoDiv104K1",
     "nameVN": "104K1: Phòng kính hiển vi. Bộ môn: Công nghệ sinh học - vi sinh",
     "nameEN": "104K1: Microscope Room. Department: Biotechnology - Microbiology",
-    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải.",
     "infoEN": "Enter through the first floor door and then turn right.",
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
@@ -2620,7 +2620,7 @@ var buildingData = {
     "infoDivId": "infoDiv105K1",
     "nameVN": "105K1: Phòng thí nghiệm Công nghệ Sinh học",
     "nameEN": "105K1: Laboratory of Biotechnology",
-    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải.",
     "infoEN": "Enter through the first floor door and then turn right.",
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
@@ -2634,7 +2634,7 @@ var buildingData = {
     "infoDivId": "infoDiv107K1",
     "nameVN": "107K1: Phòng thí nghiệm Nuôi cấy mô",
     "nameEN": "107K1: Tissue Culture Laboratory",
-    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải.",
     "infoEN": "Enter through the first floor door and then turn right.",
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
@@ -2648,7 +2648,7 @@ var buildingData = {
     "infoDivId": "infoDiv108K1",
     "nameVN": "108K1",
     "nameEN": "108K1",
-    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải.",
     "infoEN": "Enter through the first floor door and then turn right.",
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
@@ -2662,7 +2662,7 @@ var buildingData = {
     "infoDivId": "infoDiv101K1",
     "nameVN": "101K1: Trung tâm Công nghệ thông tin",
     "nameEN": "101K1: Information Technology Center",
-    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái.",
     "infoEN": "Enter through the first floor door and then turn left.",
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
@@ -2676,7 +2676,7 @@ var buildingData = {
     "infoDivId": "infoDiv102K1",
     "nameVN": "102K1: Trung tâm Khoa học và Công nghệ Nano",
     "nameEN": "102K1: Center for Nano Science and Technology",
-    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái.",
     "infoEN": "Enter through the first floor door and then turn left.",
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
@@ -2690,19 +2690,910 @@ var buildingData = {
     "infoDivId": "infoDiv103K1",
     "nameVN": "103K1",
     "nameEN": "103K1",
-    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái.",
     "infoEN": "Enter through the first floor door and then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "201K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv201K1",
+    "nameVN": "201K1: Phòng học",
+    "nameEN": "201K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "202K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv202K1",
+    "nameVN": "202K1: Phòng học",
+    "nameEN": "202K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "203K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv203K1",
+    "nameVN": "203K1: Phòng học",
+    "nameEN": "203K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "204K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv204K1",
+    "nameVN": "204K1: Phòng học",
+    "nameEN": "204K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "205K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv205K1",
+    "nameVN": "205K1: Phòng học",
+    "nameEN": "205K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "206K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv206K1",
+    "nameVN": "206K1: Phòng học",
+    "nameEN": "206K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "HoiTruongK": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivHoiTruongK",
+    "nameVN": "Hội trường nhà K",
+    "nameEN": "K Building Auditorium",
+    "infoVN": "Đi lên tầng 2 rồi rẽ phải.",
+    "infoEN": "Go up to the second floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "207K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv207K1",
+    "nameVN": "207K1: Phòng học",
+    "nameEN": "207K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ phải.",
+    "infoEN": "Go up to the second floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "208K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv208K1",
+    "nameVN": "208K1: Phòng quản lý toà nhà (mượn chìa khoá)",
+    "nameEN": "208K1: Building Management Office (key borrowing)",
+    "infoVN": "Đi lên tầng 2 rồi rẽ phải.",
+    "infoEN": "Go up to the second floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "301K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv301K1",
+    "nameVN": "301K1: Phòng học",
+    "nameEN": "301K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ trái.",
+    "infoEN": "Go up to the third floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "302K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv302K1",
+    "nameVN": "302K1: Phòng học",
+    "nameEN": "302K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ trái.",
+    "infoEN": "Go up to the third floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "303K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv303K1",
+    "nameVN": "303K1: Phòng học",
+    "nameEN": "303K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ trái.",
+    "infoEN": "Go up to the third floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "304K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv304K1",
+    "nameVN": "304K1: Phòng học",
+    "nameEN": "304K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ trái.",
+    "infoEN": "Go up to the third floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "305K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv305K1",
+    "nameVN": "305K1: Phòng học",
+    "nameEN": "305K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ trái.",
+    "infoEN": "Go up to the third floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "306K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv306K1",
+    "nameVN": "306K1: Phòng chờ giáo viên",
+    "nameEN": "306K1: Teachers' Lounge",
+    "infoVN": "Đi lên tầng 3 rồi rẽ phải.",
+    "infoEN": "Go up to the third floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fnha%20K%2Fphong%20cho%20giao%20vien%20306.jpg?alt=media&token=88cf9356-4806-43ed-b1b7-9a78b69cc59b']
+  },
+  "307K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv307K1",
+    "nameVN": "307K1: Phòng học",
+    "nameEN": "307K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ phải.",
+    "infoEN": "Go up to the third floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "401K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv401K1",
+    "nameVN": "401K1: Phòng học",
+    "nameEN": "401K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ trái.",
+    "infoEN": "Go up to the fourth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "402K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv402K1",
+    "nameVN": "402K1: Phòng học",
+    "nameEN": "402K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ trái.",
+    "infoEN": "Go up to the fourth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "403K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv403K1",
+    "nameVN": "403K1: Phòng học",
+    "nameEN": "403K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ trái.",
+    "infoEN": "Go up to the fourth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "404K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv404K1",
+    "nameVN": "404K1: Phòng học",
+    "nameEN": "404K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ trái.",
+    "infoEN": "Go up to the fourth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "405K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv405K1",
+    "nameVN": "405K1: Phòng học",
+    "nameEN": "405K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ phải.",
+    "infoEN": "Go up to the fourth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "406K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv406K1",
+    "nameVN": "406K1: Phòng học",
+    "nameEN": "406K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ phải.",
+    "infoEN": "Go up to the fourth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "407K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv407K1",
+    "nameVN": "407K1: Phòng học",
+    "nameEN": "407K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ phải.",
+    "infoEN": "Go up to the fourth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "408K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv408K1",
+    "nameVN": "408K1: Phòng học",
+    "nameEN": "408K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ phải.",
+    "infoEN": "Go up to the fourth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "501K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv501K1",
+    "nameVN": "501K1: Phòng máy tính",
+    "nameEN": "501K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "502K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv502K1",
+    "nameVN": "502K1: Phòng máy tính",
+    "nameEN": "502K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "503K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv503K1",
+    "nameVN": "503K1: Phòng máy tính",
+    "nameEN": "503K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "504K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv504K1",
+    "nameVN": "504K1: Phòng máy tính",
+    "nameEN": "504K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "505K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv505K1",
+    "nameVN": "505K1: Phòng máy tính",
+    "nameEN": "505K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "506K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv506K1",
+    "nameVN": "506K1: Phòng máy tính",
+    "nameEN": "506K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "507K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv507K1",
+    "nameVN": "507K1: Phòng máy tính",
+    "nameEN": "507K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ phải.",
+    "infoEN": "Go up to the fifth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "508K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv508K1",
+    "nameVN": "508K1: Phòng máy tính",
+    "nameEN": "508K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ phải.",
+    "infoEN": "Go up to the fifth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "509K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv509K1",
+    "nameVN": "509K1: Phòng máy tính",
+    "nameEN": "509K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ phải.",
+    "infoEN": "Go up to the fifth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "601K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv601K1",
+    "nameVN": "601K1: Phòng máy tính",
+    "nameEN": "601K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ trái.",
+    "infoEN": "Go up to the sixth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "602K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv602K1",
+    "nameVN": "602K1: Phòng máy tính",
+    "nameEN": "602K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ trái.",
+    "infoEN": "Go up to the sixth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "603K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv603K1",
+    "nameVN": "603K1: Phòng máy tính",
+    "nameEN": "603K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ trái.",
+    "infoEN": "Go up to the sixth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "604K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv604K1",
+    "nameVN": "604K1",
+    "nameEN": "604K1",
+    "infoVN": "Đi lên tầng 6 rồi rẽ trái.",
+    "infoEN": "Go up to the sixth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "605K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv605K1",
+    "nameVN": "605K1",
+    "nameEN": "605K1",
+    "infoVN": "Đi lên tầng 6 rồi rẽ trái.",
+    "infoEN": "Go up to the sixth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "606K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv606K1",
+    "nameVN": "606K1: Phòng máy tính",
+    "nameEN": "606K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ phải",
+    "infoEN": "Go up to the sixth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "607K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv607K1",
+    "nameVN": "607K1: Phòng máy tính",
+    "nameEN": "607K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ phải",
+    "infoEN": "Go up to the sixth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "608K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv608K1",
+    "nameVN": "608K1: Phòng máy tính",
+    "nameEN": "608K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ phải",
+    "infoEN": "Go up to the sixth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "609K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv609K1",
+    "nameVN": "609K1: Phòng máy tính",
+    "nameEN": "609K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ phải",
+    "infoEN": "Go up to the sixth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "701K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv701K1",
+    "nameVN": "701K1: Phòng học",
+    "nameEN": "701K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "702K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv702K1",
+    "nameVN": "702K1: Phòng học",
+    "nameEN": "702K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "703K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv703K1",
+    "nameVN": "703K1: Phòng học",
+    "nameEN": "703K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "704K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv704K1",
+    "nameVN": "704K1: Phòng chuyên gia",
+    "nameEN": "704K1: Expert Room",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "705K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv705K1",
+    "nameVN": "705K1: Phòng học",
+    "nameEN": "705K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "706K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv706K1",
+    "nameVN": "706K1: Phòng học",
+    "nameEN": "706K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "707K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv707K1",
+    "nameVN": "707K1: Phòng học",
+    "nameEN": "707K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ phải",
+    "infoEN": "Go up to the seventh floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "708K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv708K1",
+    "nameVN": "708K1: Phòng học",
+    "nameEN": "708K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ phải",
+    "infoEN": "Go up to the seventh floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "709K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv709K1",
+    "nameVN": "709K1: Phòng học",
+    "nameEN": "709K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ phải",
+    "infoEN": "Go up to the seventh floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "710K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv710K1",
+    "nameVN": "710K1: Viện Giáo dục và Đào tạo Quốc tế",
+    "nameEN": "710K1: Institute for International Education and Traning",
+    "infoVN": "Đi lên tầng 7 rồi rẽ phải",
+    "infoEN": "Go up to the seventh floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "801K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv801K1",
+    "nameVN": "801K1: Phòng học",
+    "nameEN": "801K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "802K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv802K1",
+    "nameVN": "802K1: Phòng học",
+    "nameEN": "802K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "803K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv803K1",
+    "nameVN": "803K1: Phòng học",
+    "nameEN": "803K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "804K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv804K1",
+    "nameVN": "804K1: Phòng học",
+    "nameEN": "804K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "805K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv805K1",
+    "nameVN": "805K1: Phòng học",
+    "nameEN": "805K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "806K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv806K1",
+    "nameVN": "806K1: Phòng học",
+    "nameEN": "806K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "807K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv807K1",
+    "nameVN": "807K1: Phòng học",
+    "nameEN": "807K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ phải",
+    "infoEN": "Go up to the eighth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "808K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv808K1",
+    "nameVN": "808K1: Phòng học",
+    "nameEN": "808K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ phải",
+    "infoEN": "Go up to the eighth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "809K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv809K1",
+    "nameVN": "809K1: Phòng học",
+    "nameEN": "809K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ phải",
+    "infoEN": "Go up to the eighth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "810K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv810K1",
+    "nameVN": "810K1: Phòng học",
+    "nameEN": "810K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ phải",
+    "infoEN": "Go up to the eighth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "811K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv811K1",
+    "nameVN": "811K1: Phòng học",
+    "nameEN": "811K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ phải",
+    "infoEN": "Go up to the eighth floor, then turn right.",
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
     "source-image": []
   },
 };
 
-// --------------------------------------------------------------------------------------- //
-// --------------------------------------------------------------------------------------- //
-// --------------------------------------------------------------------------------------- //
-// --------------------------------------------------------------------------------------- //
-// --------------------------------------------------------------------------------------- //
+///////////////////////////////////////////////////////////////////////////
+// --------------------------------------------------------------------- //
+// -0-------0--000000000--000000000-----000000000--000000000--000000000- //
+// -00-----00--0----------0-------0-----0-------0--0----------0-------0- //
+// -0-0---0-0--0----------0-------0-----0-------0--0----------0-------0- //
+// -0--0-0--0--000000-----0-------0-----00000000---000000-----0-------0- //
+// -0---0---0--0----------0-------0-----0-------0--0----------0-------0- //
+// -0-------0--0----------0-------0-----0-------0--0----------0-------0- //
+// -0-------0--0----------0-------0-----0-------0--0----------0-------0- //
+// -0-------0--000000000--000000000-----00000000---000000000--000000000- //
+// --------------------------------------------------------------------- //
+// -------------------Nghiên-cứu-khoa-học-năm-2024---------------------- //
+// --------------------------------------------------------------------- //
+///////////////////////////////////////////////////////////////////////////
 
 for (const buildingId in buildingData) {
   if (buildingData.hasOwnProperty(buildingId)) {
@@ -2711,15 +3602,14 @@ for (const buildingId in buildingData) {
 }
 
 // Hàm để tạo và chèn khối div
+
 function createInfoDiv(buildingKey) {
   var building = buildingData[buildingKey];
 
-  // Tạo một khối div mới
   var infoDiv = document.createElement('div');
   infoDiv.className = 'infoDiv';
   infoDiv.id = building.infoDivId;
 
-  // Tạo nội dung cho toolbar
   var toolbar = document.createElement('div');
   toolbar.className = 'toolbar';
   toolbar.innerHTML = `
@@ -2734,7 +3624,6 @@ function createInfoDiv(buildingKey) {
       <img class="send-feedback" src="source-img/mail.svg" onclick="composeEmail()">
       <button class="close" id="close${building.infoDivId}"></button>`;
 
-  // Tạo nội dung cho phần content
   var content = document.createElement('div');
   content.className = 'content';
   content.innerHTML = `
@@ -2750,17 +3639,12 @@ function createInfoDiv(buildingKey) {
             ${building['source-image'].map(image => `<img class="img-demo" src="${image}" onclick="openFullscreen(this)" alt="Building Image">`).join('')}
       </div>`;
 
-  // Chèn các phần tử vào khối div chính
   infoDiv.appendChild(toolbar);
   infoDiv.appendChild(content);
 
-  // Lấy thẻ div có id là 'main-content'
   var mainContentDiv = document.getElementById('main-content');
-
-  // Chèn khối div vào khối 'main-content'
   mainContentDiv.appendChild(infoDiv);
 
-  // Thiết lập sự kiện cho nút đóng
   var closeButton = document.getElementById(`close${building.infoDivId}`);
   closeButton.addEventListener('click', function () {
       infoDiv.style.display = 'none';
@@ -2774,7 +3658,6 @@ function createInfoDiv(buildingKey) {
       }
   });
 
-   // Tạo button scroll to top
    var scrollToTopButton = document.createElement('button');
    var scrollToTopButtonId = `scroll-to-top-${building.infoDivId}`;
    scrollToTopButton.id = scrollToTopButtonId;
@@ -2787,7 +3670,6 @@ function createInfoDiv(buildingKey) {
    var mainContentDiv = document.getElementById('main-content');
    mainContentDiv.appendChild(scrollToTopButton);
  
-  // Ẩn hiện button scroll to top dựa trên trạng thái của infoDiv
   var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
       if (mutation.attributeName === "style") {
@@ -2809,6 +3691,7 @@ function scrollToTop(infoDivId) {
 }
 
 // Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
+
 function setPolygonClickEvent(buildingKey) {
   var building = buildingData[buildingKey];
   var polygon = L.polygon(building.polygon, {
@@ -2851,18 +3734,14 @@ function setPolygonClickEvent(buildingKey) {
 
 function toggleInfoDiv(buildingKey) {
   var building = buildingData[buildingKey];
-
-  // Kiểm tra xem infoDiv đã được tạo hay chưa
   var infoDiv = document.getElementById(building.infoDivId);
 
   if (!infoDiv) {
-      // Nếu chưa được tạo, tạo nó và hiển thị
       infoDiv = createInfoDiv(buildingKey);
       setTimeout(function () {
           infoDiv.style.display = 'block';
       }, 3000);
   } else {
-      // Nếu đã tồn tại, chỉ hiển thị nó
       if (infoDiv.style.display === 'block') {
           infoDiv.style.display = 'none';
       } else {
@@ -2930,7 +3809,6 @@ function initRoutingControl(buildingKey) {
       },
     };
 
-    // Kiểm tra xem class contentEnglish hoặc contentVN có hiển thị không
     var contentEnglish = document.querySelector('.contentEnglish');
     var contentVN = document.querySelector('.contentVN');
     var confirmationMessage = '';
@@ -3001,7 +3879,6 @@ function initRoutingControl(buildingKey) {
   }
 }
 
-// Kiểm tra xem có phải là thiết bị di động không
 function isMobileDevice() {
   return /Mobi|Android/i.test(navigator.userAgent);
 }
