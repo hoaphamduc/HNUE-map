@@ -708,7 +708,7 @@ var buildingData = {
               Phone: 024385876448<br>\
               Email: k.gddb@hnue.edu.vn<br>\
               Website: <a href=\"http://gddb.hnue.edu.vn/\" target=\"_blank\">gddb.hnue.edu.vn</a><br><br>\
-              <b>Faculty of Military and Security Education</b><br>\
+              <b>Faculty of National Defense Education</b><br>\
               Floor 5<br>\
               Phone: 0438347106<br>\
               Email: k.gdqp@hnue.edu.vn<br>\
@@ -2639,6 +2639,62 @@ var buildingData = {
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fphong%20thi%20nghiem%20nuoi%20cay%20mo.jpg?alt=media&token=32e5383f-dfbd-4543-ab90-f45027fa2769']
+  },
+  "108K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv108K1",
+    "nameVN": "108K1",
+    "nameEN": "108K1",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải",
+    "infoEN": "Enter through the first floor door and then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "101K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv101K1",
+    "nameVN": "101K1: Trung tâm Công nghệ thông tin",
+    "nameEN": "101K1: Information Technology Center",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái",
+    "infoEN": "Enter through the first floor door and then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fnha%20K%2Ftrung%20tam%20cntt.jpg?alt=media&token=996e27e4-51cc-41d0-a379-40ee42779c38']
+  },
+  "102K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv102K1",
+    "nameVN": "102K1: Trung tâm Khoa học và Công nghệ Nano",
+    "nameEN": "102K1: Center for Nano Science and Technology",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái",
+    "infoEN": "Enter through the first floor door and then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fnha%20K%2Ftrung%20tam%20khcn%20nano.jpg?alt=media&token=2e2ef68d-9c75-4fa9-8583-641cda2a9b70']
+  },
+  "103K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv103K1",
+    "nameVN": "103K1",
+    "nameEN": "103K1",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái",
+    "infoEN": "Enter through the first floor door and then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
   },
 };
 
