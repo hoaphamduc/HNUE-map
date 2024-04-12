@@ -66,7 +66,15 @@ var buildingData = {
               Tầng 1, 2, 3, 4<br>\
               Số điện thoại: 02438346828<br>\
               Email: k.sinhhoc@hnue.edu.vn<br>\
-              Website: <a href=\"https://bio.hnue.edu.vn/\" target=\"_blank\">bio.hnue.edu.vn</a>",
+              Website: <a href=\"https://bio.hnue.edu.vn/\" target=\"_blank\">bio.hnue.edu.vn</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 47 (1 Giáo sư, 17 Phó Giáo sư, 18 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Động vật học, Thực vật học, Sinh lý học Thực vật và Ứng dụng, Sinh lý học Con người và Động vật, Di truyền Hoá Sinh, Công nghệ Sinh học và Vi sinh, Sinh học Tế bào và Hoá sinh, Lý luận và Phương pháp Dạy học Sinh học.</li>\
+                  <li>Chương trình học: 3 chương trình Đại học, 7 chương trình Thạc sĩ và 6 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 482.</li>\
+              </ul>",
     "infoEN": "<b>Faculty of Biology</b><br>\
               Floor 1, 2, 3, 4<br>\
               Phone: 02438346828<br>\
@@ -99,12 +107,28 @@ var buildingData = {
               Số điện thoại: 0983832528<br>\
               Email: k.nguvan@hnue.edu.vn<br>\
               Website: <a href=\"http://fpe.hnue.edu.vn/\" target=\"_blank\">fpe.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/p/Tuy%E1%BB%83n-sinh-Khoa-L%C3%AD-lu%E1%BA%ADn-ch%C3%ADnh-tr%E1%BB%8BGi%C3%A1o-d%E1%BB%A5c-c%C3%B4ng-d%C3%A2n-%C4%90%E1%BA%A1i-h%E1%BB%8Dc-S%C6%B0-ph%E1%BA%A1m-H%C3%A0-N%E1%BB%99i-100063815312396/?paipv=0&eav=AfYh_Y0DubJqhCvTgN5hzebbc_yFqbUd_yOx-3VhfmbeKHLQQOUv8Xmjxq_gtgNv2Fg&_rdr\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/p/Tuy%E1%BB%83n-sinh-Khoa-L%C3%AD-lu%E1%BA%ADn-ch%C3%ADnh-tr%E1%BB%8BGi%C3%A1o-d%E1%BB%A5c-c%C3%B4ng-d%C3%A2n-%C4%90%E1%BA%A1i-h%E1%BB%8Dc-S%C6%B0-ph%E1%BA%A1m-H%C3%A0-N%E1%BB%99i-100063815312396/?paipv=0&eav=AfYh_Y0DubJqhCvTgN5hzebbc_yFqbUd_yOx-3VhfmbeKHLQQOUv8Xmjxq_gtgNv2Fg&_rdr\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1976.</li>\
+                  <li>Số lượng cán bộ: 20 (3 Phó Giáo sư, 17 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Kinh tế Chính trị, Chủ nghĩa Xã hội Khoa học, Lịch sừ Đảng Cộng sản Việt Nam-Tư tưởng Hồ Chí Minh, Giáo dục Công dân, Phương pháp Dạy học.</li>\
+                  <li>Chương trình học: 3 chương trình Đại học, 1 chương trình Thạc sĩ và 1 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 801.</li>\
+              </ul><br>\
               <b>Khoa Hoá Học</b><br>\
               Số điện thoại: 0437549487<br>\
               Email: k.khoahoc@hnue.edu.vn<br>\
               Website: <a href=\"http://chem.hnue.edu.vn/\" target=\"_blank\">chem.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/tuyensinhkhoahochocdhsphn\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/tuyensinhkhoahochocdhsphn\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 48 (1 Giáo sư, 16 Phó Giáo sư, 17 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Hoá vô cơ, Hoá hữu cơ, Hoá học Phân tích, Hoá Lý thuyết và Vật lý, Hoá học Môi trường, Phương pháp Dạy học Hoá học.</li>\
+                  <li>Chương trình học: 3 chương trình Đại học, 6 chương trình Thạc sĩ và 5 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 912.</li>\
+              </ul>",
     "infoEN": "<b>Faculty of Politic Theory - Civic Education</b><br>\
               Floor 1<br>\
               Phone: 0983832528<br>\
@@ -170,19 +194,43 @@ var buildingData = {
               Số điện thoại: 02437549076<br>\
               Email: k.nguvan@hnue.edu.vn<br>\
               Website: <a href=\"http://nguvan.hnue.edu.vn/\" target=\"_blank\">nguvan.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoanguvandhsphn/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoanguvandhsphn/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 48 (2 Giáo sư, 21 Phó Giáo sư, 21 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Văn học, Ngôn ngữ, Khoa học Giáo dục.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học, 7 chương trình Thạc sĩ và 7 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: khoảng 2000.</li>\
+              </ul><br>\
               <b>Khoa Lịch Sử</b><br>\
               Tầng 2<br>\
               Số điện thoại: 0437547099<br>\
               Email: lichsu@hnue.edu.vn<br>\
               Website: <a href=\"http://lichsu.hnue.edu.vn/\" target=\"_blank\">lichsu.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/p/Khoa-L%E1%BB%8Bch-s%E1%BB%AD-Tr%C6%B0%E1%BB%9Dng-%C4%90%E1%BA%A1i-h%E1%BB%8Dc-S%C6%B0-ph%E1%BA%A1m-H%C3%A0-N%E1%BB%99i-100057569854720/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/p/Khoa-L%E1%BB%8Bch-s%E1%BB%AD-Tr%C6%B0%E1%BB%9Dng-%C4%90%E1%BA%A1i-h%E1%BB%8Dc-S%C6%B0-ph%E1%BA%A1m-H%C3%A0-N%E1%BB%99i-100057569854720/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 25 (2 Giáo sư, 8 Phó Giáo sư, 12 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Lịch sử Việt Nam, Lịch sử Thế giới, Phương pháp và dạy học Lịch sử.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 3 chương trình Thạc sĩ và 3 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 350.</li>\
+              </ul><br>\
               <b>Khoa Triết Học</b><br>\
               Tầng 3<br>\
               Số điện thoại: 0485876474<br>\
               Email: triethoc@hnue.edu.vn<br>\
               Website: <a href=\"http://triethoc.hnue.edu.vn/\" target=\"_blank\">triethoc.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/KhoaTriethoc.HNUE/\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/KhoaTriethoc.HNUE/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2011.</li>\
+                  <li>Số lượng cán bộ: 13 (1 Phó Giáo sư, 9 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Lịch sử Triết học, Triết học Phương Đông, Phương Tây và Tư tưởng Triết học Việt Nam, Triết học Mác-Lênin, Phương pháp Dạy học Triết học, Triết học Kinh tế/Văn hoá/Môi trường.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 1 chương trình Thạc sĩ và 1 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 186.</li>\
+              </ul>",
     "infoEN": "<b>Faculty of Philology</b><br>\
               Floor 1<br>\
               Phone number: 02437549076<br>\
@@ -233,19 +281,43 @@ var buildingData = {
               Tầng 1<br>\
               Số điện thoại: 02437547727<br>\
               Email: tapchi@hnue.edu.vn<br>\
-              Website: <a href=\"http://math.hnue.edu.vn/\" target=\"_blank\">math.hnue.edu.vn</a><br><br>\
+              Website: <a href=\"http://math.hnue.edu.vn/\" target=\"_blank\">math.hnue.edu.vn</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 49 (7 Giáo sư, 8 Phó Giáo sư, 45 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Đại số, Tích phân, Hình học, Xác suất, Thống kê, Toán Ứng dụng, Phương pháp Giảng dạy.</li>\
+                  <li>Chương trình học: 3 chương trình Đại học, 6 chương trình Thạc sĩ và 5 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 1400.</li>\
+              </ul><br>\
               <b>Khoa Công nghệ Thông tin</b><br>\
               Tầng 2<br>\
               Số điện thoại: 0904031397<br>\
               Email: cntt@hnue.edu.vn<br>\
               Website: <a href=\"https://fit.hnue.edu.vn/\" target=\"_blank\">fit.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100093662272135&locale=vi_VN\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100093662272135&locale=vi_VN\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2003.</li>\
+                  <li>Số lượng cán bộ: 29 (2 Phó Giáo sư, 11 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Khoa học Máy tính, Thuật toán, Học máy, Học sâu, Kỹ thuật Phần mềm.</li>\
+                  <li>Chương trình học: 3 chương trình Đại học, 6 chương trình Thạc sĩ và 5 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 912.</li>\
+              </ul><br>\
               <b>Khoa Vật Lí</b><br>\
               Tầng 1<br>\
               Số điện thoại: 0437547797<br>\
               Email: khoavatli@hnue.edu.vn<br>\
               Website: <a href=\"https://phys.hnue.edu.vn/\" target=\"_blank\">phys.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/phys.hnue?locale=vi_VN\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/phys.hnue?locale=vi_VN\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 1 Giáo sư, 14 Phó Giáo sư, 20 Tiến sĩ.</li>\
+                  <li>Lĩnh vực nghiên cứu: Vật lý Lý thuyết, Vật lý Trạng thái rắn, Điện Vật lý, Vật lý Thiên văn, Nghiên cứu Giáo dục Vật lý.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học, 3 chương trình Thạc sĩ và 3 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 965.</li>\
+              </ul>",
     "infoEN": "<b>Faculty of Mathematics and Informatics</b><br>\
               Floor 1<br>\
               Phone: 02437547727<br>\
@@ -322,31 +394,70 @@ var buildingData = {
               Số điện thoại: 02437549180<br>\
               Email: k.tienganh@hnue.edu.vn<br>\
               Website: <a href=\"https://foe.hnue.edu.vn/\" target=\"_blank\">foe.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoatienganhDHSPHN/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoatienganhDHSPHN/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2004.</li>\
+                  <li>Số lượng cán bộ: 41 (5 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Ngôn ngữ học, Phương pháp luận Dạy học Ngôn ngữ Tiếng Anh, Ngôn ngữ học Tiếng Anh, Nghiên cứu Anh Mỹ, Ngôn ngữ học Corpus.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học và 1 chương trình Thạc sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 960.</li>\
+              </ul><br>\
               <b>Khoa Việt Nam Học</b><br>\
               Tầng 1<br>\
               Số điện thoại: 02437549039<br>\
               Email: k.vnh@hnue.edu.vn<br>\
               Website: <a href=\"http://vns.hnue.edu.vn/\" target=\"_blank\">vns.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/vnstrongtoi/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/vnstrongtoi/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2005.</li>\
+                  <li>Số lượng cán bộ: 20 (10 Giáo sư, 3 Phó Giáo sư, 12 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Văn hoá Việt Nam, Du lịch, Báo chí và Cộng đồng.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học và 1 chương trình Thạc sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 650.</li>\
+              </ul><br>\
               <b>Khoa Quản Lý Giáo Dục</b><br>\
               Tầng 2<br>\
               Số điện thoại: 02437549310<br>\
               Email: k.qlgd@hnue.edu.vn<br>\
               Website: <a href=\"https://qlgd.hnue.edu.vn/\" target=\"_blank\">qlgd.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/qlgd.hnue/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/qlgd.hnue/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2011.</li>\
+                  <li>Số lượng cán bộ: 14 (4 Phó Giáo sư, 5 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Lãnh đạo và Quản lý Cơ sở Giáo dục, Mô hình Lãnh đạo và Quản lý Giáo dục, Chính sách Giáo dục Trong nước và Quốc tế, Quản lý Nguồn lực Giáo dục, Lãnh đạo và Quản lý Hệ thống Giáo dục bao gồm Giáo dục Mầm non, K-12, Giáo dục Nghề nghiệp, Giáo dục Thường xuyên, Giáo dục Đại học.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 1 chương trình Thạc sĩ và 1 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 407.</li>\
+              </ul><br>\
               <b>Khoa Công Tác Xã Hội</b><br>\
               Tầng 3<br>\
               Số điện thoại: 02432191073<br>\
               Email: k.ctxh@hnue.edu.vn<br>\
               Website: <a href=\"https://ctxh.hnue.edu.vn/\" target=\"_blank\">ctxh.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoaCTXH.DHSPHN/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoaCTXH.DHSPHN/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2011.</li>\
+                  <li>Số lượng cán bộ: 20 (1 Phó Giáo sư, 9 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Công tác Xã hội Trường học, Công tác Xã hội Sức khoẻ,  Phát triển Cộng đồng, Sức khoẻ Cộng đồng và Phúc lợi cùng Công tác Xã hội với LGBTQ+.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học và Thạc sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 400.</li>\
+              </ul><br>\
               <b>Khoa Ngôn ngữ và Văn hoá Trung Quốc</b><br>\
               Tầng 3<br>\
               Số điện thoại: 02438342917<br>\
               Email: ttq@hnue.edu.vn<br>\
               Website: <a href=\"https://ttq.hnue.edu.vn/\" target=\"_blank\">ttq.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/ttqhnue/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/ttqhnue/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2024.</li>\
+                  <li>Số lượng cán bộ: 10 (4 Tiến sĩ, 4 Thạc sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Ngôn ngữ học Trung Quốc và Ngôn ngữ học Ứng dụng.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học.</li>\
+              </ul><br>\
               <b>Bảo tàng sinh vật</b><br>\
               Tầng 4<br><br>\
               <b>Khoa Nghệ Thuật</b><br>\
@@ -354,7 +465,15 @@ var buildingData = {
               Số điện thoại: 0979336113<br>\
               Email: k.nghethuat@hnue.edu.vn<br>\
               Website: <a href=\"https://nghethuat.hnue.edu.vn/\" target=\"_blank\">nghethuat.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoanghethuatdhsphn/\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/khoanghethuatdhsphn/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2001.</li>\
+                  <li>Số lượng cán bộ: 37 (3 Phó Giáo sư, 7 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Giáo dục Nghệ thuật.</li>\
+                  <li>Chương trình học:  2 chương trình Đại học và 2 chương trình Thạc sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 234.</li>\
+              </ul>",
     "infoEN": "<b>Faculty of English</b><br>\
               Floor 1<br>\
               Phone: 02437549180<br>\
@@ -634,48 +753,112 @@ var buildingData = {
               Số điện thoại: 02437549499<br>\
               Email: k.spkt@hnue.edu.vn<br>\
               Website: <a href=\"https://spkt.hnue.edu.vn/\" target=\"_blank\">spkt.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/SuPhamKythuat.DHSPHN\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/SuPhamKythuat.DHSPHN\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1970.</li>\
+                  <li>Số lượng cán bộ: 16 (2 Phó Giáo sư, 3 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Động lực học-Cơ học, Điện-Điện tử, Giáo dục STEM, Phương pháp Dạy học Kỹ thuật.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học, Thạc sĩ và Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 408.</li>\
+              </ul><br>\
               <b>Khoa Giáo dục Thể chất</b><br>\
               Tầng 2<br>\
               Số điện thoại: 02437549517<br>\
               Email: hoanb1974@gmail.com<br>\
               Website: <a href=\"http://gdtc.hnue.edu.vn/\" target=\"_blank\">gdtc.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoagdtc.dhsphn\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoagdtc.dhsphn\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2001.</li>\
+                  <li>Số lượng cán bộ: 27 (2 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Phương pháp Dạy học Giáo dục Thể chất.</li>\
+                  <li>Chương trình học:  1 chương trình Đại học và 1 chương trình Thạc sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 520.</li>\
+              </ul><br>\
               <b>Khoa Giáo dục Đặc biệt</b><br>\
               Tầng 4<br>\
               Số điện thoại: 024385876448<br>\
               Email: k.gddb@hnue.edu.vn<br>\
-              Website: <a href=\"http://gddb.hnue.edu.vn/\" target=\"_blank\">gddb.hnue.edu.vn</a><br><br>\
+              Website: <a href=\"http://gddb.hnue.edu.vn/\" target=\"_blank\">gddb.hnue.edu.vn</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2001.</li>\
+                  <li>Số lượng cán bộ: 26 (1 Giáo sư, 1 Phó Giáo sư, 12 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Giáo dục Trẻ em Khiếm thị và Khuyết tật Học tập, Giáo dục Trẻ em Khiếm thính và Rối loạn Ngôn ngữ, Giáo dục Trẻ em Thiểu năng Trí tuệ và Rối loạn Phổ Tự kỷ.</li>\
+                  <li>Chương trình học: 4 chương trình Đại học, Thạc sĩ và Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 342.</li>\
+              </ul><br>\
               <b>Khoa Giáo dục Quốc Phòng và An Ninh</b><br>\
               Tầng 5<br>\
               Số điện thoại: 0438347106<br>\
               Email: k.gdqp@hnue.edu.vn<br>\
               Website: <a href=\"http://gdqp.hnue.edu.vn/\" target=\"_blank\">gdqp.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/gdqp.dhsphn\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/gdqp.dhsphn\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1982.</li>\
+                  <li>Số lượng cán bộ: 16 (2 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Lịch sử Quân sự Việt Nam, Chiến thuật và Chiến lược Quân sự, Giáo dục Quốc phòng.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: khoảng 90.</li>\
+              </ul><br>\
               <b>Khoa Địa Lý</b><br>\
               Tầng 5<br>\
               Số điện thoại: 02438346826<br>\
               Email: k.dialy@hnue.edu.vn<br>\
               Website: <a href=\"https://dialy.hnue.edu.vn/\" target=\"_blank\">dialy.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/geo.hnue/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/geo.hnue/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1956.</li>\
+                  <li>Số lượng cán bộ: 25 (2 Phó Giáo sư, 18 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Địa lý Tự nhiên, Địa lý Kinh tế Xã hội, Bản đồ Viễn thám và GIS, Lý luận và Phương pháp Dạy học Địa lý.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 4 chương trình Thạc sĩ và 3 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 573.</li>\
+              </ul><br>\
               <b>Khoa Giáo dục Tiểu học</b><br>\
               Tầng 6<br>\
               Số điện thoại: 0437549273<br>\
               Email: k.gdth@hnue.edu.vn<br>\
               Website: <a href=\"http://gdth.hnue.edu.vn/\" target=\"_blank\">gdth.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoagiaoductieuhoc/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoagiaoductieuhoc/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1983.</li>\
+                  <li>Số lượng cán bộ: 20 (5 Phó Giáo sư, 4 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Khoa học Tự nhiên cho Giáo dục Tiểu học, Khoa học Xã hội cho Giáo dục Tiểu học, Tâm lý và Giáo dục cho Sư phạm Tiểu học.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 3 chương trình Thạc sĩ và 3 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 870.</li>\
+              </ul><br>\
               <b>Khoa Tâm Lý Học - Giáo Dục</b><br>\
               Tầng 6<br>\
               Số điện thoại: 0437547098<br>\
               Email: k.tamly@hnue.edu.vn<br>\
               Website: <a href=\"http://psy.hnue.edu.vn/\" target=\"_blank\">psy.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/tlgdhnue/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/tlgdhnue/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1958.</li>\
+                  <li>Số lượng cán bộ: 34 (1 Giáo sư, 11 Phó Giáo sư, 15 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Phát triển Tâm lý học, Tâm lý học Trường học, Tâm lý học Xuyên văn hoá, Tâm lý học Quản lý, Tâm lý học Xã hội, Lịch sử của Giáo dục, Phương pháp Dạy học và Đánh giá trong Giáo dục, Nguyên tắc và Kỹ thuật trong Dạy học và Giáo dục.</li>\
+                  <li>Chương trình học:  4 chương trình Đại học, 2 chương trình Thạc sĩ và 4 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 460.</li>\
+              </ul><br>\
               <b>Khoa Giáo dục Mầm non</b><br>\
               Tầng 6 phòng 605<br>\
               Số điện thoại: 0437547095<br>\
               Email: k.gdmn@hnue.edu.vn<br>\
               Website: <a href=\"https://gdmn.hnue.edu.vn/\" target=\"_blank\">gdmn.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoaGDMNHNUE/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoaGDMNHNUE/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1985.</li>\
+                  <li>Số lượng cán bộ: 23 (6 Phó Giáo sư, 8 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Tâm lý Trẻ em, Giáo dục Thể chất ở độ tuổi nhỏ, Giáo dục Mỹ thuật, Giáo dục Ngôn ngữ và Trí tuệ.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 1 chương trình Thạc sĩ và 1 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 850.</li>\
+              </ul><br>\
               <b>Viện Nghiên Cứu Sư Phạm</b><br>\
               Tầng 7<br>\
               Số điện thoại: 0462570159<br><br>\
@@ -688,7 +871,15 @@ var buildingData = {
               Số điện thoại: 0437549499<br>\
               Email: k.tiengphap@hnue.edu.vn<br>\
               Website: <a href=\"http://tiengphap.hnue.edu.vn/\" target=\"_blank\">tiengphap.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/phapdhsphn/\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/phapdhsphn/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2004.</li>\
+                  <li>Số lượng cán bộ: 11 (1 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Ngôn ngữ học, Sư phạm.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 161.</li>\
+              </ul>",
     "infoEN": "<b>Professor's Office</b><br>\
               Floors 2, 3<br><br>\
               <b>Lecture Theaters, classrooms</b><br>\
