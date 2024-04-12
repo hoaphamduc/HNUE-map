@@ -32,13 +32,17 @@ function openBuildingOption() {
     var building = document.getElementById('direction-content');
     var classroomOption = document.getElementById('classroom-option');
     var buildingOption = document.getElementById('building-option');
-  
+    var searchInput1 = document.getElementById('search-input-container');
+    var searchInput2 = document.getElementById('search-input-container-2');
+
     building.style.display = "block";
     classroom.style.display = "none";
     buildingOption.style.borderBottom = "2px solid #2185D0";
     classroomOption.style.borderBottom = "none";
     buildingOption.style.opacity = "1";
     classroomOption.style.opacity = "0.3";
+    searchInput1.style.display = "block";
+    searchInput2.style.display = "none";
   }
   
 function openClassroomOption() {
@@ -46,6 +50,8 @@ function openClassroomOption() {
     var building = document.getElementById('direction-content');
     var classroomOption = document.getElementById('classroom-option');
     var buildingOption = document.getElementById('building-option');
+    var searchInput1 = document.getElementById('search-input-container');
+    var searchInput2 = document.getElementById('search-input-container-2');
   
     building.style.display = "none";
     classroom.style.display = "block";
@@ -53,6 +59,8 @@ function openClassroomOption() {
     classroomOption.style.borderBottom = "2px solid #2185D0";
     buildingOption.style.opacity = "0.3";
     classroomOption.style.opacity = "1";
+    searchInput1.style.display = "none";
+    searchInput2.style.display = "block";
 }
 
 function confirmRedirect() {
@@ -144,10 +152,52 @@ function filterItems() {
     checkInput();
 }
 
+function filterItems2() {
+  var searchText = removeVietnameseSigns((document.getElementById("search-input-3").value.trim() + document.getElementById("search-input-4").value.trim()).toLowerCase());
+  
+  var listItems = document.querySelectorAll("#nha-A li, #nha-B li, #nha-C li, #nha-D li, #nha-K li, #nha-V li");
+  var count = 0;
+  
+  listItems.forEach(function (item) {
+    var textContent = removeVietnameseSigns(item.textContent.trim().toLowerCase());
+    if (textContent.indexOf(searchText) !== -1) {
+      item.style.display = "block";
+      count++;
+    } else {
+      item.style.display = "none";
+    }
+  });
+
+  var resultVNSpan = document.getElementById("resultVN");
+  var resultENSpan = document.getElementById("resultEN");
+  
+  if (searchText !== "") {
+    resultVNSpan.innerText = count === 0 ? "Không có kết quả" : count === 1 ? "1 kết quả" : count + " kết quả";
+    resultVNSpan.style.display = "block";
+    resultENSpan.innerText = count === 0 ? "No result" : count === 1 ? "1 result" : count + " results";
+    resultENSpan.style.display = "block";
+  } else {
+    resultVNSpan.style.display = "none";
+    resultENSpan.style.display = "none";
+  }
+
+  var searchByGoogleButton = document.getElementById("searchByGoogleVN");
+  
+  if (count === 0) {
+    searchByGoogleButton.style.display = "block";
+  } else {
+    searchByGoogleButton.style.display = "none";
+  }
+
+  checkInput();
+}
+
 // Hàm kiểm tra khi input có chữ và hiển thị nút clear-input
 function checkInput() {
   var searchInput1 = document.getElementById("search-input-1");
   var searchInput2 = document.getElementById("search-input-2");
+  var searchInput1 = document.getElementById("search-input-3");
+  var searchInput2 = document.getElementById("search-input-4");
   var clearInput = document.getElementById("clear-input");
 
   if (searchInput1.value.trim() !== "" || searchInput2.value.trim() !== "") {
