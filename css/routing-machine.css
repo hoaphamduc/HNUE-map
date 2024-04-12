@@ -53,11 +53,8 @@
 }
 
 @media (max-width: 769px){ 
-    /* .leaflet-routing-container {
-        top: 0px;
-        left: 0px;
+    .closeRoutingButton {
+        left: 1px;
+        bottom: 1px;
     }
-    .leaflet-routing-alternatives-container {
-        max-height: 170px;
-    } */
 }

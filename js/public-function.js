@@ -196,11 +196,11 @@ function filterItems2() {
 function checkInput() {
   var searchInput1 = document.getElementById("search-input-1");
   var searchInput2 = document.getElementById("search-input-2");
-  var searchInput1 = document.getElementById("search-input-3");
-  var searchInput2 = document.getElementById("search-input-4");
+  var searchInput3 = document.getElementById("search-input-3");
+  var searchInput4 = document.getElementById("search-input-4");
   var clearInput = document.getElementById("clear-input");
 
-  if (searchInput1.value.trim() !== "" || searchInput2.value.trim() !== "") {
+  if (searchInput1.value.trim() !== "" || searchInput2.value.trim() !== "" || searchInput3.value.trim() !== "" || searchInput4.value.trim() !== "") {
       clearInput.style.display = "block";
   } else {
       clearInput.style.display = "none";
@@ -211,12 +211,17 @@ function checkInput() {
 function clearInput() {
   var searchInput1 = document.getElementById("search-input-1");
   var searchInput2 = document.getElementById("search-input-2");
+  var searchInput3 = document.getElementById("search-input-3");
+  var searchInput4 = document.getElementById("search-input-4");
   var clearInput = document.getElementById("clear-input");
 
   searchInput1.value = "";
   searchInput2.value = "";
+  searchInput3.value = "";
+  searchInput4.value = "";
   clearInput.style.display = "none";
   filterItems();
+  filterItems2();
 }
 
 // Hàm mở Google Search

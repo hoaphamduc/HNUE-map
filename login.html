@@ -10,8 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/205daebc46.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/sidebar.css"/>
     <link rel="stylesheet" href="css/mobile-UI.css"/>
@@ -478,17 +477,16 @@
                 <span class="contentEnglish direction-text">Direction board</span>
                 <img id="directionArrow" src="source-img/Icon ionic-md-arrow-dropdown.svg">
             </div>
+            <img id="clear-input" src="source-img/close.svg" onclick="clearInput()">
             <div id="search-input-container">
                 <img id="search-input-img" src="source-img/search-icon.png">
                 <input class="search-input contentVN" id="search-input-1" type="text" placeholder="Bạn đang tìm kiếm điều gì?" oninput="filterItems()">
                 <input class="search-input contentEnglish" id="search-input-2" type="text" placeholder="What are you searching for?" oninput="filterItems()">
-                <img id="clear-input" src="source-img/close.svg" onclick="clearInput()">
             </div>
             <div id="search-input-container-2">
                 <img id="search-input-img" src="source-img/search-icon.png">
                 <input class="search-input contentVN" id="search-input-3" type="text" placeholder="Bạn đang tìm phòng nào?" oninput="filterItems2()">
                 <input class="search-input contentEnglish" id="search-input-4" type="text" placeholder="What are you searching for?" oninput="filterItems2()">
-                <img id="clear-input" src="source-img/close.svg" onclick="clearInput()">
             </div>
             <div id="search-option">
                 <div id="building-option" onclick="openBuildingOption()">
@@ -1291,7 +1289,7 @@
         </div>
 
     </div>
-    
+
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
     <script src="js/auth.js" defer type="module"></script>
