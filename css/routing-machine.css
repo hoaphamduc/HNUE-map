@@ -1,4 +1,6 @@
-.leaflet-routing-alternatives-container {
+@import url("https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css");
+
+/* .leaflet-routing-alternatives-container {
     background-color: #fff;
     cursor: default;
     display: block;
@@ -34,36 +36,28 @@
 
 .leaflet-routing-alt table tr td:nth-child(3) {
     width: 55px;
-}
+} */
 
 .closeRoutingButton {
     position: absolute;
-    top: 5px;
-    left: 295px;
+    bottom: 10px;
+    left: 10px;
     z-index: 1001;
-    width: 25px;
-    height: 25px;
-    background-image: url(/source-img/close.svg);
-    background-position: center;
+    width: 150px;
+    height: 30px;
     background-color: #fff;
     border: 1px solid #81858A;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-}
-
-.closeRoutingButton:hover {
-    transform: scale(1.3);
+    border-radius: 10px;
+    color: #fff;
+    background: linear-gradient(to right, #990000, #f10000);
 }
 
 @media (max-width: 769px){ 
-    .leaflet-routing-container {
+    /* .leaflet-routing-container {
         top: 0px;
         left: 0px;
     }
     .leaflet-routing-alternatives-container {
         max-height: 170px;
-    }
-    .closeRoutingButton {
-        top: 1px;
-    }
+    } */
 }

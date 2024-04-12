@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://unpkg.com/leaflet/dist/leaflet.css");
 
 *{
   font-family: 'Roboto';
@@ -395,7 +394,7 @@ body, html {
   height: 25px;
   display: flex;
   position: absolute;
-  top: 55px;
+  top: 50px;
 }
 
 .option-text {
@@ -412,7 +411,7 @@ body, html {
   justify-content: center;
   cursor: pointer;
   position: relative;
-  border-bottom: 0.5px solid #000;
+  border-bottom: 2px solid #2185D0;
   font-weight: 500;
 }
 

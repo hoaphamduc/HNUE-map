@@ -35,7 +35,7 @@ function openBuildingOption() {
   
     building.style.display = "block";
     classroom.style.display = "none";
-    buildingOption.style.borderBottom = "0.5px solid #000";
+    buildingOption.style.borderBottom = "2px solid #2185D0";
     classroomOption.style.borderBottom = "none";
     buildingOption.style.opacity = "1";
     classroomOption.style.opacity = "0.3";
@@ -50,11 +50,10 @@ function openClassroomOption() {
     building.style.display = "none";
     classroom.style.display = "block";
     buildingOption.style.borderBottom = "none";
-    classroomOption.style.borderBottom = "0.5px solid #000";
+    classroomOption.style.borderBottom = "2px solid #2185D0";
     buildingOption.style.opacity = "0.3";
     classroomOption.style.opacity = "1";
 }
-
 
 function confirmRedirect() {
     var contentEnglish = document.querySelector('.contentEnglish');

@@ -3578,6 +3578,370 @@ var buildingData = {
     "longitude": 105.78296637234962,
     "source-image": []
   },
+  "901K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv901K1",
+    "nameVN": "901K1: Phòng học",
+    "nameEN": "901K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "902K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv902K1",
+    "nameVN": "902K1",
+    "nameEN": "902K1",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "903K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv903K1",
+    "nameVN": "903K1: Trung tâm Địa lý Ứng dụng",
+    "nameEN": "903K1: Center for Applied Geography",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fnha%20K%2Ftrung%20tam%20dia%20ly%20ung%20dung%20903%20K.jpg?alt=media&token=14da74d6-4c1d-4101-8ce2-0c65170afa28']
+  },
+  "904K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv904K1",
+    "nameVN": "904K1: Phòng học",
+    "nameEN": "904K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "905K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv905K1",
+    "nameVN": "905K1: Phòng học",
+    "nameEN": "905K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "906K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv906K1",
+    "nameVN": "906K1: Phòng học",
+    "nameEN": "906K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "907K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv907K1",
+    "nameVN": "907K1: Phòng học",
+    "nameEN": "907K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ phải",
+    "infoEN": "Go up to the ninth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "908K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv908K1",
+    "nameVN": "908K1: Phòng học",
+    "nameEN": "908K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ phải",
+    "infoEN": "Go up to the ninth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "909K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv909K1",
+    "nameVN": "909K1: Phòng học",
+    "nameEN": "909K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ phải",
+    "infoEN": "Go up to the ninth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "910K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv910K1",
+    "nameVN": "910K1: Phòng học",
+    "nameEN": "910K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ phải",
+    "infoEN": "Go up to the ninth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "911K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv911K1",
+    "nameVN": "911K1: Phòng học",
+    "nameEN": "911K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ phải",
+    "infoEN": "Go up to the ninth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1001K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1001K1",
+    "nameVN": "1001K1: Phòng học",
+    "nameEN": "1001K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ trái",
+    "infoEN": "Go up to the tenth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1002K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1002K1",
+    "nameVN": "1002K1: Phòng học",
+    "nameEN": "1002K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ trái",
+    "infoEN": "Go up to the tenth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1003K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1003K1",
+    "nameVN": "1003K1: Phòng học",
+    "nameEN": "1003K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ trái",
+    "infoEN": "Go up to the tenth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1004K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1004K1",
+    "nameVN": "1004K1: Phòng học",
+    "nameEN": "1004K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ trái",
+    "infoEN": "Go up to the tenth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1005K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1005K1",
+    "nameVN": "1005K1: Phòng học",
+    "nameEN": "1005K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ phải",
+    "infoEN": "Go up to the tenth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1006K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1006K1",
+    "nameVN": "1006K1: Phòng học",
+    "nameEN": "1006K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ phải",
+    "infoEN": "Go up to the tenth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1007K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1007K1",
+    "nameVN": "1007K1: Phòng học",
+    "nameEN": "1007K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ phải",
+    "infoEN": "Go up to the tenth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1101K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1101K1",
+    "nameVN": "1101K1: Phòng học",
+    "nameEN": "1101K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1102K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1102K1",
+    "nameVN": "1102K1: Phòng học",
+    "nameEN": "1102K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1103K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1103K1",
+    "nameVN": "1103K1: Phòng học",
+    "nameEN": "1103K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1104K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1104K1",
+    "nameVN": "1104K1: Phòng học",
+    "nameEN": "1104K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1105K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1105K1",
+    "nameVN": "1105K1: Phòng học",
+    "nameEN": "1105K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1106K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1106K1",
+    "nameVN": "1106K1: Phòng học",
+    "nameEN": "1106K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1107K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1107K1",
+    "nameVN": "1107K1: Phòng học",
+    "nameEN": "1107K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1108K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1108K1",
+    "nameVN": "1108K1: Phòng học",
+    "nameEN": "1108K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
 };
 
 ///////////////////////////////////////////////////////////////////////////
@@ -3759,7 +4123,7 @@ function toggleInfoDiv(buildingKey) {
       if (polygon) {
           mymap.removeLayer(polygon);
       }
-  }, 4444);
+  }, 5000);
 
   mymap.flyTo([building.latitude, building.longitude], 19, {
       duration: 2, 
@@ -3859,6 +4223,7 @@ function initRoutingControl(buildingKey) {
 
           var closeButton = document.createElement('button');
           closeButton.classList.add('closeRoutingButton');
+          closeButton.innerHTML = '<span class="contentVN">Dừng điều hướng</span><span class="contentEnglish">Stop routing</span>';
           closeButton.addEventListener('click', function () {
             mymap.removeControl(routingControl);
             closeButton.style.display = 'none';
