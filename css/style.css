@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://unpkg.com/leaflet/dist/leaflet.css");
 
 *{
   font-family: 'Roboto';
@@ -269,9 +268,9 @@ body, html {
 #direction-content, #direction-content-2 {
   background-color: #fff;
   width: 100%;
-  height: calc(100% - 85px);
+  height: calc(100% - 120px);
   position: absolute;
-  top: 110px;
+  top: 120px;
   overflow: auto;
 }
 
@@ -282,17 +281,17 @@ body, html {
   cursor: default;
 }
 
-#admin-area, #lecture-hall-area, #domestic-area, #other-areas, #shopping-area, #nha-A {
+#admin-area, #lecture-hall-area, #domestic-area, #other-areas, #shopping-area, #nha-A, #nha-B, #nha-C, #nha-D, #nha-K, #nha-V {
   font-size: 14px;
   list-style: none;
 }
 
-#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li, #nha-A li {
+#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li, #nha-A li, #nha-B li, #nha-C li, #nha-D li, #nha-K li, #nha-V li {
   cursor: pointer;
   margin-bottom: 3px;
 }
 
-#admin-area li:hover, #lecture-hall-area li:hover, #domestic-area li:hover, #other-areas li:hover, #shopping-area li:hover, #nha-A li:hover {
+#admin-area li:hover, #lecture-hall-area li:hover, #domestic-area li:hover, #other-areas li:hover, #shopping-area li:hover, #nha-A li:hover, #nha-B li:hover, #nha-C li:hover, #nha-D li:hover, #nha-K li:hover, #nha-V li:hover {
   color: #2185D0;
 }
 
@@ -395,7 +394,7 @@ body, html {
   height: 25px;
   display: flex;
   position: absolute;
-  top: 85px;
+  top: 50px;
 }
 
 .option-text {
@@ -412,8 +411,7 @@ body, html {
   justify-content: center;
   cursor: pointer;
   position: relative;
-  border-right: 0.25px solid #000;
-  border-bottom: none;
+  border-bottom: 2px solid #2185D0;
   font-weight: 500;
 }
 
@@ -426,8 +424,7 @@ body, html {
   justify-content: center;
   cursor: pointer;
   position: relative;
-  border-left: 0.25px solid #000;
-  border-bottom: 0.5px solid #000;
+  border-bottom: none;
   font-weight: 500;
   opacity: 0.3;
 }
@@ -698,8 +695,8 @@ body, html {
 }
 
 .building-name {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 600;
   text-align: center;
   cursor: default;
 }
@@ -712,7 +709,7 @@ body, html {
 }
 
 .building-info, .teamInfo {
-  font-size: 13px;
+  font-size: 15px;
   word-wrap: break-word; 
   margin-top: 10px;
   color: #707070;
@@ -1445,11 +1442,19 @@ body, html {
 }
 
 #search-input-container {
- width: 100%; 
- height: 40px;
- position: absolute;
- display: block;
- top: 45px;
+  width: 100%; 
+  height: 40px;
+  position: absolute;
+  display: block;
+  top: 80px;
+}
+
+#search-input-container-2 {
+  width: 100%; 
+  height: 40px;
+  position: absolute;
+  display: none;
+  top: 80px;
 }
 
 .verified {
@@ -1520,7 +1525,7 @@ body, html {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 10px;
+  top: 90px;
   right: 20px;
   z-index: 2;
   cursor: pointer;

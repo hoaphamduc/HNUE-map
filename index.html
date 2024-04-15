@@ -9,8 +9,7 @@
     <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2F1.jpg?alt=media&token=dff18297-6712-4eec-a8bb-a7ac2ce80370"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css" />
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="icon" type="image/png" href="source-img/Logo Đại học Sư phạm Hà Nội - HNUE.png">
@@ -75,8 +74,6 @@
     <div class="sidebar" id="sidebar">
         <div class="logo-content" id="logo-content">
             <btn id="menu-btn"></btn>
-            <img src="source-img/hnue.jpg" id="hnue-img-2">
-            <img src="source-img/logo-fit.png" id="fit-logo">
         </div>
         <ul class="nav_list" id="nav_list">
             <li>
@@ -148,7 +145,7 @@
                 <!-- Nhạc nền -->
                 <img id="music" src="source-img/muted.png" onclick="toggleImageBorderAndMusic()">
                 <audio id="backgroundMusic" loop>
-                    <source src="sound/ciu.mp3" type="audio/mp3">
+                    <source src="sound/Fiction - Beast.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
             </li>
@@ -506,46 +503,821 @@
                 <span class="contentEnglish direction-text">Direction board</span>
                 <img id="directionArrow" src="source-img/Icon ionic-md-arrow-dropdown.svg">
             </div>
+            <img id="clear-input" src="source-img/close.svg" onclick="clearInput()">
             <div id="search-input-container">
                 <img id="search-input-img" src="source-img/search-icon.png">
                 <input class="search-input contentVN" id="search-input-1" type="text" placeholder="Bạn đang tìm kiếm điều gì?" oninput="filterItems()">
                 <input class="search-input contentEnglish" id="search-input-2" type="text" placeholder="What are you searching for?" oninput="filterItems()">
-                <img id="clear-input" src="source-img/close.svg" onclick="clearInput()">
+            </div>
+            <div id="search-input-container-2">
+                <img id="search-input-img" src="source-img/search-icon.png">
+                <input class="search-input contentVN" id="search-input-3" type="text" placeholder="Bạn đang tìm phòng nào?" oninput="filterItems2()">
+                <input class="search-input contentEnglish" id="search-input-4" type="text" placeholder="What are you searching for?" oninput="filterItems2()">
             </div>
             <div id="search-option">
                 <div id="building-option" onclick="openBuildingOption()">
-                    <span class="contentVN option-text">Địa điểm</span>
-                    <span class="contentEnglish option-text">Location</span>
+                    <span class="contentVN option-text"><b>Địa điểm</b></span>
+                    <span class="contentEnglish option-text"><b>Location</b></span>
                 </div>
                 <div id="classroom-option" onclick="openClassroomOption()">
-                    <span class="contentVN option-text">Phòng học</span>
-                    <span class="contentEnglish option-text">Classroom</span>
+                    <span class="contentVN option-text"><b>Phòng học</b></span>
+                    <span class="contentEnglish option-text"><b>Classroom</b></span>
                 </div>
             </div>
+            <!-- Thông tin phòng học -->
             <div id="direction-content-2">
                 <span class="contentVN redtext" style="margin-top: 10px;">NHÀ A</span>
                 <span class="contentEnglish redtext" style="margin-top: 10px;">A BUILDING</span>
                 <ul id="nha-A">
-                    <li onclick="">
-                        <span class="contentVN">101A1: Phòng học</span>
-                        <span class="contentEnglish">101A1</span>
+                </ul>
+                <span class="contentVN redtext" style="margin-top: 10px;">NHÀ B</span>
+                <span class="contentEnglish redtext" style="margin-top: 10px;">B BUILDING</span>
+                <ul id="nha-B">
+                </ul>
+                <span class="contentVN redtext" style="margin-top: 10px;">NHÀ C</span>
+                <span class="contentEnglish redtext" style="margin-top: 10px;">C BUILDING</span>
+                <ul id="nha-C">
+                </ul>
+                <span class="contentVN redtext" style="margin-top: 10px;">NHÀ D</span>
+                <span class="contentEnglish redtext" style="margin-top: 10px;">D BUILDING</span>
+                <ul id="nha-D">
+                </ul>
+                <span class="contentVN redtext" style="margin-top: 10px;">NHÀ K</span>
+                <span class="contentEnglish redtext" style="margin-top: 10px;">K BUILDING</span>
+                <ul id="nha-K">
+                    <li onclick="toggleInfoDiv('101K1')">
+                        <span class="contentVN">101K1: Trung tâm Công nghệ thông tin</span>
+                        <span class="contentEnglish">101K1: Information Technology Center</span>
                     </li>
-                    <li onclick="">
-                        <span class="contentVN">102A1: Phòng học</span>
-                        <span class="contentEnglish">102A1</span>
+                    <li onclick="toggleInfoDiv('102K1')">
+                        <span class="contentVN">102K1: Trung tâm Khoa học và Công nghệ Nano</span>
+                        <span class="contentEnglish">102K1: Center for Nano Science and Technology</span>
                     </li>
-                    <li onclick="">
-                        <span class="contentVN">103A1: Phòng học</span>
-                        <span class="contentEnglish">103A1</span>
+                    <li onclick="toggleInfoDiv('103K1')">
+                        <span class="contentVN">103K1</span>
+                        <span class="contentEnglish">103K1</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('104K1')">
+                        <span class="contentVN">104K1: Phòng kính hiển vi. Bộ môn: Công nghệ Sinh học - vi sinh</span>
+                        <span class="contentEnglish">104K1: Microscope Room. Department: Biotechnology - Microbiology</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('105K1')">
+                        <span class="contentVN">105K1: Phòng thí nghiệm Công nghệ Sinh học</span>
+                        <span class="contentEnglish">105K1: Laboratory of Biotechnology</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('107K1')">
+                        <span class="contentVN">107K1: Phòng thí nghiệm Nuôi cấy mô</span>
+                        <span class="contentEnglish">107K1: Tissue Culture Laboratory</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('108K1')">
+                        <span class="contentVN">108K1</span>
+                        <span class="contentEnglish">108K1</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('201K1')">
+                        <span class="contentVN">201K1: Phòng học</span>
+                        <span class="contentEnglish">201K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('202K1')">
+                        <span class="contentVN">202K1: Phòng học</span>
+                        <span class="contentEnglish">202K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('203K1')">
+                        <span class="contentVN">203K1: Phòng học</span>
+                        <span class="contentEnglish">203K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('204K1')">
+                        <span class="contentVN">204K1: Phòng học</span>
+                        <span class="contentEnglish">204K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('205K1')">
+                        <span class="contentVN">205K1: Phòng học</span>
+                        <span class="contentEnglish">205K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('206K1')">
+                        <span class="contentVN">206K1: Phòng học</span>
+                        <span class="contentEnglish">206K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('HoiTruongK')">
+                        <span class="contentVN">Hội trường nhà K</span>
+                        <span class="contentEnglish">K Building Auditorium</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('207K1')">
+                        <span class="contentVN">207K1: Phòng học</span>
+                        <span class="contentEnglish">207K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('208K1')">
+                        <span class="contentVN">208K1: Phòng quản lý toà nhà (mượn chìa khoá)</span>
+                        <span class="contentEnglish">208K1: Building Management Office (key borrowing)</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('301K1')">
+                        <span class="contentVN">301K1: Phòng học</span>
+                        <span class="contentEnglish">301K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('302K1')">
+                        <span class="contentVN">302K1: Phòng học</span>
+                        <span class="contentEnglish">302K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('303K1')">
+                        <span class="contentVN">303K1: Phòng học</span>
+                        <span class="contentEnglish">303K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('304K1')">
+                        <span class="contentVN">304K1: Phòng học</span>
+                        <span class="contentEnglish">304K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('305K1')">
+                        <span class="contentVN">305K1: Phòng học</span>
+                        <span class="contentEnglish">305K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('306K1')">
+                        <span class="contentVN">306K1: Phòng chờ giáo viên</span>
+                        <span class="contentEnglish">306K1: Teachers' Lounge</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('307K1')">
+                        <span class="contentVN">307K1: Phòng học</span>
+                        <span class="contentEnglish">307K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('401K1')">
+                        <span class="contentVN">401K1: Phòng học</span>
+                        <span class="contentEnglish">401K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('402K1')">
+                        <span class="contentVN">402K1: Phòng học</span>
+                        <span class="contentEnglish">402K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('403K1')">
+                        <span class="contentVN">403K1: Phòng học</span>
+                        <span class="contentEnglish">403K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('404K1')">
+                        <span class="contentVN">404K1: Phòng học</span>
+                        <span class="contentEnglish">404K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('405K1')">
+                        <span class="contentVN">405K1: Phòng học</span>
+                        <span class="contentEnglish">405K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('406K1')">
+                        <span class="contentVN">406K1: Phòng học</span>
+                        <span class="contentEnglish">406K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('407K1')">
+                        <span class="contentVN">407K1: Phòng học</span>
+                        <span class="contentEnglish">407K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('408K1')">
+                        <span class="contentVN">408K1: Phòng học</span>
+                        <span class="contentEnglish">408K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('501K1')">
+                        <span class="contentVN">501K1: Phòng máy tính</span>
+                        <span class="contentEnglish">501K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('502K1')">
+                        <span class="contentVN">502K1: Phòng máy tính</span>
+                        <span class="contentEnglish">502K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('503K1')">
+                        <span class="contentVN">503K1: Phòng máy tính</span>
+                        <span class="contentEnglish">503K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('504K1')">
+                        <span class="contentVN">504K1: Phòng máy tính</span>
+                        <span class="contentEnglish">504K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('505K1')">
+                        <span class="contentVN">505K1: Phòng máy tính</span>
+                        <span class="contentEnglish">505K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('506K1')">
+                        <span class="contentVN">506K1: Phòng máy tính</span>
+                        <span class="contentEnglish">506K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('507K1')">
+                        <span class="contentVN">507K1: Phòng máy tính</span>
+                        <span class="contentEnglish">507K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('508K1')">
+                        <span class="contentVN">508K1: Phòng máy tính</span>
+                        <span class="contentEnglish">508K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('509K1')">
+                        <span class="contentVN">509K1: Phòng máy tính</span>
+                        <span class="contentEnglish">509K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('601K1')">
+                        <span class="contentVN">601K1: Phòng máy tính</span>
+                        <span class="contentEnglish">601K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('602K1')">
+                        <span class="contentVN">602K1: Phòng máy tính</span>
+                        <span class="contentEnglish">602K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('603K1')">
+                        <span class="contentVN">603K1: Phòng máy tính</span>
+                        <span class="contentEnglish">603K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('604K1')">
+                        <span class="contentVN">604K1</span>
+                        <span class="contentEnglish">604K1</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('605K1')">
+                        <span class="contentVN">605K1</span>
+                        <span class="contentEnglish">605K1</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('606K1')">
+                        <span class="contentVN">606K1: Phòng máy tính</span>
+                        <span class="contentEnglish">606K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('607K1')">
+                        <span class="contentVN">607K1: Phòng máy tính</span>
+                        <span class="contentEnglish">607K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('608K1')">
+                        <span class="contentVN">608K1: Phòng máy tính</span>
+                        <span class="contentEnglish">608K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('609K1')">
+                        <span class="contentVN">609K1: Phòng máy tính</span>
+                        <span class="contentEnglish">609K1: Computer Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('701K1')">
+                        <span class="contentVN">701K1: Phòng học</span>
+                        <span class="contentEnglish">701K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('702K1')">
+                        <span class="contentVN">702K1: Phòng học</span>
+                        <span class="contentEnglish">702K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('703K1')">
+                        <span class="contentVN">703K1: Phòng học</span>
+                        <span class="contentEnglish">703K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('704K1')">
+                        <span class="contentVN">704K1: Phòng chuyên gia</span>
+                        <span class="contentEnglish">704K1: Expert Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('705K1')">
+                        <span class="contentVN">705K1: Phòng học</span>
+                        <span class="contentEnglish">705K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('706K1')">
+                        <span class="contentVN">706K1: Phòng học</span>
+                        <span class="contentEnglish">706K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('707K1')">
+                        <span class="contentVN">707K1: Phòng học</span>
+                        <span class="contentEnglish">707K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('708K1')">
+                        <span class="contentVN">708K1: Phòng học</span>
+                        <span class="contentEnglish">708K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('709K1')">
+                        <span class="contentVN">709K1: Phòng học</span>
+                        <span class="contentEnglish">709K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('710K1')">
+                        <span class="contentVN">710K1: Viện Giáo dục và Đào tạo Quốc tế</span>
+                        <span class="contentEnglish">710K1: Institute for International Education and Traning</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('801K1')">
+                        <span class="contentVN">801K1: Phòng học</span>
+                        <span class="contentEnglish">801K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('802K1')">
+                        <span class="contentVN">802K1: Phòng học</span>
+                        <span class="contentEnglish">802K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('803K1')">
+                        <span class="contentVN">803K1: Phòng học</span>
+                        <span class="contentEnglish">803K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('804K1')">
+                        <span class="contentVN">804K1: Phòng học</span>
+                        <span class="contentEnglish">804K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('805K1')">
+                        <span class="contentVN">805K1: Phòng học</span>
+                        <span class="contentEnglish">805K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('806K1')">
+                        <span class="contentVN">806K1: Phòng học</span>
+                        <span class="contentEnglish">806K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('807K1')">
+                        <span class="contentVN">807K1: Phòng học</span>
+                        <span class="contentEnglish">807K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('808K1')">
+                        <span class="contentVN">808K1: Phòng học</span>
+                        <span class="contentEnglish">808K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('809K1')">
+                        <span class="contentVN">809K1: Phòng học</span>
+                        <span class="contentEnglish">809K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('810K1')">
+                        <span class="contentVN">810K1: Phòng học</span>
+                        <span class="contentEnglish">810K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('811K1')">
+                        <span class="contentVN">811K1: Phòng học</span>
+                        <span class="contentEnglish">811K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('901K1')">
+                        <span class="contentVN">901K1: Phòng học</span>
+                        <span class="contentEnglish">901K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('902K1')">
+                        <span class="contentVN">902K1</span>
+                        <span class="contentEnglish">902K1</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('903K1')">
+                        <span class="contentVN">903K1: Trung tâm Địa lý Ứng dụng</span>
+                        <span class="contentEnglish">903K1: Center for Applied Geography</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('904K1')">
+                        <span class="contentVN">904K1: Phòng học</span>
+                        <span class="contentEnglish">904K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('905K1')">
+                        <span class="contentVN">905K1: Phòng học</span>
+                        <span class="contentEnglish">905K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('906K1')">
+                        <span class="contentVN">906K1: Phòng học</span>
+                        <span class="contentEnglish">906K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('907K1')">
+                        <span class="contentVN">907K1: Phòng học</span>
+                        <span class="contentEnglish">907K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('908K1')">
+                        <span class="contentVN">908K1: Phòng học</span>
+                        <span class="contentEnglish">908K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('909K1')">
+                        <span class="contentVN">909K1: Phòng học</span>
+                        <span class="contentEnglish">909K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('910K1')">
+                        <span class="contentVN">910K1: Phòng học</span>
+                        <span class="contentEnglish">910K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('911K1')">
+                        <span class="contentVN">911K1: Phòng học</span>
+                        <span class="contentEnglish">911K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1001K1')">
+                        <span class="contentVN">1001K1: Phòng học</span>
+                        <span class="contentEnglish">1001K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1002K1')">
+                        <span class="contentVN">1002K1: Phòng học</span>
+                        <span class="contentEnglish">1002K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1003K1')">
+                        <span class="contentVN">1003K1: Phòng học</span>
+                        <span class="contentEnglish">1003K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1004K1')">
+                        <span class="contentVN">1004K1: Phòng học</span>
+                        <span class="contentEnglish">1004K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1005K1')">
+                        <span class="contentVN">1005K1: Phòng học</span>
+                        <span class="contentEnglish">1005K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1006K1')">
+                        <span class="contentVN">1006K1: Phòng học</span>
+                        <span class="contentEnglish">1006K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1007K1')">
+                        <span class="contentVN">1007K1: Phòng học</span>
+                        <span class="contentEnglish">1007K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1101K1')">
+                        <span class="contentVN">1101K1: Phòng học</span>
+                        <span class="contentEnglish">1101K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1102K1')">
+                        <span class="contentVN">1102K1: Phòng học</span>
+                        <span class="contentEnglish">1102K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1103K1')">
+                        <span class="contentVN">1103K1: Phòng học</span>
+                        <span class="contentEnglish">1103K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1104K1')">
+                        <span class="contentVN">1104K1: Phòng học</span>
+                        <span class="contentEnglish">1104K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1105K1')">
+                        <span class="contentVN">1105K1: Phòng học</span>
+                        <span class="contentEnglish">1105K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1106K1')">
+                        <span class="contentVN">1106K1: Phòng học</span>
+                        <span class="contentEnglish">1106K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1107K1')">
+                        <span class="contentVN">1107K1: Phòng học</span>
+                        <span class="contentEnglish">1107K1: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('1108K1')">
+                        <span class="contentVN">1108K1: Phòng học</span>
+                        <span class="contentEnglish">1108K1: Classroom</span>
+                    </li>
+                </ul>
+                <span class="contentVN redtext" style="margin-top: 10px;">NHÀ V</span>
+                <span class="contentEnglish redtext" style="margin-top: 10px;">V BUILDING</span>
+                <ul id="nha-V">
+                    <li onclick="toggleInfoDiv('210V')">
+                        <span class="contentVN">210V: Phòng học</span>
+                        <span class="contentEnglish">210V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('211V')">
+                        <span class="contentVN">211V: Phòng quản lý giảng đường nhà V</span>
+                        <span class="contentEnglish">211V: Building V Lecture Hall Management Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('212V')">
+                        <span class="contentVN">212V: Phòng học</span>
+                        <span class="contentEnglish">212V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('213V')">
+                        <span class="contentVN">213V: Phòng GS.TS. Sĩ Đức Quang</span>
+                        <span class="contentEnglish">213V: Professor Dr. Sĩ Đức Quang's Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('214V')">
+                        <span class="contentVN">214V: Phòng GS.TS. Trần Văn Tấn</span>
+                        <span class="contentEnglish">214V: Professor Dr. Trần Văn Tấn's Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('215V')">
+                        <span class="contentVN">215V: Phòng GS.TS. Cung Thế Anh</span>
+                        <span class="contentEnglish">215V: Professor Dr. Cung Thế Anh's Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('216V')">
+                        <span class="contentVN">216V: Phòng GS.TS. Nguyễn Công Khanh</span>
+                        <span class="contentEnglish">216V: Professor Dr. Nguyễn Công Khanh's Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('217V')">
+                        <span class="contentVN">217V: Phòng chờ giáo viên</span>
+                        <span class="contentEnglish">217V: Teachers' Lounge</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('218V')">
+                        <span class="contentVN">218V: Phòng học</span>
+                        <span class="contentEnglish">218V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('219V')">
+                        <span class="contentVN">219V: Phòng GS.TS. Lã Nhâm Thìn</span>
+                        <span class="contentEnglish">219V: Professor Dr. Lã Nhâm Thìn's Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('301V')">
+                        <span class="contentVN">301V: Phòng thực hành STEM</span>
+                        <span class="contentEnglish">301V: STEM Laboratory</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('302V')">
+                        <span class="contentVN">302V: Phòng thực hành kỹ thuật điều khiển</span>
+                        <span class="contentEnglish">302V: Control Engineering Laboratory</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('303V')">
+                        <span class="contentVN">303V: Trung tâm giải thích phức và giải thích hàm - GS. TSKH Lê Mậu Hải</span>
+                        <span class="contentEnglish">303V: Complex Analysis and Function Explanation Center - Prof. Dr. Eng. Le Mau Hai</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('304V')">
+                        <span class="contentVN">304V: Phòng thực hành kỹ thuật điện</span>
+                        <span class="contentEnglish">304V: Electrical Engineering Laboratory</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('305V')">
+                        <span class="contentVN">305V: Trưởng khoa PGS.TS. Nguyễn Hoài Nam</span>
+                        <span class="contentEnglish">305V: Head of Department Associate Professor, PhD. Nguyễn Hoài Nam</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('307V')">
+                        <span class="contentVN">307V: Bộ môn phương pháp dạy học</span>
+                        <span class="contentEnglish">307V: Teaching Methods Department</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('308V')">
+                        <span class="contentVN">308V: Phòng thực hành kỹ thuật điện tử</span>
+                        <span class="contentEnglish">308V: Electronics Engineering Laboratory</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('309V')">
+                        <span class="contentVN">309V: Văn phòng khoa</span>
+                        <span class="contentEnglish">309V: Faculty Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('310V')">
+                        <span class="contentVN">310V: Phòng họp</span>
+                        <span class="contentEnglish">310V: Meeting Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('311V')">
+                        <span class="contentVN">311V: Phòng học</span>
+                        <span class="contentEnglish">311V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('312V')">
+                        <span class="contentVN">312V: Phó trưởng khoa ThS. Vũ Thị Ngọc Thúy</span>
+                        <span class="contentEnglish">312V: Deputy Head of Faculty, MSc. Vu Thi Ngoc Thuy</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('313V')">
+                        <span class="contentVN">313V: Phòng GS.TS. Nguyễn Quang Diệu</span>
+                        <span class="contentEnglish">313V: Professor Dr. Nguyễn Quang Diệu's Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('401aV')">
+                        <span class="contentVN">401a-V: Bộ môn giáo dục trẻ khiếm thính và giá dục trẻ khuyết tật ngôn ngữ, Bộ môn giáo dục trẻ khuyết tật trí tuệ và giáo dục trẻ tự kỉ</span>
+                        <span class="contentEnglish">401a-V: Department of Deaf Education and Language Impairment, Department of Intellectual Disability Education and Autism Education</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('401bV')">
+                        <span class="contentVN">401b-V: Phó trưởng khoa TS. Đỗ Thị Thảo</span>
+                        <span class="contentEnglish">401b-V: Associate Chair of Department, Dr. Đỗ Thị Thảo</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('402V')">
+                        <span class="contentVN">402V: Phòng họp</span>
+                        <span class="contentEnglish">402V: Meeting Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('402bV')">
+                        <span class="contentVN">402b-V: Bộ môn thực hành giáo dục đặc biệt, Bộ môn giáo dục trẻ khiếm thị và giáo dục trẻ khuyết tật trong học tập</span>
+                        <span class="contentEnglish">402b-V: Special Education Practical Department, Department of Education for Visually Impaired and Education for Learning Disabilities</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('403V')">
+                        <span class="contentVN">403V: Phòng học</span>
+                        <span class="contentEnglish">403V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('404V')">
+                        <span class="contentVN">404V: Trưởng khoa PGS.TS. Phan Thanh Long</span>
+                        <span class="contentEnglish">404V: Head of Department Associate Professor, PhD. Phan Thanh Long</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('405V')">
+                        <span class="contentVN">405V: Phòng học</span>
+                        <span class="contentEnglish">405V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('406V')">
+                        <span class="contentVN">406V: Phòng học</span>
+                        <span class="contentEnglish">406V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('408V')">
+                        <span class="contentVN">408V: Phòng học</span>
+                        <span class="contentEnglish">408V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('410V')">
+                        <span class="contentVN">410V: Phòng học</span>
+                        <span class="contentEnglish">410V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('411V')">
+                        <span class="contentVN">411V: Phòng học</span>
+                        <span class="contentEnglish">411V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('412V')">
+                        <span class="contentVN">412V: Bộ môn Bản đồ - Viễn thám và GIS</span>
+                        <span class="contentEnglish">412V: Department of Cartography - Remote Sensing and GIS (Geographic Information Systems)</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('501V')">
+                        <span class="contentVN">501V: Bộ môn Địa lí tự nhiên</span>
+                        <span class="contentEnglish">501V: Natural Geography Department</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('502V')">
+                        <span class="contentVN">502V: Phòng thực hành địa lí</span>
+                        <span class="contentEnglish">502V: Geographical Practice Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('503V')">
+                        <span class="contentVN">503V: Bộ môn địa lí kinh tế - xã hội</span>
+                        <span class="contentEnglish">503V: Department of Economic and Social Geography</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('504V')">
+                        <span class="contentVN">504V: Bộ môn lí luận và phương pháp dạy học môn địa lí</span>
+                        <span class="contentEnglish">504V: Department of Geography Pedagogy and Teaching Methods</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('505V')">
+                        <span class="contentVN">505V: Phó trưởng khoa PGS.TS. Đặng Vũ Khắc</span>
+                        <span class="contentEnglish">505V: Associate Chair of Department Associate Professor, PhD. Đặng Vũ Khắc</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('506V')">
+                        <span class="contentVN">506V: Văn phòng khoa</span>
+                        <span class="contentEnglish">506V: Faculty Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('507V')">
+                        <span class="contentVN">507V: Phó trưởng khoa TS. Ngô Thị Hải Yến</span>
+                        <span class="contentEnglish">507V: Associate Chair of Department, Ms. Ngô Thị Hải Yến</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('508V')">
+                        <span class="contentVN">508V: Phòng học</span>
+                        <span class="contentEnglish">508V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('509V')">
+                        <span class="contentVN">509V: TS. Nguyễn Quyết Chiến</span>
+                        <span class="contentEnglish">509V: Dr. Nguyễn Quyết Chiến</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('510V')">
+                        <span class="contentVN">510V: Phòng học</span>
+                        <span class="contentEnglish">510V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('511V')">
+                        <span class="contentVN">511V: Trưởng khoa Đại tá TS. Trần Nhất Anh</span>
+                        <span class="contentEnglish">511V: Department Head, Colonel, Dr. Trần Nhất Anh</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('512V')">
+                        <span class="contentVN">512V: Kho vật chất 1</span>
+                        <span class="contentEnglish">512V: Material Warehouse 1</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('513V')">
+                        <span class="contentVN">513V: Văn phòng - Giáo vụ khoa</span>
+                        <span class="contentEnglish">513V: Department Office - Administrative Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('514V')">
+                        <span class="contentVN">514V: Phòng học</span>
+                        <span class="contentEnglish">514V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('515V')">
+                        <span class="contentVN">515V: Bộ môn bắn súng chiến thuật</span>
+                        <span class="contentEnglish">515V: Tactical Shooting Department</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('516V')">
+                        <span class="contentVN">516V: Phòng tham vấn tâm lí</span>
+                        <span class="contentEnglish">516V: Psychological Counseling Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('517V')">
+                        <span class="contentVN">517V: Bộ môn quân sự chung</span>
+                        <span class="contentEnglish">517V: General Military Studies Department</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('518V')">
+                        <span class="contentVN">518V: Phòng học</span>
+                        <span class="contentEnglish">518V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('601V')">
+                        <span class="contentVN">601V: Bộ môn chuyên ngành 1&3</span>
+                        <span class="contentEnglish">601V: ECE department No 1&3</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('602V')">
+                        <span class="contentVN">602V: Bộ môn chuyên ngành 2</span>
+                        <span class="contentEnglish">602V: ECE department No 2</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('603V')">
+                        <span class="contentVN">603V: Trưởng khoa PGS.TS. Bùi Thị Lâm</span>
+                        <span class="contentEnglish">603V: Dean Associate Professor, PhD. Bùi Thị Lâm</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('604V')">
+                        <span class="contentVN">604V: Phó trưởng khoa TS. Nguyễn Mạnh Tuấn</span>
+                        <span class="contentEnglish">604V: Associate Dean, Mr. Nguyễn Mạnh Tuấn</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('605V')">
+                        <span class="contentVN">605V: Văn phòng khoa</span>
+                        <span class="contentEnglish">605V: Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('606V')">
+                        <span class="contentVN">606V: Trưởng khoa PGS.TS. Đỗ Xuân Thảo</span>
+                        <span class="contentEnglish">606V: Dean Associate Professor, PhD. Đỗ Xuân Thảo</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('607V')">
+                        <span class="contentVN">607V: Phòng học</span>
+                        <span class="contentEnglish">607V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('608V')">
+                        <span class="contentVN">608V: Văn phòng khoa</span>
+                        <span class="contentEnglish">608V: Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('609V')">
+                        <span class="contentVN">609V: Bộ môn</span>
+                        <span class="contentEnglish">609V: Department</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('610V')">
+                        <span class="contentVN">610V: Phòng học</span>
+                        <span class="contentEnglish">610V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('611V')">
+                        <span class="contentVN">611V: Bộ môn Lý luận Giáo dục</span>
+                        <span class="contentEnglish">611V: Department of Educational Theory</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('612V')">
+                        <span class="contentVN">612V: Phòng học</span>
+                        <span class="contentEnglish">612V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('613V')">
+                        <span class="contentVN">613V: Bộ môn Tâm lí học ứng dụng</span>
+                        <span class="contentEnglish">613V: Department of Applied Psychology</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('614V')">
+                        <span class="contentVN">614V: Phòng học</span>
+                        <span class="contentEnglish">614V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('615V')">
+                        <span class="contentVN">615V: Bộ môn Phương pháp Giảng dạy</span>
+                        <span class="contentEnglish">615V: Department of Teaching Method</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('616V')">
+                        <span class="contentVN">616V: Phòng thư viện</span>
+                        <span class="contentEnglish">616V: Library</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('617V')">
+                        <span class="contentVN">617V: Phó trưởng khoa PGS.TS. Nguyễn Thị Thanh Hồng</span>
+                        <span class="contentEnglish">617V: Associate Chair of Department Associate Professor, PhD. Nguyễn Thị Thanh Hồng</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('618V')">
+                        <span class="contentVN">618V: Trưởng khoa PGS.TS. Lê Minh Nguyệt</span>
+                        <span class="contentEnglish">618V: Dean Associate Professor, PhD. Lê Minh Nguyệt</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('619V')">
+                        <span class="contentVN">619V: Phó trưởng khoa TS. Khúc Năng Toàn</span>
+                        <span class="contentEnglish">619V: Associate Chair of Department, Mr. Khúc Năng Toàn</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('701V')">
+                        <span class="contentVN">701V: Phòng thực hành</span>
+                        <span class="contentEnglish">701V: Practice Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('703V')">
+                        <span class="contentVN">703V: Phòng học</span>
+                        <span class="contentEnglish">703V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('704V')">
+                        <span class="contentVN">704V: Phòng học</span>
+                        <span class="contentEnglish">704V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('705V')">
+                        <span class="contentVN">705V: Bộ môn Thực hành Sư phạm Tiểu học</span>
+                        <span class="contentEnglish">705V: Primary Education Teaching Practice Department</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('706V')">
+                        <span class="contentVN">706V: Phòng học</span>
+                        <span class="contentEnglish">706V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('707V')">
+                        <span class="contentVN">707V: Bộ môn Tâm Lý - Giáo dục học</span>
+                        <span class="contentEnglish">707V: Psychology - Educational Studies Department</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('708V')">
+                        <span class="contentVN">708V: Phòng học</span>
+                        <span class="contentEnglish">708V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('709V')">
+                        <span class="contentVN">709V: Phòng thực hành tâm lý</span>
+                        <span class="contentEnglish">709V: Psychological Practice Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('710V')">
+                        <span class="contentVN">710V: Lý luận dạy học</span>
+                        <span class="contentEnglish">710V: Pedagogical Theory</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('711V')">
+                        <span class="contentVN">711V: Tâm lý học phát triển</span>
+                        <span class="contentEnglish">711V: Developmental Psychology</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('711aV')">
+                        <span class="contentVN">711a-V: Tâm lý học đại cương</span>
+                        <span class="contentEnglish">711a-V: General Psychology</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('801V')">
+                        <span class="contentVN">801V: Bộ môn thực hành tiếng</span>
+                        <span class="contentEnglish">801V: Language Practice Department</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('802V')">
+                        <span class="contentVN">802V: Phòng học</span>
+                        <span class="contentEnglish">802V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('803V')">
+                        <span class="contentVN">803V: Phòng học</span>
+                        <span class="contentEnglish">803V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('804V')">
+                        <span class="contentVN">804V: Phòng học</span>
+                        <span class="contentEnglish">804V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('805V')">
+                        <span class="contentVN">805V: Trưởng khoa TS. Trịnh Thùy Dương</span>
+                        <span class="contentEnglish">805V: Head of Department, Mr. Trịnh Thùy Dương</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('806V')">
+                        <span class="contentVN">806V: Phòng họp - Thư viện</span>
+                        <span class="contentEnglish">806V: Meeting room - Library</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('807V')">
+                        <span class="contentVN">807V: Văn phòng - CV. Nguyễn Thị Bích Qui, CV. Nguyễn Thị Thu Hiền</span>
+                        <span class="contentEnglish">807V: Office - Ms. Nguyễn Thị Bích Qui, Ms. Nguyễn Thị Thu Hiền</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('808V')">
+                        <span class="contentVN">808V: Phòng học</span>
+                        <span class="contentEnglish">808V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('809V')">
+                        <span class="contentVN">809V: Phòng học</span>
+                        <span class="contentEnglish">809V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('810V')">
+                        <span class="contentVN">810V: Phòng học</span>
+                        <span class="contentEnglish">810V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('811V')">
+                        <span class="contentVN">811V: Phòng học</span>
+                        <span class="contentEnglish">811V: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('813V')">
+                        <span class="contentVN">813V: Phòng học</span>
+                        <span class="contentEnglish">813V: Classroom</span>
                     </li>
                 </ul>
             </div>
+            <!-- Thông tin địa điểm -->
             <div id="direction-content">
                 <span id="resultVN" class="contentVN"></span>
                 <span id="resultEN" class="contentEnglish"></span>
                 <span id="searchByGoogleVN" class="searchByGoogle" onclick="openGoogleSearch()">Thử tìm kiếm bằng Google</span>
-                <span class="contentVN redtext">KHU HÀNH CHÍNH</span>
-                <span class="contentEnglish redtext">ADMINISTRATIVE REGION</span>
+                <span class="contentVN redtext" style="margin-top: 10px;">KHU HÀNH CHÍNH</span>
+                <span class="contentEnglish redtext" style="margin-top: 10px;">ADMINISTRATIVE REGION</span>
                 <ul id="admin-area">
                     <li onclick="toggleInfoDiv('NhaHieuBo')">
                         <span class="contentVN">Nhà hiệu bộ</span>
@@ -593,7 +1365,7 @@
                     </li>
                     <li onclick="toggleInfoDiv('nhaD124')">
                         <span class="contentVN">D1, D2, D4: Trường THPT Chuyên Sư Phạm</span>
-                        <span class="contentEnglish">D1, D2, D4: High School for Gifted Students, HNUE</span>
+                        <span class="contentEnglish">D1, D2, D4: High School for Gifted students, HNUE</span>
                     </li>
                     <li onclick="toggleInfoDiv('nhaH8')">
                         <span class="contentVN">H8: Nhà công vụ cho cán bộ nước ngoài</span>
@@ -639,7 +1411,7 @@
                         </span>
                         <span class="contentEnglish">V: Lecture Halls, Faculty of Physical Education, 
                             Faculty of Special Education, Faculty of Primary Education, Faculty of Technology Education, 
-                            Faculty of Early Childhood Education, Faculty of Military and Security Education, 
+                            Faculty of Early Childhood Education, Faculty of National Defense Education, 
                             Faculty of Geography, Faculty of Psychology and Education, Institute of Educational Research, 
                             Professors's office, Department of Russian Language, Department of French Language
                         </span>
@@ -923,8 +1695,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
 
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
     <script src="js/index-function.js"></script>
+    <script src="js/public-function.js"></script>
     <script src="js/building-info.js"></script>
     <script src="js/firebase.js" defer type="module"></script>
 

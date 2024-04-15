@@ -66,7 +66,15 @@ var buildingData = {
               Tầng 1, 2, 3, 4<br>\
               Số điện thoại: 02438346828<br>\
               Email: k.sinhhoc@hnue.edu.vn<br>\
-              Website: <a href=\"https://bio.hnue.edu.vn/\" target=\"_blank\">bio.hnue.edu.vn</a>",
+              Website: <a href=\"https://bio.hnue.edu.vn/\" target=\"_blank\">bio.hnue.edu.vn</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 47 (1 Giáo sư, 17 Phó Giáo sư, 18 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Động vật học, Thực vật học, Sinh lý học Thực vật và Ứng dụng, Sinh lý học Con người và Động vật, Di truyền Hoá Sinh, Công nghệ Sinh học và Vi sinh, Sinh học Tế bào và Hoá sinh, Lý luận và Phương pháp Dạy học Sinh học.</li>\
+                  <li>Chương trình học: 3 chương trình Đại học, 7 chương trình Thạc sĩ và 6 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 482.</li>\
+              </ul>",
     "infoEN": "<b>Faculty of Biology</b><br>\
               Floor 1, 2, 3, 4<br>\
               Phone: 02438346828<br>\
@@ -99,12 +107,28 @@ var buildingData = {
               Số điện thoại: 0983832528<br>\
               Email: k.nguvan@hnue.edu.vn<br>\
               Website: <a href=\"http://fpe.hnue.edu.vn/\" target=\"_blank\">fpe.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/p/Tuy%E1%BB%83n-sinh-Khoa-L%C3%AD-lu%E1%BA%ADn-ch%C3%ADnh-tr%E1%BB%8BGi%C3%A1o-d%E1%BB%A5c-c%C3%B4ng-d%C3%A2n-%C4%90%E1%BA%A1i-h%E1%BB%8Dc-S%C6%B0-ph%E1%BA%A1m-H%C3%A0-N%E1%BB%99i-100063815312396/?paipv=0&eav=AfYh_Y0DubJqhCvTgN5hzebbc_yFqbUd_yOx-3VhfmbeKHLQQOUv8Xmjxq_gtgNv2Fg&_rdr\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/p/Tuy%E1%BB%83n-sinh-Khoa-L%C3%AD-lu%E1%BA%ADn-ch%C3%ADnh-tr%E1%BB%8BGi%C3%A1o-d%E1%BB%A5c-c%C3%B4ng-d%C3%A2n-%C4%90%E1%BA%A1i-h%E1%BB%8Dc-S%C6%B0-ph%E1%BA%A1m-H%C3%A0-N%E1%BB%99i-100063815312396/?paipv=0&eav=AfYh_Y0DubJqhCvTgN5hzebbc_yFqbUd_yOx-3VhfmbeKHLQQOUv8Xmjxq_gtgNv2Fg&_rdr\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1976.</li>\
+                  <li>Số lượng cán bộ: 20 (3 Phó Giáo sư, 17 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Kinh tế Chính trị, Chủ nghĩa Xã hội Khoa học, Lịch sừ Đảng Cộng sản Việt Nam-Tư tưởng Hồ Chí Minh, Giáo dục Công dân, Phương pháp Dạy học.</li>\
+                  <li>Chương trình học: 3 chương trình Đại học, 1 chương trình Thạc sĩ và 1 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 801.</li>\
+              </ul><br>\
               <b>Khoa Hoá Học</b><br>\
               Số điện thoại: 0437549487<br>\
               Email: k.khoahoc@hnue.edu.vn<br>\
               Website: <a href=\"http://chem.hnue.edu.vn/\" target=\"_blank\">chem.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/tuyensinhkhoahochocdhsphn\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/tuyensinhkhoahochocdhsphn\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 48 (1 Giáo sư, 16 Phó Giáo sư, 17 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Hoá vô cơ, Hoá hữu cơ, Hoá học Phân tích, Hoá Lý thuyết và Vật lý, Hoá học Môi trường, Phương pháp Dạy học Hoá học.</li>\
+                  <li>Chương trình học: 3 chương trình Đại học, 6 chương trình Thạc sĩ và 5 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 912.</li>\
+              </ul>",
     "infoEN": "<b>Faculty of Politic Theory - Civic Education</b><br>\
               Floor 1<br>\
               Phone: 0983832528<br>\
@@ -170,19 +194,43 @@ var buildingData = {
               Số điện thoại: 02437549076<br>\
               Email: k.nguvan@hnue.edu.vn<br>\
               Website: <a href=\"http://nguvan.hnue.edu.vn/\" target=\"_blank\">nguvan.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoanguvandhsphn/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoanguvandhsphn/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 48 (2 Giáo sư, 21 Phó Giáo sư, 21 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Văn học, Ngôn ngữ, Khoa học Giáo dục.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học, 7 chương trình Thạc sĩ và 7 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: khoảng 2000.</li>\
+              </ul><br>\
               <b>Khoa Lịch Sử</b><br>\
               Tầng 2<br>\
               Số điện thoại: 0437547099<br>\
               Email: lichsu@hnue.edu.vn<br>\
               Website: <a href=\"http://lichsu.hnue.edu.vn/\" target=\"_blank\">lichsu.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/p/Khoa-L%E1%BB%8Bch-s%E1%BB%AD-Tr%C6%B0%E1%BB%9Dng-%C4%90%E1%BA%A1i-h%E1%BB%8Dc-S%C6%B0-ph%E1%BA%A1m-H%C3%A0-N%E1%BB%99i-100057569854720/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/p/Khoa-L%E1%BB%8Bch-s%E1%BB%AD-Tr%C6%B0%E1%BB%9Dng-%C4%90%E1%BA%A1i-h%E1%BB%8Dc-S%C6%B0-ph%E1%BA%A1m-H%C3%A0-N%E1%BB%99i-100057569854720/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 25 (2 Giáo sư, 8 Phó Giáo sư, 12 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Lịch sử Việt Nam, Lịch sử Thế giới, Phương pháp và dạy học Lịch sử.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 3 chương trình Thạc sĩ và 3 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 350.</li>\
+              </ul><br>\
               <b>Khoa Triết Học</b><br>\
               Tầng 3<br>\
               Số điện thoại: 0485876474<br>\
               Email: triethoc@hnue.edu.vn<br>\
               Website: <a href=\"http://triethoc.hnue.edu.vn/\" target=\"_blank\">triethoc.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/KhoaTriethoc.HNUE/\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/KhoaTriethoc.HNUE/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2011.</li>\
+                  <li>Số lượng cán bộ: 13 (1 Phó Giáo sư, 9 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Lịch sử Triết học, Triết học Phương Đông, Phương Tây và Tư tưởng Triết học Việt Nam, Triết học Mác-Lênin, Phương pháp Dạy học Triết học, Triết học Kinh tế/Văn hoá/Môi trường.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 1 chương trình Thạc sĩ và 1 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 186.</li>\
+              </ul>",
     "infoEN": "<b>Faculty of Philology</b><br>\
               Floor 1<br>\
               Phone number: 02437549076<br>\
@@ -233,19 +281,43 @@ var buildingData = {
               Tầng 1<br>\
               Số điện thoại: 02437547727<br>\
               Email: tapchi@hnue.edu.vn<br>\
-              Website: <a href=\"http://math.hnue.edu.vn/\" target=\"_blank\">math.hnue.edu.vn</a><br><br>\
+              Website: <a href=\"http://math.hnue.edu.vn/\" target=\"_blank\">math.hnue.edu.vn</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 49 (7 Giáo sư, 8 Phó Giáo sư, 45 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Đại số, Tích phân, Hình học, Xác suất, Thống kê, Toán Ứng dụng, Phương pháp Giảng dạy.</li>\
+                  <li>Chương trình học: 3 chương trình Đại học, 6 chương trình Thạc sĩ và 5 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 1400.</li>\
+              </ul><br>\
               <b>Khoa Công nghệ Thông tin</b><br>\
               Tầng 2<br>\
               Số điện thoại: 0904031397<br>\
               Email: cntt@hnue.edu.vn<br>\
               Website: <a href=\"https://fit.hnue.edu.vn/\" target=\"_blank\">fit.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100093662272135&locale=vi_VN\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/profile.php?id=100093662272135&locale=vi_VN\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2003.</li>\
+                  <li>Số lượng cán bộ: 29 (2 Phó Giáo sư, 11 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Khoa học Máy tính, Thuật toán, Học máy, Học sâu, Kỹ thuật Phần mềm.</li>\
+                  <li>Chương trình học: 3 chương trình Đại học, 6 chương trình Thạc sĩ và 5 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 912.</li>\
+              </ul><br>\
               <b>Khoa Vật Lí</b><br>\
               Tầng 1<br>\
               Số điện thoại: 0437547797<br>\
               Email: khoavatli@hnue.edu.vn<br>\
               Website: <a href=\"https://phys.hnue.edu.vn/\" target=\"_blank\">phys.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/phys.hnue?locale=vi_VN\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/phys.hnue?locale=vi_VN\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1951.</li>\
+                  <li>Số lượng cán bộ: 1 Giáo sư, 14 Phó Giáo sư, 20 Tiến sĩ.</li>\
+                  <li>Lĩnh vực nghiên cứu: Vật lý Lý thuyết, Vật lý Trạng thái rắn, Điện Vật lý, Vật lý Thiên văn, Nghiên cứu Giáo dục Vật lý.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học, 3 chương trình Thạc sĩ và 3 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 965.</li>\
+              </ul>",
     "infoEN": "<b>Faculty of Mathematics and Informatics</b><br>\
               Floor 1<br>\
               Phone: 02437547727<br>\
@@ -322,31 +394,70 @@ var buildingData = {
               Số điện thoại: 02437549180<br>\
               Email: k.tienganh@hnue.edu.vn<br>\
               Website: <a href=\"https://foe.hnue.edu.vn/\" target=\"_blank\">foe.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoatienganhDHSPHN/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoatienganhDHSPHN/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2004.</li>\
+                  <li>Số lượng cán bộ: 41 (5 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Ngôn ngữ học, Phương pháp luận Dạy học Ngôn ngữ Tiếng Anh, Ngôn ngữ học Tiếng Anh, Nghiên cứu Anh Mỹ, Ngôn ngữ học Corpus.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học và 1 chương trình Thạc sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 960.</li>\
+              </ul><br>\
               <b>Khoa Việt Nam Học</b><br>\
               Tầng 1<br>\
               Số điện thoại: 02437549039<br>\
               Email: k.vnh@hnue.edu.vn<br>\
               Website: <a href=\"http://vns.hnue.edu.vn/\" target=\"_blank\">vns.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/vnstrongtoi/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/vnstrongtoi/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2005.</li>\
+                  <li>Số lượng cán bộ: 20 (10 Giáo sư, 3 Phó Giáo sư, 12 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Văn hoá Việt Nam, Du lịch, Báo chí và Cộng đồng.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học và 1 chương trình Thạc sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 650.</li>\
+              </ul><br>\
               <b>Khoa Quản Lý Giáo Dục</b><br>\
               Tầng 2<br>\
               Số điện thoại: 02437549310<br>\
               Email: k.qlgd@hnue.edu.vn<br>\
               Website: <a href=\"https://qlgd.hnue.edu.vn/\" target=\"_blank\">qlgd.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/qlgd.hnue/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/qlgd.hnue/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2011.</li>\
+                  <li>Số lượng cán bộ: 14 (4 Phó Giáo sư, 5 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Lãnh đạo và Quản lý Cơ sở Giáo dục, Mô hình Lãnh đạo và Quản lý Giáo dục, Chính sách Giáo dục Trong nước và Quốc tế, Quản lý Nguồn lực Giáo dục, Lãnh đạo và Quản lý Hệ thống Giáo dục bao gồm Giáo dục Mầm non, K-12, Giáo dục Nghề nghiệp, Giáo dục Thường xuyên, Giáo dục Đại học.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 1 chương trình Thạc sĩ và 1 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 407.</li>\
+              </ul><br>\
               <b>Khoa Công Tác Xã Hội</b><br>\
               Tầng 3<br>\
               Số điện thoại: 02432191073<br>\
               Email: k.ctxh@hnue.edu.vn<br>\
               Website: <a href=\"https://ctxh.hnue.edu.vn/\" target=\"_blank\">ctxh.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoaCTXH.DHSPHN/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoaCTXH.DHSPHN/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2011.</li>\
+                  <li>Số lượng cán bộ: 20 (1 Phó Giáo sư, 9 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Công tác Xã hội Trường học, Công tác Xã hội Sức khoẻ,  Phát triển Cộng đồng, Sức khoẻ Cộng đồng và Phúc lợi cùng Công tác Xã hội với LGBTQ+.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học và Thạc sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 400.</li>\
+              </ul><br>\
               <b>Khoa Ngôn ngữ và Văn hoá Trung Quốc</b><br>\
               Tầng 3<br>\
               Số điện thoại: 02438342917<br>\
               Email: ttq@hnue.edu.vn<br>\
               Website: <a href=\"https://ttq.hnue.edu.vn/\" target=\"_blank\">ttq.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/ttqhnue/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/ttqhnue/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2024.</li>\
+                  <li>Số lượng cán bộ: 10 (4 Tiến sĩ, 4 Thạc sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Ngôn ngữ học Trung Quốc và Ngôn ngữ học Ứng dụng.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học.</li>\
+              </ul><br>\
               <b>Bảo tàng sinh vật</b><br>\
               Tầng 4<br><br>\
               <b>Khoa Nghệ Thuật</b><br>\
@@ -354,7 +465,15 @@ var buildingData = {
               Số điện thoại: 0979336113<br>\
               Email: k.nghethuat@hnue.edu.vn<br>\
               Website: <a href=\"https://nghethuat.hnue.edu.vn/\" target=\"_blank\">nghethuat.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoanghethuatdhsphn/\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/khoanghethuatdhsphn/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2001.</li>\
+                  <li>Số lượng cán bộ: 37 (3 Phó Giáo sư, 7 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Giáo dục Nghệ thuật.</li>\
+                  <li>Chương trình học:  2 chương trình Đại học và 2 chương trình Thạc sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 234.</li>\
+              </ul>",
     "infoEN": "<b>Faculty of English</b><br>\
               Floor 1<br>\
               Phone: 02437549180<br>\
@@ -511,7 +630,7 @@ var buildingData = {
     "infoEN": "No information.",
     "latitude": 21.038680962142024,
     "longitude": 105.78296637234962,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FnhaK.jpg?alt=media&token=9045f9ae-375c-46aa-a80e-3f36e1846abe']
   },
   "nhaK2": {
     "polygon": [
@@ -634,48 +753,112 @@ var buildingData = {
               Số điện thoại: 02437549499<br>\
               Email: k.spkt@hnue.edu.vn<br>\
               Website: <a href=\"https://spkt.hnue.edu.vn/\" target=\"_blank\">spkt.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/SuPhamKythuat.DHSPHN\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/SuPhamKythuat.DHSPHN\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1970.</li>\
+                  <li>Số lượng cán bộ: 16 (2 Phó Giáo sư, 3 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Động lực học-Cơ học, Điện-Điện tử, Giáo dục STEM, Phương pháp Dạy học Kỹ thuật.</li>\
+                  <li>Chương trình học: 2 chương trình Đại học, Thạc sĩ và Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 408.</li>\
+              </ul><br>\
               <b>Khoa Giáo dục Thể chất</b><br>\
               Tầng 2<br>\
               Số điện thoại: 02437549517<br>\
               Email: hoanb1974@gmail.com<br>\
               Website: <a href=\"http://gdtc.hnue.edu.vn/\" target=\"_blank\">gdtc.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoagdtc.dhsphn\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoagdtc.dhsphn\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2001.</li>\
+                  <li>Số lượng cán bộ: 27 (2 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Phương pháp Dạy học Giáo dục Thể chất.</li>\
+                  <li>Chương trình học:  1 chương trình Đại học và 1 chương trình Thạc sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 520.</li>\
+              </ul><br>\
               <b>Khoa Giáo dục Đặc biệt</b><br>\
               Tầng 4<br>\
               Số điện thoại: 024385876448<br>\
               Email: k.gddb@hnue.edu.vn<br>\
-              Website: <a href=\"http://gddb.hnue.edu.vn/\" target=\"_blank\">gddb.hnue.edu.vn</a><br><br>\
+              Website: <a href=\"http://gddb.hnue.edu.vn/\" target=\"_blank\">gddb.hnue.edu.vn</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2001.</li>\
+                  <li>Số lượng cán bộ: 26 (1 Giáo sư, 1 Phó Giáo sư, 12 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Giáo dục Trẻ em Khiếm thị và Khuyết tật Học tập, Giáo dục Trẻ em Khiếm thính và Rối loạn Ngôn ngữ, Giáo dục Trẻ em Thiểu năng Trí tuệ và Rối loạn Phổ Tự kỷ.</li>\
+                  <li>Chương trình học: 4 chương trình Đại học, Thạc sĩ và Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 342.</li>\
+              </ul><br>\
               <b>Khoa Giáo dục Quốc Phòng và An Ninh</b><br>\
               Tầng 5<br>\
               Số điện thoại: 0438347106<br>\
               Email: k.gdqp@hnue.edu.vn<br>\
               Website: <a href=\"http://gdqp.hnue.edu.vn/\" target=\"_blank\">gdqp.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/gdqp.dhsphn\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/gdqp.dhsphn\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1982.</li>\
+                  <li>Số lượng cán bộ: 16 (2 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Lịch sử Quân sự Việt Nam, Chiến thuật và Chiến lược Quân sự, Giáo dục Quốc phòng.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: khoảng 90.</li>\
+              </ul><br>\
               <b>Khoa Địa Lý</b><br>\
               Tầng 5<br>\
               Số điện thoại: 02438346826<br>\
               Email: k.dialy@hnue.edu.vn<br>\
               Website: <a href=\"https://dialy.hnue.edu.vn/\" target=\"_blank\">dialy.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/geo.hnue/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/geo.hnue/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1956.</li>\
+                  <li>Số lượng cán bộ: 25 (2 Phó Giáo sư, 18 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Địa lý Tự nhiên, Địa lý Kinh tế Xã hội, Bản đồ Viễn thám và GIS, Lý luận và Phương pháp Dạy học Địa lý.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 4 chương trình Thạc sĩ và 3 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 573.</li>\
+              </ul><br>\
               <b>Khoa Giáo dục Tiểu học</b><br>\
               Tầng 6<br>\
               Số điện thoại: 0437549273<br>\
               Email: k.gdth@hnue.edu.vn<br>\
               Website: <a href=\"http://gdth.hnue.edu.vn/\" target=\"_blank\">gdth.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoagiaoductieuhoc/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoagiaoductieuhoc/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1983.</li>\
+                  <li>Số lượng cán bộ: 20 (5 Phó Giáo sư, 4 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Khoa học Tự nhiên cho Giáo dục Tiểu học, Khoa học Xã hội cho Giáo dục Tiểu học, Tâm lý và Giáo dục cho Sư phạm Tiểu học.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 3 chương trình Thạc sĩ và 3 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 870.</li>\
+              </ul><br>\
               <b>Khoa Tâm Lý Học - Giáo Dục</b><br>\
               Tầng 6<br>\
               Số điện thoại: 0437547098<br>\
               Email: k.tamly@hnue.edu.vn<br>\
               Website: <a href=\"http://psy.hnue.edu.vn/\" target=\"_blank\">psy.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/tlgdhnue/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/tlgdhnue/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1958.</li>\
+                  <li>Số lượng cán bộ: 34 (1 Giáo sư, 11 Phó Giáo sư, 15 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Phát triển Tâm lý học, Tâm lý học Trường học, Tâm lý học Xuyên văn hoá, Tâm lý học Quản lý, Tâm lý học Xã hội, Lịch sử của Giáo dục, Phương pháp Dạy học và Đánh giá trong Giáo dục, Nguyên tắc và Kỹ thuật trong Dạy học và Giáo dục.</li>\
+                  <li>Chương trình học:  4 chương trình Đại học, 2 chương trình Thạc sĩ và 4 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 460.</li>\
+              </ul><br>\
               <b>Khoa Giáo dục Mầm non</b><br>\
               Tầng 6 phòng 605<br>\
               Số điện thoại: 0437547095<br>\
               Email: k.gdmn@hnue.edu.vn<br>\
               Website: <a href=\"https://gdmn.hnue.edu.vn/\" target=\"_blank\">gdmn.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/khoaGDMNHNUE/\" target=\"_blank\">Facebook</a><br><br>\
+              Fanpage: <a href=\"https://www.facebook.com/khoaGDMNHNUE/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 1985.</li>\
+                  <li>Số lượng cán bộ: 23 (6 Phó Giáo sư, 8 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Tâm lý Trẻ em, Giáo dục Thể chất ở độ tuổi nhỏ, Giáo dục Mỹ thuật, Giáo dục Ngôn ngữ và Trí tuệ.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học, 1 chương trình Thạc sĩ và 1 chương trình Tiến sĩ.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 850.</li>\
+              </ul><br>\
               <b>Viện Nghiên Cứu Sư Phạm</b><br>\
               Tầng 7<br>\
               Số điện thoại: 0462570159<br><br>\
@@ -688,7 +871,15 @@ var buildingData = {
               Số điện thoại: 0437549499<br>\
               Email: k.tiengphap@hnue.edu.vn<br>\
               Website: <a href=\"http://tiengphap.hnue.edu.vn/\" target=\"_blank\">tiengphap.hnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/phapdhsphn/\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/phapdhsphn/\" target=\"_blank\">Facebook</a><br>\
+              <b>Giới thiệu về khoa</b>\
+              <ul>\
+                  <li>Thành lập năm 2004.</li>\
+                  <li>Số lượng cán bộ: 11 (1 Tiến sĩ)</li>\
+                  <li>Lĩnh vực nghiên cứu: Ngôn ngữ học, Sư phạm.</li>\
+                  <li>Chương trình học: 1 chương trình Đại học.</li>\
+                  <li>Số lượng sinh viên Đại học và học viên sau Đại học hiện tại: 161.</li>\
+              </ul>",
     "infoEN": "<b>Professor's Office</b><br>\
               Floors 2, 3<br><br>\
               <b>Lecture Theaters, classrooms</b><br>\
@@ -708,7 +899,7 @@ var buildingData = {
               Phone: 024385876448<br>\
               Email: k.gddb@hnue.edu.vn<br>\
               Website: <a href=\"http://gddb.hnue.edu.vn/\" target=\"_blank\">gddb.hnue.edu.vn</a><br><br>\
-              <b>Faculty of Military and Security Education</b><br>\
+              <b>Faculty of National Defense Education</b><br>\
               Floor 5<br>\
               Phone: 0438347106<br>\
               Email: k.gdqp@hnue.edu.vn<br>\
@@ -811,7 +1002,7 @@ var buildingData = {
               <b>Email: tt.thuvien@hnue.edu.vn</b>",
     "latitude": 21.04001756530523,
     "longitude": 105.7836799710749,
-    "source-image": []
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2Fthuvien.jpg?alt=media&token=425347c0-945f-4f10-af46-da3453c5d4ae']
   },
   "SDN": {
     "polygon": [
@@ -2597,14 +2788,2683 @@ var buildingData = {
                       'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FLangBac%2Flang-chu-tich-ho-chi-minh-4_1685366174.jpg?alt=media&token=b8fdac97-9d45-466c-8dc4-50a439f78b07',
                       'https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/service%2FLangBac%2Flang-chu-tich-ho-chi-minh-5_1685366206.jpg?alt=media&token=28895df0-7b1f-42c1-b4ed-121767874ec3'
                     ]
-  }
+  },
+  "104K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv104K1",
+    "nameVN": "104K1: Phòng kính hiển vi. Bộ môn: Công nghệ sinh học - vi sinh",
+    "nameEN": "104K1: Microscope Room. Department: Biotechnology - Microbiology",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải.",
+    "infoEN": "Enter through the first floor door and then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fphong%20kinh%20hien%20vi.jpg?alt=media&token=226df12c-c83b-43eb-82ed-bc513ffc49be']
+  },
+  "105K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv105K1",
+    "nameVN": "105K1: Phòng thí nghiệm Công nghệ Sinh học",
+    "nameEN": "105K1: Laboratory of Biotechnology",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải.",
+    "infoEN": "Enter through the first floor door and then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fphong%20thi%20nghiem%20cong%20nghe%20sinh%20hoc.jpg?alt=media&token=e7c1f698-4199-42eb-9fd0-5da70c959a9f']
+  },
+  "107K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv107K1",
+    "nameVN": "107K1: Phòng thí nghiệm Nuôi cấy mô",
+    "nameEN": "107K1: Tissue Culture Laboratory",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải.",
+    "infoEN": "Enter through the first floor door and then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fphong%20thi%20nghiem%20nuoi%20cay%20mo.jpg?alt=media&token=32e5383f-dfbd-4543-ab90-f45027fa2769']
+  },
+  "108K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv108K1",
+    "nameVN": "108K1",
+    "nameEN": "108K1",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ phải.",
+    "infoEN": "Enter through the first floor door and then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "101K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv101K1",
+    "nameVN": "101K1: Trung tâm Công nghệ thông tin",
+    "nameEN": "101K1: Information Technology Center",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái.",
+    "infoEN": "Enter through the first floor door and then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fnha%20K%2Ftrung%20tam%20cntt.jpg?alt=media&token=996e27e4-51cc-41d0-a379-40ee42779c38']
+  },
+  "102K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv102K1",
+    "nameVN": "102K1: Trung tâm Khoa học và Công nghệ Nano",
+    "nameEN": "102K1: Center for Nano Science and Technology",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái.",
+    "infoEN": "Enter through the first floor door and then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fnha%20K%2Ftrung%20tam%20khcn%20nano.jpg?alt=media&token=2e2ef68d-9c75-4fa9-8583-641cda2a9b70']
+  },
+  "103K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv103K1",
+    "nameVN": "103K1",
+    "nameEN": "103K1",
+    "infoVN": "Đi vào cửa tầng 1 rồi rẽ trái.",
+    "infoEN": "Enter through the first floor door and then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "201K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv201K1",
+    "nameVN": "201K1: Phòng học",
+    "nameEN": "201K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "202K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv202K1",
+    "nameVN": "202K1: Phòng học",
+    "nameEN": "202K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "203K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv203K1",
+    "nameVN": "203K1: Phòng học",
+    "nameEN": "203K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "204K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv204K1",
+    "nameVN": "204K1: Phòng học",
+    "nameEN": "204K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "205K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv205K1",
+    "nameVN": "205K1: Phòng học",
+    "nameEN": "205K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "206K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv206K1",
+    "nameVN": "206K1: Phòng học",
+    "nameEN": "206K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ trái.",
+    "infoEN": "Go up to the second floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "HoiTruongK": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivHoiTruongK",
+    "nameVN": "Hội trường nhà K",
+    "nameEN": "K Building Auditorium",
+    "infoVN": "Đi lên tầng 2 rồi rẽ phải.",
+    "infoEN": "Go up to the second floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "207K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv207K1",
+    "nameVN": "207K1: Phòng học",
+    "nameEN": "207K1: Classroom",
+    "infoVN": "Đi lên tầng 2 rồi rẽ phải.",
+    "infoEN": "Go up to the second floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "208K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv208K1",
+    "nameVN": "208K1: Phòng quản lý toà nhà (mượn chìa khoá)",
+    "nameEN": "208K1: Building Management Office (key borrowing)",
+    "infoVN": "Đi lên tầng 2 rồi rẽ phải.",
+    "infoEN": "Go up to the second floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "301K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv301K1",
+    "nameVN": "301K1: Phòng học",
+    "nameEN": "301K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ trái.",
+    "infoEN": "Go up to the third floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "302K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv302K1",
+    "nameVN": "302K1: Phòng học",
+    "nameEN": "302K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ trái.",
+    "infoEN": "Go up to the third floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "303K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv303K1",
+    "nameVN": "303K1: Phòng học",
+    "nameEN": "303K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ trái.",
+    "infoEN": "Go up to the third floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "304K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv304K1",
+    "nameVN": "304K1: Phòng học",
+    "nameEN": "304K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ trái.",
+    "infoEN": "Go up to the third floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "305K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv305K1",
+    "nameVN": "305K1: Phòng học",
+    "nameEN": "305K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ trái.",
+    "infoEN": "Go up to the third floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "306K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv306K1",
+    "nameVN": "306K1: Phòng chờ giáo viên",
+    "nameEN": "306K1: Teachers' Lounge",
+    "infoVN": "Đi lên tầng 3 rồi rẽ phải.",
+    "infoEN": "Go up to the third floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fnha%20K%2Fphong%20cho%20giao%20vien%20306.jpg?alt=media&token=88cf9356-4806-43ed-b1b7-9a78b69cc59b']
+  },
+  "307K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv307K1",
+    "nameVN": "307K1: Phòng học",
+    "nameEN": "307K1: Classroom",
+    "infoVN": "Đi lên tầng 3 rồi rẽ phải.",
+    "infoEN": "Go up to the third floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "401K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv401K1",
+    "nameVN": "401K1: Phòng học",
+    "nameEN": "401K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ trái.",
+    "infoEN": "Go up to the fourth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "402K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv402K1",
+    "nameVN": "402K1: Phòng học",
+    "nameEN": "402K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ trái.",
+    "infoEN": "Go up to the fourth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "403K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv403K1",
+    "nameVN": "403K1: Phòng học",
+    "nameEN": "403K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ trái.",
+    "infoEN": "Go up to the fourth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "404K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv404K1",
+    "nameVN": "404K1: Phòng học",
+    "nameEN": "404K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ trái.",
+    "infoEN": "Go up to the fourth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "405K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv405K1",
+    "nameVN": "405K1: Phòng học",
+    "nameEN": "405K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ phải.",
+    "infoEN": "Go up to the fourth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "406K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv406K1",
+    "nameVN": "406K1: Phòng học",
+    "nameEN": "406K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ phải.",
+    "infoEN": "Go up to the fourth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "407K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv407K1",
+    "nameVN": "407K1: Phòng học",
+    "nameEN": "407K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ phải.",
+    "infoEN": "Go up to the fourth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "408K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv408K1",
+    "nameVN": "408K1: Phòng học",
+    "nameEN": "408K1: Classroom",
+    "infoVN": "Đi lên tầng 4 rồi rẽ phải.",
+    "infoEN": "Go up to the fourth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "501K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv501K1",
+    "nameVN": "501K1: Phòng máy tính",
+    "nameEN": "501K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "502K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv502K1",
+    "nameVN": "502K1: Phòng máy tính",
+    "nameEN": "502K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "503K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv503K1",
+    "nameVN": "503K1: Phòng máy tính",
+    "nameEN": "503K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "504K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv504K1",
+    "nameVN": "504K1: Phòng máy tính",
+    "nameEN": "504K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "505K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv505K1",
+    "nameVN": "505K1: Phòng máy tính",
+    "nameEN": "505K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "506K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv506K1",
+    "nameVN": "506K1: Phòng máy tính",
+    "nameEN": "506K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ trái.",
+    "infoEN": "Go up to the fifth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "507K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv507K1",
+    "nameVN": "507K1: Phòng máy tính",
+    "nameEN": "507K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ phải.",
+    "infoEN": "Go up to the fifth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "508K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv508K1",
+    "nameVN": "508K1: Phòng máy tính",
+    "nameEN": "508K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ phải.",
+    "infoEN": "Go up to the fifth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "509K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv509K1",
+    "nameVN": "509K1: Phòng máy tính",
+    "nameEN": "509K1: Computer Room",
+    "infoVN": "Đi lên tầng 5 rồi rẽ phải.",
+    "infoEN": "Go up to the fifth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "601K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv601K1",
+    "nameVN": "601K1: Phòng máy tính",
+    "nameEN": "601K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ trái.",
+    "infoEN": "Go up to the sixth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "602K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv602K1",
+    "nameVN": "602K1: Phòng máy tính",
+    "nameEN": "602K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ trái.",
+    "infoEN": "Go up to the sixth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "603K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv603K1",
+    "nameVN": "603K1: Phòng máy tính",
+    "nameEN": "603K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ trái.",
+    "infoEN": "Go up to the sixth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "604K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv604K1",
+    "nameVN": "604K1",
+    "nameEN": "604K1",
+    "infoVN": "Đi lên tầng 6 rồi rẽ trái.",
+    "infoEN": "Go up to the sixth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "605K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv605K1",
+    "nameVN": "605K1",
+    "nameEN": "605K1",
+    "infoVN": "Đi lên tầng 6 rồi rẽ trái.",
+    "infoEN": "Go up to the sixth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "606K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv606K1",
+    "nameVN": "606K1: Phòng máy tính",
+    "nameEN": "606K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ phải",
+    "infoEN": "Go up to the sixth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "607K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv607K1",
+    "nameVN": "607K1: Phòng máy tính",
+    "nameEN": "607K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ phải",
+    "infoEN": "Go up to the sixth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "608K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv608K1",
+    "nameVN": "608K1: Phòng máy tính",
+    "nameEN": "608K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ phải",
+    "infoEN": "Go up to the sixth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "609K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv609K1",
+    "nameVN": "609K1: Phòng máy tính",
+    "nameEN": "609K1: Computer Room",
+    "infoVN": "Đi lên tầng 6 rồi rẽ phải",
+    "infoEN": "Go up to the sixth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "701K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv701K1",
+    "nameVN": "701K1: Phòng học",
+    "nameEN": "701K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "702K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv702K1",
+    "nameVN": "702K1: Phòng học",
+    "nameEN": "702K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "703K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv703K1",
+    "nameVN": "703K1: Phòng học",
+    "nameEN": "703K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "704K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv704K1",
+    "nameVN": "704K1: Phòng chuyên gia",
+    "nameEN": "704K1: Expert Room",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "705K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv705K1",
+    "nameVN": "705K1: Phòng học",
+    "nameEN": "705K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "706K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv706K1",
+    "nameVN": "706K1: Phòng học",
+    "nameEN": "706K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ trái",
+    "infoEN": "Go up to the seventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "707K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv707K1",
+    "nameVN": "707K1: Phòng học",
+    "nameEN": "707K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ phải",
+    "infoEN": "Go up to the seventh floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "708K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv708K1",
+    "nameVN": "708K1: Phòng học",
+    "nameEN": "708K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ phải",
+    "infoEN": "Go up to the seventh floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "709K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv709K1",
+    "nameVN": "709K1: Phòng học",
+    "nameEN": "709K1: Classroom",
+    "infoVN": "Đi lên tầng 7 rồi rẽ phải",
+    "infoEN": "Go up to the seventh floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "710K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv710K1",
+    "nameVN": "710K1: Viện Giáo dục và Đào tạo Quốc tế",
+    "nameEN": "710K1: Institute for International Education and Traning",
+    "infoVN": "Đi lên tầng 7 rồi rẽ phải",
+    "infoEN": "Go up to the seventh floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "801K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv801K1",
+    "nameVN": "801K1: Phòng học",
+    "nameEN": "801K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "802K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv802K1",
+    "nameVN": "802K1: Phòng học",
+    "nameEN": "802K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "803K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv803K1",
+    "nameVN": "803K1: Phòng học",
+    "nameEN": "803K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "804K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv804K1",
+    "nameVN": "804K1: Phòng học",
+    "nameEN": "804K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "805K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv805K1",
+    "nameVN": "805K1: Phòng học",
+    "nameEN": "805K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "806K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv806K1",
+    "nameVN": "806K1: Phòng học",
+    "nameEN": "806K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ trái",
+    "infoEN": "Go up to the eighth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "807K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv807K1",
+    "nameVN": "807K1: Phòng học",
+    "nameEN": "807K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ phải",
+    "infoEN": "Go up to the eighth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "808K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv808K1",
+    "nameVN": "808K1: Phòng học",
+    "nameEN": "808K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ phải",
+    "infoEN": "Go up to the eighth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "809K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv809K1",
+    "nameVN": "809K1: Phòng học",
+    "nameEN": "809K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ phải",
+    "infoEN": "Go up to the eighth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "810K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv810K1",
+    "nameVN": "810K1: Phòng học",
+    "nameEN": "810K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ phải",
+    "infoEN": "Go up to the eighth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "811K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv811K1",
+    "nameVN": "811K1: Phòng học",
+    "nameEN": "811K1: Classroom",
+    "infoVN": "Đi lên tầng 8 rồi rẽ phải",
+    "infoEN": "Go up to the eighth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "901K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv901K1",
+    "nameVN": "901K1: Phòng học",
+    "nameEN": "901K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "902K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv902K1",
+    "nameVN": "902K1",
+    "nameEN": "902K1",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "903K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv903K1",
+    "nameVN": "903K1: Trung tâm Địa lý Ứng dụng",
+    "nameEN": "903K1: Center for Applied Geography",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/classroom%2Fnha%20K%2Ftrung%20tam%20dia%20ly%20ung%20dung%20903%20K.jpg?alt=media&token=14da74d6-4c1d-4101-8ce2-0c65170afa28']
+  },
+  "904K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv904K1",
+    "nameVN": "904K1: Phòng học",
+    "nameEN": "904K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "905K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv905K1",
+    "nameVN": "905K1: Phòng học",
+    "nameEN": "905K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "906K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv906K1",
+    "nameVN": "906K1: Phòng học",
+    "nameEN": "906K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ trái",
+    "infoEN": "Go up to the ninth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "907K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv907K1",
+    "nameVN": "907K1: Phòng học",
+    "nameEN": "907K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ phải",
+    "infoEN": "Go up to the ninth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "908K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv908K1",
+    "nameVN": "908K1: Phòng học",
+    "nameEN": "908K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ phải",
+    "infoEN": "Go up to the ninth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "909K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv909K1",
+    "nameVN": "909K1: Phòng học",
+    "nameEN": "909K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ phải",
+    "infoEN": "Go up to the ninth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "910K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv910K1",
+    "nameVN": "910K1: Phòng học",
+    "nameEN": "910K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ phải",
+    "infoEN": "Go up to the ninth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "911K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv911K1",
+    "nameVN": "911K1: Phòng học",
+    "nameEN": "911K1: Classroom",
+    "infoVN": "Đi lên tầng 9 rồi rẽ phải",
+    "infoEN": "Go up to the ninth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1001K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1001K1",
+    "nameVN": "1001K1: Phòng học",
+    "nameEN": "1001K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ trái",
+    "infoEN": "Go up to the tenth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1002K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1002K1",
+    "nameVN": "1002K1: Phòng học",
+    "nameEN": "1002K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ trái",
+    "infoEN": "Go up to the tenth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1003K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1003K1",
+    "nameVN": "1003K1: Phòng học",
+    "nameEN": "1003K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ trái",
+    "infoEN": "Go up to the tenth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1004K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1004K1",
+    "nameVN": "1004K1: Phòng học",
+    "nameEN": "1004K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ trái",
+    "infoEN": "Go up to the tenth floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1005K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1005K1",
+    "nameVN": "1005K1: Phòng học",
+    "nameEN": "1005K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ phải",
+    "infoEN": "Go up to the tenth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1006K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1006K1",
+    "nameVN": "1006K1: Phòng học",
+    "nameEN": "1006K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ phải",
+    "infoEN": "Go up to the tenth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1007K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1007K1",
+    "nameVN": "1007K1: Phòng học",
+    "nameEN": "1007K1: Classroom",
+    "infoVN": "Đi lên tầng 10 rồi rẽ phải",
+    "infoEN": "Go up to the tenth floor, then turn right.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1101K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1101K1",
+    "nameVN": "1101K1: Phòng học",
+    "nameEN": "1101K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1102K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1102K1",
+    "nameVN": "1102K1: Phòng học",
+    "nameEN": "1102K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1103K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1103K1",
+    "nameVN": "1103K1: Phòng học",
+    "nameEN": "1103K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1104K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1104K1",
+    "nameVN": "1104K1: Phòng học",
+    "nameEN": "1104K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1105K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1105K1",
+    "nameVN": "1105K1: Phòng học",
+    "nameEN": "1105K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1106K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1106K1",
+    "nameVN": "1106K1: Phòng học",
+    "nameEN": "1106K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1107K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1107K1",
+    "nameVN": "1107K1: Phòng học",
+    "nameEN": "1107K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "1108K1": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv1108K1",
+    "nameVN": "1108K1: Phòng học",
+    "nameEN": "1108K1: Classroom",
+    "infoVN": "Đi lên tầng 11 rồi rẽ trái",
+    "infoEN": "Go up to the eleventh floor, then turn left.",
+    "latitude": 21.038680962142024,
+    "longitude": 105.78296637234962,
+    "source-image": []
+  },
+  "210V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv210V",
+    "nameVN": "210V: Phòng học",
+    "nameEN": "210V: Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà V.",
+    "infoEN": "Located on the second floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "211V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv211V",
+    "nameVN": "211V: Phòng quản lý giảng đường nhà V",
+    "nameEN": "211V: Building V Lecture Hall Management Office",
+    "infoVN": "Nằm tại tầng 2 của nhà V.",
+    "infoEN": "Located on the second floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "212V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv212V",
+    "nameVN": "212V: Phòng học",
+    "nameEN": "212V: Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà V.",
+    "infoEN": "Located on the second floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "213V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv213V",
+    "nameVN": "213V: Phòng GS.TS. Sĩ Đức Quang",
+    "nameEN": "213V: Professor Dr. Sĩ Đức Quang's Office",
+    "infoVN": "Nằm tại tầng 2 của nhà V.",
+    "infoEN": "Located on the second floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "214V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv214V",
+    "nameVN": "214V: Phòng GS.TS. Trần Văn Tấn",
+    "nameEN": "214V: Professor Dr. Trần Văn Tấn's Office",
+    "infoVN": "Nằm tại tầng 2 của nhà V.",
+    "infoEN": "Located on the second floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "215V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv215V",
+    "nameVN": "215V: Phòng GS.TS. Cung Thế Anh",
+    "nameEN": "215V: Professor Dr. Cung Thế Anh's Office",
+    "infoVN": "Nằm tại tầng 2 của nhà V.",
+    "infoEN": "Located on the second floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "216V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv216V",
+    "nameVN": "216V: Phòng GS.TS. Nguyễn Công Khanh",
+    "nameEN": "216V: Professor Dr. Nguyễn Công Khanh's Office",
+    "infoVN": "Nằm tại tầng 2 của nhà V.",
+    "infoEN": "Located on the second floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "217V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv217V",
+    "nameVN": "217V: Phòng chờ giáo viên",
+    "nameEN": "217V: Teachers' Lounge",
+    "infoVN": "Nằm tại tầng 2 của nhà V.",
+    "infoEN": "Located on the second floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "218V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv218V",
+    "nameVN": "218V: Phòng học",
+    "nameEN": "218V: Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà V.",
+    "infoEN": "Located on the second floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "219V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv219V",
+    "nameVN": "219V: Phòng GS.TS. Lã Nhâm Thìn",
+    "nameEN": "219V: Professor Dr. Lã Nhâm Thìn's Office",
+    "infoVN": "Nằm tại tầng 2 của nhà V.",
+    "infoEN": "Located on the second floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "301V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv301V",
+    "nameVN": "301V: Phòng thực hành STEM",
+    "nameEN": "301V: STEM Laboratory",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "302V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv302V",
+    "nameVN": "302V: Phòng thực hành kỹ thuật điều khiển",
+    "nameEN": "302V: Control Engineering Laboratory",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "303V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv303V",
+    "nameVN": "303V: Trung tâm giải thích phức và giải thích hàm - GS. TSKH Lê Mậu Hải",
+    "nameEN": "303V: Complex Analysis and Function Explanation Center - Prof. Dr. Eng. Le Mau Hai",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "304V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv304V",
+    "nameVN": "304V: Phòng thực hành kỹ thuật điện",
+    "nameEN": "304V: Electrical Engineering Laboratory",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "305V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv305V",
+    "nameVN": "305V: Trưởng khoa PGS.TS. Nguyễn Hoài Nam",
+    "nameEN": "305V: Head of Department Associate Professor, PhD. Nguyễn Hoài Nam",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "307V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv307V",
+    "nameVN": "307V: Bộ môn phương pháp dạy học",
+    "nameEN": "307V: Teaching Methods Department",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "308V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv308V",
+    "nameVN": "308V: Phòng thực hành kỹ thuật điện tử",
+    "nameEN": "308V: Electronics Engineering Laboratory",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "309V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv309V",
+    "nameVN": "309V: Văn phòng khoa",
+    "nameEN": "309V: Faculty Office",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "310V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv310V",
+    "nameVN": "310V: Phòng họp",
+    "nameEN": "310V: Meeting Room",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "311V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv311V",
+    "nameVN": "311V: Phòng học",
+    "nameEN": "311V: Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "312V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv312V",
+    "nameVN": "312V: Phó trưởng khoa ThS. Vũ Thị Ngọc Thuý",
+    "nameEN": "312V: Deputy Head of Faculty, MSc. Vũ Thị Ngọc Thuý",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "313V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv313V",
+    "nameVN": "313V: Phòng GS.TS. Nguyễn Quang Diệu",
+    "nameEN": "313V: Professor Dr. Nguyễn Quang Diệu's Office",
+    "infoVN": "Nằm tại tầng 3 của nhà V.",
+    "infoEN": "Located on the third floor of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "401aV": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv401aV",
+    "nameVN": "401a-V: Bộ môn giáo dục trẻ khiếm thính và giá dục trẻ khuyết tật ngôn ngữ, Bộ môn giáo dục trẻ khuyết tật trí tuệ và giáo dục trẻ tự kỉ",
+    "nameEN": "401a-V: Department of Deaf Education and Language Impairment, Department of Intellectual Disability Education and Autism Education",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "401bV": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv401bV",
+    "nameVN": "401b-V: Phó trưởng khoa TS. Đỗ Thị Thảo",
+    "nameEN": "401b-V: Associate Chair of Department, Dr. Đỗ Thị Thảo",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "402V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv402V",
+    "nameVN": "402V: Phòng họp",
+    "nameEN": "402V: Meeting Room",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "402bV": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv402bV",
+    "nameVN": "402b-V: Bộ môn thực hành giáo dục đặc biệt, Bộ môn giáo dục trẻ khiếm thị và giáo dục trẻ khuyết tật trong học tập",
+    "nameEN": "402b-V: Special Education Practical Department, Department of Education for Visually Impaired and Education for Learning Disabilities",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "403V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv403V",
+    "nameVN": "403V: Phòng học",
+    "nameEN": "403V: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "404V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv404V",
+    "nameVN": "404V: Trưởng khoa PGS.TS. Phan Thanh Long",
+    "nameEN": "404V: Head of Department Associate Professor, PhD. Phan Thanh Long",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "405V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv405V",
+    "nameVN": "405V: Phòng học",
+    "nameEN": "405V: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "406V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv406V",
+    "nameVN": "406V: Phòng học",
+    "nameEN": "406V: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "408V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv408V",
+    "nameVN": "408V: Phòng học",
+    "nameEN": "408V: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "410V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv410V",
+    "nameVN": "410V: Phòng học",
+    "nameEN": "410V: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "411V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv411V",
+    "nameVN": "411V: Phòng học",
+    "nameEN": "411V: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "412V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv412V",
+    "nameVN": "412V: Bộ môn Bản đồ - Viễn thám và GIS",
+    "nameEN": "411V: 412V: Department of Cartography - Remote Sensing and GIS (Geographic Information Systems)",
+    "infoVN": "Nằm tại tầng 4 của nhà V.",
+    "infoEN": "Located on the 4th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "501V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv501V",
+    "nameVN": "501V: Bộ môn Địa lí tự nhiên",
+    "nameEN": "501V: Natural Geography Department",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "502V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv502V",
+    "nameVN": "502V: Phòng thực hành địa lí",
+    "nameEN": "502V: Geographical Practice Room",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "503V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv503V",
+    "nameVN": "503V: Bộ môn địa lí kinh tế - xã hội",
+    "nameEN": "503V: Department of Economic and Social Geography",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "504V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv504V",
+    "nameVN": "504V: Bộ môn lí luận và phương pháp dạy học môn địa lí",
+    "nameEN": "504V: Department of Geography Pedagogy and Teaching Methods",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "505V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv505V",
+    "nameVN": "505V: Phó trưởng khoa PGS.TS. Đặng Vũ Khắc",
+    "nameEN": "505V: Associate Chair of Department Associate Professor, PhD. Đặng Vũ Khắc",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "506V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv506V",
+    "nameVN": "506V: Văn phòng khoa",
+    "nameEN": "506V: Faculty Office",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "507V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv507V",
+    "nameVN": "507V: Phó trưởng khoa TS. Ngô Thị Hải Yến",
+    "nameEN": "507V: Associate Chair of Department, Ms. Ngô Thị Hải Yến",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "508V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv508V",
+    "nameVN": "508V: Phòng học",
+    "nameEN": "508V: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "509V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv509V",
+    "nameVN": "509V: TS. Nguyễn Quyết Chiến",
+    "nameEN": "509V: Dr. Nguyễn Quyết Chiến",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "510V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv510V",
+    "nameVN": "510V: Phòng học",
+    "nameEN": "510V: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "511V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv511V",
+    "nameVN": "511V: Trưởng khoa Đại tá TS. Trần Nhất Anh",
+    "nameEN": "511V: Department Head, Colonel, Dr. Trần Nhất Anh",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "512V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv512V",
+    "nameVN": "512V: Kho vật chất 1",
+    "nameEN": "512V: Material Warehouse 1",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "513V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv513V",
+    "nameVN": "513V: Văn phòng - Giáo vụ khoa",
+    "nameEN": "513V: Department Office - Administrative Office",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "514V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv514V",
+    "nameVN": "514V: Phòng học",
+    "nameEN": "514V: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "515V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv515V",
+    "nameVN": "515V: Bộ môn bắn súng chiến thuật",
+    "nameEN": "515V: Tactical Shooting Department",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "516V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv516V",
+    "nameVN": "516V: Phòng tham vấn tâm lí",
+    "nameEN": "516V: Psychological Counseling Room",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "517V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv517V",
+    "nameVN": "517V: Bộ môn quân sự chung",
+    "nameEN": "517V: General Military Studies Department",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "518V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv518V",
+    "nameVN": "518V: Phòng học",
+    "nameEN": "518V: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà V.",
+    "infoEN": "Located on the 5th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "601V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv601V",
+    "nameVN": "601V: Bộ môn chuyên ngành 1&3",
+    "nameEN": "601V: ECE department No 1&3",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "602V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv602V",
+    "nameVN": "602V: Bộ môn chuyên ngành 2",
+    "nameEN": "602V: ECE department No 2",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "603V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv603V",
+    "nameVN": "603V: Trưởng khoa PGS.TS. Bùi Thị Lâm",
+    "nameEN": "603V: Dean Associate Professor, PhD. Bùi Thị Lâm",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "604V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv604V",
+    "nameVN": "604V: Phó trưởng khoa TS. Nguyễn Mạnh Tuấn",
+    "nameEN": "604V: Associate Dean, Mr. Nguyễn Mạnh Tuấn",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "605V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv605V",
+    "nameVN": "605V: Văn phòng khoa",
+    "nameEN": "605V: Office",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "606V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv606V",
+    "nameVN": "606V: Trưởng khoa PGS.TS. Đỗ Xuân Thảo",
+    "nameEN": "606V: Dean Associate Professor, PhD. Đỗ Xuân Thảo",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "607V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv607V",
+    "nameVN": "607V: Phòng học",
+    "nameEN": "607V: Classroom",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "608V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv608V",
+    "nameVN": "608V: Văn phòng khoa",
+    "nameEN": "608V: Office",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "609V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv609V",
+    "nameVN": "609V: Bộ môn",
+    "nameEN": "609V: Department",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "610V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv610V",
+    "nameVN": "610V: Phòng học",
+    "nameEN": "610V: Classroom",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "611V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv611V",
+    "nameVN": "611V: Bộ môn Lý luận Giáo dục",
+    "nameEN": "611V: Department of Educational Theory",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "612V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv612V",
+    "nameVN": "612V: Phòng học",
+    "nameEN": "612V: Classroom",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "613V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv613V",
+    "nameVN": "613V: Bộ môn Tâm lí học ứng dụng",
+    "nameEN": "613V: Department of Applied Psychology",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "614V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv614V",
+    "nameVN": "614V: Phòng học",
+    "nameEN": "614V: Classroom",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "615V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv615V",
+    "nameVN": "615V: Bộ môn Phương pháp Giảng dạy",
+    "nameEN": "615V: Department of Teaching Method",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "616V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv616V",
+    "nameVN": "616V: Phòng thư viện",
+    "nameEN": "616V: Library",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "617V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv617V",
+    "nameVN": "617V: Phó trưởng khoa PGS.TS. Nguyễn Thị Thanh Hồng",
+    "nameEN": "617V: Associate Chair of Department Associate Professor, PhD. Nguyễn Thị Thanh Hồng",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "618V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv618V",
+    "nameVN": "618V: Trưởng khoa PGS.TS. Lê Minh Nguyệt",
+    "nameEN": "618V: Dean Associate Professor, PhD. Lê Minh Nguyệt",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "619V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv619V",
+    "nameVN": "619V: Phó trưởng khoa TS. Khúc Năng Toàn",
+    "nameEN": "619V: Associate Chair of Department, Mr. Khúc Năng Toàn",
+    "infoVN": "Nằm tại tầng 6 của nhà V.",
+    "infoEN": "Located on the 6th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "701V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv701V",
+    "nameVN": "701V: Phòng thực hành",
+    "nameEN": "701V: Practice Room",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "703V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv703V",
+    "nameVN": "703V: Phòng học",
+    "nameEN": "703V: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "704V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv704V",
+    "nameVN": "704V: Phòng học",
+    "nameEN": "704V: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "705V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv705V",
+    "nameVN": "705V: Bộ môn Thực hành Sư phạm Tiểu học",
+    "nameEN": "705V: Primary Education Teaching Practice Department",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "706V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv706V",
+    "nameVN": "706V: Phòng học",
+    "nameEN": "706V: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "707V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv707V",
+    "nameVN": "707V: Bộ môn Tâm Lý - Giáo dục học",
+    "nameEN": "707V: Psychology - Educational Studies Department",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "708V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv708V",
+    "nameVN": "708V: Phòng học",
+    "nameEN": "708V: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "709V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv709V",
+    "nameVN": "709V: Phòng thực hành tâm lý",
+    "nameEN": "709V: Psychological Practice Room",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "710V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv710V",
+    "nameVN": "710V: Lý luận dạy học",
+    "nameEN": "710V: Pedagogical Theory",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "711V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv711V",
+    "nameVN": "711V: Tâm lý học phát triển",
+    "nameEN": "711V: Developmental Psychology",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "711aV": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv711aV",
+    "nameVN": "711a-V: Tâm lý học đại cương",
+    "nameEN": "711a-V: General Psychology",
+    "infoVN": "Nằm tại tầng 7 của nhà V.",
+    "infoEN": "Located on the 7th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "801V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv801V",
+    "nameVN": "801V: Bộ môn thực hành tiếng",
+    "nameEN": "801V: Language Practice Department",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "802V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv802V",
+    "nameVN": "802V: Phòng học",
+    "nameEN": "802V: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "803V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv803V",
+    "nameVN": "803V: Phòng học",
+    "nameEN": "803V: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "804V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv804V",
+    "nameVN": "804V: Phòng học",
+    "nameEN": "804V: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "805V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv805V",
+    "nameVN": "805V: Trưởng khoa TS. Trịnh Thùy Dương",
+    "nameEN": "805V: Head of Department, Mr. Trịnh Thùy Dương",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "806V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv806V",
+    "nameVN": "806V: Phòng họp - Thư viện",
+    "nameEN": "806V: Meeting room - Library",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "807V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv807V",
+    "nameVN": "807V: Văn phòng - CV. Nguyễn Thị Bích Qui, CV. Nguyễn Thị Thu Hiền",
+    "nameEN": "807V: Office - Ms. Nguyễn Thị Bích Qui, Ms. Nguyễn Thị Thu Hiền",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "808V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv808V",
+    "nameVN": "808V: Phòng học",
+    "nameEN": "808V: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "809V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv809V",
+    "nameVN": "809V: Phòng học",
+    "nameEN": "809V: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "810V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv810V",
+    "nameVN": "810V: Phòng học",
+    "nameEN": "810V: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "811V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv811V",
+    "nameVN": "811V: Phòng học",
+    "nameEN": "811V: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
+  "813V": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv813V",
+    "nameVN": "813V: Phòng học",
+    "nameEN": "813V: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà V.",
+    "infoEN": "Located on the 8th of building V.",
+    "latitude": 21.03811551883931,
+    "longitude": 105.78491461906061,
+    "source-image": []
+  },
 };
 
-// --------------------------------------------------------------------------------------- //
-// --------------------------------------------------------------------------------------- //
-// --------------------------------------------------------------------------------------- //
-// --------------------------------------------------------------------------------------- //
-// --------------------------------------------------------------------------------------- //
+///////////////////////////////////////////////////////////////////////////
+// --------------------------------------------------------------------- //
+// -0-------0--000000000--000000000-----000000000--000000000--000000000- //
+// -00-----00--0----------0-------0-----0-------0--0----------0-------0- //
+// -0-0---0-0--0----------0-------0-----0-------0--0----------0-------0- //
+// -0--0-0--0--000000-----0-------0-----00000000---000000-----0-------0- //
+// -0---0---0--0----------0-------0-----0-------0--0----------0-------0- //
+// -0-------0--0----------0-------0-----0-------0--0----------0-------0- //
+// -0-------0--0----------0-------0-----0-------0--0----------0-------0- //
+// -0-------0--000000000--000000000-----00000000---000000000--000000000- //
+// --------------------------------------------------------------------- //
+// -------------------Nghiên-cứu-khoa-học-năm-2024---------------------- //
+// --------------------------------------------------------------------- //
+///////////////////////////////////////////////////////////////////////////
 
 for (const buildingId in buildingData) {
   if (buildingData.hasOwnProperty(buildingId)) {
@@ -2613,15 +5473,14 @@ for (const buildingId in buildingData) {
 }
 
 // Hàm để tạo và chèn khối div
+
 function createInfoDiv(buildingKey) {
   var building = buildingData[buildingKey];
 
-  // Tạo một khối div mới
   var infoDiv = document.createElement('div');
   infoDiv.className = 'infoDiv';
   infoDiv.id = building.infoDivId;
 
-  // Tạo nội dung cho toolbar
   var toolbar = document.createElement('div');
   toolbar.className = 'toolbar';
   toolbar.innerHTML = `
@@ -2636,7 +5495,6 @@ function createInfoDiv(buildingKey) {
       <img class="send-feedback" src="source-img/mail.svg" onclick="composeEmail()">
       <button class="close" id="close${building.infoDivId}"></button>`;
 
-  // Tạo nội dung cho phần content
   var content = document.createElement('div');
   content.className = 'content';
   content.innerHTML = `
@@ -2652,17 +5510,12 @@ function createInfoDiv(buildingKey) {
             ${building['source-image'].map(image => `<img class="img-demo" src="${image}" onclick="openFullscreen(this)" alt="Building Image">`).join('')}
       </div>`;
 
-  // Chèn các phần tử vào khối div chính
   infoDiv.appendChild(toolbar);
   infoDiv.appendChild(content);
 
-  // Lấy thẻ div có id là 'main-content'
   var mainContentDiv = document.getElementById('main-content');
-
-  // Chèn khối div vào khối 'main-content'
   mainContentDiv.appendChild(infoDiv);
 
-  // Thiết lập sự kiện cho nút đóng
   var closeButton = document.getElementById(`close${building.infoDivId}`);
   closeButton.addEventListener('click', function () {
       infoDiv.style.display = 'none';
@@ -2676,7 +5529,6 @@ function createInfoDiv(buildingKey) {
       }
   });
 
-   // Tạo button scroll to top
    var scrollToTopButton = document.createElement('button');
    var scrollToTopButtonId = `scroll-to-top-${building.infoDivId}`;
    scrollToTopButton.id = scrollToTopButtonId;
@@ -2689,7 +5541,6 @@ function createInfoDiv(buildingKey) {
    var mainContentDiv = document.getElementById('main-content');
    mainContentDiv.appendChild(scrollToTopButton);
  
-  // Ẩn hiện button scroll to top dựa trên trạng thái của infoDiv
   var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
       if (mutation.attributeName === "style") {
@@ -2711,6 +5562,7 @@ function scrollToTop(infoDivId) {
 }
 
 // Thiết lập sự kiện nhấp vào polygon cho từng toà nhà
+
 function setPolygonClickEvent(buildingKey) {
   var building = buildingData[buildingKey];
   var polygon = L.polygon(building.polygon, {
@@ -2753,18 +5605,14 @@ function setPolygonClickEvent(buildingKey) {
 
 function toggleInfoDiv(buildingKey) {
   var building = buildingData[buildingKey];
-
-  // Kiểm tra xem infoDiv đã được tạo hay chưa
   var infoDiv = document.getElementById(building.infoDivId);
 
   if (!infoDiv) {
-      // Nếu chưa được tạo, tạo nó và hiển thị
       infoDiv = createInfoDiv(buildingKey);
       setTimeout(function () {
           infoDiv.style.display = 'block';
       }, 3000);
   } else {
-      // Nếu đã tồn tại, chỉ hiển thị nó
       if (infoDiv.style.display === 'block') {
           infoDiv.style.display = 'none';
       } else {
@@ -2782,7 +5630,7 @@ function toggleInfoDiv(buildingKey) {
       if (polygon) {
           mymap.removeLayer(polygon);
       }
-  }, 4444);
+  }, 5000);
 
   mymap.flyTo([building.latitude, building.longitude], 19, {
       duration: 2, 
@@ -2832,7 +5680,6 @@ function initRoutingControl(buildingKey) {
       },
     };
 
-    // Kiểm tra xem class contentEnglish hoặc contentVN có hiển thị không
     var contentEnglish = document.querySelector('.contentEnglish');
     var contentVN = document.querySelector('.contentVN');
     var confirmationMessage = '';
@@ -2882,7 +5729,8 @@ function initRoutingControl(buildingKey) {
           }).addTo(mymap);
 
           var closeButton = document.createElement('button');
-          closeButton.classList.add('closeRoutingButton');
+          closeButton.classList.add('closeRoutingBtn');
+          closeButton.innerHTML = '<span class="contentVN">Dừng điều hướng</span><span class="contentEnglish">Stop routing</span>';
           closeButton.addEventListener('click', function () {
             mymap.removeControl(routingControl);
             closeButton.style.display = 'none';
@@ -2903,7 +5751,6 @@ function initRoutingControl(buildingKey) {
   }
 }
 
-// Kiểm tra xem có phải là thiết bị di động không
 function isMobileDevice() {
   return /Mobi|Android/i.test(navigator.userAgent);
 }
