@@ -412,7 +412,7 @@ function generateRandomColor() {
 function playBackgroundMusic() {
   backgroundMusic.play();
   isMusicPlaying = true;
-  backgroundMusic.volume = 1;
+  backgroundMusic.volume = 0.2;
 }
 
 function pauseBackgroundMusic() {
@@ -535,7 +535,7 @@ var HNUE = L.polygon([
     [21.03722525629609, 105.78239142894745]
   ], {
     opacity: 1,
-    fillOpacity: 0.1
+    fillOpacity: 0.25
 }).addTo(mymap);
 
 

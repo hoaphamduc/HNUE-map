@@ -38,18 +38,22 @@
     width: 55px;
 } */
 
-.closeRoutingButton {
+.closeRoutingBtn {
     position: absolute;
     bottom: 10px;
     left: 10px;
     z-index: 1001;
     width: 150px;
     height: 30px;
-    background-color: #fff;
     border: 1px solid #81858A;
     border-radius: 10px;
+    transition: ease-in-out 0.3s;
     color: #fff;
     background: linear-gradient(to right, #990000, #f10000);
+}
+
+.closeRoutingBtn:hover {
+    transform: scale(1.07);
 }
 
 @media (max-width: 769px){ 

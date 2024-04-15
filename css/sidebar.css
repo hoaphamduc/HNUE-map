@@ -21,33 +21,8 @@
     border-bottom: 1px solid #F3F4F6;
 }
 
-.sidebar .logo-content #fit-logo {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    display: none;
-}
-
 .sidebar.show {
     width: 240px;
-}
-
-.sidebar.show #hnue-img-2 {
-    display: block;
-}
-
-.sidebar.show #fit-logo {
-    display: block;
-}
-
-.sidebar #hnue-img-2{
-    position: absolute;
-    height: 32px;
-    left: 93.335px;
-    top: 9px;
-    display: none;
 }
 
 .sidebar .nav_list {
