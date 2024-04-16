@@ -25,6 +25,16 @@
     width: 240px;
 }
 
+#pc-app-name {
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    cursor: default;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 .sidebar .nav_list {
     position: absolute;
     width: 240px;
