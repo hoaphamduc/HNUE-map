@@ -5449,6 +5449,370 @@ var buildingData = {
     "longitude": 105.78491461906061,
     "source-image": []
   },
+  "101A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv101A2",
+    "nameVN": "101A2: Quản lý giảng đường A2",
+    "nameEN": "101A2: The management of lecture hall A2",
+    "infoVN": "Nằm tại tầng 1 của nhà A2.",
+    "infoEN": "Located on the 1st of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "102A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv102A2",
+    "nameVN": "102A2: Văn phòng TVGS-IBST",
+    "nameEN": "102A2: TVGS-IBST office",
+    "infoVN": "Nằm tại tầng 1 của nhà A2.",
+    "infoEN": "Located on the 1st of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "103A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv103A2",
+    "nameVN": "103A2: Phòng học",
+    "nameEN": "103A2: Classroom",
+    "infoVN": "Nằm tại tầng 1 của nhà A2.",
+    "infoEN": "Located on the 1st of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "104A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv104A2",
+    "nameVN": "104A2: Phòng học",
+    "nameEN": "104A2: Classroom",
+    "infoVN": "Nằm tại tầng 1 của nhà A2.",
+    "infoEN": "Located on the 1st of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "301A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv301A2",
+    "nameVN": "301A2: Phòng máy chiếu",
+    "nameEN": "301A2: The projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà A2.",
+    "infoEN": "Located on the 3rd of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "302A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv302A2",
+    "nameVN": "302A2: Phòng học",
+    "nameEN": "302A2: Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà A2.",
+    "infoEN": "Located on the 3rd of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "303A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv303A2",
+    "nameVN": "303A2: Phòng học",
+    "nameEN": "303A2: Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà A2.",
+    "infoEN": "Located on the 3rd of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "304A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv304A2",
+    "nameVN": "304A2: Phòng máy chiếu",
+    "nameEN": "304A2: The projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà A2.",
+    "infoEN": "Located on the 3rd of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "305A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv305A2",
+    "nameVN": "305A2: Phòng máy chiếu",
+    "nameEN": "305A2: The projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà A2.",
+    "infoEN": "Located on the 3rd of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "306A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv306A2",
+    "nameVN": "306A2: Phòng thí nghiệm sinh thái học và môi trường",
+    "nameEN": "306A2: Laboratory for ecological and environmental research",
+    "infoVN": "Nằm tại tầng 3 của nhà A2.",
+    "infoEN": "Located on the 3rd of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "307A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv307A2",
+    "nameVN": "307A2: Phòng máy chiếu",
+    "nameEN": "307A2: The projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà A2.",
+    "infoEN": "Located on the 3rd of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "308A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv308A2",
+    "nameVN": "308A2: Phòng học",
+    "nameEN": "308A2: Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà A2.",
+    "infoEN": "Located on the 3rd of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "309A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv309A2",
+    "nameVN": "309A2: Phòng máy chiếu",
+    "nameEN": "309A2: The projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà A2.",
+    "infoEN": "Located on the 3rd of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "401A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv401A2",
+    "nameVN": "401A2: Phòng họp bộ môn",
+    "nameEN": "401A2: The department meeting room",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "402A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv402A2",
+    "nameVN": "402A2: Phòng học",
+    "nameEN": "402A2: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "403A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv403A2",
+    "nameVN": "403A2: Phòng học",
+    "nameEN": "403A2: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "404A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv404A2",
+    "nameVN": "404A2: Phòng học",
+    "nameEN": "404A2: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "405A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv405A2",
+    "nameVN": "405A2: Phòng thí nghiệm Tổng hợp hữu cơ & hóa dược",
+    "nameEN": "405A2: Organic Synthesis & Medicinal Chemistry lab",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "406A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv406A2",
+    "nameVN": "406A2: Phòng thí nghiệm xúc tác và tổng hợp hữu cơ hiện đại",
+    "nameEN": "406A2: Advanced Synthesis and Catalysis lab",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "407A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv407A2",
+    "nameVN": "407A2: Phòng thí nghiệm màng phủ hữu cơ",
+    "nameEN": "407A2: Organic Coatings lab",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "408A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv408A2",
+    "nameVN": "408A2: Phòng thí nghiệm hợp chất thiên nhiên",
+    "nameEN": "408A2: Natural Products lab",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "409A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv409A2",
+    "nameVN": "409A2: Phòng thí nghiệm vật liệu hữu cơ",
+    "nameEN": "409A2: Organic Materials lab",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "410A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv410A2",
+    "nameVN": "410A2: Phòng thí nghiệm tổng hợp hữu cơ và ứng dụng 2",
+    "nameEN": "410A2: Organic Synthesis and Application lab 2",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "411A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv411A2",
+    "nameVN": "411A2: Phòng thí nghiệm tổng hợp hữu cơ và ứng dụng 1",
+    "nameEN": "411A2: Organic Synthesis and Application lab 1",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "412A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv412A2",
+    "nameVN": "412A2: Phòng thực hành sinh viên",
+    "nameEN": "412A2: Organic laboratory",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
+  "413A2": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv413A2",
+    "nameVN": "413A2: Phòng chuẩn bị",
+    "nameEN": "413A2: Preparing room",
+    "infoVN": "Nằm tại tầng 4 của nhà A2.",
+    "infoEN": "Located on the 4th of building A2.",
+    "latitude": 21.03945579822238,
+    "longitude": 105.7852989435196,
+    "source-image": []
+  },
 };
 
 ///////////////////////////////////////////////////////////////////////////
