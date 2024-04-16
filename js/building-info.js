@@ -5813,6 +5813,930 @@ var buildingData = {
     "longitude": 105.7852989435196,
     "source-image": []
   },
+  "101A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv101A3",
+    "nameVN": "101A3: Văn phòng Đoàn Thanh niên Hội sinh viên",
+    "nameEN": "101A3: The office of the Youth Union Student Association",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "102A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv102A3",
+    "nameVN": "102A3: Xử lí và phân tích mẫu động vật",
+    "nameEN": "102A3: Handling and analyzing animal samples",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "103A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv103A3",
+    "nameVN": "103A3: Thực nghiệm sinh học người và động vật",
+    "nameEN": "103A3: Human and animal biology experiments",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "104A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv104A3",
+    "nameVN": "104A3: Phòng thực hành số 5",
+    "nameEN": "104A3: Laboratory room 5",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "105A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv105A3",
+    "nameVN": "105A3: Phòng nghiên cứu sinh",
+    "nameEN": "105A3: Graduate research room",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "106A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv106A3",
+    "nameVN": "106A3: Phòng chuyên đề số 2",
+    "nameEN": "106A3: Specialized seminar room 2",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "107A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv107A3",
+    "nameVN": "107A3: Phòng chuyên đề số 3",
+    "nameEN": "107A3: Specialized seminar room 3",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "108A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv108A3",
+    "nameVN": "108A3: Phòng học",
+    "nameEN": "108A3: Classroom",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "109A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv109A3",
+    "nameVN": "109A3: Phòng kho số 1",
+    "nameEN": "109A3: Storage room 1",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "110A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv110A3",
+    "nameVN": "110A3: Phòng nghiên cứu bảo tàng sinh vật",
+    "nameEN": "110A3: The museum of biological research",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "111A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv111A3",
+    "nameVN": "111A3: Phòng chuyên đề số 3",
+    "nameEN": "111A3: Specialized seminar room 3",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "112A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv112A3",
+    "nameVN": "112A3: Phòng nghiên cứu cây trồng",
+    "nameEN": "112A3: The plant research room",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "113A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv113A3",
+    "nameVN": "113A3: Phòng xử lý mẫu",
+    "nameEN": "113A3: The sample processing room",
+    "infoVN": "Nằm tại tầng 1 của nhà A3.",
+    "infoEN": "Located on the 1st of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "201A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv201A3",
+    "nameVN": "201A3: Bộ môn Sinh lí học người và động vật",
+    "nameEN": "201A3: The department of human and animal physiology",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "202A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv202A3",
+    "nameVN": "202A3: Bộ môn sinh lí học thực vật và ứng dụng",
+    "nameEN": "202A3: The department of plant physiology and applications",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "203A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv203A3",
+    "nameVN": "203A3: Bộ môn Sinh lí học người và động vật",
+    "nameEN": "203A3: The department of human and animal physiology",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "204A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv204A3",
+    "nameVN": "204A3: Bộ môn thực vật học",
+    "nameEN": "204A3: The department of botany",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "205A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv205A3",
+    "nameVN": "205A3: Bộ môn lí luận và phương pháp dạy học sinh học",
+    "nameEN": "205A3: The department of pedagogical theory and teaching methods for students",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "206A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv206A3",
+    "nameVN": "206A3: Bộ môn Di truyền - Hóa sinh",
+    "nameEN": "206A3: The department of Genetics - Biochemistry",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "207A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv207A3",
+    "nameVN": "207A3: Bộ môn động vật học",
+    "nameEN": "207A3: The department of zoology",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "208A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv208A3",
+    "nameVN": "208A3: Phòng học",
+    "nameEN": "208A3: Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "209A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv209A3",
+    "nameVN": "209A3: Phòng họp khoa",
+    "nameEN": "209A3: Meeting room",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "210A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv210A3",
+    "nameVN": "210A3: Văn phòng khoa",
+    "nameEN": "210A3: The department office",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "211A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv211A3",
+    "nameVN": "211A3: Giáo vụ khoa",
+    "nameEN": "211A3: The department administration",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "212A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv212A3",
+    "nameVN": "212A3: Phó trưởng khoa PSG.TS Trần Đức Hậu",
+    "nameEN": "212A3: Associate Head of Department, Dr. Tran Duc Hau",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "213A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv213A3",
+    "nameVN": "213A3: Trưởng khoa PSG.TS Nguyễn Lân Hùng Sơn",
+    "nameEN": "213A3: Head of Department, Dr. Nguyen Lan Hung Son",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "214A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv214A3",
+    "nameVN": "214A3: Phó trưởng khoa PSG.TS Trần Thị Thanh Huyền",
+    "nameEN": "214A3: Associate Head of Department, Dr. Tran Thi Thanh Huyen",
+    "infoVN": "Nằm tại tầng 2 của nhà A3.",
+    "infoEN": "Located on the 2nd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "301A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv301A3",
+    "nameVN": "301A3: Phòng hóa chất và dụng cụ thực vật",
+    "nameEN": "301A3: The plant chemicals and equipment room",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "302A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv302A3",
+    "nameVN": "302A3: Phòng hóa chất và dụng cụ CNSH-VS",
+    "nameEN": "302A3: The Chemicals and Equipment Room for Natural Sciences and Environmental Studies",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "303A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv303A3",
+    "nameVN": "303A3: Phòng thực hành số 1",
+    "nameEN": "303A3: Laboratory room number 1",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "304A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv304A3",
+    "nameVN": "304A3: Phòng nghiên cứu thực vật",
+    "nameEN": "304A3: The plant research room",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "305A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv305A3",
+    "nameVN": "305A3: Phòng nghiên cứu Khoa học Giáo dục",
+    "nameEN": "305A3: The Education Science Research Room",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "306A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv306A3",
+    "nameVN": "306A3: Phòng nghiên cứu Sinh thái - Môi trường",
+    "nameEN": "306A3: The Ecological and Environmental Research Room",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "307A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv307A3",
+    "nameVN": "307A3: Phòng nghiên cứu Sinh thái - Môi trường",
+    "nameEN": "307A3: The Ecological and Environmental Research Room",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "308A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv308A3",
+    "nameVN": "308A3: Phòng học",
+    "nameEN": "308A3: Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "309A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv309A3",
+    "nameVN": "309A3: Phòng thực hành kính hiển vi",
+    "nameEN": "309A3: The microscope laboratory room",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "310A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv310A3",
+    "nameVN": "310A3: Phòng nghiên cứu sinh lý người - động vật",
+    "nameEN": "310A3: The human-animal physiology research room",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "311A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv311A3",
+    "nameVN": "311A3: Phòng thực hành số 2",
+    "nameEN": "311A3: Laboratory room number 2",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "312A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv312A3",
+    "nameVN": "312A3: Phòng hóa chất và dụng cụ di truyền - hóa sinh",
+    "nameEN": "312A3: The genetics-biochemistry chemicals and equipment room",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "313A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv313A3",
+    "nameVN": "313A3: Phòng nghiên cứu di truyền - hóa sinh",
+    "nameEN": "313A3: The genetics-biochemistry research room",
+    "infoVN": "Nằm tại tầng 3 của nhà A3.",
+    "infoEN": "Located on the 3rd of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "401A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv401A3",
+    "nameVN": "401A3: Phòng nghiên cứu phân tích sinh học",
+    "nameEN": "401A3: The biological analysis research room",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "402A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv402A3",
+    "nameVN": "402A3: Phòng hóa chất và dụng cụ sinh lý thực vật",
+    "nameEN": "402A3: The plant physiology chemicals and equipment room",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "403A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv403A3",
+    "nameVN": "403A3: Phòng thực hành số 3",
+    "nameEN": "403A3: Laboratory room number 3",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "404A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv404A3",
+    "nameVN": "404A3: Phòng nghiên cứu sinh lý thực vật - ứng dụng",
+    "nameEN": "404A3: The applied plant physiology research room",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "405A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv405A3",
+    "nameVN": "405A3: Phòng nghiên cứu kính hiển vi",
+    "nameEN": "405A3: The microscope research room",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "406A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv406A3",
+    "nameVN": "406A3: Phòng nghiên cứu sinh học phân tử",
+    "nameEN": "406A3: The molecular biology research room",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "407A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv407A3",
+    "nameVN": "407A3: Phòng chuẩn bị mẫu",
+    "nameEN": "407A3: The sample preparation room",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "408A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv408A3",
+    "nameVN": "408A3: Phòng học",
+    "nameEN": "408A3: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "409A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv409A3",
+    "nameVN": "409A3: Phòng thực hành phương pháp dạy học sinh học",
+    "nameEN": "409A3: The classroom for teaching methods for students",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "410A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv410A3",
+    "nameVN": "410A3: Phòng thực hành số 4",
+    "nameEN": "410A3: Laboratory room number 4",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "411A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv411A3",
+    "nameVN": "411A3: Phòng nghiên cứu động vật",
+    "nameEN": "411A3: The animal research room",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "412A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv412A3",
+    "nameVN": "412A3: Phòng mẫu động vật",
+    "nameEN": "412A3: The animal specimen room",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "413A3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv413A3",
+    "nameVN": "413A3: Phòng nghiên cứu nuôi cấy mô",
+    "nameEN": "413A3: The tissue culture research room",
+    "infoVN": "Nằm tại tầng 4 của nhà A3.",
+    "infoEN": "Located on the 4th of building A3.",
+    "latitude": 21.039801266375314,
+    "longitude": 105.78532040119173,
+    "source-image": []
+  },
+  "101A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv101A4",
+    "nameVN": "101A4: Bộ môn Kinh tế Chính trị",
+    "nameEN": "101A4: The department of Political Economy",
+    "infoVN": "Nằm tại tầng 1 của nhà A4.",
+    "infoEN": "Located on the 1st of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "102A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv102A4",
+    "nameVN": "102A4: Bộ môn Lịch sử Đảng và bộ môn Tư tưởng Hồ Chí Minh",
+    "nameEN": "102A4: The Department of Party History and the Department of Ho Chi Minh Thought",
+    "infoVN": "Nằm tại tầng 1 của nhà A4.",
+    "infoEN": "Located on the 1st of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "103A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv103A4",
+    "nameVN": "103A4: Bộ môn Chủ nghĩa Xã hội Khoa học",
+    "nameEN": "103A4: The Department of Scientific Socialism",
+    "infoVN": "Nằm tại tầng 1 của nhà A4.",
+    "infoEN": "Located on the 1st of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "104A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv104A4",
+    "nameVN": "104A4: Bộ môn Phương pháp dạy học",
+    "nameEN": "104A4: The Department of Teaching Methods",
+    "infoVN": "Nằm tại tầng 1 của nhà A4.",
+    "infoEN": "Located on the 1st of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "105A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv105A4",
+    "nameVN": "105A4: Bộ môn Giáo dục Công dân",
+    "nameEN": "105A4: The Department of Civic Education",
+    "infoVN": "Nằm tại tầng 1 của nhà A4.",
+    "infoEN": "Located on the 1st of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "106A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv106A4",
+    "nameVN": "106A4: Phòng tư liệu",
+    "nameEN": "106A4: The documentation room",
+    "infoVN": "Nằm tại tầng 1 của nhà A4.",
+    "infoEN": "Located on the 1st of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "107A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv107A4",
+    "nameVN": "107A4: Khoa Lí luận Chính trị - Giáo dục Công dân",
+    "nameEN": "107A4: Faculty of Political Theory - Civic Education",
+    "infoVN": "Nằm tại tầng 1 của nhà A4.",
+    "infoEN": "Located on the 1st of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "108A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv108A4",
+    "nameVN": "108A4: Phó Trưởng khoa TS. Tiêu Thị Mỹ Hồng",
+    "nameEN": "108A4: Associate Head of Department, Dr. Tieu Thi My Hong",
+    "infoVN": "Nằm tại tầng 1 của nhà A4.",
+    "infoEN": "Located on the 1st of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "203A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv203A4",
+    "nameVN": "203A4: Phòng họp",
+    "nameEN": "203A4: Meeting room",
+    "infoVN": "Nằm tại tầng 2 của nhà A4.",
+    "infoEN": "Located on the 2nd of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "204A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv204A4",
+    "nameVN": "204A4: PGS.TS. Phạm Việt Thắng",
+    "nameEN": "204A4: Associate Professor, Dr. Pham Viet Thang",
+    "infoVN": "Nằm tại tầng 2 của nhà A4.",
+    "infoEN": "Located on the 2nd of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "205A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv205A4",
+    "nameVN": "205A4: Phó Trưởng khoa TS. Trần Thị Thu Huyền",
+    "nameEN": "205A4: Associate Head of Department, Dr. Tran Thi Thu Huyen",
+    "infoVN": "Nằm tại tầng 2 của nhà A4.",
+    "infoEN": "Located on the 2nd of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "206A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv206A4",
+    "nameVN": "206A4: Văn phòng khoa",
+    "nameEN": "206A4: The department office",
+    "infoVN": "Nằm tại tầng 2 của nhà A4.",
+    "infoEN": "Located on the 2nd of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
+  "404A4": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv404A4",
+    "nameVN": "404A4: Phòng học",
+    "nameEN": "404A4: Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà A4.",
+    "infoEN": "Located on the 4th of building A4.",
+    "latitude": 21.040267185120243,
+    "longitude": 105.78533187197176,
+    "source-image": []
+  },
 };
 
 ///////////////////////////////////////////////////////////////////////////
