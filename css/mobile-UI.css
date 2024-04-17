@@ -30,6 +30,7 @@
     top: 50%;
     font-weight: 500;
     transform: translate(-50%, -50%);
+    cursor: default;
 }
 
 #open-search-menu {

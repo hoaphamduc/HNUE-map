@@ -6737,6 +6737,1644 @@ var buildingData = {
     "longitude": 105.78533187197176,
     "source-image": []
   },
+  "101CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv101CT",
+    "nameVN": "101C (Khoa Toán - Tin): Văn phòng",
+    "nameEN": "101C (Faculty of Mathematics and Informatics): Administration Office",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "101CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv101CL",
+    "nameVN": "101C (Khoa Vật Lý): Văn phòng Công đoàn",
+    "nameEN": "101C (Faculty of Physics): Youth Union office",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "102CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv102CT",
+    "nameVN": "102C (Khoa Toán - Tin): Bộ môn phương pháp dạy học",
+    "nameEN": "102C (Faculty of Mathematics and Informatics): Laboratory of Mathematics education",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "102CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv102CL",
+    "nameVN": "102C (Khoa Vật Lý): Phó trưởng khoa PGS.TS Nguyễn Văn Hợp",
+    "nameEN": "102C (Faculty of Physics): Associate Head of Department, Associate Professor Nguyễn Văn Hợp",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "103CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv103CT",
+    "nameVN": "103C (Khoa Toán - Tin): CN. Bùi Thị Thủy",
+    "nameEN": "103C (Faculty of Mathematics and Informatics): Ms. Bui Thi Thuy",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "103CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv103CL",
+    "nameVN": "103C (Khoa Vật Lý): Phó trưởng khoa PGS.TS Ngô Ngọc Hoa",
+    "nameEN": "103C (Faculty of Physics): Associate Head of Department, Associate Professor Ngô Ngọc Hoa",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "104CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv104CT",
+    "nameVN": "104C (Khoa Toán - Tin): Phó Trưởng Khoa PGS.TS. Ngô Hoàng Long",
+    "nameEN": "104C (Faculty of Mathematics and Informatics): Associate Dean, Associate Professor Ngô Hoàng Long",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "104CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv104CL",
+    "nameVN": "104C (Khoa Vật Lý): Phòng tư liệu",
+    "nameEN": "104C (Faculty of Physics): Documentation room",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "104STEMCL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv104STEMCL",
+    "nameVN": "104_STEM (Khoa Vật Lý): Phòng STEM",
+    "nameEN": "104_STEM (Faculty of Physics): STEM Lab",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "105CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv105CT",
+    "nameVN": "105C (Khoa Toán - Tin): GS.TSKH. Đỗ Đức Thái",
+    "nameEN": "105C (Faculty of Mathematics and Informatics): Professor, Senior Researcher Đỗ Đức Thái",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "105CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv105CL",
+    "nameVN": "105C (Khoa Vật Lý): Bộ môn phương pháp dạy học Vật lý",
+    "nameEN": "105C (Faculty of Physics): The Department of Physics Teaching Methods",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "106CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv106CT",
+    "nameVN": "106C (Khoa Toán - Tin): Trưởng khoa PGS.TS. Lê Văn Thiện",
+    "nameEN": "106C (Faculty of Mathematics and Informatics): Dean, Associate Professor Lê Văn Thiện",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "106CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv106CL",
+    "nameVN": "106C (Khoa Vật Lý): Phòng thí nghiệm olimpic",
+    "nameEN": "106C (Faculty of Physics): Physics olympiads lab",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "107CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv107CT",
+    "nameVN": "107C (Khoa Toán - Tin): Phó Trưởng Khoa PGS.TS. Nguyễn Như Thái",
+    "nameEN": "107C (Faculty of Mathematics and Informatics): Associate Dean, Associate Professor Nguyễn Như Thái",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "107CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv107CL",
+    "nameVN": "107C (Khoa Vật Lý): Trưởng khoa PGS.TS Đỗ Danh Bích",
+    "nameEN": "107C (Faculty of Physics): Head of Faculty, Associate Professor Đỗ Danh Bích",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "108CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv108CT",
+    "nameVN": "108C (Khoa Toán - Tin): Phòng họp",
+    "nameEN": "108C (Faculty of Mathematics and Informatics): Meeting room",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "108CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv108CL",
+    "nameVN": "108C (Khoa Vật Lý): Phòng tạo mẫu",
+    "nameEN": "108C (Faculty of Physics): Sample preparation lab",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "109CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv109CT",
+    "nameVN": "109C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "109C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "109CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv109CL",
+    "nameVN": "109C (Khoa Vật Lý): Phòng xử lý nhiệt",
+    "nameEN": "109C (Faculty of Physics): Thermal treatment lab",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "110CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv110CT",
+    "nameVN": "110C (Khoa Toán - Tin): Bộ môn hình học",
+    "nameEN": "110C (Faculty of Mathematics and Informatics): Laboratory of geometry and topology",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "110CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv110CL",
+    "nameVN": "110C (Khoa Vật Lý): Phòng tạo mẫu",
+    "nameEN": "110C (Faculty of Physics): Sample preparation lab",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "111CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv111CT",
+    "nameVN": "111C (Khoa Toán - Tin): Phòng quản lý nhà C",
+    "nameEN": "111C (Faculty of Mathematics and Informatics): The building C management room",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "111CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv111CL",
+    "nameVN": "111C (Khoa Vật Lý): Phòng giáo vụ",
+    "nameEN": "1111C (Faculty of Physics): Academic afairs office",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "112CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv112CT",
+    "nameVN": "112C (Khoa Toán - Tin): Phòng học",
+    "nameEN": "112C (Faculty of Mathematics and Informatics): Classroom",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "112CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv112CL",
+    "nameVN": "112C (Khoa Vật Lý): Văn phòng khoa",
+    "nameEN": "112C (Faculty of Physics): Faculty office",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "113CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv113CL",
+    "nameVN": "113C (Khoa Vật Lý): Phòng học",
+    "nameEN": "112C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "114CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv114CL",
+    "nameVN": "114C (Khoa Vật Lý): Phòng họp khoa",
+    "nameEN": "114C (Faculty of Physics): Meeting room",
+    "infoVN": "Nằm tại tầng 1 của nhà C.",
+    "infoEN": "Located on the 1st of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "201CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv201CL",
+    "nameVN": "201C (Khoa Vật Lý): Phòng tính toán",
+    "nameEN": "201C (Faculty of Physics): Computational physics lab",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "202CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv202CL",
+    "nameVN": "202C (Khoa Vật Lý): Phòng thí nghiệm quang xúc tác 1",
+    "nameEN": "202C (Faculty of Physics): Photocatalytic lab 1",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "203CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv203CL",
+    "nameVN": "203C (Khoa Vật Lý): Phòng tính toán khoa học vật liệu",
+    "nameEN": "203C (Faculty of Physics): Computational material science lab",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "204CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv204CL",
+    "nameVN": "204C (Khoa Vật Lý): Phòng học",
+    "nameEN": "204C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "204CCNTT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv204CCNTT",
+    "nameVN": "204C (Khoa Công nghệ thông tin): Phòng họp",
+    "nameEN": "204C (Faculty of Information Technology): Meeting room",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "205CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv205CL",
+    "nameVN": "205C (Khoa Vật Lý): Phòng thí nghiệm quang phổ huỳnh quang",
+    "nameEN": "205C (Faculty of Physics): Photoluminescence spectroscopy lab",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "205CCNTT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv205CCNTT",
+    "nameVN": "205C (Khoa Công nghệ thông tin): Trưởng khoa PSG.TS Trần Đăng Hưng",
+    "nameEN": "205C (Faculty of Information Technology): Head of Department, Associate Professor Trần Đăng Hưng",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "206CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv206CL",
+    "nameVN": "206C (Khoa Vật Lý): Phòng thí nghiệm quang xúc tác 2",
+    "nameEN": "206C (Faculty of Physics): Photocatalytic lab 2",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "206CCNTT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv206CCNTT",
+    "nameVN": "206C (Khoa Công nghệ thông tin): Phó trưởng khoa TS.Đỗ Trung Kiên",
+    "nameEN": "206C (Faculty of Information Technology): Associate Head of Department, Dr. Đỗ Trung Kiên",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "207CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv207CL",
+    "nameVN": "207C (Khoa Vật Lý): Phòng thực hành chuyên đề VLCR 1",
+    "nameEN": "207C (Faculty of Physics): Solid state physics practice lab 1",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "207CCNTT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv207CCNTT",
+    "nameVN": "207C (Khoa Công nghệ thông tin): Phó trưởng khoa TS.Đặng Thành Trung",
+    "nameEN": "207C (Faculty of Information Technology): Associate Head of Department, Dr. Đặng Thành Trung",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "208CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv208CL",
+    "nameVN": "208C (Khoa Vật Lý): Phòng thực hành chuyên đề VLCR 2",
+    "nameEN": "208C (Faculty of Physics): Solid state physics practice lab 2",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "208CCNTT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv208CCNTT",
+    "nameVN": "208C (Khoa Công nghệ thông tin): Quản lý sinh viên ThS Phạm Công Thành && Phòng giáo vụ CN. Trần Thu Hà",
+    "nameEN": "208C (Faculty of Information Technology): Student Affairs Manager, Master Phạm Công Thành && Academic Affairs Office, Ms. Trần Thu Hà",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "209CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv209CL",
+    "nameVN": "209C (Khoa Vật Lý): Phòng học",
+    "nameEN": "209C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "209CCNTT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv209CCNTT",
+    "nameVN": "209C (Khoa Công nghệ thông tin): Thư viện",
+    "nameEN": "209C (Faculty of Information Technology): Library",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "210CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv210CL",
+    "nameVN": "210C (Khoa Vật Lý): Phòng công nghệ chân không",
+    "nameEN": "210C (Faculty of Physics): Vacuum technology lab",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "210CCNTT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv210CCNTT",
+    "nameVN": "210C (Khoa Công nghệ thông tin): Phòng Seminar",
+    "nameEN": "210C (Faculty of Information Technology): Seminar room",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "211CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv211CL",
+    "nameVN": "211C (Khoa Vật Lý): Phòng thí nghiệm phổ hấp thụ UV - Vis",
+    "nameEN": "211C (Faculty of Physics): UV -VIS Spectroscopy lab",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "211CCNTT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv211CCNTT",
+    "nameVN": "211C (Khoa Công nghệ thông tin): Phòng học",
+    "nameEN": "211C (Faculty of Information Technology): Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "212CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv212CL",
+    "nameVN": "212C (Khoa Vật Lý): Phòng thí nghiệm phổ cập hấp thụ hồng ngoại",
+    "nameEN": "212C (Faculty of Physics): Ftir spectroscopy lab",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "212CCNTT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv212CCNTT",
+    "nameVN": "212C (Khoa Công nghệ thông tin): Phòng thí nghiệm khoa học máy tính",
+    "nameEN": "212C (Faculty of Information Technology): Computer science laboratory",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "213CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv213CL",
+    "nameVN": "213C (Khoa Vật Lý): Phòng học",
+    "nameEN": "213C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "214CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv214CL",
+    "nameVN": "214C (Khoa Vật Lý): Phòng thí nghiệm quang phổ raman",
+    "nameEN": "214C (Faculty of Physics): Raman spectroscopy lab",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "215CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv215CL",
+    "nameVN": "215C (Khoa Vật Lý): Phòng bộ môn",
+    "nameEN": "215C (Faculty of Physics): Department of theoritical physics",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "216CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv216CL",
+    "nameVN": "216C (Khoa Vật Lý): GS.TS Lục Huy Hoàng",
+    "nameEN": "216C (Faculty of Physics): Professor, Dr. Lục Huy Hoàng",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "217CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv217CL",
+    "nameVN": "217C (Khoa Vật Lý): Phòng bộ môn",
+    "nameEN": "217C (Faculty of Physics): Department of theoritical physics",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "218CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv218CL",
+    "nameVN": "218C (Khoa Vật Lý): Phòng bộ môn",
+    "nameEN": "218C (Faculty of Physics): Department of theoritical physics",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "219CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv219CL",
+    "nameVN": "219C (Khoa Vật Lý): Phòng thực hành tin học Vật lý",
+    "nameEN": "219C (Faculty of Physics): Informatic lab for physics",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "220CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv220CL",
+    "nameVN": "220C (Khoa Vật Lý): Phòng kho",
+    "nameEN": "220C (Faculty of Physics): Warehouse",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "221CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv221CL",
+    "nameVN": "221C (Khoa Vật Lý): Phòng học",
+    "nameEN": "221C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "222CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv222CL",
+    "nameVN": "222C (Khoa Vật Lý): Phòng bộ môn",
+    "nameEN": "222C (Faculty of Physics): Department of theoritical physics",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "300CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv300CL",
+    "nameVN": "300C (Khoa Vật Lý): Phòng vật lí tính toán và mô phỏng",
+    "nameEN": "300C (Faculty of Physics): The computational and simulation physics room",
+    "infoVN": "Nằm tại tầng 2 của nhà C.",
+    "infoEN": "Located on the 2nd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "301CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv301CT",
+    "nameVN": "301C (Khoa Toán - Tin): Bộ môn Toán ứng dụng",
+    "nameEN": "301C (Faculty of Mathematics and Informatics): Laboratory of applied mathematics",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "301CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv301CL",
+    "nameVN": "301C (Khoa Vật Lý): Phòng chế tạo vật liệu",
+    "nameEN": "301C (Faculty of Physics): The material fabrication room",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "302CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv302CT",
+    "nameVN": "302C (Khoa Toán - Tin): Phòng học",
+    "nameEN": "302C (Faculty of Mathematics and Informatics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "302CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv302CL",
+    "nameVN": "302C (Khoa Vật Lý): Phòng học",
+    "nameEN": "302C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "303CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv303CT",
+    "nameVN": "303C (Khoa Toán - Tin): Phòng học",
+    "nameEN": "303C (Faculty of Mathematics and Informatics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "303CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv303CL",
+    "nameVN": "303C (Khoa Vật Lý): Phòng xử lý nhiệt",
+    "nameEN": "303C (Faculty of Physics): Thermal treatment lab",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "304CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv304CT",
+    "nameVN": "304C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "304C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "304CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv304CL",
+    "nameVN": "304C (Khoa Vật Lý): Phòng học",
+    "nameEN": "304C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "305CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv305CT",
+    "nameVN": "305C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "305C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "305CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv305CL",
+    "nameVN": "305C (Khoa Vật Lý): Phòng thí nghiệm chuyên đề vạt lí đại cương",
+    "nameEN": "305C (Faculty of Physics): General physics specialized lab",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "306CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv306CT",
+    "nameVN": "306C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "306C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "306CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv306CL",
+    "nameVN": "306C (Khoa Vật Lý): Phòng học",
+    "nameEN": "306C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "307CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv307CT",
+    "nameVN": "307C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "307C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "307CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv307CL",
+    "nameVN": "307C (Khoa Vật Lý): Phòng thí nghiệm hấp thụ vật lý",
+    "nameEN": "307C (Faculty of Physics): Physical adsorption lab",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "308CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv308CT",
+    "nameVN": "308C (Khoa Toán - Tin): Phòng y tế",
+    "nameEN": "308C (Faculty of Mathematics and Informatics): The health office",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "308CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv308CL",
+    "nameVN": "308C (Khoa Vật Lý): Phòng thực hành cơ sở vật lý 4",
+    "nameEN": "308C (Faculty of Physics): General physics experiment lab 4",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "309CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv309CT",
+    "nameVN": "309C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "309C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "309CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv309CL",
+    "nameVN": "309C (Khoa Vật Lý): Phòng học",
+    "nameEN": "309C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "310CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv310CT",
+    "nameVN": "310C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "310C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "310CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv310CL",
+    "nameVN": "310C (Khoa Vật Lý): Phòng học",
+    "nameEN": "310C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "311CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv311CL",
+    "nameVN": "311C (Khoa Vật Lý): Phòng thực hành cơ sở vật lý 2",
+    "nameEN": "311C (Faculty of Physics): General physics experiment lab 2",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "312CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv312CL",
+    "nameVN": "312C (Khoa Vật Lý): Phòng học",
+    "nameEN": "312C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "313CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv313CL",
+    "nameVN": "313C (Khoa Vật Lý): Phòng thực hành cơ sở vật lý 1",
+    "nameEN": "313C (Faculty of Physics): General physics experiment lab 1",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "314CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv314CL",
+    "nameVN": "314C (Khoa Vật Lý): Phòng thực hành vật lý thiên văn",
+    "nameEN": "314C (Faculty of Physics): Asreophysics experiement lab",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "315CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv315CL",
+    "nameVN": "315C (Khoa Vật Lý): Phòng học",
+    "nameEN": "315C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "316CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv316CL",
+    "nameVN": "316C (Khoa Vật Lý): Phòng học",
+    "nameEN": "316C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "317CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv317CL",
+    "nameVN": "317C (Khoa Vật Lý): Phòng bộ môn",
+    "nameEN": "317C (Faculty of Physics): Department of Physics Education",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "318CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv318CL",
+    "nameVN": "318C (Khoa Vật Lý): Phòng nghiên cứu vật liệu điện tử",
+    "nameEN": "318C (Faculty of Physics): Electronic material lab",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "319CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv319CL",
+    "nameVN": "319C (Khoa Vật Lý): Phòng nghiên cứu mạch điện tử",
+    "nameEN": "319C (Faculty of Physics): Electronic circuit lab",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "320CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv320CL",
+    "nameVN": "320C (Khoa Vật Lý): Phòng thí nghiệm CSVL3",
+    "nameEN": "320C (Faculty of Physics): General physic experiment lab 3",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "321CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv321CL",
+    "nameVN": "321C (Khoa Vật Lý): Phòng học",
+    "nameEN": "321C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "322CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv322CL",
+    "nameVN": "322C (Khoa Vật Lý): Phòng học",
+    "nameEN": "322C (Faculty of Physics): Classroom",
+    "infoVN": "Nằm tại tầng 3 của nhà C.",
+    "infoEN": "Located on the 3rd of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "401CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv401CT",
+    "nameVN": "401C (Khoa Toán - Tin): Phòng học",
+    "nameEN": "401C (Faculty of Mathematics and Informatics): Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "401CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv401CL",
+    "nameVN": "401C (Khoa Vật Lý): Phòng đa phương tiện",
+    "nameEN": "401C (Faculty of Physics): Studio",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "402CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv402CT",
+    "nameVN": "402C (Khoa Toán - Tin): Bộ môn lý thuyết hàm",
+    "nameEN": "402C (Faculty of Mathematics and Informatics): Laboratory of functional theory",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "402CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv402CL",
+    "nameVN": "402C (Khoa Vật Lý): Phòng thí nghiệm vật lý phổ thông số 1",
+    "nameEN": "402C (Faculty of Physics): Physics school lab 1",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "403CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv403CT",
+    "nameVN": "403C (Khoa Toán - Tin): Phòng học",
+    "nameEN": "403C (Faculty of Mathematics and Informatics): Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "403CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv403CL",
+    "nameVN": "403C (Khoa Vật Lý): Phòng thực hành dạy học 1",
+    "nameEN": "403C (Faculty of Physics): Practice of teaching 1",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "404CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv404CT",
+    "nameVN": "404C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "404C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "404CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv404CL",
+    "nameVN": "404C (Khoa Vật Lý): Phòng thực hành dạy học 2",
+    "nameEN": "404C (Faculty of Physics): Practice of teaching 2",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "405CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv405CT",
+    "nameVN": "405C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "405C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "405CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv405CL",
+    "nameVN": "405C (Khoa Vật Lý): Phòng thí nghiệm cơ học",
+    "nameEN": "405C (Faculty of Physics): Mechanics lab",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "406CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv406CT",
+    "nameVN": "406C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "406C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "406CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv406CL",
+    "nameVN": "406C (Khoa Vật Lý): Phòng thí nghiệm nhiệt học",
+    "nameEN": "406C (Faculty of Physics): Thermodynamics lab",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "407CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv407CT",
+    "nameVN": "407C (Khoa Toán - Tin): Bộ môn đại số",
+    "nameEN": "407C (Faculty of Mathematics and Informatics): Labotory of algebra and number theory",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "407CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv407CL",
+    "nameVN": "407C (Khoa Vật Lý): Phòng thí nghiệm điện học",
+    "nameEN": "407C (Faculty of Physics): Electricity lab",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "408CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv408CT",
+    "nameVN": "408C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "408C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "408CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv408CL",
+    "nameVN": "408C (Khoa Vật Lý): Phòng thí nghiệm vật lý phổ thông số 2",
+    "nameEN": "408C (Faculty of Physics): Physics school lab 2",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "409CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv409CT",
+    "nameVN": "409C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "409C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "409CL": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv409CL",
+    "nameVN": "409C (Khoa Vật Lý): Phòng thí nghiệm quang học",
+    "nameEN": "409C (Faculty of Physics): Optics lab",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "410CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv410CT",
+    "nameVN": "410C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "410C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "411CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv411CT",
+    "nameVN": "411C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "411C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "412CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv412CT",
+    "nameVN": "412C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "412C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "413CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv413CT",
+    "nameVN": "413C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "413C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "414CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv414CT",
+    "nameVN": "414C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "414C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "415CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv415CT",
+    "nameVN": "415C (Khoa Toán - Tin): Phòng học",
+    "nameEN": "415C (Faculty of Mathematics and Informatics): Classroom",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "416CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv416CT",
+    "nameVN": "416C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "416C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
+  "417CT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv417CT",
+    "nameVN": "417C (Khoa Toán - Tin): Phòng máy chiếu",
+    "nameEN": "417C (Faculty of Mathematics and Informatics): Projection room",
+    "infoVN": "Nằm tại tầng 4 của nhà C.",
+    "infoEN": "Located on the 4th of building C.",
+    "latitude": 21.037137948558595,
+    "longitude": 105.78374855294989,
+    "source-image": []
+  },
 };
 
 ///////////////////////////////////////////////////////////////////////////

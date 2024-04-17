@@ -76,7 +76,6 @@ onAuthStateChanged(auth, (user) => {
 function logout() {
   signOut(auth)
     .then(() => {
-      console.log("User signed out");
       clearUserProfile();
     })
     .catch((error) => {
