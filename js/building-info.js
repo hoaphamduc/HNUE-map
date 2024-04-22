@@ -9538,7 +9538,7 @@ function createInfoDiv(buildingKey) {
       <span class="tim-duong-ggm contentEnglish">Directions using Google Maps</span>
       <span class="dong-gop contentVN">Đóng góp ý kiến</span>
       <span class="dong-gop contentEnglish">Give us your feedback</span>
-      <img class="send-feedback" src="source-img/mail.svg" onclick="composeEmail()">
+      <button class="send-feedback" onclick="composeEmail()">
       <button class="close" id="close${building.infoDivId}"></button>`;
 
   var content = document.createElement('div');

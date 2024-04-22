@@ -609,6 +609,7 @@ body, html {
   position: absolute;
   top: 15px;
   left: 15px;
+  transition: 0.3s ease-in-out;
 }
 
 .infoDiv .toolbar .direct-btn-ggm {
@@ -623,14 +624,22 @@ body, html {
   position: absolute;
   top: 15px;
   left: 100px;
+  transition: 0.3s ease-in-out;
 }
 
 .infoDiv .toolbar .send-feedback {
+  width: 35px;
   height: 35px; 
   position: absolute; 
+  border: none;
   top: 15px; 
   left: 185px;
   cursor: pointer;
+  background: url(../source-img/mail.svg);
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
 }
 
 .infoDiv .toolbar .direct-btn-ggm:hover, .infoDiv .toolbar .direct-btn:hover, .infoDiv .toolbar .send-feedback:hover {
