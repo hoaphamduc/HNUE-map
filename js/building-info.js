@@ -8375,6 +8375,1126 @@ var buildingData = {
     "longitude": 105.78374855294989,
     "source-image": []
   },
+  "BPQLTBDH": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivBPQLTBDH",
+    "nameVN": "Bộ phận Quản lý Thiết bị dạy học - Phòng Đào tạo",
+    "nameEN": "The Equipment Management Department of the Training Department",
+    "infoVN": "Nằm tại tầng 1 của nhà D3.<br>\
+              Cạnh cầu thang bộ.",
+    "infoEN": "Located on the 1st of building D3.<br>\
+              Beside the staircase.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "101D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv101D3",
+    "nameVN": "101D3: Phòng Phó trưởng khoa Việt Nam Học",
+    "nameEN": "101D3:  Vice Dean of the Department of Vietnamese Studies",
+    "infoVN": "Nằm tại tầng 1 của nhà D3.<br>\
+              Đi vào cửa Khoa Việt Nam Học rẽ trái.",
+    "infoEN": "Located on the 1st of building D3.<br>\
+              Enter the entrance of the Faculty of Vietnamese Studies and turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "102D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv102D3",
+    "nameVN": "102D3: Phòng Phó trưởng khoa Việt Nam Học",
+    "nameEN": "102D3:  Vice Dean of the Department of Vietnamese Studies",
+    "infoVN": "Nằm tại tầng 1 của nhà D3.<br>\
+              Đi vào cửa Khoa Việt Nam Học rẽ trái.",
+    "infoEN": "Located on the 1st of building D3.<br>\
+              Enter the entrance of the Faculty of Vietnamese Studies and turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "104D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv104D3",
+    "nameVN": "104D3: Văn phòng khoa Việt Nam Học",
+    "nameEN": "104D3: The Office of the Department of Vietnamese Studies",
+    "infoVN": "Nằm tại tầng 1 của nhà D3.<br>\
+              Đi vào cửa rồi rẽ trái.",
+    "infoEN": "Located on the 1st of building D3.<br>\
+              Enter the door and turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "105D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv105D3",
+    "nameVN": "105D3: Phòng Trưởng khoa Việt Nam Học",
+    "nameEN": "105D3: Dean of the Department of Vietnamese Studies",
+    "infoVN": "Nằm tại tầng 1 của nhà D3.<br>\
+              Đi vào cửa rồi rẽ trái.",
+    "infoEN": "Located on the 1st of building D3.<br>\
+              Enter the door and turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "106D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv106D3",
+    "nameVN": "106D3: Phòng Trưởng khoa Việt Nam Học",
+    "nameEN": "106D3: Dean of the Department of Vietnamese Studies",
+    "infoVN": "Nằm tại tầng 1 của nhà D3.<br>\
+              Đi vào cửa rồi rẽ trái.",
+    "infoEN": "Located on the 1st of building D3.<br>\
+              Enter the door and turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "khoaTiengAnh": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivkhoaTiengAnh",
+    "nameVN": "Khoa Tiếng Anh",
+    "nameEN": "Faculty of English",
+    "infoVN": "Nằm tại tầng 1 của nhà D3.<br>\
+              Đi vào cửa rồi rẽ phải.",
+    "infoEN": "Located on the 1st of building D3.<br>\
+              Enter the door and turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "201D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv201D3",
+    "nameVN": "201D3: Phòng học",
+    "nameEN": "201D3: Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 2nd of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "202D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv202D3",
+    "nameVN": "202D3: Phòng học",
+    "nameEN": "202D3: Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 2nd of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "203D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv203D3",
+    "nameVN": "203D3: Phòng chờ giáo viên",
+    "nameEN": "203D3: The teacher waiting room",
+    "infoVN": "Nằm tại tầng 2 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 2nd of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "204D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv204D3",
+    "nameVN": "204D3: Phòng học",
+    "nameEN": "204D3: Classroom",
+    "infoVN": "Nằm tại tầng 2 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 2nd of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "205D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv205D3",
+    "nameVN": "205D3: Bộ môn Quản lý Giáo dục Đại cương",
+    "nameEN": "205D3: The General Education Management Discipline",
+    "infoVN": "Nằm tại tầng 2 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 2nd of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "PTLKQLGD": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivPTLKQLGD",
+    "nameVN": "Phòng tư liệu Khoa Quản lý Giáo dục",
+    "nameEN": "The Educational Management Department's Resource Room",
+    "infoVN": "Nằm tại tầng 2 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 2nd of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "khoaQuanLyGiaoDuc": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivkhoaQuanLyGiaoDuc",
+    "nameVN": "Khoa Quản lý Giáo dục",
+    "nameEN": "The Department of Educational Management",
+    "infoVN": "Nằm tại tầng 2 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 2nd of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "306D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv306D3",
+    "nameVN": "306D3: Phòng họp",
+    "nameEN": "306D3: Meeting room",
+    "infoVN": "Nằm tại tầng 3 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 3rd of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "307D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv307D3",
+    "nameVN": "307D3: Bộ môn Quản lý Nhà trường và các Cơ sở Giáo dục khoa Quản lý Giáo dục",
+    "nameEN": "307D3: The Discipline of School Management and Educational Institutions within the Department of Educational Management",
+    "infoVN": "Nằm tại tầng 3 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 3rd of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "312D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv312D3",
+    "nameVN": "312D3: Phòng họp",
+    "nameEN": "312D3: Meeting room",
+    "infoVN": "Nằm tại tầng 3 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 3rd of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "khoaCongTacXaHoi": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivkhoaCongTacXaHoi",
+    "nameVN": "Khoa Công tác Xã hội",
+    "nameEN": "Faculty of Social Work",
+    "infoVN": "Nằm tại tầng 3 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 3rd of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "khoaTrungQuoc": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivkhoaTrungQuoc",
+    "nameVN": "Khoa Ngôn ngữ và Văn hóa Trung Quốc",
+    "nameEN": "Faculty of Chinese",
+    "infoVN": "Nằm tại tầng 3 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 3rd of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "401D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv401D3",
+    "nameVN": "401D3: Trung tâm Văn học Trẻ em",
+    "nameEN": "401D3: The Center for Children's Literature",
+    "infoVN": "Nằm tại tầng 4 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 4th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "403D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv403D3",
+    "nameVN": "403D3: Phòng học",
+    "nameEN": "401D3: The Center for Children's Literature",
+    "infoVN": "Nằm tại tầng 4 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 4th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "404D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv404D3",
+    "nameVN": "404D3: Phòng học",
+    "nameEN": "404D3: The Center for Children's Literature",
+    "infoVN": "Nằm tại tầng 4 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 4th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "405D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv405D3",
+    "nameVN": "405D3: Phòng học",
+    "nameEN": "405D3: The Center for Children's Literature",
+    "infoVN": "Nằm tại tầng 4 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 4th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "406D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv406D3",
+    "nameVN": "406D3: Phòng học",
+    "nameEN": "406D3: The Center for Children's Literature",
+    "infoVN": "Nằm tại tầng 4 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 4th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "407D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv407D3",
+    "nameVN": "407D3: Bộ môn Quản lý Nhà trường và các Cơ sở Giáo dục khoa Quản lý Giáo dục",
+    "nameEN": "407D3: The Discipline of School and Educational Institution Management within the Department - Faculty of Educational Management",
+    "infoVN": "Nằm tại tầng 4 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 4th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "TVHKVNH": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivTVHKVNH",
+    "nameVN": "Tổ Văn hóa khoa Việt Nam Học",
+    "nameEN": "The Cultural Division of the Faculty of Vietnamese Studies",
+    "infoVN": "Nằm tại tầng 4 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 4th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "TVKVNH": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivTVKVNH",
+    "nameVN": "Thư viện khoa Việt Nam Học",
+    "nameEN": "The Library of the Faculty of Vietnamese Studies",
+    "infoVN": "Nằm tại tầng 4 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 4th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "BTSV": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivBTSV",
+    "nameVN": "Bảo tàng sinh vật",
+    "nameEN": "The Museum of Natural History",
+    "infoVN": "Nằm tại tầng 4 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 4th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "502D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv502D3",
+    "nameVN": "502D3: Phòng học",
+    "nameEN": "502D3: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "503D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv503D3",
+    "nameVN": "503D3: Phòng học",
+    "nameEN": "503D3: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "504D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv504D3",
+    "nameVN": "504D3: Phòng học",
+    "nameEN": "504D3: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "505D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv505D3",
+    "nameVN": "505D3: Phòng học tiếng (Chuyên Sư phạm)",
+    "nameEN": "505D3: The Language Teaching Room (High school for Gifted students, HNUE)",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "506D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv506D3",
+    "nameVN": "506D3: Phòng học",
+    "nameEN": "506D3: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "507D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv507D3",
+    "nameVN": "507D3: Phòng học",
+    "nameEN": "507D3: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "508D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv508D3",
+    "nameVN": "508D3: Phòng học",
+    "nameEN": "508D3: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "509D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv509D3",
+    "nameVN": "509D3: Phòng học",
+    "nameEN": "509D3: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "510D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv510D3",
+    "nameVN": "510D3: Phòng học",
+    "nameEN": "510D3: Classroom",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "TLSVMVQHQT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivTLSVMVQHQT",
+    "nameVN": "Tổ Lịch sử Văn minh và Quan hệ Quốc tế",
+    "nameEN": "The Division of History of Civilization and International Relations",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "TĐLKVNH": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivTĐLKVNH",
+    "nameVN": "Tổ Địa - Du lịch khoa Việt Nam Học",
+    "nameEN": "The Geography and Tourism Division of the Faculty of Vietnamese Studies",
+    "infoVN": "Nằm tại tầng 5 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 5th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "601D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv601D3",
+    "nameVN": "601D3: Phòng học",
+    "nameEN": "601D3: Classroom",
+    "infoVN": "Nằm tại tầng 6 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 6th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "602D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv602D3",
+    "nameVN": "602D3: Phòng học",
+    "nameEN": "602D3: Classroom",
+    "infoVN": "Nằm tại tầng 6 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 6th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "603D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv603D3",
+    "nameVN": "603D3: Phòng học",
+    "nameEN": "603D3: Classroom",
+    "infoVN": "Nằm tại tầng 6 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 6th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "604D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv604D3",
+    "nameVN": "604D3: Phòng học",
+    "nameEN": "604D3: Classroom",
+    "infoVN": "Nằm tại tầng 6 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 6th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "605D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv605D3",
+    "nameVN": "605D3: Phòng học",
+    "nameEN": "605D3: Classroom",
+    "infoVN": "Nằm tại tầng 6 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 6th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "606D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv606D3",
+    "nameVN": "606D3: Phòng học",
+    "nameEN": "606D3: Classroom",
+    "infoVN": "Nằm tại tầng 6 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 6th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "612D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv612D3",
+    "nameVN": "612D3: Văn phòng khoa Nghệ thuật",
+    "nameEN": "612D3: The Office of the Faculty of Arts",
+    "infoVN": "Nằm tại tầng 6 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 6th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "khoaNgheThuat": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivkhoaNgheThuat",
+    "nameVN": "Khoa Nghệ thuật",
+    "nameEN": "Faculty of Arts",
+    "infoVN": "Nằm tại tầng 6 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 6th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "701D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv701D3",
+    "nameVN": "701D3: Phòng học",
+    "nameEN": "701D3: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 7th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "703D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv703D3",
+    "nameVN": "703D3: Phòng học",
+    "nameEN": "703D3: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 7th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "704D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv704D3",
+    "nameVN": "704D3: Phòng học",
+    "nameEN": "704D3: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 7th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "705D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv705D3",
+    "nameVN": "705D3: Phòng học",
+    "nameEN": "705D3: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 7th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "707D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv707D3",
+    "nameVN": "707D3: Phòng học",
+    "nameEN": "707D3: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 7th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "708D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv708D3",
+    "nameVN": "708D3: Phòng học",
+    "nameEN": "708D3: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 7th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "709D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv709D3",
+    "nameVN": "709D3: Phòng học",
+    "nameEN": "709D3: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 7th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "710D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv710D3",
+    "nameVN": "710D3: Phòng học",
+    "nameEN": "710D3: Classroom",
+    "infoVN": "Nằm tại tầng 7 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 7th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "PDANCNCVTBAT": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDivPDANCNCVTBAT",
+    "nameVN": "Phòng Dự án Nâng cấp Nhạc cụ và Thiết bị Âm thanh của Trường Đại học Sư phạm Hà Nội",
+    "nameEN": "The Project Office for Upgrading Musical Instruments and Sound Equipment of Hanoi University of Education",
+    "infoVN": "Nằm tại tầng 7 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 7th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "801AD3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv801AD3",
+    "nameVN": "801a-D3: Văn phòng",
+    "nameEN": "801a-D3: Office",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "801BD3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv801BD3",
+    "nameVN": "801b-D3: Phòng Phó Giám đốc Trung tâm Nghiên cứu và Phát triển Nghiệp vụ Sư phạm",
+    "nameEN": "801b-D3: The Deputy Director's Office of the Center for Research and Development in Pedagogical Practices",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "802D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv802D3",
+    "nameVN": "802D3: Phòng học",
+    "nameEN": "802D3: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "803AD3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv803AD3",
+    "nameVN": "803a-D3: Trung tâm Nghiên cứu và Phát triển Nghiệp vụ Sư phạm",
+    "nameEN": "803a-D3: The Center for Research and Development of Pedagogical Practices",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "803BD3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv803BD3",
+    "nameVN": "803b-D3: Phòng Phó Giám đốc Trung tâm Nghiên cứu và Phát triển Nghiệp vụ Sư phạm",
+    "nameEN": "803b-D3: Deputy Director's Office of the Center for Research and Development of Pedagogical Practices",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "804AD3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv804AD3",
+    "nameVN": "804a-D3: Phòng học",
+    "nameEN": "804a-3: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "804BD3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv804BD3",
+    "nameVN": "804b-D3: Phòng học",
+    "nameEN": "804b-3: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "805D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv805D3",
+    "nameVN": "805D3: Phòng học",
+    "nameEN": "805D3: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "806D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv806D3",
+    "nameVN": "806D3: Phòng học",
+    "nameEN": "806D3: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "807D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv807D3",
+    "nameVN": "807D3: Phòng học",
+    "nameEN": "807D3: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ phải.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn right.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "808D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv808D3",
+    "nameVN": "808D3: Phòng Giám đốc Trung tâm Nghiên cứu và Phát triển Nghiệp vụ Sư phạm",
+    "nameEN": "808D3: The Director's Office of the Center for Research and Development in Pedagogical Practices",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "809D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv809D3",
+    "nameVN": "809D3: Phòng học",
+    "nameEN": "809D3: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "810D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv810D3",
+    "nameVN": "810D3: Phòng học",
+    "nameEN": "810D3: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
+  "811D3": {
+    "polygon": [
+      [0, 0],
+      [0, 0]
+    ],
+    "infoDivId": "infoDiv811D3",
+    "nameVN": "811D3: Phòng học",
+    "nameEN": "811D3: Classroom",
+    "infoVN": "Nằm tại tầng 8 của nhà D3.<br>\
+              Đi lên thang bộ rồi rẽ trái.",
+    "infoEN": "Located on the 8th of building D3.<br>\
+              Go up the stairs and then turn left.",
+    "latitude": 21.038169047472465,
+    "longitude": 105.78403294086458,
+    "source-image": []
+  },
 };
 
 ///////////////////////////////////////////////////////////////////////////
