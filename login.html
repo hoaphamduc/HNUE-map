@@ -16,8 +16,10 @@
     <link rel="stylesheet" href="css/mobile-UI.css"/>
     <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/infomation-pages-B5-css.css">
+    <link rel="stylesheet" href="css/introjs.min.css">
     <link rel="icon" type="image/png" href="source-img/Logo Đại học Sư phạm Hà Nội - HNUE.png">
     <link rel="stylesheet" href="css/routing-machine.css">
+    <script src="js/intro.min.js"></script>
 
 </head>
 
@@ -32,7 +34,7 @@
             <li>
                 <a onclick="toggleHNUEIntroductionDiv()">
                     <div class="highlight"></div>
-                    <img src="source-img/school.png" class="icon">
+                    <img src="source-img/school.png" class="icon" data-intro="Giới thiệu về Trường Đại học Sư phạm Hà Nội" data-step="2">
                     <span class="links_name contentVN">Giới thiệu về HNUE</span>
                     <span class="links_name contentEnglish">HNUE introduction</span>
                 </a>
@@ -40,7 +42,7 @@
             <li>
                 <a onclick="toggleProductIntroductionDiv()">
                     <div class="highlight"></div>
-                    <img src="source-img/map-solid.svg" class="icon">
+                    <img src="source-img/map-solid.svg" class="icon" data-intro="Giới thiệu về sản phẩm HNUE map của chúng tôi" data-step="3">
                     <span class="links_name contentVN">Giới thiệu về sản phẩm</span>
                     <span class="links_name contentEnglish">Product introduction</span>
                 </a>
@@ -48,7 +50,7 @@
             <li>
                 <a onclick="toggleInfomationPagesDiv()">
                     <div class="highlight"></div>
-                    <img src="source-img/browser.png" class="icon">
+                    <img src="source-img/browser.png" class="icon" data-intro="Các cổng thông thông tin của Trường Đại học Sư phạm Hà Nội và các câu lạc bộ" data-step="4">
                     <span class="links_name contentVN">Các trang thông tin</span>
                     <span class="links_name contentEnglish">Information pages</span>
                 </a>
@@ -56,7 +58,7 @@
             <li>
                 <a target="_blank" onclick="confirmRedirect()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/book.png" class="icon">
+                    <img src="source-img/book.png" class="icon" data-intro="Trang thông tin tuyển sinh 2024" data-step="5">
                     <span class="links_name contentVN">Thông tin tuyển sinh 2024</span>
                     <span class="links_name contentEnglish">2024 Admission Information</span>
                 </a>
@@ -64,7 +66,7 @@
             <li>
                 <a onclick="toggleSocialNetworkDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/user-group-solid.svg" class="icon">
+                    <img src="source-img/user-group-solid.svg" class="icon" data-intro="Đây là mạng xã hội nhỏ để các bạn chia sẻ kiến thức, câu chuyện hẳng ngày trong cuộc sống" data-step="6">
                     <span class="links_name contentVN">Diễn đàn Tri thức</span>
                     <span class="links_name contentEnglish">Knowledge Forum</span>
                 </a>
@@ -72,7 +74,7 @@
             <li>
                 <a onclick="toggleSupportDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/feedback.png" class="icon">
+                    <img src="source-img/feedback.png" class="icon" data-intro="Góp ý với chúng tôi để chúng tôi có thể cải thiện sản phẩm tốt hơn" data-step="7">
                     <span class="links_name contentVN">Góp ý với chúng tôi</span>
                     <span class="links_name contentEnglish">Give us your feedback</span>
                 </a>
@@ -80,7 +82,7 @@
             <li>
                 <a onclick="toggleDonateDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/donate.svg" class="icon">
+                    <img src="source-img/donate.svg" class="icon" data-intro="Ủng hộ chúng tôi tại đây" data-step="8">
                     <span class="links_name contentVN">Mua trà sữa cho chúng tôi</span>
                     <span class="links_name contentEnglish">Buy milk tea for us</span>
                 </a>
@@ -121,7 +123,7 @@
     </div>
     
     <div class="main-content" id="main-content">
-        <div id="map"></div>
+        <div id="map" data-intro="Bạn có thể nhấp, kéo thả, phóng to thu nhỏ, ..." data-step="1"></div>
 
         <!-- Giới thiệu về HNUE -->
         <div id="HNUE-introduction">
@@ -470,7 +472,7 @@
 
         <!-- Main content -->
 
-        <div id="direction-board" class="hide">
+        <div id="direction-board" class="hide" data-intro="Ngoài tương tác trực tiếp với bản đồ, bạn còn có thể tìm kiếm toà nhà, phòng học, cơ sở dịch vụ, địa điểm du lịch nổi bật trong thành phố tại đây" data-step="9">
             <div id="blue-div" onclick="toggleHide()">
                 <span class="contentVN direction-text">Bảng chỉ dẫn</span>
                 <span class="contentEnglish direction-text">Direction board</span>
@@ -2778,13 +2780,28 @@
                 research team hopes to receive much support and love as well as suggestions and help from users. Sincere thanks! 
             </div>
         </div>
-    </div>
+    </div> 
+    <script>
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
 
+        function runIntroJSIfNotMobile() {
+            if (!isMobileDevice()) {
+                introJs().start();
+            }
+        }
+
+        window.onload = function() {
+            runIntroJSIfNotMobile();
+        };
+    </script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
     <script src="js/auth.js" defer type="module"></script>
     <script src="js/login-function.js"></script>
     <script src="js/public-function.js"></script>
     <script src="js/building-info.js"></script>
+    
 </body>
 </html>
