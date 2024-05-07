@@ -16,8 +16,10 @@
     <link rel="stylesheet" href="css/mobile-UI.css"/>
     <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/infomation-pages-B5-css.css">
+    <link rel="stylesheet" href="css/introjs.min.css">
     <link rel="icon" type="image/png" href="source-img/Logo Đại học Sư phạm Hà Nội - HNUE.png">
     <link rel="stylesheet" href="css/routing-machine.css">
+    <script src="js/intro.min.js"></script>
 
 </head>
 
@@ -32,7 +34,7 @@
             <li>
                 <a onclick="toggleHNUEIntroductionDiv()">
                     <div class="highlight"></div>
-                    <img src="source-img/school.png" class="icon">
+                    <img src="source-img/school.png" class="icon" data-intro="Giới thiệu về Trường Đại học Sư phạm Hà Nội" data-step="2">
                     <span class="links_name contentVN">Giới thiệu về HNUE</span>
                     <span class="links_name contentEnglish">HNUE introduction</span>
                 </a>
@@ -40,7 +42,7 @@
             <li>
                 <a onclick="toggleProductIntroductionDiv()">
                     <div class="highlight"></div>
-                    <img src="source-img/map-solid.svg" class="icon">
+                    <img src="source-img/map-solid.svg" class="icon" data-intro="Giới thiệu về sản phẩm HNUE map của chúng tôi" data-step="3">
                     <span class="links_name contentVN">Giới thiệu về sản phẩm</span>
                     <span class="links_name contentEnglish">Product introduction</span>
                 </a>
@@ -48,7 +50,7 @@
             <li>
                 <a onclick="toggleInfomationPagesDiv()">
                     <div class="highlight"></div>
-                    <img src="source-img/browser.png" class="icon">
+                    <img src="source-img/browser.png" class="icon" data-intro="Các cổng thông thông tin của Trường Đại học Sư phạm Hà Nội và các câu lạc bộ" data-step="4">
                     <span class="links_name contentVN">Các trang thông tin</span>
                     <span class="links_name contentEnglish">Information pages</span>
                 </a>
@@ -56,7 +58,7 @@
             <li>
                 <a target="_blank" onclick="confirmRedirect()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/book.png" class="icon">
+                    <img src="source-img/book.png" class="icon" data-intro="Trang thông tin tuyển sinh 2024" data-step="5">
                     <span class="links_name contentVN">Thông tin tuyển sinh 2024</span>
                     <span class="links_name contentEnglish">2024 Admission Information</span>
                 </a>
@@ -64,7 +66,7 @@
             <li>
                 <a onclick="toggleSocialNetworkDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/user-group-solid.svg" class="icon">
+                    <img src="source-img/user-group-solid.svg" class="icon" data-intro="Đây là mạng xã hội nhỏ để các bạn chia sẻ kiến thức, câu chuyện hẳng ngày trong cuộc sống" data-step="6">
                     <span class="links_name contentVN">Diễn đàn Tri thức</span>
                     <span class="links_name contentEnglish">Knowledge Forum</span>
                 </a>
@@ -72,7 +74,7 @@
             <li>
                 <a onclick="toggleSupportDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/feedback.png" class="icon">
+                    <img src="source-img/feedback.png" class="icon" data-intro="Góp ý với chúng tôi để chúng tôi có thể cải thiện sản phẩm tốt hơn" data-step="7">
                     <span class="links_name contentVN">Góp ý với chúng tôi</span>
                     <span class="links_name contentEnglish">Give us your feedback</span>
                 </a>
@@ -80,7 +82,7 @@
             <li>
                 <a onclick="toggleDonateDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/donate.svg" class="icon">
+                    <img src="source-img/donate.svg" class="icon" data-intro="Ủng hộ chúng tôi tại đây" data-step="8">
                     <span class="links_name contentVN">Mua trà sữa cho chúng tôi</span>
                     <span class="links_name contentEnglish">Buy milk tea for us</span>
                 </a>
@@ -106,7 +108,7 @@
                 <div id="google-login-btn">
                     <span class="contentVN login-text">Đăng nhập với Google</span>
                     <span class="contentEnglish login-text">Login with Google</span>
-                    <img src="source-img/Google__G__logo.svg" data-bs-toggle="tooltip" title="Đăng nhập">
+                    <img src="source-img/Google__G__logo.svg" data-bs-toggle="tooltip" title="Đăng nhập" data-intro="Đăng nhập để sử dụng Diễn đàn Tri thức tại đây" data-step="10">
                 </div>
             </li>
         </ul>
@@ -121,7 +123,7 @@
     </div>
     
     <div class="main-content" id="main-content">
-        <div id="map"></div>
+        <div id="map" data-intro="Bạn có thể nhấp, kéo thả, phóng to thu nhỏ, ..." data-step="1"></div>
 
         <!-- Giới thiệu về HNUE -->
         <div id="HNUE-introduction">
@@ -470,7 +472,7 @@
 
         <!-- Main content -->
 
-        <div id="direction-board" class="hide">
+        <div id="direction-board" class="hide" data-intro="Ngoài tương tác trực tiếp với bản đồ, bạn còn có thể tìm kiếm toà nhà, phòng học, cơ sở dịch vụ, địa điểm du lịch nổi bật trong thành phố tại đây" data-step="9">
             <div id="blue-div" onclick="toggleHide()">
                 <span class="contentVN direction-text">Bảng chỉ dẫn</span>
                 <span class="contentEnglish direction-text">Direction board</span>
@@ -1350,6 +1352,286 @@
                 <span class="contentVN redtext" style="margin-top: 10px;">NHÀ D</span>
                 <span class="contentEnglish redtext" style="margin-top: 10px;">D BUILDING</span>
                 <ul id="nha-D">
+                    <li onclick="toggleInfoDiv('BPQLTBDH')">
+                        <span class="contentVN">Bộ phận Quản lý Thiết bị dạy học - Phòng Đào tạo</span>
+                        <span class="contentEnglish">The Equipment Management Department of the Training Department</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('101D3')">
+                        <span class="contentVN">101D3: Phòng Phó trưởng khoa Việt Nam Học</span>
+                        <span class="contentEnglish">101D3:  Vice Dean of the Department of Vietnamese Studies</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('102D3')">
+                        <span class="contentVN">102D3: Phòng Phó trưởng khoa Việt Nam Học</span>
+                        <span class="contentEnglish">102D3:  Vice Dean of the Department of Vietnamese Studies</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('104D3')">
+                        <span class="contentVN">104D3: Văn phòng khoa Việt Nam Học</span>
+                        <span class="contentEnglish">104D3: The Office of the Department of Vietnamese Studies</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('105D3')">
+                        <span class="contentVN">105D3: Phòng Trưởng khoa Việt Nam Học</span>
+                        <span class="contentEnglish">105D3: Dean of the Department of Vietnamese Studies</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('106D3')">
+                        <span class="contentVN">106D3: Phòng học</span>
+                        <span class="contentEnglish">106D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('khoaTiengAnh')">
+                        <span class="contentVN">Khoa Tiếng Anh</span>
+                        <span class="contentEnglish">Faculty of English</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('201D3')">
+                        <span class="contentVN">201D3: Phòng học</span>
+                        <span class="contentEnglish">201D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('202D3')">
+                        <span class="contentVN">202D3: Phòng học</span>
+                        <span class="contentEnglish">202D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('203D3')">
+                        <span class="contentVN">203D3: Phòng chờ giáo viên</span>
+                        <span class="contentEnglish">203D3: The teacher waiting room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('204D3')">
+                        <span class="contentVN">204D3: Phòng học</span>
+                        <span class="contentEnglish">204D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('205D3')">
+                        <span class="contentVN">205D3: Bộ môn Quản lý Giáo dục Đại cương</span>
+                        <span class="contentEnglish">205D3: The General Education Management Discipline</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('PTLKQLGD')">
+                        <span class="contentVN">Phòng tư liệu Khoa Quản lý Giáo dục</span>
+                        <span class="contentEnglish">The Educational Management Department's Resource Room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('khoaQuanLyGiaoDuc')">
+                        <span class="contentVN">Khoa Quản lý Giáo dục</span>
+                        <span class="contentEnglish">The Department of Educational Management</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('306D3')">
+                        <span class="contentVN">306D3: Phòng họp</span>
+                        <span class="contentEnglish">306D3: Meeting room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('307D3')">
+                        <span class="contentVN">307D3: Bộ môn Quản lý Nhà trường và các Cơ sở Giáo dục khoa Quản lý Giáo dục</span>
+                        <span class="contentEnglish">307D3: The Discipline of School Management and Educational Institutions within the Department of Educational Management</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('312D3')">
+                        <span class="contentVN">312D3: Phòng họp</span>
+                        <span class="contentEnglish">312D3: Meeting room</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('khoaCongTacXaHoi')">
+                        <span class="contentVN">Khoa Công tác Xã hội</span>
+                        <span class="contentEnglish">Faculty of Social Work</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('khoaTrungQuoc')">
+                        <span class="contentVN">Khoa Ngôn ngữ và Văn hóa Trung Quốc</span>
+                        <span class="contentEnglish">Faculty of Chinese</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('401D3')">
+                        <span class="contentVN">401D3: Trung tâm Văn học Trẻ em</span>
+                        <span class="contentEnglish">401D3: The Center for Children's Literature</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('403D3')">
+                        <span class="contentVN">403D3: Phòng học</span>
+                        <span class="contentEnglish">403D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('404D3')">
+                        <span class="contentVN">404D3: Phòng học</span>
+                        <span class="contentEnglish">404D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('405D3')">
+                        <span class="contentVN">405D3: Phòng học</span>
+                        <span class="contentEnglish">405D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('406D3')">
+                        <span class="contentVN">406D3: Phòng học</span>
+                        <span class="contentEnglish">406D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('407D3')">
+                        <span class="contentVN">407D3: Bộ môn Quản lý Nhà trường và các Cơ sở Giáo dục khoa Quản lý Giáo dục</span>
+                        <span class="contentEnglish">407D3: The Discipline of School and Educational Institution Management within the Department - Faculty of Educational Management</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('TVHKVNH')">
+                        <span class="contentVN">Tổ Văn hóa khoa Việt Nam Học</span>
+                        <span class="contentEnglish">The Cultural Division of the Faculty of Vietnamese Studies</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('TVKVNH')">
+                        <span class="contentVN">Thư viện khoa Việt Nam Học</span>
+                        <span class="contentEnglish">The Library of the Faculty of Vietnamese Studies</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('BTSV')">
+                        <span class="contentVN">Bảo tàng sinh vật</span>
+                        <span class="contentEnglish">The Museum of Natural History</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('502D3')">
+                        <span class="contentVN">502D3: Phòng học</span>
+                        <span class="contentEnglish">502D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('503D3')">
+                        <span class="contentVN">503D3: Phòng học</span>
+                        <span class="contentEnglish">503D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('504D3')">
+                        <span class="contentVN">504D3: Phòng học</span>
+                        <span class="contentEnglish">504D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('505D3')">
+                        <span class="contentVN">505D3: Phòng học tiếng (Chuyên Sư phạm)</span>
+                        <span class="contentEnglish">505D3: The Language Teaching Room (High school for Gifted students, HNUE)</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('506D3')">
+                        <span class="contentVN">506D3: Phòng học</span>
+                        <span class="contentEnglish">506D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('507D3')">
+                        <span class="contentVN">507D3: Phòng học</span>
+                        <span class="contentEnglish">507D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('508D3')">
+                        <span class="contentVN">508D3: Phòng học</span>
+                        <span class="contentEnglish">508D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('509D3')">
+                        <span class="contentVN">509D3: Phòng học</span>
+                        <span class="contentEnglish">509D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('510D3')">
+                        <span class="contentVN">510D3: Phòng học</span>
+                        <span class="contentEnglish">510D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('TLSVMVQHQT')">
+                        <span class="contentVN">Tổ Lịch sử Văn minh và Quan hệ Quốc tế</span>
+                        <span class="contentEnglish">The Division of History of Civilization and International Relations</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('TĐLKVNH')">
+                        <span class="contentVN">Tổ Địa - Du lịch khoa Việt Nam Học</span>
+                        <span class="contentEnglish">The Geography and Tourism Division of the Faculty of Vietnamese Studies</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('601D3')">
+                        <span class="contentVN">601D3: Phòng học</span>
+                        <span class="contentEnglish">601D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('602D3')">
+                        <span class="contentVN">602D3: Phòng học</span>
+                        <span class="contentEnglish">602D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('603D3')">
+                        <span class="contentVN">603D3: Phòng học</span>
+                        <span class="contentEnglish">603D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('604D3')">
+                        <span class="contentVN">604D3: Phòng học</span>
+                        <span class="contentEnglish">604D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('605D3')">
+                        <span class="contentVN">605D3: Phòng học</span>
+                        <span class="contentEnglish">605D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('606D3')">
+                        <span class="contentVN">606D3: Phòng học</span>
+                        <span class="contentEnglish">606D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('612D3')">
+                        <span class="contentVN">612D3: Văn phòng khoa Nghệ thuật</span>
+                        <span class="contentEnglish">612D3: The Office of the Faculty of Arts</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('khoaNgheThuat')">
+                        <span class="contentVN">Khoa Nghệ thuật</span>
+                        <span class="contentEnglish">Faculty of Arts</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('701D3')">
+                        <span class="contentVN">701D3: Phòng học</span>
+                        <span class="contentEnglish">701D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('703D3')">
+                        <span class="contentVN">703D3: Phòng học</span>
+                        <span class="contentEnglish">703D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('704D3')">
+                        <span class="contentVN">704D3: Phòng học</span>
+                        <span class="contentEnglish">704D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('705D3')">
+                        <span class="contentVN">705D3: Phòng học</span>
+                        <span class="contentEnglish">705D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('707D3')">
+                        <span class="contentVN">707D3: Phòng học</span>
+                        <span class="contentEnglish">707D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('708D3')">
+                        <span class="contentVN">708D3: Phòng học</span>
+                        <span class="contentEnglish">708D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('709D3')">
+                        <span class="contentVN">709D3: Phòng học</span>
+                        <span class="contentEnglish">709D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('710D3')">
+                        <span class="contentVN">710D3: Phòng học</span>
+                        <span class="contentEnglish">710D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('PDANCNCVTBAT')">
+                        <span class="contentVN">Phòng Dự án Nâng cấp Nhạc cụ và Thiết bị Âm thanh của Trường Đại học Sư phạm Hà Nội</span>
+                        <span class="contentEnglish">The Project Office for Upgrading Musical Instruments and Sound Equipment of Hanoi University of Education</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('801AD3')">
+                        <span class="contentVN">801a-D3: Văn phòng</span>
+                        <span class="contentEnglish">801a-D3: Office</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('801BD3')">
+                        <span class="contentVN">801b-D3: Phòng Phó Giám đốc Trung tâm Nghiên cứu và Phát triển Nghiệp vụ Sư phạm</span>
+                        <span class="contentEnglish">801b-D3: The Deputy Director's Office of the Center for Research and Development in Pedagogical Practices</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('802D3')">
+                        <span class="contentVN">802D3: Phòng học</span>
+                        <span class="contentEnglish">802D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('803AD3')">
+                        <span class="contentVN">803a-D3: Trung tâm Nghiên cứu và Phát triển Nghiệp vụ Sư phạm</span>
+                        <span class="contentEnglish">803a-D3: The Center for Research and Development of Pedagogical Practices</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('803BD3')">
+                        <span class="contentVN">803b-D3: Phòng Phó Giám đốc Trung tâm Nghiên cứu và Phát triển Nghiệp vụ Sư phạm</span>
+                        <span class="contentEnglish">803b-D3: Deputy Director's Office of the Center for Research and Development of Pedagogical Practices</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('804AD3')">
+                        <span class="contentVN">804a-D3: Phòng học</span>
+                        <span class="contentEnglish">804a-D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('804BD3')">
+                        <span class="contentVN">804b-D3: Phòng học</span>
+                        <span class="contentEnglish">804b-D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('805D3')">
+                        <span class="contentVN">805D3: Phòng học</span>
+                        <span class="contentEnglish">805D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('806D3')">
+                        <span class="contentVN">806D3: Phòng học</span>
+                        <span class="contentEnglish">806D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('807D3')">
+                        <span class="contentVN">807D3: Phòng học</span>
+                        <span class="contentEnglish">807D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('808D3')">
+                        <span class="contentVN">808D3: Phòng Giám đốc Trung tâm Nghiên cứu và Phát triển Nghiệp vụ Sư phạm</span>
+                        <span class="contentEnglish">808D3: The Director's Office of the Center for Research and Development in Pedagogical Practices</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('809D3')">
+                        <span class="contentVN">809D3: Phòng học</span>
+                        <span class="contentEnglish">809D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('810D3')">
+                        <span class="contentVN">810D3: Phòng học</span>
+                        <span class="contentEnglish">810D3: Classroom</span>
+                    </li>
+                    <li onclick="toggleInfoDiv('811D3')">
+                        <span class="contentVN">811D3: Phòng học</span>
+                        <span class="contentEnglish">811D3: Classroom</span>
+                    </li>
                 </ul>
                 <span class="contentVN redtext" style="margin-top: 10px;">NHÀ K</span>
                 <span class="contentEnglish redtext" style="margin-top: 10px;">K BUILDING</span>
@@ -2498,13 +2780,28 @@
                 research team hopes to receive much support and love as well as suggestions and help from users. Sincere thanks! 
             </div>
         </div>
-    </div>
+    </div> 
+    <script>
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
 
+        function runIntroJSIfNotMobile() {
+            if (!isMobileDevice()) {
+                introJs().start();
+            }
+        }
+
+        window.onload = function() {
+            runIntroJSIfNotMobile();
+        };
+    </script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
     <script src="js/auth.js" defer type="module"></script>
     <script src="js/login-function.js"></script>
     <script src="js/public-function.js"></script>
     <script src="js/building-info.js"></script>
+    
 </body>
 </html>
