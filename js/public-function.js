@@ -488,7 +488,7 @@ var mymap = L.map('map', {
   
 const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '<span id="groupInfo" onclick="toggleGroupInfo()" data-bs-toggle="tooltip" title="Xem thông tin nhóm">&copy; We are Trúc Trúc</span>'
+    attribution: '<span id="groupInfo" onclick="toggleGroupInfo()" data-bs-toggle="tooltip" title="Xem thông tin nhóm">Được phát triển bởi Phạm Đức Hoà</span>'
 }).addTo(mymap);
 
 // Lấy tọa độ khi click
