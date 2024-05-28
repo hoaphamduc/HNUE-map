@@ -2,8 +2,9 @@
 
 Bản đồ Trường Đại học Sư phạm Hà Nội hiện đang được triển khai tại:
 
-[HNUE Map](https://hnuemapforyou.netlify.app/)
-[HNUE Map Test](https://hnuemaptest.netlify.app/)
+https://hnuemapforyou.netlify.app/
+
+https://hnuemaptest.netlify.app/
 
 # Tóm tắt
 
