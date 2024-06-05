@@ -280,8 +280,6 @@ var buildingData = {
     "infoVN": "<b>Khoa Toán - Tin</b><br>\
               Tầng 1<br>\
               Số điện thoại: 02437547727<br>\
-              Email: tapchi@hnue.edu.vn<br>\
-              Website: <a href=\"http://math.hnue.edu.vn/\" target=\"_blank\">math.hnue.edu.vn</a><br>\
               <b>Giới thiệu về khoa</b>\
               <ul>\
                   <li>Thành lập năm 1951.</li>\

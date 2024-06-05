@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>HNUE map</title>
-    <meta property="og:title" content="HNUE map"/>
-    <meta property="og:description" content="Bản đồ tương tác" />
+    <title>HNUE map - Bản đồ tương tác Trường Đại học Sư phạm Hà Nội</title>
+    <meta property="og:title" content="HNUE map - Bản đồ tương tác Trường Đại học Sư phạm Hà Nội"/>
+    <meta property="og:description" content="Bản đồ tương tác Trường Đại học Sư phạm Hà Nội" />
     <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2F1.jpg?alt=media&token=dff18297-6712-4eec-a8bb-a7ac2ce80370"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -43,7 +43,7 @@
             </label><br>
             <input type="text" name="text-location" id="text-location-vn" class="contentVN" readonly placeholder="Nhấn vào đây để thêm tọa độ" onclick="getLocationAndFillInput()">
             <input type="text" name="text-location" id="text-location-eng" class="contentEnglish" readonly placeholder="Press here to add coordinates" onclick="getLocationAndFillInput()">
-            <img src="source-img/location.png" id="add-location-button">
+            <img src="source-img/location.png" alt="Thêm toạ độ vào bài viết" id="add-location-button">
         </div>
         <div id="add-address">
             <label for="text-location" style="font-size: 10px;">
@@ -52,7 +52,7 @@
             </label><br>
             <input type="text" name="text-location" id="text-address-vn" class="contentVN" placeholder="Nhập địa chỉ" >
             <input type="text" name="text-location" id="text-address-eng" class="contentEnglish" placeholder="Enter address">
-            <img src="source-img/building-regular.svg" id="add-address-img">
+            <img src="source-img/building-regular.svg" alt="Icon địa chỉ" id="add-address-img">
         </div>
         <button class="post-status" id="post-status" disabled>
             <span class="contentVN">Đăng</span>
@@ -80,7 +80,7 @@
             <li>
                 <a onclick="toggleHNUEIntroductionDiv()">
                     <div class="highlight"></div>
-                    <img src="source-img/school.png" class="icon">
+                    <img src="source-img/school.png" alt="Giới thiệu về Trường Đại học Sư phạm Hà Nội" class="icon">
                     <span class="links_name contentVN">Giới thiệu về HNUE</span>
                     <span class="links_name contentEnglish">HNUE introduction</span>
                 </a>
@@ -88,7 +88,7 @@
             <li>
                 <a onclick="toggleProductIntroductionDiv()">
                     <div class="highlight"></div>
-                    <img src="source-img/map-solid.svg" class="icon">
+                    <img src="source-img/map-solid.svg" alt="Giới thiệu về sản phẩm HNUE map - Bản đồ tương tác Trường Đại học Sư phạm Hà Nội" class="icon">
                     <span class="links_name contentVN">Giới thiệu về sản phẩm</span>
                     <span class="links_name contentEnglish">Product introduction</span>
                 </a>
@@ -96,7 +96,7 @@
             <li>
                 <a onclick="toggleInfomationPagesDiv()">
                     <div class="highlight"></div>
-                    <img src="source-img/browser.png" class="icon">
+                    <img src="source-img/browser.png" alt="Các trang thông tin và các câu lạc bộ của Trường Đại học Sư phạm Hà Nội" class="icon">
                     <span class="links_name contentVN">Các trang thông tin</span>
                     <span class="links_name contentEnglish">Information pages</span>
                 </a>
@@ -104,7 +104,7 @@
             <li>
                 <a target="_blank" onclick="confirmRedirect()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/book.png" class="icon">
+                    <img src="source-img/book.png" alt="Thông tin tuyển sinh năm 2024 của Trường Đại học Sư phạm Hà Nội" class="icon">
                     <span class="links_name contentVN">Thông tin tuyển sinh 2024</span>
                     <span class="links_name contentEnglish">2024 Admission Information</span>
                 </a>
@@ -112,7 +112,7 @@
             <li>
                 <a onclick="toggleSocialNetworkDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/user-group-solid.svg" class="icon">
+                    <img src="source-img/user-group-solid.svg" alt="Mạng xã hội Diễn đàn Tri thức" class="icon">
                     <span class="links_name contentVN">Diễn đàn Tri thức</span>
                     <span class="links_name contentEnglish">Knowledge Forum</span>
                 </a>
@@ -120,7 +120,7 @@
             <li>
                 <a onclick="toggleSupportDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/feedback.png" class="icon">
+                    <img src="source-img/feedback.png" alt="Góp ý với chúng tôi" class="icon">
                     <span class="links_name contentVN">Góp ý với chúng tôi</span>
                     <span class="links_name contentEnglish">Give us your feedback</span>
                 </a>
@@ -128,7 +128,7 @@
             <li>
                 <a onclick="toggleDonateDiv()" style="cursor: pointer;">
                     <div class="highlight"></div>
-                    <img src="source-img/donate.svg" class="icon">
+                    <img src="source-img/donate.svg" alt="Ủng hộ chúng tôi" class="icon">
                     <span class="links_name contentVN">Mua trà sữa cho chúng tôi</span>
                     <span class="links_name contentEnglish">Buy milk tea for us</span>
                 </a>
@@ -138,13 +138,13 @@
                 <div class="language-toggle-box">
                     <input type="checkbox" id="language-toggle"/>
                     <label for="language-toggle">
-                        <img class="vi" src="source-img/Vi.png">
-                        <img class="en" src="source-img/En.png">
+                        <img class="vi" alt="Ngôn ngữ tiếng Việt" src="source-img/Vi.png">
+                        <img class="en" alt="Ngôn ngữ tiếng Anh" src="source-img/En.png">
                     </label>
                 </div>
 
                 <!-- Nhạc nền -->
-                <img id="music" src="source-img/muted.png" onclick="toggleImageBorderAndMusic()">
+                <img id="music" alt="Icon music" src="source-img/muted.png" onclick="toggleImageBorderAndMusic()">
                 <audio id="backgroundMusic" loop>
                     <source src="sound/Fiction - Beast.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
@@ -154,7 +154,7 @@
                 <div id="google-login-div">
                     <span id="userName"></span>
                     <p id="userEmail" style="display: none;"></p>
-                    <img id="userProfilePicture" src="source-img/grey-img.jpg" data-bs-toggle="tooltip" title="Đăng xuất">
+                    <img id="userProfilePicture" alt="Ảnh đại diện người dùng" src="source-img/grey-img.jpg" data-bs-toggle="tooltip" title="Đăng xuất">
                     <button class="" id="logout-btn">
                         <span class="contentVN">Đăng xuất</span>
                         <span class="contentEnglish">Logout</span>
@@ -169,7 +169,7 @@
     <div id="mobile-toolbar">
         <button id="open-menu"></button>
         <span id="app-name">HNUE map</span>
-        <img id="open-search-menu" onclick="toggleHide()" src="source-img/magnifying-glass-solid.svg">
+        <img id="open-search-menu" alt="Mở thanh tìm kiếm" onclick="toggleHide()" src="source-img/magnifying-glass-solid.svg">
     </div>
     <div id="social-network-toolbar">
         <button id="close-social-network-div" onclick="hideSocialNetworkDiv()" data-bs-toggle="tooltip" title="Rời khỏi mạng xã hội"></button>
@@ -292,19 +292,20 @@
 
         <div id="product-introduction">
             <button class="close-div" onclick="hideProductIntroductionDiv()"></button>
-            <span class="contentVN building-name">
-                Giới thiệu về sản phẩm HNUE map của chúng tôi
-            </span>
-            <span class="contentEnglish building-name">
-                Introducing our HNUE map product
-            </span>
+            <h1 class="contentVN styleh1">
+                Giới thiệu về sản phẩm HNUE map - Bản đồ Trường Đại học Sư phạm Hà Nội
+            </h1>
+            <h1 class="contentEnglish styleh1">
+                Introduction to the HNUE Map - Hanoi National University of Education Map
+            </h1>
+            <img class="img-demo" style="margin-top: 50px; margin-bottom: 30px;" alt="Ảnh demo bản đồ tương tác Trường Đại học Sư phạm Hà Nội" src="https://firebasestorage.googleapis.com/v0/b/hnue-map-42e10.appspot.com/o/source-img%2Fhnue-demo.png?alt=media&token=463487be-0161-455a-b8ef-50ae5a91f089">
             <span class="contentVN building-info">
-                HNUE Map cung cấp bản đồ chi tiết và chính xác về toàn bộ khuôn viên nhà trường, giúp người dùng dễ dàng di chuyển từ điểm này sang điểm khác một cách nhanh chóng nhất. Ngoài ra người dùng có thể tìm kiếm thông tin chi tiết về mỗi địa điểm bao gồm giờ mở cửa, thông tin liên hệ, diện tích và đánh giá từ những người dùng khác. Người dùng có thể đánh dấu những địa điểm yêu thích, đánh giá các địa điểm, chia sẻ thông tin cho người khác.<br>
-                HNUE Map giúp người dùng tránh được việc lạc đường và tìm kiếm một cách nhanh chóng những địa điểm mà họ cần đến. Điều này giúp tiết kiệm thời gian di chuyển và năng lượng. Cung cấp cơ hội cho sinh viên và nhân viên HNUE giao lưu và kết nối với nhau thông qua tính năng chia sẻ địa điểm yêu thích và nhận xét. Điều này tạo ra một cộng đồng sôi động và trải nghiệm gần gũi hơn cho người dùng. “HNUE Map” không chỉ là một công cụ điều hướng mà còn cung cấp thông tin về các nguồn tài nguyên học tập và nghiên cứu trên khuôn viên trường. Điều này giúp sinh viên dễ dàng tiếp cận các nguồn thông tin và tài liệu cần thiết cho học tập và nghiên cứu của mình.
+                Trường Đại học Sư phạm Hà Nội (ĐHSPHN) với quy mô tuyển sinh tăng dần qua các năm - 5000 sinh viên vào năm 2022, 4100 sinh viên vào năm 2023 và dự kiến 4400 sinh viên vào năm 2024 - đang đối mặt với thách thức hỗ trợ sinh viên tìm kiếm thông tin và điều hướng trong khuôn viên rộng lớn của trường. Hiện tại, mặc dù các ứng dụng địa lý như Google Maps đã hỗ trợ rất nhiều, nhưng vẫn chưa đáp ứng được nhu cầu cung cấp thông tin chi tiết về các tòa nhà và dịch vụ cụ thể trong trường. Để giải quyết vấn đề này, nhóm nghiên cứu đã phát triển "Bản đồ tương tác Trường Đại học Sư phạm Hà Nội", một trang web tương tác giúp học sinh, sinh viên, phụ huynh và cán bộ dễ dàng nắm bắt thông tin và di chuyển trong khuôn viên trường. Ứng dụng này không chỉ định vị chính xác các địa điểm cụ thể mà còn tạo cơ hội kết nối trong cộng đồng sinh viên, khác biệt so với các bản đồ tĩnh truyền thống. Kết quả là một bản đồ tương tác đáp ứng nhu cầu tìm kiếm thông tin và kết nối trong cộng đồng sinh viên một cách hiệu quả, sử dụng các công nghệ như GIS, Leaflet, OSM, và OSRM. Ứng dụng cung cấp thông tin chi tiết về các tòa nhà, khoa, phòng ban và các tiện ích xung quanh như quán ăn, trạm xăng, bệnh viện và siêu thị, với khả năng điều hướng chính xác đến từng địa điểm. Thiết kế giao diện đẹp mắt, dễ sử dụng và hỗ trợ cả tiếng Việt lẫn tiếng Anh giúp sinh viên trong và ngoài nước dễ dàng tương tác. Ứng dụng còn tích hợp mạng xã hội, giúp sinh viên chia sẻ kiến thức, kinh nghiệm và tăng cường kết nối. Nhóm nghiên cứu đã tiến hành khảo sát qua Google Forms để thu thập thông tin về nhu cầu sử dụng bản đồ từ các đối tượng trong và ngoài trường, đảm bảo sản phẩm đáp ứng được các yêu cầu thực tế. Ứng dụng bản đồ tương tác không chỉ giúp người dùng tiếp cận thông tin một cách nhanh chóng và trực quan mà còn hỗ trợ họ theo dõi dữ liệu hiệu quả hơn. Sản phẩm này đại diện cho một bước tiến trong việc áp dụng công nghệ thông tin vào giáo dục, mang lại trải nghiệm hiện đại và tiện lợi cho cộng đồng sinh viên và cán bộ trường ĐHSPHN. Với sự phát triển nhanh chóng của công nghệ, bản đồ tương tác đang trở thành một công cụ không thể thiếu trong việc cung cấp thông tin và hỗ trợ điều hướng. Ứng dụng bản đồ tương tác của Trường Đại học Sư phạm Hà Nội không chỉ giải quyết nhu cầu hiện tại mà còn mở ra xu hướng đổi mới trong giảng dạy và hỗ trợ sinh viên, góp phần tạo ra một môi trường học tập tiên tiến và kết nối.<br><br>
             </span> 
             <span class="contentEnglish building-info">
-                HNUE Map provides detailed and accurate maps of the entire campus, helping users easily navigate from one point to another in the quickest way possible. Additionally, users can search for detailed information about each location including opening hours, contact information, area, and ratings from other users. Users can bookmark favorite locations, rate places, and share information with others.<br>
-                HNUE Map helps users avoid getting lost and quickly find the places they need to go. This saves time and energy. It provides an opportunity for HNUE students and staff to interact and connect with each other through features like sharing favorite locations and reviews. This creates a lively community and a more intimate experience for users. "HNUE Map" is not only a navigation tool but also provides information about educational and research resources on campus. This helps students easily access the necessary information and documents for their studies and research.
+                Hanoi National University of Education (HNUE), with its increasing enrollment scale over the years - 5000 students in 2022, 4100 students in 2023, and an expected 4400 students in 2024 - is facing the challenge of supporting students in finding information and navigating its vast campus. Currently, although geographic applications like Google Maps have been very helpful, they still do not meet the need for detailed information about specific buildings and services within the university. To address this issue, the research team has developed the "Interactive Map of Hanoi National University of Education," an interactive website that helps students, parents, and staff easily access information and navigate the HNUE campus. This application not only accurately locates specific places but also creates opportunities for connection within the student community, distinguishing it from traditional static maps. The result is an interactive map that effectively meets the needs of information search and connection within the student community, using technologies such as GIS, Leaflet, OSM, and OSRM.<br>
+                The application provides detailed information about buildings, departments, offices, and surrounding amenities like restaurants, gas stations, hospitals, and supermarkets, with precise navigation to each specific location. Its visually appealing and user-friendly interface, along with support for both Vietnamese and English, makes it easy for both domestic and international students to interact. The application also integrates social networking features, enabling students to share knowledge, experiences, and enhance connections. The research team conducted surveys through Google Forms to gather information on the map usage needs from both internal and external university audiences, ensuring the product meets practical requirements.<br>
+                The interactive map application not only helps users access information quickly and intuitively but also aids them in tracking data more efficiently. This product represents a step forward in applying information technology to education, providing a modern and convenient experience for the HNUE student and staff community. With the rapid development of technology, interactive maps are becoming an indispensable tool in providing information and supporting navigation. The interactive map application of Hanoi National University of Education not only addresses current needs but also opens up a trend of innovation in teaching and student support, contributing to creating an advanced and connected learning environment.
             </span>
         </div>
 
@@ -2810,7 +2811,6 @@
         
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
-
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
     <script src="js/index-function.js"></script>
