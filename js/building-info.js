@@ -354,13 +354,159 @@ var buildingData = {
     "nameVN": "CÁC TOÀ NHÀ D1, D2, D4 - TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI",
     "nameEN": "D1, D2, D4 BUILDINGS - HANOI UNIVERSITY OF EDUCATION",
     "infoVN": "<b>Trường THPT Chuyên Sư Phạm</b><br>\
-              Tầng 1, 2, 3, 4, 5, 6<br>\
+              <b>1. Cơ cấu tổ chức</b><br><br>\
+              Hiệu trưởng: <b>TS. Vũ Văn Tiến</b><br>\
+              <ul><br>\
+                <li>Phòng làm việc: Tầng 3 nhà D2</li><br>\
+                <li>Điện thoại (cơ quan): </li><br>\
+                <li>Email: tienvm@hnue.edu.vn</li><br>\
+                <li>Phụ trách: Chung</li><br>\
+              </ul><br>\
+              Phó hiệu trưởng: <b>TS. Phạm Sỹ Cường</b><br>\
+              <ul><br>\
+                <li>Phòng làm việc: Tầng 3 nhà D2</li><br>\
+                <li>Điện thoại (cơ quan): </li><br>\
+                <li>Email: cuongps@hnue.edu.vn</li><br>\
+                <li>Phụ trách: Chuyên môn</li><br>\
+              </ul><br>\
+              Phó hiệu trưởng: <b>TS. Phạm Minh Phương</b><br>\
+              <ul><br>\
+                <li>Phòng làm việc: Tầng 3 nhà D2</li><br>\
+                <li>Điện thoại (cơ quan): </li><br>\
+                <li>Email: phuongpm@hnue.edu.vn</li><br>\
+                <li>Phụ trách: Cơ sở vật chất</li><br>\
+              </ul><br>\
+              <b>2. Lịch sử phát triển</b><br><br>\
+              Từ lớp học đầu tiên với 31 học sinh ở các vùng quê khác nhau được tuyển vào lớp chuyên Toán sơ tán tại Phủ Cừ, Hưng Yên cho đến nay, khối phổ thông chuyên Toán - Tin ĐHSP Hà Nội đã tròn 35 năm xây dựng và phát triển.<br>\
+              Đã có 1.100 học sinh tốt nghiệp ra trường, đã có nhiều học sinh trưởng thành hiện đã và đang là những cán bộ có năng lực và tài năng cho Toán học, Tin học và những ngành khoa học kỹ thuật khác.<br>\
+              Chỉ tính trong 12 khóa đào tạo đầu tiên đã có 80 Phó tiến sĩ, 10 Tiến sĩ, 5 Phó giáo sư vốn là học sinh của khối chuyên Toán - Tin ĐHSP.<br>\
+              Rồi những giải thưởng thi học sinh giỏi quốc gia, 27 giải đoạt được qua các kỳ thi Toán quốc tế, một số giải thưởng thi quốc gia và quốc tế về Tin học.... đã làm đẹp, làm dày thêm truyền thống của khối. Những con số biết nói đó làm chúng ta thêm tự hào.<br>\
+              ở bài viết này, tôi muốn nói tới một khía cạnh khác những mong gợi thêm một nét đẹp truyền thống của khối Phổ thông chuyên Toán - Tin ĐHSP Hà Nội. Tôi tạm gọi đó là \"tính cách truyền thống\" của học sinh khối ta.<br>\
+              Nhớ lại để thấy rằng: gần 10 năm đầu, thầy và trò khối ta phải sống, dạy và học trong chiến tranh.<br>\
+              Giặc Mỹ ném bom, bắn phá ác liệt. Năm 1966, sơ tán ở Phủ Cừ - Hưng Yên ít lâu, thầy và trò qua sông Hồng \"hành quân\" về một vùng quê ven sông Đáy, trú tại thôn Viện thuộc ứng Hoà tỉnh Hà Tây.<br>\
+              Năm 1972, giặc Mỹ leo thang dùng máy bay B52 đánh bom huỷ diệt, lệnh cấp tán. Thầy và trò lại vượt sông Hồng lên sơ tán tại Yên Lạc - Vĩnh Phúc.<br>\
+              Tôi cứ nghĩ mà thương cho ngày trực trường vào khối chuyên Toán ĐHSP Hà Nội của các em học sinh khoá đầu tiên. Tàu xe lăn lộn, chắc vất vả lắm 31 học sinh nam nữ đều nhỏ tuổi mới lần tìm ra nơi sơ tán ở Phủ Cừ?<br>\
+              Nhưng lại càng lo và thương hơn cho ngày nhập học của học sinh khóa 6 khi giặc Mỹ đang bắt đầu đánh bom B52 vào Hà Nội tháng 12 năm 1972.<br>\
+              Cả khối đã sơ tán lên thôn Hoa Đà, Yên Lạc, Vĩnh Phú chỉ còn chờ 30 em lớp 8 (nay gọi là lớp 10) vì tình thế nhập trường muộn.<br>\
+              Đâu có phương tiện liên lạc bằng điện thoại như bây giờ. Chỉ được báo rằng: đúng ngày giờ, trường Đại học Sư phạm chuyên chở các em bằng ô tô từ Cầu Giấy lên nơi sơ tán.<br>\
+              Suốt một ngày nóng lòng chờ đợi mà không thấy đâu? Nỗi lo lắng hiện lên trên những khuôn mặt các thầy và các em học sinh khóa 4 - khóa lớn nhất trong khối lúc bấy giờ.<br>\
+              Mãi quá 8 giờ tối, ô tô mới lên tới nơi. Thì ra đê bảo đảm an toàn xe phải đi vòng, lúc đi lúc dừng. Xe dừng ở đầu làng thì vang lên kẻng báo động. Trên bầu trời tối mịt đã ầm ì tiếng máy bay B52 giặc Mỹ. Và mươi phút sau rực lên chớp lửa và tiếng bom rền ở bầu trời Hà Nội phía xa.<br>\
+              Trong ảnh lửa nhập nhoạng của bom đạn ấy các thầy đón từng em học sinh nhỏ bé xuống xe. Kiểm đủ 30 năm, mới thở phào nhẹ nhõm...<br>\
+              Những năm sơ tán, ở nhờ nhà dân, ăn cơm tập thể loáng thoáng canh rau, lưa thưa chất đạm thế mà vẫn vui. Lớp học vách tre, mái lá bìa làng, giao thông hào xẻ vào giữa lớp, lúc \"cấp tán\" thì mượn thêm chùa, nhà kho học tác xã, thầy đứng, trò ngồi xuống đất mà giảng bài, mà ghi chép. Thế mà đầy háo hức.<br>\
+              Đêm đến, những ngọn đèn dầu ánh sáng thu nhỏ đủ soi một trang sách mà thắp mãi những ước mơ cháy bỏng.<br>\
+              Nâng niu từng mầm xanh mới nẩy, từng nụ hoa mới chớm nhưng không nương nhẹ những yêu cầu cao của một vườn ươm các tài năng tương lai. Ngay từ buổi đầu, khối chủ trương giáo dục toàn diện để từ đó phát hiện và bồi dưỡng những tài năng tương lai, không chỉ kiến thức mà vun đắp tâm hồn, vốn sống và bước đầu tạo bản lĩnh cho từng học sinh.<br>\
+              Từ chiếc nôi ấy, vườn ươm ấy đã tạo nên truyền thống đẹp.<br>\
+              ở kỳ thi tốt nghiệp phổ thông năm học 1968 - 1969, học sinh khóa đầu khối chuyên Toán Đại học Sư phạm đã làm xôn xao hội đồng chấm thi về kết quả xuất sắc.<br>\
+              Các môn Toán, Lý, Hóa thì khỏi phải nói - đó là chỗ mạh của \"con nhà nòi\" - mà đến môn Văn cũng giỏi. Lúc đó còn chấm thi theo thang điểm Liên Xô (Từ điểm 1 đến điểm bậc 5), học sinh chuyên Toán chúng ta đã đạt hầu hết các điểm 4 và điểm 5 (nghĩa là khá và giỏi) của hội đồng.<br>\
+              Đặc biệt năm đó có em Hồ Tú Bảo được đi thi học sinh giỏi cả môn Toán lẫn môn Văn. Có lẽ cho đến bây giờ, đó là trường hợp hy hữu của khối ta.<br>\
+              Đi thi giỏi Toán thì tất nhiên rồi. Còn môn Văn thi là chuyện tình cờ, Hồ Tú Bảo học Văn tốt, thích làm thơ. Khối ta đăng ký cho Bảo thi tử cùng các em học sinh giỏi Văn tỉnh Hà Tây. Ai ngờ Hồ Tú Bảo đạt điểm cao nhất. Thế là Bảo đứng đầu danh sách đội tuyển Văn tỉnh Hà Tây đi thi toàn quốc.<br>\
+              Vì trường hợp đặc biệt nên khi các bạn trong đội tuyển Toán thi ở nhà thì Hồ Tú Bảo cùng thầy Cao Sơn đạp xe lên thi ở hội đồng thi Phúc Thọ thuộc Hà Tây để hôm trước thi Văn, hôm sau thi Toán. Dẫu vất vả nhưn mà vui lắm.<br>\
+              Đến khóa thứ 4 lại có thêm một \"kỷ lục mới\": em Nguyễn Hải Thanh đi thi tốt nghiệp đạt 39 điểm của 4 môn thi. Trong đó Toán và Văn đều đạt điểm 10. Kỷ lục 10 điểm Văn trong khối ta cho đến nay chưa bị phá!<br>\
+              Thế rồi đến khóa 28 em Vũ Thu Trang đã thi đỗ vào khoa Văn ĐHSP có học bổng và suốt 4 nă là 1 lớp trưởng có uy tín giữ được học bổng 4 năm liền, lại còn làm luận văn, đỗ tốt nghiệp loại khá.<br>\
+              Học sinh chuyên Toán - Tin ĐHSP còn có truyền thống đá bóng hay và ham thích làm thơ.<br>\
+              Chả thế mà dân mê sân cỏ ở Đại học Sư phạm đã gọi yêu là các cầu thủ toán \"con\". Em Vượng đã là thủ môn của đội tuyển trường Đại học Sư phạm của một mùa giải thi đấu xuất sắc. Em Việt, em Phúc là những tiền đạo vào loại hay nhất của trường.<br>\
+              Còn thơ thì cũng không kém cạnh gì. Tôi còn nhớ năm 1976, đã có một tờ báo dành cả một bài dài bình và trích dẫn những vần thơ của các em chuyên Toán Đại học Sư phạm. ít lâu sau, Đài tiếng nói Việt Nam cũng có một buổi giới thiệu về hồn thơ chuyên Toán trong chương trình phát thanh văn nghệ.<br>\
+              Có lẽ thơ và toán không khác xa nhau cho những tâm hồn cần sức tuởng tượng và sáng tạo.<br>\
+              Mùa hè năm 1974, lần đầu tiện Việt Nam chúng ta cử học sinh đi thi toán quốc tế. Đội tuyển gồm 4 học sinh gồm có hai thuộc chuyên Toán Đại học Sư phạm là Vũ Đình Hoà và Tạ Hồng Quảng và hai em Hoàng Lê Minh, Nguyễn Hoàng Trung của Đại học Tổng hợp.<br>\
+              Kỳ thi tổ chức tại Éc - Phuốc (Cộng hoà Dân chủ Đức). Lần đầu tiên đi thi, lo lắng và hồi hộp lắm. Rất nhiều nước lần đầu dự thi thường trắng tay. Có nước tham gia hàng chục lần mà chưa có huy chương nào! Ta lại nghèo, lại sau bao năm chiến tranh.<br>\
+              Tin vui thật bất ngờ: Đoàn Việt Nam đứng thứ 4 với 1 giải nhất, 1 giải nhì, 2 giải ba. Trong đó Vũ Đình Hoà giải nhì và Tạ Hồng Quảng đoạt giải ba khiến bạn bè khâm phục.<br>\
+              Thành công của Vũ Đình Hoà và Tạ Hồng Quảng có thể coi là bước mở đầu cho truyền thống đi thi Toán và Tin quốc tế mf khối ta có được hôm nay?<br>\
+              Nhìn vào cuộc sống hàng ngày, dễ nhận ra sự khiêm tốn, giản dị ở học sinh khối chuyên Toán - Tin Đại học Sư phạm. Giản dị đến mộc mạc, trong sáng. Mọi điều diêm dúa, đua đòi đều bị đánh bật ra ngay. Có lẽ khi sống có mục đích, có ước mở đẹp thì con người sẽ rũ bỏ được những lề thói tầm thường.<br>\
+              Và đậm hơn, tôi muốn nói thêm ở đây là không ít học sinh khối ta sớm có nghị lực, có bản lĩnh.<br>\
+              Cuộc sống đôi khi không suôn sẻ, phải biết vượt lên bằng chính mình. Tôi tạm nhớ đâu ghi đấy ra đây vài \"chân dung\" trong rất nhiều chân dung \"đáng quý, đáng yêu\" ấy.<br>\
+              Năm 1969, sau khi ra trường, anh Hồ Tú Bảo vào học khoa Toán Đại học Sư phạm. Hết năm thứ nhất, Bảo xung phong đi bộ đội, đã từng là chiến đấu ở chiến trường đường 9, đã từng làm trinh sát vượt sông Thạch Hãn, được tặng thưởng Huân chương chiến công và kết nạp Đảng ngay trong chiến hào.<br>\
+              Bị thương, từ quân ngũ trở về anh Bảo thi đậu vào Đại học Bách khoa. Rồi bằng nghị lực phấn đấu, anh đã bảo vệ luận án Tiến sĩ tại nước Pháp.<br>\
+              Lại có trường hợp oái oăm như Phạm Ngọc ánh.<br>\
+              Anh Phạm Ngọc ánh là học sinh chuyên Toán khóa 3. Đi học là học sinh nhỏ tuổi nhất lớp. Hết lớp 10 (tức là lớp 12 hiện nay) mặc dầu đoạt giải toán quốc gia, tốt nghiệp và thi đại học vào loại giỏi nhưng chưa được đi học ở nước ngoài như các bạn vì chưa đủ 15 tuổi để kết nạp Đoàn. Mà lúc đó qui định phải là đoàn viên mới được đi học ở các nước Xã hội chủ nghĩa.<br>\
+              Thế là không nản chí, ở lại trong nước một năm vừa ôn tập vừa chờ đủ tuổi để vào Đoàn, năm sau ánh sang Hunggari học tập xuất sắc rồi trở thành một Tiến sĩ trẻ trong ngành Toán học.<br>\
+              Nhà văn Nguyễn Bá Học những năm đầu thế kỷ XX đã từng viết: \"Đương đi khó ki phải vì ngăn sông cách núi mà chỉ khó vi lòng người ngại vượt núi, e sông\".<br>\
+              ở khóa thứ 2, rồi chuân chuyên rơi vào anh Đặng Hùng Thắng. Học giỏi, biết chơi đàn, từng đoạt giải Toán quốc gia. Vậy mà chỉ vì hoàn cảnh không thể đi học nước ngoài.<br>\
+              Các bạn cùng lớp lên đường, anh Thắng ở lại cặm cụi một năm vừa ôn tập vừa đi làm thêm để thi đậu vào Đại học Tổng hợp. Anh tự vượt lên hoàn cảnh để trở thành Tiến sĩ ngành Toán mà tuổi nhỏ mơ ước, trở thành cán bộ giảng dạy Đại học Tổng hợp.<br>\
+              Cũng trường hợp như anh Thắng là anh Đỗ Đức Thái. Thông minh, học giỏi, đi thi Toán quốc tế đoạt giải tại Rumani. Vậy mà cũng vì hoàn cảnh không thẻ sang nước ngoài như các bạn được.<br>\
+              Bằng nghị lực và bản lĩnh, anh Thái theo học Đại học Sư phạm, đỗ xuất sắc được giữ lại làm cán bộ giảng dạy kiên trì học tập và nghiên cứu khoa học để trở thành Tiến sĩ khoa học Toán học. Con đường vòng vèo hơn 10 năm. Thật nhẫn nại!<br>\
+              Hơn 30 năm đã trôi qua, nét đẹp truyền thống vẫn nối tiếp trong khối phổ thông chuyên Toán - Tin Đại học Sư phạm Hà Nội.<br>\
+              Thời gian sẽ còn trôi chảy,  cái đẹp đọng lại sâu đậm nhất là vẻ đẹp tâm hồn, là truyền thống tính cách đã được vun đắp từ khối học phổ thông chuyên Toán - Tin Đại học Sư phạm thân thương này.<br><br>\
+              <b>3. Chất lượng đào tạo</b><br><br>\
+              Ngoài các em đặc biệt xuất sắc, tham gia vào các đội tuyển học sinh giỏi và đạt giải trong các kì thi Quốc gia, Quốc tế, các học sinh còn lại của nhà trường đều đỗ vào các trường đại học, trong đó phần lớn đỗ vào các trường đại học thuộc tốp đầu. Nhiều học sinh đạt thủ khoa cả đầu vào và đầu ra. Nhiều học sinh nhận được học bổng toàn phần từ các trường đại học danh tiếng trên thế giới. Sau khi ra trường các em đều thành đạt, nhiều em giữ những vị trí chủ chốt của các đơn vị hay doanh nghiệp cả trong nước và ngoài nước. Nhiều học sinh của nhà trường đã trở thành những chuyên gia, nhà khoa học đầu ngành có ảnh hưởng không chỉ trong nước mà còn trên quốc tế:<br>\
+              <ul><br>\
+                <li>Cựu học sinh Đoàn Xuân Hưng từng là đại sứ Việt Nam tại nhiều nước, từng giữ chức vụ Thứ trưởng Bộ Ngoại giao</li><br>\
+                <li>Tiến sỹ Toán học Nguyễn Đình Công, phó chủ tịch Viện Hàn lâm Khoa học và Công nghệ Việt Nam</li><br>\
+                <li>GS. TSKH Lê Tự Cường, viện Toán học, có gần 60 công trình khoa học được công bố trên các tạp chí uy tín trong và ngoài nước. Ông hướng dẫn thành công 12 tiến sĩ, trong đó có nghiên cứu sinh nổi tiếng là giáo sư nữ toán học thứ hai của Việt Nam Lê Thị Thanh Nhàn, giải thưởng Hồ Chí Minh năm 2016</li><br>\
+                <li>GS. TSKH Hồ Tú Bảo, Viện Khoa học và Công nghệ Tiên tiến Nhật Bản (Jais), có nhiều công trình khoa học nổi tiếng thế giới, hướng dẫn thành công 20 Tiến sỹ và nhiều Thạc sỹ, có đóng góp rất lớn cho giáo dục Việt Nam, giáo sư thường xuyên về nước giảng dạy và tổ chức các hội thảo khoa học, hướng dẫn các NCS Việt Nam… Có nhiều công trình ứng dụng hiệu quả trong thực tế Việt Nam.</li><br>\
+                <li>PGS. TSKH Vũ Đình Hòa, người đầu tiên đoạt huy chương bạc toán quốc tế năm 1974 của Việt Nam, là người thầy đã truyền tình yêu toán học từ thời thơ bé cho nhiều thế hệ học trò trong đó có GS. Ngô Bảo Châu, sau này giành giải thưởng danh giá nhất thế giới về toán. Sau này, ông có nhiều năm làm trưởng đoàn Việt Nam tại kỳ thi</li><br>\
+                <li>Giáo sư Nguyễn Quang Diệu là người trẻ nhất trong số 34 nhà giáo trở thành Giáo sư từ năm 2011 (lúc đó 37 tuổi). Điều đặc biệt nhất, năm 2007, anh cũng là Phó giáo sư trẻ nhất trong đợt phong hàm</li><br>\
+                <li>Cựu học sinh Phạm Quang Vũ, hai lần giải Nhất Quốc gia môn Tin học,  tốt nghiệp thủ khoa xuất sắc của ĐH Công nghệ Nanyang (NTU), Singapore. Vào tháng 10/2012, khi còn là sinh viên năm cuối, chàng trai nhận được lời mời ứng tuyển cho vị trí kỹ sư lập trình ở tập đoàn Microsoft, làm việc ở Seattle (Mỹ). Mức lương thỏa thuận là 180 triệu đồng mỗi tháng, mỗi năm tăng lương 20% đến 30%, chưa kể thưởng. Vũ  trở thành nhân viên trẻ tuổi nhất được nhận khi Microsoft về NTU tuyển dụng</li><br>\
+              </ul><br>\
+              <b>4. Cơ sở vật chất</b><br><br>\
+              Hiện trường đã xây dựng được cơ ngơi khang trang với 40 phòng học, 2 phòng thực hành Tin học, một phòng học Tiếng Anh, 3 phòng thí nghiệm cho các môn: Lý, Hóa, Sinh với đầy đủ thiết bị cần thiết,  một phòng đa phương tiện, 2 phòng chờ giáo viên, các phòng tổ Bộ môn, văn phòng Đoàn, phòng hành chính, phòng tài vụ ....  Các phòng học được đầu tư trang thiết bị hiện đại phục vụ tốt nhất cho công tác giảng dạy: điều hoà, máy chiếu, loa đài….<br>\
+              Ngoài ra học sinh của Trường còn được sử dụng cơ sở vật chất chung của Đại học Sư phạm như: Các phòng thí nghiệm của các khoa (Vật lý, Hoá học, Sinh học,…) và các đội tuyển học sinh giỏi của nhà trường còn được sử dụng các phòng thí nghiệm hiện đại của Đại học Sư phạm phục vụ cho thi Olympic Quốc tế; thư viện với nhiều phòng đọc và nhiều đầu sách tham khảo quý giá; sân vận động được đầu tư hiện đại, kí túc xá cho học sinh ở ngoại tỉnh….<br><br>\
               Số điện thoại: 02437547661<br>\
               Email: c3chuyendhsp@hanoiedu.vn<br>\
               Website: <a href=\"https://chuyensp.edu.vn/\" target=\"_blank\">chuyensp.edu.vn</a><br>\
               Fanpage: <a href=\"https://www.facebook.com/chuyendaihocsupham/?locale=vi_VN\" target=\"_blank\">Facebook</a>",
     "infoEN": "<b>High School for Gifted students, HNUE</b><br>\
-              Floor 1, 2, 3, 4, 5, 6<br>\
+              <b>1. Organizational Structure</b><br><br>\
+              Principal: <b>Dr. Vũ Văn Tiến</b><br>\
+              <ul><br>\
+                <li>Office: 3rd floor, D2 Building</li><br>\
+                <li>Office Phone: </li><br>\
+                <li>Email: tienvm@hnue.edu.vn</li><br>\
+                <li>Responsibility: General</li><br>\
+              </ul><br>\
+              Vice Principal: <b>Dr. Phạm Sỹ Cường</b><br>\
+              <ul><br>\
+                <li>Office: 3rd floor, D2 Building</li><br>\
+                <li>Office Phone: </li><br>\
+                <li>Email: cuongps@hnue.edu.vn</li><br>\
+                <li>Responsibility: Specialization</li><br>\
+              </ul><br>\
+              Vice Principal: <b>Dr. Phạm Minh Phương</b><br>\
+              <ul><br>\
+                <li>Office: 3rd floor, D2 Building</li><br>\
+                <li>Office Phone: </li><br>\
+                <li>Email: phuongpm@hnue.edu.vn</li><br>\
+                <li>Responsibility: Facilities</li><br>\
+              </ul><br>\
+              <b>2. Development History</b><br><br>\
+              From the first class with 31 students from different rural areas admitted to the specialized Math class relocated in Phủ Cừ, Hưng Yên, to now, the Math - Informatics specialized high school of Hanoi National University of Education has completed 35 years of construction and development.<br>\
+              1,100 students have graduated, many of whom have become competent and talented officials in Mathematics, Informatics, and other technical sciences.<br>\
+              In just the first 12 training courses, there were 80 Associate PhDs, 10 PhDs, and 5 Associate Professors who were students of the Math - Informatics specialized class at HNUE.<br>\
+              Then there were national academic competition awards, 27 awards won through international Math competitions, several national and international Informatics awards... These achievements enrich the tradition of the specialized class. These meaningful numbers make us even more proud.<br>\
+              In this article, I want to talk about another aspect, hoping to evoke a traditional beauty of the Math - Informatics specialized high school of HNUE. I temporarily call it the \"traditional character\" of our students.<br>\
+              Recall that for nearly the first 10 years, teachers and students of our class had to live, teach, and study during the war.<br>\
+              The Americans bombed and fiercely attacked. In 1966, after evacuating to Phủ Cừ - Hưng Yên for a while, teachers and students crossed the Red River \"marching\" to a countryside along the Đáy River, residing in Viện village, Ứng Hòa district, Hà Tây province.<br>\
+              In 1972, as the Americans escalated their attacks using B52 bombers, causing mass destruction, orders for dispersal were issued. Teachers and students again crossed the Red River to evacuate to Yên Lạc - Vĩnh Phúc.<br>\
+              I think and feel sorry for the first day of admission to the specialized Math class of HNUE for the first cohort of students. The travel must have been very difficult for 31 young students to find the evacuation site in Phủ Cừ?<br>\
+              But even more worrying and compassionate was the admission day of the 6th cohort when the Americans began bombing Hanoi with B52s in December 1972.<br>\
+              The entire class had evacuated to Hoa Đà village, Yên Lạc, Vĩnh Phú, waiting for the 30 8th-grade students (now called 10th grade) due to delayed admission.<br>\
+              There were no phone communication facilities like now. It was only informed that on the specified date and time, the University of Education would transport the students by car from Cầu Giấy to the evacuation site.<br>\
+              All day long, anxiously waiting without any sign? The anxiety was evident on the faces of the teachers and the 4th cohort students, the largest cohort at the time.<br>\
+              Not until after 8 p.m. did the car arrive. It turned out the car had to take detours to ensure safety, stopping and going. When the car stopped at the village entrance, the air raid alarm rang. In the dark sky, the roaring sound of B52 bombers could be heard. Moments later, the sky over Hanoi far away lit up with flames and bombs.<br>\
+              In the flickering light of bombs, the teachers welcomed each small student off the car. After confirming all 30 students were present, they finally sighed in relief...<br>\
+              During the evacuation years, staying with villagers, eating communal meals with sparse vegetable soup, and little protein, yet still joyful. The class was in bamboo-walled, thatched-roof rooms at the village edge, with trenches dug into the middle of the class, borrowing temples and communal warehouses during \"dispersal\" periods, where teachers stood and students sat on the ground to teach and take notes. Yet it was full of enthusiasm.<br>\
+              At night, the dim light of oil lamps was enough to illuminate a page of a book, fueling burning dreams.<br>\
+              Cherishing each new sprout, each budding flower but not lenient with the high demands of nurturing future talents. From the beginning, the class aimed at comprehensive education to discover and nurture future talents, not only imparting knowledge but also nurturing the soul, life skills, and initial resilience for each student.<br>\
+              From that cradle, that nurturing garden has created a beautiful tradition.<br>\
+              In the 1968 - 1969 school year high school graduation exam, the first cohort students of the specialized Math class of HNUE amazed the exam council with their excellent results.<br>\
+              Needless to say, Math, Physics, and Chemistry were their strengths - the expertise of \"hereditary children\" - but they were also good in Literature. At that time, exams were graded on the Soviet scale (from 1 to 5), and our specialized Math students mostly achieved 4s and 5s (meaning quite good and excellent).<br>\
+              Especially that year, student Hồ Tú Bảo participated in both the Math and Literature competitions. Until now, this remains a rare case in our class.<br>\
+              Competing in Math was expected. Competing in Literature was coincidental; Hồ Tú Bảo was good at Literature and liked writing poetry. Our class registered Bảo to compete with top Literature students of Hà Tây province. Unexpectedly, Hồ Tú Bảo achieved the highest score. Thus, Bảo topped the list of the Hà Tây Literature team for the national competition.<br>\
+              Due to the special case, while other Math team members took the exam at home, Hồ Tú Bảo and teacher Cao Sơn cycled to Phúc Thọ examination council in Hà Tây, taking the Literature exam one day and the Math exam the next. Although strenuous, it was very joyful.<br>\
+              In the 4th cohort, there was another \"new record\": student Nguyễn Hải Thanh achieved 39 points in the graduation exam for 4 subjects. Among them, both Math and Literature scored 10. The 10-point record in Literature in our class remains unbroken to this day!<br>\
+              Then in the 28th cohort, student Vũ Thu Trang passed the entrance exam to the Literature Department of HNUE with a scholarship and was a reputable class leader, maintaining the scholarship for 4 consecutive years and graduating with a good thesis.<br>\
+              The specialized Math - Informatics students of HNUE have a tradition of playing football well and enjoying poetry.<br>\
+              Hence, football enthusiasts at HNUE lovingly call them the \"young Math players.\" Student Vượng was the goalkeeper of HNUE's team with an excellent performance in one season. Students Việt and Phúc were among the best strikers of the school.<br>\
+              Their poetry was also notable. I remember in 1976, a newspaper dedicated a long article to critique and quote the poetry of the specialized Math students of HNUE. Shortly after, Vietnam Radio had a broadcast featuring the poetic souls of the specialized Math students in an arts program.<br>\
+              Perhaps poetry and math are not far apart for souls requiring imagination and creativity.<br>\
+              In the summer of 1974, for the first time, Vietnam sent students to the international math competition. The team consisted of 4 students, including Vũ Đình Hoà and Tạ Hồng Quảng from the specialized Math class of HNUE, and Hoàng Lê Minh and Nguyễn Hoàng Trung from the University of Natural Sciences.<br>\
+              The competition was held in Erfurt (Democratic Republic of Germany). It was the first time competing, very anxious and nervous. Many countries participating for the first time usually won nothing. Some countries participated dozens of times without winning any medals! Our country was poor, having endured many years of war.<br>\
+              Unexpectedly, the Vietnam team ranked 4th with 1 first prize, 1 second prize, and 2 third prizes. Among them, Vũ Đình Hoà won the second prize and Tạ Hồng Quảng won the third prize, earning admiration from peers.<br>\
+              The success of Vũ Đình Hoà and Tạ Hồng Quảng can be considered the beginning of the tradition of participating in international Math and Informatics competitions that our class has today?<br>\
+              In daily life, the humility and simplicity of the specialized Math - Informatics students of HNUE are easily recognizable. Simple to the point of being rustic and pure. All ostentatious, pretentious behaviors are immediately rejected. Perhaps when living with a purpose and beautiful dreams, one can discard trivial habits and formalities?<br>\
+              Thus, in 2000, the University celebrated 40 years of the specialized Math class, the students returned to their teachers to report on their accomplishments. Many were holding doctorates and master's degrees but were still shy and timid in front of their old teachers.<br>\
+              Those images deeply impressed us.<br>\
+              I believe that if future generations keep these traditional traits, our school will grow even further.<br>\
+              That \"traditional character\" is the valuable capital for our specialized Math - Informatics high school of HNUE to continue to develop sustainably and worthily in the new century.<br>\
               Phone: 02437547661<br>\
               Email: c3chuyendhsp@hanoiedu.vn<br>\
               Website: <a href=\"https://chuyensp.edu.vn/\" target=\"_blank\">chuyensp.edu.vn</a><br>\
@@ -555,13 +701,69 @@ var buildingData = {
               Số điện thoại: Văn phòng - 02466849823, Tài vụ - 02466849824<br>\
               Email: c23bcnguyentatthanh@hanoiedu.vn<br>\
               Website: <a href=\"https://ntthnue.edu.vn/\" target=\"_blank\">ntthnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/ntthnue.edu.vn/\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/ntthnue.edu.vn/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Cơ quan chủ quản: </b><br>\
+              Trường THCS & THPT Nguyễn Tất Thành (gọi tắt là Trường Nguyễn Tất Thành) thuộc hệ phổ thông chất lượng cao của Trường ĐHSP Hà Nội, thành lập ngày 04/07/1998, bao gồm hai cấp THCS và THPT. Nhà trường đặt dưới sự quản lý trực tiếp của trường ĐHSP Hà Nội và Sở Giáo dục và Đào tạo Hà Nội.<br><br>\
+              <b>Cơ sở vật chất: </b><br>\
+              Bằng nguồn đầu tư kinh phí ban đầu của Bộ giáo dục & Đào tạo, cùng với nguồn kinh phí tự có hàng năm, trường Nguyễn Tất Thành đã và đang được xây dựng thành một nhà trường hiện đại về cơ sở vật chất và trang thiết bị.<br><br>\
+              <b>Đội ngũ giáo viên:</b><br>\
+              Trường Nguyễn Tất Thành có đội ngũ giáo viên giỏi, có trình độ cao về khoa học cơ bản và khoa học giáo dục (trong đó có 2 nhà giáo ưu tú, 70% giáo viên là Tiến sĩ, Thạc sĩ). Nhiều giáo viên là cán bộ giảng dạy trường ĐHSP Hà Nội, giáo viên các trường Chuyên ĐHNN, Chuyên ĐHSP, Chuyên ĐHKHTN Hà Nội.<br><br>\
+              <b>Mục tiêu, chương trình, nội dung giáo dục:</b>\
+              <ul>\
+                <li>Trang bị cho học sinh những kiến thức khoa học phổ thông vững vàng, đáp ứng được các yếu cầu, tiêu chí kiểm tra đánh giá của Bộ GD&ĐT. Đồng thời nâng cao các môn học chính, nâng cao trình độ Tiếng Anh để học sinh dự tuyển vào các lớp Chuyên, thi vào các trường Đại học và có đủ các điều kiện để đi du học.</li>\
+                <li>Chú trọng giáo dục toàn diện về Đức , Trí , Thể, Mỹ, giáo dục giá trị sống,  kĩ năng sống, tổ chức cho học sinh tham gia nghiên cứu khoa học và phát triển năng khiếu.</li>\
+                <li>Xây dựng phương pháp học tập, tự học, khuyến khích năng lực sáng tạo, khả năng hoạt động tự chủ và độc lập của học sinh.</li>\
+                <li> Đào tạo những công dân tương lai được phát triển toàn diện, khoẻ mạnh về thể chất, dồi dào về trí tuệ, lành mạnh về tinh thần, có kỹ năng sống, có trách nhiệm với bản thân, với gia đình, với xã hội, phù hợp với những tiêu chí giáo dục theo định  hướng của UNESCO: Học để biết - Học để làm - Học để làm người - Học để cùng chung sống.</li>\
+              </ul><br>\
+              <b>Đổi mới cách dạy, cách học:</b><br>\
+              Trường Nguyễn Tất Thành tham gia nghiên cứu khoa học giáo dục dưới sự chỉ đạo và giúp đỡ của trường ĐHSP Hà Nội, trước hết nghiên cứu đổi mới phương pháp dạy học và giáo dục học sinh để không ngừng nâng cao chất lượng đào tạo toàn diện.<br><br>\
+              <b>Tham vấn tâm lý học đường</b><br>\
+              Trường Nguyễn Tất Thành có phòng tham vấn tâm lý học đường nhằm giúp học sinh có đời sống tinh thần tích cực, lành mạnh, thêm tự tin, biết phát huy hết năng lực tiềm ẩn để đạt được thành công trong cuộc sống, đồng thời có những chia sẻ hữu ích với các bậc cha mẹ học sinh để phối hợp với nhà trường chăm sóc, giáo dục con em.<br><br>\
+              <b>Học bổng Nguyễn Tất Thành</b><br>\
+              Nhà trường cấp học bổng Nguyễn Tất Thành cho những học sinh đạt thành tích xuất sắc trong học tập. Học bổng Nguyễn Tất Thành được xét cấp một năm học hai lần vào đầu mỗi học kỳ. Học sinh mới tuyển vào lớp 6 và lớp 10 cũng được xét cấp học bổng dựa trên thành tích học tập của năm học vừa qua. Từ năm học 2000-2001 đến nay đã có hơn 900 học sinh được vinh dự nhận học bổng này<br><br>\
+              <b>Quan hệ quốc tế</b><br>\
+              Trường  được Bộ giáo dục và Đào tạo giới thiệu kết nghĩa với trường Anderson Junior College (Singapore). Hàng năm nhà trường phối hợp với trường Raffles Institution và Raffles Girl's school (trường THPT đứng đầu Singapore) tuyển học sinh lớp 9, 10 của trường sang học ở Singapore theo chế độ đài thọ 100% (học phí, ăn, ở, vé đi về). Trường Nguyễn Tất Thành cùng các trường phổ thông Singapore hàng năm tổ chức cho giáo viên và học sinh tham quan, trao đổi học tập kinh nghiệm để tăng cường sự hiểu biết, hợp tác, đồng thời tham gia các cuộc triển lãm, dự thi các Đề tài khoa học. Trường có quan hệ hợp tác với một số trường học ở Newzealand, Mông Cổ, Nhật Bản, Hồng Kông.<br><br>\
+              <h4>DANH HIỆU VÀ KHEN THƯỞNG CAO ĐÃ ĐẠT ĐƯỢC</h4>\
+              <ul>\
+                <li>Trường đạt chuẩn Quốc gia</li>\
+                <li>Huân chương lao động hạng Ba</li>\
+                <li>Bằng khen của Thủ tướng Chính phủ</li>\
+                <li>Các Bằng khen của: Bộ Giáo dục - Đào tạo, Bộ Văn hóa - Thể thao - Du lịch, UBND Thành phố  Hà Nội, Trung ương Đoàn thanh niên cộng sản Hồ Chí Minh</li>\
+              </ul>",
     "infoEN": "<b>Nguyen Tat Thanh Lower and Upper Secondary School - HNUE</b><br>\
               Floor 1, 2, 3, 4, 5, 6<br>\
               Phone: Office - 02466849823, Finance - 02466849824<br>\
               Email: c23bcnguyentatthanh@hanoiedu.vn<br>\
               Website: <a href=\"https://ntthnue.edu.vn/\" target=\"_blank\">ntthnue.edu.vn</a><br>\
-              Fanpage: <a href=\"https://www.facebook.com/ntthnue.edu.vn/\" target=\"_blank\">Facebook</a>",
+              Fanpage: <a href=\"https://www.facebook.com/ntthnue.edu.vn/\" target=\"_blank\">Facebook</a><br><br>\
+              <b>Managing Authority:</b><br>\
+              Nguyen Tat Thanh Secondary & High School (referred to as Nguyen Tat Thanh School) is a high-quality general education system under Hanoi National University of Education, established on July 4, 1998, including both secondary and high school levels. The school is directly managed by Hanoi National University of Education and the Hanoi Department of Education and Training.<br><br>\
+              <b>Facilities:</b><br>\
+              With initial funding from the Ministry of Education & Training, along with annual self-funding, Nguyen Tat Thanh School has been built into a modern institution in terms of facilities and equipment.<br><br>\
+              <b>Faculty:</b><br>\
+              Nguyen Tat Thanh School has a team of excellent teachers with high qualifications in basic sciences and education sciences (including 2 distinguished teachers, 70% of whom are Ph.D. or Master's degree holders). Many teachers are lecturers at Hanoi National University of Education, teachers from specialized schools such as University of Languages and International Studies, Hanoi National University of Education, and Hanoi University of Science.<br><br>\
+              <b>Goals, Curriculum, Educational Content:</b>\
+              <ul>\
+                <li>Equip students with solid general scientific knowledge that meets the requirements and evaluation criteria of the Ministry of Education and Training. At the same time, enhance major subjects, and improve English proficiency so that students can apply to specialized classes, universities, and meet the conditions for studying abroad.</li>\
+                <li>Focus on comprehensive education in ethics, intellect, physical health, aesthetics, life values, and life skills. Organize scientific research and talent development activities for students.</li>\
+                <li>Develop learning and self-learning methods, encourage creativity, and promote students' autonomy and independence.</li>\
+                <li>Train future citizens to be comprehensively developed, physically healthy, intellectually abundant, mentally sound, possessing life skills, and being responsible to themselves, their families, and society. This aligns with UNESCO's educational orientation: Learn to know - Learn to do - Learn to be - Learn to live together.</li>\
+              </ul><br>\
+              <b>Innovative Teaching and Learning Methods:</b><br>\
+              Nguyen Tat Thanh School engages in educational research under the guidance and support of Hanoi National University of Education, primarily focusing on innovating teaching methods and educating students to continuously improve the quality of comprehensive training.<br><br>\
+              <b>School Psychological Counseling:</b><br>\
+              Nguyen Tat Thanh School has a school psychological counseling room to help students maintain a positive, healthy mental life, gain confidence, and fully utilize their potential to achieve success in life. It also provides useful sharing for parents to collaborate with the school in taking care of and educating their children.<br><br>\
+              <b>Nguyen Tat Thanh Scholarships:</b><br>\
+              The school awards Nguyen Tat Thanh Scholarships to students who achieve outstanding academic results. The scholarships are granted twice a year at the beginning of each semester. Newly enrolled students in grades 6 and 10 are also considered for scholarships based on their previous academic year's achievements. From the 2000-2001 school year until now, over 900 students have been honored to receive this scholarship.<br><br>\
+              <b>International Relations:</b><br>\
+              The school is introduced by the Ministry of Education and Training to establish a sister school relationship with Anderson Junior College (Singapore). Annually, the school collaborates with Raffles Institution and Raffles Girl's School (Singapore's top high schools) to select 9th and 10th-grade students to study in Singapore under a 100% sponsorship (tuition, board, and round-trip airfare). Nguyen Tat Thanh School and Singaporean high schools organize teacher and student exchanges annually to enhance understanding, cooperation, and participation in exhibitions and scientific competitions. The school also collaborates with schools in New Zealand, Mongolia, Japan, and Hong Kong.<br><br>\
+              <h4>TITLES AND HIGH AWARDS ACHIEVED</h4>\
+              <ul>\
+                <li>National Standard School</li>\
+                <li>Third-Class Labor Medal</li>\
+                <li>Certificate of Merit from the Prime Minister</li>\
+                <li>Certificates of Merit from the Ministry of Education and Training, Ministry of Culture, Sports and Tourism, Hanoi People's Committee, Central Committee of the Ho Chi Minh Communist Youth Union</li>\
+              </ul>",
     "latitude": 21.03725780091894,
     "longitude": 105.78450500965118,
     "source-image": ['https://firebasestorage.googleapis.com/v0/b/hnue-map-5afa2.appspot.com/o/building%2FtruongNguyenTatThanh.jpg?alt=media&token=07d577c3-e236-493c-a536-765f163849bc']
