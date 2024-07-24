@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
-*{
+* {
   font-family: 'Roboto';
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+.leaflet-control-layers {
+  position: fixed;
+  top: 10px;
+  left: 60px;
 }
 
 .main-content {
@@ -21,7 +28,8 @@ body, html {
   padding: 0;
 }
 
-#teamInfo .gallery, .HNUE-gallery {
+#teamInfo .gallery,
+.HNUE-gallery {
   display: flex;
   flex-direction: row;
   width: 70%;
@@ -30,7 +38,8 @@ body, html {
   height: 500px;
 }
 
-.item, .Hnue-item {
+.item,
+.Hnue-item {
   flex: 1;
   height: 100%;
   background-position: center;
@@ -38,22 +47,27 @@ body, html {
   transition: flex 0.8s ease;
 }
 
-.item:hover, .Hnue-item:hover {
+.item:hover,
+.Hnue-item:hover {
   flex: 5;
 }
 
 .item:nth-child(1) {
   background-image: url(../source-img/team-profile/pdung.jpg);
 }
+
 .item:nth-child(2) {
   background-image: url(../source-img/team-profile/meo.jpg);
 }
+
 .item:nth-child(3) {
   background-image: url(../source-img/team-profile/wearetructruc.jpg);
 }
+
 .item:nth-child(4) {
   background-image: url(../source-img/team-profile/ciu.jpg);
 }
+
 .item:nth-child(5) {
   background-image: url(../source-img/team-profile/phat.jpg);
 }
@@ -61,15 +75,19 @@ body, html {
 .Hnue-item:nth-child(1) {
   background-image: url(../source-img/university-img/3.jpg);
 }
+
 .Hnue-item:nth-child(2) {
   background-image: url(../source-img/university-img/2.jpg);
 }
+
 .Hnue-item:nth-child(3) {
   background-image: url(../source-img/university-img/1.jpg);
 }
+
 .Hnue-item:nth-child(4) {
   background-image: url(../source-img/university-img/4.jpg);
 }
+
 .Hnue-item:nth-child(5) {
   background-image: url(../source-img/university-img/5.jpg);
 }
@@ -83,7 +101,7 @@ body, html {
   position: absolute;
   width: 98%;
   height: 98%;
-  z-index: 10001; 
+  z-index: 10001;
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -93,19 +111,19 @@ body, html {
   left: 50%;
   overflow: auto;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
 }
 
 .infoContainer {
- width: 90%; 
- text-align: center;
- position: relative; 
- margin-left: 5%;
- margin-top: 5px;
- background-color: #fff;
- border-radius: 15px;
- box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
- padding: 5px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  margin-left: 5%;
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px;
 }
 
 .infoText {
@@ -124,7 +142,7 @@ body, html {
   border-radius: 20px;
   background-color: #fff;
   position: relative;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
   transition: ease-in-out 0.3s;
 }
 
@@ -144,10 +162,10 @@ body, html {
 }
 
 .main-content #map {
-    height: 100%;
-    position: relative;
-    z-index: 1;
-    cursor: default;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  cursor: default;
 }
 
 .main-content .button-box {
@@ -159,7 +177,7 @@ body, html {
   border-radius: 8px;
   background: #fff;
   border: 1px solid #000;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
 }
 
 .main-content .button-box .toggle-btn {
@@ -185,7 +203,7 @@ body, html {
 }
 
 #direction-board {
-  position: absolute; 
+  position: absolute;
   z-index: 10000;
   width: 300px;
   height: 500px;
@@ -196,10 +214,11 @@ body, html {
   transition: 0.3s ease-in-out;
   border: 1px solid #81858A;
   overflow: hidden;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
 }
 
-#resultVN, #resultEN {
+#resultVN,
+#resultEN {
   width: 100%;
   text-align: center;
   display: none;
@@ -213,14 +232,14 @@ body, html {
 }
 
 .searchByGoogle {
-    display: none;
-    font-size: 15px;
-    margin: auto;
-    text-align: center;
-    font-weight: 500;
-    cursor: pointer;
-    color: #2185D0;
-    transition: 0.3s ease-in-out;
+  display: none;
+  font-size: 15px;
+  margin: auto;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  color: #2185D0;
+  transition: 0.3s ease-in-out;
 }
 
 .direction-text {
@@ -236,10 +255,10 @@ body, html {
 }
 
 #blue-div {
-  position: absolute; 
-  height: 45px; 
-  background: linear-gradient(to right, #025891, #2082d9);  
-  top: 0; 
+  position: absolute;
+  height: 45px;
+  background: linear-gradient(to right, #025891, #2082d9);
+  top: 0;
   width: 100%;
   cursor: pointer;
 }
@@ -247,9 +266,9 @@ body, html {
 #show-more {
   width: 60%;
   height: 45px;
-  margin: 0 auto; 
+  margin: 0 auto;
   margin-top: 12px;
-  display: block; 
+  display: block;
   background: linear-gradient(to right, #025891, #2082d9);
   color: #fff;
   cursor: pointer;
@@ -265,7 +284,8 @@ body, html {
   background: #2185D0;
 }
 
-#direction-content, #direction-content-2 {
+#direction-content,
+#direction-content-2 {
   background-color: #fff;
   width: 100%;
   height: calc(100% - 120px);
@@ -281,24 +301,54 @@ body, html {
   cursor: default;
 }
 
-#admin-area, #lecture-hall-area, #domestic-area, #other-areas, #shopping-area, #nha-A, #nha-B, #nha-C, #nha-D, #nha-K, #nha-V {
+#admin-area,
+#lecture-hall-area,
+#domestic-area,
+#other-areas,
+#shopping-area,
+#nha-A,
+#nha-B,
+#nha-C,
+#nha-D,
+#nha-K,
+#nha-V {
   font-size: 14px;
   list-style: none;
 }
 
-#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li, #nha-A li, #nha-B li, #nha-C li, #nha-D li, #nha-K li, #nha-V li {
+#admin-area li,
+#lecture-hall-area li,
+#domestic-area li,
+#other-areas li,
+#shopping-area li,
+#nha-A li,
+#nha-B li,
+#nha-C li,
+#nha-D li,
+#nha-K li,
+#nha-V li {
   cursor: pointer;
   margin-bottom: 3px;
 }
 
-#admin-area li:hover, #lecture-hall-area li:hover, #domestic-area li:hover, #other-areas li:hover, #shopping-area li:hover, #nha-A li:hover, #nha-B li:hover, #nha-C li:hover, #nha-D li:hover, #nha-K li:hover, #nha-V li:hover {
+#admin-area li:hover,
+#lecture-hall-area li:hover,
+#domestic-area li:hover,
+#other-areas li:hover,
+#shopping-area li:hover,
+#nha-A li:hover,
+#nha-B li:hover,
+#nha-C li:hover,
+#nha-D li:hover,
+#nha-K li:hover,
+#nha-V li:hover {
   color: #2185D0;
 }
 
 #directionArrow {
-  position: absolute; 
-  height: 10px; 
-  right: 10px; 
+  position: absolute;
+  height: 10px;
+  right: 10px;
   top: 16px;
   cursor: pointer;
 }
@@ -322,33 +372,38 @@ body, html {
   text-align: center;
   cursor: default;
   animation: zoomAnimation 0.7s infinite alternate;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
 }
 
 @keyframes imgScaleAnimation {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
+
   25% {
-      transform: scale(1.3);
+    transform: scale(1.3);
   }
+
   50% {
-      transform: scale(1);
+    transform: scale(1);
   }
+
   75% {
     transform: scale(1.3);
   }
+
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes zoomAnimation {
   0% {
-      transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
+
   100% {
-      transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 
@@ -361,7 +416,7 @@ body, html {
   position: absolute;
   height: 99%;
   width: 400px;
-  z-index: 10001; 
+  z-index: 10001;
   display: none;
   padding: 15px;
   border-radius: 8px;
@@ -373,7 +428,7 @@ body, html {
   overflow-y: scroll;
   text-align: justify;
   transform: translate(0, 0);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
 }
 
 .infoDiv::-webkit-scrollbar {
@@ -381,12 +436,12 @@ body, html {
 }
 
 .img-demo {
-  width: 99%; 
-  margin-top: 20px; 
-  margin-left: 0.5%; 
+  width: 99%;
+  margin-top: 20px;
+  margin-left: 0.5%;
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
 }
 
 .styleh1 {
@@ -441,7 +496,7 @@ body, html {
   height: calc(100% - 50px);
   left: -50px;
   top: 50px;
-  z-index: 1000000; 
+  z-index: 1000000;
   display: none;
   padding: 0px;
   background-color: #f0f2f5;
@@ -456,7 +511,7 @@ body, html {
   height: 100%;
   left: 0;
   top: 0;
-  z-index: 1000000; 
+  z-index: 1000000;
   display: none;
   padding: 0px;
   background-color: #f0f2f5;
@@ -495,11 +550,15 @@ body, html {
   display: none;
 }
 
-#HNUE-introduction, #product-introduction, #infomation-pages, #donate-div, #support-div {
+#HNUE-introduction,
+#product-introduction,
+#infomation-pages,
+#donate-div,
+#support-div {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 100000; 
+  z-index: 100000;
   display: none;
   padding: 15px;
   border: 1px solid #ccc;
@@ -507,17 +566,17 @@ body, html {
   text-align: justify;
   top: 0;
   left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
   overflow: auto;
 }
 
 
 .image-qr {
-  width: 270px; 
-  position: absolute; 
+  width: 270px;
+  position: absolute;
   left: calc((100% - 270px)/2);
   border-radius: 15px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
   top: 160px;
 }
 
@@ -535,7 +594,7 @@ body, html {
 .infoDiv .toolbar .close {
   position: fixed;
   background: url(../source-img/close.svg);
-  background-size: contain;  
+  background-size: contain;
   background-repeat: no-repeat;
   width: 15px;
   height: 15px;
@@ -549,7 +608,7 @@ body, html {
 .close-div {
   position: absolute;
   background: url(../source-img/logout.png);
-  background-size: contain;  
+  background-size: contain;
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -563,7 +622,7 @@ body, html {
 #close-social-network-div {
   position: absolute;
   background: url(../source-img/logout.png);
-  background-size: contain;  
+  background-size: contain;
   background-repeat: no-repeat;
   width: 26px;
   height: 26px;
@@ -578,7 +637,7 @@ body, html {
 #toolbar-notification {
   position: absolute;
   background: url(../source-img/bell-regular.svg);
-  background-size: contain;  
+  background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
@@ -593,7 +652,7 @@ body, html {
 #closeTeamInfo {
   position: absolute;
   background: url(../source-img/close.svg);
-  background-size: contain;  
+  background-size: contain;
   background-repeat: no-repeat;
   width: 15px;
   height: 15px;
@@ -606,7 +665,7 @@ body, html {
 
 .infoDiv .toolbar .direct-btn {
   background: url(../source-img/direct.svg);
-  background-size: contain;  
+  background-size: contain;
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
@@ -621,7 +680,7 @@ body, html {
 
 .infoDiv .toolbar .direct-btn-ggm {
   background: url(../source-img/direct.svg);
-  background-size: contain;  
+  background-size: contain;
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
@@ -636,29 +695,31 @@ body, html {
 
 .infoDiv .toolbar .send-feedback {
   width: 35px;
-  height: 35px; 
-  position: absolute; 
+  height: 35px;
+  position: absolute;
   border: none;
-  top: 15px; 
+  top: 15px;
   left: 185px;
   cursor: pointer;
   background: url(../source-img/mail.svg);
-  background-size: contain;  
+  background-size: contain;
   background-repeat: no-repeat;
   background-color: #fff;
   transition: 0.3s ease-in-out;
 }
 
-.infoDiv .toolbar .direct-btn-ggm:hover, .infoDiv .toolbar .direct-btn:hover, .infoDiv .toolbar .send-feedback:hover {
+.infoDiv .toolbar .direct-btn-ggm:hover,
+.infoDiv .toolbar .direct-btn:hover,
+.infoDiv .toolbar .send-feedback:hover {
   transform: scale(1.2);
 }
 
 .infoDiv .toolbar .tim-duong {
-  font-size: 10px; 
-  color: #000; 
+  font-size: 10px;
+  color: #000;
   width: 80px;
-  left: 8px; 
-  position: absolute; 
+  left: 8px;
+  position: absolute;
   top: 55px;
   cursor: default;
 }
@@ -666,20 +727,20 @@ body, html {
 .infoDiv .toolbar .tim-duong-ggm {
   font-size: 10px;
   width: 80px;
-  color: #000; 
-  left: 75px; 
-  position: absolute; 
+  color: #000;
+  left: 75px;
+  position: absolute;
   top: 55px;
   text-align: center;
   cursor: default;
 }
 
 .infoDiv .toolbar .dong-gop {
-  font-size: 10px; 
+  font-size: 10px;
   width: 80px;
-  color: #000; 
-  left: 162px; 
-  position: absolute; 
+  color: #000;
+  left: 162px;
+  position: absolute;
   text-align: center;
   top: 55px;
   cursor: default;
@@ -724,39 +785,40 @@ body, html {
   cursor: default;
 }
 
-.building-info, .teamInfo {
+.building-info,
+.teamInfo {
   font-size: 15px;
-  word-wrap: break-word; 
+  word-wrap: break-word;
   margin-top: 10px;
   color: #707070;
   cursor: default;
 }
 
 .login-text {
-  font-size: 15px; 
-  font-weight: bold; 
-  position: absolute; 
-  top: 16px; 
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 16px;
   left: 5px;
 }
 
 #userProfilePicture1 {
-  width: 30px; 
-  border: none; 
-  border-radius: 50%; 
-  height: 30px; 
-  position: absolute; 
-  top: 9px; 
+  width: 30px;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  top: 9px;
   left: 10px;
 }
 
 #userProfilePicture2 {
-  width: 40px; 
-  border: none; 
-  border-radius: 50%; 
-  height: 40px; 
-  position: absolute; 
-  top: 56px; 
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  top: 56px;
   left: 10px;
 }
 
@@ -823,63 +885,63 @@ body, html {
 }
 
 #userProfilePicture3 {
-  width: 40px; 
-  border: none; 
-  border-radius: 50%; 
-  height: 40px; 
-  position: absolute; 
-  top: 5px; 
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  top: 5px;
   left: 5px;
 }
 
 #userName3 {
-  font-size: 15px; 
-  text-align: center; 
-  font-weight: bold; 
-  height: 20px; 
-  overflow: hidden; 
-  position: absolute; 
-  cursor: default; 
-  top: 5px; 
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  cursor: default;
+  top: 5px;
   left: 55px;
   z-index: 100;
 }
 
 #userEmail2 {
-  font-size: 12px; 
-  text-align: center; 
-  font-weight: 500; 
-  height: 20px; 
-  overflow: hidden; 
-  position: absolute; 
-  cursor: default; 
-  bottom: 5px; 
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  cursor: default;
+  bottom: 5px;
   left: 55px;
   z-index: 100;
 }
 
 .show-post .post-userProfilePicture {
-  width: 40px; 
-  border: none; 
-  border-radius: 50%; 
-  height: 40px; 
-  position: absolute; 
-  top: 10px; 
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  top: 10px;
   left: 10px;
 }
 
 .post-btn {
-  height: 30px; 
-  left: 50px; 
-  cursor: pointer; 
-  font-size: 14px; 
-  border-radius: 15px; 
-  width: calc(100% - 60px); 
-  color: #7c676b; 
-  border: none; 
-  visibility: visible; 
-  top: 10px; 
-  position: absolute; 
+  height: 30px;
+  left: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 15px;
+  width: calc(100% - 60px);
+  color: #7c676b;
+  border: none;
+  visibility: visible;
+  top: 10px;
+  position: absolute;
   background-color: #f0f2f5;
   overflow: hidden;
 }
@@ -889,8 +951,8 @@ body, html {
 }
 
 .post-btn span {
-  position: absolute; 
-  left: 10px; 
+  position: absolute;
+  left: 10px;
   top: 5px
 }
 
@@ -899,56 +961,56 @@ body, html {
 }
 
 .creat-post-span {
-  font-size: 20px; 
-  position: relative; 
-  top: 10px; 
+  font-size: 20px;
+  position: relative;
+  top: 10px;
   font-weight: bold;
   cursor: default;
 }
 
 #post-div {
-  width: 60%; 
-  border-radius: 15px; 
-  height: 52px; 
-  background-color: #fff; 
-  border: 1px solid #e4e6e9; 
-  position: absolute; 
-  left: 20%; 
+  width: 60%;
+  border-radius: 15px;
+  height: 52px;
+  background-color: #fff;
+  border: 1px solid #e4e6e9;
+  position: absolute;
+  left: 20%;
   top: 10px;
 }
 
 #userName {
-  font-size: 14px; 
-  text-align: center; 
-  font-weight: bold; 
-  width: 100px; 
-  height: 20px; 
-  overflow: hidden; 
-  position: absolute; 
-  cursor: default; 
-  top: 5px; 
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  cursor: default;
+  top: 5px;
   left: 5px;
 }
 
 #userName2 {
-  font-size: 15px; 
-  text-align: center; 
-  font-weight: bold; 
-  height: 20px; 
-  overflow: hidden; 
-  position: absolute; 
-  cursor: default; 
-  top: 65px; 
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  cursor: default;
+  top: 65px;
   left: 60px;
 }
 
-.show-post .post-username{
-  font-size: 15px; 
-  font-weight: bold; 
-  height: 20px; 
-  overflow: hidden; 
-  position: absolute; 
-  cursor: default; 
+.show-post .post-username {
+  font-size: 15px;
+  font-weight: bold;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  cursor: default;
   left: 60px;
   top: 10px;
 }
@@ -1005,34 +1067,34 @@ body, html {
 }
 
 #add-photo {
-  background-image: url(../source-img/add-a-photo.png); 
-  width: 100px; 
-  height: 100px; 
-  position: absolute; 
-  left: 10px; 
-  bottom: 50px; 
+  background-image: url(../source-img/add-a-photo.png);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 10px;
+  bottom: 50px;
   cursor: pointer;
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   border-radius: 8px;
   border: 1px solid #DEDEDF;
 }
 
 #add-address-img {
-  height: 22px; 
-  position: absolute; 
-  right: 5px; 
+  height: 22px;
+  position: absolute;
+  right: 5px;
   bottom: 2.5px;
 }
 
 .status {
-  background-color: #fff; 
-  width: calc(100% - 20px); 
-  font-size: 17px; 
-  height: 134px; 
-  position: absolute; 
-  top: 105px; 
+  background-color: #fff;
+  width: calc(100% - 20px);
+  font-size: 17px;
+  height: 134px;
+  position: absolute;
+  top: 105px;
   left: 10px;
   padding: 5px;
   overflow: auto;
@@ -1057,42 +1119,42 @@ body, html {
 #post-status:disabled {
   background-color: #e4e6eb;
   color: #bdc1c5;
-  cursor: not-allowed; 
+  cursor: not-allowed;
 }
 
 
 
 #enter-post {
-  width: 60%; 
-  display: none; 
-  border-radius: 15px; 
-  height: 400px; 
-  background-color: #fff; 
-  border: 1px solid #e4e6e9; 
-  position: absolute; 
-  left: 20%; 
+  width: 60%;
+  display: none;
+  border-radius: 15px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #e4e6e9;
+  position: absolute;
+  left: 20%;
   top: 5px;
   z-index: 200000;
 }
 
 .show-post {
-  width: 60%; 
-  border-radius: 15px; 
-  height: 570px; 
-  background-color: #fff; 
-  border: 1px solid #e4e6e9; 
-  position: relative; 
-  left: 20%; 
+  width: 60%;
+  border-radius: 15px;
+  height: 570px;
+  background-color: #fff;
+  border: 1px solid #e4e6e9;
+  position: relative;
+  left: 20%;
   margin-top: 10px;
 }
 
 #posts-container {
-  width: 100%; 
-  border-radius: 15px; 
-  height: auto; 
-  background-color: transparent; 
-  position: relative; 
-  left: 0; 
+  width: 100%;
+  border-radius: 15px;
+  height: auto;
+  background-color: transparent;
+  position: relative;
+  left: 0;
   margin-top: 70px;
 }
 
@@ -1259,40 +1321,42 @@ body, html {
 }
 
 #add-location {
-  background-color: #fff; 
-  width: calc(100% - 130px); 
-  position: absolute; 
-  height: 50px; 
-  bottom: 50px; 
+  background-color: #fff;
+  width: calc(100% - 130px);
+  position: absolute;
+  height: 50px;
+  bottom: 50px;
   right: 10px;
 }
 
 #add-address {
-  background-color: #fff; 
-  width: calc(100% - 130px); 
-  position: absolute; 
-  height: 50px; 
-  bottom: 105px; 
+  background-color: #fff;
+  width: calc(100% - 130px);
+  position: absolute;
+  height: 50px;
+  bottom: 105px;
   right: 10px;
 }
 
-#text-address-vn, #text-address-eng {
-  height: 25px; 
-  font-size: 13px; 
-  width: calc(100% - 30px); 
-  left: 0; 
-  bottom: 0; 
+#text-address-vn,
+#text-address-eng {
+  height: 25px;
+  font-size: 13px;
+  width: calc(100% - 30px);
+  left: 0;
+  bottom: 0;
   border: 1.5px solid #dededf;
   border-radius: 5px;
   padding-left: 5px;
 }
 
-#text-location-vn, #text-location-eng {
-  height: 25px; 
-  font-size: 13px; 
-  width: calc(100% - 30px); 
-  left: 0; 
-  bottom: 0; 
+#text-location-vn,
+#text-location-eng {
+  height: 25px;
+  font-size: 13px;
+  width: calc(100% - 30px);
+  left: 0;
+  bottom: 0;
   cursor: pointer;
   border: 1.5px solid #dededf;
   border-radius: 5px;
@@ -1300,9 +1364,9 @@ body, html {
 }
 
 #add-location-button {
-  width: 25px; 
-  position: absolute; 
-  right: 0; 
+  width: 25px;
+  position: absolute;
+  right: 0;
   bottom: 1px;
   cursor: default;
 }
@@ -1324,7 +1388,7 @@ body, html {
 #email-to-us #send-mail {
   position: absolute;
   background: url(../source-img/envelope-regular.svg);
-  background-size: contain;  
+  background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
@@ -1345,12 +1409,12 @@ body, html {
 }
 
 .comment-action {
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  border-radius: 15px; 
-  background-color: #fff; 
-  border: 1px solid #e4e6e9; 
-  position: relative; 
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #e4e6e9;
+  position: relative;
   margin-top: -300px;
   display: none;
   z-index: 100000;
@@ -1366,7 +1430,10 @@ body, html {
   padding: 5px;
 }
 
-.comment-input, .emojionearea, .emojionearea.form-control, .mojionearea-inline {
+.comment-input,
+.emojionearea,
+.emojionearea.form-control,
+.mojionearea-inline {
   width: calc(100% - 57px);
   position: absolute !important;
   height: 36px;
@@ -1380,7 +1447,7 @@ body, html {
 }
 
 .comment-input:hover {
-  border: 1.5px solid #2185D0; 
+  border: 1.5px solid #2185D0;
 }
 
 .comment-input:focus {
@@ -1458,7 +1525,7 @@ body, html {
 }
 
 #search-input-container {
-  width: 100%; 
+  width: 100%;
   height: 40px;
   position: absolute;
   display: block;
@@ -1466,7 +1533,7 @@ body, html {
 }
 
 #search-input-container-2 {
-  width: 100%; 
+  width: 100%;
   height: 40px;
   position: absolute;
   display: none;
@@ -1494,7 +1561,7 @@ body, html {
   height: 15px;
   background: url(../source-img/close.svg);
   background-repeat: no-repeat;
-  background-size: contain;  
+  background-size: contain;
   border: none;
   position: absolute;
   right: 8px;
@@ -1504,21 +1571,21 @@ body, html {
 }
 
 .search-input {
-  width: 90%; 
-  position: absolute; 
-  left: 5%; 
-  height: 26px; 
-  top: 7px; 
-  border-radius: 5px; 
-  border: 1px solid #DEDEDF; 
-  padding-left: 30px; 
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  height: 26px;
+  top: 7px;
+  border-radius: 5px;
+  border: 1px solid #DEDEDF;
+  padding-left: 30px;
   font-size: 14px;
   z-index: 1;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .search-input:hover {
-  border: 1px solid #2185D0; 
+  border: 1px solid #2185D0;
 }
 
 .search-input:focus {
@@ -1528,11 +1595,11 @@ body, html {
 }
 
 #search-input-img {
-  width: 16px; 
-  height: 16px; 
-  position: absolute; 
-  top: 12px; 
-  left: 23px; 
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 12px;
+  left: 23px;
   z-index: 2;
   cursor: default;
 }
@@ -1548,7 +1615,7 @@ body, html {
   display: none;
 }
 
-@media (min-width : 769px) and (max-width : 1470px){
+@media (min-width : 769px) and (max-width : 1470px) {
 
   #direction-board {
     top: 2.5px;
@@ -1560,7 +1627,7 @@ body, html {
 }
 
 
-@media (min-width : 1470px){
+@media (min-width : 1470px) {
 
   #welcome-text {
     width: auto;
@@ -1572,14 +1639,24 @@ body, html {
 
 }
 
-@media (max-width: 769px){
+@media (max-width: 769px) {
   #search-input-img {
     left: 6.5%;
   }
+
   #clear-input {
     right: 6.5%;
   }
-  #teamInfo .gallery, .HNUE-gallery {
+
+  .leaflet-control-layers {
+    position: fixed;
+    top: 55px;
+    right: 5px;
+    left: auto;
+  }
+
+  #teamInfo .gallery,
+  .HNUE-gallery {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -1587,17 +1664,19 @@ body, html {
     margin-left: 0%;
     height: 500px;
   }
+
   #email-to-us #my-mail {
     font-size: 13px;
     bottom: 10px;
   }
 }
 
-@media (min-width: 1600px){
+@media (min-width: 1600px) {
   .scroll-to-top {
-      left: 450px;
+    left: 450px;
   }
+
   .infoDiv {
-      width: 500px;
-  }      
+    width: 500px;
+  }
 }

@@ -22,87 +22,87 @@
 //   console.log('DevTools đã bị chặn.');
 // });
 
-document.addEventListener("copy", function(e) {
-    e.preventDefault();
-    alert("Bạn không được phép copy.");
+document.addEventListener("copy", function (e) {
+  e.preventDefault();
+  alert("Bạn không được phép copy.");
 });
 
 function openBuildingOption() {
-    var classroom = document.getElementById('direction-content-2');
-    var building = document.getElementById('direction-content');
-    var classroomOption = document.getElementById('classroom-option');
-    var buildingOption = document.getElementById('building-option');
-    var searchInput1 = document.getElementById('search-input-container');
-    var searchInput2 = document.getElementById('search-input-container-2');
+  var classroom = document.getElementById('direction-content-2');
+  var building = document.getElementById('direction-content');
+  var classroomOption = document.getElementById('classroom-option');
+  var buildingOption = document.getElementById('building-option');
+  var searchInput1 = document.getElementById('search-input-container');
+  var searchInput2 = document.getElementById('search-input-container-2');
 
-    building.style.display = "block";
-    classroom.style.display = "none";
-    buildingOption.style.borderBottom = "2px solid #2185D0";
-    classroomOption.style.borderBottom = "none";
-    buildingOption.style.opacity = "1";
-    classroomOption.style.opacity = "0.3";
-    searchInput1.style.display = "block";
-    searchInput2.style.display = "none";
-  }
-  
+  building.style.display = "block";
+  classroom.style.display = "none";
+  buildingOption.style.borderBottom = "2px solid #2185D0";
+  classroomOption.style.borderBottom = "none";
+  buildingOption.style.opacity = "1";
+  classroomOption.style.opacity = "0.3";
+  searchInput1.style.display = "block";
+  searchInput2.style.display = "none";
+}
+
 function openClassroomOption() {
-    var classroom = document.getElementById('direction-content-2');
-    var building = document.getElementById('direction-content');
-    var classroomOption = document.getElementById('classroom-option');
-    var buildingOption = document.getElementById('building-option');
-    var searchInput1 = document.getElementById('search-input-container');
-    var searchInput2 = document.getElementById('search-input-container-2');
-  
-    building.style.display = "none";
-    classroom.style.display = "block";
-    buildingOption.style.borderBottom = "none";
-    classroomOption.style.borderBottom = "2px solid #2185D0";
-    buildingOption.style.opacity = "0.3";
-    classroomOption.style.opacity = "1";
-    searchInput1.style.display = "none";
-    searchInput2.style.display = "block";
+  var classroom = document.getElementById('direction-content-2');
+  var building = document.getElementById('direction-content');
+  var classroomOption = document.getElementById('classroom-option');
+  var buildingOption = document.getElementById('building-option');
+  var searchInput1 = document.getElementById('search-input-container');
+  var searchInput2 = document.getElementById('search-input-container-2');
+
+  building.style.display = "none";
+  classroom.style.display = "block";
+  buildingOption.style.borderBottom = "none";
+  classroomOption.style.borderBottom = "2px solid #2185D0";
+  buildingOption.style.opacity = "0.3";
+  classroomOption.style.opacity = "1";
+  searchInput1.style.display = "none";
+  searchInput2.style.display = "block";
 }
 
 function confirmRedirect() {
-    var contentEnglish = document.querySelector('.contentEnglish');
-    var contentVN = document.querySelector('.contentVN');
-    var confirmationMessage = '';
-  
-    if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
-      confirmationMessage = "You will open the admissions page in a new tab!";
-    } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
-      confirmationMessage = "Bạn sẽ mở trang tuyển sinh ở trang mới!";
-    } else {
-      console.error('Content element not found or not displayed!');
-      return;
-    }
-  
-    var answer = confirm(confirmationMessage);
-    if (answer) {
-      hideSidebar();
-      window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
-    }
+  var contentEnglish = document.querySelector('.contentEnglish');
+  var contentVN = document.querySelector('.contentVN');
+  var confirmationMessage = '';
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    confirmationMessage = "You will open the admissions page in a new tab!";
+  } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+    confirmationMessage = "Bạn sẽ mở trang tuyển sinh ở trang mới!";
+  } else {
+    console.error('Content element not found or not displayed!');
+    return;
+  }
+
+  var answer = confirm(confirmationMessage);
+  if (answer) {
+    hideSidebar();
+    window.open("https://hnue.edu.vn/Tin-t%E1%BB%A9c-S%E1%BB%B1-ki%E1%BB%87n/Th%C3%B4ng-b%C3%A1o/p/10436", "_blank");
+  }
 }
 
 // Ngăn chặn sự kiện phóng to trên các trình duyệt di động
 document.addEventListener('gesturestart', function (e) {
-    e.preventDefault();
+  e.preventDefault();
 });
 
 function toggleGroupInfo() {
-    var infoTeam = document.getElementById("teamInfo");
-    var style = window.getComputedStyle(infoTeam);
-  
-    if (style.display === "none") {
-      infoTeam.style.display = "block";
-    } else {
-      infoTeam.style.display = "none";
-    }
-}
-  
-function closeGroupInfo() {
-    var infoTeam = document.getElementById("teamInfo");
+  var infoTeam = document.getElementById("teamInfo");
+  var style = window.getComputedStyle(infoTeam);
+
+  if (style.display === "none") {
+    infoTeam.style.display = "block";
+  } else {
     infoTeam.style.display = "none";
+  }
+}
+
+function closeGroupInfo() {
+  var infoTeam = document.getElementById("teamInfo");
+  infoTeam.style.display = "none";
 }
 
 // Initialize tooltips
@@ -113,51 +113,11 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 // Hàm filterItems
 function filterItems() {
-    var searchText = removeVietnameseSigns((document.getElementById("search-input-1").value.trim() + document.getElementById("search-input-2").value.trim()).toLowerCase());
-    
-    var listItems = document.querySelectorAll("#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li");
-    var count = 0;
-    
-    listItems.forEach(function (item) {
-      var textContent = removeVietnameseSigns(item.textContent.trim().toLowerCase());
-      if (textContent.indexOf(searchText) !== -1) {
-        item.style.display = "block";
-        count++;
-      } else {
-        item.style.display = "none";
-      }
-    });
-  
-    var resultVNSpan = document.getElementById("resultVN");
-    var resultENSpan = document.getElementById("resultEN");
-    
-    if (searchText !== "") {
-      resultVNSpan.innerText = count === 0 ? "Không có kết quả" : count === 1 ? "1 kết quả" : count + " kết quả";
-      resultVNSpan.style.display = "block";
-      resultENSpan.innerText = count === 0 ? "No result" : count === 1 ? "1 result" : count + " results";
-      resultENSpan.style.display = "block";
-    } else {
-      resultVNSpan.style.display = "none";
-      resultENSpan.style.display = "none";
-    }
-  
-    var searchByGoogleButton = document.getElementById("searchByGoogleVN");
-    
-    if (count === 0) {
-      searchByGoogleButton.style.display = "block";
-    } else {
-      searchByGoogleButton.style.display = "none";
-    }
+  var searchText = removeVietnameseSigns((document.getElementById("search-input-1").value.trim() + document.getElementById("search-input-2").value.trim()).toLowerCase());
 
-    checkInput();
-}
-
-function filterItems2() {
-  var searchText = removeVietnameseSigns((document.getElementById("search-input-3").value.trim() + document.getElementById("search-input-4").value.trim()).toLowerCase());
-  
-  var listItems = document.querySelectorAll("#nha-A li, #nha-B li, #nha-C li, #nha-D li, #nha-K li, #nha-V li");
+  var listItems = document.querySelectorAll("#admin-area li, #lecture-hall-area li, #domestic-area li, #other-areas li, #shopping-area li");
   var count = 0;
-  
+
   listItems.forEach(function (item) {
     var textContent = removeVietnameseSigns(item.textContent.trim().toLowerCase());
     if (textContent.indexOf(searchText) !== -1) {
@@ -170,7 +130,7 @@ function filterItems2() {
 
   var resultVNSpan = document.getElementById("resultVN");
   var resultENSpan = document.getElementById("resultEN");
-  
+
   if (searchText !== "") {
     resultVNSpan.innerText = count === 0 ? "Không có kết quả" : count === 1 ? "1 kết quả" : count + " kết quả";
     resultVNSpan.style.display = "block";
@@ -182,7 +142,47 @@ function filterItems2() {
   }
 
   var searchByGoogleButton = document.getElementById("searchByGoogleVN");
-  
+
+  if (count === 0) {
+    searchByGoogleButton.style.display = "block";
+  } else {
+    searchByGoogleButton.style.display = "none";
+  }
+
+  checkInput();
+}
+
+function filterItems2() {
+  var searchText = removeVietnameseSigns((document.getElementById("search-input-3").value.trim() + document.getElementById("search-input-4").value.trim()).toLowerCase());
+
+  var listItems = document.querySelectorAll("#nha-A li, #nha-B li, #nha-C li, #nha-D li, #nha-K li, #nha-V li");
+  var count = 0;
+
+  listItems.forEach(function (item) {
+    var textContent = removeVietnameseSigns(item.textContent.trim().toLowerCase());
+    if (textContent.indexOf(searchText) !== -1) {
+      item.style.display = "block";
+      count++;
+    } else {
+      item.style.display = "none";
+    }
+  });
+
+  var resultVNSpan = document.getElementById("resultVN");
+  var resultENSpan = document.getElementById("resultEN");
+
+  if (searchText !== "") {
+    resultVNSpan.innerText = count === 0 ? "Không có kết quả" : count === 1 ? "1 kết quả" : count + " kết quả";
+    resultVNSpan.style.display = "block";
+    resultENSpan.innerText = count === 0 ? "No result" : count === 1 ? "1 result" : count + " results";
+    resultENSpan.style.display = "block";
+  } else {
+    resultVNSpan.style.display = "none";
+    resultENSpan.style.display = "none";
+  }
+
+  var searchByGoogleButton = document.getElementById("searchByGoogleVN");
+
   if (count === 0) {
     searchByGoogleButton.style.display = "block";
   } else {
@@ -201,9 +201,9 @@ function checkInput() {
   var clearInput = document.getElementById("clear-input");
 
   if (searchInput1.value.trim() !== "" || searchInput2.value.trim() !== "" || searchInput3.value.trim() !== "" || searchInput4.value.trim() !== "") {
-      clearInput.style.display = "block";
+    clearInput.style.display = "block";
   } else {
-      clearInput.style.display = "none";
+    clearInput.style.display = "none";
   }
 }
 
@@ -226,146 +226,146 @@ function clearInput() {
 
 // Hàm mở Google Search
 function openGoogleSearch() {
-    var searchText = removeVietnameseSigns((document.getElementById("search-input-1").value.trim() + document.getElementById("search-input-2").value.trim()).toLowerCase());
-    var googleSearchURL = "https://www.google.com/search?q=" + encodeURIComponent(searchText);
-    window.open(googleSearchURL, "_blank");
+  var searchText = removeVietnameseSigns((document.getElementById("search-input-1").value.trim() + document.getElementById("search-input-2").value.trim()).toLowerCase());
+  var googleSearchURL = "https://www.google.com/search?q=" + encodeURIComponent(searchText);
+  window.open(googleSearchURL, "_blank");
 }
 
 // Hàm chuyển đổi tiếng Việt có dấu thành tiếng Việt không dấu
 function removeVietnameseSigns(str) {
-    str = str.toLowerCase();
-    // Chuyển đổi các ký tự có dấu thành không dấu
-    str = str.replace(/[áàảãạăắằẳẵặâấầẩẫậ]/g, 'a');
-    str = str.replace(/[éèẻẽẹêếềểễệ]/g, 'e');
-    str = str.replace(/[íìỉĩị]/g, 'i');
-    str = str.replace(/[óòỏõọôốồổỗộơớờởỡợ]/g, 'o');
-    str = str.replace(/[úùủũụưứừửữự]/g, 'u');
-    str = str.replace(/[ýỳỷỹỵ]/g, 'y');
-    str = str.replace(/[đ]/g, 'd');
-    str = str.replace(/[ ]/g, '');
-    // Loại bỏ các ký tự khác
-    str = str.replace(/[^a-z0-9\s]/g, '');
-    return str;
+  str = str.toLowerCase();
+  // Chuyển đổi các ký tự có dấu thành không dấu
+  str = str.replace(/[áàảãạăắằẳẵặâấầẩẫậ]/g, 'a');
+  str = str.replace(/[éèẻẽẹêếềểễệ]/g, 'e');
+  str = str.replace(/[íìỉĩị]/g, 'i');
+  str = str.replace(/[óòỏõọôốồổỗộơớờởỡợ]/g, 'o');
+  str = str.replace(/[úùủũụưứừửữự]/g, 'u');
+  str = str.replace(/[ýỳỷỹỵ]/g, 'y');
+  str = str.replace(/[đ]/g, 'd');
+  str = str.replace(/[ ]/g, '');
+  // Loại bỏ các ký tự khác
+  str = str.replace(/[^a-z0-9\s]/g, '');
+  return str;
 }
 
 // Hàm để thoát fullscreen khi sự kiện xảy ra
 function exitFullscreenHandler() {
-    const fullscreenElement =
-      document.fullscreenElement ||
-      document.webkitFullscreenElement ||
-      document.mozFullScreenElement ||
-      document.msFullscreenElement;
-  
-    if (!fullscreenElement) {
-      exitFullscreen();
-    }
+  const fullscreenElement =
+    document.fullscreenElement ||
+    document.webkitFullscreenElement ||
+    document.mozFullScreenElement ||
+    document.msFullscreenElement;
+
+  if (!fullscreenElement) {
+    exitFullscreen();
+  }
 }
-  
+
 // Hàm để thoát fullscreen khi click bất kỳ nơi nào
 function exitFullscreenOnClickHandler() {
-    exitFullscreen();
+  exitFullscreen();
 }
-  
+
 // Hàm để thoát fullscreen
 function exitFullscreen() {
-    if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-      }
+  if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
     }
+  }
 }
-  
+
 function closeFullscreen() {
-    exitFullscreen();
+  exitFullscreen();
 }
 
 function openFullscreen(element) {
-    if (element.requestFullscreen) {
-      element.requestFullscreen();
-    } else if (element.mozRequestFullScreen) { /* Firefox */
-      element.mozRequestFullScreen();
-    } else if (element.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-      element.webkitRequestFullscreen();
-    } else if (element.msRequestFullscreen) { /* IE/Edge */
-      element.msRequestFullscreen();
-    }
-  
-    // Thêm sự kiện để theo dõi thay đổi fullscreen
-    document.addEventListener("fullscreenchange", exitFullscreenHandler);
-    document.addEventListener("webkitfullscreenchange", exitFullscreenHandler);
-    document.addEventListener("mozfullscreenchange", exitFullscreenHandler);
-    document.addEventListener("MSFullscreenChange", exitFullscreenHandler);
-  
-    // Thêm sự kiện click để thoát fullscreen khi bấm vào bất kỳ nơi nào
-    document.addEventListener("click", exitFullscreenOnClickHandler);
+  if (element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if (element.mozRequestFullScreen) { /* Firefox */
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    element.webkitRequestFullscreen();
+  } else if (element.msRequestFullscreen) { /* IE/Edge */
+    element.msRequestFullscreen();
+  }
+
+  // Thêm sự kiện để theo dõi thay đổi fullscreen
+  document.addEventListener("fullscreenchange", exitFullscreenHandler);
+  document.addEventListener("webkitfullscreenchange", exitFullscreenHandler);
+  document.addEventListener("mozfullscreenchange", exitFullscreenHandler);
+  document.addEventListener("MSFullscreenChange", exitFullscreenHandler);
+
+  // Thêm sự kiện click để thoát fullscreen khi bấm vào bất kỳ nơi nào
+  document.addEventListener("click", exitFullscreenOnClickHandler);
 }
 
 function openGoogleForms(event) {
-    var confirmation;
-    var contentEnglish = document.querySelector('.contentEnglish');
-    var contentVN = document.querySelector('.contentVN');
-  
-    if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
-      confirmation = confirm("Would you like to open the Google Forms page in a new tab?");
-    } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
-      confirmation = confirm("Bạn có muốn mở trang Google Forms trong một tab mới không?");
-    } else {
-      console.error('Content element not found or not displayed!');
-      return;
-    }
-  
-    if (confirmation) {
-      window.open('https://docs.google.com/forms/d/e/1FAIpQLScKPY1U0hpQpsgPCS5Trff4d1BUM9VXhhl3gvJiyull8k1X8g/viewform', '_blank');
-    } else {
-      event.preventDefault();
-    }
+  var confirmation;
+  var contentEnglish = document.querySelector('.contentEnglish');
+  var contentVN = document.querySelector('.contentVN');
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    confirmation = confirm("Would you like to open the Google Forms page in a new tab?");
+  } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+    confirmation = confirm("Bạn có muốn mở trang Google Forms trong một tab mới không?");
+  } else {
+    console.error('Content element not found or not displayed!');
+    return;
+  }
+
+  if (confirmation) {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLScKPY1U0hpQpsgPCS5Trff4d1BUM9VXhhl3gvJiyull8k1X8g/viewform', '_blank');
+  } else {
+    event.preventDefault();
+  }
 }
 
 function composeEmail() {
-    var confirmation;
-    var contentEnglish = document.querySelector('.contentEnglish');
-    var contentVN = document.querySelector('.contentVN');
-  
-    if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
-      confirmation = confirm("Would you like to open the email application to send support email about HNUE map?");
-    } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
-      confirmation = confirm("Bạn có muốn mở ứng dụng email để gửi email hỗ trợ về HNUE map không?");
-    } else {
-      console.error('Content element not found or not displayed!');
-      return;
-    }
-  
-    if (!confirmation) {
-      return; 
-    }
-  
-    var emailAddress = "hoaphamduc2399@gmail.com";
-    var subject = "Hỗ trợ về HNUE map"; 
-    var body = ""; 
-  
-    if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
-      subject = "Support regarding HNUE map";
-    }
-  
-    var mailtoLink = "mailto:" + encodeURIComponent(emailAddress) +
-                     "?subject=" + encodeURIComponent(subject) +
-                     "&body=" + encodeURIComponent(body);
-  
-    window.location.href = mailtoLink;
+  var confirmation;
+  var contentEnglish = document.querySelector('.contentEnglish');
+  var contentVN = document.querySelector('.contentVN');
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    confirmation = confirm("Would you like to open the email application to send support email about HNUE map?");
+  } else if (contentVN && window.getComputedStyle(contentVN).display === 'block') {
+    confirmation = confirm("Bạn có muốn mở ứng dụng email để gửi email hỗ trợ về HNUE map không?");
+  } else {
+    console.error('Content element not found or not displayed!');
+    return;
+  }
+
+  if (!confirmation) {
+    return;
+  }
+
+  var emailAddress = "hoaphamduc2399@gmail.com";
+  var subject = "Hỗ trợ về HNUE map";
+  var body = "";
+
+  if (contentEnglish && window.getComputedStyle(contentEnglish).display === 'block') {
+    subject = "Support regarding HNUE map";
+  }
+
+  var mailtoLink = "mailto:" + encodeURIComponent(emailAddress) +
+    "?subject=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent(body);
+
+  window.location.href = mailtoLink;
 }
 
 function hideSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    const homeContent = document.getElementById('main-content');
-  
-    sidebar.classList.remove('show');
-    homeContent.classList.remove('show');
+  const sidebar = document.querySelector('.sidebar');
+  const homeContent = document.getElementById('main-content');
+
+  sidebar.classList.remove('show');
+  homeContent.classList.remove('show');
 }
 
 var isMusicPlaying = false;
@@ -420,7 +420,7 @@ function pauseBackgroundMusic() {
   isMusicPlaying = false;
 }
 
-document.getElementById("music").addEventListener("click", function() {
+document.getElementById("music").addEventListener("click", function () {
   if (!isMusicPlaying) {
     pauseBackgroundMusic();
   } else {
@@ -472,34 +472,51 @@ languageToggle.addEventListener('change', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const sidebar = document.querySelector('.sidebar');
-    const btn = document.getElementById('menu-btn');
-    const homeContent = document.getElementById('main-content');
-  
-    btn.addEventListener('click', function () {
-        sidebar.classList.toggle('show');
-        homeContent.classList.toggle('show');
-    });
+  const sidebar = document.querySelector('.sidebar');
+  const btn = document.getElementById('menu-btn');
+  const homeContent = document.getElementById('main-content');
+
+  btn.addEventListener('click', function () {
+    sidebar.classList.toggle('show');
+    homeContent.classList.toggle('show');
+  });
 });
 
 var mymap = L.map('map', {
-    zoomControl: false
-  }).fitWorld().setView([21.03749740008041, 105.783335342976], 18);
-  
-const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '<span id="groupInfo" onclick="toggleGroupInfo()" data-bs-toggle="tooltip" title="Xem thông tin nhóm">Được phát triển bởi nhóm của Phạm Đức Hoà</span>'
+  zoomControl: false
+}).fitWorld().setView([21.03749740008041, 105.783335342976], 18);
+
+// Lớp bản đồ thường
+const streetLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '<span id="groupInfo" onclick="toggleGroupInfo()" data-bs-toggle="tooltip" title="Xem thông tin nhóm">Được phát triển bởi nhóm của Phạm Đức Hoà</span>'
 }).addTo(mymap);
+
+// Lớp bản đồ vệ tinh
+const satelliteTiles = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+  maxZoom: 19,
+  subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+  attribution: '<span id="groupInfo" onclick="toggleGroupInfo()" data-bs-toggle="tooltip" title="Xem thông tin nhóm">Được phát triển bởi nhóm của Phạm Đức Hoà</span>'
+});
+
+// Điều khiển lớp
+const baseLayers = {
+  "Bản đồ thường": streetLayer,
+  "Bản đồ vệ tinh": satelliteTiles
+};
+
+L.control.layers(baseLayers).addTo(mymap);
+
 
 // Lấy tọa độ khi click
 mymap.on('click', function (e) {
-    var lat = e.latlng.lat;
-    var lng = e.latlng.lng;
-    console.log('Latitude: ' + lat + ', Longitude: ' + lng);
+  var lat = e.latlng.lat;
+  var lng = e.latlng.lng;
+  console.log('Latitude: ' + lat + ', Longitude: ' + lng);
 });
 
 var zoomControl = L.control.zoom({
-    position: 'bottomright' 
+  position: 'bottomright'
 });
 
 zoomControl.addTo(mymap);
@@ -552,10 +569,10 @@ function removeDarken() {
 //     function (position) {
 //       var lat = position.coords.latitude;
 //       var lon = position.coords.longitude;
-      
+
 //       // Tạo marker và thêm vào bản đồ
 //       var marker = L.marker([lat, lon]).addTo(mymap).bindPopup('Vị trí của bạn').openPopup();
-      
+
 //       // Sử dụng watchPosition để theo dõi vị trí và cập nhật marker
 //       var watchId = navigator.geolocation.watchPosition(
 //         function (position) {
@@ -579,29 +596,29 @@ function removeDarken() {
 // }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const sidebar = document.querySelector('.sidebar');
-    const btn = document.getElementById('open-menu');
-    const mobileToolbar = document.getElementById('mobile-toolbar');
-    const homeContent = document.getElementById('main-content');
-    const appName = document.getElementById('app-name');
-    // Hàm xử lý khi click ra ngoài sidebar
-    function handleClickOutside(event) {
-        if (!sidebar.contains(event.target) && event.target !== btn && event.target !== mobileToolbar && event.target !== appName) {
-            sidebar.classList.remove('show');
-            homeContent.classList.remove('show');
-            removeDarken();
-        }
+  const sidebar = document.querySelector('.sidebar');
+  const btn = document.getElementById('open-menu');
+  const mobileToolbar = document.getElementById('mobile-toolbar');
+  const homeContent = document.getElementById('main-content');
+  const appName = document.getElementById('app-name');
+  // Hàm xử lý khi click ra ngoài sidebar
+  function handleClickOutside(event) {
+    if (!sidebar.contains(event.target) && event.target !== btn && event.target !== mobileToolbar && event.target !== appName) {
+      sidebar.classList.remove('show');
+      homeContent.classList.remove('show');
+      removeDarken();
     }
-  
-    // Sự kiện click ngoài sidebar
-    document.addEventListener('click', handleClickOutside);
-  
-    // Sự kiện khi click vào button mở sidebar
-    btn.addEventListener('click', function () {
-        sidebar.classList.toggle('show');
-        homeContent.classList.toggle('show');
-        homeContent.classList.toggle('darkFilter');
-    });
+  }
+
+  // Sự kiện click ngoài sidebar
+  document.addEventListener('click', handleClickOutside);
+
+  // Sự kiện khi click vào button mở sidebar
+  btn.addEventListener('click', function () {
+    sidebar.classList.toggle('show');
+    homeContent.classList.toggle('show');
+    homeContent.classList.toggle('darkFilter');
+  });
 });
 
 var directionBoard = document.getElementById('direction-board');
@@ -626,19 +643,19 @@ function toggleHide() {
 }
 
 function toggleSupportDiv() {
-    var supportDiv = document.getElementById("support-div");
-    var computedStyle = window.getComputedStyle(supportDiv);
-  
-    if (computedStyle.display === "none") {
-      supportDiv.style.display = "block";
-    } else {
-      supportDiv.style.display = "none";
-    }
-    removeDarken();
-    hideSidebar();
-    hideInfomationPagesDiv();
-    hideProductIntroductionDiv();
-    hideHNUEIntroductionDiv();
-    hideSocialNetworkDiv();
-    hideDonateDiv();
+  var supportDiv = document.getElementById("support-div");
+  var computedStyle = window.getComputedStyle(supportDiv);
+
+  if (computedStyle.display === "none") {
+    supportDiv.style.display = "block";
+  } else {
+    supportDiv.style.display = "none";
+  }
+  removeDarken();
+  hideSidebar();
+  hideInfomationPagesDiv();
+  hideProductIntroductionDiv();
+  hideHNUEIntroductionDiv();
+  hideSocialNetworkDiv();
+  hideDonateDiv();
 }
