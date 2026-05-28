@@ -77,10 +77,13 @@
         position: absolute;
         width: 100%;
         height: 100%;
+        max-height: none;
         border-radius: 0;
         border: none;
         top: 0;
         left: 0;
+        transform: none;
+        padding: 20px 16px;
         box-shadow: none;
     }
     .infoDiv {
@@ -106,57 +109,6 @@
         width: 100%;
         left: 0px;
     }
-    #enter-post {
-        width: calc(100% - 10px); 
-        left: 5px; 
-        top: 55px;
-    }
-    #social-network-toolbar {
-        position: absolute;
-        width: 100%;
-        height: 50px;
-        top: 0;
-        left: 0;
-        display: none;
-        background-color: #fff;
-        z-index: 1000000000;
-        border: 1px solid #e4e6e9;
-    }
-    #social-network-div {
-        left: 0;
-        width: 100%;
-        top: 0;
-        height: 100%;
-    }
-    #post-div {
-        width: 98%;  
-        left: 1%; 
-        top: 5px;
-    }
-    #posts-container {
-        width: 100%; 
-        border-radius: 15px; 
-        height: auto; 
-        background-color: transparent; 
-        position: relative; 
-        left: 0; 
-        margin-top: 57px;
-    }
-    #show-more {
-        margin-top: 64px;
-        width: 98%;
-    }
-    .show-post {
-        width: 98%;
-        left: 1%;
-        top: 5px;
-    }
-    .show-post .post-image {
-        top: 160px;
-    }
-    .emojionearea .emojionearea-button.active+.emojionearea-picker-position-top {
-        margin-right: -40px;
-    }
     .scroll-to-top {
         bottom: 10px;
         left: auto;
@@ -164,21 +116,4 @@
     }
     #menu-btn {
         display: none;
-    }
-    #hnue-img-2 {
-        display: none;
-    }
-}
-
-@media (max-width: 400px){
-    #notification-div {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 50px;
-        background-color: #fff;
-        z-index: 1000000000;
-        border-radius: 0;
-        border: 1px solid #e4e6e9;
-    }
-}
+    }}

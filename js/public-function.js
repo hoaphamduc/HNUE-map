@@ -504,79 +504,58 @@ var zoomControl = L.control.zoom({
 
 zoomControl.addTo(mymap);
 
-var HNUE = L.polygon([
-  [21.036845902996415, 105.7816618680954],
-  [21.037467755464505, 105.78110665082933],
-  [21.038369932755383, 105.7811361551285],
-  [21.038502752839566, 105.78114420175554],
-  [21.039537743023416, 105.78118175268176],
-  [21.039745742604136, 105.78118711709978],
-  [21.040244439211026, 105.78120321035388],
-  [21.040728098144378, 105.78121662139894],
-  [21.040733110145826, 105.78120589256288],
-  [21.040835856138397, 105.7812085747719],
-  [21.040830844140384, 105.78171014785768],
-  [21.040946120051565, 105.78171283006671],
-  [21.040926072073418, 105.78252553939821],
-  [21.040896000101135, 105.78333824872972],
-  [21.040552677987375, 105.78332751989366],
-  [21.040535135960308, 105.78407049179079],
-  [21.041016287953806, 105.78408658504488],
-  [21.04100375797367, 105.78476518392564],
-  [21.041139081703186, 105.78477054834367],
-  [21.041129057727435, 105.78532844781877],
-  [21.041274405309725, 105.78533113002779],
-  [21.041264381343098, 105.78596949577333],
-  [21.038973845247572, 105.78589439392091],
-  [21.038986375398466, 105.78540354967119],
-  [21.038883628130122, 105.78539818525317],
-  [21.038878616066437, 105.78526407480241],
-  [21.036851655915303, 105.78517556190492],
-  [21.036841631651026, 105.78519433736803],
-  [21.036758931445075, 105.78519433736803],
-  [21.03683904415084, 105.7823780179024]
-], {
-  opacity: 1,
-  fillOpacity: 0.25
-}).addTo(mymap);
-
 
 function removeDarken() {
   const homeContent = document.getElementById('main-content');
   homeContent.classList.remove('darkFilter');
 }
 
-// if (navigator.geolocation) {
-//   // Hỏi quyền truy cập vị trí
-//   navigator.geolocation.getCurrentPosition(
-//     function (position) {
-//       var lat = position.coords.latitude;
-//       var lon = position.coords.longitude;
-      
-//       // Tạo marker và thêm vào bản đồ
-//       var marker = L.marker([lat, lon]).addTo(mymap).bindPopup('Vị trí của bạn').openPopup();
-      
-//       // Sử dụng watchPosition để theo dõi vị trí và cập nhật marker
-//       var watchId = navigator.geolocation.watchPosition(
-//         function (position) {
-//           var lat = position.coords.latitude;
-//           var lon = position.coords.longitude;
+// Định vị vị trí người dùng theo thời gian thực
+var userLocationMarker = null;
+var userAccuracyCircle = null;
+var hasCenteredOnUser = false;
 
-//           // Cập nhật vị trí của marker
-//           marker.setLatLng([lat, lon]);
-//         },
-//         function (error) {
-//           console.log('Error getting geolocation:', error.message);
-//         }
-//       );
-//     },
-//     function (error) {
-//       console.log('Error getting geolocation:', error.message);
-//     }
-//   );
-// } else {
-//   console.log('Geolocation is not supported by this browser.');
-// }
+var userLocationIcon = L.divIcon({
+  className: 'user-location-marker',
+  html: '<div class="user-location-dot"></div>',
+  iconSize: [18, 18],
+  iconAnchor: [9, 9]
+});
+
+if ('geolocation' in navigator) {
+  navigator.geolocation.watchPosition(
+    function (position) {
+      var latlng = [position.coords.latitude, position.coords.longitude];
+      var accuracy = position.coords.accuracy;
+
+      if (!userLocationMarker) {
+        userLocationMarker = L.marker(latlng, { icon: userLocationIcon, zIndexOffset: 1000 })
+          .addTo(mymap)
+          .bindPopup('Vị trí của bạn');
+        userAccuracyCircle = L.circle(latlng, {
+          radius: accuracy,
+          color: '#1a73e8',
+          weight: 1,
+          fillColor: '#1a73e8',
+          fillOpacity: 0.12
+        }).addTo(mymap);
+        if (!hasCenteredOnUser) {
+          mymap.setView(latlng, 17);
+          hasCenteredOnUser = true;
+        }
+      } else {
+        userLocationMarker.setLatLng(latlng);
+        userAccuracyCircle.setLatLng(latlng).setRadius(accuracy);
+      }
+    },
+    function (error) {
+      console.warn('Không thể lấy vị trí:', error.message);
+    },
+    { enableHighAccuracy: true, maximumAge: 1000, timeout: 15000 }
+  );
+} else {
+  console.warn('Trình duyệt không hỗ trợ định vị.');
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     const sidebar = document.querySelector('.sidebar');
@@ -610,7 +589,6 @@ var openSearchMenu = document.getElementById('open-search-menu');
 
 function toggleHide() {
   directionBoard.classList.toggle('hide');
-  hideSocialNetworkDiv();
   hideInfomationPagesDiv();
   hideProductIntroductionDiv();
   hideHNUEIntroductionDiv();
@@ -639,6 +617,35 @@ function toggleSupportDiv() {
     hideInfomationPagesDiv();
     hideProductIntroductionDiv();
     hideHNUEIntroductionDiv();
-    hideSocialNetworkDiv();
     hideDonateDiv();
 }
+
+// Popup quảng cáo Meobeo Studio
+function closeAdPopup() {
+  var overlay = document.getElementById('ad-popup-overlay');
+  if (overlay) overlay.style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var overlay = document.getElementById('ad-popup-overlay');
+  if (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeAdPopup();
+    });
+  }
+});
+
+// Đóng modal khi bấm ra ngoài (vùng nền mờ)
+var sidebarModalIds = ['HNUE-introduction', 'product-introduction', 'infomation-pages', 'donate-div', 'support-div'];
+
+document.addEventListener('click', function (e) {
+  // bỏ qua nếu bấm vào sidebar (nơi chứa nút mở modal)
+  if (e.target.closest('.sidebar')) return;
+  sidebarModalIds.forEach(function (id) {
+    var modal = document.getElementById(id);
+    if (!modal) return;
+    if (window.getComputedStyle(modal).display === 'none') return;
+    if (modal.contains(e.target)) return;
+    modal.style.display = 'none';
+  });
+});
